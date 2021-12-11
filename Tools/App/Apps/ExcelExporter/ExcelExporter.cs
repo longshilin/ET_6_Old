@@ -208,8 +208,8 @@ namespace ET
                 {
                     continue;
                 }
-                sb.Append($"\t\t[ProtoMember({headInfo.FieldIndex - 2})]\n");
-                sb.Append($"\t\tpublic {headInfo.FieldType} {headInfo.FieldName} {{ get; set; }}\n");
+                sb.Append($"\t\t[ProtoMember({headInfo.FieldIndex - 2})]\r\n");
+                sb.Append($"\t\tpublic {headInfo.FieldType} {headInfo.FieldName} {{ get; set; }}\r\n");
             }
             string content = template.Replace("(ConfigName)", protoName).Replace(("(Fields)"), sb.ToString());
             sw.Write(content);

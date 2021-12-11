@@ -81,7 +81,7 @@ namespace ET
 
                 if (newline.StartsWith("//"))
                 {
-                    sb.Append($"{newline}\n");
+                    sb.Append($"{newline}\r\n");
                     continue;
                 }
 
@@ -99,16 +99,16 @@ namespace ET
 
                     msgOpcode.Add(new OpcodeInfo() { Name = msgName, Opcode = ++startOpcode });
 
-                    sb.Append($"\t[Message({opcodeClassName}.{msgName})]\n");
-                    sb.Append($"\t[ProtoContract]\n");
+                    sb.Append($"\t[Message({opcodeClassName}.{msgName})]\r\n");
+                    sb.Append($"\t[ProtoContract]\r\n");
                     sb.Append($"\tpublic partial class {msgName}: Object");
                     if (parentClass == "IActorMessage" || parentClass == "IActorRequest" || parentClass == "IActorResponse")
                     {
-                        sb.Append($", {parentClass}\n");
+                        sb.Append($", {parentClass}\r\n");
                     }
                     else if (parentClass != "")
                     {
-                        sb.Append($", {parentClass}\n");
+                        sb.Append($", {parentClass}\r\n");
                     }
                     else
                     {
@@ -122,14 +122,14 @@ namespace ET
                 {
                     if (newline == "{")
                     {
-                        sb.Append("\t{\n");
+                        sb.Append("\t{\r\n");
                         continue;
                     }
 
                     if (newline == "}")
                     {
                         isMsgStart = false;
-                        sb.Append("\t}\n\n");
+                        sb.Append("\t}\r\n\r\n");
                         continue;
                     }
 
@@ -198,8 +198,8 @@ namespace ET
                 string name = ss[2];
                 int n = int.Parse(ss[4]);
 
-                sb.Append($"\t\t[ProtoMember({n})]\n");
-                sb.Append($"\t\tpublic List<{type}> {name} = new List<{type}>();\n\n");
+                sb.Append($"\t\t[ProtoMember({n})]\r\n");
+                sb.Append($"\t\tpublic List<{type}> {name} = new List<{type}>();\r\n\r\n");
             }
             catch (Exception e)
             {
@@ -256,8 +256,8 @@ namespace ET
                 int n = int.Parse(ss[3]);
                 string typeCs = ConvertType(type);
 
-                sb.Append($"\t\t[ProtoMember({n})]\n");
-                sb.Append($"\t\tpublic {typeCs} {name} {{ get; set; }}\n\n");
+                sb.Append($"\t\t[ProtoMember({n})]\r\n");
+                sb.Append($"\t\tpublic {typeCs} {name} {{ get; set; }}\r\n\r\n");
             }
             catch (Exception e)
             {
