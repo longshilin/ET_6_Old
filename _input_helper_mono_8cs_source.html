@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ET: Unity/Assets/Mono/MonoBehaviour/InputHelperMono.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ET<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_input_helper_mono_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">InputHelperMono.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_input_helper_mono_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_unity_engine.html">UnityEngine</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_unity_engine.html">UnityEngine</a>.InputSystem;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_e_t.html">ET</a></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="comment">// Use a separate PlayerInput component for setting up input.</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_e_t_1_1_input_helper_mono.html">    7</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_e_t_1_1_input_helper_mono.html">InputHelperMono</a>: MonoBehaviour</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        <span class="keyword">private</span> <span class="keyword">static</span> Camera mainCamera;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <span class="keyword">private</span>  <a class="code hl_class" href="class_game_input.html">GameInput</a> gameInput;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_e_t_1_1_input_helper_mono.html#ae4cceff2d25b2307adc2529438969f1a">   15</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_struct" href="struct_unity_engine_1_1_vector2.html">Vector2</a> <a class="code hl_property" href="class_e_t_1_1_input_helper_mono.html#ae4cceff2d25b2307adc2529438969f1a">AnalogueValue</a> { <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_e_t_1_1_input_helper_mono.html#ae3f7e19a9d5e905d114922420613ee0c">   20</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_struct" href="struct_unity_engine_1_1_vector2.html">Vector2</a> <a class="code hl_property" href="class_e_t_1_1_input_helper_mono.html#ae3f7e19a9d5e905d114922420613ee0c">TouchPosition</a> { <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_e_t_1_1_input_helper_mono.html#a61c4ee33fd93cc69975dda61d0905171">   25</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_e_t_1_1_input_helper_mono.html#a61c4ee33fd93cc69975dda61d0905171">TouchButton</a> { <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keyword">private</span> <span class="keywordtype">void</span> Awake()</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            mainCamera = Camera.main;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            this.gameInput = <span class="keyword">new</span> <a class="code hl_class" href="class_game_input.html">GameInput</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            this.gameInput.<a class="code hl_property" href="class_game_input.html#ad02a8772abb61b9949278e18311148af">Player</a>.<a class="code hl_property" href="struct_game_input_1_1_player_actions.html#a4ff3399e3d325f7f09252a9a9e75b70b">Move</a>.performed += context =&gt; <a class="code hl_property" href="class_e_t_1_1_input_helper_mono.html#ae4cceff2d25b2307adc2529438969f1a">AnalogueValue</a> = context.ReadValue&lt;<a class="code hl_struct" href="struct_unity_engine_1_1_vector2.html">Vector2</a>&gt;();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            this.gameInput.<a class="code hl_property" href="class_game_input.html#ad02a8772abb61b9949278e18311148af">Player</a>.<a class="code hl_property" href="struct_game_input_1_1_player_actions.html#a4ff3399e3d325f7f09252a9a9e75b70b">Move</a>.canceled += context =&gt; <a class="code hl_property" href="class_e_t_1_1_input_helper_mono.html#ae4cceff2d25b2307adc2529438969f1a">AnalogueValue</a> = <a class="code hl_struct" href="struct_unity_engine_1_1_vector2.html">Vector2</a>.<a class="code hl_variable" href="struct_unity_engine_1_1_vector2.html#a8e40a869d5a33f669922ef6d33832023">zero</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            this.gameInput.<a class="code hl_property" href="class_game_input.html#ad02a8772abb61b9949278e18311148af">Player</a>.<a class="code hl_property" href="struct_game_input_1_1_player_actions.html#a4507678fda82b5ff7560b5c34db543d5">TouchPosition</a>.performed += context =&gt; <a class="code hl_property" href="class_e_t_1_1_input_helper_mono.html#ae3f7e19a9d5e905d114922420613ee0c">TouchPosition</a> = context.ReadValue&lt;<a class="code hl_struct" href="struct_unity_engine_1_1_vector2.html">Vector2</a>&gt;();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            this.gameInput.<a class="code hl_property" href="class_game_input.html#ad02a8772abb61b9949278e18311148af">Player</a>.<a class="code hl_property" href="struct_game_input_1_1_player_actions.html#a4507678fda82b5ff7560b5c34db543d5">TouchPosition</a>.canceled += context =&gt; <a class="code hl_property" href="class_e_t_1_1_input_helper_mono.html#ae3f7e19a9d5e905d114922420613ee0c">TouchPosition</a> = <a class="code hl_struct" href="struct_unity_engine_1_1_vector2.html">Vector2</a>.<a class="code hl_variable" href="struct_unity_engine_1_1_vector2.html#a8e40a869d5a33f669922ef6d33832023">zero</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            this.gameInput.<a class="code hl_property" href="class_game_input.html#ad02a8772abb61b9949278e18311148af">Player</a>.<a class="code hl_property" href="struct_game_input_1_1_player_actions.html#a57e8f61d965f91caeadb2562970e0ed0">TouchButton</a>.performed += context =&gt; <a class="code hl_property" href="class_e_t_1_1_input_helper_mono.html#a61c4ee33fd93cc69975dda61d0905171">TouchButton</a> = context.ReadValue&lt;<span class="keywordtype">float</span>&gt;() &gt; 0.5f;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            this.gameInput.<a class="code hl_property" href="class_game_input.html#ad02a8772abb61b9949278e18311148af">Player</a>.<a class="code hl_property" href="struct_game_input_1_1_player_actions.html#a57e8f61d965f91caeadb2562970e0ed0">TouchButton</a>.canceled += context =&gt; <a class="code hl_property" href="class_e_t_1_1_input_helper_mono.html#a61c4ee33fd93cc69975dda61d0905171">TouchButton</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_e_t_1_1_input_helper_mono.html#a7a5884ee2ec845f1f6e568ff1aa1a926">   42</a></span>        <span class="keyword">protected</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_e_t_1_1_input_helper_mono.html#a7a5884ee2ec845f1f6e568ff1aa1a926">OnEnable</a>()</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            this.gameInput?.<a class="code hl_function" href="class_game_input.html#ad53e3d9746e5723d0490b8479931e5f9">Enable</a>();</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_e_t_1_1_input_helper_mono.html#a10926533fc57deb0c78386c8b789dad5">   47</a></span>        <span class="keyword">protected</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_e_t_1_1_input_helper_mono.html#a10926533fc57deb0c78386c8b789dad5">OnDisable</a>()</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            this.gameInput?.<a class="code hl_function" href="class_game_input.html#a0bfd55877546b4113e5051cd6702712f">Disable</a>();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_e_t_1_1_input_helper_mono.html#a47bf5468d7c668693489809373356895">   52</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_e_t_1_1_input_helper_mono.html#a47bf5468d7c668693489809373356895">WasPressedRKey</a>() =&gt; Keyboard.current.rKey.wasPressedThisFrame;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_e_t_1_1_input_helper_mono.html#afe4ecb23f1da9942f1b5ba4538f56e03">   53</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_e_t_1_1_input_helper_mono.html#afe4ecb23f1da9942f1b5ba4538f56e03">WasPressedTKey</a>() =&gt; Keyboard.current.tKey.wasPressedThisFrame;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_e_t_1_1_input_helper_mono.html#ac05889b7e7cb9eb610f6363840fd660a">   55</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_e_t_1_1_input_helper_mono.html#ac05889b7e7cb9eb610f6363840fd660a">GetTouchScreenPointToRay</a>(ref Ray ray)</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <span class="keywordflow">if</span> (<a class="code hl_property" href="class_e_t_1_1_input_helper_mono.html#a61c4ee33fd93cc69975dda61d0905171">TouchButton</a>)</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                ray = mainCamera.ScreenPointToRay(<a class="code hl_property" href="class_e_t_1_1_input_helper_mono.html#ae3f7e19a9d5e905d114922420613ee0c">TouchPosition</a>);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}</div>
+<div class="ttc" id="aclass_e_t_1_1_input_helper_mono_html"><div class="ttname"><a href="class_e_t_1_1_input_helper_mono.html">ET.InputHelperMono</a></div><div class="ttdef"><b>Definition:</b> <a href="_input_helper_mono_8cs_source.html#l00007">InputHelperMono.cs:8</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_input_helper_mono_html_a10926533fc57deb0c78386c8b789dad5"><div class="ttname"><a href="class_e_t_1_1_input_helper_mono.html#a10926533fc57deb0c78386c8b789dad5">ET.InputHelperMono.OnDisable</a></div><div class="ttdeci">virtual void OnDisable()</div><div class="ttdef"><b>Definition:</b> <a href="_input_helper_mono_8cs_source.html#l00047">InputHelperMono.cs:47</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_input_helper_mono_html_a47bf5468d7c668693489809373356895"><div class="ttname"><a href="class_e_t_1_1_input_helper_mono.html#a47bf5468d7c668693489809373356895">ET.InputHelperMono.WasPressedRKey</a></div><div class="ttdeci">static bool WasPressedRKey()</div></div>
+<div class="ttc" id="aclass_e_t_1_1_input_helper_mono_html_a61c4ee33fd93cc69975dda61d0905171"><div class="ttname"><a href="class_e_t_1_1_input_helper_mono.html#a61c4ee33fd93cc69975dda61d0905171">ET.InputHelperMono.TouchButton</a></div><div class="ttdeci">static bool TouchButton</div><div class="ttdoc">Touch Button Press</div><div class="ttdef"><b>Definition:</b> <a href="_input_helper_mono_8cs_source.html#l00025">InputHelperMono.cs:25</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_input_helper_mono_html_a7a5884ee2ec845f1f6e568ff1aa1a926"><div class="ttname"><a href="class_e_t_1_1_input_helper_mono.html#a7a5884ee2ec845f1f6e568ff1aa1a926">ET.InputHelperMono.OnEnable</a></div><div class="ttdeci">virtual void OnEnable()</div><div class="ttdef"><b>Definition:</b> <a href="_input_helper_mono_8cs_source.html#l00042">InputHelperMono.cs:42</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_input_helper_mono_html_ac05889b7e7cb9eb610f6363840fd660a"><div class="ttname"><a href="class_e_t_1_1_input_helper_mono.html#ac05889b7e7cb9eb610f6363840fd660a">ET.InputHelperMono.GetTouchScreenPointToRay</a></div><div class="ttdeci">static bool GetTouchScreenPointToRay(ref Ray ray)</div><div class="ttdef"><b>Definition:</b> <a href="_input_helper_mono_8cs_source.html#l00055">InputHelperMono.cs:55</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_input_helper_mono_html_ae3f7e19a9d5e905d114922420613ee0c"><div class="ttname"><a href="class_e_t_1_1_input_helper_mono.html#ae3f7e19a9d5e905d114922420613ee0c">ET.InputHelperMono.TouchPosition</a></div><div class="ttdeci">static Vector2 TouchPosition</div><div class="ttdoc">Retrieve state of primary button.</div><div class="ttdef"><b>Definition:</b> <a href="_input_helper_mono_8cs_source.html#l00020">InputHelperMono.cs:20</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_input_helper_mono_html_ae4cceff2d25b2307adc2529438969f1a"><div class="ttname"><a href="class_e_t_1_1_input_helper_mono.html#ae4cceff2d25b2307adc2529438969f1a">ET.InputHelperMono.AnalogueValue</a></div><div class="ttdeci">static Vector2 AnalogueValue</div><div class="ttdoc">Retrieve current state of analogue stick.</div><div class="ttdef"><b>Definition:</b> <a href="_input_helper_mono_8cs_source.html#l00015">InputHelperMono.cs:15</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_input_helper_mono_html_afe4ecb23f1da9942f1b5ba4538f56e03"><div class="ttname"><a href="class_e_t_1_1_input_helper_mono.html#afe4ecb23f1da9942f1b5ba4538f56e03">ET.InputHelperMono.WasPressedTKey</a></div><div class="ttdeci">static bool WasPressedTKey()</div></div>
+<div class="ttc" id="aclass_game_input_html"><div class="ttname"><a href="class_game_input.html">GameInput</a></div><div class="ttdef"><b>Definition:</b> <a href="_game_input_8cs_source.html#l00018">GameInput.cs:19</a></div></div>
+<div class="ttc" id="aclass_game_input_html_a0bfd55877546b4113e5051cd6702712f"><div class="ttname"><a href="class_game_input.html#a0bfd55877546b4113e5051cd6702712f">GameInput.Disable</a></div><div class="ttdeci">void Disable()</div><div class="ttdef"><b>Definition:</b> <a href="_game_input_8cs_source.html#l00929">GameInput.cs:929</a></div></div>
+<div class="ttc" id="aclass_game_input_html_ad02a8772abb61b9949278e18311148af"><div class="ttname"><a href="class_game_input.html#ad02a8772abb61b9949278e18311148af">GameInput.Player</a></div><div class="ttdeci">PlayerActions Player</div><div class="ttdef"><b>Definition:</b> <a href="_game_input_8cs_source.html#l00999">GameInput.cs:999</a></div></div>
+<div class="ttc" id="aclass_game_input_html_ad53e3d9746e5723d0490b8479931e5f9"><div class="ttname"><a href="class_game_input.html#ad53e3d9746e5723d0490b8479931e5f9">GameInput.Enable</a></div><div class="ttdeci">void Enable()</div><div class="ttdef"><b>Definition:</b> <a href="_game_input_8cs_source.html#l00924">GameInput.cs:924</a></div></div>
+<div class="ttc" id="anamespace_e_t_html"><div class="ttname"><a href="namespace_e_t.html">ET</a></div><div class="ttdef"><b>Definition:</b> <a href="_robot_2_app_2_program_8cs_source.html#l00008">Program.cs:9</a></div></div>
+<div class="ttc" id="anamespace_unity_engine_html"><div class="ttname"><a href="namespace_unity_engine.html">UnityEngine</a></div><div class="ttdef"><b>Definition:</b> <a href="_mathf_8cs_source.html#l00003">Mathf.cs:4</a></div></div>
+<div class="ttc" id="astruct_game_input_1_1_player_actions_html_a4507678fda82b5ff7560b5c34db543d5"><div class="ttname"><a href="struct_game_input_1_1_player_actions.html#a4507678fda82b5ff7560b5c34db543d5">GameInput.PlayerActions.TouchPosition</a></div><div class="ttdeci">InputAction TouchPosition</div><div class="ttdef"><b>Definition:</b> <a href="_game_input_8cs_source.html#l00957">GameInput.cs:957</a></div></div>
+<div class="ttc" id="astruct_game_input_1_1_player_actions_html_a4ff3399e3d325f7f09252a9a9e75b70b"><div class="ttname"><a href="struct_game_input_1_1_player_actions.html#a4ff3399e3d325f7f09252a9a9e75b70b">GameInput.PlayerActions.Move</a></div><div class="ttdeci">InputAction Move</div><div class="ttdef"><b>Definition:</b> <a href="_game_input_8cs_source.html#l00955">GameInput.cs:955</a></div></div>
+<div class="ttc" id="astruct_game_input_1_1_player_actions_html_a57e8f61d965f91caeadb2562970e0ed0"><div class="ttname"><a href="struct_game_input_1_1_player_actions.html#a57e8f61d965f91caeadb2562970e0ed0">GameInput.PlayerActions.TouchButton</a></div><div class="ttdeci">InputAction TouchButton</div><div class="ttdef"><b>Definition:</b> <a href="_game_input_8cs_source.html#l00958">GameInput.cs:958</a></div></div>
+<div class="ttc" id="astruct_unity_engine_1_1_vector2_html"><div class="ttname"><a href="struct_unity_engine_1_1_vector2.html">UnityEngine.Vector2</a></div><div class="ttdef"><b>Definition:</b> <a href="_vector2_8cs_source.html#l00007">Vector2.cs:8</a></div></div>
+<div class="ttc" id="astruct_unity_engine_1_1_vector2_html_a8e40a869d5a33f669922ef6d33832023"><div class="ttname"><a href="struct_unity_engine_1_1_vector2.html#a8e40a869d5a33f669922ef6d33832023">UnityEngine.Vector2.zero</a></div><div class="ttdeci">static readonly Vector2 zero</div><div class="ttdef"><b>Definition:</b> <a href="_vector2_8cs_source.html#l00009">Vector2.cs:9</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_3b33dffaa21a2ac6f7978a949ffd4e41.html">Assets</a></li><li class="navelem"><a class="el" href="dir_32b52fdc2965fe1c83ca367fdb1ff171.html">Mono</a></li><li class="navelem"><a class="el" href="dir_2a9f4792debd9d21999b57de5dce11e0.html">MonoBehaviour</a></li><li class="navelem"><a class="el" href="_input_helper_mono_8cs.html">InputHelperMono.cs</a></li>
+    <li class="footer">生成于 2022年 一月 23日 星期日 19:16:14 , 为 ET使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

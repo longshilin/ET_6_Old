@@ -1,0 +1,824 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ET: ILRuntime.Mono.Cecil.PE.ByteBuffer类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ET<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a>  </div>
+  <div class="headertitle"><div class="title">ILRuntime.Mono.Cecil.PE.ByteBuffer类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 ILRuntime.Mono.Cecil.PE.ByteBuffer 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.png" usemap="#ILRuntime.Mono.Cecil.PE.ByteBuffer_map" alt=""/>
+  <map id="ILRuntime.Mono.Cecil.PE.ByteBuffer_map" name="ILRuntime.Mono.Cecil.PE.ByteBuffer_map">
+<area href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_code_writer.html" alt="ILRuntime.Mono.Cecil.Cil.CodeWriter" shape="rect" coords="0,56,319,80"/>
+<area href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_1_1_data_buffer.html" alt="ILRuntime.Mono.Cecil.Metadata.DataBuffer" shape="rect" coords="329,56,648,80"/>
+<area href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_1_1_heap_buffer.html" alt="ILRuntime.Mono.Cecil.Metadata.HeapBuffer" shape="rect" coords="658,56,977,80"/>
+<area href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_1_1_resource_buffer.html" alt="ILRuntime.Mono.Cecil.Metadata.ResourceBuffer" shape="rect" coords="987,56,1306,80"/>
+<area href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_reader.html" alt="ILRuntime.Mono.Cecil.MetadataReader" shape="rect" coords="1316,56,1635,80"/>
+<area href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_signature_reader.html" alt="ILRuntime.Mono.Cecil.SignatureReader" shape="rect" coords="1645,56,1964,80"/>
+<area href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_signature_writer.html" alt="ILRuntime.Mono.Cecil.SignatureWriter" shape="rect" coords="1974,56,2293,80"/>
+<area href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_1_1_blob_heap_buffer.html" alt="ILRuntime.Mono.Cecil.Metadata.BlobHeapBuffer" shape="rect" coords="0,112,319,136"/>
+<area href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_1_1_guid_heap_buffer.html" alt="ILRuntime.Mono.Cecil.Metadata.GuidHeapBuffer" shape="rect" coords="329,112,648,136"/>
+<area href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_1_1_pdb_heap_buffer.html" alt="ILRuntime.Mono.Cecil.Metadata.PdbHeapBuffer" shape="rect" coords="658,112,977,136"/>
+<area href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_1_1_string_heap_buffer.html" alt="ILRuntime.Mono.Cecil.Metadata.StringHeapBuffer" shape="rect" coords="987,112,1306,136"/>
+<area href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_1_1_table_heap_buffer.html" alt="ILRuntime.Mono.Cecil.Metadata.TableHeapBuffer" shape="rect" coords="1316,112,1635,136"/>
+<area href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_1_1_user_string_heap_buffer.html" alt="ILRuntime.Mono.Cecil.Metadata.UserStringHeapBuffer" shape="rect" coords="987,168,1306,192"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a0ee21965347d04174e8a3bb2f52e5d24"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html#a0ee21965347d04174e8a3bb2f52e5d24">ByteBuffer</a> ()</td></tr>
+<tr class="separator:a0ee21965347d04174e8a3bb2f52e5d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a400abfc74e1849b2559ab5c1bef85bb7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html#a400abfc74e1849b2559ab5c1bef85bb7">ByteBuffer</a> (int length)</td></tr>
+<tr class="separator:a400abfc74e1849b2559ab5c1bef85bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8fa4412d8586e3011ad4f074b76c60a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html#ae8fa4412d8586e3011ad4f074b76c60a">ByteBuffer</a> (byte[] buffer)</td></tr>
+<tr class="separator:ae8fa4412d8586e3011ad4f074b76c60a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1398654caa021851b17aed299b102725"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html#a1398654caa021851b17aed299b102725">Advance</a> (int length)</td></tr>
+<tr class="separator:a1398654caa021851b17aed299b102725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac09df94b4e8836458c81fa383cb3cbd1"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html#ac09df94b4e8836458c81fa383cb3cbd1">ReadByte</a> ()</td></tr>
+<tr class="separator:ac09df94b4e8836458c81fa383cb3cbd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89d5baeea3627789694e57061ffdac12"><td class="memItemLeft" align="right" valign="top">sbyte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html#a89d5baeea3627789694e57061ffdac12">ReadSByte</a> ()</td></tr>
+<tr class="separator:a89d5baeea3627789694e57061ffdac12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af074bcc04df1e8a706834dd7cbfc7918"><td class="memItemLeft" align="right" valign="top">byte[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html#af074bcc04df1e8a706834dd7cbfc7918">ReadBytes</a> (int length)</td></tr>
+<tr class="separator:af074bcc04df1e8a706834dd7cbfc7918"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed6691cbe8b99b99840caf5a095dc16c"><td class="memItemLeft" align="right" valign="top">ushort&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html#aed6691cbe8b99b99840caf5a095dc16c">ReadUInt16</a> ()</td></tr>
+<tr class="separator:aed6691cbe8b99b99840caf5a095dc16c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaeb1f21fef9d6c9e2510ee9460afe8b"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html#afaeb1f21fef9d6c9e2510ee9460afe8b">ReadInt16</a> ()</td></tr>
+<tr class="separator:afaeb1f21fef9d6c9e2510ee9460afe8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15d1b3de9baea507e9dbe36a14f3e1cc"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html#a15d1b3de9baea507e9dbe36a14f3e1cc">ReadUInt32</a> ()</td></tr>
+<tr class="separator:a15d1b3de9baea507e9dbe36a14f3e1cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b3edabcf46b9502bc510b67cc4c010b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html#a1b3edabcf46b9502bc510b67cc4c010b">ReadInt32</a> ()</td></tr>
+<tr class="separator:a1b3edabcf46b9502bc510b67cc4c010b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae06fd63eb39e2c8ff9e6458d633e031c"><td class="memItemLeft" align="right" valign="top">ulong&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html#ae06fd63eb39e2c8ff9e6458d633e031c">ReadUInt64</a> ()</td></tr>
+<tr class="separator:ae06fd63eb39e2c8ff9e6458d633e031c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72ebc8d93cbea0dde117ec2d7e34b6c7"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html#a72ebc8d93cbea0dde117ec2d7e34b6c7">ReadInt64</a> ()</td></tr>
+<tr class="separator:a72ebc8d93cbea0dde117ec2d7e34b6c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a190a981a886144e3f55b9d6b8be16e5f"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html#a190a981a886144e3f55b9d6b8be16e5f">ReadCompressedUInt32</a> ()</td></tr>
+<tr class="separator:a190a981a886144e3f55b9d6b8be16e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8713817c3a4d48ff62092fe0cd916e95"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html#a8713817c3a4d48ff62092fe0cd916e95">ReadCompressedInt32</a> ()</td></tr>
+<tr class="separator:a8713817c3a4d48ff62092fe0cd916e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18d7b6585cc495fb4336d3f1a313cead"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html#a18d7b6585cc495fb4336d3f1a313cead">ReadSingle</a> ()</td></tr>
+<tr class="separator:a18d7b6585cc495fb4336d3f1a313cead"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3e118a2d7bccc9604871accf88c4a8c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html#aa3e118a2d7bccc9604871accf88c4a8c">ReadDouble</a> ()</td></tr>
+<tr class="separator:aa3e118a2d7bccc9604871accf88c4a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90b3c7de0946b7b9fa4ccef27558ec77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html#a90b3c7de0946b7b9fa4ccef27558ec77">WriteByte</a> (byte value)</td></tr>
+<tr class="separator:a90b3c7de0946b7b9fa4ccef27558ec77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19e40239154ab4e13cad0b34fd756381"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html#a19e40239154ab4e13cad0b34fd756381">WriteSByte</a> (sbyte value)</td></tr>
+<tr class="separator:a19e40239154ab4e13cad0b34fd756381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc8762c9cec80ebc5d841637aeb8e508"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html#adc8762c9cec80ebc5d841637aeb8e508">WriteUInt16</a> (ushort value)</td></tr>
+<tr class="separator:adc8762c9cec80ebc5d841637aeb8e508"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0f94f19a19abb727f66c9744926394b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html#ae0f94f19a19abb727f66c9744926394b">WriteInt16</a> (short value)</td></tr>
+<tr class="separator:ae0f94f19a19abb727f66c9744926394b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46b34eabca660c15ebbc8b3c1cdfca04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html#a46b34eabca660c15ebbc8b3c1cdfca04">WriteUInt32</a> (uint value)</td></tr>
+<tr class="separator:a46b34eabca660c15ebbc8b3c1cdfca04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3ea4419207ee384400962f5f5e79e01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html#ae3ea4419207ee384400962f5f5e79e01">WriteInt32</a> (int value)</td></tr>
+<tr class="separator:ae3ea4419207ee384400962f5f5e79e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0597b08fc0ee139272f20a2cfc7419d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html#aa0597b08fc0ee139272f20a2cfc7419d">WriteUInt64</a> (ulong value)</td></tr>
+<tr class="separator:aa0597b08fc0ee139272f20a2cfc7419d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31d26fb529cbd129bbc200127d8fb1e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html#a31d26fb529cbd129bbc200127d8fb1e2">WriteInt64</a> (long value)</td></tr>
+<tr class="separator:a31d26fb529cbd129bbc200127d8fb1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8603e32137502aca9995cbd76ad0b4a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html#a8603e32137502aca9995cbd76ad0b4a9">WriteCompressedUInt32</a> (uint value)</td></tr>
+<tr class="separator:a8603e32137502aca9995cbd76ad0b4a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88f020688c1c94c324a9ad03eb7d7e7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html#a88f020688c1c94c324a9ad03eb7d7e7c">WriteCompressedInt32</a> (int value)</td></tr>
+<tr class="separator:a88f020688c1c94c324a9ad03eb7d7e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23bfcb1f6e0313dca12ce2d25bedb78e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html#a23bfcb1f6e0313dca12ce2d25bedb78e">WriteBytes</a> (byte[] bytes)</td></tr>
+<tr class="separator:a23bfcb1f6e0313dca12ce2d25bedb78e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6a72dccfdd91bb308ef3534ce0698f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html#ab6a72dccfdd91bb308ef3534ce0698f2">WriteBytes</a> (int length)</td></tr>
+<tr class="separator:ab6a72dccfdd91bb308ef3534ce0698f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5118438af59f45807b93c55ba5bc10b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html#a5118438af59f45807b93c55ba5bc10b3">WriteBytes</a> (<a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html">ByteBuffer</a> buffer)</td></tr>
+<tr class="separator:a5118438af59f45807b93c55ba5bc10b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94bcbc4185130aedcd2b14397fa10d04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html#a94bcbc4185130aedcd2b14397fa10d04">WriteSingle</a> (float value)</td></tr>
+<tr class="separator:a94bcbc4185130aedcd2b14397fa10d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa505c9133727ee61b1d308d8a37b0d6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html#aa505c9133727ee61b1d308d8a37b0d6e">WriteDouble</a> (double value)</td></tr>
+<tr class="separator:aa505c9133727ee61b1d308d8a37b0d6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="_byte_buffer_8cs_source.html">ByteBuffer.cs</a> 第 <a class="el" href="_byte_buffer_8cs_source.html#l00015">15</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a0ee21965347d04174e8a3bb2f52e5d24" name="a0ee21965347d04174e8a3bb2f52e5d24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ee21965347d04174e8a3bb2f52e5d24">&#9670;&nbsp;</a></span>ByteBuffer() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ILRuntime.Mono.Cecil.PE.ByteBuffer.ByteBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_byte_buffer_8cs_source.html">ByteBuffer.cs</a> 第 <a class="el" href="_byte_buffer_8cs_source.html#l00021">21</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a400abfc74e1849b2559ab5c1bef85bb7" name="a400abfc74e1849b2559ab5c1bef85bb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a400abfc74e1849b2559ab5c1bef85bb7">&#9670;&nbsp;</a></span>ByteBuffer() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ILRuntime.Mono.Cecil.PE.ByteBuffer.ByteBuffer </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_byte_buffer_8cs_source.html">ByteBuffer.cs</a> 第 <a class="el" href="_byte_buffer_8cs_source.html#l00026">26</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae8fa4412d8586e3011ad4f074b76c60a" name="ae8fa4412d8586e3011ad4f074b76c60a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8fa4412d8586e3011ad4f074b76c60a">&#9670;&nbsp;</a></span>ByteBuffer() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ILRuntime.Mono.Cecil.PE.ByteBuffer.ByteBuffer </td>
+          <td>(</td>
+          <td class="paramtype">byte[]&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_byte_buffer_8cs_source.html">ByteBuffer.cs</a> 第 <a class="el" href="_byte_buffer_8cs_source.html#l00031">31</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a1398654caa021851b17aed299b102725" name="a1398654caa021851b17aed299b102725"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1398654caa021851b17aed299b102725">&#9670;&nbsp;</a></span>Advance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ILRuntime.Mono.Cecil.PE.ByteBuffer.Advance </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_byte_buffer_8cs_source.html">ByteBuffer.cs</a> 第 <a class="el" href="_byte_buffer_8cs_source.html#l00037">37</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac09df94b4e8836458c81fa383cb3cbd1" name="ac09df94b4e8836458c81fa383cb3cbd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac09df94b4e8836458c81fa383cb3cbd1">&#9670;&nbsp;</a></span>ReadByte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte ILRuntime.Mono.Cecil.PE.ByteBuffer.ReadByte </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_byte_buffer_8cs_source.html">ByteBuffer.cs</a> 第 <a class="el" href="_byte_buffer_8cs_source.html#l00042">42</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af074bcc04df1e8a706834dd7cbfc7918" name="af074bcc04df1e8a706834dd7cbfc7918"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af074bcc04df1e8a706834dd7cbfc7918">&#9670;&nbsp;</a></span>ReadBytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte[] ILRuntime.Mono.Cecil.PE.ByteBuffer.ReadBytes </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_byte_buffer_8cs_source.html">ByteBuffer.cs</a> 第 <a class="el" href="_byte_buffer_8cs_source.html#l00052">52</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8713817c3a4d48ff62092fe0cd916e95" name="a8713817c3a4d48ff62092fe0cd916e95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8713817c3a4d48ff62092fe0cd916e95">&#9670;&nbsp;</a></span>ReadCompressedInt32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ILRuntime.Mono.Cecil.PE.ByteBuffer.ReadCompressedInt32 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_byte_buffer_8cs_source.html">ByteBuffer.cs</a> 第 <a class="el" href="_byte_buffer_8cs_source.html#l00117">117</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a190a981a886144e3f55b9d6b8be16e5f" name="a190a981a886144e3f55b9d6b8be16e5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a190a981a886144e3f55b9d6b8be16e5f">&#9670;&nbsp;</a></span>ReadCompressedUInt32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint ILRuntime.Mono.Cecil.PE.ByteBuffer.ReadCompressedUInt32 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_byte_buffer_8cs_source.html">ByteBuffer.cs</a> 第 <a class="el" href="_byte_buffer_8cs_source.html#l00101">101</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa3e118a2d7bccc9604871accf88c4a8c" name="aa3e118a2d7bccc9604871accf88c4a8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3e118a2d7bccc9604871accf88c4a8c">&#9670;&nbsp;</a></span>ReadDouble()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ILRuntime.Mono.Cecil.PE.ByteBuffer.ReadDouble </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_byte_buffer_8cs_source.html">ByteBuffer.cs</a> 第 <a class="el" href="_byte_buffer_8cs_source.html#l00150">150</a> 行定义.</p>
+
+</div>
+</div>
+<a id="afaeb1f21fef9d6c9e2510ee9460afe8b" name="afaeb1f21fef9d6c9e2510ee9460afe8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaeb1f21fef9d6c9e2510ee9460afe8b">&#9670;&nbsp;</a></span>ReadInt16()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short ILRuntime.Mono.Cecil.PE.ByteBuffer.ReadInt16 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_byte_buffer_8cs_source.html">ByteBuffer.cs</a> 第 <a class="el" href="_byte_buffer_8cs_source.html#l00068">68</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1b3edabcf46b9502bc510b67cc4c010b" name="a1b3edabcf46b9502bc510b67cc4c010b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b3edabcf46b9502bc510b67cc4c010b">&#9670;&nbsp;</a></span>ReadInt32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ILRuntime.Mono.Cecil.PE.ByteBuffer.ReadInt32 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_byte_buffer_8cs_source.html">ByteBuffer.cs</a> 第 <a class="el" href="_byte_buffer_8cs_source.html#l00083">83</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a72ebc8d93cbea0dde117ec2d7e34b6c7" name="a72ebc8d93cbea0dde117ec2d7e34b6c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72ebc8d93cbea0dde117ec2d7e34b6c7">&#9670;&nbsp;</a></span>ReadInt64()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long ILRuntime.Mono.Cecil.PE.ByteBuffer.ReadInt64 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_byte_buffer_8cs_source.html">ByteBuffer.cs</a> 第 <a class="el" href="_byte_buffer_8cs_source.html#l00096">96</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a89d5baeea3627789694e57061ffdac12" name="a89d5baeea3627789694e57061ffdac12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89d5baeea3627789694e57061ffdac12">&#9670;&nbsp;</a></span>ReadSByte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sbyte ILRuntime.Mono.Cecil.PE.ByteBuffer.ReadSByte </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_byte_buffer_8cs_source.html">ByteBuffer.cs</a> 第 <a class="el" href="_byte_buffer_8cs_source.html#l00047">47</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a18d7b6585cc495fb4336d3f1a313cead" name="a18d7b6585cc495fb4336d3f1a313cead"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18d7b6585cc495fb4336d3f1a313cead">&#9670;&nbsp;</a></span>ReadSingle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float ILRuntime.Mono.Cecil.PE.ByteBuffer.ReadSingle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_byte_buffer_8cs_source.html">ByteBuffer.cs</a> 第 <a class="el" href="_byte_buffer_8cs_source.html#l00137">137</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aed6691cbe8b99b99840caf5a095dc16c" name="aed6691cbe8b99b99840caf5a095dc16c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed6691cbe8b99b99840caf5a095dc16c">&#9670;&nbsp;</a></span>ReadUInt16()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ushort ILRuntime.Mono.Cecil.PE.ByteBuffer.ReadUInt16 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_byte_buffer_8cs_source.html">ByteBuffer.cs</a> 第 <a class="el" href="_byte_buffer_8cs_source.html#l00060">60</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a15d1b3de9baea507e9dbe36a14f3e1cc" name="a15d1b3de9baea507e9dbe36a14f3e1cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15d1b3de9baea507e9dbe36a14f3e1cc">&#9670;&nbsp;</a></span>ReadUInt32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint ILRuntime.Mono.Cecil.PE.ByteBuffer.ReadUInt32 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_byte_buffer_8cs_source.html">ByteBuffer.cs</a> 第 <a class="el" href="_byte_buffer_8cs_source.html#l00073">73</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae06fd63eb39e2c8ff9e6458d633e031c" name="ae06fd63eb39e2c8ff9e6458d633e031c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae06fd63eb39e2c8ff9e6458d633e031c">&#9670;&nbsp;</a></span>ReadUInt64()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ulong ILRuntime.Mono.Cecil.PE.ByteBuffer.ReadUInt64 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_byte_buffer_8cs_source.html">ByteBuffer.cs</a> 第 <a class="el" href="_byte_buffer_8cs_source.html#l00088">88</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a90b3c7de0946b7b9fa4ccef27558ec77" name="a90b3c7de0946b7b9fa4ccef27558ec77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90b3c7de0946b7b9fa4ccef27558ec77">&#9670;&nbsp;</a></span>WriteByte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ILRuntime.Mono.Cecil.PE.ByteBuffer.WriteByte </td>
+          <td>(</td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_byte_buffer_8cs_source.html">ByteBuffer.cs</a> 第 <a class="el" href="_byte_buffer_8cs_source.html#l00163">163</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a23bfcb1f6e0313dca12ce2d25bedb78e" name="a23bfcb1f6e0313dca12ce2d25bedb78e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23bfcb1f6e0313dca12ce2d25bedb78e">&#9670;&nbsp;</a></span>WriteBytes() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ILRuntime.Mono.Cecil.PE.ByteBuffer.WriteBytes </td>
+          <td>(</td>
+          <td class="paramtype">byte[]&#160;</td>
+          <td class="paramname"><em>bytes</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_byte_buffer_8cs_source.html">ByteBuffer.cs</a> 第 <a class="el" href="_byte_buffer_8cs_source.html#l00270">270</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5118438af59f45807b93c55ba5bc10b3" name="a5118438af59f45807b93c55ba5bc10b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5118438af59f45807b93c55ba5bc10b3">&#9670;&nbsp;</a></span>WriteBytes() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ILRuntime.Mono.Cecil.PE.ByteBuffer.WriteBytes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html">ByteBuffer</a>&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_byte_buffer_8cs_source.html">ByteBuffer.cs</a> 第 <a class="el" href="_byte_buffer_8cs_source.html#l00294">294</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab6a72dccfdd91bb308ef3534ce0698f2" name="ab6a72dccfdd91bb308ef3534ce0698f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6a72dccfdd91bb308ef3534ce0698f2">&#9670;&nbsp;</a></span>WriteBytes() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ILRuntime.Mono.Cecil.PE.ByteBuffer.WriteBytes </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_byte_buffer_8cs_source.html">ByteBuffer.cs</a> 第 <a class="el" href="_byte_buffer_8cs_source.html#l00283">283</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a88f020688c1c94c324a9ad03eb7d7e7c" name="a88f020688c1c94c324a9ad03eb7d7e7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88f020688c1c94c324a9ad03eb7d7e7c">&#9670;&nbsp;</a></span>WriteCompressedInt32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ILRuntime.Mono.Cecil.PE.ByteBuffer.WriteCompressedInt32 </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_byte_buffer_8cs_source.html">ByteBuffer.cs</a> 第 <a class="el" href="_byte_buffer_8cs_source.html#l00253">253</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8603e32137502aca9995cbd76ad0b4a9" name="a8603e32137502aca9995cbd76ad0b4a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8603e32137502aca9995cbd76ad0b4a9">&#9670;&nbsp;</a></span>WriteCompressedUInt32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ILRuntime.Mono.Cecil.PE.ByteBuffer.WriteCompressedUInt32 </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_byte_buffer_8cs_source.html">ByteBuffer.cs</a> 第 <a class="el" href="_byte_buffer_8cs_source.html#l00238">238</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa505c9133727ee61b1d308d8a37b0d6e" name="aa505c9133727ee61b1d308d8a37b0d6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa505c9133727ee61b1d308d8a37b0d6e">&#9670;&nbsp;</a></span>WriteDouble()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ILRuntime.Mono.Cecil.PE.ByteBuffer.WriteDouble </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_byte_buffer_8cs_source.html">ByteBuffer.cs</a> 第 <a class="el" href="_byte_buffer_8cs_source.html#l00316">316</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae0f94f19a19abb727f66c9744926394b" name="ae0f94f19a19abb727f66c9744926394b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0f94f19a19abb727f66c9744926394b">&#9670;&nbsp;</a></span>WriteInt16()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ILRuntime.Mono.Cecil.PE.ByteBuffer.WriteInt16 </td>
+          <td>(</td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_byte_buffer_8cs_source.html">ByteBuffer.cs</a> 第 <a class="el" href="_byte_buffer_8cs_source.html#l00191">191</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae3ea4419207ee384400962f5f5e79e01" name="ae3ea4419207ee384400962f5f5e79e01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3ea4419207ee384400962f5f5e79e01">&#9670;&nbsp;</a></span>WriteInt32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ILRuntime.Mono.Cecil.PE.ByteBuffer.WriteInt32 </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_byte_buffer_8cs_source.html">ByteBuffer.cs</a> 第 <a class="el" href="_byte_buffer_8cs_source.html#l00210">210</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a31d26fb529cbd129bbc200127d8fb1e2" name="a31d26fb529cbd129bbc200127d8fb1e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31d26fb529cbd129bbc200127d8fb1e2">&#9670;&nbsp;</a></span>WriteInt64()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ILRuntime.Mono.Cecil.PE.ByteBuffer.WriteInt64 </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_byte_buffer_8cs_source.html">ByteBuffer.cs</a> 第 <a class="el" href="_byte_buffer_8cs_source.html#l00233">233</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a19e40239154ab4e13cad0b34fd756381" name="a19e40239154ab4e13cad0b34fd756381"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19e40239154ab4e13cad0b34fd756381">&#9670;&nbsp;</a></span>WriteSByte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ILRuntime.Mono.Cecil.PE.ByteBuffer.WriteSByte </td>
+          <td>(</td>
+          <td class="paramtype">sbyte&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_byte_buffer_8cs_source.html">ByteBuffer.cs</a> 第 <a class="el" href="_byte_buffer_8cs_source.html#l00174">174</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a94bcbc4185130aedcd2b14397fa10d04" name="a94bcbc4185130aedcd2b14397fa10d04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94bcbc4185130aedcd2b14397fa10d04">&#9670;&nbsp;</a></span>WriteSingle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ILRuntime.Mono.Cecil.PE.ByteBuffer.WriteSingle </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_byte_buffer_8cs_source.html">ByteBuffer.cs</a> 第 <a class="el" href="_byte_buffer_8cs_source.html#l00306">306</a> 行定义.</p>
+
+</div>
+</div>
+<a id="adc8762c9cec80ebc5d841637aeb8e508" name="adc8762c9cec80ebc5d841637aeb8e508"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc8762c9cec80ebc5d841637aeb8e508">&#9670;&nbsp;</a></span>WriteUInt16()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ILRuntime.Mono.Cecil.PE.ByteBuffer.WriteUInt16 </td>
+          <td>(</td>
+          <td class="paramtype">ushort&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_byte_buffer_8cs_source.html">ByteBuffer.cs</a> 第 <a class="el" href="_byte_buffer_8cs_source.html#l00179">179</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a46b34eabca660c15ebbc8b3c1cdfca04" name="a46b34eabca660c15ebbc8b3c1cdfca04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46b34eabca660c15ebbc8b3c1cdfca04">&#9670;&nbsp;</a></span>WriteUInt32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ILRuntime.Mono.Cecil.PE.ByteBuffer.WriteUInt32 </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_byte_buffer_8cs_source.html">ByteBuffer.cs</a> 第 <a class="el" href="_byte_buffer_8cs_source.html#l00196">196</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa0597b08fc0ee139272f20a2cfc7419d" name="aa0597b08fc0ee139272f20a2cfc7419d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0597b08fc0ee139272f20a2cfc7419d">&#9670;&nbsp;</a></span>WriteUInt64()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ILRuntime.Mono.Cecil.PE.ByteBuffer.WriteUInt64 </td>
+          <td>(</td>
+          <td class="paramtype">ulong&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_byte_buffer_8cs_source.html">ByteBuffer.cs</a> 第 <a class="el" href="_byte_buffer_8cs_source.html#l00215">215</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>Unity/Assets/ThirdParty/ILRuntime/Mono.Cecil/Mono.Cecil.PE/<a class="el" href="_byte_buffer_8cs_source.html">ByteBuffer.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_i_l_runtime.html">ILRuntime</a></li><li class="navelem"><a class="el" href="namespace_i_l_runtime_1_1_mono.html">Mono</a></li><li class="navelem"><a class="el" href="namespace_i_l_runtime_1_1_mono_1_1_cecil.html">Cecil</a></li><li class="navelem"><a class="el" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e.html">PE</a></li><li class="navelem"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html">ByteBuffer</a></li>
+    <li class="footer">生成于 2022年 一月 23日 星期日 19:16:26 , 为 ET使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

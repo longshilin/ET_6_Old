@@ -1,0 +1,982 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ET: Unity/Assets/ThirdParty/protobuf-net/Meta/ValueMember.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ET<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_value_member_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ValueMember.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_value_member_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#if !NO_RUNTIME</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using</span> <a class="code hl_variable" href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_proto_buf.html">ProtoBuf</a>.<a class="code hl_namespace" href="namespace_proto_buf_1_1_serializers.html">Serializers</a>;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_system.html">System</a>.Globalization;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_system.html">System</a>.<a class="code hl_namespace" href="namespace_system_1_1_collections.html">Collections</a>.<a class="code hl_namespace" href="namespace_system_1_1_collections_1_1_generic.html">Generic</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#if FEAT_IKVM</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">using</span> <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#ae7671ef7df96a23c9f8cbf77d72f04b1aa1fa27779242b4902f7ae3bdd5c6d508">Type</a> = IKVM.Reflection.Type;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">using</span> IKVM.Reflection;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_system.html">System</a>.Reflection;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_proto_buf_1_1_meta.html">ProtoBuf.Meta</a></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_meta_1_1_value_member.html">   20</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_proto_buf_1_1_meta_1_1_value_member.html">ValueMember</a></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keyword">private</span> readonly <span class="keywordtype">int</span> fieldNumber;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_meta_1_1_value_member.html#a7819b6f79ae134f4654c4baac18c9fad">   26</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a7819b6f79ae134f4654c4baac18c9fad">FieldNumber</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> fieldNumber; } }</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keyword">private</span> readonly MemberInfo originalMember;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keyword">private</span> MemberInfo backingMember;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_meta_1_1_value_member.html#ac69d927b3206131543239082571c285d">   32</a></span>        <span class="keyword">public</span> MemberInfo <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#ac69d927b3206131543239082571c285d">Member</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> originalMember; } }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_meta_1_1_value_member.html#a3560e227cca181be523f22a3a24d632c">   36</a></span>        <span class="keyword">public</span> MemberInfo <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a3560e227cca181be523f22a3a24d632c">BackingMember</a></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> backingMember; }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <span class="keyword">set</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                <span class="keywordflow">if</span>(backingMember != value)</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                    ThrowIfFrozen();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                    backingMember = value;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keyword">private</span> readonly Type parentType, itemType, defaultType, memberType;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keyword">private</span> <span class="keywordtype">object</span> defaultValue;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_meta_1_1_value_member.html#a644a5fd8a155128e8be434f1111f7630">   55</a></span>        <span class="keyword">public</span> Type <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a644a5fd8a155128e8be434f1111f7630">ItemType</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> itemType; } }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_meta_1_1_value_member.html#a7eeb2504815943068ef3f01547b9e55c">   59</a></span>        <span class="keyword">public</span> Type <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a7eeb2504815943068ef3f01547b9e55c">MemberType</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> memberType; } }</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_meta_1_1_value_member.html#a32a44ecb0f047500f0de05857a407662">   63</a></span>        <span class="keyword">public</span> Type <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a32a44ecb0f047500f0de05857a407662">DefaultType</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> defaultType; } }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_meta_1_1_value_member.html#a45efa6abaaf72c7b38c436b1f04e044d">   67</a></span>        <span class="keyword">public</span> Type <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a45efa6abaaf72c7b38c436b1f04e044d">ParentType</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> parentType; } }</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_meta_1_1_value_member.html#a9e149b6d3342276652505154f12c9410">   72</a></span>        <span class="keyword">public</span> <span class="keywordtype">object</span> <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a9e149b6d3342276652505154f12c9410">DefaultValue</a></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> defaultValue; }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keyword">set</span> {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                <span class="keywordflow">if</span> (defaultValue != value)</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                    ThrowIfFrozen();</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                    defaultValue = value;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        }</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keyword">private</span> readonly <a class="code hl_class" href="class_proto_buf_1_1_meta_1_1_runtime_type_model.html">RuntimeTypeModel</a> model;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_meta_1_1_value_member.html#a33535e9efb5f81140728e937aa934bd1">   88</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_proto_buf_1_1_meta_1_1_value_member.html#a33535e9efb5f81140728e937aa934bd1">ValueMember</a>(<a class="code hl_class" href="class_proto_buf_1_1_meta_1_1_runtime_type_model.html">RuntimeTypeModel</a> model, Type parentType, <span class="keywordtype">int</span> fieldNumber, MemberInfo member, Type memberType, Type itemType, Type defaultType, <a class="code hl_enumeration" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a> dataFormat, <span class="keywordtype">object</span> defaultValue) </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            : this(model, fieldNumber,memberType, itemType, defaultType, dataFormat)</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        {</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            <span class="keywordflow">if</span> (member == <span class="keyword">null</span>) <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentNullException(<span class="stringliteral">&quot;member&quot;</span>);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            <span class="keywordflow">if</span> (parentType == <span class="keyword">null</span>) <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentNullException(<span class="stringliteral">&quot;parentType&quot;</span>);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <span class="keywordflow">if</span> (fieldNumber &lt; 1 &amp;&amp; !Helpers.IsEnum(parentType)) <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentOutOfRangeException(<span class="stringliteral">&quot;fieldNumber&quot;</span>);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            this.originalMember = member;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            this.parentType = parentType;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            <span class="keywordflow">if</span> (fieldNumber &lt; 1 &amp;&amp; !Helpers.IsEnum(parentType)) <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentOutOfRangeException(<span class="stringliteral">&quot;fieldNumber&quot;</span>);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment">//#if WINRT</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <span class="keywordflow">if</span> (defaultValue != <span class="keyword">null</span> &amp;&amp; model.MapType(defaultValue.GetType()) != memberType)</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">//#else</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">//            if (defaultValue != null &amp;&amp; !memberType.IsInstanceOfType(defaultValue))</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">//#endif</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            {</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                defaultValue = ParseDefaultValue(memberType, defaultValue);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            }</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            this.defaultValue = defaultValue;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            <a class="code hl_class" href="class_proto_buf_1_1_meta_1_1_meta_type.html">MetaType</a> type = model.FindWithoutAdd(memberType);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            <span class="keywordflow">if</span> (type != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            {</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#abbca95abe9e2f2d6a2655c42aea76ffe">AsReference</a> = type.<a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_meta_type.html#abea7924c3bd02adbf4194d05ef830cef">AsReferenceDefault</a>;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            }</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            { <span class="comment">// we need to scan the hard way; can&#39;t risk recursion by fully walking it</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#abbca95abe9e2f2d6a2655c42aea76ffe">AsReference</a> = <a class="code hl_class" href="class_proto_buf_1_1_meta_1_1_meta_type.html">MetaType</a>.GetAsReferenceDefault(model, memberType);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            }</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        }</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        <span class="keyword">internal</span> <a class="code hl_function" href="class_proto_buf_1_1_meta_1_1_value_member.html#a33535e9efb5f81140728e937aa934bd1">ValueMember</a>(<a class="code hl_class" href="class_proto_buf_1_1_meta_1_1_runtime_type_model.html">RuntimeTypeModel</a> model, <span class="keywordtype">int</span> fieldNumber, Type memberType, Type itemType, Type defaultType, <a class="code hl_enumeration" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a> dataFormat) </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        {</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            <span class="keywordflow">if</span> (memberType == <span class="keyword">null</span>) <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentNullException(<span class="stringliteral">&quot;memberType&quot;</span>);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            <span class="keywordflow">if</span> (model == <span class="keyword">null</span>) <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentNullException(<span class="stringliteral">&quot;model&quot;</span>);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            this.fieldNumber = fieldNumber;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            this.memberType = memberType is <a class="code hl_namespace" href="namespace_i_l_runtime.html">ILRuntime</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_reflection.html">Reflection</a>.<a class="code hl_class" href="class_i_l_runtime_1_1_reflection_1_1_i_l_runtime_wrapper_type.html">ILRuntimeWrapperType</a></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                ? ((<a class="code hl_namespace" href="namespace_i_l_runtime.html">ILRuntime</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_reflection.html">Reflection</a>.<a class="code hl_class" href="class_i_l_runtime_1_1_reflection_1_1_i_l_runtime_wrapper_type.html">ILRuntimeWrapperType</a>) memberType).<a class="code hl_property" href="class_i_l_runtime_1_1_reflection_1_1_i_l_runtime_wrapper_type.html#a22fafb59830a0c49fb39aa8692552913">RealType</a></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>                : memberType;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            this.itemType = itemType;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            this.defaultType = defaultType;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>            this.model = model;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            this.dataFormat = dataFormat;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        }</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        <span class="keyword">internal</span> <span class="keywordtype">object</span> GetRawEnumValue()</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        {</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="preprocessor">#if WINRT || PORTABLE || CF || FX11 || COREFX</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            <span class="keywordtype">object</span> value = ((FieldInfo)originalMember).GetValue(<span class="keyword">null</span>);</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            <span class="keywordflow">switch</span>(Helpers.GetTypeCode(Enum.GetUnderlyingType(((FieldInfo)originalMember).FieldType)))</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            {</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                <span class="keywordflow">case</span> ProtoTypeCode.SByte: <span class="keywordflow">return</span> (sbyte)value;</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                <span class="keywordflow">case</span> ProtoTypeCode.Byte: <span class="keywordflow">return</span> (<span class="keywordtype">byte</span>)value;</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>                <span class="keywordflow">case</span> ProtoTypeCode.Int16: <span class="keywordflow">return</span> (<span class="keywordtype">short</span>)value;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>                <span class="keywordflow">case</span> ProtoTypeCode.UInt16: <span class="keywordflow">return</span> (ushort)value;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>                <span class="keywordflow">case</span> ProtoTypeCode.Int32: <span class="keywordflow">return</span> (<span class="keywordtype">int</span>)value;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                <span class="keywordflow">case</span> ProtoTypeCode.UInt32: <span class="keywordflow">return</span> (uint)value;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>                <span class="keywordflow">case</span> ProtoTypeCode.Int64: <span class="keywordflow">return</span> (<span class="keywordtype">long</span>)value;</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>                <span class="keywordflow">case</span> ProtoTypeCode.UInt64: <span class="keywordflow">return</span> (ulong)value;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException();</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>            }</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            <span class="keywordflow">return</span> ((FieldInfo)originalMember).GetRawConstantValue();</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        }</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">object</span> ParseDefaultValue(Type type, <span class="keywordtype">object</span> value)</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        {</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>                        <span class="keywordflow">if</span>(<span class="keyword">true</span>)</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            {</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>                <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#ae7671ef7df96a23c9f8cbf77d72f04b1aa1fa27779242b4902f7ae3bdd5c6d508">Type</a> tmp = Helpers.GetUnderlyingType(type);</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>                <span class="keywordflow">if</span> (tmp != <span class="keyword">null</span>) type = tmp;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>            }</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>                        <span class="keywordflow">switch</span> (Helpers.GetTypeCode(type))</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>                        {</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                        <span class="keywordflow">case</span> ProtoTypeCode.Boolean: </div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>                        <span class="keywordflow">case</span> ProtoTypeCode.Byte: </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>                        <span class="keywordflow">case</span> ProtoTypeCode.Char: <span class="comment">// char.Parse missing on CF/phone7</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>                        <span class="keywordflow">case</span> ProtoTypeCode.DateTime: </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>                        <span class="keywordflow">case</span> ProtoTypeCode.Decimal: </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>                        <span class="keywordflow">case</span> ProtoTypeCode.Double: </div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>                        <span class="keywordflow">case</span> ProtoTypeCode.Int16: </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>                        <span class="keywordflow">case</span> ProtoTypeCode.Int32: </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>                        <span class="keywordflow">case</span> ProtoTypeCode.Int64: </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>                        <span class="keywordflow">case</span> ProtoTypeCode.SByte: </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                        <span class="keywordflow">case</span> ProtoTypeCode.Single: </div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>                        <span class="keywordflow">case</span> ProtoTypeCode.String:</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>                        <span class="keywordflow">case</span> ProtoTypeCode.UInt16:</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                        <span class="keywordflow">case</span> ProtoTypeCode.UInt32:</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>                        <span class="keywordflow">case</span> ProtoTypeCode.UInt64:</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                        <span class="keywordflow">case</span> ProtoTypeCode.TimeSpan:</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>                        <span class="keywordflow">case</span> ProtoTypeCode.Uri:</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>                        <span class="keywordflow">case</span> ProtoTypeCode.Guid:</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>                                {</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>                                        value = value + <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>                                }</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>                                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>                        }</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>            <span class="keywordflow">if</span> (value is <span class="keywordtype">string</span>)</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>            {</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>                <span class="keywordtype">string</span> <a class="code hl_enumvalue" href="namespace_e_t.html#a998904d546bf4d60e243f2b8c9bf1239a03c7c0ace395d80182db07ae2c30f034">s</a> = (string)value;</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>                <span class="keywordflow">if</span> (Helpers.IsEnum(type)) <span class="keywordflow">return</span> Helpers.ParseEnum(type, s);</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>                <span class="keywordflow">switch</span> (Helpers.GetTypeCode(type))</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>                {</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>                    <span class="keywordflow">case</span> ProtoTypeCode.Boolean: <span class="keywordflow">return</span> <span class="keywordtype">bool</span>.Parse(s);</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>                    <span class="keywordflow">case</span> ProtoTypeCode.Byte: <span class="keywordflow">return</span> <span class="keywordtype">byte</span>.Parse(s, NumberStyles.Integer, CultureInfo.InvariantCulture);</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>                    <span class="keywordflow">case</span> ProtoTypeCode.Char: <span class="comment">// char.Parse missing on CF/phone7</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>                        <span class="keywordflow">if</span> (<a class="code hl_enumvalue" href="namespace_e_t.html#a998904d546bf4d60e243f2b8c9bf1239a03c7c0ace395d80182db07ae2c30f034">s</a>.Length == 1) <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="namespace_e_t.html#a998904d546bf4d60e243f2b8c9bf1239a03c7c0ace395d80182db07ae2c30f034">s</a>[0];</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>                        <span class="keywordflow">throw</span> <span class="keyword">new</span> FormatException(<span class="stringliteral">&quot;Single character expected: \&quot;&quot;</span> + s + <span class="stringliteral">&quot;\&quot;&quot;</span>);</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>                    <span class="keywordflow">case</span> ProtoTypeCode.DateTime: <span class="keywordflow">return</span> DateTime.Parse(s, CultureInfo.InvariantCulture);</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>                    <span class="keywordflow">case</span> ProtoTypeCode.Decimal: <span class="keywordflow">return</span> decimal.Parse(s, NumberStyles.Any, CultureInfo.InvariantCulture);</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>                    <span class="keywordflow">case</span> ProtoTypeCode.Double: <span class="keywordflow">return</span> <span class="keywordtype">double</span>.Parse(s, NumberStyles.Any, CultureInfo.InvariantCulture);</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>                    <span class="keywordflow">case</span> ProtoTypeCode.Int16: <span class="keywordflow">return</span> <span class="keywordtype">short</span>.Parse(s, NumberStyles.Any, CultureInfo.InvariantCulture);</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>                    <span class="keywordflow">case</span> ProtoTypeCode.Int32: <span class="keywordflow">return</span> <span class="keywordtype">int</span>.Parse(s, NumberStyles.Any, CultureInfo.InvariantCulture);</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>                    <span class="keywordflow">case</span> ProtoTypeCode.Int64: <span class="keywordflow">return</span> <span class="keywordtype">long</span>.Parse(s, NumberStyles.Any, CultureInfo.InvariantCulture);</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>                    <span class="keywordflow">case</span> ProtoTypeCode.SByte: <span class="keywordflow">return</span> sbyte.Parse(s, NumberStyles.Integer, CultureInfo.InvariantCulture);</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                    <span class="keywordflow">case</span> ProtoTypeCode.Single: <span class="keywordflow">return</span> <span class="keywordtype">float</span>.Parse(s, NumberStyles.Any, CultureInfo.InvariantCulture);</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>                    <span class="keywordflow">case</span> ProtoTypeCode.String: <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="namespace_e_t.html#a998904d546bf4d60e243f2b8c9bf1239a03c7c0ace395d80182db07ae2c30f034">s</a>;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>                    <span class="keywordflow">case</span> ProtoTypeCode.UInt16: <span class="keywordflow">return</span> ushort.Parse(s, NumberStyles.Any, CultureInfo.InvariantCulture);</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>                    <span class="keywordflow">case</span> ProtoTypeCode.UInt32: <span class="keywordflow">return</span> uint.Parse(s, NumberStyles.Any, CultureInfo.InvariantCulture);</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>                    <span class="keywordflow">case</span> ProtoTypeCode.UInt64: <span class="keywordflow">return</span> ulong.Parse(s, NumberStyles.Any, CultureInfo.InvariantCulture);</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>                    <span class="keywordflow">case</span> ProtoTypeCode.TimeSpan: <span class="keywordflow">return</span> TimeSpan.Parse(s);</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>                    <span class="keywordflow">case</span> ProtoTypeCode.Uri: <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="namespace_e_t.html#a998904d546bf4d60e243f2b8c9bf1239a03c7c0ace395d80182db07ae2c30f034">s</a>; <span class="comment">// Uri is decorated as string</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>                    <span class="keywordflow">case</span> ProtoTypeCode.Guid: <span class="keywordflow">return</span> <span class="keyword">new</span> Guid(s);</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>                }</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>            }</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="preprocessor">#if FEAT_IKVM</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>            <span class="keywordflow">if</span> (Helpers.IsEnum(type)) <span class="keywordflow">return</span> value; <span class="comment">// return the underlying type instead</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>            <a class="code hl_namespace" href="namespace_system.html">System</a>.Type convertType = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>            <span class="keywordflow">switch</span>(Helpers.GetTypeCode(type))</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>            {</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>                <span class="keywordflow">case</span> ProtoTypeCode.SByte: convertType = typeof(sbyte); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>                <span class="keywordflow">case</span> ProtoTypeCode.Int16: convertType = typeof(<span class="keywordtype">short</span>); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>                <span class="keywordflow">case</span> ProtoTypeCode.Int32: convertType = typeof(<span class="keywordtype">int</span>); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>                <span class="keywordflow">case</span> ProtoTypeCode.Int64: convertType = typeof(<span class="keywordtype">long</span>); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>                <span class="keywordflow">case</span> ProtoTypeCode.Byte: convertType = typeof(<span class="keywordtype">byte</span>); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>                <span class="keywordflow">case</span> ProtoTypeCode.UInt16: convertType = typeof(ushort); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>                <span class="keywordflow">case</span> ProtoTypeCode.UInt32: convertType = typeof(uint); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>                <span class="keywordflow">case</span> ProtoTypeCode.UInt64: convertType = typeof(ulong); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                <span class="keywordflow">case</span> ProtoTypeCode.Single: convertType = typeof(<span class="keywordtype">float</span>); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                <span class="keywordflow">case</span> ProtoTypeCode.Double: convertType = typeof(<span class="keywordtype">double</span>); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>                <span class="keywordflow">case</span> ProtoTypeCode.Decimal: convertType = typeof(decimal); <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>            }</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>            <span class="keywordflow">if</span>(convertType != <span class="keyword">null</span>) <span class="keywordflow">return</span> Convert.ChangeType(value, convertType, CultureInfo.InvariantCulture);</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentException(<span class="stringliteral">&quot;Unable to process default value: &quot;</span> + value + <span class="stringliteral">&quot;, &quot;</span> + type.FullName);</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>            <span class="keywordflow">if</span> (Helpers.IsEnum(type))</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>            {</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>                <span class="keywordflow">if</span> (value is <a class="code hl_namespace" href="namespace_i_l_runtime.html">ILRuntime</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_mono.html">Mono</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_mono_1_1_cecil.html">Cecil</a>.<a class="code hl_struct" href="struct_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute_argument.html">CustomAttributeArgument</a>)</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>                {</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>                    var v = (<a class="code hl_namespace" href="namespace_i_l_runtime.html">ILRuntime</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_mono.html">Mono</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_mono_1_1_cecil.html">Cecil</a>.<a class="code hl_struct" href="struct_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute_argument.html">CustomAttributeArgument</a>)value;</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>                    <span class="keywordflow">return</span> v.Value;</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>                }</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>                </div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>                <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#ae7671ef7df96a23c9f8cbf77d72f04b1acf20423ed48998082c20099488a0917c">Enum</a>.ToObject(type, value);</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>            }</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>            <span class="keywordflow">return</span> Convert.ChangeType(value, type, CultureInfo.InvariantCulture);</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        }</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        <span class="keyword">private</span> <a class="code hl_interface" href="interface_proto_buf_1_1_serializers_1_1_i_proto_serializer.html">IProtoSerializer</a> serializer;</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>        <span class="keyword">internal</span> <a class="code hl_interface" href="interface_proto_buf_1_1_serializers_1_1_i_proto_serializer.html">IProtoSerializer</a> Serializer</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>        {</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>            <span class="keyword">get</span></div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>            {</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>                <span class="keywordflow">if</span> (serializer == <span class="keyword">null</span>) serializer = BuildSerializer();</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>                <span class="keywordflow">return</span> serializer;</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>            }</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>        }</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        <span class="keyword">private</span> <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#ab496925a728e526eca4014865a72cc4c">DataFormat</a> dataFormat;</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_meta_1_1_value_member.html#ab496925a728e526eca4014865a72cc4c">  266</a></span>        <span class="keyword">public</span> <a class="code hl_enumeration" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a> <a class="code hl_enumeration" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a> {</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> dataFormat; }</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>            <span class="keyword">set</span></div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>            {</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>                <span class="keywordflow">if</span> (value != dataFormat)</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>                {</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>                    ThrowIfFrozen();</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>                    this.dataFormat = value;</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>                }</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>            }</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        }</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span> </div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_meta_1_1_value_member.html#ab101c26c280118f224c6c9372eddbcab">  283</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#ab101c26c280118f224c6c9372eddbcab">IsStrict</a></div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        {</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> HasFlag(OPTIONS_IsStrict); }</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>            <span class="keyword">set</span> { SetFlag(OPTIONS_IsStrict, value, <span class="keyword">true</span>); }</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>        }</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span> </div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_meta_1_1_value_member.html#a9b122ee3b84e4f25c54ab00c1d0e2fd2">  293</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a9b122ee3b84e4f25c54ab00c1d0e2fd2">IsPacked</a></div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>        {</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> HasFlag(OPTIONS_IsPacked); }</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>            <span class="keyword">set</span> { SetFlag(OPTIONS_IsPacked, value, <span class="keyword">true</span>); }</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>        }</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span> </div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_meta_1_1_value_member.html#a14083d473b2f90e06ba4693fb0e67929">  303</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a14083d473b2f90e06ba4693fb0e67929">OverwriteList</a></div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>        {</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> HasFlag(OPTIONS_OverwriteList); }</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>            <span class="keyword">set</span> { SetFlag(OPTIONS_OverwriteList, value, <span class="keyword">true</span>); }</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>        }</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span> </div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_meta_1_1_value_member.html#a850ece49a8018868079aada9595cdf7d">  312</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a850ece49a8018868079aada9595cdf7d">IsRequired</a></div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>        {</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> HasFlag(OPTIONS_IsRequired); }</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>            <span class="keyword">set</span> { SetFlag(OPTIONS_IsRequired, value, <span class="keyword">true</span>); }</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>        }</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span> </div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_meta_1_1_value_member.html#abbca95abe9e2f2d6a2655c42aea76ffe">  321</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#abbca95abe9e2f2d6a2655c42aea76ffe">AsReference</a></div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>        {</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> HasFlag(OPTIONS_AsReference); }</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>            <span class="keyword">set</span> { SetFlag(OPTIONS_AsReference, value, <span class="keyword">true</span>); }</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>        }</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span> </div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_meta_1_1_value_member.html#a4f7f506e9dba93f717f3ec5ce75c7920">  330</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a4f7f506e9dba93f717f3ec5ce75c7920">DynamicType</a></div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>        {</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> HasFlag(OPTIONS_DynamicType); }</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>            <span class="keyword">set</span> { SetFlag(OPTIONS_DynamicType, value, <span class="keyword">true</span>); }</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>        }</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span> </div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_meta_1_1_value_member.html#a6dae90b7d6ee9d33e854b4394fbd8311">  339</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a6dae90b7d6ee9d33e854b4394fbd8311">IsMap</a></div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>        {</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> HasFlag(OPTIONS_IsMap); }</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>            <span class="keyword">set</span> { SetFlag(OPTIONS_IsMap, value, <span class="keyword">true</span>); }</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>        }</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span> </div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>        <span class="keyword">private</span> <a class="code hl_enumeration" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a> mapKeyFormat, mapValueFormat;</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_meta_1_1_value_member.html#a3205970f1d1a04bb13770fe42ab680cc">  349</a></span>        <span class="keyword">public</span> <a class="code hl_enumeration" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a> <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a3205970f1d1a04bb13770fe42ab680cc">MapKeyFormat</a></div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>        {</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> mapKeyFormat; }</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>            <span class="keyword">set</span></div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>            {</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>                <span class="keywordflow">if</span>(mapKeyFormat != value)</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>                {</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>                    ThrowIfFrozen();</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>                    mapKeyFormat = value;</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>                }</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>            }</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>        }</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_meta_1_1_value_member.html#a99600a271c29c63ce57e808e6656c3b8">  364</a></span>        <span class="keyword">public</span> <a class="code hl_enumeration" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a> <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a99600a271c29c63ce57e808e6656c3b8">MapValueFormat</a></div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>        {</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> mapValueFormat; }</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>            <span class="keyword">set</span></div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>            {</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>                <span class="keywordflow">if</span> (mapValueFormat != value)</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>                {</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>                    ThrowIfFrozen();</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>                    mapValueFormat = value;</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>                }</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>            }</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>        }</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span> </div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>        <span class="keyword">private</span> MethodInfo getSpecified, setSpecified;</div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_meta_1_1_value_member.html#a3e4040257f49f3d22f0cbde93b59c380">  387</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_proto_buf_1_1_meta_1_1_value_member.html#a3e4040257f49f3d22f0cbde93b59c380">SetSpecified</a>(MethodInfo getSpecified, MethodInfo setSpecified)</div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>        {</div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>            <span class="keywordflow">if</span> (this.getSpecified != getSpecified || this.setSpecified != setSpecified)</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>            {</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>                <span class="keywordflow">if</span> (getSpecified != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>                {</div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>                    <span class="keywordflow">if</span> (getSpecified.ReturnType != model.MapType(typeof(<span class="keywordtype">bool</span>))</div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>                        || getSpecified.IsStatic</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>                        || getSpecified.GetParameters().Length != 0)</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>                    {</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>                        <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentException(<span class="stringliteral">&quot;Invalid pattern for checking member-specified&quot;</span>, <span class="stringliteral">&quot;getSpecified&quot;</span>);</div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>                    }</div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>                }</div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>                <span class="keywordflow">if</span> (setSpecified != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>                {</div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>                    ParameterInfo[] args;</div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>                    <span class="keywordflow">if</span> (setSpecified.ReturnType != model.MapType(typeof(<span class="keywordtype">void</span>))</div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>                        || setSpecified.IsStatic</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>                        || (args = setSpecified.GetParameters()).Length != 1</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>                        || args[0].ParameterType != model.MapType(typeof(<span class="keywordtype">bool</span>)))</div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>                    {</div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>                        <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentException(<span class="stringliteral">&quot;Invalid pattern for setting member-specified&quot;</span>, <span class="stringliteral">&quot;setSpecified&quot;</span>);</div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>                    }</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>                }</div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span> </div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>                ThrowIfFrozen();</div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>                this.getSpecified = getSpecified;</div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>                this.setSpecified = setSpecified;</div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>            }</div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>        }</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>        <span class="keyword">private</span> <span class="keywordtype">void</span> ThrowIfFrozen()</div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>        {</div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>            <span class="keywordflow">if</span> (serializer != <span class="keyword">null</span>) <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(<span class="stringliteral">&quot;The type cannot be changed once a serializer has been generated&quot;</span>);</div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>        }</div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>        <span class="keyword">internal</span> <span class="keywordtype">bool</span> ResolveMapTypes(out Type dictionaryType, out Type keyType, out Type valueType)</div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>        {</div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>            dictionaryType = keyType = valueType = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span> </div>
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span><span class="preprocessor">#if WINRT || COREFX</span></div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>            var info = memberType.GetTypeInfo();</div>
+<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>            var info = memberType;</div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>                        MethodInfo b, a, ar, f;</div>
+<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>            <span class="keywordflow">if</span>(<a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_immutable_collection_decorator.html">ImmutableCollectionDecorator</a>.IdentifyImmutable(model, <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a7eeb2504815943068ef3f01547b9e55c">MemberType</a>, out b, out a, out ar, out f))</div>
+<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>            {</div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>            }</div>
+<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>            <span class="keywordflow">if</span> (info.IsInterface &amp;&amp; info.IsGenericType &amp;&amp; info.GetGenericTypeDefinition() == typeof(IDictionary&lt;,&gt;))</div>
+<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>            {</div>
+<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>                var typeArgs = memberType.GetGenericArguments();</div>
+<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span> </div>
+<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>                <span class="keywordflow">if</span> (IsValidMapKeyType(typeArgs[0]))</div>
+<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>                {</div>
+<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>                    keyType = typeArgs[0];</div>
+<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>                    valueType = typeArgs[1];</div>
+<div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span>                    dictionaryType = memberType;</div>
+<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>                }</div>
+<div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>            }</div>
+<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span> </div>
+<div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>            <span class="keywordflow">foreach</span> (var iType <span class="keywordflow">in</span> memberType.GetInterfaces())</div>
+<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>            {</div>
+<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span><span class="preprocessor">#if WINRT || COREFX</span></div>
+<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span>                info = iType.GetTypeInfo();</div>
+<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span>                info = iType;</div>
+<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>                <span class="keywordflow">if</span> (info.IsGenericType &amp;&amp; info.GetGenericTypeDefinition() == typeof(IDictionary&lt;,&gt;))</div>
+<div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>                {</div>
+<div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>                    <span class="keywordflow">if</span> (dictionaryType != <span class="keyword">null</span>) <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(<span class="stringliteral">&quot;Multiple dictionary interfaces implemented by type: &quot;</span> + memberType.FullName);</div>
+<div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span>                    var typeArgs = iType.GetGenericArguments();</div>
+<div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span> </div>
+<div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span>                    <span class="keywordflow">if</span> (IsValidMapKeyType(typeArgs[0]))</div>
+<div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span>                    {</div>
+<div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span>                        keyType = typeArgs[0];</div>
+<div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span>                        valueType = typeArgs[1];</div>
+<div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>                        dictionaryType = memberType;</div>
+<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>                    }</div>
+<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>                }</div>
+<div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span>            }</div>
+<div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>            <span class="keywordflow">if</span> (dictionaryType == <span class="keyword">null</span>) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span> </div>
+<div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>            <span class="comment">// (note we checked the key type already)</span></div>
+<div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span>            <span class="comment">// not a map if value is repeated</span></div>
+<div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span>            <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#ae7671ef7df96a23c9f8cbf77d72f04b1aa1fa27779242b4902f7ae3bdd5c6d508">Type</a> itemType = <span class="keyword">null</span>, defaultType = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span>            model.ResolveListTypes(valueType, ref itemType, ref defaultType);</div>
+<div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span>            <span class="keywordflow">if</span> (itemType != <span class="keyword">null</span>) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span> </div>
+<div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span>            <span class="keywordflow">return</span> dictionaryType != <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00477" name="l00477"></a><span class="lineno">  477</span>        }</div>
+<div class="line"><a id="l00478" name="l00478"></a><span class="lineno">  478</span> </div>
+<div class="line"><a id="l00479" name="l00479"></a><span class="lineno">  479</span>        <span class="keyword">static</span> <span class="keywordtype">bool</span> IsValidMapKeyType(Type type)</div>
+<div class="line"><a id="l00480" name="l00480"></a><span class="lineno">  480</span>        {</div>
+<div class="line"><a id="l00481" name="l00481"></a><span class="lineno">  481</span>            <span class="keywordflow">if</span> (type == <span class="keyword">null</span>) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00482" name="l00482"></a><span class="lineno">  482</span>            <span class="keywordflow">switch</span>(Helpers.GetTypeCode(type))</div>
+<div class="line"><a id="l00483" name="l00483"></a><span class="lineno">  483</span>            {</div>
+<div class="line"><a id="l00484" name="l00484"></a><span class="lineno">  484</span>                <span class="keywordflow">case</span> ProtoTypeCode.Boolean:</div>
+<div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span>                <span class="keywordflow">case</span> ProtoTypeCode.Byte:</div>
+<div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span>                <span class="keywordflow">case</span> ProtoTypeCode.Char:</div>
+<div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>                <span class="keywordflow">case</span> ProtoTypeCode.Int16:</div>
+<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>                <span class="keywordflow">case</span> ProtoTypeCode.Int32:</div>
+<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>                <span class="keywordflow">case</span> ProtoTypeCode.Int64:</div>
+<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>                <span class="keywordflow">case</span> ProtoTypeCode.String:</div>
+<div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span> </div>
+<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>                <span class="keywordflow">case</span> ProtoTypeCode.SByte:</div>
+<div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span>                <span class="keywordflow">case</span> ProtoTypeCode.UInt16:</div>
+<div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span>                <span class="keywordflow">case</span> ProtoTypeCode.UInt32:</div>
+<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>                <span class="keywordflow">case</span> ProtoTypeCode.UInt64:</div>
+<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span>            }</div>
+<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>        }</div>
+<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>        <span class="keyword">private</span> <a class="code hl_interface" href="interface_proto_buf_1_1_serializers_1_1_i_proto_serializer.html">IProtoSerializer</a> BuildSerializer()</div>
+<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span>        {</div>
+<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span>            <span class="keywordtype">int</span> opaqueToken = 0;</div>
+<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>            <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>            {</div>
+<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>                model.TakeLock(ref opaqueToken);<span class="comment">// check nobody is still adding this type</span></div>
+<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>                var member = backingMember ?? originalMember;</div>
+<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>                <a class="code hl_interface" href="interface_proto_buf_1_1_serializers_1_1_i_proto_serializer.html">IProtoSerializer</a> ser;</div>
+<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>                <span class="keywordflow">if</span> (<a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a6dae90b7d6ee9d33e854b4394fbd8311">IsMap</a>)</div>
+<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>                {</div>
+<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span>                                        <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#ae7671ef7df96a23c9f8cbf77d72f04b1aa1fa27779242b4902f7ae3bdd5c6d508">Type</a> dictionaryType,keyType,valueType;</div>
+<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span>                    ResolveMapTypes(out dictionaryType, out keyType, out valueType);</div>
+<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span> </div>
+<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span>                    <span class="keywordflow">if</span> (dictionaryType == <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>                    {</div>
+<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>                        <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(<span class="stringliteral">&quot;Unable to resolve map type for type: &quot;</span> + memberType.FullName);</div>
+<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span>                    }</div>
+<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>                    var concreteType = defaultType;</div>
+<div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span>                    <span class="keywordflow">if</span>(concreteType == <span class="keyword">null</span> &amp;&amp; Helpers.IsClass(memberType))</div>
+<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>                    {</div>
+<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>                        concreteType = memberType;</div>
+<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>                    }</div>
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>                                        <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a> keyWireType;</div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>                    var keySer = TryGetCoreSerializer(model, <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a3205970f1d1a04bb13770fe42ab680cc">MapKeyFormat</a>, keyType, out keyWireType, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>                    <span class="keywordflow">if</span>(!<a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#abbca95abe9e2f2d6a2655c42aea76ffe">AsReference</a>)</div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>                    {</div>
+<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span>                        <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#abbca95abe9e2f2d6a2655c42aea76ffe">AsReference</a> = MetaType.GetAsReferenceDefault(model, valueType);</div>
+<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>                    }</div>
+<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>                                        <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a> valueWireType;</div>
+<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>                    var valueSer = TryGetCoreSerializer(model, <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a99600a271c29c63ce57e808e6656c3b8">MapValueFormat</a>, valueType, out valueWireType, <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#abbca95abe9e2f2d6a2655c42aea76ffe">AsReference</a>, <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a4f7f506e9dba93f717f3ec5ce75c7920">DynamicType</a>, <span class="keyword">false</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span> </div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>                    var ctors = typeof(<a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_map_decorator.html">MapDecorator&lt;,,&gt;</a>).MakeGenericType(<span class="keyword">new</span> Type[] { dictionaryType, keyType, valueType }).GetConstructors(</div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>                        BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Instance);</div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>                    <span class="keywordflow">if</span> (ctors.Length != 1) <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(<span class="stringliteral">&quot;Unable to resolve MapDecorator constructor&quot;</span>);</div>
+<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>                    ser = (<a class="code hl_interface" href="interface_proto_buf_1_1_serializers_1_1_i_proto_serializer.html">IProtoSerializer</a>)ctors[0].Invoke(<span class="keyword">new</span> <span class="keywordtype">object</span>[] {model, concreteType, keySer, valueSer, fieldNumber,</div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>                        <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#ab496925a728e526eca4014865a72cc4c">DataFormat</a> == <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#ab496925a728e526eca4014865a72cc4c">DataFormat</a>.Group ? <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a>.StartGroup : <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a>.String, keyWireType, valueWireType, <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a14083d473b2f90e06ba4693fb0e67929">OverwriteList</a> });</div>
+<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>                }</div>
+<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>                <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>                {</div>
+<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>                    <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a> wireType;</div>
+<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>                    <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#ae7671ef7df96a23c9f8cbf77d72f04b1aa1fa27779242b4902f7ae3bdd5c6d508">Type</a> finalType = itemType == <span class="keyword">null</span> ? memberType : itemType;</div>
+<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>                    ser = TryGetCoreSerializer(model, dataFormat, finalType, out wireType, <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#abbca95abe9e2f2d6a2655c42aea76ffe">AsReference</a>, <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a4f7f506e9dba93f717f3ec5ce75c7920">DynamicType</a>, <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a14083d473b2f90e06ba4693fb0e67929">OverwriteList</a>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>                    <span class="keywordflow">if</span> (ser == <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>                    {</div>
+<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>                        <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(<span class="stringliteral">&quot;No serializer defined for type: &quot;</span> + finalType.FullName);</div>
+<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>                    }</div>
+<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span> </div>
+<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>                    <span class="comment">// apply tags</span></div>
+<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>                    <span class="keywordflow">if</span> (itemType != <span class="keyword">null</span> &amp;&amp; <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a83908577b70d0cc51d76d1c869157888">SupportNull</a>)</div>
+<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>                    {</div>
+<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>                        <span class="keywordflow">if</span> (<a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a9b122ee3b84e4f25c54ab00c1d0e2fd2">IsPacked</a>)</div>
+<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>                        {</div>
+<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>                            <span class="keywordflow">throw</span> <span class="keyword">new</span> NotSupportedException(<span class="stringliteral">&quot;Packed encodings cannot support null values&quot;</span>);</div>
+<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>                        }</div>
+<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>                        ser = <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_tag_decorator.html">TagDecorator</a>(<a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_null_decorator.html">NullDecorator</a>.<a class="code hl_variable" href="class_proto_buf_1_1_serializers_1_1_null_decorator.html#a2d7b47a28c60fbb0c49412f202daa723">Tag</a>, wireType, <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#ab101c26c280118f224c6c9372eddbcab">IsStrict</a>, ser);</div>
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>                        ser = <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_null_decorator.html">NullDecorator</a>(model, ser);</div>
+<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>                        ser = <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_tag_decorator.html">TagDecorator</a>(fieldNumber, <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a>.StartGroup, <span class="keyword">false</span>, ser);</div>
+<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>                    }</div>
+<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>                    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>                    {</div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>                        ser = <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_tag_decorator.html">TagDecorator</a>(fieldNumber, wireType, <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#ab101c26c280118f224c6c9372eddbcab">IsStrict</a>, ser);</div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>                    }</div>
+<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>                    <span class="comment">// apply lists if appropriate</span></div>
+<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>                    <span class="keywordflow">if</span> (itemType != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>                    {</div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span><span class="preprocessor">#if NO_GENERICS</span></div>
+<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>                    <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#ae7671ef7df96a23c9f8cbf77d72f04b1aa1fa27779242b4902f7ae3bdd5c6d508">Type</a> underlyingItemType = itemType;</div>
+<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>                        <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#ae7671ef7df96a23c9f8cbf77d72f04b1aa1fa27779242b4902f7ae3bdd5c6d508">Type</a> underlyingItemType = <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a83908577b70d0cc51d76d1c869157888">SupportNull</a> ? itemType : Helpers.GetUnderlyingType(itemType) ?? itemType;</div>
+<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>                        Helpers.DebugAssert(underlyingItemType == ser.<a class="code hl_property" href="interface_proto_buf_1_1_serializers_1_1_i_proto_serializer.html#a7a4ad64ff1a1d8bbba47754f751e0aee">ExpectedType</a></div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>                            || (ser.<a class="code hl_property" href="interface_proto_buf_1_1_serializers_1_1_i_proto_serializer.html#a7a4ad64ff1a1d8bbba47754f751e0aee">ExpectedType</a> == model.MapType(typeof(<span class="keywordtype">object</span>)) &amp;&amp; !Helpers.IsValueType(underlyingItemType))</div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>                            , <span class="stringliteral">&quot;Wrong type in the tail; expected {0}, received {1}&quot;</span>, ser.<a class="code hl_property" href="interface_proto_buf_1_1_serializers_1_1_i_proto_serializer.html#a7a4ad64ff1a1d8bbba47754f751e0aee">ExpectedType</a>, underlyingItemType);</div>
+<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>                        <span class="keywordflow">if</span> (memberType.IsArray)</div>
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>                        {</div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>                            ser = <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_array_decorator.html">ArrayDecorator</a>(model, ser, fieldNumber, <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a9b122ee3b84e4f25c54ab00c1d0e2fd2">IsPacked</a>, wireType, memberType, <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a14083d473b2f90e06ba4693fb0e67929">OverwriteList</a>, <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a83908577b70d0cc51d76d1c869157888">SupportNull</a>);</div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>                        }</div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>                        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>                        {</div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>                            ser = <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_list_decorator.html">ListDecorator</a>.Create(model, memberType, defaultType, ser, fieldNumber, <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a9b122ee3b84e4f25c54ab00c1d0e2fd2">IsPacked</a>, wireType, member != <span class="keyword">null</span> &amp;&amp; <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_property_decorator.html">PropertyDecorator</a>.CanWrite(model, member), <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a14083d473b2f90e06ba4693fb0e67929">OverwriteList</a>, <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a83908577b70d0cc51d76d1c869157888">SupportNull</a>);</div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>                        }</div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>                    }</div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>                    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (defaultValue != <span class="keyword">null</span> &amp;&amp; !<a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a850ece49a8018868079aada9595cdf7d">IsRequired</a> &amp;&amp; getSpecified == <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>                    {   <span class="comment">// note: &quot;ShouldSerialize*&quot; / &quot;*Specified&quot; / etc ^^^^ take precedence over defaultValue,</span></div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>                        <span class="comment">// as does &quot;IsRequired&quot;</span></div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>                        ser = <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_default_value_decorator.html">DefaultValueDecorator</a>(model, defaultValue, ser);</div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>                    }</div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>                    <span class="keywordflow">if</span> (memberType == model.MapType(typeof(Uri)))</div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>                    {</div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>                        ser = <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_uri_decorator.html">UriDecorator</a>(model, ser);</div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>                    }</div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span><span class="preprocessor">#if PORTABLE</span></div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(memberType.FullName == typeof(Uri).FullName)</div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>                    {</div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>                        <span class="comment">// In PCLs, the Uri type may not match (WinRT uses Internal/Uri, .Net uses System/Uri)</span></div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>                        ser = <span class="keyword">new</span> ReflectedUriDecorator(memberType, model, ser);</div>
+<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>                    }</div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>                }</div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>                <span class="keywordflow">if</span> (member != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>                {</div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>                    PropertyInfo prop = member as PropertyInfo;</div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>                    <span class="keywordflow">if</span> (prop != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>                    {</div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>                        ser = <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_property_decorator.html">PropertyDecorator</a>(model, parentType, (PropertyInfo)member, ser);</div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>                    }</div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>                    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>                    {</div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>                        FieldInfo fld = member as FieldInfo;</div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>                        <span class="keywordflow">if</span> (fld != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>                        {</div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>                            ser = <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_field_decorator.html">FieldDecorator</a>(parentType, (FieldInfo)member, ser);</div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>                        }</div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>                        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>                        {</div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>                            <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException();</div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>                        }</div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>                    }</div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>                    <span class="keywordflow">if</span> (getSpecified != <span class="keyword">null</span> || setSpecified != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>                    {</div>
+<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>                        ser = <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_member_specified_decorator.html">MemberSpecifiedDecorator</a>(getSpecified, setSpecified, ser);</div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>                    }</div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>                }</div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>                <span class="keywordflow">return</span> ser;</div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>            }</div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>            <span class="keywordflow">finally</span></div>
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>            {</div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>                model.ReleaseLock(opaqueToken);</div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>            }</div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>        }</div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span> </div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>        <span class="keyword">private</span> <span class="keyword">static</span> <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a> GetIntWireType(<a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#ab496925a728e526eca4014865a72cc4c">DataFormat</a> format, <span class="keywordtype">int</span> width) {</div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>            <span class="keywordflow">switch</span>(format) {</div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>                <span class="keywordflow">case</span> <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#ab496925a728e526eca4014865a72cc4c">DataFormat</a>.ZigZag: <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a>.SignedVariant;</div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>                <span class="keywordflow">case</span> <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#ab496925a728e526eca4014865a72cc4c">DataFormat</a>.FixedSize: <span class="keywordflow">return</span> width == 32 ? <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a>.Fixed32 : <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a>.Fixed64;</div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>                <span class="keywordflow">case</span> <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#ab496925a728e526eca4014865a72cc4c">DataFormat</a>.TwosComplement:</div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>                <span class="keywordflow">case</span> <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#ab496925a728e526eca4014865a72cc4c">DataFormat</a>.Default: <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a>.Variant;</div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>                <span class="keywordflow">default</span>: <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException();</div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>            }</div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>        }</div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>        <span class="keyword">private</span> <span class="keyword">static</span> <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a> GetDateTimeWireType(<a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#ab496925a728e526eca4014865a72cc4c">DataFormat</a> format)</div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>        {</div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>            <span class="keywordflow">switch</span> (format)</div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>            {</div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>                </div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>                <span class="keywordflow">case</span> <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#ab496925a728e526eca4014865a72cc4c">DataFormat</a>.Group: <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a>.StartGroup;</div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>                <span class="keywordflow">case</span> <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#ab496925a728e526eca4014865a72cc4c">DataFormat</a>.FixedSize: <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a>.Fixed64;</div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>                <span class="keywordflow">case</span> <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#ab496925a728e526eca4014865a72cc4c">DataFormat</a>.WellKnown:</div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>                <span class="keywordflow">case</span> <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#ab496925a728e526eca4014865a72cc4c">DataFormat</a>.Default:</div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>                    <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a>.String;</div>
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>                <span class="keywordflow">default</span>: <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException();</div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>            }</div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>        }</div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span> </div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>        <span class="keyword">internal</span> <span class="keyword">static</span> <a class="code hl_interface" href="interface_proto_buf_1_1_serializers_1_1_i_proto_serializer.html">IProtoSerializer</a> TryGetCoreSerializer(RuntimeTypeModel model, <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#ab496925a728e526eca4014865a72cc4c">DataFormat</a> dataFormat, Type type, out <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a> defaultWireType,</div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>            <span class="keywordtype">bool</span> asReference, <span class="keywordtype">bool</span> dynamicType, <span class="keywordtype">bool</span> overwriteList, <span class="keywordtype">bool</span> allowComplexTypes)</div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>        {</div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span><span class="preprocessor">#if !NO_GENERICS</span></div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>            {</div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>                <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#ae7671ef7df96a23c9f8cbf77d72f04b1aa1fa27779242b4902f7ae3bdd5c6d508">Type</a> tmp = Helpers.GetUnderlyingType(type);</div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>                <span class="keywordflow">if</span> (tmp != <span class="keyword">null</span>) type = tmp;</div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>            }</div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>            <span class="keywordflow">if</span> (Helpers.IsEnum(type))</div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>            {</div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>                <span class="keywordflow">if</span> (allowComplexTypes &amp;&amp; model != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>                {</div>
+<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>                    <span class="comment">// need to do this before checking the typecode; an int enum will report Int32 etc</span></div>
+<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>                    defaultWireType = <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a>.Variant;</div>
+<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>                    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_enum_serializer.html">EnumSerializer</a>(type, model.GetEnumMap(type));</div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>                }</div>
+<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>                <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>                { <span class="comment">// enum is fine for adding as a meta-type</span></div>
+<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>                    defaultWireType = <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a>.None;</div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>                    <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>                }</div>
+<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>            }</div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>            ProtoTypeCode code = Helpers.GetTypeCode(type);</div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>            <span class="keywordflow">switch</span> (code)</div>
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>            {</div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>                <span class="keywordflow">case</span> ProtoTypeCode.Int32:</div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>                    defaultWireType = GetIntWireType(dataFormat, 32);</div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>                    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_int32_serializer.html">Int32Serializer</a>(model);</div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>                <span class="keywordflow">case</span> ProtoTypeCode.UInt32:</div>
+<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>                    defaultWireType = GetIntWireType(dataFormat, 32);</div>
+<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>                    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_u_int32_serializer.html">UInt32Serializer</a>(model);</div>
+<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>                <span class="keywordflow">case</span> ProtoTypeCode.Int64:</div>
+<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>                    defaultWireType = GetIntWireType(dataFormat, 64);</div>
+<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>                    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_int64_serializer.html">Int64Serializer</a>(model);</div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>                <span class="keywordflow">case</span> ProtoTypeCode.UInt64:</div>
+<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>                    defaultWireType = GetIntWireType(dataFormat, 64);</div>
+<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>                    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_u_int64_serializer.html">UInt64Serializer</a>(model);</div>
+<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>                <span class="keywordflow">case</span> ProtoTypeCode.String:</div>
+<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>                    defaultWireType = <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a>.String;</div>
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>                    <span class="keywordflow">if</span> (asReference)</div>
+<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>                    {</div>
+<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>                        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_net_object_serializer.html">NetObjectSerializer</a>(model, model.MapType(typeof(<span class="keywordtype">string</span>)), 0, BclHelpers.NetObjectOptions.AsReference);</div>
+<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span>                    }</div>
+<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>                    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_string_serializer.html">StringSerializer</a>(model);</div>
+<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>                <span class="keywordflow">case</span> ProtoTypeCode.Single:</div>
+<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>                    defaultWireType = <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a>.Fixed32;</div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>                    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_single_serializer.html">SingleSerializer</a>(model);</div>
+<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>                <span class="keywordflow">case</span> ProtoTypeCode.Double:</div>
+<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>                    defaultWireType = <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a>.Fixed64;</div>
+<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>                    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_double_serializer.html">DoubleSerializer</a>(model);</div>
+<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>                <span class="keywordflow">case</span> ProtoTypeCode.Boolean:</div>
+<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>                    defaultWireType = <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a>.Variant;</div>
+<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>                    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_boolean_serializer.html">BooleanSerializer</a>(model);</div>
+<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>                <span class="keywordflow">case</span> ProtoTypeCode.DateTime:</div>
+<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>                    defaultWireType = GetDateTimeWireType(dataFormat);</div>
+<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>                    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_date_time_serializer.html">DateTimeSerializer</a>(dataFormat, model);</div>
+<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>                <span class="keywordflow">case</span> ProtoTypeCode.Decimal:</div>
+<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>                    defaultWireType = <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a>.String;</div>
+<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>                    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_decimal_serializer.html">DecimalSerializer</a>(model);</div>
+<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>                <span class="keywordflow">case</span> ProtoTypeCode.Byte:</div>
+<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>                    defaultWireType = GetIntWireType(dataFormat, 32);</div>
+<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span>                    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_byte_serializer.html">ByteSerializer</a>(model);</div>
+<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>                <span class="keywordflow">case</span> ProtoTypeCode.SByte:</div>
+<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span>                    defaultWireType = GetIntWireType(dataFormat, 32);</div>
+<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>                    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_s_byte_serializer.html">SByteSerializer</a>(model);</div>
+<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>                <span class="keywordflow">case</span> ProtoTypeCode.Char:</div>
+<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>                    defaultWireType = <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a>.Variant;</div>
+<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>                    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_char_serializer.html">CharSerializer</a>(model);</div>
+<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>                <span class="keywordflow">case</span> ProtoTypeCode.Int16:</div>
+<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>                    defaultWireType = GetIntWireType(dataFormat, 32);</div>
+<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>                    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_int16_serializer.html">Int16Serializer</a>(model);</div>
+<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>                <span class="keywordflow">case</span> ProtoTypeCode.UInt16:</div>
+<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>                    defaultWireType = GetIntWireType(dataFormat, 32);</div>
+<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>                    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_u_int16_serializer.html">UInt16Serializer</a>(model);</div>
+<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>                <span class="keywordflow">case</span> ProtoTypeCode.TimeSpan:</div>
+<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>                    defaultWireType = GetDateTimeWireType(dataFormat);</div>
+<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>                    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_time_span_serializer.html">TimeSpanSerializer</a>(dataFormat, model);</div>
+<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>                <span class="keywordflow">case</span> ProtoTypeCode.Guid:</div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>                    defaultWireType = dataFormat == <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#ab496925a728e526eca4014865a72cc4c">DataFormat</a>.Group ? <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a>.StartGroup : <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a>.String;</div>
+<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span>                    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_guid_serializer.html">GuidSerializer</a>(model);</div>
+<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>                <span class="keywordflow">case</span> ProtoTypeCode.Uri:</div>
+<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>                    defaultWireType = <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a>.String;</div>
+<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>                    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_string_serializer.html">StringSerializer</a>(model);</div>
+<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>                <span class="keywordflow">case</span> ProtoTypeCode.ByteArray:</div>
+<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>                    defaultWireType = <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a>.String;</div>
+<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>                    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_blob_serializer.html">BlobSerializer</a>(model, overwriteList);</div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>                <span class="keywordflow">case</span> ProtoTypeCode.Type:</div>
+<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>                    defaultWireType = <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a>.String;</div>
+<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>                    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_system_type_serializer.html">SystemTypeSerializer</a>(model);</div>
+<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>            }</div>
+<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>            <a class="code hl_interface" href="interface_proto_buf_1_1_serializers_1_1_i_proto_serializer.html">IProtoSerializer</a> parseable = model.AllowParseableTypes ? <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_parseable_serializer.html">ParseableSerializer</a>.<a class="code hl_function" href="class_proto_buf_1_1_serializers_1_1_parseable_serializer.html#af660e07238a455495b3d9f245e26e966">TryCreate</a>(type, model) : <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>            <span class="keywordflow">if</span> (parseable != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>            {</div>
+<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>                defaultWireType = <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a>.String;</div>
+<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>                <span class="keywordflow">return</span> parseable;</div>
+<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>            }</div>
+<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>            <span class="keywordflow">if</span> (allowComplexTypes &amp;&amp; model != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>            {</div>
+<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>                <span class="keywordtype">int</span> key = model.GetKey(type, <span class="keyword">false</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>                MetaType meta = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>                <span class="keywordflow">if</span> (key &gt;= 0)</div>
+<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>                {</div>
+<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>                    meta = model[type];</div>
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>                    <span class="keywordflow">if</span>(dataFormat == <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#ab496925a728e526eca4014865a72cc4c">DataFormat</a>.Default &amp;&amp; meta.IsGroup)</div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>                    {</div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>                        dataFormat = <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#ab496925a728e526eca4014865a72cc4c">DataFormat</a>.Group;</div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>                    }</div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>                }</div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span> </div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>                <span class="keywordflow">if</span> (asReference || dynamicType)</div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>                {</div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>                    BclHelpers.NetObjectOptions options = BclHelpers.NetObjectOptions.None;</div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>                    <span class="keywordflow">if</span> (asReference) options |= BclHelpers.NetObjectOptions.AsReference;</div>
+<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>                    <span class="keywordflow">if</span> (dynamicType) options |= BclHelpers.NetObjectOptions.DynamicType;</div>
+<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>                    <span class="keywordflow">if</span> (meta != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>                    { <span class="comment">// exists</span></div>
+<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>                        <span class="keywordflow">if</span> (asReference &amp;&amp; Helpers.IsValueType(type))</div>
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>                        {</div>
+<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>                            <span class="keywordtype">string</span> message = <span class="stringliteral">&quot;AsReference cannot be used with value-types&quot;</span>;</div>
+<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span> </div>
+<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>                            <span class="keywordflow">if</span> (type.Name == <span class="stringliteral">&quot;KeyValuePair`2&quot;</span>)</div>
+<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>                            {</div>
+<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>                                message += <span class="stringliteral">&quot;; please see http://stackoverflow.com/q/14436606/&quot;</span>;</div>
+<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>                            }</div>
+<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>                            <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>                            {</div>
+<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>                                message += <span class="stringliteral">&quot;: &quot;</span> + type.FullName;</div>
+<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>                            }</div>
+<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>                            <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(message);</div>
+<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>                        }</div>
+<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>                        </div>
+<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>                        <span class="keywordflow">if</span> (asReference &amp;&amp; meta.IsAutoTuple) options |= BclHelpers.NetObjectOptions.LateSet;                        </div>
+<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>                        <span class="keywordflow">if</span> (meta.UseConstructor) options |= BclHelpers.NetObjectOptions.UseConstructor;</div>
+<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>                    }</div>
+<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>                    defaultWireType = dataFormat == <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#ab496925a728e526eca4014865a72cc4c">DataFormat</a>.Group ? <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a>.StartGroup : <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a>.String;</div>
+<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>                    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_net_object_serializer.html">NetObjectSerializer</a>(model, type, key, options);</div>
+<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>                }</div>
+<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>                <span class="keywordflow">if</span> (key &gt;= 0)</div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>                {</div>
+<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>                    defaultWireType = dataFormat == <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#ab496925a728e526eca4014865a72cc4c">DataFormat</a>.Group ? <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a>.StartGroup : <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a>.String;</div>
+<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>                    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_serializers_1_1_sub_item_serializer.html">SubItemSerializer</a>(type, key, meta, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>                }</div>
+<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>            }</div>
+<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>            defaultWireType = <a class="code hl_enumeration" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a>.None;</div>
+<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>            <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>        }</div>
+<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span> </div>
+<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span> </div>
+<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>        <span class="keyword">private</span> <span class="keywordtype">string</span> name;</div>
+<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>        <span class="keyword">internal</span> <span class="keywordtype">void</span> SetName(<span class="keywordtype">string</span> name)</div>
+<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>        {</div>
+<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>            <span class="keywordflow">if</span> (name != this.name)</div>
+<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>            {</div>
+<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>                ThrowIfFrozen();</div>
+<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>                this.name = name;</div>
+<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>            }</div>
+<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>        }</div>
+<div class="line"><a id="l00816" name="l00816"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_meta_1_1_value_member.html#afc50823f76b7a908ef47712da970a7cd">  816</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#afc50823f76b7a908ef47712da970a7cd">Name</a></div>
+<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>        {</div>
+<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> Helpers.IsNullOrEmpty(name) ? originalMember.Name : name; }</div>
+<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>            <span class="keyword">set</span> { SetName(value); }</div>
+<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>        }</div>
+<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span> </div>
+<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>        <span class="keyword">private</span> <span class="keyword">const</span> <span class="keywordtype">byte</span></div>
+<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>           OPTIONS_IsStrict = 1,</div>
+<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>           OPTIONS_IsPacked = 2,</div>
+<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>           OPTIONS_IsRequired = 4,</div>
+<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>           OPTIONS_OverwriteList = 8,</div>
+<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span>           OPTIONS_SupportNull = 16,</div>
+<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>           OPTIONS_AsReference = 32,</div>
+<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>           OPTIONS_IsMap = 64,</div>
+<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span>           OPTIONS_DynamicType = 128;</div>
+<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span> </div>
+<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>        <span class="keyword">private</span> <span class="keywordtype">byte</span> flags;</div>
+<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span>        <span class="keyword">private</span> <span class="keywordtype">bool</span> HasFlag(<span class="keywordtype">byte</span> flag) { <span class="keywordflow">return</span> (flags &amp; flag) == flag; }</div>
+<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span>        <span class="keyword">private</span> <span class="keywordtype">void</span> SetFlag(<span class="keywordtype">byte</span> flag, <span class="keywordtype">bool</span> value, <span class="keywordtype">bool</span> throwIfFrozen)</div>
+<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>        {</div>
+<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>            <span class="keywordflow">if</span> (throwIfFrozen &amp;&amp; HasFlag(flag) != value)</div>
+<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span>            {</div>
+<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span>                ThrowIfFrozen();</div>
+<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span>            }</div>
+<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span>            <span class="keywordflow">if</span> (value)</div>
+<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>                flags |= flag;</div>
+<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span>            <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span>                flags = (byte)(flags &amp; ~flag);</div>
+<div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span>        }</div>
+<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span> </div>
+<div class="line"><a id="l00849" name="l00849"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_meta_1_1_value_member.html#a83908577b70d0cc51d76d1c869157888">  849</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a83908577b70d0cc51d76d1c869157888">SupportNull</a></div>
+<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span>        {</div>
+<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> HasFlag(OPTIONS_SupportNull); }</div>
+<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span>            <span class="keyword">set</span> { SetFlag(OPTIONS_SupportNull, value, <span class="keyword">true</span>);}</div>
+<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span>        }</div>
+<div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span> </div>
+<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>        <span class="keyword">internal</span> <span class="keywordtype">string</span> GetSchemaTypeName(<span class="keywordtype">bool</span> applyNetObjectProxy, ref <a class="code hl_class" href="class_proto_buf_1_1_meta_1_1_runtime_type_model.html">RuntimeTypeModel</a>.CommonImports imports)</div>
+<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span>        {</div>
+<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>            Type effectiveType = <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a644a5fd8a155128e8be434f1111f7630">ItemType</a>;</div>
+<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>            <span class="keywordflow">if</span> (effectiveType == <span class="keyword">null</span>) effectiveType = <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a7eeb2504815943068ef3f01547b9e55c">MemberType</a>;</div>
+<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>            <span class="keywordflow">return</span> model.GetSchemaTypeName(effectiveType, <a class="code hl_enumeration" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a>, applyNetObjectProxy &amp;&amp; <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#abbca95abe9e2f2d6a2655c42aea76ffe">AsReference</a>, applyNetObjectProxy &amp;&amp; <a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_value_member.html#a4f7f506e9dba93f717f3ec5ce75c7920">DynamicType</a>, ref imports);</div>
+<div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span>        }</div>
+<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span> </div>
+<div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span>        </div>
+<div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span>        <span class="keyword">internal</span> sealed <span class="keyword">class </span>Comparer : <a class="code hl_namespace" href="namespace_system.html">System</a>.Collections.IComparer</div>
+<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span><span class="preprocessor">#if !NO_GENERICS</span></div>
+<div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span>, <a class="code hl_namespace" href="namespace_system.html">System</a>.Collections.<a class="code hl_variable" href="_actor_location_sender_component_8cs.html#ae3ba11ab1e427940efa4a8c7ffce23b7">Generic</a>.IComparer&lt;ValueMember&gt;</div>
+<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span>        {</div>
+<div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span>            <span class="keyword">public</span> <span class="keyword">static</span> readonly Comparer Default = <span class="keyword">new</span> Comparer();</div>
+<div class="line"><a id="l00869" name="l00869"></a><span class="lineno">  869</span>            <span class="keyword">public</span> <span class="keywordtype">int</span> Compare(<span class="keywordtype">object</span> x, <span class="keywordtype">object</span> y)</div>
+<div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span>            {</div>
+<div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span>                <span class="keywordflow">return</span> Compare(x as <a class="code hl_function" href="class_proto_buf_1_1_meta_1_1_value_member.html#a33535e9efb5f81140728e937aa934bd1">ValueMember</a>, y as <a class="code hl_function" href="class_proto_buf_1_1_meta_1_1_value_member.html#a33535e9efb5f81140728e937aa934bd1">ValueMember</a>);</div>
+<div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span>            }</div>
+<div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span>            <span class="keyword">public</span> <span class="keywordtype">int</span> Compare(<a class="code hl_function" href="class_proto_buf_1_1_meta_1_1_value_member.html#a33535e9efb5f81140728e937aa934bd1">ValueMember</a> x, <a class="code hl_function" href="class_proto_buf_1_1_meta_1_1_value_member.html#a33535e9efb5f81140728e937aa934bd1">ValueMember</a> y)</div>
+<div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span>            {</div>
+<div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span>                <span class="keywordflow">if</span> (ReferenceEquals(x, y)) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span>                <span class="keywordflow">if</span> (x == <span class="keyword">null</span>) <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span>                <span class="keywordflow">if</span> (y == <span class="keyword">null</span>) <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span> </div>
+<div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span>                <span class="keywordflow">return</span> x.FieldNumber.CompareTo(y.FieldNumber);</div>
+<div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span>            }</div>
+<div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span>        }</div>
+<div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span>    }</div>
+<div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span>}</div>
+<div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_actor_location_sender_component_8cs_html_ae3ba11ab1e427940efa4a8c7ffce23b7"><div class="ttname"><a href="_actor_location_sender_component_8cs.html#ae3ba11ab1e427940efa4a8c7ffce23b7">Generic</a></div><div class="ttdeci">﻿using System.Collections. Generic</div><div class="ttdef"><b>Definition:</b> <a href="_actor_location_sender_component_8cs_source.html#l00001">ActorLocationSenderComponent.cs:1</a></div></div>
+<div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_reflection_1_1_i_l_runtime_wrapper_type_html"><div class="ttname"><a href="class_i_l_runtime_1_1_reflection_1_1_i_l_runtime_wrapper_type.html">ILRuntime.Reflection.ILRuntimeWrapperType</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_l_runtime_wrapper_type_8cs_source.html#l00013">ILRuntimeWrapperType.cs:14</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_reflection_1_1_i_l_runtime_wrapper_type_html_a22fafb59830a0c49fb39aa8692552913"><div class="ttname"><a href="class_i_l_runtime_1_1_reflection_1_1_i_l_runtime_wrapper_type.html#a22fafb59830a0c49fb39aa8692552913">ILRuntime.Reflection.ILRuntimeWrapperType.RealType</a></div><div class="ttdeci">Type RealType</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_runtime_wrapper_type_8cs_source.html#l00020">ILRuntimeWrapperType.cs:20</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_meta_1_1_meta_type_html"><div class="ttname"><a href="class_proto_buf_1_1_meta_1_1_meta_type.html">ProtoBuf.Meta.MetaType</a></div><div class="ttdoc">Represents a type at runtime for use with protobuf, allowing the field mappings (etc) to be defined</div><div class="ttdef"><b>Definition:</b> <a href="_meta_type_8cs_source.html#l00030">MetaType.cs:31</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_meta_1_1_meta_type_html_abea7924c3bd02adbf4194d05ef830cef"><div class="ttname"><a href="class_proto_buf_1_1_meta_1_1_meta_type.html#abea7924c3bd02adbf4194d05ef830cef">ProtoBuf.Meta.MetaType.AsReferenceDefault</a></div><div class="ttdeci">bool AsReferenceDefault</div><div class="ttdoc">Should this type be treated as a reference by default?</div><div class="ttdef"><b>Definition:</b> <a href="_meta_type_8cs_source.html#l00085">MetaType.cs:86</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_meta_1_1_runtime_type_model_html"><div class="ttname"><a href="class_proto_buf_1_1_meta_1_1_runtime_type_model.html">ProtoBuf.Meta.RuntimeTypeModel</a></div><div class="ttdoc">Provides protobuf serialization support for a number of types that can be defined at runtime</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_type_model_8cs_source.html#l00026">RuntimeTypeModel.cs:27</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_meta_1_1_value_member_html"><div class="ttname"><a href="class_proto_buf_1_1_meta_1_1_value_member.html">ProtoBuf.Meta.ValueMember</a></div><div class="ttdoc">Represents a member (property/field) that is mapped to a protobuf field</div><div class="ttdef"><b>Definition:</b> <a href="_value_member_8cs_source.html#l00020">ValueMember.cs:21</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_meta_1_1_value_member_html_a14083d473b2f90e06ba4693fb0e67929"><div class="ttname"><a href="class_proto_buf_1_1_meta_1_1_value_member.html#a14083d473b2f90e06ba4693fb0e67929">ProtoBuf.Meta.ValueMember.OverwriteList</a></div><div class="ttdeci">bool OverwriteList</div><div class="ttdoc">Indicates whether this field should repace existing values (the default is false, meaning append)....</div><div class="ttdef"><b>Definition:</b> <a href="_value_member_8cs_source.html#l00303">ValueMember.cs:304</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_meta_1_1_value_member_html_a3205970f1d1a04bb13770fe42ab680cc"><div class="ttname"><a href="class_proto_buf_1_1_meta_1_1_value_member.html#a3205970f1d1a04bb13770fe42ab680cc">ProtoBuf.Meta.ValueMember.MapKeyFormat</a></div><div class="ttdeci">DataFormat MapKeyFormat</div><div class="ttdoc">Specifies the data-format that should be used for the key, when IsMap is enabled</div><div class="ttdef"><b>Definition:</b> <a href="_value_member_8cs_source.html#l00349">ValueMember.cs:350</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_meta_1_1_value_member_html_a32a44ecb0f047500f0de05857a407662"><div class="ttname"><a href="class_proto_buf_1_1_meta_1_1_value_member.html#a32a44ecb0f047500f0de05857a407662">ProtoBuf.Meta.ValueMember.DefaultType</a></div><div class="ttdeci">Type DefaultType</div><div class="ttdoc">For abstract types (IList etc), the type of concrete object to create (if required)</div><div class="ttdef"><b>Definition:</b> <a href="_value_member_8cs_source.html#l00063">ValueMember.cs:63</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_meta_1_1_value_member_html_a33535e9efb5f81140728e937aa934bd1"><div class="ttname"><a href="class_proto_buf_1_1_meta_1_1_value_member.html#a33535e9efb5f81140728e937aa934bd1">ProtoBuf.Meta.ValueMember.ValueMember</a></div><div class="ttdeci">ValueMember(RuntimeTypeModel model, Type parentType, int fieldNumber, MemberInfo member, Type memberType, Type itemType, Type defaultType, DataFormat dataFormat, object defaultValue)</div><div class="ttdoc">Creates a new ValueMember instance</div><div class="ttdef"><b>Definition:</b> <a href="_value_member_8cs_source.html#l00088">ValueMember.cs:88</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_meta_1_1_value_member_html_a3560e227cca181be523f22a3a24d632c"><div class="ttname"><a href="class_proto_buf_1_1_meta_1_1_value_member.html#a3560e227cca181be523f22a3a24d632c">ProtoBuf.Meta.ValueMember.BackingMember</a></div><div class="ttdeci">MemberInfo BackingMember</div><div class="ttdoc">Gets the backing member (field/property) which this member relates to</div><div class="ttdef"><b>Definition:</b> <a href="_value_member_8cs_source.html#l00036">ValueMember.cs:37</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_meta_1_1_value_member_html_a3e4040257f49f3d22f0cbde93b59c380"><div class="ttname"><a href="class_proto_buf_1_1_meta_1_1_value_member.html#a3e4040257f49f3d22f0cbde93b59c380">ProtoBuf.Meta.ValueMember.SetSpecified</a></div><div class="ttdeci">void SetSpecified(MethodInfo getSpecified, MethodInfo setSpecified)</div><div class="ttdoc">Specifies methods for working with optional data members.</div><div class="ttdef"><b>Definition:</b> <a href="_value_member_8cs_source.html#l00387">ValueMember.cs:387</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_meta_1_1_value_member_html_a45efa6abaaf72c7b38c436b1f04e044d"><div class="ttname"><a href="class_proto_buf_1_1_meta_1_1_value_member.html#a45efa6abaaf72c7b38c436b1f04e044d">ProtoBuf.Meta.ValueMember.ParentType</a></div><div class="ttdeci">Type ParentType</div><div class="ttdoc">The type the defines the member</div><div class="ttdef"><b>Definition:</b> <a href="_value_member_8cs_source.html#l00067">ValueMember.cs:67</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_meta_1_1_value_member_html_a4f7f506e9dba93f717f3ec5ce75c7920"><div class="ttname"><a href="class_proto_buf_1_1_meta_1_1_value_member.html#a4f7f506e9dba93f717f3ec5ce75c7920">ProtoBuf.Meta.ValueMember.DynamicType</a></div><div class="ttdeci">bool DynamicType</div><div class="ttdoc">Embeds the type information into the stream, allowing usage with types not known in advance.</div><div class="ttdef"><b>Definition:</b> <a href="_value_member_8cs_source.html#l00330">ValueMember.cs:331</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_meta_1_1_value_member_html_a644a5fd8a155128e8be434f1111f7630"><div class="ttname"><a href="class_proto_buf_1_1_meta_1_1_value_member.html#a644a5fd8a155128e8be434f1111f7630">ProtoBuf.Meta.ValueMember.ItemType</a></div><div class="ttdeci">Type ItemType</div><div class="ttdoc">Within a list / array / etc, the type of object for each item in the list (especially useful with Arr...</div><div class="ttdef"><b>Definition:</b> <a href="_value_member_8cs_source.html#l00055">ValueMember.cs:55</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_meta_1_1_value_member_html_a6dae90b7d6ee9d33e854b4394fbd8311"><div class="ttname"><a href="class_proto_buf_1_1_meta_1_1_value_member.html#a6dae90b7d6ee9d33e854b4394fbd8311">ProtoBuf.Meta.ValueMember.IsMap</a></div><div class="ttdeci">bool IsMap</div><div class="ttdoc">Indicates that the member should be treated as a protobuf Map</div><div class="ttdef"><b>Definition:</b> <a href="_value_member_8cs_source.html#l00339">ValueMember.cs:340</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_meta_1_1_value_member_html_a7819b6f79ae134f4654c4baac18c9fad"><div class="ttname"><a href="class_proto_buf_1_1_meta_1_1_value_member.html#a7819b6f79ae134f4654c4baac18c9fad">ProtoBuf.Meta.ValueMember.FieldNumber</a></div><div class="ttdeci">int FieldNumber</div><div class="ttdoc">The number that identifies this member in a protobuf stream</div><div class="ttdef"><b>Definition:</b> <a href="_value_member_8cs_source.html#l00026">ValueMember.cs:26</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_meta_1_1_value_member_html_a7eeb2504815943068ef3f01547b9e55c"><div class="ttname"><a href="class_proto_buf_1_1_meta_1_1_value_member.html#a7eeb2504815943068ef3f01547b9e55c">ProtoBuf.Meta.ValueMember.MemberType</a></div><div class="ttdeci">Type MemberType</div><div class="ttdoc">The underlying type of the member</div><div class="ttdef"><b>Definition:</b> <a href="_value_member_8cs_source.html#l00059">ValueMember.cs:59</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_meta_1_1_value_member_html_a83908577b70d0cc51d76d1c869157888"><div class="ttname"><a href="class_proto_buf_1_1_meta_1_1_value_member.html#a83908577b70d0cc51d76d1c869157888">ProtoBuf.Meta.ValueMember.SupportNull</a></div><div class="ttdeci">bool SupportNull</div><div class="ttdoc">Should lists have extended support for null values? Note this makes the serialization less efficient.</div><div class="ttdef"><b>Definition:</b> <a href="_value_member_8cs_source.html#l00849">ValueMember.cs:850</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_meta_1_1_value_member_html_a850ece49a8018868079aada9595cdf7d"><div class="ttname"><a href="class_proto_buf_1_1_meta_1_1_value_member.html#a850ece49a8018868079aada9595cdf7d">ProtoBuf.Meta.ValueMember.IsRequired</a></div><div class="ttdeci">bool IsRequired</div><div class="ttdoc">Indicates whether this field is mandatory.</div><div class="ttdef"><b>Definition:</b> <a href="_value_member_8cs_source.html#l00312">ValueMember.cs:313</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_meta_1_1_value_member_html_a99600a271c29c63ce57e808e6656c3b8"><div class="ttname"><a href="class_proto_buf_1_1_meta_1_1_value_member.html#a99600a271c29c63ce57e808e6656c3b8">ProtoBuf.Meta.ValueMember.MapValueFormat</a></div><div class="ttdeci">DataFormat MapValueFormat</div><div class="ttdoc">Specifies the data-format that should be used for the value, when IsMap is enabled</div><div class="ttdef"><b>Definition:</b> <a href="_value_member_8cs_source.html#l00364">ValueMember.cs:365</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_meta_1_1_value_member_html_a9b122ee3b84e4f25c54ab00c1d0e2fd2"><div class="ttname"><a href="class_proto_buf_1_1_meta_1_1_value_member.html#a9b122ee3b84e4f25c54ab00c1d0e2fd2">ProtoBuf.Meta.ValueMember.IsPacked</a></div><div class="ttdeci">bool IsPacked</div><div class="ttdoc">Indicates whether this field should use packed encoding (which can save lots of space for repeated pr...</div><div class="ttdef"><b>Definition:</b> <a href="_value_member_8cs_source.html#l00293">ValueMember.cs:294</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_meta_1_1_value_member_html_a9e149b6d3342276652505154f12c9410"><div class="ttname"><a href="class_proto_buf_1_1_meta_1_1_value_member.html#a9e149b6d3342276652505154f12c9410">ProtoBuf.Meta.ValueMember.DefaultValue</a></div><div class="ttdeci">object DefaultValue</div><div class="ttdoc">The default value of the item (members with this value will not be serialized)</div><div class="ttdef"><b>Definition:</b> <a href="_value_member_8cs_source.html#l00072">ValueMember.cs:73</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_meta_1_1_value_member_html_ab101c26c280118f224c6c9372eddbcab"><div class="ttname"><a href="class_proto_buf_1_1_meta_1_1_value_member.html#ab101c26c280118f224c6c9372eddbcab">ProtoBuf.Meta.ValueMember.IsStrict</a></div><div class="ttdeci">bool IsStrict</div><div class="ttdoc">Indicates whether this field should follow strict encoding rules; this means (for example) that if a ...</div><div class="ttdef"><b>Definition:</b> <a href="_value_member_8cs_source.html#l00283">ValueMember.cs:284</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_meta_1_1_value_member_html_ab496925a728e526eca4014865a72cc4c"><div class="ttname"><a href="class_proto_buf_1_1_meta_1_1_value_member.html#ab496925a728e526eca4014865a72cc4c">ProtoBuf.Meta.ValueMember.DataFormat</a></div><div class="ttdeci">DataFormat DataFormat</div><div class="ttdoc">Specifies the rules used to process the field; this is used to determine the most appropriate wite-ty...</div><div class="ttdef"><b>Definition:</b> <a href="_value_member_8cs_source.html#l00266">ValueMember.cs:266</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_meta_1_1_value_member_html_abbca95abe9e2f2d6a2655c42aea76ffe"><div class="ttname"><a href="class_proto_buf_1_1_meta_1_1_value_member.html#abbca95abe9e2f2d6a2655c42aea76ffe">ProtoBuf.Meta.ValueMember.AsReference</a></div><div class="ttdeci">bool AsReference</div><div class="ttdoc">Enables full object-tracking/full-graph support.</div><div class="ttdef"><b>Definition:</b> <a href="_value_member_8cs_source.html#l00321">ValueMember.cs:322</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_meta_1_1_value_member_html_ac69d927b3206131543239082571c285d"><div class="ttname"><a href="class_proto_buf_1_1_meta_1_1_value_member.html#ac69d927b3206131543239082571c285d">ProtoBuf.Meta.ValueMember.Member</a></div><div class="ttdeci">MemberInfo Member</div><div class="ttdoc">Gets the member (field/property) which this member relates to.</div><div class="ttdef"><b>Definition:</b> <a href="_value_member_8cs_source.html#l00032">ValueMember.cs:32</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_meta_1_1_value_member_html_afc50823f76b7a908ef47712da970a7cd"><div class="ttname"><a href="class_proto_buf_1_1_meta_1_1_value_member.html#afc50823f76b7a908ef47712da970a7cd">ProtoBuf.Meta.ValueMember.Name</a></div><div class="ttdeci">string? Name</div><div class="ttdoc">Gets the logical name for this member in the schema (this is not critical for binary serialization,...</div><div class="ttdef"><b>Definition:</b> <a href="_value_member_8cs_source.html#l00816">ValueMember.cs:817</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_array_decorator_html"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_array_decorator.html">ProtoBuf.Serializers.ArrayDecorator</a></div><div class="ttdef"><b>Definition:</b> <a href="_array_decorator_8cs_source.html#l00015">ArrayDecorator.cs:16</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_blob_serializer_html"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_blob_serializer.html">ProtoBuf.Serializers.BlobSerializer</a></div><div class="ttdef"><b>Definition:</b> <a href="_blob_serializer_8cs_source.html#l00017">BlobSerializer.cs:18</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_boolean_serializer_html"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_boolean_serializer.html">ProtoBuf.Serializers.BooleanSerializer</a></div><div class="ttdef"><b>Definition:</b> <a href="_boolean_serializer_8cs_source.html#l00017">BooleanSerializer.cs:18</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_byte_serializer_html"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_byte_serializer.html">ProtoBuf.Serializers.ByteSerializer</a></div><div class="ttdef"><b>Definition:</b> <a href="_byte_serializer_8cs_source.html#l00012">ByteSerializer.cs:13</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_char_serializer_html"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_char_serializer.html">ProtoBuf.Serializers.CharSerializer</a></div><div class="ttdef"><b>Definition:</b> <a href="_char_serializer_8cs_source.html#l00014">CharSerializer.cs:15</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_date_time_serializer_html"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_date_time_serializer.html">ProtoBuf.Serializers.DateTimeSerializer</a></div><div class="ttdef"><b>Definition:</b> <a href="_date_time_serializer_8cs_source.html#l00013">DateTimeSerializer.cs:14</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_decimal_serializer_html"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_decimal_serializer.html">ProtoBuf.Serializers.DecimalSerializer</a></div><div class="ttdef"><b>Definition:</b> <a href="_decimal_serializer_8cs_source.html#l00014">DecimalSerializer.cs:15</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_default_value_decorator_html"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_default_value_decorator.html">ProtoBuf.Serializers.DefaultValueDecorator</a></div><div class="ttdef"><b>Definition:</b> <a href="_default_value_decorator_8cs_source.html#l00014">DefaultValueDecorator.cs:15</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_double_serializer_html"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_double_serializer.html">ProtoBuf.Serializers.DoubleSerializer</a></div><div class="ttdef"><b>Definition:</b> <a href="_double_serializer_8cs_source.html#l00012">DoubleSerializer.cs:13</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_enum_serializer_html"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_enum_serializer.html">ProtoBuf.Serializers.EnumSerializer</a></div><div class="ttdef"><b>Definition:</b> <a href="_enum_serializer_8cs_source.html#l00012">EnumSerializer.cs:13</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_field_decorator_html"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_field_decorator.html">ProtoBuf.Serializers.FieldDecorator</a></div><div class="ttdef"><b>Definition:</b> <a href="_field_decorator_8cs_source.html#l00014">FieldDecorator.cs:15</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_guid_serializer_html"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_guid_serializer.html">ProtoBuf.Serializers.GuidSerializer</a></div><div class="ttdef"><b>Definition:</b> <a href="_guid_serializer_8cs_source.html#l00011">GuidSerializer.cs:12</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_immutable_collection_decorator_html"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_immutable_collection_decorator.html">ProtoBuf.Serializers.ImmutableCollectionDecorator</a></div><div class="ttdef"><b>Definition:</b> <a href="_immutable_collection_decorator_8cs_source.html#l00015">ImmutableCollectionDecorator.cs:16</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_int16_serializer_html"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_int16_serializer.html">ProtoBuf.Serializers.Int16Serializer</a></div><div class="ttdef"><b>Definition:</b> <a href="_int16_serializer_8cs_source.html#l00013">Int16Serializer.cs:14</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_int32_serializer_html"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_int32_serializer.html">ProtoBuf.Serializers.Int32Serializer</a></div><div class="ttdef"><b>Definition:</b> <a href="_int32_serializer_8cs_source.html#l00013">Int32Serializer.cs:14</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_int64_serializer_html"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_int64_serializer.html">ProtoBuf.Serializers.Int64Serializer</a></div><div class="ttdef"><b>Definition:</b> <a href="_int64_serializer_8cs_source.html#l00012">Int64Serializer.cs:13</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_list_decorator_html"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_list_decorator.html">ProtoBuf.Serializers.ListDecorator</a></div><div class="ttdef"><b>Definition:</b> <a href="_list_decorator_8cs_source.html#l00015">ListDecorator.cs:16</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_map_decorator_html"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_map_decorator.html">ProtoBuf.Serializers.MapDecorator</a></div><div class="ttdef"><b>Definition:</b> <a href="_map_decorator_8cs_source.html#l00010">MapDecorator.cs:11</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_member_specified_decorator_html"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_member_specified_decorator.html">ProtoBuf.Serializers.MemberSpecifiedDecorator</a></div><div class="ttdef"><b>Definition:</b> <a href="_member_specified_decorator_8cs_source.html#l00014">MemberSpecifiedDecorator.cs:15</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_net_object_serializer_html"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_net_object_serializer.html">ProtoBuf.Serializers.NetObjectSerializer</a></div><div class="ttdef"><b>Definition:</b> <a href="_net_object_serializer_8cs_source.html#l00015">NetObjectSerializer.cs:16</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_null_decorator_html"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_null_decorator.html">ProtoBuf.Serializers.NullDecorator</a></div><div class="ttdef"><b>Definition:</b> <a href="_null_decorator_8cs_source.html#l00015">NullDecorator.cs:16</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_null_decorator_html_a2d7b47a28c60fbb0c49412f202daa723"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_null_decorator.html#a2d7b47a28c60fbb0c49412f202daa723">ProtoBuf.Serializers.NullDecorator.Tag</a></div><div class="ttdeci">const int Tag</div><div class="ttdef"><b>Definition:</b> <a href="_null_decorator_8cs_source.html#l00018">NullDecorator.cs:18</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_parseable_serializer_html"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_parseable_serializer.html">ProtoBuf.Serializers.ParseableSerializer</a></div><div class="ttdef"><b>Definition:</b> <a href="_parseable_serializer_8cs_source.html#l00013">ParseableSerializer.cs:14</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_parseable_serializer_html_af660e07238a455495b3d9f245e26e966"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_parseable_serializer.html#af660e07238a455495b3d9f245e26e966">ProtoBuf.Serializers.ParseableSerializer.TryCreate</a></div><div class="ttdeci">static ParseableSerializer TryCreate(Type type, TypeModel model)</div><div class="ttdef"><b>Definition:</b> <a href="_parseable_serializer_8cs_source.html#l00016">ParseableSerializer.cs:16</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_property_decorator_html"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_property_decorator.html">ProtoBuf.Serializers.PropertyDecorator</a></div><div class="ttdef"><b>Definition:</b> <a href="_property_decorator_8cs_source.html#l00017">PropertyDecorator.cs:18</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_s_byte_serializer_html"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_s_byte_serializer.html">ProtoBuf.Serializers.SByteSerializer</a></div><div class="ttdef"><b>Definition:</b> <a href="_s_byte_serializer_8cs_source.html#l00013">SByteSerializer.cs:14</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_single_serializer_html"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_single_serializer.html">ProtoBuf.Serializers.SingleSerializer</a></div><div class="ttdef"><b>Definition:</b> <a href="_single_serializer_8cs_source.html#l00015">SingleSerializer.cs:16</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_string_serializer_html"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_string_serializer.html">ProtoBuf.Serializers.StringSerializer</a></div><div class="ttdef"><b>Definition:</b> <a href="_string_serializer_8cs_source.html#l00012">StringSerializer.cs:13</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_sub_item_serializer_html"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_sub_item_serializer.html">ProtoBuf.Serializers.SubItemSerializer</a></div><div class="ttdef"><b>Definition:</b> <a href="_sub_item_serializer_8cs_source.html#l00016">SubItemSerializer.cs:17</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_system_type_serializer_html"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_system_type_serializer.html">ProtoBuf.Serializers.SystemTypeSerializer</a></div><div class="ttdef"><b>Definition:</b> <a href="_system_type_serializer_8cs_source.html#l00014">SystemTypeSerializer.cs:15</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_tag_decorator_html"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_tag_decorator.html">ProtoBuf.Serializers.TagDecorator</a></div><div class="ttdef"><b>Definition:</b> <a href="_tag_decorator_8cs_source.html#l00016">TagDecorator.cs:17</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_time_span_serializer_html"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_time_span_serializer.html">ProtoBuf.Serializers.TimeSpanSerializer</a></div><div class="ttdef"><b>Definition:</b> <a href="_time_span_serializer_8cs_source.html#l00015">TimeSpanSerializer.cs:16</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_u_int16_serializer_html"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_u_int16_serializer.html">ProtoBuf.Serializers.UInt16Serializer</a></div><div class="ttdef"><b>Definition:</b> <a href="_u_int16_serializer_8cs_source.html#l00014">UInt16Serializer.cs:15</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_u_int32_serializer_html"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_u_int32_serializer.html">ProtoBuf.Serializers.UInt32Serializer</a></div><div class="ttdef"><b>Definition:</b> <a href="_u_int32_serializer_8cs_source.html#l00014">UInt32Serializer.cs:15</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_u_int64_serializer_html"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_u_int64_serializer.html">ProtoBuf.Serializers.UInt64Serializer</a></div><div class="ttdef"><b>Definition:</b> <a href="_u_int64_serializer_8cs_source.html#l00013">UInt64Serializer.cs:14</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_serializers_1_1_uri_decorator_html"><div class="ttname"><a href="class_proto_buf_1_1_serializers_1_1_uri_decorator.html">ProtoBuf.Serializers.UriDecorator</a></div><div class="ttdef"><b>Definition:</b> <a href="_uri_decorator_8cs_source.html#l00014">UriDecorator.cs:15</a></div></div>
+<div class="ttc" id="ainterface_proto_buf_1_1_serializers_1_1_i_proto_serializer_html"><div class="ttname"><a href="interface_proto_buf_1_1_serializers_1_1_i_proto_serializer.html">ProtoBuf.Serializers.IProtoSerializer</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_proto_serializer_8cs_source.html#l00010">IProtoSerializer.cs:11</a></div></div>
+<div class="ttc" id="ainterface_proto_buf_1_1_serializers_1_1_i_proto_serializer_html_a7a4ad64ff1a1d8bbba47754f751e0aee"><div class="ttname"><a href="interface_proto_buf_1_1_serializers_1_1_i_proto_serializer.html#a7a4ad64ff1a1d8bbba47754f751e0aee">ProtoBuf.Serializers.IProtoSerializer.ExpectedType</a></div><div class="ttdeci">Type ExpectedType</div><div class="ttdoc">The type that this serializer is intended to work for.</div><div class="ttdef"><b>Definition:</b> <a href="_i_proto_serializer_8cs_source.html#l00015">IProtoSerializer.cs:15</a></div></div>
+<div class="ttc" id="anamespace_e_t_html_a998904d546bf4d60e243f2b8c9bf1239a03c7c0ace395d80182db07ae2c30f034"><div class="ttname"><a href="namespace_e_t.html#a998904d546bf4d60e243f2b8c9bf1239a03c7c0ace395d80182db07ae2c30f034">ET.ConfigType.s</a></div><div class="ttdeci">@ s</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_html_ae7671ef7df96a23c9f8cbf77d72f04b1aa1fa27779242b4902f7ae3bdd5c6d508"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#ae7671ef7df96a23c9f8cbf77d72f04b1aa1fa27779242b4902f7ae3bdd5c6d508">ILRuntime.Mono.Cecil.Metadata.ElementType.Type</a></div><div class="ttdeci">@ Type</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_html_ae7671ef7df96a23c9f8cbf77d72f04b1acf20423ed48998082c20099488a0917c"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#ae7671ef7df96a23c9f8cbf77d72f04b1acf20423ed48998082c20099488a0917c">ILRuntime.Mono.Cecil.Metadata.ElementType.Enum</a></div><div class="ttdeci">@ Enum</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_html"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil.html">ILRuntime.Mono.Cecil</a></div><div class="ttdef"><b>Definition:</b> <a href="_code_8cs_source.html#l00011">Code.cs:11</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_html"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono.html">ILRuntime.Mono</a></div><div class="ttdef"><b>Definition:</b> <a href="_code_8cs_source.html#l00011">Code.cs:11</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_reflection_html"><div class="ttname"><a href="namespace_i_l_runtime_1_1_reflection.html">ILRuntime.Reflection</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_l_runtime_2_reflection_2_extensions_8cs_source.html#l00010">Extensions.cs:11</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_html"><div class="ttname"><a href="namespace_i_l_runtime.html">ILRuntime</a></div><div class="ttdef"><b>Definition:</b> <a href="_c_l_r_bindings_8cs_source.html#l00005">CLRBindings.cs:6</a></div></div>
+<div class="ttc" id="anamespace_proto_buf_1_1_meta_html"><div class="ttname"><a href="namespace_proto_buf_1_1_meta.html">ProtoBuf.Meta</a></div><div class="ttdef"><b>Definition:</b> <a href="_attribute_map_8cs_source.html#l00011">AttributeMap.cs:12</a></div></div>
+<div class="ttc" id="anamespace_proto_buf_1_1_serializers_html"><div class="ttname"><a href="namespace_proto_buf_1_1_serializers.html">ProtoBuf.Serializers</a></div><div class="ttdef"><b>Definition:</b> <a href="_array_decorator_8cs_source.html#l00013">ArrayDecorator.cs:14</a></div></div>
+<div class="ttc" id="anamespace_proto_buf_html"><div class="ttname"><a href="namespace_proto_buf.html">ProtoBuf</a></div><div class="ttdef"><b>Definition:</b> <a href="_bcl_helpers_8cs_source.html#l00003">BclHelpers.cs:4</a></div></div>
+<div class="ttc" id="anamespace_proto_buf_html_a65ab37a4ba78a8c3f83f0184feea2ce1"><div class="ttname"><a href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">ProtoBuf.WireType</a></div><div class="ttdeci">WireType</div><div class="ttdoc">Indicates the encoding used to represent an individual value in a protobuf stream</div><div class="ttdef"><b>Definition:</b> <a href="_wire_type_8cs_source.html#l00006">WireType.cs:7</a></div></div>
+<div class="ttc" id="anamespace_proto_buf_html_a995c29daf9a0d7f8466dd963d7f980e7"><div class="ttname"><a href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">ProtoBuf.DataFormat</a></div><div class="ttdeci">DataFormat</div><div class="ttdoc">Sub-format to use when serializing/deserializing data</div><div class="ttdef"><b>Definition:</b> <a href="_data_format_8cs_source.html#l00007">DataFormat.cs:8</a></div></div>
+<div class="ttc" id="anamespace_system_1_1_collections_1_1_generic_html"><div class="ttname"><a href="namespace_system_1_1_collections_1_1_generic.html">System.Collections.Generic</a></div></div>
+<div class="ttc" id="anamespace_system_1_1_collections_html"><div class="ttname"><a href="namespace_system_1_1_collections.html">System.Collections</a></div></div>
+<div class="ttc" id="anamespace_system_html"><div class="ttname"><a href="namespace_system.html">System</a></div><div class="ttdef"><b>Definition:</b> <a href="_async_method_builder_attribute_8cs_source.html#l00002">AsyncMethodBuilderAttribute.cs:3</a></div></div>
+<div class="ttc" id="astruct_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute_argument_html"><div class="ttname"><a href="struct_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute_argument.html">ILRuntime.Mono.Cecil.CustomAttributeArgument</a></div><div class="ttdef"><b>Definition:</b> <a href="_custom_attribute_8cs_source.html#l00018">CustomAttribute.cs:18</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_3b33dffaa21a2ac6f7978a949ffd4e41.html">Assets</a></li><li class="navelem"><a class="el" href="dir_5501c55c26a8d51fbc1fd8b7d8df04c3.html">ThirdParty</a></li><li class="navelem"><a class="el" href="dir_6648695deef2aa71b28671732c22e7e7.html">protobuf-net</a></li><li class="navelem"><a class="el" href="dir_681d81cfef8a8a06000b38e379f4bdb0.html">Meta</a></li><li class="navelem"><a class="el" href="_value_member_8cs.html">ValueMember.cs</a></li>
+    <li class="footer">生成于 2022年 一月 23日 星期日 19:16:19 , 为 ET使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

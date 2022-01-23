@@ -1,0 +1,1354 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ET: Libs/Kcp/ikcp.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ET<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('ikcp_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle"><div class="title">ikcp.c 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="ikcp_8h_source.html">ikcp.h</a>&quot;</code><br />
+<code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stdarg.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+<code>#include &lt;sys/time.h&gt;</code><br />
+</div>
+<p><a href="ikcp_8c_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a65e824e02c4185cc1e7a184173ea33a5"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_i_k_c_p_s_e_g.html">IKCPSEG</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#a65e824e02c4185cc1e7a184173ea33a5">IKCPSEG</a></td></tr>
+<tr class="separator:a65e824e02c4185cc1e7a184173ea33a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a77ca6f41e41e66942fa71c78a679c205"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ikcp_8h.html#ad1fae8eaa93d33c7636e4a85284442a9">IINT64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#a77ca6f41e41e66942fa71c78a679c205">ikcp_get_unixtime</a> ()</td></tr>
+<tr class="separator:a77ca6f41e41e66942fa71c78a679c205"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad1837b09c86ce3e965bc2e0a21599a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#aad1837b09c86ce3e965bc2e0a21599a4">ikcp_allocator</a> (void *(*new_malloc)(size_t), void(*new_free)(void *))</td></tr>
+<tr class="separator:aad1837b09c86ce3e965bc2e0a21599a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aade14c947464846c7523f78efa6534ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#aade14c947464846c7523f78efa6534ba">ikcp_log</a> (<a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *kcp, int mask, const char *fmt,...)</td></tr>
+<tr class="separator:aade14c947464846c7523f78efa6534ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4666efe40d211a24c49078218784e1ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#a4666efe40d211a24c49078218784e1ba">ikcp_qprint</a> (const char *name, const struct <a class="el" href="struct_i_q_u_e_u_e_h_e_a_d.html">IQUEUEHEAD</a> *head)</td></tr>
+<tr class="separator:a4666efe40d211a24c49078218784e1ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ba13891e334dedaced92cb46f67d11c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#a2ba13891e334dedaced92cb46f67d11c">ikcp_create</a> (<a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a> conv, void *user)</td></tr>
+<tr class="separator:a2ba13891e334dedaced92cb46f67d11c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d196c057722eacc389000a953b9a834"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#a0d196c057722eacc389000a953b9a834">ikcp_release</a> (<a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *kcp)</td></tr>
+<tr class="separator:a0d196c057722eacc389000a953b9a834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5388918a0946d8d3cd67e1ecf74e76ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#a5388918a0946d8d3cd67e1ecf74e76ca">ikcp_setoutput</a> (int(*op)(const char *buf, int len, <a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *kcp, void *user))</td></tr>
+<tr class="separator:a5388918a0946d8d3cd67e1ecf74e76ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f379e0173116d3d35b182c174f77d01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#a7f379e0173116d3d35b182c174f77d01">ikcp_setlog</a> (void(*op)(const char *buf, int len, <a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *kcp, void *user))</td></tr>
+<tr class="separator:a7f379e0173116d3d35b182c174f77d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2601ec80bea171152e7baa2f35549013"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#a2601ec80bea171152e7baa2f35549013">ikcp_recv</a> (<a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *kcp, char *buffer, int index, int len)</td></tr>
+<tr class="separator:a2601ec80bea171152e7baa2f35549013"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8de027bb56f48487d381708f10ea1876"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#a8de027bb56f48487d381708f10ea1876">ikcp_peeksize</a> (const <a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *kcp)</td></tr>
+<tr class="separator:a8de027bb56f48487d381708f10ea1876"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2910e39f0373b4f5e40cc2db44c83f4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#ae2910e39f0373b4f5e40cc2db44c83f4">ikcp_send</a> (<a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *kcp, const char *buffer, int offset, int len)</td></tr>
+<tr class="separator:ae2910e39f0373b4f5e40cc2db44c83f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a561d3f82169973fcdf2c2211925190"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#a2a561d3f82169973fcdf2c2211925190">ikcp_parse_data</a> (<a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *kcp, <a class="el" href="struct_i_k_c_p_s_e_g.html">IKCPSEG</a> *newseg)</td></tr>
+<tr class="separator:a2a561d3f82169973fcdf2c2211925190"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afec643251e9c0d0c5a800b8bee331a61"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#afec643251e9c0d0c5a800b8bee331a61">ikcp_input</a> (<a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *kcp, const char *data, int offset, int size)</td></tr>
+<tr class="separator:afec643251e9c0d0c5a800b8bee331a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a3d9426417d04f8f1bbfbded14b4eb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#a2a3d9426417d04f8f1bbfbded14b4eb1">ikcp_flush</a> (<a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *kcp)</td></tr>
+<tr class="separator:a2a3d9426417d04f8f1bbfbded14b4eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a780ff8e4dd414f83db886cfd96172975"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#a780ff8e4dd414f83db886cfd96172975">ikcp_update</a> (<a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *kcp, <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a> current)</td></tr>
+<tr class="separator:a780ff8e4dd414f83db886cfd96172975"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02d91ba34a39f933292418fa7656762c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#a02d91ba34a39f933292418fa7656762c">ikcp_check</a> (const <a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *kcp, <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a> current)</td></tr>
+<tr class="separator:a02d91ba34a39f933292418fa7656762c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83a0ae338fffdc679dceb34633161b44"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#a83a0ae338fffdc679dceb34633161b44">ikcp_setmtu</a> (<a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *kcp, int mtu)</td></tr>
+<tr class="separator:a83a0ae338fffdc679dceb34633161b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd39dea7c759a7f5f1668c3c1cecb4af"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#afd39dea7c759a7f5f1668c3c1cecb4af">ikcp_interval</a> (<a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *kcp, int interval)</td></tr>
+<tr class="separator:afd39dea7c759a7f5f1668c3c1cecb4af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac119d1fc1cf5e979803d8419fced6b22"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#ac119d1fc1cf5e979803d8419fced6b22">ikcp_nodelay</a> (<a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *kcp, int nodelay, int interval, int resend, int nc)</td></tr>
+<tr class="separator:ac119d1fc1cf5e979803d8419fced6b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6071a18d7a25011d25db6f42079d8b8d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#a6071a18d7a25011d25db6f42079d8b8d">ikcp_wndsize</a> (<a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *kcp, int sndwnd, int rcvwnd)</td></tr>
+<tr class="separator:a6071a18d7a25011d25db6f42079d8b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07104748365a93087ef50cdb50545847"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#a07104748365a93087ef50cdb50545847">ikcp_waitsnd</a> (const <a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *kcp)</td></tr>
+<tr class="separator:a07104748365a93087ef50cdb50545847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c812352b08070a1c1bd9f0f57c14379"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#a0c812352b08070a1c1bd9f0f57c14379">ikcp_getconv</a> (const void *ptr)</td></tr>
+<tr class="separator:a0c812352b08070a1c1bd9f0f57c14379"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab25558cad060de5d54983acad6e4ec68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#ab25558cad060de5d54983acad6e4ec68">ikcp_setminrto</a> (<a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *kcp, int Minrto)</td></tr>
+<tr class="separator:ab25558cad060de5d54983acad6e4ec68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a26882fab66b049d9c712da74be85d67e"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#a26882fab66b049d9c712da74be85d67e">output</a> )(const char *buf, int len, <a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *kcp, void *user)=0</td></tr>
+<tr class="separator:a26882fab66b049d9c712da74be85d67e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70ca4f61e2ce33da199c35e1bbdcce04"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#a70ca4f61e2ce33da199c35e1bbdcce04">writelog</a> )(const char *log, int len, <a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *kcp, void *user)=0</td></tr>
+<tr class="separator:a70ca4f61e2ce33da199c35e1bbdcce04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5c8a2739bdd395f60c51fa4e2f1ee40"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#ad5c8a2739bdd395f60c51fa4e2f1ee40">IKCP_RTO_NDL</a> = 30</td></tr>
+<tr class="separator:ad5c8a2739bdd395f60c51fa4e2f1ee40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b36679eb271dc9c946f4756056beda0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#a8b36679eb271dc9c946f4756056beda0">IKCP_RTO_MIN</a> = 100</td></tr>
+<tr class="separator:a8b36679eb271dc9c946f4756056beda0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9dd61c7ba45e6dbed3140c2ec2642e1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#ab9dd61c7ba45e6dbed3140c2ec2642e1">IKCP_RTO_DEF</a> = 200</td></tr>
+<tr class="separator:ab9dd61c7ba45e6dbed3140c2ec2642e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ef72e05964b9ab5a00a937d9574bf35"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#a3ef72e05964b9ab5a00a937d9574bf35">IKCP_RTO_MAX</a> = 60000</td></tr>
+<tr class="separator:a3ef72e05964b9ab5a00a937d9574bf35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45b09a85f793a22f71cd61a8480872da"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#a45b09a85f793a22f71cd61a8480872da">IKCP_CMD_PUSH</a> = 81</td></tr>
+<tr class="separator:a45b09a85f793a22f71cd61a8480872da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad58f0752568aa0228f6f997487273796"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#ad58f0752568aa0228f6f997487273796">IKCP_CMD_ACK</a> = 82</td></tr>
+<tr class="separator:ad58f0752568aa0228f6f997487273796"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0b3d2593dcd8d9583fcbe8065b10fc1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#ad0b3d2593dcd8d9583fcbe8065b10fc1">IKCP_CMD_WASK</a> = 83</td></tr>
+<tr class="separator:ad0b3d2593dcd8d9583fcbe8065b10fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21b22ff8b7b728f158cdf180aaefcb73"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#a21b22ff8b7b728f158cdf180aaefcb73">IKCP_CMD_WINS</a> = 84</td></tr>
+<tr class="separator:a21b22ff8b7b728f158cdf180aaefcb73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e0ce580701e0bef7c8c75221820d876"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#a9e0ce580701e0bef7c8c75221820d876">IKCP_ASK_SEND</a> = 1</td></tr>
+<tr class="separator:a9e0ce580701e0bef7c8c75221820d876"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee531e701f987e5dfc713d11f5e69176"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#aee531e701f987e5dfc713d11f5e69176">IKCP_ASK_TELL</a> = 2</td></tr>
+<tr class="separator:aee531e701f987e5dfc713d11f5e69176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaf5f8ffc75e9f211322006760edbae0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#afaf5f8ffc75e9f211322006760edbae0">IKCP_WND_SND</a> = 32</td></tr>
+<tr class="separator:afaf5f8ffc75e9f211322006760edbae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e81ec6ab07097a49390ad7a0809312b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#a3e81ec6ab07097a49390ad7a0809312b">IKCP_WND_RCV</a> = 128</td></tr>
+<tr class="separator:a3e81ec6ab07097a49390ad7a0809312b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab104fc0f4f3c5764b7bb96ba86590575"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#ab104fc0f4f3c5764b7bb96ba86590575">IKCP_MTU_DEF</a> = 1400</td></tr>
+<tr class="separator:ab104fc0f4f3c5764b7bb96ba86590575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0389925d44274022212cca512cb78c83"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#a0389925d44274022212cca512cb78c83">IKCP_ACK_FAST</a> = 3</td></tr>
+<tr class="separator:a0389925d44274022212cca512cb78c83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6e2a48b1db59ce61f2c405adb1ddccb"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#ae6e2a48b1db59ce61f2c405adb1ddccb">IKCP_INTERVAL</a> = 100</td></tr>
+<tr class="separator:ae6e2a48b1db59ce61f2c405adb1ddccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01d63b71219e121ae101bd65788de495"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#a01d63b71219e121ae101bd65788de495">IKCP_OVERHEAD</a> = 24</td></tr>
+<tr class="separator:a01d63b71219e121ae101bd65788de495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eeddb721fc1c7166d1fe30e7e71d4b6"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#a9eeddb721fc1c7166d1fe30e7e71d4b6">IKCP_DEADLINK</a> = 20</td></tr>
+<tr class="separator:a9eeddb721fc1c7166d1fe30e7e71d4b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a108aebab95b135c9e6fa697e625a2e55"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#a108aebab95b135c9e6fa697e625a2e55">IKCP_THRESH_INIT</a> = 2</td></tr>
+<tr class="separator:a108aebab95b135c9e6fa697e625a2e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65a77e3888df76a2171dc31658136fe3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#a65a77e3888df76a2171dc31658136fe3">IKCP_THRESH_MIN</a> = 2</td></tr>
+<tr class="separator:a65a77e3888df76a2171dc31658136fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28f9860143df9d4abce11ce12d7a7542"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#a28f9860143df9d4abce11ce12d7a7542">IKCP_PROBE_INIT</a> = 7000</td></tr>
+<tr class="separator:a28f9860143df9d4abce11ce12d7a7542"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4594c6398b872d46fcf31f65b4953dc"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#ac4594c6398b872d46fcf31f65b4953dc">IKCP_PROBE_LIMIT</a> = 120000</td></tr>
+<tr class="separator:ac4594c6398b872d46fcf31f65b4953dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85fe0193cce2d1a28ce77b80648ce8c0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ikcp_8c.html#a85fe0193cce2d1a28ce77b80648ce8c0">IKCP_FASTACK_LIMIT</a> = 5</td></tr>
+<tr class="separator:a85fe0193cce2d1a28ce77b80648ce8c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">类型定义说明</h2>
+<a id="a65e824e02c4185cc1e7a184173ea33a5" name="a65e824e02c4185cc1e7a184173ea33a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65e824e02c4185cc1e7a184173ea33a5">&#9670;&nbsp;</a></span>IKCPSEG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_i_k_c_p_s_e_g.html">IKCPSEG</a> <a class="el" href="struct_i_k_c_p_s_e_g.html">IKCPSEG</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00185">185</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="aad1837b09c86ce3e965bc2e0a21599a4" name="aad1837b09c86ce3e965bc2e0a21599a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad1837b09c86ce3e965bc2e0a21599a4">&#9670;&nbsp;</a></span>ikcp_allocator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ikcp_allocator </td>
+          <td>(</td>
+          <td class="paramtype">void *(*)(size_t)&#160;</td>
+          <td class="paramname"><em>new_malloc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(void *)&#160;</td>
+          <td class="paramname"><em>new_free</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00207">207</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a02d91ba34a39f933292418fa7656762c" name="a02d91ba34a39f933292418fa7656762c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02d91ba34a39f933292418fa7656762c">&#9670;&nbsp;</a></span>ikcp_check()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a> ikcp_check </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *&#160;</td>
+          <td class="paramname"><em>kcp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a>&#160;</td>
+          <td class="paramname"><em>current</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l01205">1205</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2ba13891e334dedaced92cb46f67d11c" name="a2ba13891e334dedaced92cb46f67d11c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ba13891e334dedaced92cb46f67d11c">&#9670;&nbsp;</a></span>ikcp_create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> * ikcp_create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a>&#160;</td>
+          <td class="paramname"><em>conv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00272">272</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2a3d9426417d04f8f1bbfbded14b4eb1" name="a2a3d9426417d04f8f1bbfbded14b4eb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a3d9426417d04f8f1bbfbded14b4eb1">&#9670;&nbsp;</a></span>ikcp_flush()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ikcp_flush </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *&#160;</td>
+          <td class="paramname"><em>kcp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00966">966</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a77ca6f41e41e66942fa71c78a679c205" name="a77ca6f41e41e66942fa71c78a679c205"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77ca6f41e41e66942fa71c78a679c205">&#9670;&nbsp;</a></span>ikcp_get_unixtime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ikcp_8h.html#ad1fae8eaa93d33c7636e4a85284442a9">IINT64</a> ikcp_get_unixtime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00081">81</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0c812352b08070a1c1bd9f0f57c14379" name="a0c812352b08070a1c1bd9f0f57c14379"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c812352b08070a1c1bd9f0f57c14379">&#9670;&nbsp;</a></span>ikcp_getconv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a> ikcp_getconv </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l01314">1314</a> 行定义.</p>
+
+</div>
+</div>
+<a id="afec643251e9c0d0c5a800b8bee331a61" name="afec643251e9c0d0c5a800b8bee331a61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afec643251e9c0d0c5a800b8bee331a61">&#9670;&nbsp;</a></span>ikcp_input()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ikcp_input </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *&#160;</td>
+          <td class="paramname"><em>kcp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00792">792</a> 行定义.</p>
+
+</div>
+</div>
+<a id="afd39dea7c759a7f5f1668c3c1cecb4af" name="afd39dea7c759a7f5f1668c3c1cecb4af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd39dea7c759a7f5f1668c3c1cecb4af">&#9670;&nbsp;</a></span>ikcp_interval()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ikcp_interval </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *&#160;</td>
+          <td class="paramname"><em>kcp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>interval</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l01260">1260</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aade14c947464846c7523f78efa6534ba" name="aade14c947464846c7523f78efa6534ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aade14c947464846c7523f78efa6534ba">&#9670;&nbsp;</a></span>ikcp_log()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ikcp_log </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *&#160;</td>
+          <td class="paramname"><em>kcp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00226">226</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac119d1fc1cf5e979803d8419fced6b22" name="ac119d1fc1cf5e979803d8419fced6b22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac119d1fc1cf5e979803d8419fced6b22">&#9670;&nbsp;</a></span>ikcp_nodelay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ikcp_nodelay </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *&#160;</td>
+          <td class="paramname"><em>kcp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nodelay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>interval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>resend</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l01268">1268</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2a561d3f82169973fcdf2c2211925190" name="a2a561d3f82169973fcdf2c2211925190"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a561d3f82169973fcdf2c2211925190">&#9670;&nbsp;</a></span>ikcp_parse_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ikcp_parse_data </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *&#160;</td>
+          <td class="paramname"><em>kcp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_i_k_c_p_s_e_g.html">IKCPSEG</a> *&#160;</td>
+          <td class="paramname"><em>newseg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00726">726</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8de027bb56f48487d381708f10ea1876" name="a8de027bb56f48487d381708f10ea1876"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8de027bb56f48487d381708f10ea1876">&#9670;&nbsp;</a></span>ikcp_peeksize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ikcp_peeksize </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *&#160;</td>
+          <td class="paramname"><em>kcp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00482">482</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4666efe40d211a24c49078218784e1ba" name="a4666efe40d211a24c49078218784e1ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4666efe40d211a24c49078218784e1ba">&#9670;&nbsp;</a></span>ikcp_qprint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ikcp_qprint </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="struct_i_q_u_e_u_e_h_e_a_d.html">IQUEUEHEAD</a> *&#160;</td>
+          <td class="paramname"><em>head</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00254">254</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2601ec80bea171152e7baa2f35549013" name="a2601ec80bea171152e7baa2f35549013"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2601ec80bea171152e7baa2f35549013">&#9670;&nbsp;</a></span>ikcp_recv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ikcp_recv </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *&#160;</td>
+          <td class="paramname"><em>kcp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00398">398</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0d196c057722eacc389000a953b9a834" name="a0d196c057722eacc389000a953b9a834"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d196c057722eacc389000a953b9a834">&#9670;&nbsp;</a></span>ikcp_release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ikcp_release </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *&#160;</td>
+          <td class="paramname"><em>kcp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00337">337</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae2910e39f0373b4f5e40cc2db44c83f4" name="ae2910e39f0373b4f5e40cc2db44c83f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2910e39f0373b4f5e40cc2db44c83f4">&#9670;&nbsp;</a></span>ikcp_send()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ikcp_send </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *&#160;</td>
+          <td class="paramname"><em>kcp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00510">510</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7f379e0173116d3d35b182c174f77d01" name="a7f379e0173116d3d35b182c174f77d01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f379e0173116d3d35b182c174f77d01">&#9670;&nbsp;</a></span>ikcp_setlog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ikcp_setlog </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(const char *buf, int len, <a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *kcp, void *user)&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00389">389</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab25558cad060de5d54983acad6e4ec68" name="ab25558cad060de5d54983acad6e4ec68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab25558cad060de5d54983acad6e4ec68">&#9670;&nbsp;</a></span>ikcp_setminrto()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ikcp_setminrto </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *&#160;</td>
+          <td class="paramname"><em>kcp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>Minrto</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l01321">1321</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a83a0ae338fffdc679dceb34633161b44" name="a83a0ae338fffdc679dceb34633161b44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83a0ae338fffdc679dceb34633161b44">&#9670;&nbsp;</a></span>ikcp_setmtu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ikcp_setmtu </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *&#160;</td>
+          <td class="paramname"><em>kcp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mtu</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l01245">1245</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5388918a0946d8d3cd67e1ecf74e76ca" name="a5388918a0946d8d3cd67e1ecf74e76ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5388918a0946d8d3cd67e1ecf74e76ca">&#9670;&nbsp;</a></span>ikcp_setoutput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ikcp_setoutput </td>
+          <td>(</td>
+          <td class="paramtype">int(*)(const char *buf, int len, <a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *kcp, void *user)&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00384">384</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a780ff8e4dd414f83db886cfd96172975" name="a780ff8e4dd414f83db886cfd96172975"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a780ff8e4dd414f83db886cfd96172975">&#9670;&nbsp;</a></span>ikcp_update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ikcp_update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *&#160;</td>
+          <td class="paramname"><em>kcp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a>&#160;</td>
+          <td class="paramname"><em>current</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l01169">1169</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a07104748365a93087ef50cdb50545847" name="a07104748365a93087ef50cdb50545847"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07104748365a93087ef50cdb50545847">&#9670;&nbsp;</a></span>ikcp_waitsnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ikcp_waitsnd </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *&#160;</td>
+          <td class="paramname"><em>kcp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l01307">1307</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6071a18d7a25011d25db6f42079d8b8d" name="a6071a18d7a25011d25db6f42079d8b8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6071a18d7a25011d25db6f42079d8b8d">&#9670;&nbsp;</a></span>ikcp_wndsize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ikcp_wndsize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *&#160;</td>
+          <td class="paramname"><em>kcp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sndwnd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rcvwnd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l01294">1294</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a id="a0389925d44274022212cca512cb78c83" name="a0389925d44274022212cca512cb78c83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0389925d44274022212cca512cb78c83">&#9670;&nbsp;</a></span>IKCP_ACK_FAST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a> IKCP_ACK_FAST = 3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00041">41</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9e0ce580701e0bef7c8c75221820d876" name="a9e0ce580701e0bef7c8c75221820d876"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e0ce580701e0bef7c8c75221820d876">&#9670;&nbsp;</a></span>IKCP_ASK_SEND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a> IKCP_ASK_SEND = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00036">36</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aee531e701f987e5dfc713d11f5e69176" name="aee531e701f987e5dfc713d11f5e69176"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee531e701f987e5dfc713d11f5e69176">&#9670;&nbsp;</a></span>IKCP_ASK_TELL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a> IKCP_ASK_TELL = 2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00037">37</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad58f0752568aa0228f6f997487273796" name="ad58f0752568aa0228f6f997487273796"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad58f0752568aa0228f6f997487273796">&#9670;&nbsp;</a></span>IKCP_CMD_ACK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a> IKCP_CMD_ACK = 82</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00033">33</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a45b09a85f793a22f71cd61a8480872da" name="a45b09a85f793a22f71cd61a8480872da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45b09a85f793a22f71cd61a8480872da">&#9670;&nbsp;</a></span>IKCP_CMD_PUSH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a> IKCP_CMD_PUSH = 81</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00032">32</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad0b3d2593dcd8d9583fcbe8065b10fc1" name="ad0b3d2593dcd8d9583fcbe8065b10fc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0b3d2593dcd8d9583fcbe8065b10fc1">&#9670;&nbsp;</a></span>IKCP_CMD_WASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a> IKCP_CMD_WASK = 83</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00034">34</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a21b22ff8b7b728f158cdf180aaefcb73" name="a21b22ff8b7b728f158cdf180aaefcb73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21b22ff8b7b728f158cdf180aaefcb73">&#9670;&nbsp;</a></span>IKCP_CMD_WINS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a> IKCP_CMD_WINS = 84</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00035">35</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9eeddb721fc1c7166d1fe30e7e71d4b6" name="a9eeddb721fc1c7166d1fe30e7e71d4b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9eeddb721fc1c7166d1fe30e7e71d4b6">&#9670;&nbsp;</a></span>IKCP_DEADLINK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a> IKCP_DEADLINK = 20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00044">44</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a85fe0193cce2d1a28ce77b80648ce8c0" name="a85fe0193cce2d1a28ce77b80648ce8c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85fe0193cce2d1a28ce77b80648ce8c0">&#9670;&nbsp;</a></span>IKCP_FASTACK_LIMIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a> IKCP_FASTACK_LIMIT = 5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00049">49</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae6e2a48b1db59ce61f2c405adb1ddccb" name="ae6e2a48b1db59ce61f2c405adb1ddccb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6e2a48b1db59ce61f2c405adb1ddccb">&#9670;&nbsp;</a></span>IKCP_INTERVAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a> IKCP_INTERVAL = 100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00042">42</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab104fc0f4f3c5764b7bb96ba86590575" name="ab104fc0f4f3c5764b7bb96ba86590575"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab104fc0f4f3c5764b7bb96ba86590575">&#9670;&nbsp;</a></span>IKCP_MTU_DEF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a> IKCP_MTU_DEF = 1400</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00040">40</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a01d63b71219e121ae101bd65788de495" name="a01d63b71219e121ae101bd65788de495"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01d63b71219e121ae101bd65788de495">&#9670;&nbsp;</a></span>IKCP_OVERHEAD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a> IKCP_OVERHEAD = 24</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00043">43</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a28f9860143df9d4abce11ce12d7a7542" name="a28f9860143df9d4abce11ce12d7a7542"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28f9860143df9d4abce11ce12d7a7542">&#9670;&nbsp;</a></span>IKCP_PROBE_INIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a> IKCP_PROBE_INIT = 7000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00047">47</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac4594c6398b872d46fcf31f65b4953dc" name="ac4594c6398b872d46fcf31f65b4953dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4594c6398b872d46fcf31f65b4953dc">&#9670;&nbsp;</a></span>IKCP_PROBE_LIMIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a> IKCP_PROBE_LIMIT = 120000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00048">48</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab9dd61c7ba45e6dbed3140c2ec2642e1" name="ab9dd61c7ba45e6dbed3140c2ec2642e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9dd61c7ba45e6dbed3140c2ec2642e1">&#9670;&nbsp;</a></span>IKCP_RTO_DEF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a> IKCP_RTO_DEF = 200</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00030">30</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3ef72e05964b9ab5a00a937d9574bf35" name="a3ef72e05964b9ab5a00a937d9574bf35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ef72e05964b9ab5a00a937d9574bf35">&#9670;&nbsp;</a></span>IKCP_RTO_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a> IKCP_RTO_MAX = 60000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00031">31</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8b36679eb271dc9c946f4756056beda0" name="a8b36679eb271dc9c946f4756056beda0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b36679eb271dc9c946f4756056beda0">&#9670;&nbsp;</a></span>IKCP_RTO_MIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a> IKCP_RTO_MIN = 100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00029">29</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad5c8a2739bdd395f60c51fa4e2f1ee40" name="ad5c8a2739bdd395f60c51fa4e2f1ee40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5c8a2739bdd395f60c51fa4e2f1ee40">&#9670;&nbsp;</a></span>IKCP_RTO_NDL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a> IKCP_RTO_NDL = 30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00028">28</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a108aebab95b135c9e6fa697e625a2e55" name="a108aebab95b135c9e6fa697e625a2e55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a108aebab95b135c9e6fa697e625a2e55">&#9670;&nbsp;</a></span>IKCP_THRESH_INIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a> IKCP_THRESH_INIT = 2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00045">45</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a65a77e3888df76a2171dc31658136fe3" name="a65a77e3888df76a2171dc31658136fe3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65a77e3888df76a2171dc31658136fe3">&#9670;&nbsp;</a></span>IKCP_THRESH_MIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a> IKCP_THRESH_MIN = 2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00046">46</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3e81ec6ab07097a49390ad7a0809312b" name="a3e81ec6ab07097a49390ad7a0809312b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e81ec6ab07097a49390ad7a0809312b">&#9670;&nbsp;</a></span>IKCP_WND_RCV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a> IKCP_WND_RCV = 128</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00039">39</a> 行定义.</p>
+
+</div>
+</div>
+<a id="afaf5f8ffc75e9f211322006760edbae0" name="afaf5f8ffc75e9f211322006760edbae0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaf5f8ffc75e9f211322006760edbae0">&#9670;&nbsp;</a></span>IKCP_WND_SND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="ikcp_8h.html#ae9be6f0797849c3e756fdacfe0a76f29">IUINT32</a> IKCP_WND_SND = 32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00038">38</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a26882fab66b049d9c712da74be85d67e" name="a26882fab66b049d9c712da74be85d67e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26882fab66b049d9c712da74be85d67e">&#9670;&nbsp;</a></span>output</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* output) (const char *buf, int len, <a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *kcp, void *user)=0 </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *&#160;</td>
+          <td class="paramname"><em>kcp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00021">21</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a70ca4f61e2ce33da199c35e1bbdcce04" name="a70ca4f61e2ce33da199c35e1bbdcce04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70ca4f61e2ce33da199c35e1bbdcce04">&#9670;&nbsp;</a></span>writelog</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* writelog) (const char *log, int len, <a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *kcp, void *user)=0 </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>log</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ikcp_8h.html#a54616165d5f80d826a68d13f9161758d">ikcpcb</a> *&#160;</td>
+          <td class="paramname"><em>kcp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="ikcp_8c_source.html">ikcp.c</a> 第 <a class="el" href="ikcp_8c_source.html#l00022">22</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_6e6cb9563333489fde7459b1f95e59a5.html">Libs</a></li><li class="navelem"><a class="el" href="dir_884dd7684517651d55412706799cf2e2.html">Kcp</a></li><li class="navelem"><a class="el" href="ikcp_8c.html">ikcp.c</a></li>
+    <li class="footer">生成于 2022年 一月 23日 星期日 19:16:20 , 为 ET使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

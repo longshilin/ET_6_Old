@@ -1,0 +1,653 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ET: ILRuntime.Runtime.Intepreter.ILTypeInstance类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ET<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_type_instance.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="#properties">属性</a>  </div>
+  <div class="headertitle"><div class="title">ILRuntime.Runtime.Intepreter.ILTypeInstance类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 ILRuntime.Runtime.Intepreter.ILTypeInstance 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_type_instance.png" usemap="#ILRuntime.Runtime.Intepreter.ILTypeInstance_map" alt=""/>
+  <map id="ILRuntime.Runtime.Intepreter.ILTypeInstance_map" name="ILRuntime.Runtime.Intepreter.ILTypeInstance_map">
+<area href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_delegate_adapter.html" alt="ILRuntime.Runtime.Intepreter.DelegateAdapter" shape="rect" coords="0,56,477,80"/>
+<area href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_enum_type_instance.html" alt="ILRuntime.Runtime.Intepreter.ILEnumTypeInstance" shape="rect" coords="487,56,964,80"/>
+<area href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_type_static_instance.html" alt="ILRuntime.Runtime.Intepreter.ILTypeStaticInstance" shape="rect" coords="974,56,1451,80"/>
+<area href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_dummy_delegate_adapter.html" alt="ILRuntime.Runtime.Intepreter.DummyDelegateAdapter" shape="rect" coords="487,112,964,136"/>
+<area href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_function_delegate_adapter.html" alt="ILRuntime.Runtime.Intepreter.FunctionDelegateAdapter&lt; T1, T2, T3, T4, TResult &gt;" shape="rect" coords="487,168,964,192"/>
+<area href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_function_delegate_adapter.html" alt="ILRuntime.Runtime.Intepreter.FunctionDelegateAdapter&lt; T1, T2, T3, T4, TResult &gt;" shape="rect" coords="487,224,964,248"/>
+<area href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_function_delegate_adapter.html" alt="ILRuntime.Runtime.Intepreter.FunctionDelegateAdapter&lt; T1, T2, T3, T4, TResult &gt;" shape="rect" coords="487,280,964,304"/>
+<area href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_function_delegate_adapter.html" alt="ILRuntime.Runtime.Intepreter.FunctionDelegateAdapter&lt; T1, T2, T3, T4, TResult &gt;" shape="rect" coords="487,336,964,360"/>
+<area href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_function_delegate_adapter.html" alt="ILRuntime.Runtime.Intepreter.FunctionDelegateAdapter&lt; T1, T2, T3, T4, TResult &gt;" shape="rect" coords="487,392,964,416"/>
+<area href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_method_delegate_adapter.html" alt="ILRuntime.Runtime.Intepreter.MethodDelegateAdapter&lt; T1, T2, T3, T4 &gt;" shape="rect" coords="487,448,964,472"/>
+<area href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_method_delegate_adapter.html" alt="ILRuntime.Runtime.Intepreter.MethodDelegateAdapter&lt; T1, T2, T3, T4 &gt;" shape="rect" coords="487,504,964,528"/>
+<area href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_method_delegate_adapter.html" alt="ILRuntime.Runtime.Intepreter.MethodDelegateAdapter&lt; T1, T2, T3, T4 &gt;" shape="rect" coords="487,560,964,584"/>
+<area href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_method_delegate_adapter.html" alt="ILRuntime.Runtime.Intepreter.MethodDelegateAdapter&lt; T1, T2, T3, T4 &gt;" shape="rect" coords="487,616,964,640"/>
+<area href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_method_delegate_adapter.html" alt="ILRuntime.Runtime.Intepreter.MethodDelegateAdapter&lt; T1, T2, T3, T4 &gt;" shape="rect" coords="487,672,964,696"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a877545e0d0e3101a03540dddd1f3c250"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_type_instance.html#a877545e0d0e3101a03540dddd1f3c250">ILTypeInstance</a> (<a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_type.html">ILType</a> <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_type_instance.html#a6f1d323191fe10a004e9a9c90cada441">type</a>, bool initializeCLRInstance=true)</td></tr>
+<tr class="separator:a877545e0d0e3101a03540dddd1f3c250"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a276c2bb77de8ab90ad27712c10de5b8e"><td class="memItemLeft" align="right" valign="top">unsafe void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_type_instance.html#a276c2bb77de8ab90ad27712c10de5b8e">AssignFieldNoClone</a> (int index, object value)</td></tr>
+<tr class="separator:a276c2bb77de8ab90ad27712c10de5b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95cd6052c053a1d7b49255c57ac9cce0"><td class="memItemLeft" align="right" valign="top">unsafe int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_type_instance.html#a95cd6052c053a1d7b49255c57ac9cce0">GetSizeInMemory</a> (HashSet&lt; object &gt; traversedObj)</td></tr>
+<tr class="separator:a95cd6052c053a1d7b49255c57ac9cce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39d3788b90451eaf21865105cdb58699"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_type_instance.html#a39d3788b90451eaf21865105cdb58699">ToString</a> ()</td></tr>
+<tr class="separator:a39d3788b90451eaf21865105cdb58699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ec3608e6b35460d52df3a8d70c6ed2e"><td class="memItemLeft" align="right" valign="top">override bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_type_instance.html#a8ec3608e6b35460d52df3a8d70c6ed2e">Equals</a> (object obj)</td></tr>
+<tr class="separator:a8ec3608e6b35460d52df3a8d70c6ed2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b0cd5edef2aa1569868fca8ae37cfb2"><td class="memItemLeft" align="right" valign="top">override int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_type_instance.html#a0b0cd5edef2aa1569868fca8ae37cfb2">GetHashCode</a> ()</td></tr>
+<tr class="separator:a0b0cd5edef2aa1569868fca8ae37cfb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58fd7be57c8401cd2ccb365f891b9172"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_type_instance.html#a58fd7be57c8401cd2ccb365f891b9172">CanAssignTo</a> (<a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a> <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_type_instance.html#a6f1d323191fe10a004e9a9c90cada441">type</a>)</td></tr>
+<tr class="separator:a58fd7be57c8401cd2ccb365f891b9172"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1adffe82976899cc373ecf297b67e46"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_type_instance.html">ILTypeInstance</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_type_instance.html#af1adffe82976899cc373ecf297b67e46">Clone</a> ()</td></tr>
+<tr class="separator:af1adffe82976899cc373ecf297b67e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a1be40b58b4be2c119f0df6a6c05e60b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_type_instance.html#a1be40b58b4be2c119f0df6a6c05e60b1">ILTypeInstance</a> ()</td></tr>
+<tr class="separator:a1be40b58b4be2c119f0df6a6c05e60b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a6f1d323191fe10a004e9a9c90cada441"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_type.html">ILType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_type_instance.html#a6f1d323191fe10a004e9a9c90cada441">type</a></td></tr>
+<tr class="separator:a6f1d323191fe10a004e9a9c90cada441"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a592a6f0ba5dba58d9d7aa13c42f9eacd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_i_l_runtime_1_1_runtime_1_1_stack_1_1_stack_object.html">StackObject</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_type_instance.html#a592a6f0ba5dba58d9d7aa13c42f9eacd">fields</a></td></tr>
+<tr class="separator:a592a6f0ba5dba58d9d7aa13c42f9eacd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49dd89aea6fb42cc2fce7f5937eb0b61"><td class="memItemLeft" align="right" valign="top">IList&lt; object &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_type_instance.html#a49dd89aea6fb42cc2fce7f5937eb0b61">managedObjs</a></td></tr>
+<tr class="separator:a49dd89aea6fb42cc2fce7f5937eb0b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a8005b5e949cf246e305961cc2ccf4b26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_type.html">ILType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_type_instance.html#a8005b5e949cf246e305961cc2ccf4b26">Type</a><code> [get]</code></td></tr>
+<tr class="separator:a8005b5e949cf246e305961cc2ccf4b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2bac0c733605291ef6390dc971aa8cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_i_l_runtime_1_1_runtime_1_1_stack_1_1_stack_object.html">StackObject</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_type_instance.html#ae2bac0c733605291ef6390dc971aa8cc">Fields</a><code> [get]</code></td></tr>
+<tr class="separator:ae2bac0c733605291ef6390dc971aa8cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a147639ab207c4a60e0cc49d5987e3203"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_type_instance.html#a147639ab207c4a60e0cc49d5987e3203">IsValueType</a><code> [get]</code></td></tr>
+<tr class="separator:a147639ab207c4a60e0cc49d5987e3203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2b70a79e008a0f24e9b288a59b811e3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_type_instance.html#af2b70a79e008a0f24e9b288a59b811e3">Boxed</a><code> [getset]</code></td></tr>
+<tr class="memdesc:af2b70a79e008a0f24e9b288a59b811e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否已装箱  <a href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_type_instance.html#af2b70a79e008a0f24e9b288a59b811e3">更多...</a><br /></td></tr>
+<tr class="separator:af2b70a79e008a0f24e9b288a59b811e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a440a822c77f2f656c11d5c1a8c79f063"><td class="memItemLeft" align="right" valign="top">IList&lt; object &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_type_instance.html#a440a822c77f2f656c11d5c1a8c79f063">ManagedObjects</a><code> [get]</code></td></tr>
+<tr class="separator:a440a822c77f2f656c11d5c1a8c79f063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ac4a5bf6fd1338d5d09a2e41cedc968"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_type_instance.html#a1ac4a5bf6fd1338d5d09a2e41cedc968">CLRInstance</a><code> [getset]</code></td></tr>
+<tr class="separator:a1ac4a5bf6fd1338d5d09a2e41cedc968"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1857cf626418dc989609d515a84de49b"><td class="memItemLeft" align="right" valign="top">unsafe object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_type_instance.html#a1857cf626418dc989609d515a84de49b">this[int index]</a><code> [getset]</code></td></tr>
+<tr class="separator:a1857cf626418dc989609d515a84de49b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="_i_l_type_instance_8cs_source.html">ILTypeInstance.cs</a> 第 <a class="el" href="_i_l_type_instance_8cs_source.html#l00132">132</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a1be40b58b4be2c119f0df6a6c05e60b1" name="a1be40b58b4be2c119f0df6a6c05e60b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1be40b58b4be2c119f0df6a6c05e60b1">&#9670;&nbsp;</a></span>ILTypeInstance() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ILRuntime.Runtime.Intepreter.ILTypeInstance.ILTypeInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_l_type_instance_8cs_source.html">ILTypeInstance.cs</a> 第 <a class="el" href="_i_l_type_instance_8cs_source.html#l00171">171</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a877545e0d0e3101a03540dddd1f3c250" name="a877545e0d0e3101a03540dddd1f3c250"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a877545e0d0e3101a03540dddd1f3c250">&#9670;&nbsp;</a></span>ILTypeInstance() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ILRuntime.Runtime.Intepreter.ILTypeInstance.ILTypeInstance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_type.html">ILType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>initializeCLRInstance</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_l_type_instance_8cs_source.html">ILTypeInstance.cs</a> 第 <a class="el" href="_i_l_type_instance_8cs_source.html#l00175">175</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a276c2bb77de8ab90ad27712c10de5b8e" name="a276c2bb77de8ab90ad27712c10de5b8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a276c2bb77de8ab90ad27712c10de5b8e">&#9670;&nbsp;</a></span>AssignFieldNoClone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsafe void ILRuntime.Runtime.Intepreter.ILTypeInstance.AssignFieldNoClone </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_l_type_instance_8cs_source.html">ILTypeInstance.cs</a> 第 <a class="el" href="_i_l_type_instance_8cs_source.html#l00278">278</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a58fd7be57c8401cd2ccb365f891b9172" name="a58fd7be57c8401cd2ccb365f891b9172"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58fd7be57c8401cd2ccb365f891b9172">&#9670;&nbsp;</a></span>CanAssignTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ILRuntime.Runtime.Intepreter.ILTypeInstance.CanAssignTo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_delegate_adapter.html#a89dcba8c4320b9401b04f75ca95dc3e2">ILRuntime.Runtime.Intepreter.DelegateAdapter</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_i_l_type_instance_8cs_source.html">ILTypeInstance.cs</a> 第 <a class="el" href="_i_l_type_instance_8cs_source.html#l00737">737</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af1adffe82976899cc373ecf297b67e46" name="af1adffe82976899cc373ecf297b67e46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1adffe82976899cc373ecf297b67e46">&#9670;&nbsp;</a></span>Clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_type_instance.html">ILTypeInstance</a> ILRuntime.Runtime.Intepreter.ILTypeInstance.Clone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被 <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_function_delegate_adapter.html#a78ff6f8fcf69ae66b57362f9d848e9c9">ILRuntime.Runtime.Intepreter.FunctionDelegateAdapter&lt; T1, T2, T3, T4, TResult &gt;</a>, <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_function_delegate_adapter.html#a78ff6f8fcf69ae66b57362f9d848e9c9">ILRuntime.Runtime.Intepreter.FunctionDelegateAdapter&lt; T1, T2, T3, T4, TResult &gt;</a>, <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_function_delegate_adapter.html#a78ff6f8fcf69ae66b57362f9d848e9c9">ILRuntime.Runtime.Intepreter.FunctionDelegateAdapter&lt; T1, T2, T3, T4, TResult &gt;</a>, <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_function_delegate_adapter.html#a78ff6f8fcf69ae66b57362f9d848e9c9">ILRuntime.Runtime.Intepreter.FunctionDelegateAdapter&lt; T1, T2, T3, T4, TResult &gt;</a>, <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_function_delegate_adapter.html#a78ff6f8fcf69ae66b57362f9d848e9c9">ILRuntime.Runtime.Intepreter.FunctionDelegateAdapter&lt; T1, T2, T3, T4, TResult &gt;</a>, <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_method_delegate_adapter.html#ae3f467b9a24727afb574ff415d552c46">ILRuntime.Runtime.Intepreter.MethodDelegateAdapter&lt; T1, T2, T3, T4 &gt;</a>, <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_method_delegate_adapter.html#ae3f467b9a24727afb574ff415d552c46">ILRuntime.Runtime.Intepreter.MethodDelegateAdapter&lt; T1, T2, T3, T4 &gt;</a>, <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_method_delegate_adapter.html#ae3f467b9a24727afb574ff415d552c46">ILRuntime.Runtime.Intepreter.MethodDelegateAdapter&lt; T1, T2, T3, T4 &gt;</a>, <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_method_delegate_adapter.html#ae3f467b9a24727afb574ff415d552c46">ILRuntime.Runtime.Intepreter.MethodDelegateAdapter&lt; T1, T2, T3, T4 &gt;</a>, <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_method_delegate_adapter.html#ae3f467b9a24727afb574ff415d552c46">ILRuntime.Runtime.Intepreter.MethodDelegateAdapter&lt; T1, T2, T3, T4 &gt;</a>, <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_dummy_delegate_adapter.html#aca5304b15655680d6a020999c53fe2a0">ILRuntime.Runtime.Intepreter.DummyDelegateAdapter</a>, <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_delegate_adapter.html#a2ed4ec890ce9f2d262bb4903ebff655a">ILRuntime.Runtime.Intepreter.DelegateAdapter</a> , 以及 <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_enum_type_instance.html#aaa71c9a1aaa251d4d481f2dbefc0237a">ILRuntime.Runtime.Intepreter.ILEnumTypeInstance</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="_i_l_type_instance_8cs_source.html">ILTypeInstance.cs</a> 第 <a class="el" href="_i_l_type_instance_8cs_source.html#l00742">742</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8ec3608e6b35460d52df3a8d70c6ed2e" name="a8ec3608e6b35460d52df3a8d70c6ed2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ec3608e6b35460d52df3a8d70c6ed2e">&#9670;&nbsp;</a></span>Equals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override bool ILRuntime.Runtime.Intepreter.ILTypeInstance.Equals </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>obj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_l_type_instance_8cs_source.html">ILTypeInstance.cs</a> 第 <a class="el" href="_i_l_type_instance_8cs_source.html#l00664">664</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0b0cd5edef2aa1569868fca8ae37cfb2" name="a0b0cd5edef2aa1569868fca8ae37cfb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b0cd5edef2aa1569868fca8ae37cfb2">&#9670;&nbsp;</a></span>GetHashCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override int ILRuntime.Runtime.Intepreter.ILTypeInstance.GetHashCode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_l_type_instance_8cs_source.html">ILTypeInstance.cs</a> 第 <a class="el" href="_i_l_type_instance_8cs_source.html#l00709">709</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a95cd6052c053a1d7b49255c57ac9cce0" name="a95cd6052c053a1d7b49255c57ac9cce0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95cd6052c053a1d7b49255c57ac9cce0">&#9670;&nbsp;</a></span>GetSizeInMemory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsafe int ILRuntime.Runtime.Intepreter.ILTypeInstance.GetSizeInMemory </td>
+          <td>(</td>
+          <td class="paramtype">HashSet&lt; object &gt;&#160;</td>
+          <td class="paramname"><em>traversedObj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_l_type_instance_8cs_source.html">ILTypeInstance.cs</a> 第 <a class="el" href="_i_l_type_instance_8cs_source.html#l00323">323</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a39d3788b90451eaf21865105cdb58699" name="a39d3788b90451eaf21865105cdb58699"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39d3788b90451eaf21865105cdb58699">&#9670;&nbsp;</a></span>ToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override string ILRuntime.Runtime.Intepreter.ILTypeInstance.ToString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_l_type_instance_8cs_source.html">ILTypeInstance.cs</a> 第 <a class="el" href="_i_l_type_instance_8cs_source.html#l00647">647</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">结构体成员变量说明</h2>
+<a id="a592a6f0ba5dba58d9d7aa13c42f9eacd" name="a592a6f0ba5dba58d9d7aa13c42f9eacd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a592a6f0ba5dba58d9d7aa13c42f9eacd">&#9670;&nbsp;</a></span>fields</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_i_l_runtime_1_1_runtime_1_1_stack_1_1_stack_object.html">StackObject</a> [] ILRuntime.Runtime.Intepreter.ILTypeInstance.fields</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_l_type_instance_8cs_source.html">ILTypeInstance.cs</a> 第 <a class="el" href="_i_l_type_instance_8cs_source.html#l00135">135</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a49dd89aea6fb42cc2fce7f5937eb0b61" name="a49dd89aea6fb42cc2fce7f5937eb0b61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49dd89aea6fb42cc2fce7f5937eb0b61">&#9670;&nbsp;</a></span>managedObjs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IList&lt;object&gt; ILRuntime.Runtime.Intepreter.ILTypeInstance.managedObjs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_l_type_instance_8cs_source.html">ILTypeInstance.cs</a> 第 <a class="el" href="_i_l_type_instance_8cs_source.html#l00136">136</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6f1d323191fe10a004e9a9c90cada441" name="a6f1d323191fe10a004e9a9c90cada441"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f1d323191fe10a004e9a9c90cada441">&#9670;&nbsp;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_type.html">ILType</a> ILRuntime.Runtime.Intepreter.ILTypeInstance.type</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_l_type_instance_8cs_source.html">ILTypeInstance.cs</a> 第 <a class="el" href="_i_l_type_instance_8cs_source.html#l00134">134</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">属性说明</h2>
+<a id="af2b70a79e008a0f24e9b288a59b811e3" name="af2b70a79e008a0f24e9b288a59b811e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2b70a79e008a0f24e9b288a59b811e3">&#9670;&nbsp;</a></span>Boxed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ILRuntime.Runtime.Intepreter.ILTypeInstance.Boxed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>是否已装箱 </p>
+
+<p class="definition">在文件 <a class="el" href="_i_l_type_instance_8cs_source.html">ILTypeInstance.cs</a> 第 <a class="el" href="_i_l_type_instance_8cs_source.html#l00165">165</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1ac4a5bf6fd1338d5d09a2e41cedc968" name="a1ac4a5bf6fd1338d5d09a2e41cedc968"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ac4a5bf6fd1338d5d09a2e41cedc968">&#9670;&nbsp;</a></span>CLRInstance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">object ILRuntime.Runtime.Intepreter.ILTypeInstance.CLRInstance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_l_type_instance_8cs_source.html">ILTypeInstance.cs</a> 第 <a class="el" href="_i_l_type_instance_8cs_source.html#l00169">169</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae2bac0c733605291ef6390dc971aa8cc" name="ae2bac0c733605291ef6390dc971aa8cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2bac0c733605291ef6390dc971aa8cc">&#9670;&nbsp;</a></span>Fields</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_i_l_runtime_1_1_runtime_1_1_stack_1_1_stack_object.html">StackObject</a> [] ILRuntime.Runtime.Intepreter.ILTypeInstance.Fields</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_l_type_instance_8cs_source.html">ILTypeInstance.cs</a> 第 <a class="el" href="_i_l_type_instance_8cs_source.html#l00149">149</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a147639ab207c4a60e0cc49d5987e3203" name="a147639ab207c4a60e0cc49d5987e3203"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a147639ab207c4a60e0cc49d5987e3203">&#9670;&nbsp;</a></span>IsValueType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ILRuntime.Runtime.Intepreter.ILTypeInstance.IsValueType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_l_type_instance_8cs_source.html">ILTypeInstance.cs</a> 第 <a class="el" href="_i_l_type_instance_8cs_source.html#l00154">154</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a440a822c77f2f656c11d5c1a8c79f063" name="a440a822c77f2f656c11d5c1a8c79f063"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a440a822c77f2f656c11d5c1a8c79f063">&#9670;&nbsp;</a></span>ManagedObjects</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IList&lt;object&gt; ILRuntime.Runtime.Intepreter.ILTypeInstance.ManagedObjects</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_l_type_instance_8cs_source.html">ILTypeInstance.cs</a> 第 <a class="el" href="_i_l_type_instance_8cs_source.html#l00167">167</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1857cf626418dc989609d515a84de49b" name="a1857cf626418dc989609d515a84de49b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1857cf626418dc989609d515a84de49b">&#9670;&nbsp;</a></span>this[int index]</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsafe object ILRuntime.Runtime.Intepreter.ILTypeInstance.this[int index]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_l_type_instance_8cs_source.html">ILTypeInstance.cs</a> 第 <a class="el" href="_i_l_type_instance_8cs_source.html#l00209">209</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8005b5e949cf246e305961cc2ccf4b26" name="a8005b5e949cf246e305961cc2ccf4b26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8005b5e949cf246e305961cc2ccf4b26">&#9670;&nbsp;</a></span>Type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_type.html">ILType</a> ILRuntime.Runtime.Intepreter.ILTypeInstance.Type</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_l_type_instance_8cs_source.html">ILTypeInstance.cs</a> 第 <a class="el" href="_i_l_type_instance_8cs_source.html#l00141">141</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>Unity/Assets/ThirdParty/ILRuntime/Runtime/Intepreter/<a class="el" href="_i_l_type_instance_8cs_source.html">ILTypeInstance.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_i_l_runtime.html">ILRuntime</a></li><li class="navelem"><a class="el" href="namespace_i_l_runtime_1_1_runtime.html">Runtime</a></li><li class="navelem"><a class="el" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter.html">Intepreter</a></li><li class="navelem"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_type_instance.html">ILTypeInstance</a></li>
+    <li class="footer">生成于 2022年 一月 23日 星期日 19:16:27 , 为 ET使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

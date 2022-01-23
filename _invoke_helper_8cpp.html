@@ -1,0 +1,418 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ET: Libs/RecastDll/Source/InvokeHelper.cpp 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ET<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_invoke_helper_8cpp.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">InvokeHelper.cpp 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="_invoke_helper_8h_source.html">InvokeHelper.h</a>&quot;</code><br />
+<code>#include &quot;DetourNavMesh.h&quot;</code><br />
+<code>#include &quot;DetourNavMeshQuery.h&quot;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
+<code>#include &lt;unordered_map&gt;</code><br />
+<code>#include &quot;DetourCommon.h&quot;</code><br />
+</div>
+<p><a href="_invoke_helper_8cpp_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nav_mesh_set_header.html">NavMeshSetHeader</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nav_mesh_tile_header.html">NavMeshTileHeader</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nav_mesh_contex.html">NavMeshContex</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a1a9701974131ba04117733d478f13f3b"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_invoke_helper_8cpp.html#a1a9701974131ba04117733d478f13f3b">InitNav</a> (const char *buffer, int32_t n, dtNavMesh *&amp;navMesh)</td></tr>
+<tr class="separator:a1a9701974131ba04117733d478f13f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7310207f77885d54bf8cfdc4bacd9522"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nav_mesh_contex.html">NavMeshContex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_invoke_helper_8cpp.html#a7310207f77885d54bf8cfdc4bacd9522">RecastLoad</a> (int32_t id, const char *buffer, int32_t n)</td></tr>
+<tr class="separator:a7310207f77885d54bf8cfdc4bacd9522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd67d74690c38c681348663bdaa89cd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_nav_mesh_contex.html">NavMeshContex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_invoke_helper_8cpp.html#acd67d74690c38c681348663bdaa89cd3">RecastGet</a> (int32_t id)</td></tr>
+<tr class="separator:acd67d74690c38c681348663bdaa89cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbea3824870329aeb1afb5246337703b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_invoke_helper_8cpp.html#adbea3824870329aeb1afb5246337703b">RecastClear</a> ()</td></tr>
+<tr class="separator:adbea3824870329aeb1afb5246337703b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53a8c021de9061c63d60a4e1c09aae82"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_invoke_helper_8cpp.html#a53a8c021de9061c63d60a4e1c09aae82">RecastFind</a> (<a class="el" href="class_nav_mesh_contex.html">NavMeshContex</a> *navMeshContex, float *extents, float *startPos, float *endPos, float *straightPath)</td></tr>
+<tr class="separator:a53a8c021de9061c63d60a4e1c09aae82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4ea1a886a14c8a2615b9a1f4eb80c8b"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_invoke_helper_8cpp.html#ac4ea1a886a14c8a2615b9a1f4eb80c8b">RecastFindNearestPoint</a> (<a class="el" href="class_nav_mesh_contex.html">NavMeshContex</a> *navMeshContex, float *extents, float *startPos, float *nearestPos)</td></tr>
+<tr class="separator:ac4ea1a886a14c8a2615b9a1f4eb80c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ea430d5fe81987ee7bf16613c2a5aaa"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_invoke_helper_8cpp.html#a2ea430d5fe81987ee7bf16613c2a5aaa">RecastFindRandomPoint</a> (<a class="el" href="class_nav_mesh_contex.html">NavMeshContex</a> *navMeshContex, float *pos)</td></tr>
+<tr class="separator:a2ea430d5fe81987ee7bf16613c2a5aaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8e301b3e71811816e823adcdb58dabe"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_invoke_helper_8cpp.html#ac8e301b3e71811816e823adcdb58dabe">RecastFindRandomPointAroundCircle</a> (<a class="el" href="class_nav_mesh_contex.html">NavMeshContex</a> *navMeshContex, float *extents, const float *centerPos, const float maxRadius, float *pos)</td></tr>
+<tr class="separator:ac8e301b3e71811816e823adcdb58dabe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">函数说明</h2>
+<a id="a1a9701974131ba04117733d478f13f3b" name="a1a9701974131ba04117733d478f13f3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a9701974131ba04117733d478f13f3b">&#9670;&nbsp;</a></span>InitNav()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t InitNav </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dtNavMesh *&amp;&#160;</td>
+          <td class="paramname"><em>navMesh</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_invoke_helper_8cpp_source.html">InvokeHelper.cpp</a> 第 <a class="el" href="_invoke_helper_8cpp_source.html#l00025">25</a> 行定义.</p>
+
+</div>
+</div>
+<a id="adbea3824870329aeb1afb5246337703b" name="adbea3824870329aeb1afb5246337703b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbea3824870329aeb1afb5246337703b">&#9670;&nbsp;</a></span>RecastClear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RecastClear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_invoke_helper_8cpp_source.html">InvokeHelper.cpp</a> 第 <a class="el" href="_invoke_helper_8cpp_source.html#l00193">193</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a53a8c021de9061c63d60a4e1c09aae82" name="a53a8c021de9061c63d60a4e1c09aae82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53a8c021de9061c63d60a4e1c09aae82">&#9670;&nbsp;</a></span>RecastFind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t RecastFind </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_nav_mesh_contex.html">NavMeshContex</a> *&#160;</td>
+          <td class="paramname"><em>navMeshContex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>extents</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>startPos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>endPos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>straightPath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_invoke_helper_8cpp_source.html">InvokeHelper.cpp</a> 第 <a class="el" href="_invoke_helper_8cpp_source.html#l00198">198</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac4ea1a886a14c8a2615b9a1f4eb80c8b" name="ac4ea1a886a14c8a2615b9a1f4eb80c8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4ea1a886a14c8a2615b9a1f4eb80c8b">&#9670;&nbsp;</a></span>RecastFindNearestPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t RecastFindNearestPoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_nav_mesh_contex.html">NavMeshContex</a> *&#160;</td>
+          <td class="paramname"><em>navMeshContex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>extents</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>startPos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>nearestPos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_invoke_helper_8cpp_source.html">InvokeHelper.cpp</a> 第 <a class="el" href="_invoke_helper_8cpp_source.html#l00263">263</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2ea430d5fe81987ee7bf16613c2a5aaa" name="a2ea430d5fe81987ee7bf16613c2a5aaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ea430d5fe81987ee7bf16613c2a5aaa">&#9670;&nbsp;</a></span>RecastFindRandomPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t RecastFindRandomPoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_nav_mesh_contex.html">NavMeshContex</a> *&#160;</td>
+          <td class="paramname"><em>navMeshContex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>pos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_invoke_helper_8cpp_source.html">InvokeHelper.cpp</a> 第 <a class="el" href="_invoke_helper_8cpp_source.html#l00298">298</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac8e301b3e71811816e823adcdb58dabe" name="ac8e301b3e71811816e823adcdb58dabe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8e301b3e71811816e823adcdb58dabe">&#9670;&nbsp;</a></span>RecastFindRandomPointAroundCircle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t RecastFindRandomPointAroundCircle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_nav_mesh_contex.html">NavMeshContex</a> *&#160;</td>
+          <td class="paramname"><em>navMeshContex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>extents</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>centerPos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>maxRadius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>pos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_invoke_helper_8cpp_source.html">InvokeHelper.cpp</a> 第 <a class="el" href="_invoke_helper_8cpp_source.html#l00316">316</a> 行定义.</p>
+
+</div>
+</div>
+<a id="acd67d74690c38c681348663bdaa89cd3" name="acd67d74690c38c681348663bdaa89cd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd67d74690c38c681348663bdaa89cd3">&#9670;&nbsp;</a></span>RecastGet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_nav_mesh_contex.html">NavMeshContex</a> * RecastGet </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_invoke_helper_8cpp_source.html">InvokeHelper.cpp</a> 第 <a class="el" href="_invoke_helper_8cpp_source.html#l00188">188</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7310207f77885d54bf8cfdc4bacd9522" name="a7310207f77885d54bf8cfdc4bacd9522"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7310207f77885d54bf8cfdc4bacd9522">&#9670;&nbsp;</a></span>RecastLoad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_nav_mesh_contex.html">NavMeshContex</a> * RecastLoad </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_invoke_helper_8cpp_source.html">InvokeHelper.cpp</a> 第 <a class="el" href="_invoke_helper_8cpp_source.html#l00183">183</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_6e6cb9563333489fde7459b1f95e59a5.html">Libs</a></li><li class="navelem"><a class="el" href="dir_a96c3204ed0009a99c81ce8fb4bf5028.html">RecastDll</a></li><li class="navelem"><a class="el" href="dir_92b37afcc577a190a1be4ebb79f8631a.html">Source</a></li><li class="navelem"><a class="el" href="_invoke_helper_8cpp.html">InvokeHelper.cpp</a></li>
+    <li class="footer">生成于 2022年 一月 23日 星期日 19:16:20 , 为 ET使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

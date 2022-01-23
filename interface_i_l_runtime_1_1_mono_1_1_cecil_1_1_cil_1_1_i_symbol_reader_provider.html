@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ET: ILRuntime.Mono.Cecil.Cil.ISymbolReaderProvider接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ET<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_i_symbol_reader_provider.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a>  </div>
+  <div class="headertitle"><div class="title">ILRuntime.Mono.Cecil.Cil.ISymbolReaderProvider接口 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 ILRuntime.Mono.Cecil.Cil.ISymbolReaderProvider 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_i_symbol_reader_provider.png" usemap="#ILRuntime.Mono.Cecil.Cil.ISymbolReaderProvider_map" alt=""/>
+  <map id="ILRuntime.Mono.Cecil.Cil.ISymbolReaderProvider_map" name="ILRuntime.Mono.Cecil.Cil.ISymbolReaderProvider_map">
+<area href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_default_symbol_reader_provider.html" alt="ILRuntime.Mono.Cecil.Cil.DefaultSymbolReaderProvider" shape="rect" coords="0,56,376,80"/>
+<area href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_embedded_portable_pdb_reader_provider.html" alt="ILRuntime.Mono.Cecil.Cil.EmbeddedPortablePdbReaderProvider" shape="rect" coords="386,56,762,80"/>
+<area href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_portable_pdb_reader_provider.html" alt="ILRuntime.Mono.Cecil.Cil.PortablePdbReaderProvider" shape="rect" coords="772,56,1148,80"/>
+<area href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_reader_provider.html" alt="ILRuntime.Mono.Cecil.Mdb.MdbReaderProvider" shape="rect" coords="1158,56,1534,80"/>
+<area href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_pdb_1_1_native_pdb_reader_provider.html" alt="ILRuntime.Mono.Cecil.Pdb.NativePdbReaderProvider" shape="rect" coords="1544,56,1920,80"/>
+<area href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_pdb_1_1_pdb_reader_provider.html" alt="ILRuntime.Mono.Cecil.Pdb.PdbReaderProvider" shape="rect" coords="1930,56,2306,80"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a3a2a0b0e7d1bd7ee97bb85f7c9e28b33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_i_symbol_reader.html">ISymbolReader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_i_symbol_reader_provider.html#a3a2a0b0e7d1bd7ee97bb85f7c9e28b33">GetSymbolReader</a> (<a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_module_definition.html">ModuleDefinition</a> module, string fileName)</td></tr>
+<tr class="separator:a3a2a0b0e7d1bd7ee97bb85f7c9e28b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3bde100d6fd4e6caafc108caf83d159"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_i_symbol_reader.html">ISymbolReader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_i_symbol_reader_provider.html#ac3bde100d6fd4e6caafc108caf83d159">GetSymbolReader</a> (<a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_module_definition.html">ModuleDefinition</a> module, Stream symbolStream)</td></tr>
+<tr class="separator:ac3bde100d6fd4e6caafc108caf83d159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="_symbols_8cs_source.html">Symbols.cs</a> 第 <a class="el" href="_symbols_8cs_source.html#l00809">809</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="ac3bde100d6fd4e6caafc108caf83d159" name="ac3bde100d6fd4e6caafc108caf83d159"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3bde100d6fd4e6caafc108caf83d159">&#9670;&nbsp;</a></span>GetSymbolReader() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_i_symbol_reader.html">ISymbolReader</a> ILRuntime.Mono.Cecil.Cil.ISymbolReaderProvider.GetSymbolReader </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_module_definition.html">ModuleDefinition</a>&#160;</td>
+          <td class="paramname"><em>module</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Stream&#160;</td>
+          <td class="paramname"><em>symbolStream</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_portable_pdb_reader_provider.html#a0fdad84ea2d819f9fd009a5f622a1495">ILRuntime.Mono.Cecil.Cil.PortablePdbReaderProvider</a>, <a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_embedded_portable_pdb_reader_provider.html#aa08843d291d0145221ca8435b2555e4e">ILRuntime.Mono.Cecil.Cil.EmbeddedPortablePdbReaderProvider</a>, <a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_default_symbol_reader_provider.html#a57c30dc3e271ea9e6e265dcd5ed46406">ILRuntime.Mono.Cecil.Cil.DefaultSymbolReaderProvider</a>, <a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_reader_provider.html#ad1d5c86478f4aa1cf41962838386e508">ILRuntime.Mono.Cecil.Mdb.MdbReaderProvider</a>, <a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_pdb_1_1_native_pdb_reader_provider.html#a1c29807de4eb90ffaddc02504b4d141b">ILRuntime.Mono.Cecil.Pdb.NativePdbReaderProvider</a> , 以及 <a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_pdb_1_1_pdb_reader_provider.html#a961b0618a97818fbf26c11e8bb4efa95">ILRuntime.Mono.Cecil.Pdb.PdbReaderProvider</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a3a2a0b0e7d1bd7ee97bb85f7c9e28b33" name="a3a2a0b0e7d1bd7ee97bb85f7c9e28b33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a2a0b0e7d1bd7ee97bb85f7c9e28b33">&#9670;&nbsp;</a></span>GetSymbolReader() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_i_symbol_reader.html">ISymbolReader</a> ILRuntime.Mono.Cecil.Cil.ISymbolReaderProvider.GetSymbolReader </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_module_definition.html">ModuleDefinition</a>&#160;</td>
+          <td class="paramname"><em>module</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>fileName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_portable_pdb_reader_provider.html#a69341746eedc4ed9178deda15b69ebd5">ILRuntime.Mono.Cecil.Cil.PortablePdbReaderProvider</a>, <a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_embedded_portable_pdb_reader_provider.html#a6a70fa7d0c728447863dbda9d9ca298e">ILRuntime.Mono.Cecil.Cil.EmbeddedPortablePdbReaderProvider</a>, <a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_default_symbol_reader_provider.html#a3ada559d940d8119002ec7968b78e2fb">ILRuntime.Mono.Cecil.Cil.DefaultSymbolReaderProvider</a>, <a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_reader_provider.html#a1787d5284a317a810c7836c0de4363d1">ILRuntime.Mono.Cecil.Mdb.MdbReaderProvider</a>, <a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_pdb_1_1_native_pdb_reader_provider.html#a581d3f82d284faaa718ef0d1c16b8620">ILRuntime.Mono.Cecil.Pdb.NativePdbReaderProvider</a> , 以及 <a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_pdb_1_1_pdb_reader_provider.html#ae48caeb334a2d923d0d6fafaf19f8da3">ILRuntime.Mono.Cecil.Pdb.PdbReaderProvider</a> 内被实现.</p>
+
+</div>
+</div>
+<hr/>该接口的文档由以下文件生成:<ul>
+<li>Unity/Assets/ThirdParty/ILRuntime/Mono.Cecil/Mono.Cecil.Cil/<a class="el" href="_symbols_8cs_source.html">Symbols.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_i_l_runtime.html">ILRuntime</a></li><li class="navelem"><a class="el" href="namespace_i_l_runtime_1_1_mono.html">Mono</a></li><li class="navelem"><a class="el" href="namespace_i_l_runtime_1_1_mono_1_1_cecil.html">Cecil</a></li><li class="navelem"><a class="el" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil.html">Cil</a></li><li class="navelem"><a class="el" href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_i_symbol_reader_provider.html">ISymbolReaderProvider</a></li>
+    <li class="footer">生成于 2022年 一月 23日 星期日 19:16:26 , 为 ET使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

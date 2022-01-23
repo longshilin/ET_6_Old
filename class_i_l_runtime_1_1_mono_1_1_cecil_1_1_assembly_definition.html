@@ -1,0 +1,830 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ET: ILRuntime.Mono.Cecil.AssemblyDefinition类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ET<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#properties">属性</a>  </div>
+  <div class="headertitle"><div class="title">ILRuntime.Mono.Cecil.AssemblyDefinition类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 ILRuntime.Mono.Cecil.AssemblyDefinition 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.png" usemap="#ILRuntime.Mono.Cecil.AssemblyDefinition_map" alt=""/>
+  <map id="ILRuntime.Mono.Cecil.AssemblyDefinition_map" name="ILRuntime.Mono.Cecil.AssemblyDefinition_map">
+<area href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_custom_attribute_provider.html" alt="ILRuntime.Mono.Cecil.ICustomAttributeProvider" shape="rect" coords="0,56,303,80"/>
+<area href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_security_declaration_provider.html" alt="ILRuntime.Mono.Cecil.ISecurityDeclarationProvider" shape="rect" coords="313,56,616,80"/>
+<area href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_metadata_token_provider.html" alt="ILRuntime.Mono.Cecil.IMetadataTokenProvider" shape="rect" coords="0,0,303,24"/>
+<area href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_metadata_token_provider.html" alt="ILRuntime.Mono.Cecil.IMetadataTokenProvider" shape="rect" coords="313,0,616,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a4c0ae8bfb3e49e41670f9b065e79ed60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html#a4c0ae8bfb3e49e41670f9b065e79ed60">Dispose</a> ()</td></tr>
+<tr class="separator:a4c0ae8bfb3e49e41670f9b065e79ed60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac523370119db0ce0cbd12a8dae08df17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html#ac523370119db0ce0cbd12a8dae08df17">Write</a> (string fileName)</td></tr>
+<tr class="separator:ac523370119db0ce0cbd12a8dae08df17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbe1dbf804151b2594cf2df823cdb15a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html#adbe1dbf804151b2594cf2df823cdb15a">Write</a> (string fileName, <a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_writer_parameters.html">WriterParameters</a> parameters)</td></tr>
+<tr class="separator:adbe1dbf804151b2594cf2df823cdb15a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ce1f0ab41d12f22615d72ac212921b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html#a8ce1f0ab41d12f22615d72ac212921b5">Write</a> ()</td></tr>
+<tr class="separator:a8ce1f0ab41d12f22615d72ac212921b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64d9047f9994c1de20a0e818052a798f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html#a64d9047f9994c1de20a0e818052a798f">Write</a> (<a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_writer_parameters.html">WriterParameters</a> parameters)</td></tr>
+<tr class="separator:a64d9047f9994c1de20a0e818052a798f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53b3a3f39cd3ab4e3b097d8f32837ede"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html#a53b3a3f39cd3ab4e3b097d8f32837ede">Write</a> (Stream stream)</td></tr>
+<tr class="separator:a53b3a3f39cd3ab4e3b097d8f32837ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10be99183810aa8bc49684c94c658442"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html#a10be99183810aa8bc49684c94c658442">Write</a> (Stream stream, <a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_writer_parameters.html">WriterParameters</a> parameters)</td></tr>
+<tr class="separator:a10be99183810aa8bc49684c94c658442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af42a48acb282cad266acae7922e90ee3"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html#af42a48acb282cad266acae7922e90ee3">ToString</a> ()</td></tr>
+<tr class="separator:af42a48acb282cad266acae7922e90ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a1a14176108510b946613319dd3f672b7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html">AssemblyDefinition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html#a1a14176108510b946613319dd3f672b7">CreateAssembly</a> (<a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_name_definition.html">AssemblyNameDefinition</a> assemblyName, string moduleName, <a class="el" href="namespace_i_l_runtime_1_1_mono_1_1_cecil.html#aa57d86c1a9063cff89fdc10025551ec2">ModuleKind</a> kind)</td></tr>
+<tr class="separator:a1a14176108510b946613319dd3f672b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a618a1cc83a0299975d5877d64857726d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html">AssemblyDefinition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html#a618a1cc83a0299975d5877d64857726d">CreateAssembly</a> (<a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_name_definition.html">AssemblyNameDefinition</a> assemblyName, string moduleName, <a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_module_parameters.html">ModuleParameters</a> parameters)</td></tr>
+<tr class="separator:a618a1cc83a0299975d5877d64857726d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab32b098fe9ce78f4dc40a59dda22016a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html">AssemblyDefinition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html#ab32b098fe9ce78f4dc40a59dda22016a">ReadAssembly</a> (string fileName)</td></tr>
+<tr class="separator:ab32b098fe9ce78f4dc40a59dda22016a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2704736e89d315bcdc17a7af6521f0c2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html">AssemblyDefinition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html#a2704736e89d315bcdc17a7af6521f0c2">ReadAssembly</a> (string fileName, <a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_reader_parameters.html">ReaderParameters</a> parameters)</td></tr>
+<tr class="separator:a2704736e89d315bcdc17a7af6521f0c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8b4cd37979458920b53d1cd55d557cb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html">AssemblyDefinition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html#ab8b4cd37979458920b53d1cd55d557cb">ReadAssembly</a> (Stream stream)</td></tr>
+<tr class="separator:ab8b4cd37979458920b53d1cd55d557cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9221e2e2b100c257a44fb1c36cc6b5b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html">AssemblyDefinition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html#ae9221e2e2b100c257a44fb1c36cc6b5b">ReadAssembly</a> (Stream stream, <a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_reader_parameters.html">ReaderParameters</a> parameters)</td></tr>
+<tr class="separator:ae9221e2e2b100c257a44fb1c36cc6b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:affb4b7711b941f4871d163a620af9984"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_name_definition.html">AssemblyNameDefinition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html#affb4b7711b941f4871d163a620af9984">Name</a><code> [getset]</code></td></tr>
+<tr class="separator:affb4b7711b941f4871d163a620af9984"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa34384d97af134415262252b12f261dd"><td class="memItemLeft" align="right" valign="top">string?&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html#aa34384d97af134415262252b12f261dd">FullName</a><code> [get]</code></td></tr>
+<tr class="separator:aa34384d97af134415262252b12f261dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19dfbeaeb39beb5205ccc4616a626859"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_token.html">MetadataToken</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html#a19dfbeaeb39beb5205ccc4616a626859">MetadataToken</a><code> [getset]</code></td></tr>
+<tr class="separator:a19dfbeaeb39beb5205ccc4616a626859"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2531adc8c0fdb359ab5fce90dc5174b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html">Collection</a>&lt; <a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_module_definition.html">ModuleDefinition</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html#a2531adc8c0fdb359ab5fce90dc5174b7">Modules</a><code> [get]</code></td></tr>
+<tr class="separator:a2531adc8c0fdb359ab5fce90dc5174b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c2e205dd5a556261713f568d6951b14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_module_definition.html">ModuleDefinition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html#a4c2e205dd5a556261713f568d6951b14">MainModule</a><code> [get]</code></td></tr>
+<tr class="separator:a4c2e205dd5a556261713f568d6951b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add1c589ea73175b65d591a60446be3b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_method_definition.html">MethodDefinition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html#add1c589ea73175b65d591a60446be3b4">EntryPoint</a><code> [getset]</code></td></tr>
+<tr class="separator:add1c589ea73175b65d591a60446be3b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bf17cca72bb77b421a372d5b53750d3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html#a5bf17cca72bb77b421a372d5b53750d3">HasCustomAttributes</a><code> [get]</code></td></tr>
+<tr class="separator:a5bf17cca72bb77b421a372d5b53750d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87dd555115e1d9f9788c38285ef44f4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html">Collection</a>&lt; <a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute.html">CustomAttribute</a> &gt;??&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html#a87dd555115e1d9f9788c38285ef44f4a">CustomAttributes</a><code> [get]</code></td></tr>
+<tr class="separator:a87dd555115e1d9f9788c38285ef44f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd97e13c4b90d43036a5abd698ecc00e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html#afd97e13c4b90d43036a5abd698ecc00e">HasSecurityDeclarations</a><code> [get]</code></td></tr>
+<tr class="separator:afd97e13c4b90d43036a5abd698ecc00e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca56e693932c3c1621b02a2f10fcf025"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html">Collection</a>&lt; <a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_security_declaration.html">SecurityDeclaration</a> &gt;??&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html#aca56e693932c3c1621b02a2f10fcf025">SecurityDeclarations</a><code> [get]</code></td></tr>
+<tr class="separator:aca56e693932c3c1621b02a2f10fcf025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_custom_attribute_provider"><td colspan="2" onclick="javascript:toggleInherit('properties_interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_custom_attribute_provider')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el" href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_custom_attribute_provider.html">ILRuntime.Mono.Cecil.ICustomAttributeProvider</a></td></tr>
+<tr class="memitem:a09b2adc329ae4eff4712f1274fddee4b inherit properties_interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_custom_attribute_provider"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html">Collection</a>&lt; <a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute.html">CustomAttribute</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_custom_attribute_provider.html#a09b2adc329ae4eff4712f1274fddee4b">CustomAttributes</a><code> [get]</code></td></tr>
+<tr class="separator:a09b2adc329ae4eff4712f1274fddee4b inherit properties_interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_custom_attribute_provider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc5b708854b04b3831f8cefa026cbafd inherit properties_interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_custom_attribute_provider"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_custom_attribute_provider.html#abc5b708854b04b3831f8cefa026cbafd">HasCustomAttributes</a><code> [get]</code></td></tr>
+<tr class="separator:abc5b708854b04b3831f8cefa026cbafd inherit properties_interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_custom_attribute_provider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_metadata_token_provider"><td colspan="2" onclick="javascript:toggleInherit('properties_interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_metadata_token_provider')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el" href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_metadata_token_provider.html">ILRuntime.Mono.Cecil.IMetadataTokenProvider</a></td></tr>
+<tr class="memitem:a68f10ca6997f3f0c2af06ad2f3a52a52 inherit properties_interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_metadata_token_provider"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_token.html">MetadataToken</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_metadata_token_provider.html#a68f10ca6997f3f0c2af06ad2f3a52a52">MetadataToken</a><code> [getset]</code></td></tr>
+<tr class="separator:a68f10ca6997f3f0c2af06ad2f3a52a52 inherit properties_interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_metadata_token_provider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_security_declaration_provider"><td colspan="2" onclick="javascript:toggleInherit('properties_interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_security_declaration_provider')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el" href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_security_declaration_provider.html">ILRuntime.Mono.Cecil.ISecurityDeclarationProvider</a></td></tr>
+<tr class="memitem:af29c55315a969ae8c662fabf467428e0 inherit properties_interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_security_declaration_provider"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_security_declaration_provider.html#af29c55315a969ae8c662fabf467428e0">HasSecurityDeclarations</a><code> [get]</code></td></tr>
+<tr class="separator:af29c55315a969ae8c662fabf467428e0 inherit properties_interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_security_declaration_provider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac168f6238851407e4942884bfac08064 inherit properties_interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_security_declaration_provider"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html">Collection</a>&lt; <a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_security_declaration.html">SecurityDeclaration</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_security_declaration_provider.html#ac168f6238851407e4942884bfac08064">SecurityDeclarations</a><code> [get]</code></td></tr>
+<tr class="separator:ac168f6238851407e4942884bfac08064 inherit properties_interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_security_declaration_provider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="_assembly_definition_8cs_source.html">AssemblyDefinition.cs</a> 第 <a class="el" href="_assembly_definition_8cs_source.html#l00018">18</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a1a14176108510b946613319dd3f672b7" name="a1a14176108510b946613319dd3f672b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a14176108510b946613319dd3f672b7">&#9670;&nbsp;</a></span>CreateAssembly() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html">AssemblyDefinition</a> ILRuntime.Mono.Cecil.AssemblyDefinition.CreateAssembly </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_name_definition.html">AssemblyNameDefinition</a>&#160;</td>
+          <td class="paramname"><em>assemblyName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>moduleName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_i_l_runtime_1_1_mono_1_1_cecil.html#aa57d86c1a9063cff89fdc10025551ec2">ModuleKind</a>&#160;</td>
+          <td class="paramname"><em>kind</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_assembly_definition_8cs_source.html">AssemblyDefinition.cs</a> 第 <a class="el" href="_assembly_definition_8cs_source.html#l00104">104</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a618a1cc83a0299975d5877d64857726d" name="a618a1cc83a0299975d5877d64857726d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a618a1cc83a0299975d5877d64857726d">&#9670;&nbsp;</a></span>CreateAssembly() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html">AssemblyDefinition</a> ILRuntime.Mono.Cecil.AssemblyDefinition.CreateAssembly </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_name_definition.html">AssemblyNameDefinition</a>&#160;</td>
+          <td class="paramname"><em>assemblyName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>moduleName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_module_parameters.html">ModuleParameters</a>&#160;</td>
+          <td class="paramname"><em>parameters</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_assembly_definition_8cs_source.html">AssemblyDefinition.cs</a> 第 <a class="el" href="_assembly_definition_8cs_source.html#l00109">109</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4c0ae8bfb3e49e41670f9b065e79ed60" name="a4c0ae8bfb3e49e41670f9b065e79ed60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c0ae8bfb3e49e41670f9b065e79ed60">&#9670;&nbsp;</a></span>Dispose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ILRuntime.Mono.Cecil.AssemblyDefinition.Dispose </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_assembly_definition_8cs_source.html">AssemblyDefinition.cs</a> 第 <a class="el" href="_assembly_definition_8cs_source.html#l00093">93</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab8b4cd37979458920b53d1cd55d557cb" name="ab8b4cd37979458920b53d1cd55d557cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8b4cd37979458920b53d1cd55d557cb">&#9670;&nbsp;</a></span>ReadAssembly() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html">AssemblyDefinition</a> ILRuntime.Mono.Cecil.AssemblyDefinition.ReadAssembly </td>
+          <td>(</td>
+          <td class="paramtype">Stream&#160;</td>
+          <td class="paramname"><em>stream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_assembly_definition_8cs_source.html">AssemblyDefinition.cs</a> 第 <a class="el" href="_assembly_definition_8cs_source.html#l00135">135</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae9221e2e2b100c257a44fb1c36cc6b5b" name="ae9221e2e2b100c257a44fb1c36cc6b5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9221e2e2b100c257a44fb1c36cc6b5b">&#9670;&nbsp;</a></span>ReadAssembly() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html">AssemblyDefinition</a> ILRuntime.Mono.Cecil.AssemblyDefinition.ReadAssembly </td>
+          <td>(</td>
+          <td class="paramtype">Stream&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_reader_parameters.html">ReaderParameters</a>&#160;</td>
+          <td class="paramname"><em>parameters</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_assembly_definition_8cs_source.html">AssemblyDefinition.cs</a> 第 <a class="el" href="_assembly_definition_8cs_source.html#l00140">140</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab32b098fe9ce78f4dc40a59dda22016a" name="ab32b098fe9ce78f4dc40a59dda22016a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab32b098fe9ce78f4dc40a59dda22016a">&#9670;&nbsp;</a></span>ReadAssembly() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html">AssemblyDefinition</a> ILRuntime.Mono.Cecil.AssemblyDefinition.ReadAssembly </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>fileName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_assembly_definition_8cs_source.html">AssemblyDefinition.cs</a> 第 <a class="el" href="_assembly_definition_8cs_source.html#l00125">125</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2704736e89d315bcdc17a7af6521f0c2" name="a2704736e89d315bcdc17a7af6521f0c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2704736e89d315bcdc17a7af6521f0c2">&#9670;&nbsp;</a></span>ReadAssembly() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html">AssemblyDefinition</a> ILRuntime.Mono.Cecil.AssemblyDefinition.ReadAssembly </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_reader_parameters.html">ReaderParameters</a>&#160;</td>
+          <td class="paramname"><em>parameters</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_assembly_definition_8cs_source.html">AssemblyDefinition.cs</a> 第 <a class="el" href="_assembly_definition_8cs_source.html#l00130">130</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af42a48acb282cad266acae7922e90ee3" name="af42a48acb282cad266acae7922e90ee3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af42a48acb282cad266acae7922e90ee3">&#9670;&nbsp;</a></span>ToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override string ILRuntime.Mono.Cecil.AssemblyDefinition.ToString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_assembly_definition_8cs_source.html">AssemblyDefinition.cs</a> 第 <a class="el" href="_assembly_definition_8cs_source.html#l00184">184</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8ce1f0ab41d12f22615d72ac212921b5" name="a8ce1f0ab41d12f22615d72ac212921b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ce1f0ab41d12f22615d72ac212921b5">&#9670;&nbsp;</a></span>Write() <span class="overload">[1/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ILRuntime.Mono.Cecil.AssemblyDefinition.Write </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_assembly_definition_8cs_source.html">AssemblyDefinition.cs</a> 第 <a class="el" href="_assembly_definition_8cs_source.html#l00164">164</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a53b3a3f39cd3ab4e3b097d8f32837ede" name="a53b3a3f39cd3ab4e3b097d8f32837ede"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53b3a3f39cd3ab4e3b097d8f32837ede">&#9670;&nbsp;</a></span>Write() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ILRuntime.Mono.Cecil.AssemblyDefinition.Write </td>
+          <td>(</td>
+          <td class="paramtype">Stream&#160;</td>
+          <td class="paramname"><em>stream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_assembly_definition_8cs_source.html">AssemblyDefinition.cs</a> 第 <a class="el" href="_assembly_definition_8cs_source.html#l00174">174</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a10be99183810aa8bc49684c94c658442" name="a10be99183810aa8bc49684c94c658442"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10be99183810aa8bc49684c94c658442">&#9670;&nbsp;</a></span>Write() <span class="overload">[3/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ILRuntime.Mono.Cecil.AssemblyDefinition.Write </td>
+          <td>(</td>
+          <td class="paramtype">Stream&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_writer_parameters.html">WriterParameters</a>&#160;</td>
+          <td class="paramname"><em>parameters</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_assembly_definition_8cs_source.html">AssemblyDefinition.cs</a> 第 <a class="el" href="_assembly_definition_8cs_source.html#l00179">179</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac523370119db0ce0cbd12a8dae08df17" name="ac523370119db0ce0cbd12a8dae08df17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac523370119db0ce0cbd12a8dae08df17">&#9670;&nbsp;</a></span>Write() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ILRuntime.Mono.Cecil.AssemblyDefinition.Write </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>fileName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_assembly_definition_8cs_source.html">AssemblyDefinition.cs</a> 第 <a class="el" href="_assembly_definition_8cs_source.html#l00154">154</a> 行定义.</p>
+
+</div>
+</div>
+<a id="adbe1dbf804151b2594cf2df823cdb15a" name="adbe1dbf804151b2594cf2df823cdb15a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbe1dbf804151b2594cf2df823cdb15a">&#9670;&nbsp;</a></span>Write() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ILRuntime.Mono.Cecil.AssemblyDefinition.Write </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_writer_parameters.html">WriterParameters</a>&#160;</td>
+          <td class="paramname"><em>parameters</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_assembly_definition_8cs_source.html">AssemblyDefinition.cs</a> 第 <a class="el" href="_assembly_definition_8cs_source.html#l00159">159</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a64d9047f9994c1de20a0e818052a798f" name="a64d9047f9994c1de20a0e818052a798f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64d9047f9994c1de20a0e818052a798f">&#9670;&nbsp;</a></span>Write() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ILRuntime.Mono.Cecil.AssemblyDefinition.Write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_writer_parameters.html">WriterParameters</a>&#160;</td>
+          <td class="paramname"><em>parameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_assembly_definition_8cs_source.html">AssemblyDefinition.cs</a> 第 <a class="el" href="_assembly_definition_8cs_source.html#l00169">169</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">属性说明</h2>
+<a id="a87dd555115e1d9f9788c38285ef44f4a" name="a87dd555115e1d9f9788c38285ef44f4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87dd555115e1d9f9788c38285ef44f4a">&#9670;&nbsp;</a></span>CustomAttributes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html">Collection</a>&lt;<a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute.html">CustomAttribute</a>&gt;?? ILRuntime.Mono.Cecil.AssemblyDefinition.CustomAttributes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_assembly_definition_8cs_source.html">AssemblyDefinition.cs</a> 第 <a class="el" href="_assembly_definition_8cs_source.html#l00072">72</a> 行定义.</p>
+
+</div>
+</div>
+<a id="add1c589ea73175b65d591a60446be3b4" name="add1c589ea73175b65d591a60446be3b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add1c589ea73175b65d591a60446be3b4">&#9670;&nbsp;</a></span>EntryPoint</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_method_definition.html">MethodDefinition</a> ILRuntime.Mono.Cecil.AssemblyDefinition.EntryPoint</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_assembly_definition_8cs_source.html">AssemblyDefinition.cs</a> 第 <a class="el" href="_assembly_definition_8cs_source.html#l00058">58</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa34384d97af134415262252b12f261dd" name="aa34384d97af134415262252b12f261dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa34384d97af134415262252b12f261dd">&#9670;&nbsp;</a></span>FullName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string? ILRuntime.Mono.Cecil.AssemblyDefinition.FullName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_assembly_definition_8cs_source.html">AssemblyDefinition.cs</a> 第 <a class="el" href="_assembly_definition_8cs_source.html#l00032">32</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5bf17cca72bb77b421a372d5b53750d3" name="a5bf17cca72bb77b421a372d5b53750d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bf17cca72bb77b421a372d5b53750d3">&#9670;&nbsp;</a></span>HasCustomAttributes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ILRuntime.Mono.Cecil.AssemblyDefinition.HasCustomAttributes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_assembly_definition_8cs_source.html">AssemblyDefinition.cs</a> 第 <a class="el" href="_assembly_definition_8cs_source.html#l00063">63</a> 行定义.</p>
+
+</div>
+</div>
+<a id="afd97e13c4b90d43036a5abd698ecc00e" name="afd97e13c4b90d43036a5abd698ecc00e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd97e13c4b90d43036a5abd698ecc00e">&#9670;&nbsp;</a></span>HasSecurityDeclarations</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ILRuntime.Mono.Cecil.AssemblyDefinition.HasSecurityDeclarations</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_assembly_definition_8cs_source.html">AssemblyDefinition.cs</a> 第 <a class="el" href="_assembly_definition_8cs_source.html#l00076">76</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4c2e205dd5a556261713f568d6951b14" name="a4c2e205dd5a556261713f568d6951b14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c2e205dd5a556261713f568d6951b14">&#9670;&nbsp;</a></span>MainModule</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_module_definition.html">ModuleDefinition</a> ILRuntime.Mono.Cecil.AssemblyDefinition.MainModule</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_assembly_definition_8cs_source.html">AssemblyDefinition.cs</a> 第 <a class="el" href="_assembly_definition_8cs_source.html#l00054">54</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a19dfbeaeb39beb5205ccc4616a626859" name="a19dfbeaeb39beb5205ccc4616a626859"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19dfbeaeb39beb5205ccc4616a626859">&#9670;&nbsp;</a></span>MetadataToken</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_token.html">MetadataToken</a> ILRuntime.Mono.Cecil.AssemblyDefinition.MetadataToken</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_assembly_definition_8cs_source.html">AssemblyDefinition.cs</a> 第 <a class="el" href="_assembly_definition_8cs_source.html#l00036">36</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2531adc8c0fdb359ab5fce90dc5174b7" name="a2531adc8c0fdb359ab5fce90dc5174b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2531adc8c0fdb359ab5fce90dc5174b7">&#9670;&nbsp;</a></span>Modules</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html">Collection</a>&lt;<a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_module_definition.html">ModuleDefinition</a>&gt; ILRuntime.Mono.Cecil.AssemblyDefinition.Modules</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_assembly_definition_8cs_source.html">AssemblyDefinition.cs</a> 第 <a class="el" href="_assembly_definition_8cs_source.html#l00041">41</a> 行定义.</p>
+
+</div>
+</div>
+<a id="affb4b7711b941f4871d163a620af9984" name="affb4b7711b941f4871d163a620af9984"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affb4b7711b941f4871d163a620af9984">&#9670;&nbsp;</a></span>Name</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_name_definition.html">AssemblyNameDefinition</a> ILRuntime.Mono.Cecil.AssemblyDefinition.Name</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_assembly_definition_8cs_source.html">AssemblyDefinition.cs</a> 第 <a class="el" href="_assembly_definition_8cs_source.html#l00027">27</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aca56e693932c3c1621b02a2f10fcf025" name="aca56e693932c3c1621b02a2f10fcf025"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca56e693932c3c1621b02a2f10fcf025">&#9670;&nbsp;</a></span>SecurityDeclarations</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html">Collection</a>&lt;<a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_security_declaration.html">SecurityDeclaration</a>&gt;?? ILRuntime.Mono.Cecil.AssemblyDefinition.SecurityDeclarations</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_assembly_definition_8cs_source.html">AssemblyDefinition.cs</a> 第 <a class="el" href="_assembly_definition_8cs_source.html#l00085">85</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>Unity/Assets/ThirdParty/ILRuntime/Mono.Cecil/Mono.Cecil/<a class="el" href="_assembly_definition_8cs_source.html">AssemblyDefinition.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_i_l_runtime.html">ILRuntime</a></li><li class="navelem"><a class="el" href="namespace_i_l_runtime_1_1_mono.html">Mono</a></li><li class="navelem"><a class="el" href="namespace_i_l_runtime_1_1_mono_1_1_cecil.html">Cecil</a></li><li class="navelem"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_definition.html">AssemblyDefinition</a></li>
+    <li class="footer">生成于 2022年 一月 23日 星期日 19:16:25 , 为 ET使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

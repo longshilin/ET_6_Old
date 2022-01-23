@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ET: Server/Model/Module/DB/DBManagerComponent.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ET<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_d_b_manager_component_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">DBManagerComponent.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_d_b_manager_component_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_e_t.html">ET</a></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>{</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="class_e_t_1_1_d_b_manager_component.html">    3</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_e_t_1_1_d_b_manager_component.html">DBManagerComponent</a>: <a class="code hl_class" href="class_e_t_1_1_entity.html">Entity</a>, <a class="code hl_interface" href="interface_e_t_1_1_i_awake.html">IAwake</a>, <a class="code hl_interface" href="interface_e_t_1_1_i_destroy.html">IDestroy</a></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    {</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_e_t_1_1_d_b_manager_component.html#a0de346d8f178328d55fcbd8437c2e835">    5</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_class" href="class_e_t_1_1_d_b_manager_component.html">DBManagerComponent</a> <a class="code hl_variable" href="class_e_t_1_1_d_b_manager_component.html#a0de346d8f178328d55fcbd8437c2e835">Instance</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>        </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_e_t_1_1_d_b_manager_component.html#ace805315ace3a0ba34672f67828b785a">    7</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_e_t_1_1_d_b_component.html">DBComponent</a>[] <a class="code hl_variable" href="class_e_t_1_1_d_b_manager_component.html#ace805315ace3a0ba34672f67828b785a">DBComponents</a> = <span class="keyword">new</span> <a class="code hl_class" href="class_e_t_1_1_d_b_component.html">DBComponent</a>[<a class="code hl_class" href="class_e_t_1_1_id_generater.html">IdGenerater</a>.<a class="code hl_variable" href="class_e_t_1_1_id_generater.html#a2040f23d9a23f476e0403533801a45a6">MaxZone</a>];</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    }</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>}</div>
+<div class="ttc" id="aclass_e_t_1_1_d_b_component_html"><div class="ttname"><a href="class_e_t_1_1_d_b_component.html">ET.DBComponent</a></div><div class="ttdoc">用来缓存数据</div><div class="ttdef"><b>Definition:</b> <a href="_d_b_component_8cs_source.html#l00008">DBComponent.cs:9</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_d_b_manager_component_html"><div class="ttname"><a href="class_e_t_1_1_d_b_manager_component.html">ET.DBManagerComponent</a></div><div class="ttdef"><b>Definition:</b> <a href="_d_b_manager_component_8cs_source.html#l00003">DBManagerComponent.cs:4</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_d_b_manager_component_html_a0de346d8f178328d55fcbd8437c2e835"><div class="ttname"><a href="class_e_t_1_1_d_b_manager_component.html#a0de346d8f178328d55fcbd8437c2e835">ET.DBManagerComponent.Instance</a></div><div class="ttdeci">static DBManagerComponent Instance</div><div class="ttdef"><b>Definition:</b> <a href="_d_b_manager_component_8cs_source.html#l00005">DBManagerComponent.cs:5</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_d_b_manager_component_html_ace805315ace3a0ba34672f67828b785a"><div class="ttname"><a href="class_e_t_1_1_d_b_manager_component.html#ace805315ace3a0ba34672f67828b785a">ET.DBManagerComponent.DBComponents</a></div><div class="ttdeci">DBComponent[] DBComponents</div><div class="ttdef"><b>Definition:</b> <a href="_d_b_manager_component_8cs_source.html#l00007">DBManagerComponent.cs:7</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_entity_html"><div class="ttname"><a href="class_e_t_1_1_entity.html">ET.Entity</a></div><div class="ttdef"><b>Definition:</b> <a href="_entity_8cs_source.html#l00019">Entity.cs:20</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_id_generater_html"><div class="ttname"><a href="class_e_t_1_1_id_generater.html">ET.IdGenerater</a></div><div class="ttdef"><b>Definition:</b> <a href="_id_generater_8cs_source.html#l00142">IdGenerater.cs:143</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_id_generater_html_a2040f23d9a23f476e0403533801a45a6"><div class="ttname"><a href="class_e_t_1_1_id_generater.html#a2040f23d9a23f476e0403533801a45a6">ET.IdGenerater.MaxZone</a></div><div class="ttdeci">const int MaxZone</div><div class="ttdef"><b>Definition:</b> <a href="_id_generater_8cs_source.html#l00147">IdGenerater.cs:147</a></div></div>
+<div class="ttc" id="ainterface_e_t_1_1_i_awake_html"><div class="ttname"><a href="interface_e_t_1_1_i_awake.html">ET.IAwake</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_awake_system_8cs_source.html#l00021">IAwakeSystem.cs:22</a></div></div>
+<div class="ttc" id="ainterface_e_t_1_1_i_destroy_html"><div class="ttname"><a href="interface_e_t_1_1_i_destroy.html">ET.IDestroy</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_destroy_system_8cs_source.html#l00005">IDestroySystem.cs:6</a></div></div>
+<div class="ttc" id="anamespace_e_t_html"><div class="ttname"><a href="namespace_e_t.html">ET</a></div><div class="ttdef"><b>Definition:</b> <a href="_robot_2_app_2_program_8cs_source.html#l00008">Program.cs:9</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_1a445cb237d74f7a5f8d11ec3b0585cc.html">Server</a></li><li class="navelem"><a class="el" href="dir_12c7c7f44207b94dac9b212b976bf45a.html">Model</a></li><li class="navelem"><a class="el" href="dir_6aa533829761b35ddc20dcaea8886150.html">Module</a></li><li class="navelem"><a class="el" href="dir_9b2311f8d425030f8928b47c1a15ce67.html">DB</a></li><li class="navelem"><a class="el" href="_d_b_manager_component_8cs.html">DBManagerComponent.cs</a></li>
+    <li class="footer">生成于 2022年 一月 23日 星期日 19:16:12 , 为 ET使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

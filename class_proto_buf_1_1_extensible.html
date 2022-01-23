@@ -1,0 +1,1051 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ET: ProtoBuf.Extensible类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ET<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_proto_buf_1_1_extensible.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a>  </div>
+  <div class="headertitle"><div class="title">ProtoBuf.Extensible类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Simple base class for supporting unexpected fields allowing for loss-less round-tips/merge, even if the data is not understod. The additional fields are (by default) stored in-memory in a buffer.  
+ <a href="class_proto_buf_1_1_extensible.html#details">更多...</a></p>
+<div class="dynheader">
+类 ProtoBuf.Extensible 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_proto_buf_1_1_extensible.png" usemap="#ProtoBuf.Extensible_map" alt=""/>
+  <map id="ProtoBuf.Extensible_map" name="ProtoBuf.Extensible_map">
+<area href="interface_proto_buf_1_1_i_extensible.html" title="Indicates that the implementing type has support for protocol-buffer extensions." alt="ProtoBuf.IExtensible" shape="rect" coords="0,0,125,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a7f8045a4a6d75fc7cfb1b0077dd4ac4e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="interface_proto_buf_1_1_i_extension.html">IExtension</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_extensible.html#a7f8045a4a6d75fc7cfb1b0077dd4ac4e">GetExtensionObject</a> (ref <a class="el" href="interface_proto_buf_1_1_i_extension.html">IExtension</a> extensionObject, bool createIfMissing)</td></tr>
+<tr class="memdesc:a7f8045a4a6d75fc7cfb1b0077dd4ac4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a simple, default implementation for <a class="el" href="interface_proto_buf_1_1_i_extension.html">extension</a> support, optionally creating it if it does not already exist. Designed to be called by classes implementing <a class="el" href="interface_proto_buf_1_1_i_extensible.html" title="Indicates that the implementing type has support for protocol-buffer extensions.">IExtensible</a>.  <a href="class_proto_buf_1_1_extensible.html#a7f8045a4a6d75fc7cfb1b0077dd4ac4e">更多...</a><br /></td></tr>
+<tr class="separator:a7f8045a4a6d75fc7cfb1b0077dd4ac4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d9d96644fec7bcc676ee8fecdb596b9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_extensible.html#a3d9d96644fec7bcc676ee8fecdb596b9">AppendValue&lt; TValue &gt;</a> (<a class="el" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a> instance, int tag, TValue value)</td></tr>
+<tr class="memdesc:a3d9d96644fec7bcc676ee8fecdb596b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends the value as an additional (unexpected) data-field for the instance. Note that for non-repeated sub-objects, this equates to a merge operation; for repeated sub-objects this adds a new instance to the set; for simple values the new value supercedes the old value.  <a href="class_proto_buf_1_1_extensible.html#a3d9d96644fec7bcc676ee8fecdb596b9">更多...</a><br /></td></tr>
+<tr class="separator:a3d9d96644fec7bcc676ee8fecdb596b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7c64df8d24ed759bd5b9711e4a16bb0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_extensible.html#ab7c64df8d24ed759bd5b9711e4a16bb0">AppendValue&lt; TValue &gt;</a> (<a class="el" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a> instance, int tag, <a class="el" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a> format, TValue value)</td></tr>
+<tr class="memdesc:ab7c64df8d24ed759bd5b9711e4a16bb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends the value as an additional (unexpected) data-field for the instance. Note that for non-repeated sub-objects, this equates to a merge operation; for repeated sub-objects this adds a new instance to the set; for simple values the new value supercedes the old value.  <a href="class_proto_buf_1_1_extensible.html#ab7c64df8d24ed759bd5b9711e4a16bb0">更多...</a><br /></td></tr>
+<tr class="separator:ab7c64df8d24ed759bd5b9711e4a16bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4b4cdc0ef75b4990960cd5ea7638dc1"><td class="memItemLeft" align="right" valign="top">static TValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_extensible.html#aa4b4cdc0ef75b4990960cd5ea7638dc1">GetValue&lt; TValue &gt;</a> (<a class="el" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a> instance, int tag)</td></tr>
+<tr class="memdesc:aa4b4cdc0ef75b4990960cd5ea7638dc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries an extensible object for an additional (unexpected) data-field for the instance. The value returned is the composed value after merging any duplicated content; if the value is "repeated" (a list), then use GetValues instead.  <a href="class_proto_buf_1_1_extensible.html#aa4b4cdc0ef75b4990960cd5ea7638dc1">更多...</a><br /></td></tr>
+<tr class="separator:aa4b4cdc0ef75b4990960cd5ea7638dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4251e51fb2b585ba20e174372b48cd80"><td class="memItemLeft" align="right" valign="top">static TValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_extensible.html#a4251e51fb2b585ba20e174372b48cd80">GetValue&lt; TValue &gt;</a> (<a class="el" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a> instance, int tag, <a class="el" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a> format)</td></tr>
+<tr class="memdesc:a4251e51fb2b585ba20e174372b48cd80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries an extensible object for an additional (unexpected) data-field for the instance. The value returned is the composed value after merging any duplicated content; if the value is "repeated" (a list), then use GetValues instead.  <a href="class_proto_buf_1_1_extensible.html#a4251e51fb2b585ba20e174372b48cd80">更多...</a><br /></td></tr>
+<tr class="separator:a4251e51fb2b585ba20e174372b48cd80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe3b777215333e361c13843885a343a3"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_extensible.html#afe3b777215333e361c13843885a343a3">TryGetValue&lt; TValue &gt;</a> (<a class="el" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a> instance, int tag, out TValue value)</td></tr>
+<tr class="memdesc:afe3b777215333e361c13843885a343a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries an extensible object for an additional (unexpected) data-field for the instance. The value returned (in "value") is the composed value after merging any duplicated content; if the value is "repeated" (a list), then use GetValues instead.  <a href="class_proto_buf_1_1_extensible.html#afe3b777215333e361c13843885a343a3">更多...</a><br /></td></tr>
+<tr class="separator:afe3b777215333e361c13843885a343a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a454215e740a97c8c88f5378bcf7c15af"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_extensible.html#a454215e740a97c8c88f5378bcf7c15af">TryGetValue&lt; TValue &gt;</a> (<a class="el" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a> instance, int tag, <a class="el" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a> format, out TValue value)</td></tr>
+<tr class="memdesc:a454215e740a97c8c88f5378bcf7c15af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries an extensible object for an additional (unexpected) data-field for the instance. The value returned (in "value") is the composed value after merging any duplicated content; if the value is "repeated" (a list), then use GetValues instead.  <a href="class_proto_buf_1_1_extensible.html#a454215e740a97c8c88f5378bcf7c15af">更多...</a><br /></td></tr>
+<tr class="separator:a454215e740a97c8c88f5378bcf7c15af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb77cf689553cf87a11103bbe93c0899"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_extensible.html#adb77cf689553cf87a11103bbe93c0899">TryGetValue&lt; TValue &gt;</a> (<a class="el" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a> instance, int tag, <a class="el" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a> format, bool allowDefinedTag, out TValue value)</td></tr>
+<tr class="memdesc:adb77cf689553cf87a11103bbe93c0899"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries an extensible object for an additional (unexpected) data-field for the instance. The value returned (in "value") is the composed value after merging any duplicated content; if the value is "repeated" (a list), then use GetValues instead.  <a href="class_proto_buf_1_1_extensible.html#adb77cf689553cf87a11103bbe93c0899">更多...</a><br /></td></tr>
+<tr class="separator:adb77cf689553cf87a11103bbe93c0899"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef4d345270d0985610984ce3fb39d8c0"><td class="memItemLeft" align="right" valign="top">static IEnumerable&lt; TValue &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_extensible.html#aef4d345270d0985610984ce3fb39d8c0">GetValues&lt; TValue &gt;</a> (<a class="el" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a> instance, int tag)</td></tr>
+<tr class="memdesc:aef4d345270d0985610984ce3fb39d8c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries an extensible object for an additional (unexpected) data-field for the instance. Each occurrence of the field is yielded separately, making this usage suitable for "repeated" (list) fields.  <a href="class_proto_buf_1_1_extensible.html#aef4d345270d0985610984ce3fb39d8c0">更多...</a><br /></td></tr>
+<tr class="separator:aef4d345270d0985610984ce3fb39d8c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2a1338ce38fc9454c6713a0d8018a9a"><td class="memItemLeft" align="right" valign="top">static IEnumerable&lt; TValue &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_extensible.html#af2a1338ce38fc9454c6713a0d8018a9a">GetValues&lt; TValue &gt;</a> (<a class="el" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a> instance, int tag, <a class="el" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a> format)</td></tr>
+<tr class="memdesc:af2a1338ce38fc9454c6713a0d8018a9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries an extensible object for an additional (unexpected) data-field for the instance. Each occurrence of the field is yielded separately, making this usage suitable for "repeated" (list) fields.  <a href="class_proto_buf_1_1_extensible.html#af2a1338ce38fc9454c6713a0d8018a9a">更多...</a><br /></td></tr>
+<tr class="separator:af2a1338ce38fc9454c6713a0d8018a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47589c15e2ce00c38f15de2df8803a7a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_extensible.html#a47589c15e2ce00c38f15de2df8803a7a">TryGetValue</a> (<a class="el" href="class_proto_buf_1_1_meta_1_1_type_model.html">TypeModel</a> model, System.Type type, <a class="el" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a> instance, int tag, <a class="el" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a> format, bool allowDefinedTag, out object value)</td></tr>
+<tr class="memdesc:a47589c15e2ce00c38f15de2df8803a7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries an extensible object for an additional (unexpected) data-field for the instance. The value returned (in "value") is the composed value after merging any duplicated content; if the value is "repeated" (a list), then use GetValues instead.  <a href="class_proto_buf_1_1_extensible.html#a47589c15e2ce00c38f15de2df8803a7a">更多...</a><br /></td></tr>
+<tr class="separator:a47589c15e2ce00c38f15de2df8803a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25bd17a78f3b1b31c51730c53a129ae9"><td class="memItemLeft" align="right" valign="top">static IEnumerable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_extensible.html#a25bd17a78f3b1b31c51730c53a129ae9">GetValues</a> (<a class="el" href="class_proto_buf_1_1_meta_1_1_type_model.html">TypeModel</a> model, System.Type type, <a class="el" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a> instance, int tag, <a class="el" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a> format)</td></tr>
+<tr class="memdesc:a25bd17a78f3b1b31c51730c53a129ae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries an extensible object for an additional (unexpected) data-field for the instance. Each occurrence of the field is yielded separately, making this usage suitable for "repeated" (list) fields.  <a href="class_proto_buf_1_1_extensible.html#a25bd17a78f3b1b31c51730c53a129ae9">更多...</a><br /></td></tr>
+<tr class="separator:a25bd17a78f3b1b31c51730c53a129ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f83b1589033618d989e7d540681cb0b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_extensible.html#a7f83b1589033618d989e7d540681cb0b">AppendValue</a> (<a class="el" href="class_proto_buf_1_1_meta_1_1_type_model.html">TypeModel</a> model, <a class="el" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a> instance, int tag, <a class="el" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a> format, object value)</td></tr>
+<tr class="memdesc:a7f83b1589033618d989e7d540681cb0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends the value as an additional (unexpected) data-field for the instance. Note that for non-repeated sub-objects, this equates to a merge operation; for repeated sub-objects this adds a new instance to the set; for simple values the new value supercedes the old value.  <a href="class_proto_buf_1_1_extensible.html#a7f83b1589033618d989e7d540681cb0b">更多...</a><br /></td></tr>
+<tr class="separator:a7f83b1589033618d989e7d540681cb0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:aa1236f0191e2fa469b099f6a106f20b6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="interface_proto_buf_1_1_i_extension.html">IExtension</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_extensible.html#aa1236f0191e2fa469b099f6a106f20b6">GetExtensionObject</a> (bool createIfMissing)</td></tr>
+<tr class="memdesc:aa1236f0191e2fa469b099f6a106f20b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the <a class="el" href="interface_proto_buf_1_1_i_extension.html">extension</a> object for the current instance, optionally creating it if it does not already exist.  <a href="class_proto_buf_1_1_extensible.html#aa1236f0191e2fa469b099f6a106f20b6">更多...</a><br /></td></tr>
+<tr class="separator:aa1236f0191e2fa469b099f6a106f20b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Simple base class for supporting unexpected fields allowing for loss-less round-tips/merge, even if the data is not understod. The additional fields are (by default) stored in-memory in a buffer. </p>
+<p >As an example of an alternative implementation, you might choose to use the file system (temporary files) as the back-end, tracking only the paths [such an object would ideally be IDisposable and use a finalizer to ensure that the files are removed].</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="interface_proto_buf_1_1_i_extensible.html" title="Indicates that the implementing type has support for protocol-buffer extensions.">IExtensible</a></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_extensible_8cs_source.html">Extensible.cs</a> 第 <a class="el" href="_extensible_8cs_source.html#l00019">19</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a7f83b1589033618d989e7d540681cb0b" name="a7f83b1589033618d989e7d540681cb0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f83b1589033618d989e7d540681cb0b">&#9670;&nbsp;</a></span>AppendValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ProtoBuf.Extensible.AppendValue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_meta_1_1_type_model.html">TypeModel</a>&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a>&#160;</td>
+          <td class="paramname"><em>instance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a>&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Appends the value as an additional (unexpected) data-field for the instance. Note that for non-repeated sub-objects, this equates to a merge operation; for repeated sub-objects this adds a new instance to the set; for simple values the new value supercedes the old value. </p>
+<p >Note that appending a value does not remove the old value from the stream; avoid repeatedly appending values for the same field.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>The model to use for configuration.</td></tr>
+    <tr><td class="paramname">format</td><td>The data-format to use when encoding the value.</td></tr>
+    <tr><td class="paramname">instance</td><td>The extensible object to append the value to.</td></tr>
+    <tr><td class="paramname">tag</td><td>The field identifier; the tag should not be defined as a known data-field for the instance.</td></tr>
+    <tr><td class="paramname">value</td><td>The value to append.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="_extensible_8cs_source.html">Extensible.cs</a> 第 <a class="el" href="_extensible_8cs_source.html#l00280">280</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab7c64df8d24ed759bd5b9711e4a16bb0" name="ab7c64df8d24ed759bd5b9711e4a16bb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7c64df8d24ed759bd5b9711e4a16bb0">&#9670;&nbsp;</a></span>AppendValue&lt; TValue &gt;() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void <a class="el" href="class_proto_buf_1_1_extensible.html#a7f83b1589033618d989e7d540681cb0b">ProtoBuf.Extensible.AppendValue</a>&lt; TValue &gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a>&#160;</td>
+          <td class="paramname"><em>instance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a>&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TValue&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Appends the value as an additional (unexpected) data-field for the instance. Note that for non-repeated sub-objects, this equates to a merge operation; for repeated sub-objects this adds a new instance to the set; for simple values the new value supercedes the old value. </p>
+<p >Note that appending a value does not remove the old value from the stream; avoid repeatedly appending values for the same field.</p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TValue</td><td>The data-type of the field.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">format</td><td>The data-format to use when encoding the value.</td></tr>
+    <tr><td class="paramname">instance</td><td>The extensible object to append the value to.</td></tr>
+    <tr><td class="paramname">tag</td><td>The field identifier; the tag should not be defined as a known data-field for the instance.</td></tr>
+    <tr><td class="paramname">value</td><td>The value to append.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="_extensible_8cs_source.html">Extensible.cs</a> 第 <a class="el" href="_extensible_8cs_source.html#l00098">98</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3d9d96644fec7bcc676ee8fecdb596b9" name="a3d9d96644fec7bcc676ee8fecdb596b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d9d96644fec7bcc676ee8fecdb596b9">&#9670;&nbsp;</a></span>AppendValue&lt; TValue &gt;() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void <a class="el" href="class_proto_buf_1_1_extensible.html#a7f83b1589033618d989e7d540681cb0b">ProtoBuf.Extensible.AppendValue</a>&lt; TValue &gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a>&#160;</td>
+          <td class="paramname"><em>instance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TValue&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Appends the value as an additional (unexpected) data-field for the instance. Note that for non-repeated sub-objects, this equates to a merge operation; for repeated sub-objects this adds a new instance to the set; for simple values the new value supercedes the old value. </p>
+<p >Note that appending a value does not remove the old value from the stream; avoid repeatedly appending values for the same field.</p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TValue</td><td>The type of the value to append.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">instance</td><td>The extensible object to append the value to.</td></tr>
+    <tr><td class="paramname">tag</td><td>The field identifier; the tag should not be defined as a known data-field for the instance.</td></tr>
+    <tr><td class="paramname">value</td><td>The value to append.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="_extensible_8cs_source.html">Extensible.cs</a> 第 <a class="el" href="_extensible_8cs_source.html#l00080">80</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa1236f0191e2fa469b099f6a106f20b6" name="aa1236f0191e2fa469b099f6a106f20b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1236f0191e2fa469b099f6a106f20b6">&#9670;&nbsp;</a></span>GetExtensionObject() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="interface_proto_buf_1_1_i_extension.html">IExtension</a> ProtoBuf.Extensible.GetExtensionObject </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>createIfMissing</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieves the <a class="el" href="interface_proto_buf_1_1_i_extension.html">extension</a> object for the current instance, optionally creating it if it does not already exist. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">createIfMissing</td><td>Should a new extension object be created if it does not already exist?</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>The extension object if it exists (or was created), or null if the extension object does not exist or is not available.</dd></dl>
+<p >The <code>createIfMissing</code> argument is false during serialization, and true during deserialization upon encountering unexpected fields.</p>
+
+<p>实现了 <a class="el" href="interface_proto_buf_1_1_i_extensible.html#a6ffe5cf0016ddc5a6ae7234026e3a017">ProtoBuf.IExtensible</a>.</p>
+
+<p class="definition">在文件 <a class="el" href="_extensible_8cs_source.html">Extensible.cs</a> 第 <a class="el" href="_extensible_8cs_source.html#l00041">41</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7f8045a4a6d75fc7cfb1b0077dd4ac4e" name="a7f8045a4a6d75fc7cfb1b0077dd4ac4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f8045a4a6d75fc7cfb1b0077dd4ac4e">&#9670;&nbsp;</a></span>GetExtensionObject() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="interface_proto_buf_1_1_i_extension.html">IExtension</a> ProtoBuf.Extensible.GetExtensionObject </td>
+          <td>(</td>
+          <td class="paramtype">ref <a class="el" href="interface_proto_buf_1_1_i_extension.html">IExtension</a>&#160;</td>
+          <td class="paramname"><em>extensionObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>createIfMissing</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Provides a simple, default implementation for <a class="el" href="interface_proto_buf_1_1_i_extension.html">extension</a> support, optionally creating it if it does not already exist. Designed to be called by classes implementing <a class="el" href="interface_proto_buf_1_1_i_extensible.html" title="Indicates that the implementing type has support for protocol-buffer extensions.">IExtensible</a>. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">createIfMissing</td><td>Should a new extension object be created if it does not already exist?</td></tr>
+    <tr><td class="paramname">extensionObject</td><td>The extension field to check (and possibly update).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>The extension object if it exists (or was created), or null if the extension object does not exist or is not available.</dd></dl>
+<p >The <code>createIfMissing</code> argument is false during serialization, and true during deserialization upon encountering unexpected fields.</p>
+
+<p class="definition">在文件 <a class="el" href="_extensible_8cs_source.html">Extensible.cs</a> 第 <a class="el" href="_extensible_8cs_source.html#l00058">58</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa4b4cdc0ef75b4990960cd5ea7638dc1" name="aa4b4cdc0ef75b4990960cd5ea7638dc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4b4cdc0ef75b4990960cd5ea7638dc1">&#9670;&nbsp;</a></span>GetValue&lt; TValue &gt;() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static TValue ProtoBuf.Extensible.GetValue&lt; TValue &gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a>&#160;</td>
+          <td class="paramname"><em>instance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Queries an extensible object for an additional (unexpected) data-field for the instance. The value returned is the composed value after merging any duplicated content; if the value is "repeated" (a list), then use GetValues instead. </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TValue</td><td>The data-type of the field.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">instance</td><td>The extensible object to obtain the value from.</td></tr>
+    <tr><td class="paramname">tag</td><td>The field identifier; the tag should not be defined as a known data-field for the instance.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>The effective value of the field, or the default value if not found.</dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_extensible_8cs_source.html">Extensible.cs</a> 第 <a class="el" href="_extensible_8cs_source.html#l00111">111</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4251e51fb2b585ba20e174372b48cd80" name="a4251e51fb2b585ba20e174372b48cd80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4251e51fb2b585ba20e174372b48cd80">&#9670;&nbsp;</a></span>GetValue&lt; TValue &gt;() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static TValue ProtoBuf.Extensible.GetValue&lt; TValue &gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a>&#160;</td>
+          <td class="paramname"><em>instance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a>&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Queries an extensible object for an additional (unexpected) data-field for the instance. The value returned is the composed value after merging any duplicated content; if the value is "repeated" (a list), then use GetValues instead. </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TValue</td><td>The data-type of the field.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">instance</td><td>The extensible object to obtain the value from.</td></tr>
+    <tr><td class="paramname">tag</td><td>The field identifier; the tag should not be defined as a known data-field for the instance.</td></tr>
+    <tr><td class="paramname">format</td><td>The data-format to use when decoding the value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>The effective value of the field, or the default value if not found.</dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_extensible_8cs_source.html">Extensible.cs</a> 第 <a class="el" href="_extensible_8cs_source.html#l00126">126</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a25bd17a78f3b1b31c51730c53a129ae9" name="a25bd17a78f3b1b31c51730c53a129ae9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25bd17a78f3b1b31c51730c53a129ae9">&#9670;&nbsp;</a></span>GetValues()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static IEnumerable ProtoBuf.Extensible.GetValues </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_meta_1_1_type_model.html">TypeModel</a>&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">System.Type&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a>&#160;</td>
+          <td class="paramname"><em>instance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a>&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Queries an extensible object for an additional (unexpected) data-field for the instance. Each occurrence of the field is yielded separately, making this usage suitable for "repeated" (list) fields. </p>
+<p >The extended data is processed lazily as the enumerator is iterated.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td>The model to use for configuration.</td></tr>
+    <tr><td class="paramname">type</td><td>The data-type of the field.</td></tr>
+    <tr><td class="paramname">instance</td><td>The extensible object to obtain the value from.</td></tr>
+    <tr><td class="paramname">tag</td><td>The field identifier; the tag should not be defined as a known data-field for the instance.</td></tr>
+    <tr><td class="paramname">format</td><td>The data-format to use when decoding the value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>An enumerator that yields each occurrence of the field.</dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_extensible_8cs_source.html">Extensible.cs</a> 第 <a class="el" href="_extensible_8cs_source.html#l00262">262</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aef4d345270d0985610984ce3fb39d8c0" name="aef4d345270d0985610984ce3fb39d8c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef4d345270d0985610984ce3fb39d8c0">&#9670;&nbsp;</a></span>GetValues&lt; TValue &gt;() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static IEnumerable&lt; TValue &gt; <a class="el" href="class_proto_buf_1_1_extensible.html#a25bd17a78f3b1b31c51730c53a129ae9">ProtoBuf.Extensible.GetValues</a>&lt; TValue &gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a>&#160;</td>
+          <td class="paramname"><em>instance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Queries an extensible object for an additional (unexpected) data-field for the instance. Each occurrence of the field is yielded separately, making this usage suitable for "repeated" (list) fields. </p>
+<p >The extended data is processed lazily as the enumerator is iterated.</p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TValue</td><td>The data-type of the field.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">instance</td><td>The extensible object to obtain the value from.</td></tr>
+    <tr><td class="paramname">tag</td><td>The field identifier; the tag should not be defined as a known data-field for the instance.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>An enumerator that yields each occurrence of the field.</dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_extensible_8cs_source.html">Extensible.cs</a> 第 <a class="el" href="_extensible_8cs_source.html#l00201">201</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af2a1338ce38fc9454c6713a0d8018a9a" name="af2a1338ce38fc9454c6713a0d8018a9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2a1338ce38fc9454c6713a0d8018a9a">&#9670;&nbsp;</a></span>GetValues&lt; TValue &gt;() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static IEnumerable&lt; TValue &gt; <a class="el" href="class_proto_buf_1_1_extensible.html#a25bd17a78f3b1b31c51730c53a129ae9">ProtoBuf.Extensible.GetValues</a>&lt; TValue &gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a>&#160;</td>
+          <td class="paramname"><em>instance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a>&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Queries an extensible object for an additional (unexpected) data-field for the instance. Each occurrence of the field is yielded separately, making this usage suitable for "repeated" (list) fields. </p>
+<p >The extended data is processed lazily as the enumerator is iterated.</p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TValue</td><td>The data-type of the field.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">instance</td><td>The extensible object to obtain the value from.</td></tr>
+    <tr><td class="paramname">tag</td><td>The field identifier; the tag should not be defined as a known data-field for the instance.</td></tr>
+    <tr><td class="paramname">format</td><td>The data-format to use when decoding the value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>An enumerator that yields each occurrence of the field.</dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_extensible_8cs_source.html">Extensible.cs</a> 第 <a class="el" href="_extensible_8cs_source.html#l00217">217</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a47589c15e2ce00c38f15de2df8803a7a" name="a47589c15e2ce00c38f15de2df8803a7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47589c15e2ce00c38f15de2df8803a7a">&#9670;&nbsp;</a></span>TryGetValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ProtoBuf.Extensible.TryGetValue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_meta_1_1_type_model.html">TypeModel</a>&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">System.Type&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a>&#160;</td>
+          <td class="paramname"><em>instance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a>&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>allowDefinedTag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out object&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Queries an extensible object for an additional (unexpected) data-field for the instance. The value returned (in "value") is the composed value after merging any duplicated content; if the value is "repeated" (a list), then use GetValues instead. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>The data-type of the field.</td></tr>
+    <tr><td class="paramname">model</td><td>The model to use for configuration.</td></tr>
+    <tr><td class="paramname">value</td><td>The effective value of the field, or the default value if not found.</td></tr>
+    <tr><td class="paramname">instance</td><td>The extensible object to obtain the value from.</td></tr>
+    <tr><td class="paramname">tag</td><td>The field identifier; the tag should not be defined as a known data-field for the instance.</td></tr>
+    <tr><td class="paramname">format</td><td>The data-format to use when decoding the value.</td></tr>
+    <tr><td class="paramname">allowDefinedTag</td><td>Allow tags that are present as part of the definition; for example, to query unknown enum values.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>True if data for the field was present, false otherwise.</dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_extensible_8cs_source.html">Extensible.cs</a> 第 <a class="el" href="_extensible_8cs_source.html#l00236">236</a> 行定义.</p>
+
+</div>
+</div>
+<a id="adb77cf689553cf87a11103bbe93c0899" name="adb77cf689553cf87a11103bbe93c0899"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb77cf689553cf87a11103bbe93c0899">&#9670;&nbsp;</a></span>TryGetValue&lt; TValue &gt;() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool <a class="el" href="class_proto_buf_1_1_extensible.html#a47589c15e2ce00c38f15de2df8803a7a">ProtoBuf.Extensible.TryGetValue</a>&lt; TValue &gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a>&#160;</td>
+          <td class="paramname"><em>instance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a>&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>allowDefinedTag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out TValue&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Queries an extensible object for an additional (unexpected) data-field for the instance. The value returned (in "value") is the composed value after merging any duplicated content; if the value is "repeated" (a list), then use GetValues instead. </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TValue</td><td>The data-type of the field.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>The effective value of the field, or the default value if not found.</td></tr>
+    <tr><td class="paramname">instance</td><td>The extensible object to obtain the value from.</td></tr>
+    <tr><td class="paramname">tag</td><td>The field identifier; the tag should not be defined as a known data-field for the instance.</td></tr>
+    <tr><td class="paramname">format</td><td>The data-format to use when decoding the value.</td></tr>
+    <tr><td class="paramname">allowDefinedTag</td><td>Allow tags that are present as part of the definition; for example, to query unknown enum values.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>True if data for the field was present, false otherwise.</dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_extensible_8cs_source.html">Extensible.cs</a> 第 <a class="el" href="_extensible_8cs_source.html#l00176">176</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a454215e740a97c8c88f5378bcf7c15af" name="a454215e740a97c8c88f5378bcf7c15af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a454215e740a97c8c88f5378bcf7c15af">&#9670;&nbsp;</a></span>TryGetValue&lt; TValue &gt;() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool <a class="el" href="class_proto_buf_1_1_extensible.html#a47589c15e2ce00c38f15de2df8803a7a">ProtoBuf.Extensible.TryGetValue</a>&lt; TValue &gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a>&#160;</td>
+          <td class="paramname"><em>instance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a>&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out TValue&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Queries an extensible object for an additional (unexpected) data-field for the instance. The value returned (in "value") is the composed value after merging any duplicated content; if the value is "repeated" (a list), then use GetValues instead. </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TValue</td><td>The data-type of the field.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>The effective value of the field, or the default value if not found.</td></tr>
+    <tr><td class="paramname">instance</td><td>The extensible object to obtain the value from.</td></tr>
+    <tr><td class="paramname">tag</td><td>The field identifier; the tag should not be defined as a known data-field for the instance.</td></tr>
+    <tr><td class="paramname">format</td><td>The data-format to use when decoding the value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>True if data for the field was present, false otherwise.</dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_extensible_8cs_source.html">Extensible.cs</a> 第 <a class="el" href="_extensible_8cs_source.html#l00159">159</a> 行定义.</p>
+
+</div>
+</div>
+<a id="afe3b777215333e361c13843885a343a3" name="afe3b777215333e361c13843885a343a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe3b777215333e361c13843885a343a3">&#9670;&nbsp;</a></span>TryGetValue&lt; TValue &gt;() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool <a class="el" href="class_proto_buf_1_1_extensible.html#a47589c15e2ce00c38f15de2df8803a7a">ProtoBuf.Extensible.TryGetValue</a>&lt; TValue &gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a>&#160;</td>
+          <td class="paramname"><em>instance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out TValue&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Queries an extensible object for an additional (unexpected) data-field for the instance. The value returned (in "value") is the composed value after merging any duplicated content; if the value is "repeated" (a list), then use GetValues instead. </p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TValue</td><td>The data-type of the field.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>The effective value of the field, or the default value if not found.</td></tr>
+    <tr><td class="paramname">instance</td><td>The extensible object to obtain the value from.</td></tr>
+    <tr><td class="paramname">tag</td><td>The field identifier; the tag should not be defined as a known data-field for the instance.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>True if data for the field was present, false otherwise.</dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_extensible_8cs_source.html">Extensible.cs</a> 第 <a class="el" href="_extensible_8cs_source.html#l00143">143</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>Unity/Assets/ThirdParty/protobuf-net/<a class="el" href="_extensible_8cs_source.html">Extensible.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_proto_buf.html">ProtoBuf</a></li><li class="navelem"><a class="el" href="class_proto_buf_1_1_extensible.html">Extensible</a></li>
+    <li class="footer">生成于 2022年 一月 23日 星期日 19:16:27 , 为 ET使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ET: Unity/Assets/ThirdParty/ILRuntime/CLR/TypeSystem/ILGenericParameterType.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ET<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_i_l_generic_parameter_type_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ILGenericParameterType.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_i_l_generic_parameter_type_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_i_l_runtime.html">ILRuntime</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_runtime.html">Runtime</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_runtime_1_1_stack.html">Stack</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using</span> <a class="code hl_variable" href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_system.html">System</a>.<a class="code hl_namespace" href="namespace_system_1_1_collections.html">Collections</a>.<a class="code hl_namespace" href="namespace_system_1_1_collections_1_1_generic.html">Generic</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_system.html">System</a>.Linq;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_system.html">System</a>.Text;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_i_l_runtime_1_1_c_l_r_1_1_type_system.html">ILRuntime.CLR.TypeSystem</a></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html">    9</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html">ILGenericParameterType</a> : <a class="code hl_interface" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <span class="keywordtype">string</span> name;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keywordtype">bool</span> isArray, isByRef;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <a class="code hl_class" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html">ILGenericParameterType</a> arrayType, byrefType, elementType;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#ae5d2c627005953257ff1d4d5c560f651">   14</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#ae5d2c627005953257ff1d4d5c560f651">ILGenericParameterType</a>(<span class="keywordtype">string</span> name)</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            this.name = name;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        }</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a746accf0f7cb11be72d32e058f884ddf">   18</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a746accf0f7cb11be72d32e058f884ddf">IsGenericInstance</a></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        }</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a50caf11b525645e53d3e1e3eb8d075c8">   23</a></span>        <span class="keyword">public</span> KeyValuePair&lt;string, IType&gt;[] <a class="code hl_property" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a50caf11b525645e53d3e1e3eb8d075c8">GenericArguments</a></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> <span class="keyword">null</span>; }</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        }</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a2fe141f4262545fa506eb29a08f6b44f">   27</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a2fe141f4262545fa506eb29a08f6b44f">HasGenericParameter</a></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <span class="keyword">get</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a507eea3497e91610144a3b3aa96c6f01">   35</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a507eea3497e91610144a3b3aa96c6f01">IsGenericParameter</a></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <span class="keyword">get</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                <span class="keywordflow">return</span> !isByRef &amp;&amp; !isArray;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a0d142a2d5c2a7a115cd0312966b9c5f5">   43</a></span>        <span class="keyword">public</span> Type <a class="code hl_property" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a0d142a2d5c2a7a115cd0312966b9c5f5">TypeForCLR</a></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> typeof(<a class="code hl_class" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html">ILGenericParameterType</a>); }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a6f7f3b70afb0eaaeed138a82107b2000">   48</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a6f7f3b70afb0eaaeed138a82107b2000">FullName</a></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> name; }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#ad01dd41d759828ad78c2de30f2ae31e9">   53</a></span>        <span class="keyword">public</span> Runtime.Enviorment.AppDomain <a class="code hl_typedef" href="_i_async_state_machine_adaptor_8cs.html#a005712ac87927f1c9f5a95d35c4bc855">AppDomain</a></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> <span class="keyword">null</span>; }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a9fb68fc892a084068dee242680807d70">   58</a></span>        <span class="keyword">public</span> Method.IMethod <a class="code hl_function" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a9fb68fc892a084068dee242680807d70">GetMethod</a>(<span class="keywordtype">string</span> name, <span class="keywordtype">int</span> paramCount, <span class="keywordtype">bool</span> declaredOnly = <span class="keyword">false</span>)</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#aa71d46f7de489bf315706aad098cf45d">   63</a></span>        <span class="keyword">public</span> Method.IMethod <a class="code hl_function" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#aa71d46f7de489bf315706aad098cf45d">GetMethod</a>(<span class="keywordtype">string</span> name, List&lt;IType&gt; param, <a class="code hl_interface" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a>[] genericArguments, <a class="code hl_interface" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a> returnType = <span class="keyword">null</span>, <span class="keywordtype">bool</span> declaredOnly = <span class="keyword">false</span>)</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a1df765c2b9f4a580bf6490576f402171">   68</a></span>        <span class="keyword">public</span> List&lt;Method.IMethod&gt; <a class="code hl_function" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a1df765c2b9f4a580bf6490576f402171">GetMethods</a>()</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a435fed4979cbf8e892fcd9e1afaa3c32">   73</a></span>        <span class="keyword">public</span> Method.IMethod <a class="code hl_function" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a435fed4979cbf8e892fcd9e1afaa3c32">GetConstructor</a>(List&lt;IType&gt; param)</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a7d76d537a556b96c72c110adfa3e0216">   78</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a7d76d537a556b96c72c110adfa3e0216">CanAssignTo</a>(<a class="code hl_interface" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a> type)</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#afda9da1dfc2dcfe7ad5bda805f50e239">   83</a></span>        <span class="keyword">public</span> <a class="code hl_interface" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a> <a class="code hl_function" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#afda9da1dfc2dcfe7ad5bda805f50e239">MakeGenericInstance</a>(KeyValuePair&lt;string, IType&gt;[] genericArguments)</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        {</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#aff9965536f4033d178a7bab9418dd569">   88</a></span>        <span class="keyword">public</span> <a class="code hl_interface" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a> <a class="code hl_function" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#aff9965536f4033d178a7bab9418dd569">ResolveGenericType</a>(<a class="code hl_interface" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a> contextType)</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> NotImplementedException();</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a0670dd2740ac19b336db762cdc94f582">   94</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a0670dd2740ac19b336db762cdc94f582">GetFieldIndex</a>(<span class="keywordtype">object</span> token)</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a07bfbc10b123f9bf07bf37ddb6b4b9a2">  100</a></span>        <span class="keyword">public</span> <a class="code hl_interface" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a> <a class="code hl_function" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a07bfbc10b123f9bf07bf37ddb6b4b9a2">FindGenericArgument</a>(<span class="keywordtype">string</span> key)</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        {</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a0a2502c023425badbb2ec30797d4607f">  106</a></span>        <span class="keyword">public</span> <a class="code hl_interface" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a> <a class="code hl_property" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a0a2502c023425badbb2ec30797d4607f">ByRefType</a></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> byrefType; }</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#ad7ac374c2e95ba460e46b851176238f4">  111</a></span>        <span class="keyword">public</span> <a class="code hl_interface" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a> <a class="code hl_function" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#ad7ac374c2e95ba460e46b851176238f4">MakeByRefType</a>()</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            <span class="keywordflow">if</span> (byrefType == <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            {</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                byrefType = <span class="keyword">new</span> <a class="code hl_function" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#ae5d2c627005953257ff1d4d5c560f651">ILGenericParameterType</a>(name + <span class="stringliteral">&quot;&amp;&quot;</span>);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                byrefType.isByRef = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                byrefType.elementType = <span class="keyword">this</span>;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            }</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            <span class="keywordflow">return</span> byrefType;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        }</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a433a2c268c186c833cd23da59bed38f0">  123</a></span>        <span class="keyword">public</span> <a class="code hl_interface" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a> <a class="code hl_property" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a433a2c268c186c833cd23da59bed38f0">ArrayType</a></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        {</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> arrayType; }</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        }</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#ae9c4d6ee7ec99473132a9b0c3f6d0e0c">  128</a></span>        <span class="keyword">public</span> <a class="code hl_interface" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a> <a class="code hl_function" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#ae9c4d6ee7ec99473132a9b0c3f6d0e0c">MakeArrayType</a>(<span class="keywordtype">int</span> rank)</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        {</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            <span class="keywordflow">if</span> (arrayType == <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            {</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>                arrayType = <span class="keyword">new</span> <a class="code hl_function" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#ae5d2c627005953257ff1d4d5c560f651">ILGenericParameterType</a>(name + <span class="stringliteral">&quot;[]&quot;</span>);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>                arrayType.isArray = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                arrayType.elementType = <span class="keyword">this</span>;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>            }</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            <span class="keywordflow">return</span> arrayType;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        }</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a91625487ece840c32dd54259a1e8684a">  140</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a91625487ece840c32dd54259a1e8684a">IsValueType</a></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        {</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            <span class="keyword">get</span> { <span class="keywordflow">throw</span> <span class="keyword">new</span> NotImplementedException(); }</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        }</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#ab3218f0645af539f105c64b91e6ae9f6">  145</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#ab3218f0645af539f105c64b91e6ae9f6">IsPrimitive</a></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        {</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        }</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a5bf9da476d792039327dba7a10817916">  149</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a5bf9da476d792039327dba7a10817916">IsEnum</a></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        {</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        }</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#aa96c72cc0daa72263fbb30829b70ea37">  153</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#aa96c72cc0daa72263fbb30829b70ea37">IsInterface</a></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        {</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        }</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#aa082035992e8bed548a25bd1867907cc">  158</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#aa082035992e8bed548a25bd1867907cc">Name</a></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        {</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>            <span class="keyword">get</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            {</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>                <span class="keywordflow">return</span> name;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            }</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        }</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#af506abb4fdbd405cb629bada9e3b69ab">  166</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#af506abb4fdbd405cb629bada9e3b69ab">IsDelegate</a></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        {</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>            <span class="keyword">get</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>            {</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>            }</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        }</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a734421ea6b5716110a0c5f1a4a2e59cd">  174</a></span>        <span class="keyword">public</span> Type <a class="code hl_property" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a734421ea6b5716110a0c5f1a4a2e59cd">ReflectionType</a></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        {</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>            <span class="keyword">get</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>            {</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> NotImplementedException();</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>            }</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        }</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a9734f7d25357c2748e301bb1f70faf76">  182</a></span>        <span class="keyword">public</span> <a class="code hl_interface" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a> <a class="code hl_property" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a9734f7d25357c2748e301bb1f70faf76">BaseType</a></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        {</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>            <span class="keyword">get</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>            {</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>                <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>            }</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        }</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#acdd35fcd473ce7a8925171acc6c8ccab">  190</a></span>        <span class="keyword">public</span> Method.IMethod <a class="code hl_function" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#acdd35fcd473ce7a8925171acc6c8ccab">GetVirtualMethod</a>(Method.IMethod method)</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        {</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            <span class="keywordflow">return</span> method;</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        }</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#aaeee7e55f1179cee7db80ce8129bc035">  195</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#aaeee7e55f1179cee7db80ce8129bc035">GetValueTypeSize</a>(out <span class="keywordtype">int</span> fieldCout, out <span class="keywordtype">int</span> managedCount)</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        {</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> NotImplementedException();</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        }</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#ab5271bd4c1890bfcee2a804f751b9804">  200</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#ab5271bd4c1890bfcee2a804f751b9804">IsArray</a></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        {</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> isArray; }</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        }</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a3ae7c32d43c41c964ace5ec92f238b9a">  205</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a3ae7c32d43c41c964ace5ec92f238b9a">IsByRef</a></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        {</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>            <span class="keyword">get</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>            {</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>                <span class="keywordflow">return</span> isByRef;</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>            }</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        }</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#ab422ea810e758f460cd5a4b1ebdc4873">  213</a></span>        <span class="keyword">public</span> <a class="code hl_interface" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a> <a class="code hl_property" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#ab422ea810e758f460cd5a4b1ebdc4873">ElementType</a></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        {</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>            <span class="keyword">get</span></div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>            {</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>                <span class="keywordflow">return</span> elementType;</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>            }</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>        }</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a5c090040e51c64a5e8ce972fa04e3f36">  221</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_property" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a5c090040e51c64a5e8ce972fa04e3f36">ArrayRank</a></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>        {</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> 1; }</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>        }</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a9c2e732db03735e31cb0c0fb4442a10b">  226</a></span>        <span class="keyword">public</span> <a class="code hl_interface" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a>[] <a class="code hl_property" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a9c2e732db03735e31cb0c0fb4442a10b">Implements</a></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        {</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>            <span class="keyword">get</span></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>            {</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>            }</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        }</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a8343c963fd5b21492c710834040ff73d">  234</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_property" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a8343c963fd5b21492c710834040ff73d">TotalFieldCount</a></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        {</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>            <span class="keyword">get</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>            {</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>                <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>            }</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        }</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a57184b4018fb086e65f95085f5067a14">  242</a></span>        <span class="keyword">public</span> <a class="code hl_struct" href="struct_i_l_runtime_1_1_runtime_1_1_stack_1_1_stack_object.html">StackObject</a> <a class="code hl_property" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a57184b4018fb086e65f95085f5067a14">DefaultObject</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> <span class="keywordflow">default</span>(<a class="code hl_struct" href="struct_i_l_runtime_1_1_runtime_1_1_stack_1_1_stack_object.html">StackObject</a>); } }</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a650b39dc8d873927664970a571dbd108">  244</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_property" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a650b39dc8d873927664970a571dbd108">TypeIndex</a></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        {</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>            <span class="keyword">get</span></div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>            {</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>                <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>            }</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        }</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    }</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>}</div>
+<div class="ttc" id="a_i_async_state_machine_adaptor_8cs_html_a005712ac87927f1c9f5a95d35c4bc855"><div class="ttname"><a href="_i_async_state_machine_adaptor_8cs.html#a005712ac87927f1c9f5a95d35c4bc855">AppDomain</a></div><div class="ttdeci">ILRuntime.Runtime.Enviorment.AppDomain AppDomain</div><div class="ttdef"><b>Definition:</b> <a href="_i_async_state_machine_adaptor_8cs_source.html#l00006">IAsyncStateMachineAdaptor.cs:6</a></div></div>
+<div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html">ILRuntime.CLR.TypeSystem.ILGenericParameterType</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00009">ILGenericParameterType.cs:10</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_a0670dd2740ac19b336db762cdc94f582"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a0670dd2740ac19b336db762cdc94f582">ILRuntime.CLR.TypeSystem.ILGenericParameterType.GetFieldIndex</a></div><div class="ttdeci">int GetFieldIndex(object token)</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00094">ILGenericParameterType.cs:94</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_a07bfbc10b123f9bf07bf37ddb6b4b9a2"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a07bfbc10b123f9bf07bf37ddb6b4b9a2">ILRuntime.CLR.TypeSystem.ILGenericParameterType.FindGenericArgument</a></div><div class="ttdeci">IType FindGenericArgument(string key)</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00100">ILGenericParameterType.cs:100</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_a0a2502c023425badbb2ec30797d4607f"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a0a2502c023425badbb2ec30797d4607f">ILRuntime.CLR.TypeSystem.ILGenericParameterType.ByRefType</a></div><div class="ttdeci">IType ByRefType</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00106">ILGenericParameterType.cs:107</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_a0d142a2d5c2a7a115cd0312966b9c5f5"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a0d142a2d5c2a7a115cd0312966b9c5f5">ILRuntime.CLR.TypeSystem.ILGenericParameterType.TypeForCLR</a></div><div class="ttdeci">Type TypeForCLR</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00043">ILGenericParameterType.cs:44</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_a1df765c2b9f4a580bf6490576f402171"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a1df765c2b9f4a580bf6490576f402171">ILRuntime.CLR.TypeSystem.ILGenericParameterType.GetMethods</a></div><div class="ttdeci">List&lt; Method.IMethod &gt; GetMethods()</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00068">ILGenericParameterType.cs:68</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_a2fe141f4262545fa506eb29a08f6b44f"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a2fe141f4262545fa506eb29a08f6b44f">ILRuntime.CLR.TypeSystem.ILGenericParameterType.HasGenericParameter</a></div><div class="ttdeci">bool HasGenericParameter</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00027">ILGenericParameterType.cs:28</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_a3ae7c32d43c41c964ace5ec92f238b9a"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a3ae7c32d43c41c964ace5ec92f238b9a">ILRuntime.CLR.TypeSystem.ILGenericParameterType.IsByRef</a></div><div class="ttdeci">bool IsByRef</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00205">ILGenericParameterType.cs:206</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_a433a2c268c186c833cd23da59bed38f0"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a433a2c268c186c833cd23da59bed38f0">ILRuntime.CLR.TypeSystem.ILGenericParameterType.ArrayType</a></div><div class="ttdeci">IType ArrayType</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00123">ILGenericParameterType.cs:124</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_a435fed4979cbf8e892fcd9e1afaa3c32"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a435fed4979cbf8e892fcd9e1afaa3c32">ILRuntime.CLR.TypeSystem.ILGenericParameterType.GetConstructor</a></div><div class="ttdeci">Method.IMethod GetConstructor(List&lt; IType &gt; param)</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00073">ILGenericParameterType.cs:73</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_a507eea3497e91610144a3b3aa96c6f01"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a507eea3497e91610144a3b3aa96c6f01">ILRuntime.CLR.TypeSystem.ILGenericParameterType.IsGenericParameter</a></div><div class="ttdeci">bool IsGenericParameter</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00035">ILGenericParameterType.cs:36</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_a50caf11b525645e53d3e1e3eb8d075c8"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a50caf11b525645e53d3e1e3eb8d075c8">ILRuntime.CLR.TypeSystem.ILGenericParameterType.GenericArguments</a></div><div class="ttdeci">KeyValuePair&lt; string, IType &gt;[] GenericArguments</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00023">ILGenericParameterType.cs:24</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_a57184b4018fb086e65f95085f5067a14"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a57184b4018fb086e65f95085f5067a14">ILRuntime.CLR.TypeSystem.ILGenericParameterType.DefaultObject</a></div><div class="ttdeci">StackObject DefaultObject</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00242">ILGenericParameterType.cs:242</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_a5bf9da476d792039327dba7a10817916"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a5bf9da476d792039327dba7a10817916">ILRuntime.CLR.TypeSystem.ILGenericParameterType.IsEnum</a></div><div class="ttdeci">bool IsEnum</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00149">ILGenericParameterType.cs:150</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_a5c090040e51c64a5e8ce972fa04e3f36"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a5c090040e51c64a5e8ce972fa04e3f36">ILRuntime.CLR.TypeSystem.ILGenericParameterType.ArrayRank</a></div><div class="ttdeci">int ArrayRank</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00221">ILGenericParameterType.cs:222</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_a650b39dc8d873927664970a571dbd108"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a650b39dc8d873927664970a571dbd108">ILRuntime.CLR.TypeSystem.ILGenericParameterType.TypeIndex</a></div><div class="ttdeci">int TypeIndex</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00244">ILGenericParameterType.cs:245</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_a6f7f3b70afb0eaaeed138a82107b2000"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a6f7f3b70afb0eaaeed138a82107b2000">ILRuntime.CLR.TypeSystem.ILGenericParameterType.FullName</a></div><div class="ttdeci">string FullName</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00048">ILGenericParameterType.cs:49</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_a734421ea6b5716110a0c5f1a4a2e59cd"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a734421ea6b5716110a0c5f1a4a2e59cd">ILRuntime.CLR.TypeSystem.ILGenericParameterType.ReflectionType</a></div><div class="ttdeci">Type ReflectionType</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00174">ILGenericParameterType.cs:175</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_a746accf0f7cb11be72d32e058f884ddf"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a746accf0f7cb11be72d32e058f884ddf">ILRuntime.CLR.TypeSystem.ILGenericParameterType.IsGenericInstance</a></div><div class="ttdeci">bool IsGenericInstance</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00018">ILGenericParameterType.cs:19</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_a7d76d537a556b96c72c110adfa3e0216"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a7d76d537a556b96c72c110adfa3e0216">ILRuntime.CLR.TypeSystem.ILGenericParameterType.CanAssignTo</a></div><div class="ttdeci">bool CanAssignTo(IType type)</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00078">ILGenericParameterType.cs:78</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_a8343c963fd5b21492c710834040ff73d"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a8343c963fd5b21492c710834040ff73d">ILRuntime.CLR.TypeSystem.ILGenericParameterType.TotalFieldCount</a></div><div class="ttdeci">int TotalFieldCount</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00234">ILGenericParameterType.cs:235</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_a91625487ece840c32dd54259a1e8684a"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a91625487ece840c32dd54259a1e8684a">ILRuntime.CLR.TypeSystem.ILGenericParameterType.IsValueType</a></div><div class="ttdeci">bool IsValueType</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00140">ILGenericParameterType.cs:141</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_a9734f7d25357c2748e301bb1f70faf76"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a9734f7d25357c2748e301bb1f70faf76">ILRuntime.CLR.TypeSystem.ILGenericParameterType.BaseType</a></div><div class="ttdeci">IType BaseType</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00182">ILGenericParameterType.cs:183</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_a9c2e732db03735e31cb0c0fb4442a10b"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a9c2e732db03735e31cb0c0fb4442a10b">ILRuntime.CLR.TypeSystem.ILGenericParameterType.Implements</a></div><div class="ttdeci">IType[] Implements</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00226">ILGenericParameterType.cs:227</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_a9fb68fc892a084068dee242680807d70"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a9fb68fc892a084068dee242680807d70">ILRuntime.CLR.TypeSystem.ILGenericParameterType.GetMethod</a></div><div class="ttdeci">Method.IMethod GetMethod(string name, int paramCount, bool declaredOnly=false)</div><div class="ttdoc">Get a specified Method in this type</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00058">ILGenericParameterType.cs:58</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_aa082035992e8bed548a25bd1867907cc"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#aa082035992e8bed548a25bd1867907cc">ILRuntime.CLR.TypeSystem.ILGenericParameterType.Name</a></div><div class="ttdeci">string Name</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00158">ILGenericParameterType.cs:159</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_aa71d46f7de489bf315706aad098cf45d"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#aa71d46f7de489bf315706aad098cf45d">ILRuntime.CLR.TypeSystem.ILGenericParameterType.GetMethod</a></div><div class="ttdeci">Method.IMethod GetMethod(string name, List&lt; IType &gt; param, IType[] genericArguments, IType returnType=null, bool declaredOnly=false)</div><div class="ttdoc">Get a specified Method in this type</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00063">ILGenericParameterType.cs:63</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_aa96c72cc0daa72263fbb30829b70ea37"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#aa96c72cc0daa72263fbb30829b70ea37">ILRuntime.CLR.TypeSystem.ILGenericParameterType.IsInterface</a></div><div class="ttdeci">bool IsInterface</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00153">ILGenericParameterType.cs:154</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_aaeee7e55f1179cee7db80ce8129bc035"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#aaeee7e55f1179cee7db80ce8129bc035">ILRuntime.CLR.TypeSystem.ILGenericParameterType.GetValueTypeSize</a></div><div class="ttdeci">void GetValueTypeSize(out int fieldCout, out int managedCount)</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00195">ILGenericParameterType.cs:195</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_ab3218f0645af539f105c64b91e6ae9f6"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#ab3218f0645af539f105c64b91e6ae9f6">ILRuntime.CLR.TypeSystem.ILGenericParameterType.IsPrimitive</a></div><div class="ttdeci">bool IsPrimitive</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00145">ILGenericParameterType.cs:146</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_ab422ea810e758f460cd5a4b1ebdc4873"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#ab422ea810e758f460cd5a4b1ebdc4873">ILRuntime.CLR.TypeSystem.ILGenericParameterType.ElementType</a></div><div class="ttdeci">IType ElementType</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00213">ILGenericParameterType.cs:214</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_ab5271bd4c1890bfcee2a804f751b9804"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#ab5271bd4c1890bfcee2a804f751b9804">ILRuntime.CLR.TypeSystem.ILGenericParameterType.IsArray</a></div><div class="ttdeci">bool IsArray</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00200">ILGenericParameterType.cs:201</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_acdd35fcd473ce7a8925171acc6c8ccab"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#acdd35fcd473ce7a8925171acc6c8ccab">ILRuntime.CLR.TypeSystem.ILGenericParameterType.GetVirtualMethod</a></div><div class="ttdeci">Method.IMethod GetVirtualMethod(Method.IMethod method)</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00190">ILGenericParameterType.cs:190</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_ad7ac374c2e95ba460e46b851176238f4"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#ad7ac374c2e95ba460e46b851176238f4">ILRuntime.CLR.TypeSystem.ILGenericParameterType.MakeByRefType</a></div><div class="ttdeci">IType MakeByRefType()</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00111">ILGenericParameterType.cs:111</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_ae5d2c627005953257ff1d4d5c560f651"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#ae5d2c627005953257ff1d4d5c560f651">ILRuntime.CLR.TypeSystem.ILGenericParameterType.ILGenericParameterType</a></div><div class="ttdeci">ILGenericParameterType(string name)</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00014">ILGenericParameterType.cs:14</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_ae9c4d6ee7ec99473132a9b0c3f6d0e0c"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#ae9c4d6ee7ec99473132a9b0c3f6d0e0c">ILRuntime.CLR.TypeSystem.ILGenericParameterType.MakeArrayType</a></div><div class="ttdeci">IType MakeArrayType(int rank)</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00128">ILGenericParameterType.cs:128</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_af506abb4fdbd405cb629bada9e3b69ab"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#af506abb4fdbd405cb629bada9e3b69ab">ILRuntime.CLR.TypeSystem.ILGenericParameterType.IsDelegate</a></div><div class="ttdeci">bool IsDelegate</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00166">ILGenericParameterType.cs:167</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_afda9da1dfc2dcfe7ad5bda805f50e239"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#afda9da1dfc2dcfe7ad5bda805f50e239">ILRuntime.CLR.TypeSystem.ILGenericParameterType.MakeGenericInstance</a></div><div class="ttdeci">IType MakeGenericInstance(KeyValuePair&lt; string, IType &gt;[] genericArguments)</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00083">ILGenericParameterType.cs:83</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type_html_aff9965536f4033d178a7bab9418dd569"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#aff9965536f4033d178a7bab9418dd569">ILRuntime.CLR.TypeSystem.ILGenericParameterType.ResolveGenericType</a></div><div class="ttdeci">IType ResolveGenericType(IType contextType)</div><div class="ttdef"><b>Definition:</b> <a href="_i_l_generic_parameter_type_8cs_source.html#l00088">ILGenericParameterType.cs:88</a></div></div>
+<div class="ttc" id="ainterface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type_html"><div class="ttname"><a href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">ILRuntime.CLR.TypeSystem.IType</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_type_8cs_source.html#l00011">IType.cs:12</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_c_l_r_1_1_type_system_html"><div class="ttname"><a href="namespace_i_l_runtime_1_1_c_l_r_1_1_type_system.html">ILRuntime.CLR.TypeSystem</a></div><div class="ttdef"><b>Definition:</b> <a href="_c_l_r_type_8cs_source.html#l00013">CLRType.cs:14</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_stack_html"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_stack.html">ILRuntime.Runtime.Stack</a></div><div class="ttdef"><b>Definition:</b> <a href="_runtime_stack_8cs_source.html#l00009">RuntimeStack.cs:10</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_html"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime.html">ILRuntime.Runtime</a></div><div class="ttdef"><b>Definition:</b> <a href="_c_l_r_bindings_8cs_source.html#l00005">CLRBindings.cs:6</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_html"><div class="ttname"><a href="namespace_i_l_runtime.html">ILRuntime</a></div><div class="ttdef"><b>Definition:</b> <a href="_c_l_r_bindings_8cs_source.html#l00005">CLRBindings.cs:6</a></div></div>
+<div class="ttc" id="anamespace_system_1_1_collections_1_1_generic_html"><div class="ttname"><a href="namespace_system_1_1_collections_1_1_generic.html">System.Collections.Generic</a></div></div>
+<div class="ttc" id="anamespace_system_1_1_collections_html"><div class="ttname"><a href="namespace_system_1_1_collections.html">System.Collections</a></div></div>
+<div class="ttc" id="anamespace_system_html"><div class="ttname"><a href="namespace_system.html">System</a></div><div class="ttdef"><b>Definition:</b> <a href="_async_method_builder_attribute_8cs_source.html#l00002">AsyncMethodBuilderAttribute.cs:3</a></div></div>
+<div class="ttc" id="astruct_i_l_runtime_1_1_runtime_1_1_stack_1_1_stack_object_html"><div class="ttname"><a href="struct_i_l_runtime_1_1_runtime_1_1_stack_1_1_stack_object.html">ILRuntime.Runtime.Stack.StackObject</a></div><div class="ttdef"><b>Definition:</b> <a href="_stack_object_8cs_source.html#l00014">StackObject.cs:15</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_3b33dffaa21a2ac6f7978a949ffd4e41.html">Assets</a></li><li class="navelem"><a class="el" href="dir_5501c55c26a8d51fbc1fd8b7d8df04c3.html">ThirdParty</a></li><li class="navelem"><a class="el" href="dir_d7574f457851e45807c5ee4c7e6fc148.html">ILRuntime</a></li><li class="navelem"><a class="el" href="dir_2a573e742e80239d7ad297d6332140cb.html">CLR</a></li><li class="navelem"><a class="el" href="dir_b267342cfef81fb52a9c8eae9f10b83c.html">TypeSystem</a></li><li class="navelem"><a class="el" href="_i_l_generic_parameter_type_8cs.html">ILGenericParameterType.cs</a></li>
+    <li class="footer">生成于 2022年 一月 23日 星期日 19:16:15 , 为 ET使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>
