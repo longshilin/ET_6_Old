@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ET: Unity/Assets/ThirdParty/ILRuntime/Mono.Cecil/Mono.Cecil.Metadata/CodedIndex.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ET<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_coded_index_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">CodedIndex.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_coded_index_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Author:</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//   Jb Evain (jbevain@gmail.com)</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">// Copyright (c) 2008 - 2015 Jb Evain</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// Copyright (c) 2008 - 2011 Novell, Inc.</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">//</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// Licensed under the MIT/X11 license.</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">//</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html">ILRuntime.Mono.Cecil.Metadata</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a30759c5cf911443fa06c4a4154c5afad">   13</a></span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a30759c5cf911443fa06c4a4154c5afad">CodedIndex</a> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>                <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a30759c5cf911443fa06c4a4154c5afada25d5da43f7fdcc2fbb3f22cc20f39096">TypeDefOrRef</a>,</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>                <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a30759c5cf911443fa06c4a4154c5afadac405d13223c46e3d026bebb91e6dbb3a">HasConstant</a>,</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>                <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a30759c5cf911443fa06c4a4154c5afada5423c43fc9a26d914a03cda429277c50">HasCustomAttribute</a>,</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a30759c5cf911443fa06c4a4154c5afada8aebc10908af4603b2e915b12cf08ed9">HasFieldMarshal</a>,</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>                <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a30759c5cf911443fa06c4a4154c5afada26289522d79ed687bf8f088f34c60984">HasDeclSecurity</a>,</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a30759c5cf911443fa06c4a4154c5afadacdfb8dfb4f812822774158281f8538b6">MemberRefParent</a>,</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a30759c5cf911443fa06c4a4154c5afadac7cb8697eb4a243ea5c3143a3be1f545">HasSemantics</a>,</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a30759c5cf911443fa06c4a4154c5afada656dd12a4cf54da4578fd8669ea3973e">MethodDefOrRef</a>,</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a30759c5cf911443fa06c4a4154c5afada505d08dc41a72275c1fbfc967ea5f670">MemberForwarded</a>,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a30759c5cf911443fa06c4a4154c5afadab672f52ade975e864ae6b58722c03689">Implementation</a>,</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a30759c5cf911443fa06c4a4154c5afada77e269222e3497e94907a8cb60808ebc">CustomAttributeType</a>,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a30759c5cf911443fa06c4a4154c5afada27bd150589f00d022e7aec8e0cd8d8b7">ResolutionScope</a>,</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a30759c5cf911443fa06c4a4154c5afada8ab23e83c0548db5a714daae03bf5d22">TypeOrMethodDef</a>,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a30759c5cf911443fa06c4a4154c5afada79c2a575dbe99fbe7caed7c984f96d02">HasCustomDebugInformation</a>,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        }</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_html"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html">ILRuntime.Mono.Cecil.Metadata</a></div><div class="ttdef"><b>Definition:</b> <a href="_blob_heap_8cs_source.html#l00013">BlobHeap.cs:13</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_html_a30759c5cf911443fa06c4a4154c5afad"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a30759c5cf911443fa06c4a4154c5afad">ILRuntime.Mono.Cecil.Metadata.CodedIndex</a></div><div class="ttdeci">CodedIndex</div><div class="ttdef"><b>Definition:</b> <a href="_coded_index_8cs_source.html#l00013">CodedIndex.cs:13</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_html_a30759c5cf911443fa06c4a4154c5afada25d5da43f7fdcc2fbb3f22cc20f39096"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a30759c5cf911443fa06c4a4154c5afada25d5da43f7fdcc2fbb3f22cc20f39096">ILRuntime.Mono.Cecil.Metadata.CodedIndex.TypeDefOrRef</a></div><div class="ttdeci">@ TypeDefOrRef</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_html_a30759c5cf911443fa06c4a4154c5afada26289522d79ed687bf8f088f34c60984"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a30759c5cf911443fa06c4a4154c5afada26289522d79ed687bf8f088f34c60984">ILRuntime.Mono.Cecil.Metadata.CodedIndex.HasDeclSecurity</a></div><div class="ttdeci">@ HasDeclSecurity</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_html_a30759c5cf911443fa06c4a4154c5afada27bd150589f00d022e7aec8e0cd8d8b7"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a30759c5cf911443fa06c4a4154c5afada27bd150589f00d022e7aec8e0cd8d8b7">ILRuntime.Mono.Cecil.Metadata.CodedIndex.ResolutionScope</a></div><div class="ttdeci">@ ResolutionScope</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_html_a30759c5cf911443fa06c4a4154c5afada505d08dc41a72275c1fbfc967ea5f670"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a30759c5cf911443fa06c4a4154c5afada505d08dc41a72275c1fbfc967ea5f670">ILRuntime.Mono.Cecil.Metadata.CodedIndex.MemberForwarded</a></div><div class="ttdeci">@ MemberForwarded</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_html_a30759c5cf911443fa06c4a4154c5afada5423c43fc9a26d914a03cda429277c50"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a30759c5cf911443fa06c4a4154c5afada5423c43fc9a26d914a03cda429277c50">ILRuntime.Mono.Cecil.Metadata.CodedIndex.HasCustomAttribute</a></div><div class="ttdeci">@ HasCustomAttribute</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_html_a30759c5cf911443fa06c4a4154c5afada656dd12a4cf54da4578fd8669ea3973e"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a30759c5cf911443fa06c4a4154c5afada656dd12a4cf54da4578fd8669ea3973e">ILRuntime.Mono.Cecil.Metadata.CodedIndex.MethodDefOrRef</a></div><div class="ttdeci">@ MethodDefOrRef</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_html_a30759c5cf911443fa06c4a4154c5afada77e269222e3497e94907a8cb60808ebc"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a30759c5cf911443fa06c4a4154c5afada77e269222e3497e94907a8cb60808ebc">ILRuntime.Mono.Cecil.Metadata.CodedIndex.CustomAttributeType</a></div><div class="ttdeci">@ CustomAttributeType</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_html_a30759c5cf911443fa06c4a4154c5afada79c2a575dbe99fbe7caed7c984f96d02"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a30759c5cf911443fa06c4a4154c5afada79c2a575dbe99fbe7caed7c984f96d02">ILRuntime.Mono.Cecil.Metadata.CodedIndex.HasCustomDebugInformation</a></div><div class="ttdeci">@ HasCustomDebugInformation</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_html_a30759c5cf911443fa06c4a4154c5afada8ab23e83c0548db5a714daae03bf5d22"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a30759c5cf911443fa06c4a4154c5afada8ab23e83c0548db5a714daae03bf5d22">ILRuntime.Mono.Cecil.Metadata.CodedIndex.TypeOrMethodDef</a></div><div class="ttdeci">@ TypeOrMethodDef</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_html_a30759c5cf911443fa06c4a4154c5afada8aebc10908af4603b2e915b12cf08ed9"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a30759c5cf911443fa06c4a4154c5afada8aebc10908af4603b2e915b12cf08ed9">ILRuntime.Mono.Cecil.Metadata.CodedIndex.HasFieldMarshal</a></div><div class="ttdeci">@ HasFieldMarshal</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_html_a30759c5cf911443fa06c4a4154c5afadab672f52ade975e864ae6b58722c03689"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a30759c5cf911443fa06c4a4154c5afadab672f52ade975e864ae6b58722c03689">ILRuntime.Mono.Cecil.Metadata.CodedIndex.Implementation</a></div><div class="ttdeci">@ Implementation</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_html_a30759c5cf911443fa06c4a4154c5afadac405d13223c46e3d026bebb91e6dbb3a"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a30759c5cf911443fa06c4a4154c5afadac405d13223c46e3d026bebb91e6dbb3a">ILRuntime.Mono.Cecil.Metadata.CodedIndex.HasConstant</a></div><div class="ttdeci">@ HasConstant</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_html_a30759c5cf911443fa06c4a4154c5afadac7cb8697eb4a243ea5c3143a3be1f545"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a30759c5cf911443fa06c4a4154c5afadac7cb8697eb4a243ea5c3143a3be1f545">ILRuntime.Mono.Cecil.Metadata.CodedIndex.HasSemantics</a></div><div class="ttdeci">@ HasSemantics</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_html_a30759c5cf911443fa06c4a4154c5afadacdfb8dfb4f812822774158281f8538b6"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a30759c5cf911443fa06c4a4154c5afadacdfb8dfb4f812822774158281f8538b6">ILRuntime.Mono.Cecil.Metadata.CodedIndex.MemberRefParent</a></div><div class="ttdeci">@ MemberRefParent</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_3b33dffaa21a2ac6f7978a949ffd4e41.html">Assets</a></li><li class="navelem"><a class="el" href="dir_5501c55c26a8d51fbc1fd8b7d8df04c3.html">ThirdParty</a></li><li class="navelem"><a class="el" href="dir_d7574f457851e45807c5ee4c7e6fc148.html">ILRuntime</a></li><li class="navelem"><a class="el" href="dir_4b4645f3c34003797707cfb8ce358d82.html">Mono.Cecil</a></li><li class="navelem"><a class="el" href="dir_9abc3d4d5c205f2563c0b6e65d698bee.html">Mono.Cecil.Metadata</a></li><li class="navelem"><a class="el" href="_coded_index_8cs.html">CodedIndex.cs</a></li>
+    <li class="footer">生成于 2022年 一月 23日 星期日 19:12:33 , 为 ET使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

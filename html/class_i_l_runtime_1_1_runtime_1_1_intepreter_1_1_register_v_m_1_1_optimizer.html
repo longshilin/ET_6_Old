@@ -1,0 +1,767 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ET: ILRuntime.Runtime.Intepreter.RegisterVM.Optimizer类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ET<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_optimizer.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pub-static-attribs">静态 Public 属性</a>  </div>
+  <div class="headertitle"><div class="title">ILRuntime.Runtime.Intepreter.RegisterVM.Optimizer类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a38b18c4dcad28f54e742a2144d82ed0f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_optimizer.html#a38b18c4dcad28f54e742a2144d82ed0f">BackwardsCopyPropagation</a> (List&lt; <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_code_basic_block.html">CodeBasicBlock</a> &gt; blocks, bool hasReturn, short stackRegisterBegin)</td></tr>
+<tr class="separator:a38b18c4dcad28f54e742a2144d82ed0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48f327d5bfd629483c9b5b1e0b391bb8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_optimizer.html#a48f327d5bfd629483c9b5b1e0b391bb8">EliminateConstantLoad</a> (List&lt; <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_code_basic_block.html">CodeBasicBlock</a> &gt; blocks, bool hasReturn)</td></tr>
+<tr class="separator:a48f327d5bfd629483c9b5b1e0b391bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8c361a2ec1a40629c2d88c17c0a7619"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_optimizer.html#ad8c361a2ec1a40629c2d88c17c0a7619">ForwardCopyPropagation</a> (List&lt; <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_code_basic_block.html">CodeBasicBlock</a> &gt; blocks, bool hasReturn, short stackRegisterBegin)</td></tr>
+<tr class="separator:ad8c361a2ec1a40629c2d88c17c0a7619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd165d5935c1ece026e1c8856ab2c9db"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_optimizer.html#acd165d5935c1ece026e1c8856ab2c9db">InlineMethod</a> (<a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_code_basic_block.html">CodeBasicBlock</a> block, <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_method_1_1_i_l_method.html">ILMethod</a> method, <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_register_v_m_symbol_link.html">RegisterVMSymbolLink</a> symbolLink, ref Dictionary&lt; int, int[]&gt; jumpTables, short baseRegIdx, bool hasReturn)</td></tr>
+<tr class="separator:acd165d5935c1ece026e1c8856ab2c9db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac59fd04300e8844283816001a255ecfa"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_optimizer.html#ac59fd04300e8844283816001a255ecfa">CleanupRegister</a> (List&lt; <a class="el" href="struct_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_1_1_op_code_r.html">OpCodeR</a> &gt; ins, int locRegStart, bool hasReturn)</td></tr>
+<tr class="separator:ac59fd04300e8844283816001a255ecfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8398d0873428ebd6b381327a60e63d5b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_optimizer.html#a8398d0873428ebd6b381327a60e63d5b">SupportIntemediateValue</a> (<a class="el" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103">OpCodeREnum</a> op)</td></tr>
+<tr class="separator:a8398d0873428ebd6b381327a60e63d5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dec262ebf68920e7fab866d14bf8773"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_optimizer.html#a3dec262ebf68920e7fab866d14bf8773">ReplaceRegisterWithConstant</a> (ref <a class="el" href="struct_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_1_1_op_code_r.html">OpCodeR</a> op, ref <a class="el" href="struct_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_1_1_op_code_r.html">OpCodeR</a> constant)</td></tr>
+<tr class="separator:a3dec262ebf68920e7fab866d14bf8773"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf1975cda84c44f716512f146ba77a66"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103">OpCodeREnum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_optimizer.html#abf1975cda84c44f716512f146ba77a66">GetIntemediateValueOpcode</a> (<a class="el" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103">OpCodeREnum</a> op)</td></tr>
+<tr class="separator:abf1975cda84c44f716512f146ba77a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0f2be9a1bee030e8f987dd2f7553c81"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_optimizer.html#ae0f2be9a1bee030e8f987dd2f7553c81">SupportOperandSwap</a> (<a class="el" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103">OpCodeREnum</a> op)</td></tr>
+<tr class="separator:ae0f2be9a1bee030e8f987dd2f7553c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba7c0137be3fcad30945e0db67417f20"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_optimizer.html#aba7c0137be3fcad30945e0db67417f20">HasInverseOpcode</a> (<a class="el" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103">OpCodeREnum</a> op)</td></tr>
+<tr class="separator:aba7c0137be3fcad30945e0db67417f20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85b100f3b59203af63e512cb5c9796d8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103">OpCodeREnum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_optimizer.html#a85b100f3b59203af63e512cb5c9796d8">GetInverseOpcode</a> (<a class="el" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103">OpCodeREnum</a> op)</td></tr>
+<tr class="separator:a85b100f3b59203af63e512cb5c9796d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69cd797a3484d9021cca88156a420333"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_optimizer.html#a69cd797a3484d9021cca88156a420333">IsLoadConstant</a> (<a class="el" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103">OpCodeREnum</a> op)</td></tr>
+<tr class="separator:a69cd797a3484d9021cca88156a420333"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90e4f181b80bc1dbcbef5e163245e6b1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_optimizer.html#a90e4f181b80bc1dbcbef5e163245e6b1">IsBranching</a> (<a class="el" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103">OpCodeREnum</a> op)</td></tr>
+<tr class="separator:a90e4f181b80bc1dbcbef5e163245e6b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa48c9717df4ba3c5798bfb0f3fe486d0"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_optimizer.html#aa48c9717df4ba3c5798bfb0f3fe486d0">IsIntermediateBranching</a> (<a class="el" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103">OpCodeREnum</a> op)</td></tr>
+<tr class="separator:aa48c9717df4ba3c5798bfb0f3fe486d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a669c3965d7849730541b4353fb157ef1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_optimizer.html#a669c3965d7849730541b4353fb157ef1">GetOpcodeSourceRegister</a> (ref <a class="el" href="struct_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_1_1_op_code_r.html">OpCodeR</a> op, bool hasReturn, out short r1, out short r2, out short r3)</td></tr>
+<tr class="separator:a669c3965d7849730541b4353fb157ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f7075321eba1a9e96bad82da282930d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_optimizer.html#a5f7075321eba1a9e96bad82da282930d">GetOpcodeDestRegister</a> (ref <a class="el" href="struct_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_1_1_op_code_r.html">OpCodes.OpCodeR</a> op, out short r1)</td></tr>
+<tr class="separator:a5f7075321eba1a9e96bad82da282930d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:a4ed0372c6848c23cad1f74b4e898bacd"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_optimizer.html#a4ed0372c6848c23cad1f74b4e898bacd">MaximalInlineInstructionCount</a> = 20</td></tr>
+<tr class="separator:a4ed0372c6848c23cad1f74b4e898bacd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="_optimizer_8_b_c_p_8cs_source.html">Optimizer.BCP.cs</a> 第 <a class="el" href="_optimizer_8_b_c_p_8cs_source.html#l00015">15</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a38b18c4dcad28f54e742a2144d82ed0f" name="a38b18c4dcad28f54e742a2144d82ed0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38b18c4dcad28f54e742a2144d82ed0f">&#9670;&nbsp;</a></span>BackwardsCopyPropagation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ILRuntime.Runtime.Intepreter.RegisterVM.Optimizer.BackwardsCopyPropagation </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_code_basic_block.html">CodeBasicBlock</a> &gt;&#160;</td>
+          <td class="paramname"><em>blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>hasReturn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>stackRegisterBegin</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_optimizer_8_b_c_p_8cs_source.html">Optimizer.BCP.cs</a> 第 <a class="el" href="_optimizer_8_b_c_p_8cs_source.html#l00017">17</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac59fd04300e8844283816001a255ecfa" name="ac59fd04300e8844283816001a255ecfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac59fd04300e8844283816001a255ecfa">&#9670;&nbsp;</a></span>CleanupRegister()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ILRuntime.Runtime.Intepreter.RegisterVM.Optimizer.CleanupRegister </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="struct_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_1_1_op_code_r.html">OpCodeR</a> &gt;&#160;</td>
+          <td class="paramname"><em>ins</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>locRegStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>hasReturn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_optimizer_8_register_cleanup_8cs_source.html">Optimizer.RegisterCleanup.cs</a> 第 <a class="el" href="_optimizer_8_register_cleanup_8cs_source.html#l00017">17</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a48f327d5bfd629483c9b5b1e0b391bb8" name="a48f327d5bfd629483c9b5b1e0b391bb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48f327d5bfd629483c9b5b1e0b391bb8">&#9670;&nbsp;</a></span>EliminateConstantLoad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ILRuntime.Runtime.Intepreter.RegisterVM.Optimizer.EliminateConstantLoad </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_code_basic_block.html">CodeBasicBlock</a> &gt;&#160;</td>
+          <td class="paramname"><em>blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>hasReturn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_optimizer_8_e_l_d_c_8cs_source.html">Optimizer.ELDC.cs</a> 第 <a class="el" href="_optimizer_8_e_l_d_c_8cs_source.html#l00017">17</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad8c361a2ec1a40629c2d88c17c0a7619" name="ad8c361a2ec1a40629c2d88c17c0a7619"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8c361a2ec1a40629c2d88c17c0a7619">&#9670;&nbsp;</a></span>ForwardCopyPropagation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ILRuntime.Runtime.Intepreter.RegisterVM.Optimizer.ForwardCopyPropagation </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_code_basic_block.html">CodeBasicBlock</a> &gt;&#160;</td>
+          <td class="paramname"><em>blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>hasReturn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>stackRegisterBegin</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_optimizer_8_f_c_p_8cs_source.html">Optimizer.FCP.cs</a> 第 <a class="el" href="_optimizer_8_f_c_p_8cs_source.html#l00017">17</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abf1975cda84c44f716512f146ba77a66" name="abf1975cda84c44f716512f146ba77a66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf1975cda84c44f716512f146ba77a66">&#9670;&nbsp;</a></span>GetIntemediateValueOpcode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103">OpCodeREnum</a> ILRuntime.Runtime.Intepreter.RegisterVM.Optimizer.GetIntemediateValueOpcode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103">OpCodeREnum</a>&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_optimizer_8_utils_8cs_source.html">Optimizer.Utils.cs</a> 第 <a class="el" href="_optimizer_8_utils_8cs_source.html#l00151">151</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a85b100f3b59203af63e512cb5c9796d8" name="a85b100f3b59203af63e512cb5c9796d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85b100f3b59203af63e512cb5c9796d8">&#9670;&nbsp;</a></span>GetInverseOpcode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103">OpCodeREnum</a> ILRuntime.Runtime.Intepreter.RegisterVM.Optimizer.GetInverseOpcode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103">OpCodeREnum</a>&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_optimizer_8_utils_8cs_source.html">Optimizer.Utils.cs</a> 第 <a class="el" href="_optimizer_8_utils_8cs_source.html#l00274">274</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5f7075321eba1a9e96bad82da282930d" name="a5f7075321eba1a9e96bad82da282930d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f7075321eba1a9e96bad82da282930d">&#9670;&nbsp;</a></span>GetOpcodeDestRegister()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ILRuntime.Runtime.Intepreter.RegisterVM.Optimizer.GetOpcodeDestRegister </td>
+          <td>(</td>
+          <td class="paramtype">ref <a class="el" href="struct_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_1_1_op_code_r.html">OpCodes.OpCodeR</a>&#160;</td>
+          <td class="paramname"><em>op</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out short&#160;</td>
+          <td class="paramname"><em>r1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_optimizer_8_utils_8cs_source.html">Optimizer.Utils.cs</a> 第 <a class="el" href="_optimizer_8_utils_8cs_source.html#l00646">646</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a669c3965d7849730541b4353fb157ef1" name="a669c3965d7849730541b4353fb157ef1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a669c3965d7849730541b4353fb157ef1">&#9670;&nbsp;</a></span>GetOpcodeSourceRegister()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ILRuntime.Runtime.Intepreter.RegisterVM.Optimizer.GetOpcodeSourceRegister </td>
+          <td>(</td>
+          <td class="paramtype">ref <a class="el" href="struct_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_1_1_op_code_r.html">OpCodeR</a>&#160;</td>
+          <td class="paramname"><em>op</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>hasReturn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out short&#160;</td>
+          <td class="paramname"><em>r1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out short&#160;</td>
+          <td class="paramname"><em>r2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out short&#160;</td>
+          <td class="paramname"><em>r3</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_optimizer_8_utils_8cs_source.html">Optimizer.Utils.cs</a> 第 <a class="el" href="_optimizer_8_utils_8cs_source.html#l00390">390</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aba7c0137be3fcad30945e0db67417f20" name="aba7c0137be3fcad30945e0db67417f20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba7c0137be3fcad30945e0db67417f20">&#9670;&nbsp;</a></span>HasInverseOpcode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ILRuntime.Runtime.Intepreter.RegisterVM.Optimizer.HasInverseOpcode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103">OpCodeREnum</a>&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_optimizer_8_utils_8cs_source.html">Optimizer.Utils.cs</a> 第 <a class="el" href="_optimizer_8_utils_8cs_source.html#l00244">244</a> 行定义.</p>
+
+</div>
+</div>
+<a id="acd165d5935c1ece026e1c8856ab2c9db" name="acd165d5935c1ece026e1c8856ab2c9db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd165d5935c1ece026e1c8856ab2c9db">&#9670;&nbsp;</a></span>InlineMethod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ILRuntime.Runtime.Intepreter.RegisterVM.Optimizer.InlineMethod </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_code_basic_block.html">CodeBasicBlock</a>&#160;</td>
+          <td class="paramname"><em>block</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_method_1_1_i_l_method.html">ILMethod</a>&#160;</td>
+          <td class="paramname"><em>method</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_register_v_m_symbol_link.html">RegisterVMSymbolLink</a>&#160;</td>
+          <td class="paramname"><em>symbolLink</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref Dictionary&lt; int, int[]&gt;&#160;</td>
+          <td class="paramname"><em>jumpTables</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>baseRegIdx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>hasReturn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_optimizer_8_inline_method_8cs_source.html">Optimizer.InlineMethod.cs</a> 第 <a class="el" href="_optimizer_8_inline_method_8cs_source.html#l00018">18</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a90e4f181b80bc1dbcbef5e163245e6b1" name="a90e4f181b80bc1dbcbef5e163245e6b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90e4f181b80bc1dbcbef5e163245e6b1">&#9670;&nbsp;</a></span>IsBranching()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ILRuntime.Runtime.Intepreter.RegisterVM.Optimizer.IsBranching </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103">OpCodeREnum</a>&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_optimizer_8_utils_8cs_source.html">Optimizer.Utils.cs</a> 第 <a class="el" href="_optimizer_8_utils_8cs_source.html#l00337">337</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa48c9717df4ba3c5798bfb0f3fe486d0" name="aa48c9717df4ba3c5798bfb0f3fe486d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa48c9717df4ba3c5798bfb0f3fe486d0">&#9670;&nbsp;</a></span>IsIntermediateBranching()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ILRuntime.Runtime.Intepreter.RegisterVM.Optimizer.IsIntermediateBranching </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103">OpCodeREnum</a>&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_optimizer_8_utils_8cs_source.html">Optimizer.Utils.cs</a> 第 <a class="el" href="_optimizer_8_utils_8cs_source.html#l00371">371</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a69cd797a3484d9021cca88156a420333" name="a69cd797a3484d9021cca88156a420333"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69cd797a3484d9021cca88156a420333">&#9670;&nbsp;</a></span>IsLoadConstant()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ILRuntime.Runtime.Intepreter.RegisterVM.Optimizer.IsLoadConstant </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103">OpCodeREnum</a>&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_optimizer_8_utils_8cs_source.html">Optimizer.Utils.cs</a> 第 <a class="el" href="_optimizer_8_utils_8cs_source.html#l00313">313</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a3dec262ebf68920e7fab866d14bf8773" name="a3dec262ebf68920e7fab866d14bf8773"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dec262ebf68920e7fab866d14bf8773">&#9670;&nbsp;</a></span>ReplaceRegisterWithConstant()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ILRuntime.Runtime.Intepreter.RegisterVM.Optimizer.ReplaceRegisterWithConstant </td>
+          <td>(</td>
+          <td class="paramtype">ref <a class="el" href="struct_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_1_1_op_code_r.html">OpCodeR</a>&#160;</td>
+          <td class="paramname"><em>op</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref <a class="el" href="struct_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_1_1_op_code_r.html">OpCodeR</a>&#160;</td>
+          <td class="paramname"><em>constant</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_optimizer_8_utils_8cs_source.html">Optimizer.Utils.cs</a> 第 <a class="el" href="_optimizer_8_utils_8cs_source.html#l00064">64</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8398d0873428ebd6b381327a60e63d5b" name="a8398d0873428ebd6b381327a60e63d5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8398d0873428ebd6b381327a60e63d5b">&#9670;&nbsp;</a></span>SupportIntemediateValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ILRuntime.Runtime.Intepreter.RegisterVM.Optimizer.SupportIntemediateValue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103">OpCodeREnum</a>&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_optimizer_8_utils_8cs_source.html">Optimizer.Utils.cs</a> 第 <a class="el" href="_optimizer_8_utils_8cs_source.html#l00017">17</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae0f2be9a1bee030e8f987dd2f7553c81" name="ae0f2be9a1bee030e8f987dd2f7553c81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0f2be9a1bee030e8f987dd2f7553c81">&#9670;&nbsp;</a></span>SupportOperandSwap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ILRuntime.Runtime.Intepreter.RegisterVM.Optimizer.SupportOperandSwap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103">OpCodeREnum</a>&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_optimizer_8_utils_8cs_source.html">Optimizer.Utils.cs</a> 第 <a class="el" href="_optimizer_8_utils_8cs_source.html#l00224">224</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">结构体成员变量说明</h2>
+<a id="a4ed0372c6848c23cad1f74b4e898bacd" name="a4ed0372c6848c23cad1f74b4e898bacd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ed0372c6848c23cad1f74b4e898bacd">&#9670;&nbsp;</a></span>MaximalInlineInstructionCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ILRuntime.Runtime.Intepreter.RegisterVM.Optimizer.MaximalInlineInstructionCount = 20</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_optimizer_8_inline_method_8cs_source.html">Optimizer.InlineMethod.cs</a> 第 <a class="el" href="_optimizer_8_inline_method_8cs_source.html#l00017">17</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>Unity/Assets/ThirdParty/ILRuntime/Runtime/Intepreter/RegisterVM/<a class="el" href="_optimizer_8_b_c_p_8cs_source.html">Optimizer.BCP.cs</a></li>
+<li>Unity/Assets/ThirdParty/ILRuntime/Runtime/Intepreter/RegisterVM/<a class="el" href="_optimizer_8_inline_method_8cs_source.html">Optimizer.InlineMethod.cs</a></li>
+<li>Unity/Assets/ThirdParty/ILRuntime/Runtime/Intepreter/RegisterVM/<a class="el" href="_optimizer_8_e_l_d_c_8cs_source.html">Optimizer.ELDC.cs</a></li>
+<li>Unity/Assets/ThirdParty/ILRuntime/Runtime/Intepreter/RegisterVM/<a class="el" href="_optimizer_8_f_c_p_8cs_source.html">Optimizer.FCP.cs</a></li>
+<li>Unity/Assets/ThirdParty/ILRuntime/Runtime/Intepreter/RegisterVM/<a class="el" href="_optimizer_8_register_cleanup_8cs_source.html">Optimizer.RegisterCleanup.cs</a></li>
+<li>Unity/Assets/ThirdParty/ILRuntime/Runtime/Intepreter/RegisterVM/<a class="el" href="_optimizer_8_utils_8cs_source.html">Optimizer.Utils.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_i_l_runtime.html">ILRuntime</a></li><li class="navelem"><a class="el" href="namespace_i_l_runtime_1_1_runtime.html">Runtime</a></li><li class="navelem"><a class="el" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter.html">Intepreter</a></li><li class="navelem"><a class="el" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m.html">RegisterVM</a></li><li class="navelem"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_optimizer.html">Optimizer</a></li>
+    <li class="footer">生成于 2022年 一月 23日 星期日 19:12:44 , 为 ET使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

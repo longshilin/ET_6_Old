@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ET: Unity/Assets/ThirdParty/protobuf-net/ProtoContractAttribute.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ET<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_proto_contract_attribute_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ProtoContractAttribute.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_proto_contract_attribute_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using</span> <a class="code hl_variable" href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_proto_buf.html">ProtoBuf</a></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>{</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct | AttributeTargets.Enum | AttributeTargets.Interface,</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        AllowMultiple = <span class="keyword">false</span>, Inherited = <span class="keyword">false</span>)]</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_proto_contract_attribute.html">   10</a></span>    <span class="keyword">public</span> sealed <span class="keyword">class </span><a class="code hl_class" href="class_proto_buf_1_1_proto_contract_attribute.html">ProtoContractAttribute</a> : Attribute</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_proto_contract_attribute.html#a6878e0b90189eecb402d54100e93c3fc">   15</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_proto_buf_1_1_proto_contract_attribute.html#a6878e0b90189eecb402d54100e93c3fc">Name</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> name; } <span class="keyword">set</span> { name = value; } }</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keyword">private</span> <span class="keywordtype">string</span> name;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_proto_contract_attribute.html#a13bb46cdfe375fd5f5a03e22a383dbf5">   22</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_property" href="class_proto_buf_1_1_proto_contract_attribute.html#a13bb46cdfe375fd5f5a03e22a383dbf5">ImplicitFirstTag</a></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> implicitFirstTag; }</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <span class="keyword">set</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                <span class="keywordflow">if</span> (value &lt; 1) <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentOutOfRangeException(<span class="stringliteral">&quot;ImplicitFirstTag&quot;</span>);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                implicitFirstTag = value;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> implicitFirstTag;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_proto_contract_attribute.html#ab3e14da0eeee5b7cdd8df965e84f79f6">   36</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_proto_buf_1_1_proto_contract_attribute.html#ab3e14da0eeee5b7cdd8df965e84f79f6">UseProtoMembersOnly</a></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> HasFlag(OPTIONS_UseProtoMembersOnly); }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <span class="keyword">set</span> { SetFlag(OPTIONS_UseProtoMembersOnly, value); }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_proto_contract_attribute.html#a8dbecf33971b0037026f3d3f6d5e73bd">   45</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_proto_buf_1_1_proto_contract_attribute.html#a8dbecf33971b0037026f3d3f6d5e73bd">IgnoreListHandling</a></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> HasFlag(OPTIONS_IgnoreListHandling); }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <span class="keyword">set</span> { SetFlag(OPTIONS_IgnoreListHandling, value); }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_proto_contract_attribute.html#a04600a0a1d8fa91aeca8280ff81f31ef">   57</a></span>        <span class="keyword">public</span> <a class="code hl_enumeration" href="namespace_proto_buf.html#a73d6731b392e6d97ffb4280a4a80181b">ImplicitFields</a> <a class="code hl_enumeration" href="namespace_proto_buf.html#a73d6731b392e6d97ffb4280a4a80181b">ImplicitFields</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> implicitFields; } <span class="keyword">set</span> { implicitFields = value; } }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keyword">private</span> <a class="code hl_enumeration" href="namespace_proto_buf.html#a73d6731b392e6d97ffb4280a4a80181b">ImplicitFields</a> implicitFields;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_proto_contract_attribute.html#a82d3257f237abe2cab2797088ad64167">   70</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_proto_buf_1_1_proto_contract_attribute.html#a82d3257f237abe2cab2797088ad64167">InferTagFromName</a></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> HasFlag(OPTIONS_InferTagFromName); }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <span class="keyword">set</span> {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                SetFlag(OPTIONS_InferTagFromName, value);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                SetFlag(OPTIONS_InferTagFromNameHasValue, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keyword">internal</span> <span class="keywordtype">bool</span> InferTagFromNameHasValue</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        { <span class="comment">// note that this property is accessed via reflection and should not be removed</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> HasFlag(OPTIONS_InferTagFromNameHasValue); }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> dataMemberOffset;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_proto_contract_attribute.html#a0de4de9ef31b2aa4fcf1d28cac903920">   96</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_property" href="class_proto_buf_1_1_proto_contract_attribute.html#a0de4de9ef31b2aa4fcf1d28cac903920">DataMemberOffset</a></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> dataMemberOffset; }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <span class="keyword">set</span> { dataMemberOffset = value; }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_proto_contract_attribute.html#a0d55fec50989291f716b3182ed3215f6">  107</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_proto_buf_1_1_proto_contract_attribute.html#a0d55fec50989291f716b3182ed3215f6">SkipConstructor</a></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        {</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> HasFlag(OPTIONS_SkipConstructor); }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            <span class="keyword">set</span> { SetFlag(OPTIONS_SkipConstructor, value); }</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        }</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_proto_contract_attribute.html#aeb7a8c891ad1c3510c5c8f9af26b8998">  117</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_proto_buf_1_1_proto_contract_attribute.html#aeb7a8c891ad1c3510c5c8f9af26b8998">AsReferenceDefault</a></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        {</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> HasFlag(OPTIONS_AsReferenceDefault); }</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            <span class="keyword">set</span> {</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                SetFlag(OPTIONS_AsReferenceDefault, value);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            }</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        }</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_proto_contract_attribute.html#ab5a449bc51fd8dbce29ce725305ce932">  128</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_proto_buf_1_1_proto_contract_attribute.html#ab5a449bc51fd8dbce29ce725305ce932">IsGroup</a></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        {</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> HasFlag(OPTIONS_IsGroup); }</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            <span class="keyword">set</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>            {</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>                SetFlag(OPTIONS_IsGroup, value);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            }</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        }</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        <span class="keyword">private</span> <span class="keywordtype">bool</span> HasFlag(ushort flag) { <span class="keywordflow">return</span> (flags &amp; flag) == flag; }</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        <span class="keyword">private</span> <span class="keywordtype">void</span> SetFlag(ushort flag, <span class="keywordtype">bool</span> value)</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        {</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            <span class="keywordflow">if</span> (value) flags |= flag;</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>            <span class="keywordflow">else</span> flags = (ushort)(flags &amp; ~flag);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        }</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        <span class="keyword">private</span> ushort flags;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        <span class="keyword">private</span> <span class="keyword">const</span> ushort</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            OPTIONS_InferTagFromName = 1,</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            OPTIONS_InferTagFromNameHasValue = 2,</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>            OPTIONS_UseProtoMembersOnly = 4,</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            OPTIONS_SkipConstructor = 8,</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>            OPTIONS_IgnoreListHandling = 16,</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            OPTIONS_AsReferenceDefault = 32,</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            OPTIONS_EnumPassthru = 64,</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>            OPTIONS_EnumPassthruHasValue = 128,</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>            OPTIONS_IsGroup = 256;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_proto_contract_attribute.html#afcc1ada8b01fb6fd5cb2201747adeaed">  161</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_proto_buf_1_1_proto_contract_attribute.html#afcc1ada8b01fb6fd5cb2201747adeaed">EnumPassthru</a></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        {</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> HasFlag(OPTIONS_EnumPassthru); }</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>            <span class="keyword">set</span> {</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                SetFlag(OPTIONS_EnumPassthru, value);</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>                SetFlag(OPTIONS_EnumPassthruHasValue, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>            }</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        }</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        <span class="keyword">internal</span> <span class="keywordtype">bool</span> EnumPassthruHasValue</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        { <span class="comment">// note that this property is accessed via reflection and should not be removed</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> HasFlag(OPTIONS_EnumPassthruHasValue); }</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        }</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    }</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>}</div>
+<div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_proto_contract_attribute_html"><div class="ttname"><a href="class_proto_buf_1_1_proto_contract_attribute.html">ProtoBuf.ProtoContractAttribute</a></div><div class="ttdoc">Indicates that a type is defined for protocol-buffer serialization.</div><div class="ttdef"><b>Definition:</b> <a href="_proto_contract_attribute_8cs_source.html#l00010">ProtoContractAttribute.cs:11</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_proto_contract_attribute_html_a0d55fec50989291f716b3182ed3215f6"><div class="ttname"><a href="class_proto_buf_1_1_proto_contract_attribute.html#a0d55fec50989291f716b3182ed3215f6">ProtoBuf.ProtoContractAttribute.SkipConstructor</a></div><div class="ttdeci">bool SkipConstructor</div><div class="ttdoc">If true, the constructor for the type is bypassed during deserialization, meaning any field initializ...</div><div class="ttdef"><b>Definition:</b> <a href="_proto_contract_attribute_8cs_source.html#l00107">ProtoContractAttribute.cs:108</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_proto_contract_attribute_html_a0de4de9ef31b2aa4fcf1d28cac903920"><div class="ttname"><a href="class_proto_buf_1_1_proto_contract_attribute.html#a0de4de9ef31b2aa4fcf1d28cac903920">ProtoBuf.ProtoContractAttribute.DataMemberOffset</a></div><div class="ttdeci">int DataMemberOffset</div><div class="ttdoc">Specifies an offset to apply to [DataMember(Order=...)] markers; this is useful when working with mex...</div><div class="ttdef"><b>Definition:</b> <a href="_proto_contract_attribute_8cs_source.html#l00096">ProtoContractAttribute.cs:97</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_proto_contract_attribute_html_a13bb46cdfe375fd5f5a03e22a383dbf5"><div class="ttname"><a href="class_proto_buf_1_1_proto_contract_attribute.html#a13bb46cdfe375fd5f5a03e22a383dbf5">ProtoBuf.ProtoContractAttribute.ImplicitFirstTag</a></div><div class="ttdeci">int ImplicitFirstTag</div><div class="ttdoc">Gets or sets the fist offset to use with implicit field tags; only uesd if ImplicitFields is set.</div><div class="ttdef"><b>Definition:</b> <a href="_proto_contract_attribute_8cs_source.html#l00022">ProtoContractAttribute.cs:23</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_proto_contract_attribute_html_a6878e0b90189eecb402d54100e93c3fc"><div class="ttname"><a href="class_proto_buf_1_1_proto_contract_attribute.html#a6878e0b90189eecb402d54100e93c3fc">ProtoBuf.ProtoContractAttribute.Name</a></div><div class="ttdeci">string Name</div><div class="ttdoc">Gets or sets the defined name of the type.</div><div class="ttdef"><b>Definition:</b> <a href="_proto_contract_attribute_8cs_source.html#l00015">ProtoContractAttribute.cs:15</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_proto_contract_attribute_html_a82d3257f237abe2cab2797088ad64167"><div class="ttname"><a href="class_proto_buf_1_1_proto_contract_attribute.html#a82d3257f237abe2cab2797088ad64167">ProtoBuf.ProtoContractAttribute.InferTagFromName</a></div><div class="ttdeci">bool InferTagFromName</div><div class="ttdoc">Enables/disables automatic tag generation based on the existing name / order of the defined members....</div><div class="ttdef"><b>Definition:</b> <a href="_proto_contract_attribute_8cs_source.html#l00070">ProtoContractAttribute.cs:71</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_proto_contract_attribute_html_a8dbecf33971b0037026f3d3f6d5e73bd"><div class="ttname"><a href="class_proto_buf_1_1_proto_contract_attribute.html#a8dbecf33971b0037026f3d3f6d5e73bd">ProtoBuf.ProtoContractAttribute.IgnoreListHandling</a></div><div class="ttdeci">bool IgnoreListHandling</div><div class="ttdoc">If specified, do NOT treat this type as a list, even if it looks like one.</div><div class="ttdef"><b>Definition:</b> <a href="_proto_contract_attribute_8cs_source.html#l00045">ProtoContractAttribute.cs:46</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_proto_contract_attribute_html_ab3e14da0eeee5b7cdd8df965e84f79f6"><div class="ttname"><a href="class_proto_buf_1_1_proto_contract_attribute.html#ab3e14da0eeee5b7cdd8df965e84f79f6">ProtoBuf.ProtoContractAttribute.UseProtoMembersOnly</a></div><div class="ttdeci">bool UseProtoMembersOnly</div><div class="ttdoc">If specified, alternative contract markers (such as markers for XmlSerailizer or DataContractSerializ...</div><div class="ttdef"><b>Definition:</b> <a href="_proto_contract_attribute_8cs_source.html#l00036">ProtoContractAttribute.cs:37</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_proto_contract_attribute_html_ab5a449bc51fd8dbce29ce725305ce932"><div class="ttname"><a href="class_proto_buf_1_1_proto_contract_attribute.html#ab5a449bc51fd8dbce29ce725305ce932">ProtoBuf.ProtoContractAttribute.IsGroup</a></div><div class="ttdeci">bool IsGroup</div><div class="ttdoc">Indicates whether this type should always be treated as a &quot;group&quot; (rather than a string-prefixed sub-...</div><div class="ttdef"><b>Definition:</b> <a href="_proto_contract_attribute_8cs_source.html#l00128">ProtoContractAttribute.cs:129</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_proto_contract_attribute_html_aeb7a8c891ad1c3510c5c8f9af26b8998"><div class="ttname"><a href="class_proto_buf_1_1_proto_contract_attribute.html#aeb7a8c891ad1c3510c5c8f9af26b8998">ProtoBuf.ProtoContractAttribute.AsReferenceDefault</a></div><div class="ttdeci">bool AsReferenceDefault</div><div class="ttdoc">Should this type be treated as a reference by default? Please also see the implications of this,...</div><div class="ttdef"><b>Definition:</b> <a href="_proto_contract_attribute_8cs_source.html#l00117">ProtoContractAttribute.cs:118</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_proto_contract_attribute_html_afcc1ada8b01fb6fd5cb2201747adeaed"><div class="ttname"><a href="class_proto_buf_1_1_proto_contract_attribute.html#afcc1ada8b01fb6fd5cb2201747adeaed">ProtoBuf.ProtoContractAttribute.EnumPassthru</a></div><div class="ttdeci">bool EnumPassthru</div><div class="ttdoc">Applies only to enums (not to DTO classes themselves); gets or sets a value indicating that an enum s...</div><div class="ttdef"><b>Definition:</b> <a href="_proto_contract_attribute_8cs_source.html#l00161">ProtoContractAttribute.cs:162</a></div></div>
+<div class="ttc" id="anamespace_proto_buf_html"><div class="ttname"><a href="namespace_proto_buf.html">ProtoBuf</a></div><div class="ttdef"><b>Definition:</b> <a href="_bcl_helpers_8cs_source.html#l00003">BclHelpers.cs:4</a></div></div>
+<div class="ttc" id="anamespace_proto_buf_html_a73d6731b392e6d97ffb4280a4a80181b"><div class="ttname"><a href="namespace_proto_buf.html#a73d6731b392e6d97ffb4280a4a80181b">ProtoBuf.ImplicitFields</a></div><div class="ttdeci">ImplicitFields</div><div class="ttdoc">Specifies the method used to infer field tags for members of the type under consideration....</div><div class="ttdef"><b>Definition:</b> <a href="_implicit_fields_8cs_source.html#l00010">ImplicitFields.cs:11</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_3b33dffaa21a2ac6f7978a949ffd4e41.html">Assets</a></li><li class="navelem"><a class="el" href="dir_5501c55c26a8d51fbc1fd8b7d8df04c3.html">ThirdParty</a></li><li class="navelem"><a class="el" href="dir_6648695deef2aa71b28671732c22e7e7.html">protobuf-net</a></li><li class="navelem"><a class="el" href="_proto_contract_attribute_8cs.html">ProtoContractAttribute.cs</a></li>
+    <li class="footer">生成于 2022年 一月 23日 星期日 19:12:36 , 为 ET使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

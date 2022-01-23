@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ET: Server/Hotfix/Demo/SessionPlayerComponentSystem.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ET<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_session_player_component_system_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">SessionPlayerComponentSystem.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_session_player_component_system_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_e_t.html">ET</a></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>{</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span>SessionPlayerComponentSystem</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>        {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_e_t_1_1_session_player_component_system_1_1_session_player_component_destroy_system.html">    7</a></span>                <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_e_t_1_1_session_player_component_system_1_1_session_player_component_destroy_system.html">SessionPlayerComponentDestroySystem</a>: <a class="code hl_class" href="class_e_t_1_1_destroy_system.html">DestroySystem</a>&lt;SessionPlayerComponent&gt;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>                {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_e_t_1_1_session_player_component_system_1_1_session_player_component_destroy_system.html#a01622aa0f3e9bbc601832cdd1f82c788">    9</a></span>                        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_e_t_1_1_session_player_component_system_1_1_session_player_component_destroy_system.html#a01622aa0f3e9bbc601832cdd1f82c788">Destroy</a>(<a class="code hl_class" href="class_e_t_1_1_session_player_component.html">SessionPlayerComponent</a> <span class="keyword">self</span>)</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>                        {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>                                <span class="comment">// 发送断线消息</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>                                <a class="code hl_class" href="class_e_t_1_1_actor_location_sender_component.html">ActorLocationSenderComponent</a>.<a class="code hl_property" href="class_e_t_1_1_actor_location_sender_component.html#a4d74accfbeefac8612398157fceaa9e7">Instance</a>.Send(<span class="keyword">self</span>.PlayerId, <span class="keyword">new</span> <a class="code hl_class" href="class_e_t_1_1_g2_m___session_disconnect.html">G2M_SessionDisconnect</a>());</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>                                <span class="keyword">self</span>.<a class="code hl_property" href="class_e_t_1_1_entity.html#a0b3ae8313aed4ede6f882f532530adf8">Domain</a>.<a class="code hl_function" href="class_e_t_1_1_entity.html#a4f56fd1b9f333d8d7147ed62e331f44f">GetComponent</a>&lt;<a class="code hl_class" href="class_e_t_1_1_player_component.html">PlayerComponent</a>&gt;()?.Remove(<span class="keyword">self</span>.PlayerId);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>                        }</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>                }</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_class" href="class_e_t_1_1_player.html">Player</a> GetMyPlayer(<span class="keyword">this</span> <a class="code hl_class" href="class_e_t_1_1_session_player_component.html">SessionPlayerComponent</a> <span class="keyword">self</span>)</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>                {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                        <span class="keywordflow">return</span> <span class="keyword">self</span>.<a class="code hl_property" href="class_e_t_1_1_entity.html#a0b3ae8313aed4ede6f882f532530adf8">Domain</a>.<a class="code hl_function" href="class_e_t_1_1_entity.html#a4f56fd1b9f333d8d7147ed62e331f44f">GetComponent</a>&lt;<a class="code hl_class" href="class_e_t_1_1_player_component.html">PlayerComponent</a>&gt;().Get(<span class="keyword">self</span>.PlayerId);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        }</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}</div>
+<div class="ttc" id="aclass_e_t_1_1_actor_location_sender_component_html"><div class="ttname"><a href="class_e_t_1_1_actor_location_sender_component.html">ET.ActorLocationSenderComponent</a></div><div class="ttdef"><b>Definition:</b> <a href="_actor_location_sender_component_8cs_source.html#l00005">ActorLocationSenderComponent.cs:6</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_actor_location_sender_component_html_a4d74accfbeefac8612398157fceaa9e7"><div class="ttname"><a href="class_e_t_1_1_actor_location_sender_component.html#a4d74accfbeefac8612398157fceaa9e7">ET.ActorLocationSenderComponent.Instance</a></div><div class="ttdeci">static ActorLocationSenderComponent Instance</div><div class="ttdef"><b>Definition:</b> <a href="_actor_location_sender_component_8cs_source.html#l00009">ActorLocationSenderComponent.cs:9</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_destroy_system_html"><div class="ttname"><a href="class_e_t_1_1_destroy_system.html">ET.DestroySystem</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_destroy_system_8cs_source.html#l00016">IDestroySystem.cs:17</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_entity_html_a0b3ae8313aed4ede6f882f532530adf8"><div class="ttname"><a href="class_e_t_1_1_entity.html#a0b3ae8313aed4ede6f882f532530adf8">ET.Entity.Domain</a></div><div class="ttdeci">Entity Domain</div><div class="ttdef"><b>Definition:</b> <a href="_entity_8cs_source.html#l00246">Entity.cs:247</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_entity_html_a4f56fd1b9f333d8d7147ed62e331f44f"><div class="ttname"><a href="class_e_t_1_1_entity.html#a4f56fd1b9f333d8d7147ed62e331f44f">ET.Entity.GetComponent</a></div><div class="ttdeci">Entity GetComponent(Type type)</div><div class="ttdef"><b>Definition:</b> <a href="_entity_8cs_source.html#l00670">Entity.cs:670</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_g2_m___session_disconnect_html"><div class="ttname"><a href="class_e_t_1_1_g2_m___session_disconnect.html">ET.G2M_SessionDisconnect</a></div><div class="ttdef"><b>Definition:</b> <a href="_inner_message_8cs_source.html#l00321">InnerMessage.cs:322</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_player_component_html"><div class="ttname"><a href="class_e_t_1_1_player_component.html">ET.PlayerComponent</a></div><div class="ttdef"><b>Definition:</b> <a href="_server_2_model_2_demo_2_player_component_8cs_source.html#l00006">PlayerComponent.cs:7</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_player_html"><div class="ttname"><a href="class_e_t_1_1_player.html">ET.Player</a></div><div class="ttdef"><b>Definition:</b> <a href="_player_8cs_source.html#l00012">Player.cs:13</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_session_player_component_html"><div class="ttname"><a href="class_e_t_1_1_session_player_component.html">ET.SessionPlayerComponent</a></div><div class="ttdef"><b>Definition:</b> <a href="_session_player_component_8cs_source.html#l00003">SessionPlayerComponent.cs:4</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_session_player_component_system_1_1_session_player_component_destroy_system_html"><div class="ttname"><a href="class_e_t_1_1_session_player_component_system_1_1_session_player_component_destroy_system.html">ET.SessionPlayerComponentSystem.SessionPlayerComponentDestroySystem</a></div><div class="ttdef"><b>Definition:</b> <a href="_session_player_component_system_8cs_source.html#l00007">SessionPlayerComponentSystem.cs:8</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_session_player_component_system_1_1_session_player_component_destroy_system_html_a01622aa0f3e9bbc601832cdd1f82c788"><div class="ttname"><a href="class_e_t_1_1_session_player_component_system_1_1_session_player_component_destroy_system.html#a01622aa0f3e9bbc601832cdd1f82c788">ET.SessionPlayerComponentSystem.SessionPlayerComponentDestroySystem.Destroy</a></div><div class="ttdeci">override void Destroy(SessionPlayerComponent self)</div><div class="ttdef"><b>Definition:</b> <a href="_session_player_component_system_8cs_source.html#l00009">SessionPlayerComponentSystem.cs:9</a></div></div>
+<div class="ttc" id="anamespace_e_t_html"><div class="ttname"><a href="namespace_e_t.html">ET</a></div><div class="ttdef"><b>Definition:</b> <a href="_robot_2_app_2_program_8cs_source.html#l00008">Program.cs:9</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_1a445cb237d74f7a5f8d11ec3b0585cc.html">Server</a></li><li class="navelem"><a class="el" href="dir_0134ce7b2e6baa37e8c29df3d3b5b77b.html">Hotfix</a></li><li class="navelem"><a class="el" href="dir_41255c529257d9b5da5ae8954339fb27.html">Demo</a></li><li class="navelem"><a class="el" href="_session_player_component_system_8cs.html">SessionPlayerComponentSystem.cs</a></li>
+    <li class="footer">生成于 2022年 一月 23日 星期日 19:12:30 , 为 ET使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

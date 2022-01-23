@@ -1,0 +1,1430 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ET: ProtoBuf.ProtoWriter类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ET<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_proto_buf_1_1_proto_writer.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#properties">属性</a>  </div>
+  <div class="headertitle"><div class="title">ProtoBuf.ProtoWriter类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Represents an output stream for writing protobuf data.  
+ <a href="class_proto_buf_1_1_proto_writer.html#details">更多...</a></p>
+<div class="dynheader">
+类 ProtoBuf.ProtoWriter 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_proto_buf_1_1_proto_writer.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a91ef61887b4774cd889392f689d08c30"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_writer.html#a91ef61887b4774cd889392f689d08c30">ProtoWriter</a> (Stream dest, <a class="el" href="class_proto_buf_1_1_meta_1_1_type_model.html">TypeModel</a> model, <a class="el" href="class_proto_buf_1_1_serialization_context.html">SerializationContext</a> context)</td></tr>
+<tr class="memdesc:a91ef61887b4774cd889392f689d08c30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new writer against a stream  <a href="class_proto_buf_1_1_proto_writer.html#a91ef61887b4774cd889392f689d08c30">更多...</a><br /></td></tr>
+<tr class="separator:a91ef61887b4774cd889392f689d08c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f971f6e47cd5f9c3cead1adacdcf8b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_writer.html#a7f971f6e47cd5f9c3cead1adacdcf8b3">Close</a> ()</td></tr>
+<tr class="memdesc:a7f971f6e47cd5f9c3cead1adacdcf8b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes data to the underlying stream, and releases any resources. The underlying stream is <em>not</em> disposed by this operation.  <a href="class_proto_buf_1_1_proto_writer.html#a7f971f6e47cd5f9c3cead1adacdcf8b3">更多...</a><br /></td></tr>
+<tr class="separator:a7f971f6e47cd5f9c3cead1adacdcf8b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac99d258cc2f4137081cf09516640a86d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_writer.html#ac99d258cc2f4137081cf09516640a86d">SetRootObject</a> (object value)</td></tr>
+<tr class="memdesc:ac99d258cc2f4137081cf09516640a86d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies a known root object to use during reference-tracked serialization  <a href="class_proto_buf_1_1_proto_writer.html#ac99d258cc2f4137081cf09516640a86d">更多...</a><br /></td></tr>
+<tr class="separator:ac99d258cc2f4137081cf09516640a86d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:aacb1e198b330401310078de57c687f3b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_writer.html#aacb1e198b330401310078de57c687f3b">WriteObject</a> (object value, int key, <a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a> writer)</td></tr>
+<tr class="memdesc:aacb1e198b330401310078de57c687f3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write an encapsulated sub-object, using the supplied unique key (reprasenting a type).  <a href="class_proto_buf_1_1_proto_writer.html#aacb1e198b330401310078de57c687f3b">更多...</a><br /></td></tr>
+<tr class="separator:aacb1e198b330401310078de57c687f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc3f1d706b12405ff8671420a1a89a78"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_writer.html#acc3f1d706b12405ff8671420a1a89a78">WriteRecursionSafeObject</a> (object value, int key, <a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a> writer)</td></tr>
+<tr class="memdesc:acc3f1d706b12405ff8671420a1a89a78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write an encapsulated sub-object, using the supplied unique key (reprasenting a type) - but the caller is asserting that this relationship is non-recursive; no recursion check will be performed.  <a href="class_proto_buf_1_1_proto_writer.html#acc3f1d706b12405ff8671420a1a89a78">更多...</a><br /></td></tr>
+<tr class="separator:acc3f1d706b12405ff8671420a1a89a78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a5a36b8caf799d66c693f7ca1a558d4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_writer.html#a0a5a36b8caf799d66c693f7ca1a558d4">WriteFieldHeader</a> (int fieldNumber, <a class="el" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a> wireType, <a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a> writer)</td></tr>
+<tr class="memdesc:a0a5a36b8caf799d66c693f7ca1a558d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a field-header, indicating the format of the next data we plan to write.  <a href="class_proto_buf_1_1_proto_writer.html#a0a5a36b8caf799d66c693f7ca1a558d4">更多...</a><br /></td></tr>
+<tr class="separator:a0a5a36b8caf799d66c693f7ca1a558d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad031898c7a3a9a70469ad367e32e4b9e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_writer.html#ad031898c7a3a9a70469ad367e32e4b9e">WriteBytes</a> (byte[] data, <a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a> writer)</td></tr>
+<tr class="memdesc:ad031898c7a3a9a70469ad367e32e4b9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a byte-array to the stream; supported wire-types: String  <a href="class_proto_buf_1_1_proto_writer.html#ad031898c7a3a9a70469ad367e32e4b9e">更多...</a><br /></td></tr>
+<tr class="separator:ad031898c7a3a9a70469ad367e32e4b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e392e97961b705df1da7c2e7b30d415"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_writer.html#a8e392e97961b705df1da7c2e7b30d415">WriteBytes</a> (byte[] data, int offset, int length, <a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a> writer)</td></tr>
+<tr class="memdesc:a8e392e97961b705df1da7c2e7b30d415"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a byte-array to the stream; supported wire-types: String  <a href="class_proto_buf_1_1_proto_writer.html#a8e392e97961b705df1da7c2e7b30d415">更多...</a><br /></td></tr>
+<tr class="separator:a8e392e97961b705df1da7c2e7b30d415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16b557cfc6ae2953b0c2d9416417f355"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_proto_buf_1_1_sub_item_token.html">SubItemToken</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_writer.html#a16b557cfc6ae2953b0c2d9416417f355">StartSubItem</a> (object instance, <a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a> writer)</td></tr>
+<tr class="memdesc:a16b557cfc6ae2953b0c2d9416417f355"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the start of a nested record.  <a href="class_proto_buf_1_1_proto_writer.html#a16b557cfc6ae2953b0c2d9416417f355">更多...</a><br /></td></tr>
+<tr class="separator:a16b557cfc6ae2953b0c2d9416417f355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58d8d32ad64efed7b533ffdcb3978246"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_writer.html#a58d8d32ad64efed7b533ffdcb3978246">EndSubItem</a> (<a class="el" href="struct_proto_buf_1_1_sub_item_token.html">SubItemToken</a> token, <a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a> writer)</td></tr>
+<tr class="memdesc:a58d8d32ad64efed7b533ffdcb3978246"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the end of a nested record.  <a href="class_proto_buf_1_1_proto_writer.html#a58d8d32ad64efed7b533ffdcb3978246">更多...</a><br /></td></tr>
+<tr class="separator:a58d8d32ad64efed7b533ffdcb3978246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af37faa8cf3ac54a0552a7bccc527f110"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_writer.html#af37faa8cf3ac54a0552a7bccc527f110">WriteString</a> (string value, <a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a> writer)</td></tr>
+<tr class="memdesc:af37faa8cf3ac54a0552a7bccc527f110"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a string to the stream; supported wire-types: String  <a href="class_proto_buf_1_1_proto_writer.html#af37faa8cf3ac54a0552a7bccc527f110">更多...</a><br /></td></tr>
+<tr class="separator:af37faa8cf3ac54a0552a7bccc527f110"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cdb6e19cd594a24cd1f1df8e3aa637b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_writer.html#a0cdb6e19cd594a24cd1f1df8e3aa637b">WriteUInt64</a> (ulong value, <a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a> writer)</td></tr>
+<tr class="memdesc:a0cdb6e19cd594a24cd1f1df8e3aa637b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an unsigned 64-bit integer to the stream; supported wire-types: Variant, Fixed32, Fixed64  <a href="class_proto_buf_1_1_proto_writer.html#a0cdb6e19cd594a24cd1f1df8e3aa637b">更多...</a><br /></td></tr>
+<tr class="separator:a0cdb6e19cd594a24cd1f1df8e3aa637b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71f223b3c56fe680825ba4c55b71fdd1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_writer.html#a71f223b3c56fe680825ba4c55b71fdd1">WriteInt64</a> (long value, <a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a> writer)</td></tr>
+<tr class="memdesc:a71f223b3c56fe680825ba4c55b71fdd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a signed 64-bit integer to the stream; supported wire-types: Variant, Fixed32, Fixed64, SignedVariant  <a href="class_proto_buf_1_1_proto_writer.html#a71f223b3c56fe680825ba4c55b71fdd1">更多...</a><br /></td></tr>
+<tr class="separator:a71f223b3c56fe680825ba4c55b71fdd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e0b44be18606537812366605ad07379"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_writer.html#a2e0b44be18606537812366605ad07379">WriteUInt32</a> (uint value, <a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a> writer)</td></tr>
+<tr class="memdesc:a2e0b44be18606537812366605ad07379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an unsigned 16-bit integer to the stream; supported wire-types: Variant, Fixed32, Fixed64  <a href="class_proto_buf_1_1_proto_writer.html#a2e0b44be18606537812366605ad07379">更多...</a><br /></td></tr>
+<tr class="separator:a2e0b44be18606537812366605ad07379"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acabeab0b8fab9b3c8b4719d66a580d40"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_writer.html#acabeab0b8fab9b3c8b4719d66a580d40">WriteInt16</a> (short value, <a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a> writer)</td></tr>
+<tr class="memdesc:acabeab0b8fab9b3c8b4719d66a580d40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a signed 16-bit integer to the stream; supported wire-types: Variant, Fixed32, Fixed64, SignedVariant  <a href="class_proto_buf_1_1_proto_writer.html#acabeab0b8fab9b3c8b4719d66a580d40">更多...</a><br /></td></tr>
+<tr class="separator:acabeab0b8fab9b3c8b4719d66a580d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ab769349c33de7f4997e7cb848f4aa9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_writer.html#a1ab769349c33de7f4997e7cb848f4aa9">WriteUInt16</a> (ushort value, <a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a> writer)</td></tr>
+<tr class="memdesc:a1ab769349c33de7f4997e7cb848f4aa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an unsigned 16-bit integer to the stream; supported wire-types: Variant, Fixed32, Fixed64  <a href="class_proto_buf_1_1_proto_writer.html#a1ab769349c33de7f4997e7cb848f4aa9">更多...</a><br /></td></tr>
+<tr class="separator:a1ab769349c33de7f4997e7cb848f4aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3b2443f310f19e34d794cd0fa239ccd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_writer.html#ac3b2443f310f19e34d794cd0fa239ccd">WriteByte</a> (byte value, <a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a> writer)</td></tr>
+<tr class="memdesc:ac3b2443f310f19e34d794cd0fa239ccd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an unsigned 8-bit integer to the stream; supported wire-types: Variant, Fixed32, Fixed64  <a href="class_proto_buf_1_1_proto_writer.html#ac3b2443f310f19e34d794cd0fa239ccd">更多...</a><br /></td></tr>
+<tr class="separator:ac3b2443f310f19e34d794cd0fa239ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a822d3e6f765da6bce0d6c9e7580ab0b8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_writer.html#a822d3e6f765da6bce0d6c9e7580ab0b8">WriteSByte</a> (sbyte value, <a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a> writer)</td></tr>
+<tr class="memdesc:a822d3e6f765da6bce0d6c9e7580ab0b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a signed 8-bit integer to the stream; supported wire-types: Variant, Fixed32, Fixed64, SignedVariant  <a href="class_proto_buf_1_1_proto_writer.html#a822d3e6f765da6bce0d6c9e7580ab0b8">更多...</a><br /></td></tr>
+<tr class="separator:a822d3e6f765da6bce0d6c9e7580ab0b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16df15ace9a52687d82b2a5569b4ea5d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_writer.html#a16df15ace9a52687d82b2a5569b4ea5d">WriteInt32</a> (int value, <a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a> writer)</td></tr>
+<tr class="memdesc:a16df15ace9a52687d82b2a5569b4ea5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a signed 32-bit integer to the stream; supported wire-types: Variant, Fixed32, Fixed64, SignedVariant  <a href="class_proto_buf_1_1_proto_writer.html#a16df15ace9a52687d82b2a5569b4ea5d">更多...</a><br /></td></tr>
+<tr class="separator:a16df15ace9a52687d82b2a5569b4ea5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6db068d05c1ead5666ba05cfa08df10e"><td class="memItemLeft" align="right" valign="top">static unsafe void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_writer.html#a6db068d05c1ead5666ba05cfa08df10e">WriteDouble</a> (double value, <a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a> writer)</td></tr>
+<tr class="memdesc:a6db068d05c1ead5666ba05cfa08df10e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a double-precision number to the stream; supported wire-types: Fixed32, Fixed64  <a href="class_proto_buf_1_1_proto_writer.html#a6db068d05c1ead5666ba05cfa08df10e">更多...</a><br /></td></tr>
+<tr class="separator:a6db068d05c1ead5666ba05cfa08df10e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addd3828ae67c768b87ecbb2b27527d0d"><td class="memItemLeft" align="right" valign="top">static unsafe void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_writer.html#addd3828ae67c768b87ecbb2b27527d0d">WriteSingle</a> (float value, <a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a> writer)</td></tr>
+<tr class="memdesc:addd3828ae67c768b87ecbb2b27527d0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a single-precision number to the stream; supported wire-types: Fixed32, Fixed64  <a href="class_proto_buf_1_1_proto_writer.html#addd3828ae67c768b87ecbb2b27527d0d">更多...</a><br /></td></tr>
+<tr class="separator:addd3828ae67c768b87ecbb2b27527d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a903b84ddba957b464de13c61892d69ec"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_writer.html#a903b84ddba957b464de13c61892d69ec">ThrowEnumException</a> (<a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a> writer, object enumValue)</td></tr>
+<tr class="memdesc:a903b84ddba957b464de13c61892d69ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Throws an exception indicating that the given enum cannot be mapped to a serialized value.  <a href="class_proto_buf_1_1_proto_writer.html#a903b84ddba957b464de13c61892d69ec">更多...</a><br /></td></tr>
+<tr class="separator:a903b84ddba957b464de13c61892d69ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab60311918ddfa2c9eaea63ddb3f7d873"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_writer.html#ab60311918ddfa2c9eaea63ddb3f7d873">WriteBoolean</a> (bool value, <a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a> writer)</td></tr>
+<tr class="memdesc:ab60311918ddfa2c9eaea63ddb3f7d873"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a boolean to the stream; supported wire-types: Variant, Fixed32, Fixed64  <a href="class_proto_buf_1_1_proto_writer.html#ab60311918ddfa2c9eaea63ddb3f7d873">更多...</a><br /></td></tr>
+<tr class="separator:ab60311918ddfa2c9eaea63ddb3f7d873"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12a8293b22431d967a1ecb6a2be9bb05"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_writer.html#a12a8293b22431d967a1ecb6a2be9bb05">AppendExtensionData</a> (<a class="el" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a> instance, <a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a> writer)</td></tr>
+<tr class="memdesc:a12a8293b22431d967a1ecb6a2be9bb05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies any extension data stored for the instance to the underlying stream  <a href="class_proto_buf_1_1_proto_writer.html#a12a8293b22431d967a1ecb6a2be9bb05">更多...</a><br /></td></tr>
+<tr class="separator:a12a8293b22431d967a1ecb6a2be9bb05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a350ad2075a8104c7d62c80567f853458"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_writer.html#a350ad2075a8104c7d62c80567f853458">SetPackedField</a> (int fieldNumber, <a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a> writer)</td></tr>
+<tr class="memdesc:a350ad2075a8104c7d62c80567f853458"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used for packed encoding; indicates that the next field should be skipped rather than a field header written. Note that the field number must match, else an exception is thrown when the attempt is made to write the (incorrect) field. The wire-type is taken from the subsequent call to WriteFieldHeader. Only primitive types can be packed.  <a href="class_proto_buf_1_1_proto_writer.html#a350ad2075a8104c7d62c80567f853458">更多...</a><br /></td></tr>
+<tr class="separator:a350ad2075a8104c7d62c80567f853458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa44cac33c6592b8039f7a44568ee4a52"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_writer.html#aa44cac33c6592b8039f7a44568ee4a52">ClearPackedField</a> (int fieldNumber, <a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a> writer)</td></tr>
+<tr class="memdesc:aa44cac33c6592b8039f7a44568ee4a52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used for packed encoding; explicitly reset the packed field marker; this is not required if using StartSubItem/EndSubItem  <a href="class_proto_buf_1_1_proto_writer.html#aa44cac33c6592b8039f7a44568ee4a52">更多...</a><br /></td></tr>
+<tr class="separator:aa44cac33c6592b8039f7a44568ee4a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b46a4af76fc9b6574f29d1ef01b1e6e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_writer.html#a6b46a4af76fc9b6574f29d1ef01b1e6e">WritePackedPrefix</a> (int elementCount, <a class="el" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a> wireType, <a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a> writer)</td></tr>
+<tr class="memdesc:a6b46a4af76fc9b6574f29d1ef01b1e6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used for packed encoding; writes the length prefix using fixed sizes rather than using buffering. Only valid for fixed-32 and fixed-64 encoding.  <a href="class_proto_buf_1_1_proto_writer.html#a6b46a4af76fc9b6574f29d1ef01b1e6e">更多...</a><br /></td></tr>
+<tr class="separator:a6b46a4af76fc9b6574f29d1ef01b1e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9198bc5bda6bf609e481af436913ae0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_writer.html#ae9198bc5bda6bf609e481af436913ae0">WriteType</a> (System.Type value, <a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a> writer)</td></tr>
+<tr class="memdesc:ae9198bc5bda6bf609e481af436913ae0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a Type to the stream, using the model's DynamicTypeFormatting if appropriate; supported wire-types: String  <a href="class_proto_buf_1_1_proto_writer.html#ae9198bc5bda6bf609e481af436913ae0">更多...</a><br /></td></tr>
+<tr class="separator:ae9198bc5bda6bf609e481af436913ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:ac06dc93da7c64eddcbaee17b1dabcf40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_proto_buf_1_1_serialization_context.html">SerializationContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_writer.html#ac06dc93da7c64eddcbaee17b1dabcf40">Context</a><code> [get]</code></td></tr>
+<tr class="memdesc:ac06dc93da7c64eddcbaee17b1dabcf40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Addition information about this serialization operation.  <a href="class_proto_buf_1_1_proto_writer.html#ac06dc93da7c64eddcbaee17b1dabcf40">更多...</a><br /></td></tr>
+<tr class="separator:ac06dc93da7c64eddcbaee17b1dabcf40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad77e6d1f73a442a90fe9f1a3eb36644d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_proto_buf_1_1_meta_1_1_type_model.html">TypeModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_writer.html#ad77e6d1f73a442a90fe9f1a3eb36644d">Model</a><code> [get]</code></td></tr>
+<tr class="memdesc:ad77e6d1f73a442a90fe9f1a3eb36644d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the TypeModel associated with this writer  <a href="class_proto_buf_1_1_proto_writer.html#ad77e6d1f73a442a90fe9f1a3eb36644d">更多...</a><br /></td></tr>
+<tr class="separator:ad77e6d1f73a442a90fe9f1a3eb36644d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Represents an output stream for writing protobuf data. </p>
+<p >Why is the API backwards (static methods with writer arguments)? See: <a href="http://marcgravell.blogspot.com/2010/03/last-will-be-first-and-first-will-be.html">http://marcgravell.blogspot.com/2010/03/last-will-be-first-and-first-will-be.html</a> </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_writer_8cs_source.html">ProtoWriter.cs</a> 第 <a class="el" href="_proto_writer_8cs_source.html#l00022">22</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a91ef61887b4774cd889392f689d08c30" name="a91ef61887b4774cd889392f689d08c30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91ef61887b4774cd889392f689d08c30">&#9670;&nbsp;</a></span>ProtoWriter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ProtoBuf.ProtoWriter.ProtoWriter </td>
+          <td>(</td>
+          <td class="paramtype">Stream&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_meta_1_1_type_model.html">TypeModel</a>&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_serialization_context.html">SerializationContext</a>&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a new writer against a stream </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dest</td><td>The destination stream</td></tr>
+    <tr><td class="paramname">model</td><td>The model to use for serialization; this can be null, but this will impair the ability to serialize sub-objects</td></tr>
+    <tr><td class="paramname">context</td><td>Additional context about this serialization operation</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="_proto_writer_8cs_source.html">ProtoWriter.cs</a> 第 <a class="el" href="_proto_writer_8cs_source.html#l00450">450</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a12a8293b22431d967a1ecb6a2be9bb05" name="a12a8293b22431d967a1ecb6a2be9bb05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12a8293b22431d967a1ecb6a2be9bb05">&#9670;&nbsp;</a></span>AppendExtensionData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ProtoBuf.ProtoWriter.AppendExtensionData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a>&#160;</td>
+          <td class="paramname"><em>instance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a>&#160;</td>
+          <td class="paramname"><em>writer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copies any extension data stored for the instance to the underlying stream </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_writer_8cs_source.html">ProtoWriter.cs</a> 第 <a class="el" href="_proto_writer_8cs_source.html#l00898">898</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa44cac33c6592b8039f7a44568ee4a52" name="aa44cac33c6592b8039f7a44568ee4a52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa44cac33c6592b8039f7a44568ee4a52">&#9670;&nbsp;</a></span>ClearPackedField()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ProtoBuf.ProtoWriter.ClearPackedField </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fieldNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a>&#160;</td>
+          <td class="paramname"><em>writer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Used for packed encoding; explicitly reset the packed field marker; this is not required if using StartSubItem/EndSubItem </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_writer_8cs_source.html">ProtoWriter.cs</a> 第 <a class="el" href="_proto_writer_8cs_source.html#l00939">939</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7f971f6e47cd5f9c3cead1adacdcf8b3" name="a7f971f6e47cd5f9c3cead1adacdcf8b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f971f6e47cd5f9c3cead1adacdcf8b3">&#9670;&nbsp;</a></span>Close()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ProtoBuf.ProtoWriter.Close </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Flushes data to the underlying stream, and releases any resources. The underlying stream is <em>not</em> disposed by this operation. </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_writer_8cs_source.html">ProtoWriter.cs</a> 第 <a class="el" href="_proto_writer_8cs_source.html#l00509">509</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a58d8d32ad64efed7b533ffdcb3978246" name="a58d8d32ad64efed7b533ffdcb3978246"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58d8d32ad64efed7b533ffdcb3978246">&#9670;&nbsp;</a></span>EndSubItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ProtoBuf.ProtoWriter.EndSubItem </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_proto_buf_1_1_sub_item_token.html">SubItemToken</a>&#160;</td>
+          <td class="paramname"><em>token</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a>&#160;</td>
+          <td class="paramname"><em>writer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicates the end of a nested record. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">token</td><td>The token obtained from StartubItem.</td></tr>
+    <tr><td class="paramname">writer</td><td>The destination.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="_proto_writer_8cs_source.html">ProtoWriter.cs</a> 第 <a class="el" href="_proto_writer_8cs_source.html#l00363">363</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a350ad2075a8104c7d62c80567f853458" name="a350ad2075a8104c7d62c80567f853458"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a350ad2075a8104c7d62c80567f853458">&#9670;&nbsp;</a></span>SetPackedField()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ProtoBuf.ProtoWriter.SetPackedField </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fieldNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a>&#160;</td>
+          <td class="paramname"><em>writer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Used for packed encoding; indicates that the next field should be skipped rather than a field header written. Note that the field number must match, else an exception is thrown when the attempt is made to write the (incorrect) field. The wire-type is taken from the subsequent call to WriteFieldHeader. Only primitive types can be packed. </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_writer_8cs_source.html">ProtoWriter.cs</a> 第 <a class="el" href="_proto_writer_8cs_source.html#l00928">928</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac99d258cc2f4137081cf09516640a86d" name="ac99d258cc2f4137081cf09516640a86d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac99d258cc2f4137081cf09516640a86d">&#9670;&nbsp;</a></span>SetRootObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ProtoBuf.ProtoWriter.SetRootObject </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specifies a known root object to use during reference-tracked serialization </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_writer_8cs_source.html">ProtoWriter.cs</a> 第 <a class="el" href="_proto_writer_8cs_source.html#l00973">973</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a16b557cfc6ae2953b0c2d9416417f355" name="a16b557cfc6ae2953b0c2d9416417f355"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16b557cfc6ae2953b0c2d9416417f355">&#9670;&nbsp;</a></span>StartSubItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="struct_proto_buf_1_1_sub_item_token.html">SubItemToken</a> ProtoBuf.ProtoWriter.StartSubItem </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>instance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a>&#160;</td>
+          <td class="paramname"><em>writer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicates the start of a nested record. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">instance</td><td>The instance to write.</td></tr>
+    <tr><td class="paramname">writer</td><td>The destination.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>A token representing the state of the stream; this token is given to EndSubItem.</dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_proto_writer_8cs_source.html">ProtoWriter.cs</a> 第 <a class="el" href="_proto_writer_8cs_source.html#l00293">293</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a903b84ddba957b464de13c61892d69ec" name="a903b84ddba957b464de13c61892d69ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a903b84ddba957b464de13c61892d69ec">&#9670;&nbsp;</a></span>ThrowEnumException()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ProtoBuf.ProtoWriter.ThrowEnumException </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a>&#160;</td>
+          <td class="paramname"><em>writer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>enumValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Throws an exception indicating that the given enum cannot be mapped to a serialized value. </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_writer_8cs_source.html">ProtoWriter.cs</a> 第 <a class="el" href="_proto_writer_8cs_source.html#l00874">874</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab60311918ddfa2c9eaea63ddb3f7d873" name="ab60311918ddfa2c9eaea63ddb3f7d873"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab60311918ddfa2c9eaea63ddb3f7d873">&#9670;&nbsp;</a></span>WriteBoolean()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ProtoBuf.ProtoWriter.WriteBoolean </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a>&#160;</td>
+          <td class="paramname"><em>writer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Writes a boolean to the stream; supported wire-types: Variant, Fixed32, Fixed64 </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_writer_8cs_source.html">ProtoWriter.cs</a> 第 <a class="el" href="_proto_writer_8cs_source.html#l00890">890</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac3b2443f310f19e34d794cd0fa239ccd" name="ac3b2443f310f19e34d794cd0fa239ccd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3b2443f310f19e34d794cd0fa239ccd">&#9670;&nbsp;</a></span>WriteByte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ProtoBuf.ProtoWriter.WriteByte </td>
+          <td>(</td>
+          <td class="paramtype">byte&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a>&#160;</td>
+          <td class="paramname"><em>writer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Writes an unsigned 8-bit integer to the stream; supported wire-types: Variant, Fixed32, Fixed64 </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_writer_8cs_source.html">ProtoWriter.cs</a> 第 <a class="el" href="_proto_writer_8cs_source.html#l00735">735</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8e392e97961b705df1da7c2e7b30d415" name="a8e392e97961b705df1da7c2e7b30d415"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e392e97961b705df1da7c2e7b30d415">&#9670;&nbsp;</a></span>WriteBytes() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ProtoBuf.ProtoWriter.WriteBytes </td>
+          <td>(</td>
+          <td class="paramtype">byte[]&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a>&#160;</td>
+          <td class="paramname"><em>writer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Writes a byte-array to the stream; supported wire-types: String </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_writer_8cs_source.html">ProtoWriter.cs</a> 第 <a class="el" href="_proto_writer_8cs_source.html#l00201">201</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad031898c7a3a9a70469ad367e32e4b9e" name="ad031898c7a3a9a70469ad367e32e4b9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad031898c7a3a9a70469ad367e32e4b9e">&#9670;&nbsp;</a></span>WriteBytes() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ProtoBuf.ProtoWriter.WriteBytes </td>
+          <td>(</td>
+          <td class="paramtype">byte[]&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a>&#160;</td>
+          <td class="paramname"><em>writer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Writes a byte-array to the stream; supported wire-types: String </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_writer_8cs_source.html">ProtoWriter.cs</a> 第 <a class="el" href="_proto_writer_8cs_source.html#l00193">193</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6db068d05c1ead5666ba05cfa08df10e" name="a6db068d05c1ead5666ba05cfa08df10e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6db068d05c1ead5666ba05cfa08df10e">&#9670;&nbsp;</a></span>WriteDouble()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static unsafe void ProtoBuf.ProtoWriter.WriteDouble </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a>&#160;</td>
+          <td class="paramname"><em>writer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Writes a double-precision number to the stream; supported wire-types: Fixed32, Fixed64 </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_writer_8cs_source.html">ProtoWriter.cs</a> 第 <a class="el" href="_proto_writer_8cs_source.html#l00820">820</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0a5a36b8caf799d66c693f7ca1a558d4" name="a0a5a36b8caf799d66c693f7ca1a558d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a5a36b8caf799d66c693f7ca1a558d4">&#9670;&nbsp;</a></span>WriteFieldHeader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ProtoBuf.ProtoWriter.WriteFieldHeader </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fieldNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a>&#160;</td>
+          <td class="paramname"><em>wireType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a>&#160;</td>
+          <td class="paramname"><em>writer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Writes a field-header, indicating the format of the next data we plan to write. </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_writer_8cs_source.html">ProtoWriter.cs</a> 第 <a class="el" href="_proto_writer_8cs_source.html#l00137">137</a> 行定义.</p>
+
+</div>
+</div>
+<a id="acabeab0b8fab9b3c8b4719d66a580d40" name="acabeab0b8fab9b3c8b4719d66a580d40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acabeab0b8fab9b3c8b4719d66a580d40">&#9670;&nbsp;</a></span>WriteInt16()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ProtoBuf.ProtoWriter.WriteInt16 </td>
+          <td>(</td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a>&#160;</td>
+          <td class="paramname"><em>writer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Writes a signed 16-bit integer to the stream; supported wire-types: Variant, Fixed32, Fixed64, SignedVariant </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_writer_8cs_source.html">ProtoWriter.cs</a> 第 <a class="el" href="_proto_writer_8cs_source.html#l00721">721</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a16df15ace9a52687d82b2a5569b4ea5d" name="a16df15ace9a52687d82b2a5569b4ea5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16df15ace9a52687d82b2a5569b4ea5d">&#9670;&nbsp;</a></span>WriteInt32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ProtoBuf.ProtoWriter.WriteInt32 </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a>&#160;</td>
+          <td class="paramname"><em>writer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Writes a signed 32-bit integer to the stream; supported wire-types: Variant, Fixed32, Fixed64, SignedVariant </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_writer_8cs_source.html">ProtoWriter.cs</a> 第 <a class="el" href="_proto_writer_8cs_source.html#l00757">757</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a71f223b3c56fe680825ba4c55b71fdd1" name="a71f223b3c56fe680825ba4c55b71fdd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71f223b3c56fe680825ba4c55b71fdd1">&#9670;&nbsp;</a></span>WriteInt64()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ProtoBuf.ProtoWriter.WriteInt64 </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a>&#160;</td>
+          <td class="paramname"><em>writer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Writes a signed 64-bit integer to the stream; supported wire-types: Variant, Fixed32, Fixed64, SignedVariant </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_writer_8cs_source.html">ProtoWriter.cs</a> 第 <a class="el" href="_proto_writer_8cs_source.html#l00637">637</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aacb1e198b330401310078de57c687f3b" name="aacb1e198b330401310078de57c687f3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacb1e198b330401310078de57c687f3b">&#9670;&nbsp;</a></span>WriteObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ProtoBuf.ProtoWriter.WriteObject </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a>&#160;</td>
+          <td class="paramname"><em>writer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Write an encapsulated sub-object, using the supplied unique key (reprasenting a type). </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>The object to write.</td></tr>
+    <tr><td class="paramname">key</td><td>The key that uniquely identifies the type within the model.</td></tr>
+    <tr><td class="paramname">writer</td><td>The destination.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="_proto_writer_8cs_source.html">ProtoWriter.cs</a> 第 <a class="el" href="_proto_writer_8cs_source.html#l00032">32</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6b46a4af76fc9b6574f29d1ef01b1e6e" name="a6b46a4af76fc9b6574f29d1ef01b1e6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b46a4af76fc9b6574f29d1ef01b1e6e">&#9670;&nbsp;</a></span>WritePackedPrefix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ProtoBuf.ProtoWriter.WritePackedPrefix </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>elementCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a>&#160;</td>
+          <td class="paramname"><em>wireType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a>&#160;</td>
+          <td class="paramname"><em>writer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Used for packed encoding; writes the length prefix using fixed sizes rather than using buffering. Only valid for fixed-32 and fixed-64 encoding. </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_writer_8cs_source.html">ProtoWriter.cs</a> 第 <a class="el" href="_proto_writer_8cs_source.html#l00949">949</a> 行定义.</p>
+
+</div>
+</div>
+<a id="acc3f1d706b12405ff8671420a1a89a78" name="acc3f1d706b12405ff8671420a1a89a78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc3f1d706b12405ff8671420a1a89a78">&#9670;&nbsp;</a></span>WriteRecursionSafeObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ProtoBuf.ProtoWriter.WriteRecursionSafeObject </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a>&#160;</td>
+          <td class="paramname"><em>writer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Write an encapsulated sub-object, using the supplied unique key (reprasenting a type) - but the caller is asserting that this relationship is non-recursive; no recursion check will be performed. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>The object to write.</td></tr>
+    <tr><td class="paramname">key</td><td>The key that uniquely identifies the type within the model.</td></tr>
+    <tr><td class="paramname">writer</td><td>The destination.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="_proto_writer_8cs_source.html">ProtoWriter.cs</a> 第 <a class="el" href="_proto_writer_8cs_source.html#l00067">67</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a822d3e6f765da6bce0d6c9e7580ab0b8" name="a822d3e6f765da6bce0d6c9e7580ab0b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a822d3e6f765da6bce0d6c9e7580ab0b8">&#9670;&nbsp;</a></span>WriteSByte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ProtoBuf.ProtoWriter.WriteSByte </td>
+          <td>(</td>
+          <td class="paramtype">sbyte&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a>&#160;</td>
+          <td class="paramname"><em>writer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Writes a signed 8-bit integer to the stream; supported wire-types: Variant, Fixed32, Fixed64, SignedVariant </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_writer_8cs_source.html">ProtoWriter.cs</a> 第 <a class="el" href="_proto_writer_8cs_source.html#l00742">742</a> 行定义.</p>
+
+</div>
+</div>
+<a id="addd3828ae67c768b87ecbb2b27527d0d" name="addd3828ae67c768b87ecbb2b27527d0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addd3828ae67c768b87ecbb2b27527d0d">&#9670;&nbsp;</a></span>WriteSingle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static unsafe void ProtoBuf.ProtoWriter.WriteSingle </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a>&#160;</td>
+          <td class="paramname"><em>writer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Writes a single-precision number to the stream; supported wire-types: Fixed32, Fixed64 </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_writer_8cs_source.html">ProtoWriter.cs</a> 第 <a class="el" href="_proto_writer_8cs_source.html#l00852">852</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af37faa8cf3ac54a0552a7bccc527f110" name="af37faa8cf3ac54a0552a7bccc527f110"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af37faa8cf3ac54a0552a7bccc527f110">&#9670;&nbsp;</a></span>WriteString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ProtoBuf.ProtoWriter.WriteString </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a>&#160;</td>
+          <td class="paramname"><em>writer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Writes a string to the stream; supported wire-types: String </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_writer_8cs_source.html">ProtoWriter.cs</a> 第 <a class="el" href="_proto_writer_8cs_source.html#l00584">584</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae9198bc5bda6bf609e481af436913ae0" name="ae9198bc5bda6bf609e481af436913ae0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9198bc5bda6bf609e481af436913ae0">&#9670;&nbsp;</a></span>WriteType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ProtoBuf.ProtoWriter.WriteType </td>
+          <td>(</td>
+          <td class="paramtype">System.Type&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a>&#160;</td>
+          <td class="paramname"><em>writer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Writes a Type to the stream, using the model's DynamicTypeFormatting if appropriate; supported wire-types: String </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_writer_8cs_source.html">ProtoWriter.cs</a> 第 <a class="el" href="_proto_writer_8cs_source.html#l00981">981</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1ab769349c33de7f4997e7cb848f4aa9" name="a1ab769349c33de7f4997e7cb848f4aa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ab769349c33de7f4997e7cb848f4aa9">&#9670;&nbsp;</a></span>WriteUInt16()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ProtoBuf.ProtoWriter.WriteUInt16 </td>
+          <td>(</td>
+          <td class="paramtype">ushort&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a>&#160;</td>
+          <td class="paramname"><em>writer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Writes an unsigned 16-bit integer to the stream; supported wire-types: Variant, Fixed32, Fixed64 </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_writer_8cs_source.html">ProtoWriter.cs</a> 第 <a class="el" href="_proto_writer_8cs_source.html#l00728">728</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2e0b44be18606537812366605ad07379" name="a2e0b44be18606537812366605ad07379"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e0b44be18606537812366605ad07379">&#9670;&nbsp;</a></span>WriteUInt32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ProtoBuf.ProtoWriter.WriteUInt32 </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a>&#160;</td>
+          <td class="paramname"><em>writer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Writes an unsigned 16-bit integer to the stream; supported wire-types: Variant, Fixed32, Fixed64 </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_writer_8cs_source.html">ProtoWriter.cs</a> 第 <a class="el" href="_proto_writer_8cs_source.html#l00697">697</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0cdb6e19cd594a24cd1f1df8e3aa637b" name="a0cdb6e19cd594a24cd1f1df8e3aa637b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cdb6e19cd594a24cd1f1df8e3aa637b">&#9670;&nbsp;</a></span>WriteUInt64()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ProtoBuf.ProtoWriter.WriteUInt64 </td>
+          <td>(</td>
+          <td class="paramtype">ulong&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a>&#160;</td>
+          <td class="paramname"><em>writer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Writes an unsigned 64-bit integer to the stream; supported wire-types: Variant, Fixed32, Fixed64 </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_writer_8cs_source.html">ProtoWriter.cs</a> 第 <a class="el" href="_proto_writer_8cs_source.html#l00614">614</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">属性说明</h2>
+<a id="ac06dc93da7c64eddcbaee17b1dabcf40" name="ac06dc93da7c64eddcbaee17b1dabcf40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac06dc93da7c64eddcbaee17b1dabcf40">&#9670;&nbsp;</a></span>Context</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_proto_buf_1_1_serialization_context.html">SerializationContext</a> ProtoBuf.ProtoWriter.Context</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Addition information about this serialization operation. </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_writer_8cs_source.html">ProtoWriter.cs</a> 第 <a class="el" href="_proto_writer_8cs_source.html#l00469">469</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad77e6d1f73a442a90fe9f1a3eb36644d" name="ad77e6d1f73a442a90fe9f1a3eb36644d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad77e6d1f73a442a90fe9f1a3eb36644d">&#9670;&nbsp;</a></span>Model</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_proto_buf_1_1_meta_1_1_type_model.html">TypeModel</a> ProtoBuf.ProtoWriter.Model</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the TypeModel associated with this writer </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_writer_8cs_source.html">ProtoWriter.cs</a> 第 <a class="el" href="_proto_writer_8cs_source.html#l00523">523</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>Unity/Assets/ThirdParty/protobuf-net/<a class="el" href="_proto_writer_8cs_source.html">ProtoWriter.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_proto_buf.html">ProtoBuf</a></li><li class="navelem"><a class="el" href="class_proto_buf_1_1_proto_writer.html">ProtoWriter</a></li>
+    <li class="footer">生成于 2022年 一月 23日 星期日 19:12:44 , 为 ET使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ET: Unity/Assets/ThirdParty/ILRuntime/Mono.Cecil/Mono.Cecil/Modifiers.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ET<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_modifiers_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Modifiers.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_modifiers_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Author:</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//   Jb Evain (jbevain@gmail.com)</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">// Copyright (c) 2008 - 2015 Jb Evain</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// Copyright (c) 2008 - 2011 Novell, Inc.</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">//</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// Licensed under the MIT/X11 license.</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">//</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">using</span> <a class="code hl_variable" href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="_modifiers_8cs.html#ad088a2eeac95b74c0566592c62376eab">   13</a></span><span class="keyword">using</span> <a class="code hl_typedef" href="_array_type_8cs.html#ad088a2eeac95b74c0566592c62376eab">MD</a> = <a class="code hl_namespace" href="namespace_i_l_runtime.html">ILRuntime</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_mono.html">Mono</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_mono_1_1_cecil.html">Cecil</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html">Metadata</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_i_l_runtime_1_1_mono_1_1_cecil.html">ILRuntime.Mono.Cecil</a> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_modifier_type.html">   17</a></span>        <span class="keyword">public</span> <span class="keyword">interface </span><a class="code hl_interface" href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_modifier_type.html">IModifierType</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_modifier_type.html#ad19522256d6a61cbc27658fac3a33c02">   18</a></span>                <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_reference.html">TypeReference</a> <a class="code hl_property" href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_modifier_type.html#ad19522256d6a61cbc27658fac3a33c02">ModifierType</a> { <span class="keyword">get</span>; }</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_modifier_type.html#ae0a8013b2c9db5905d58dd5ea3388131">   19</a></span>                <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_reference.html">TypeReference</a> <a class="code hl_property" href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_modifier_type.html#ae0a8013b2c9db5905d58dd5ea3388131">ElementType</a> { <span class="keyword">get</span>; }</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_optional_modifier_type.html">   22</a></span>        <span class="keyword">public</span> sealed <span class="keyword">class </span><a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_optional_modifier_type.html">OptionalModifierType</a> : <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_specification.html">TypeSpecification</a>, <a class="code hl_interface" href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_modifier_type.html">IModifierType</a> {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_reference.html">TypeReference</a> modifier_type;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_optional_modifier_type.html#ad0df5daadf3d169192180da569733a25">   26</a></span>                <span class="keyword">public</span> <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_reference.html">TypeReference</a> <a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_optional_modifier_type.html#ad0df5daadf3d169192180da569733a25">ModifierType</a> {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                        <span class="keyword">get</span> { <span class="keywordflow">return</span> modifier_type; }</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                        <span class="keyword">set</span> { modifier_type = value; }</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_optional_modifier_type.html#a0812df6430e8dd6d96064b38773e362a">   31</a></span>                <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_optional_modifier_type.html#a0812df6430e8dd6d96064b38773e362a">Name</a> {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                        <span class="keyword">get</span> { <span class="keywordflow">return</span> base.Name + Suffix; }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_optional_modifier_type.html#a05caa9ab1baa4fb976f6989357717bf5">   35</a></span>                <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_optional_modifier_type.html#a05caa9ab1baa4fb976f6989357717bf5">FullName</a> {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                        <span class="keyword">get</span> { <span class="keywordflow">return</span> base.FullName + Suffix; }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                <span class="keywordtype">string</span> Suffix {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                        <span class="keyword">get</span> { <span class="keywordflow">return</span> <span class="stringliteral">&quot; modopt(&quot;</span> + modifier_type + <span class="stringliteral">&quot;)&quot;</span>; }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_optional_modifier_type.html#ad4fbbf66e7a6717ff7e53164bd887447">   43</a></span>                <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_optional_modifier_type.html#ad4fbbf66e7a6717ff7e53164bd887447">IsValueType</a> {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                        <span class="keyword">get</span> { <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                        <span class="keyword">set</span> { <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException (); }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_optional_modifier_type.html#a6bc918f2551f551afb61ee62f92698cd">   48</a></span>                <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_optional_modifier_type.html#a6bc918f2551f551afb61ee62f92698cd">IsOptionalModifier</a> {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                        <span class="keyword">get</span> { <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_optional_modifier_type.html#abe088488988d3584e7161e4fe5ab45e7">   52</a></span>                <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_optional_modifier_type.html#abe088488988d3584e7161e4fe5ab45e7">ContainsGenericParameter</a> {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                        <span class="keyword">get</span> { <span class="keywordflow">return</span> modifier_type.ContainsGenericParameter || base.ContainsGenericParameter; }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_optional_modifier_type.html#a3330b5c3be81e193984b266d33753c43">   56</a></span>                <span class="keyword">public</span> <a class="code hl_function" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_optional_modifier_type.html#a3330b5c3be81e193984b266d33753c43">OptionalModifierType</a> (<a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_reference.html">TypeReference</a> modifierType, <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_reference.html">TypeReference</a> type)</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                        : base (type)</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                        <span class="keywordflow">if</span> (modifierType == <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                                <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentNullException (Mixin.Argument.modifierType.ToString ());</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                        Mixin.CheckType (type);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                        this.modifier_type = modifierType;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                        this.etype = <a class="code hl_typedef" href="_array_type_8cs.html#ad088a2eeac95b74c0566592c62376eab">MD</a>.ElementType.CModOpt;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_required_modifier_type.html">   67</a></span>        <span class="keyword">public</span> sealed <span class="keyword">class </span><a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_required_modifier_type.html">RequiredModifierType</a> : <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_specification.html">TypeSpecification</a>, <a class="code hl_interface" href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_modifier_type.html">IModifierType</a> {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_reference.html">TypeReference</a> modifier_type;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_required_modifier_type.html#ac601eac4e464d9c08d2c4197a54d5c8d">   71</a></span>                <span class="keyword">public</span> <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_reference.html">TypeReference</a> <a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_required_modifier_type.html#ac601eac4e464d9c08d2c4197a54d5c8d">ModifierType</a> {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                        <span class="keyword">get</span> { <span class="keywordflow">return</span> modifier_type; }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                        <span class="keyword">set</span> { modifier_type = value; }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_required_modifier_type.html#ac629692a4343a5e1e631e6ad6e7c7fae">   76</a></span>                <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_required_modifier_type.html#ac629692a4343a5e1e631e6ad6e7c7fae">Name</a> {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                        <span class="keyword">get</span> { <span class="keywordflow">return</span> base.Name + Suffix; }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_required_modifier_type.html#a17b0841da741e04f5c446d3a62640e61">   80</a></span>                <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_required_modifier_type.html#a17b0841da741e04f5c446d3a62640e61">FullName</a> {</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                        <span class="keyword">get</span> { <span class="keywordflow">return</span> base.FullName + Suffix; }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                }</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                <span class="keywordtype">string</span> Suffix {</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                        <span class="keyword">get</span> { <span class="keywordflow">return</span> <span class="stringliteral">&quot; modreq(&quot;</span> + modifier_type + <span class="stringliteral">&quot;)&quot;</span>; }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_required_modifier_type.html#a569ce364b5af8448542fa268bdc29587">   88</a></span>                <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_required_modifier_type.html#a569ce364b5af8448542fa268bdc29587">IsValueType</a> {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                        <span class="keyword">get</span> { <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                        <span class="keyword">set</span> { <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException (); }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_required_modifier_type.html#a43c06e1c1e4ccaa5ab46792776208497">   93</a></span>                <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_required_modifier_type.html#a43c06e1c1e4ccaa5ab46792776208497">IsRequiredModifier</a> {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                        <span class="keyword">get</span> { <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                }</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_required_modifier_type.html#a1911a644421a74b297fa70e329e8da37">   97</a></span>                <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_required_modifier_type.html#a1911a644421a74b297fa70e329e8da37">ContainsGenericParameter</a> {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                        <span class="keyword">get</span> { <span class="keywordflow">return</span> modifier_type.ContainsGenericParameter || base.ContainsGenericParameter; }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_required_modifier_type.html#ac6495efe871cf6be23492209ded427e5">  101</a></span>                <span class="keyword">public</span> <a class="code hl_function" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_required_modifier_type.html#ac6495efe871cf6be23492209ded427e5">RequiredModifierType</a> (<a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_reference.html">TypeReference</a> modifierType, <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_reference.html">TypeReference</a> type)</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                        : base (type)</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                {</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                        <span class="keywordflow">if</span> (modifierType == <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                                <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentNullException (Mixin.Argument.modifierType.ToString ());</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                        Mixin.CheckType (type);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                        this.modifier_type = modifierType;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                        this.etype = <a class="code hl_typedef" href="_array_type_8cs.html#ad088a2eeac95b74c0566592c62376eab">MD</a>.ElementType.CModReqD;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        }</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>}</div>
+<div class="ttc" id="a_array_type_8cs_html_ad088a2eeac95b74c0566592c62376eab"><div class="ttname"><a href="_array_type_8cs.html#ad088a2eeac95b74c0566592c62376eab">MD</a></div><div class="ttdeci">ILRuntime.Mono.Cecil.Metadata MD</div><div class="ttdef"><b>Definition:</b> <a href="_array_type_8cs_source.html#l00015">ArrayType.cs:15</a></div></div>
+<div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_optional_modifier_type_html"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_optional_modifier_type.html">ILRuntime.Mono.Cecil.OptionalModifierType</a></div><div class="ttdef"><b>Definition:</b> <a href="_modifiers_8cs_source.html#l00022">Modifiers.cs:22</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_optional_modifier_type_html_a05caa9ab1baa4fb976f6989357717bf5"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_optional_modifier_type.html#a05caa9ab1baa4fb976f6989357717bf5">ILRuntime.Mono.Cecil.OptionalModifierType.FullName</a></div><div class="ttdeci">override string FullName</div><div class="ttdef"><b>Definition:</b> <a href="_modifiers_8cs_source.html#l00035">Modifiers.cs:35</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_optional_modifier_type_html_a0812df6430e8dd6d96064b38773e362a"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_optional_modifier_type.html#a0812df6430e8dd6d96064b38773e362a">ILRuntime.Mono.Cecil.OptionalModifierType.Name</a></div><div class="ttdeci">override string Name</div><div class="ttdef"><b>Definition:</b> <a href="_modifiers_8cs_source.html#l00031">Modifiers.cs:31</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_optional_modifier_type_html_a3330b5c3be81e193984b266d33753c43"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_optional_modifier_type.html#a3330b5c3be81e193984b266d33753c43">ILRuntime.Mono.Cecil.OptionalModifierType.OptionalModifierType</a></div><div class="ttdeci">OptionalModifierType(TypeReference modifierType, TypeReference type)</div><div class="ttdef"><b>Definition:</b> <a href="_modifiers_8cs_source.html#l00056">Modifiers.cs:56</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_optional_modifier_type_html_a6bc918f2551f551afb61ee62f92698cd"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_optional_modifier_type.html#a6bc918f2551f551afb61ee62f92698cd">ILRuntime.Mono.Cecil.OptionalModifierType.IsOptionalModifier</a></div><div class="ttdeci">override bool IsOptionalModifier</div><div class="ttdef"><b>Definition:</b> <a href="_modifiers_8cs_source.html#l00048">Modifiers.cs:48</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_optional_modifier_type_html_abe088488988d3584e7161e4fe5ab45e7"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_optional_modifier_type.html#abe088488988d3584e7161e4fe5ab45e7">ILRuntime.Mono.Cecil.OptionalModifierType.ContainsGenericParameter</a></div><div class="ttdeci">override bool ContainsGenericParameter</div><div class="ttdef"><b>Definition:</b> <a href="_modifiers_8cs_source.html#l00052">Modifiers.cs:52</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_optional_modifier_type_html_ad0df5daadf3d169192180da569733a25"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_optional_modifier_type.html#ad0df5daadf3d169192180da569733a25">ILRuntime.Mono.Cecil.OptionalModifierType.ModifierType</a></div><div class="ttdeci">TypeReference ModifierType</div><div class="ttdef"><b>Definition:</b> <a href="_modifiers_8cs_source.html#l00026">Modifiers.cs:26</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_optional_modifier_type_html_ad4fbbf66e7a6717ff7e53164bd887447"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_optional_modifier_type.html#ad4fbbf66e7a6717ff7e53164bd887447">ILRuntime.Mono.Cecil.OptionalModifierType.IsValueType</a></div><div class="ttdeci">override bool IsValueType</div><div class="ttdef"><b>Definition:</b> <a href="_modifiers_8cs_source.html#l00043">Modifiers.cs:43</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_required_modifier_type_html"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_required_modifier_type.html">ILRuntime.Mono.Cecil.RequiredModifierType</a></div><div class="ttdef"><b>Definition:</b> <a href="_modifiers_8cs_source.html#l00067">Modifiers.cs:67</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_required_modifier_type_html_a17b0841da741e04f5c446d3a62640e61"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_required_modifier_type.html#a17b0841da741e04f5c446d3a62640e61">ILRuntime.Mono.Cecil.RequiredModifierType.FullName</a></div><div class="ttdeci">override string FullName</div><div class="ttdef"><b>Definition:</b> <a href="_modifiers_8cs_source.html#l00080">Modifiers.cs:80</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_required_modifier_type_html_a1911a644421a74b297fa70e329e8da37"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_required_modifier_type.html#a1911a644421a74b297fa70e329e8da37">ILRuntime.Mono.Cecil.RequiredModifierType.ContainsGenericParameter</a></div><div class="ttdeci">override bool ContainsGenericParameter</div><div class="ttdef"><b>Definition:</b> <a href="_modifiers_8cs_source.html#l00097">Modifiers.cs:97</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_required_modifier_type_html_a43c06e1c1e4ccaa5ab46792776208497"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_required_modifier_type.html#a43c06e1c1e4ccaa5ab46792776208497">ILRuntime.Mono.Cecil.RequiredModifierType.IsRequiredModifier</a></div><div class="ttdeci">override bool IsRequiredModifier</div><div class="ttdef"><b>Definition:</b> <a href="_modifiers_8cs_source.html#l00093">Modifiers.cs:93</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_required_modifier_type_html_a569ce364b5af8448542fa268bdc29587"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_required_modifier_type.html#a569ce364b5af8448542fa268bdc29587">ILRuntime.Mono.Cecil.RequiredModifierType.IsValueType</a></div><div class="ttdeci">override bool IsValueType</div><div class="ttdef"><b>Definition:</b> <a href="_modifiers_8cs_source.html#l00088">Modifiers.cs:88</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_required_modifier_type_html_ac601eac4e464d9c08d2c4197a54d5c8d"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_required_modifier_type.html#ac601eac4e464d9c08d2c4197a54d5c8d">ILRuntime.Mono.Cecil.RequiredModifierType.ModifierType</a></div><div class="ttdeci">TypeReference ModifierType</div><div class="ttdef"><b>Definition:</b> <a href="_modifiers_8cs_source.html#l00071">Modifiers.cs:71</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_required_modifier_type_html_ac629692a4343a5e1e631e6ad6e7c7fae"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_required_modifier_type.html#ac629692a4343a5e1e631e6ad6e7c7fae">ILRuntime.Mono.Cecil.RequiredModifierType.Name</a></div><div class="ttdeci">override string Name</div><div class="ttdef"><b>Definition:</b> <a href="_modifiers_8cs_source.html#l00076">Modifiers.cs:76</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_required_modifier_type_html_ac6495efe871cf6be23492209ded427e5"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_required_modifier_type.html#ac6495efe871cf6be23492209ded427e5">ILRuntime.Mono.Cecil.RequiredModifierType.RequiredModifierType</a></div><div class="ttdeci">RequiredModifierType(TypeReference modifierType, TypeReference type)</div><div class="ttdef"><b>Definition:</b> <a href="_modifiers_8cs_source.html#l00101">Modifiers.cs:101</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_reference_html"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_reference.html">ILRuntime.Mono.Cecil.TypeReference</a></div><div class="ttdef"><b>Definition:</b> <a href="_type_reference_8cs_source.html#l00052">TypeReference.cs:52</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_specification_html"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_specification.html">ILRuntime.Mono.Cecil.TypeSpecification</a></div><div class="ttdef"><b>Definition:</b> <a href="_type_specification_8cs_source.html#l00017">TypeSpecification.cs:17</a></div></div>
+<div class="ttc" id="ainterface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_modifier_type_html"><div class="ttname"><a href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_modifier_type.html">ILRuntime.Mono.Cecil.IModifierType</a></div><div class="ttdef"><b>Definition:</b> <a href="_modifiers_8cs_source.html#l00017">Modifiers.cs:17</a></div></div>
+<div class="ttc" id="ainterface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_modifier_type_html_ad19522256d6a61cbc27658fac3a33c02"><div class="ttname"><a href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_modifier_type.html#ad19522256d6a61cbc27658fac3a33c02">ILRuntime.Mono.Cecil.IModifierType.ModifierType</a></div><div class="ttdeci">TypeReference ModifierType</div><div class="ttdef"><b>Definition:</b> <a href="_modifiers_8cs_source.html#l00018">Modifiers.cs:18</a></div></div>
+<div class="ttc" id="ainterface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_modifier_type_html_ae0a8013b2c9db5905d58dd5ea3388131"><div class="ttname"><a href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_modifier_type.html#ae0a8013b2c9db5905d58dd5ea3388131">ILRuntime.Mono.Cecil.IModifierType.ElementType</a></div><div class="ttdeci">TypeReference ElementType</div><div class="ttdef"><b>Definition:</b> <a href="_modifiers_8cs_source.html#l00019">Modifiers.cs:19</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_html"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html">ILRuntime.Mono.Cecil.Metadata</a></div><div class="ttdef"><b>Definition:</b> <a href="_blob_heap_8cs_source.html#l00013">BlobHeap.cs:13</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_html"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil.html">ILRuntime.Mono.Cecil</a></div><div class="ttdef"><b>Definition:</b> <a href="_code_8cs_source.html#l00011">Code.cs:11</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_html"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono.html">ILRuntime.Mono</a></div><div class="ttdef"><b>Definition:</b> <a href="_code_8cs_source.html#l00011">Code.cs:11</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_html"><div class="ttname"><a href="namespace_i_l_runtime.html">ILRuntime</a></div><div class="ttdef"><b>Definition:</b> <a href="_c_l_r_bindings_8cs_source.html#l00005">CLRBindings.cs:6</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_3b33dffaa21a2ac6f7978a949ffd4e41.html">Assets</a></li><li class="navelem"><a class="el" href="dir_5501c55c26a8d51fbc1fd8b7d8df04c3.html">ThirdParty</a></li><li class="navelem"><a class="el" href="dir_d7574f457851e45807c5ee4c7e6fc148.html">ILRuntime</a></li><li class="navelem"><a class="el" href="dir_4b4645f3c34003797707cfb8ce358d82.html">Mono.Cecil</a></li><li class="navelem"><a class="el" href="dir_694886da1201a1875b748e4807dbf668.html">Mono.Cecil</a></li><li class="navelem"><a class="el" href="_modifiers_8cs.html">Modifiers.cs</a></li>
+    <li class="footer">生成于 2022年 一月 23日 星期日 19:12:34 , 为 ET使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

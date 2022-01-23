@@ -1,0 +1,28 @@
+var namespace_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer =
+[
+    [ "AnonymousScopeEntry", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_anonymous_scope_entry.html", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_anonymous_scope_entry" ],
+    [ "CapturedScope", "struct_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_captured_scope.html", "struct_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_captured_scope" ],
+    [ "CapturedVariable", "struct_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_captured_variable.html", "struct_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_captured_variable" ],
+    [ "CodeBlockEntry", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_code_block_entry.html", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_code_block_entry" ],
+    [ "CompileUnitEntry", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_compile_unit_entry.html", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_compile_unit_entry" ],
+    [ "ICompileUnit", "interface_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_i_compile_unit.html", "interface_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_i_compile_unit" ],
+    [ "IMethodDef", "interface_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_i_method_def.html", "interface_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_i_method_def" ],
+    [ "ISourceFile", "interface_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_i_source_file.html", "interface_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_i_source_file" ],
+    [ "LineNumberEntry", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_entry.html", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_entry" ],
+    [ "LineNumberTable", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_table.html", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_table" ],
+    [ "LocalVariableEntry", "struct_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_local_variable_entry.html", "struct_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_local_variable_entry" ],
+    [ "MethodEntry", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_method_entry.html", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_method_entry" ],
+    [ "MonoSymbolFile", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_mono_symbol_file.html", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_mono_symbol_file" ],
+    [ "MonoSymbolFileException", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_mono_symbol_file_exception.html", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_mono_symbol_file_exception" ],
+    [ "MonoSymbolWriter", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_mono_symbol_writer.html", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_mono_symbol_writer" ],
+    [ "MyBinaryWriter", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_my_binary_writer.html", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_my_binary_writer" ],
+    [ "NamespaceEntry", "struct_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_namespace_entry.html", "struct_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_namespace_entry" ],
+    [ "NamespaceInfo", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_namespace_info.html", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_namespace_info" ],
+    [ "OffsetTable", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_offset_table.html", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_offset_table" ],
+    [ "ScopeVariable", "struct_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_scope_variable.html", "struct_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_scope_variable" ],
+    [ "SourceFileEntry", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_source_file_entry.html", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_source_file_entry" ],
+    [ "SourceMethodBuilder", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_source_method_builder.html", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_source_method_builder" ],
+    [ "SourceMethodImpl", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_source_method_impl.html", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_source_method_impl" ],
+    [ "SymbolDocumentWriterImpl", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_symbol_document_writer_impl.html", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_symbol_document_writer_impl" ],
+    [ "SymbolWriterImpl", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_symbol_writer_impl.html", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_symbol_writer_impl" ]
+];

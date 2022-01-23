@@ -1,0 +1,580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ET: ILRuntime.Mono.CompilerServices.SymbolWriter.LineNumberTable类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ET<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_table.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">成员变量</a> &#124;
+<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="#properties">属性</a>  </div>
+  <div class="headertitle"><div class="title">ILRuntime.Mono.CompilerServices.SymbolWriter.LineNumberTable类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ae4fc9316413270b3be8de599cf6ae8cd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_table.html#ae4fc9316413270b3be8de599cf6ae8cd">GetMethodBounds</a> (out <a class="el" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_entry.html">LineNumberEntry</a> start, out <a class="el" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_entry.html">LineNumberEntry</a> end)</td></tr>
+<tr class="separator:ae4fc9316413270b3be8de599cf6ae8cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+成员变量</h2></td></tr>
+<tr class="memitem:ad02055b23b8f4bb365217550c6a591c4"><td class="memItemLeft" align="right" valign="top">readonly int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_table.html#ad02055b23b8f4bb365217550c6a591c4">LineBase</a></td></tr>
+<tr class="separator:ad02055b23b8f4bb365217550c6a591c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2da4289f5ee33c41285af6b0b4b514a9"><td class="memItemLeft" align="right" valign="top">readonly int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_table.html#a2da4289f5ee33c41285af6b0b4b514a9">LineRange</a></td></tr>
+<tr class="separator:a2da4289f5ee33c41285af6b0b4b514a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d3b004f239f7af3fe2ad50690d06786"><td class="memItemLeft" align="right" valign="top">readonly byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_table.html#a1d3b004f239f7af3fe2ad50690d06786">OpcodeBase</a></td></tr>
+<tr class="separator:a1d3b004f239f7af3fe2ad50690d06786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40b5627375bf3868dce8ebfa9a8dc7de"><td class="memItemLeft" align="right" valign="top">readonly int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_table.html#a40b5627375bf3868dce8ebfa9a8dc7de">MaxAddressIncrement</a></td></tr>
+<tr class="separator:a40b5627375bf3868dce8ebfa9a8dc7de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:ada1b7a7da363196d577c22540f18f34c"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_table.html#ada1b7a7da363196d577c22540f18f34c">Default_LineBase</a> = -1</td></tr>
+<tr class="separator:ada1b7a7da363196d577c22540f18f34c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2e20a4a7d645c6e0144ff2705e7fa50"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_table.html#ae2e20a4a7d645c6e0144ff2705e7fa50">Default_LineRange</a> = 8</td></tr>
+<tr class="separator:ae2e20a4a7d645c6e0144ff2705e7fa50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaf68bce53f2d12a65b60a2afc22e1c6"><td class="memItemLeft" align="right" valign="top">const byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_table.html#aeaf68bce53f2d12a65b60a2afc22e1c6">Default_OpcodeBase</a> = 9</td></tr>
+<tr class="separator:aeaf68bce53f2d12a65b60a2afc22e1c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae27a22c399500925bbb09b47d05805f9"><td class="memItemLeft" align="right" valign="top">const byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_table.html#ae27a22c399500925bbb09b47d05805f9">DW_LNS_copy</a> = 1</td></tr>
+<tr class="separator:ae27a22c399500925bbb09b47d05805f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdaa1f1a3df0d5b06b6b88b8c07a1065"><td class="memItemLeft" align="right" valign="top">const byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_table.html#abdaa1f1a3df0d5b06b6b88b8c07a1065">DW_LNS_advance_pc</a> = 2</td></tr>
+<tr class="separator:abdaa1f1a3df0d5b06b6b88b8c07a1065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe4539f749a29fa94a31db3d66ca7260"><td class="memItemLeft" align="right" valign="top">const byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_table.html#abe4539f749a29fa94a31db3d66ca7260">DW_LNS_advance_line</a> = 3</td></tr>
+<tr class="separator:abe4539f749a29fa94a31db3d66ca7260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6030ceccb9aebb676d3aa83ccdd5d29c"><td class="memItemLeft" align="right" valign="top">const byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_table.html#a6030ceccb9aebb676d3aa83ccdd5d29c">DW_LNS_set_file</a> = 4</td></tr>
+<tr class="separator:a6030ceccb9aebb676d3aa83ccdd5d29c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9926b661a0a1de7c735d433dfa38ef0a"><td class="memItemLeft" align="right" valign="top">const byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_table.html#a9926b661a0a1de7c735d433dfa38ef0a">DW_LNS_const_add_pc</a> = 8</td></tr>
+<tr class="separator:a9926b661a0a1de7c735d433dfa38ef0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a906caa3ebf081692dd938d72ecde4733"><td class="memItemLeft" align="right" valign="top">const byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_table.html#a906caa3ebf081692dd938d72ecde4733">DW_LNE_end_sequence</a> = 1</td></tr>
+<tr class="separator:a906caa3ebf081692dd938d72ecde4733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5320ddd75a4775e8fb3e6641c19a1b4"><td class="memItemLeft" align="right" valign="top">const byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_table.html#ad5320ddd75a4775e8fb3e6641c19a1b4">DW_LNE_MONO_negate_is_hidden</a> = 0x40</td></tr>
+<tr class="separator:ad5320ddd75a4775e8fb3e6641c19a1b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:ae97ab858c6f671f3fd203aaafe2c881c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_table.html#ae97ab858c6f671f3fd203aaafe2c881c">LineNumberTable</a> (<a class="el" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_mono_symbol_file.html">MonoSymbolFile</a> file)</td></tr>
+<tr class="separator:ae97ab858c6f671f3fd203aaafe2c881c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a73b899885d378a72f74b1e09ddf47049"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_entry.html">LineNumberEntry</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_table.html#a73b899885d378a72f74b1e09ddf47049">_line_numbers</a></td></tr>
+<tr class="separator:a73b899885d378a72f74b1e09ddf47049"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:aa7330966f8c9f135a30b82c2a115c18c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_entry.html">LineNumberEntry</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_table.html#aa7330966f8c9f135a30b82c2a115c18c">LineNumbers</a><code> [get]</code></td></tr>
+<tr class="separator:aa7330966f8c9f135a30b82c2a115c18c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="_mono_symbol_table_8cs_source.html">MonoSymbolTable.cs</a> 第 <a class="el" href="_mono_symbol_table_8cs_source.html#l00809">809</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="ae97ab858c6f671f3fd203aaafe2c881c" name="ae97ab858c6f671f3fd203aaafe2c881c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae97ab858c6f671f3fd203aaafe2c881c">&#9670;&nbsp;</a></span>LineNumberTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ILRuntime.Mono.CompilerServices.SymbolWriter.LineNumberTable.LineNumberTable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_mono_symbol_file.html">MonoSymbolFile</a>&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_mono_symbol_table_8cs_source.html">MonoSymbolTable.cs</a> 第 <a class="el" href="_mono_symbol_table_8cs_source.html#l00842">842</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ae4fc9316413270b3be8de599cf6ae8cd" name="ae4fc9316413270b3be8de599cf6ae8cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4fc9316413270b3be8de599cf6ae8cd">&#9670;&nbsp;</a></span>GetMethodBounds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ILRuntime.Mono.CompilerServices.SymbolWriter.LineNumberTable.GetMethodBounds </td>
+          <td>(</td>
+          <td class="paramtype">out <a class="el" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_entry.html">LineNumberEntry</a>&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out <a class="el" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_entry.html">LineNumberEntry</a>&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_mono_symbol_table_8cs_source.html">MonoSymbolTable.cs</a> 第 <a class="el" href="_mono_symbol_table_8cs_source.html#l01038">1038</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">结构体成员变量说明</h2>
+<a id="a73b899885d378a72f74b1e09ddf47049" name="a73b899885d378a72f74b1e09ddf47049"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73b899885d378a72f74b1e09ddf47049">&#9670;&nbsp;</a></span>_line_numbers</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_entry.html">LineNumberEntry</a> [] ILRuntime.Mono.CompilerServices.SymbolWriter.LineNumberTable._line_numbers</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_mono_symbol_table_8cs_source.html">MonoSymbolTable.cs</a> 第 <a class="el" href="_mono_symbol_table_8cs_source.html#l00811">811</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ada1b7a7da363196d577c22540f18f34c" name="ada1b7a7da363196d577c22540f18f34c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada1b7a7da363196d577c22540f18f34c">&#9670;&nbsp;</a></span>Default_LineBase</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ILRuntime.Mono.CompilerServices.SymbolWriter.LineNumberTable.Default_LineBase = -1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_mono_symbol_table_8cs_source.html">MonoSymbolTable.cs</a> 第 <a class="el" href="_mono_symbol_table_8cs_source.html#l00822">822</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae2e20a4a7d645c6e0144ff2705e7fa50" name="ae2e20a4a7d645c6e0144ff2705e7fa50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2e20a4a7d645c6e0144ff2705e7fa50">&#9670;&nbsp;</a></span>Default_LineRange</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ILRuntime.Mono.CompilerServices.SymbolWriter.LineNumberTable.Default_LineRange = 8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_mono_symbol_table_8cs_source.html">MonoSymbolTable.cs</a> 第 <a class="el" href="_mono_symbol_table_8cs_source.html#l00823">823</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aeaf68bce53f2d12a65b60a2afc22e1c6" name="aeaf68bce53f2d12a65b60a2afc22e1c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaf68bce53f2d12a65b60a2afc22e1c6">&#9670;&nbsp;</a></span>Default_OpcodeBase</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const byte ILRuntime.Mono.CompilerServices.SymbolWriter.LineNumberTable.Default_OpcodeBase = 9</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_mono_symbol_table_8cs_source.html">MonoSymbolTable.cs</a> 第 <a class="el" href="_mono_symbol_table_8cs_source.html#l00824">824</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a906caa3ebf081692dd938d72ecde4733" name="a906caa3ebf081692dd938d72ecde4733"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a906caa3ebf081692dd938d72ecde4733">&#9670;&nbsp;</a></span>DW_LNE_end_sequence</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const byte ILRuntime.Mono.CompilerServices.SymbolWriter.LineNumberTable.DW_LNE_end_sequence = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_mono_symbol_table_8cs_source.html">MonoSymbolTable.cs</a> 第 <a class="el" href="_mono_symbol_table_8cs_source.html#l00834">834</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad5320ddd75a4775e8fb3e6641c19a1b4" name="ad5320ddd75a4775e8fb3e6641c19a1b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5320ddd75a4775e8fb3e6641c19a1b4">&#9670;&nbsp;</a></span>DW_LNE_MONO_negate_is_hidden</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const byte ILRuntime.Mono.CompilerServices.SymbolWriter.LineNumberTable.DW_LNE_MONO_negate_is_hidden = 0x40</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_mono_symbol_table_8cs_source.html">MonoSymbolTable.cs</a> 第 <a class="el" href="_mono_symbol_table_8cs_source.html#l00837">837</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abe4539f749a29fa94a31db3d66ca7260" name="abe4539f749a29fa94a31db3d66ca7260"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe4539f749a29fa94a31db3d66ca7260">&#9670;&nbsp;</a></span>DW_LNS_advance_line</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const byte ILRuntime.Mono.CompilerServices.SymbolWriter.LineNumberTable.DW_LNS_advance_line = 3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_mono_symbol_table_8cs_source.html">MonoSymbolTable.cs</a> 第 <a class="el" href="_mono_symbol_table_8cs_source.html#l00830">830</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abdaa1f1a3df0d5b06b6b88b8c07a1065" name="abdaa1f1a3df0d5b06b6b88b8c07a1065"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdaa1f1a3df0d5b06b6b88b8c07a1065">&#9670;&nbsp;</a></span>DW_LNS_advance_pc</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const byte ILRuntime.Mono.CompilerServices.SymbolWriter.LineNumberTable.DW_LNS_advance_pc = 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_mono_symbol_table_8cs_source.html">MonoSymbolTable.cs</a> 第 <a class="el" href="_mono_symbol_table_8cs_source.html#l00829">829</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9926b661a0a1de7c735d433dfa38ef0a" name="a9926b661a0a1de7c735d433dfa38ef0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9926b661a0a1de7c735d433dfa38ef0a">&#9670;&nbsp;</a></span>DW_LNS_const_add_pc</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const byte ILRuntime.Mono.CompilerServices.SymbolWriter.LineNumberTable.DW_LNS_const_add_pc = 8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_mono_symbol_table_8cs_source.html">MonoSymbolTable.cs</a> 第 <a class="el" href="_mono_symbol_table_8cs_source.html#l00832">832</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae27a22c399500925bbb09b47d05805f9" name="ae27a22c399500925bbb09b47d05805f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae27a22c399500925bbb09b47d05805f9">&#9670;&nbsp;</a></span>DW_LNS_copy</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const byte ILRuntime.Mono.CompilerServices.SymbolWriter.LineNumberTable.DW_LNS_copy = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_mono_symbol_table_8cs_source.html">MonoSymbolTable.cs</a> 第 <a class="el" href="_mono_symbol_table_8cs_source.html#l00828">828</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6030ceccb9aebb676d3aa83ccdd5d29c" name="a6030ceccb9aebb676d3aa83ccdd5d29c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6030ceccb9aebb676d3aa83ccdd5d29c">&#9670;&nbsp;</a></span>DW_LNS_set_file</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const byte ILRuntime.Mono.CompilerServices.SymbolWriter.LineNumberTable.DW_LNS_set_file = 4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_mono_symbol_table_8cs_source.html">MonoSymbolTable.cs</a> 第 <a class="el" href="_mono_symbol_table_8cs_source.html#l00831">831</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad02055b23b8f4bb365217550c6a591c4" name="ad02055b23b8f4bb365217550c6a591c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad02055b23b8f4bb365217550c6a591c4">&#9670;&nbsp;</a></span>LineBase</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly int ILRuntime.Mono.CompilerServices.SymbolWriter.LineNumberTable.LineBase</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_mono_symbol_table_8cs_source.html">MonoSymbolTable.cs</a> 第 <a class="el" href="_mono_symbol_table_8cs_source.html#l00816">816</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a2da4289f5ee33c41285af6b0b4b514a9" name="a2da4289f5ee33c41285af6b0b4b514a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2da4289f5ee33c41285af6b0b4b514a9">&#9670;&nbsp;</a></span>LineRange</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly int ILRuntime.Mono.CompilerServices.SymbolWriter.LineNumberTable.LineRange</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_mono_symbol_table_8cs_source.html">MonoSymbolTable.cs</a> 第 <a class="el" href="_mono_symbol_table_8cs_source.html#l00817">817</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a40b5627375bf3868dce8ebfa9a8dc7de" name="a40b5627375bf3868dce8ebfa9a8dc7de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40b5627375bf3868dce8ebfa9a8dc7de">&#9670;&nbsp;</a></span>MaxAddressIncrement</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly int ILRuntime.Mono.CompilerServices.SymbolWriter.LineNumberTable.MaxAddressIncrement</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_mono_symbol_table_8cs_source.html">MonoSymbolTable.cs</a> 第 <a class="el" href="_mono_symbol_table_8cs_source.html#l00819">819</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1d3b004f239f7af3fe2ad50690d06786" name="a1d3b004f239f7af3fe2ad50690d06786"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d3b004f239f7af3fe2ad50690d06786">&#9670;&nbsp;</a></span>OpcodeBase</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly byte ILRuntime.Mono.CompilerServices.SymbolWriter.LineNumberTable.OpcodeBase</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_mono_symbol_table_8cs_source.html">MonoSymbolTable.cs</a> 第 <a class="el" href="_mono_symbol_table_8cs_source.html#l00818">818</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">属性说明</h2>
+<a id="aa7330966f8c9f135a30b82c2a115c18c" name="aa7330966f8c9f135a30b82c2a115c18c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7330966f8c9f135a30b82c2a115c18c">&#9670;&nbsp;</a></span>LineNumbers</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_entry.html">LineNumberEntry</a> [] ILRuntime.Mono.CompilerServices.SymbolWriter.LineNumberTable.LineNumbers</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_mono_symbol_table_8cs_source.html">MonoSymbolTable.cs</a> 第 <a class="el" href="_mono_symbol_table_8cs_source.html#l00812">812</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>Unity/Assets/ThirdParty/ILRuntime/Mono.Cecil/symbols/mdb/Mono.CompilerServices.SymbolWriter/<a class="el" href="_mono_symbol_table_8cs_source.html">MonoSymbolTable.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_i_l_runtime.html">ILRuntime</a></li><li class="navelem"><a class="el" href="namespace_i_l_runtime_1_1_mono.html">Mono</a></li><li class="navelem"><a class="el" href="namespace_i_l_runtime_1_1_mono_1_1_compiler_services.html">CompilerServices</a></li><li class="navelem"><a class="el" href="namespace_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer.html">SymbolWriter</a></li><li class="navelem"><a class="el" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_table.html">LineNumberTable</a></li>
+    <li class="footer">生成于 2022年 一月 23日 星期日 19:12:43 , 为 ET使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

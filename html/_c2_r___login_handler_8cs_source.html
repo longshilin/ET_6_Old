@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ET: Server/Hotfix/Demo/Realm/C2R_LoginHandler.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ET<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_c2_r___login_handler_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">C2R_LoginHandler.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_c2_r___login_handler_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using</span> <a class="code hl_variable" href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_system.html">System</a>.<a class="code hl_namespace" href="namespace_system_1_1_collections.html">Collections</a>.<a class="code hl_namespace" href="namespace_system_1_1_collections_1_1_generic.html">Generic</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_system.html">System</a>.Net;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_e_t.html">ET</a></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    [MessageHandler]</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_e_t_1_1_c2_r___login_handler.html">    8</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_e_t_1_1_c2_r___login_handler.html">C2R_LoginHandler</a>: <a class="code hl_class" href="class_e_t_1_1_a_m_rpc_handler.html">AMRpcHandler</a>&lt;C2R_Login, R2C_Login&gt;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_e_t_1_1_c2_r___login_handler.html#a5a7f10f7ae135aaa4801a2165f236937">   10</a></span>        <span class="keyword">protected</span> <span class="keyword">override</span> async <a class="code hl_class" href="class_e_t_1_1_e_t_task.html">ETTask</a> <a class="code hl_function" href="class_e_t_1_1_c2_r___login_handler.html#a5a7f10f7ae135aaa4801a2165f236937">Run</a>(<a class="code hl_class" href="class_e_t_1_1_session.html">Session</a> session, <a class="code hl_class" href="class_e_t_1_1_c2_r___login.html">C2R_Login</a> request, <a class="code hl_class" href="class_e_t_1_1_r2_c___login.html">R2C_Login</a> response, Action reply)</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            List&lt;AccountInfo&gt; accountInfos = await <a class="code hl_class" href="class_e_t_1_1_d_b_manager_component.html">DBManagerComponent</a>.<a class="code hl_variable" href="class_e_t_1_1_d_b_manager_component.html#a0de346d8f178328d55fcbd8437c2e835">Instance</a>.GetZoneDB(session.DomainZone()).Query&lt;<a class="code hl_class" href="class_e_t_1_1_account_info.html">AccountInfo</a>&gt;(account =&gt;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>                    account.<a class="code hl_property" href="class_e_t_1_1_account_info.html#ab7fa7e8395335cfacbb740fc3be67ba8">Account</a> == request.<a class="code hl_property" href="class_e_t_1_1_c2_r___login.html#a43620304b4b378d23e9ae324ebc8035a">Account</a> &amp;&amp; account.<a class="code hl_property" href="class_e_t_1_1_account_info.html#a47dd5b48192e60870eb3ac237e576551">Password</a> == request.<a class="code hl_property" href="class_e_t_1_1_c2_r___login.html#a6213882469115029cabf55005306f830">Password</a>);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            <span class="keywordflow">if</span> (accountInfos.Count == 0)</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                response.<a class="code hl_property" href="class_e_t_1_1_r2_c___login.html#a1c69a00e0ea3ceef8da64ac8352620be">Error</a> = ErrorCode.ERR_LoginError;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>                reply();</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            <span class="comment">// 随机分配一个Gate</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <a class="code hl_class" href="class_e_t_1_1_start_scene_config.html">StartSceneConfig</a> config = RealmGateAddressHelper.GetGate(session.DomainZone());</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <span class="comment">//Log.Debug($&quot;gate address: {MongoHelper.ToJson(config)}&quot;);</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <span class="comment">// 向gate请求一个key,客户端可以拿着这个key连接gate</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            <a class="code hl_class" href="class_e_t_1_1_g2_r___get_login_key.html">G2R_GetLoginKey</a> g2RGetLoginKey = (<a class="code hl_class" href="class_e_t_1_1_g2_r___get_login_key.html">G2R_GetLoginKey</a>) await <a class="code hl_class" href="class_e_t_1_1_actor_message_sender_component.html">ActorMessageSenderComponent</a>.<a class="code hl_property" href="class_e_t_1_1_actor_message_sender_component.html#a2d1d87a7ec72753e7d19cf009047abc1">Instance</a>.Call(config.<a class="code hl_variable" href="class_e_t_1_1_start_scene_config.html#ab13e84e12167e510eeb644f9272445a6">InstanceId</a>, <span class="keyword">new</span> <a class="code hl_class" href="class_e_t_1_1_r2_g___get_login_key.html">R2G_GetLoginKey</a>() { Account = request.<a class="code hl_property" href="class_e_t_1_1_c2_r___login.html#a43620304b4b378d23e9ae324ebc8035a">Account</a> });</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            response.<a class="code hl_property" href="class_e_t_1_1_r2_c___login.html#a7aa7ad3b9ce7c50e8d088aa78caf555d">Address</a> = config.<a class="code hl_property" href="class_e_t_1_1_start_scene_config.html#abcbd99454fe4c220d483627915f80f81">OuterIPPort</a>.ToString();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            response.<a class="code hl_property" href="class_e_t_1_1_r2_c___login.html#a1ce25fa863f5199b8641067444803b73">Key</a> = g2RGetLoginKey.<a class="code hl_property" href="class_e_t_1_1_g2_r___get_login_key.html#a3b1843c7c5065885dfb69fd85ac3e6a4">Key</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            response.<a class="code hl_property" href="class_e_t_1_1_r2_c___login.html#a7aa6f56281b014b5e62f3cdf71c27f2a">GateId</a> = g2RGetLoginKey.<a class="code hl_property" href="class_e_t_1_1_g2_r___get_login_key.html#a40a2c16cedcadc016b73001201e52c87">GateId</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            Log.Debug($<span class="stringliteral">&quot;用户登录：{request.Account}&quot;</span>);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            reply();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>}</div>
+<div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_a_m_rpc_handler_html"><div class="ttname"><a href="class_e_t_1_1_a_m_rpc_handler.html">ET.AMRpcHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="_a_m_rpc_handler_8cs_source.html#l00006">AMRpcHandler.cs:7</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_account_info_html"><div class="ttname"><a href="class_e_t_1_1_account_info.html">ET.AccountInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="_account_info_8cs_source.html#l00003">AccountInfo.cs:4</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_account_info_html_a47dd5b48192e60870eb3ac237e576551"><div class="ttname"><a href="class_e_t_1_1_account_info.html#a47dd5b48192e60870eb3ac237e576551">ET.AccountInfo.Password</a></div><div class="ttdeci">string Password</div><div class="ttdef"><b>Definition:</b> <a href="_account_info_8cs_source.html#l00009">AccountInfo.cs:9</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_account_info_html_ab7fa7e8395335cfacbb740fc3be67ba8"><div class="ttname"><a href="class_e_t_1_1_account_info.html#ab7fa7e8395335cfacbb740fc3be67ba8">ET.AccountInfo.Account</a></div><div class="ttdeci">string Account</div><div class="ttdef"><b>Definition:</b> <a href="_account_info_8cs_source.html#l00006">AccountInfo.cs:6</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_actor_message_sender_component_html"><div class="ttname"><a href="class_e_t_1_1_actor_message_sender_component.html">ET.ActorMessageSenderComponent</a></div><div class="ttdef"><b>Definition:</b> <a href="_actor_message_sender_component_8cs_source.html#l00005">ActorMessageSenderComponent.cs:6</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_actor_message_sender_component_html_a2d1d87a7ec72753e7d19cf009047abc1"><div class="ttname"><a href="class_e_t_1_1_actor_message_sender_component.html#a2d1d87a7ec72753e7d19cf009047abc1">ET.ActorMessageSenderComponent.Instance</a></div><div class="ttdeci">static ActorMessageSenderComponent Instance</div><div class="ttdef"><b>Definition:</b> <a href="_actor_message_sender_component_8cs_source.html#l00009">ActorMessageSenderComponent.cs:9</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_c2_r___login_handler_html"><div class="ttname"><a href="class_e_t_1_1_c2_r___login_handler.html">ET.C2R_LoginHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="_c2_r___login_handler_8cs_source.html#l00008">C2R_LoginHandler.cs:9</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_c2_r___login_handler_html_a5a7f10f7ae135aaa4801a2165f236937"><div class="ttname"><a href="class_e_t_1_1_c2_r___login_handler.html#a5a7f10f7ae135aaa4801a2165f236937">ET.C2R_LoginHandler.Run</a></div><div class="ttdeci">override async ETTask Run(Session session, C2R_Login request, R2C_Login response, Action reply)</div><div class="ttdef"><b>Definition:</b> <a href="_c2_r___login_handler_8cs_source.html#l00010">C2R_LoginHandler.cs:10</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_c2_r___login_html"><div class="ttname"><a href="class_e_t_1_1_c2_r___login.html">ET.C2R_Login</a></div><div class="ttdef"><b>Definition:</b> <a href="_server_2_model_2_generate_2_message_2_outer_message_8cs_source.html#l00400">OuterMessage.cs:401</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_c2_r___login_html_a43620304b4b378d23e9ae324ebc8035a"><div class="ttname"><a href="class_e_t_1_1_c2_r___login.html#a43620304b4b378d23e9ae324ebc8035a">ET.C2R_Login.Account</a></div><div class="ttdeci">string Account</div><div class="ttdef"><b>Definition:</b> <a href="_server_2_model_2_generate_2_message_2_outer_message_8cs_source.html#l00406">OuterMessage.cs:406</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_c2_r___login_html_a6213882469115029cabf55005306f830"><div class="ttname"><a href="class_e_t_1_1_c2_r___login.html#a6213882469115029cabf55005306f830">ET.C2R_Login.Password</a></div><div class="ttdeci">string Password</div><div class="ttdef"><b>Definition:</b> <a href="_server_2_model_2_generate_2_message_2_outer_message_8cs_source.html#l00409">OuterMessage.cs:409</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_d_b_manager_component_html"><div class="ttname"><a href="class_e_t_1_1_d_b_manager_component.html">ET.DBManagerComponent</a></div><div class="ttdef"><b>Definition:</b> <a href="_d_b_manager_component_8cs_source.html#l00003">DBManagerComponent.cs:4</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_d_b_manager_component_html_a0de346d8f178328d55fcbd8437c2e835"><div class="ttname"><a href="class_e_t_1_1_d_b_manager_component.html#a0de346d8f178328d55fcbd8437c2e835">ET.DBManagerComponent.Instance</a></div><div class="ttdeci">static DBManagerComponent Instance</div><div class="ttdef"><b>Definition:</b> <a href="_d_b_manager_component_8cs_source.html#l00005">DBManagerComponent.cs:5</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_e_t_task_html"><div class="ttname"><a href="class_e_t_1_1_e_t_task.html">ET.ETTask</a></div><div class="ttdef"><b>Definition:</b> <a href="_e_t_task_8cs_source.html#l00166">ETTask.cs:167</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_g2_r___get_login_key_html"><div class="ttname"><a href="class_e_t_1_1_g2_r___get_login_key.html">ET.G2R_GetLoginKey</a></div><div class="ttdef"><b>Definition:</b> <a href="_inner_message_8cs_source.html#l00282">InnerMessage.cs:283</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_g2_r___get_login_key_html_a3b1843c7c5065885dfb69fd85ac3e6a4"><div class="ttname"><a href="class_e_t_1_1_g2_r___get_login_key.html#a3b1843c7c5065885dfb69fd85ac3e6a4">ET.G2R_GetLoginKey.Key</a></div><div class="ttdeci">long Key</div><div class="ttdef"><b>Definition:</b> <a href="_inner_message_8cs_source.html#l00294">InnerMessage.cs:294</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_g2_r___get_login_key_html_a40a2c16cedcadc016b73001201e52c87"><div class="ttname"><a href="class_e_t_1_1_g2_r___get_login_key.html#a40a2c16cedcadc016b73001201e52c87">ET.G2R_GetLoginKey.GateId</a></div><div class="ttdeci">long GateId</div><div class="ttdef"><b>Definition:</b> <a href="_inner_message_8cs_source.html#l00297">InnerMessage.cs:297</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_r2_c___login_html"><div class="ttname"><a href="class_e_t_1_1_r2_c___login.html">ET.R2C_Login</a></div><div class="ttdef"><b>Definition:</b> <a href="_server_2_model_2_generate_2_message_2_outer_message_8cs_source.html#l00415">OuterMessage.cs:416</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_r2_c___login_html_a1c69a00e0ea3ceef8da64ac8352620be"><div class="ttname"><a href="class_e_t_1_1_r2_c___login.html#a1c69a00e0ea3ceef8da64ac8352620be">ET.R2C_Login.Error</a></div><div class="ttdeci">int Error</div><div class="ttdef"><b>Definition:</b> <a href="_server_2_model_2_generate_2_message_2_outer_message_8cs_source.html#l00421">OuterMessage.cs:421</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_r2_c___login_html_a1ce25fa863f5199b8641067444803b73"><div class="ttname"><a href="class_e_t_1_1_r2_c___login.html#a1ce25fa863f5199b8641067444803b73">ET.R2C_Login.Key</a></div><div class="ttdeci">long Key</div><div class="ttdef"><b>Definition:</b> <a href="_server_2_model_2_generate_2_message_2_outer_message_8cs_source.html#l00430">OuterMessage.cs:430</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_r2_c___login_html_a7aa6f56281b014b5e62f3cdf71c27f2a"><div class="ttname"><a href="class_e_t_1_1_r2_c___login.html#a7aa6f56281b014b5e62f3cdf71c27f2a">ET.R2C_Login.GateId</a></div><div class="ttdeci">long GateId</div><div class="ttdef"><b>Definition:</b> <a href="_server_2_model_2_generate_2_message_2_outer_message_8cs_source.html#l00433">OuterMessage.cs:433</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_r2_c___login_html_a7aa7ad3b9ce7c50e8d088aa78caf555d"><div class="ttname"><a href="class_e_t_1_1_r2_c___login.html#a7aa7ad3b9ce7c50e8d088aa78caf555d">ET.R2C_Login.Address</a></div><div class="ttdeci">string Address</div><div class="ttdef"><b>Definition:</b> <a href="_server_2_model_2_generate_2_message_2_outer_message_8cs_source.html#l00427">OuterMessage.cs:427</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_r2_g___get_login_key_html"><div class="ttname"><a href="class_e_t_1_1_r2_g___get_login_key.html">ET.R2G_GetLoginKey</a></div><div class="ttdef"><b>Definition:</b> <a href="_inner_message_8cs_source.html#l00270">InnerMessage.cs:271</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_session_html"><div class="ttname"><a href="class_e_t_1_1_session.html">ET.Session</a></div><div class="ttdef"><b>Definition:</b> <a href="_session_8cs_source.html#l00018">Session.cs:19</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_start_scene_config_html"><div class="ttname"><a href="class_e_t_1_1_start_scene_config.html">ET.StartSceneConfig</a></div><div class="ttdef"><b>Definition:</b> <a href="_server_2_model_2_generate_2_config_2_start_scene_config_8cs_source.html#l00070">StartSceneConfig.cs:71</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_start_scene_config_html_ab13e84e12167e510eeb644f9272445a6"><div class="ttname"><a href="class_e_t_1_1_start_scene_config.html#ab13e84e12167e510eeb644f9272445a6">ET.StartSceneConfig.InstanceId</a></div><div class="ttdeci">long InstanceId</div><div class="ttdef"><b>Definition:</b> <a href="_server_2_model_2_generate_2_config_partial_2_start_scene_config_8cs_source.html#l00059">StartSceneConfig.cs:59</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_start_scene_config_html_abcbd99454fe4c220d483627915f80f81"><div class="ttname"><a href="class_e_t_1_1_start_scene_config.html#abcbd99454fe4c220d483627915f80f81">ET.StartSceneConfig.OuterIPPort</a></div><div class="ttdeci">IPEndPoint OuterIPPort</div><div class="ttdef"><b>Definition:</b> <a href="_server_2_model_2_generate_2_config_partial_2_start_scene_config_8cs_source.html#l00098">StartSceneConfig.cs:99</a></div></div>
+<div class="ttc" id="anamespace_e_t_html"><div class="ttname"><a href="namespace_e_t.html">ET</a></div><div class="ttdef"><b>Definition:</b> <a href="_robot_2_app_2_program_8cs_source.html#l00008">Program.cs:9</a></div></div>
+<div class="ttc" id="anamespace_system_1_1_collections_1_1_generic_html"><div class="ttname"><a href="namespace_system_1_1_collections_1_1_generic.html">System.Collections.Generic</a></div></div>
+<div class="ttc" id="anamespace_system_1_1_collections_html"><div class="ttname"><a href="namespace_system_1_1_collections.html">System.Collections</a></div></div>
+<div class="ttc" id="anamespace_system_html"><div class="ttname"><a href="namespace_system.html">System</a></div><div class="ttdef"><b>Definition:</b> <a href="_async_method_builder_attribute_8cs_source.html#l00002">AsyncMethodBuilderAttribute.cs:3</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_1a445cb237d74f7a5f8d11ec3b0585cc.html">Server</a></li><li class="navelem"><a class="el" href="dir_0134ce7b2e6baa37e8c29df3d3b5b77b.html">Hotfix</a></li><li class="navelem"><a class="el" href="dir_41255c529257d9b5da5ae8954339fb27.html">Demo</a></li><li class="navelem"><a class="el" href="dir_99ab71e3f5ee46eadfa321ec3086e4e0.html">Realm</a></li><li class="navelem"><a class="el" href="_c2_r___login_handler_8cs.html">C2R_LoginHandler.cs</a></li>
+    <li class="footer">生成于 2022年 一月 23日 星期日 19:12:30 , 为 ET使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

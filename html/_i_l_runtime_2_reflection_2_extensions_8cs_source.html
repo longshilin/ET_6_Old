@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ET: Unity/Assets/ThirdParty/ILRuntime/Reflection/Extensions.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ET<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_i_l_runtime_2_reflection_2_extensions_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Extensions.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_i_l_runtime_2_reflection_2_extensions_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using</span> <a class="code hl_variable" href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_system.html">System</a>.<a class="code hl_namespace" href="namespace_system_1_1_collections.html">Collections</a>.<a class="code hl_namespace" href="namespace_system_1_1_collections_1_1_generic.html">Generic</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_system.html">System</a>.Linq;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_system.html">System</a>.Text;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_i_l_runtime.html">ILRuntime</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_mono.html">Mono</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_mono_1_1_cecil.html">Cecil</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_i_l_runtime.html">ILRuntime</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_c_l_r.html">CLR</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_c_l_r_1_1_method.html">Method</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_i_l_runtime.html">ILRuntime</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_c_l_r.html">CLR</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_c_l_r_1_1_type_system.html">TypeSystem</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="namespace_i_l_runtime_1_1_reflection.html">   10</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_i_l_runtime_1_1_reflection.html">ILRuntime.Reflection</a></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">static</span> <span class="keyword">class </span>Extensions</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">object</span> CreateInstance(<span class="keyword">this</span> <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute.html">CustomAttribute</a> attribute, <a class="code hl_interface" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a> at, <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil.html#add3b66373d989345fbe13d1e38bbc99babc366f2d0ba3d681e7a3899917c5d3de">Runtime</a>.Enviorment.AppDomain appdomain)</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            <span class="keywordtype">object</span> ins;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            List&lt;IType&gt; param = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            <span class="keywordflow">if</span> (at is <a class="code hl_class" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_type.html">ILType</a>)</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                var it = (<a class="code hl_class" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_type.html">ILType</a>)at;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                <span class="keywordflow">if</span> (!attribute.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute.html#a226003c282bd80fe62a2f350a0f90547">HasConstructorArguments</a>)</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                    ins = it.Instantiate(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                    ins = it.Instantiate(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                    <span class="keywordflow">if</span> (param == <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                        param = <span class="keyword">new</span> List&lt;IType&gt;();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                    param.Clear();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                    <span class="keywordtype">object</span>[] p = <span class="keyword">new</span> <span class="keywordtype">object</span>[attribute.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute.html#abff13d74a6374db087dec4c8ed67f5d7">ConstructorArguments</a>.Count];</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; attribute.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute.html#abff13d74a6374db087dec4c8ed67f5d7">ConstructorArguments</a>.Count; j++)</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                    {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                        var ca = attribute.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute.html#abff13d74a6374db087dec4c8ed67f5d7">ConstructorArguments</a>[j];</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                        param.Add(appdomain.GetType(ca.Type, <span class="keyword">null</span>, <span class="keyword">null</span>));</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                        p[j] = ca.Value;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                    }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                    var ctor = it.GetConstructor(param);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                    appdomain.Invoke(ctor, ins, p);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                <span class="keywordflow">if</span> (attribute.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute.html#a1f03ffe378d803d9ed8fe9bce66dfb71">HasProperties</a>)</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                    <span class="keywordtype">object</span>[] p = <span class="keyword">new</span> <span class="keywordtype">object</span>[1];</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                    <span class="keywordflow">foreach</span> (var j <span class="keywordflow">in</span> attribute.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute.html#a678243c46f574cb72e85be41948468dd">Properties</a>)</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                    {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                        p[0] = j.Argument.Value;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                        var setter = it.GetMethod(<span class="stringliteral">&quot;set_&quot;</span> + j.Name, 1);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                        appdomain.Invoke(setter, ins, p);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                    }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                <span class="keywordflow">if</span>(attribute.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute.html#a3ad85dbfeaff9d4bc97db15ba781ce2a">HasFields</a>)</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                    <span class="keywordflow">foreach</span> (var j <span class="keywordflow">in</span> attribute.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute.html#a2037c99d15913e9299e38dfe571bdb77">Fields</a>)</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                    {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                        <span class="keywordtype">int</span> index;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                        var field = it.GetField(j.Name, out index);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                        <span class="keywordflow">if</span> (field != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                            ((<a class="code hl_namespace" href="namespace_i_l_runtime.html">ILRuntime</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_runtime.html">Runtime</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter.html">Intepreter</a>.<a class="code hl_class" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_type_instance.html">ILTypeInstance</a>)ins)[index] = j.Argument.Value;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                    }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                ins = ((<a class="code hl_namespace" href="namespace_i_l_runtime.html">ILRuntime</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_runtime.html">Runtime</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter.html">Intepreter</a>.<a class="code hl_class" href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_type_instance.html">ILTypeInstance</a>)ins).CLRInstance;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                param = <span class="keyword">new</span> List&lt;IType&gt;();</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                <span class="keywordtype">object</span>[] p = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                <span class="keywordflow">if</span> (attribute.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute.html#a226003c282bd80fe62a2f350a0f90547">HasConstructorArguments</a>)</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                    p = <span class="keyword">new</span> <span class="keywordtype">object</span>[attribute.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute.html#abff13d74a6374db087dec4c8ed67f5d7">ConstructorArguments</a>.Count];</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; attribute.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute.html#abff13d74a6374db087dec4c8ed67f5d7">ConstructorArguments</a>.Count; j++)</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                    {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                        var ca = attribute.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute.html#abff13d74a6374db087dec4c8ed67f5d7">ConstructorArguments</a>[j];</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                        param.Add(appdomain.GetType(ca.Type, <span class="keyword">null</span>, <span class="keyword">null</span>));</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                        p[j] = ca.Value;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                    }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                ins = ((<a class="code hl_class" href="class_i_l_runtime_1_1_c_l_r_1_1_method_1_1_c_l_r_method.html">CLRMethod</a>)at.<a class="code hl_function" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#af485b64996efe2130b430f0a64986e73">GetConstructor</a>(param)).ConstructorInfo.Invoke(p);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                <span class="keywordflow">if</span> (attribute.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute.html#a1f03ffe378d803d9ed8fe9bce66dfb71">HasProperties</a>)</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                    <span class="keywordflow">foreach</span> (var j <span class="keywordflow">in</span> attribute.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute.html#a678243c46f574cb72e85be41948468dd">Properties</a>)</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                    {</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                        var prop = at.<a class="code hl_property" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#aba5d36ea5d2dcdc676920bc4ca1164fe">TypeForCLR</a>.GetProperty(j.Name);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                        <span class="keywordflow">if</span> (prop.PropertyType == typeof(Type) &amp;&amp; j.Argument.Value != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                        {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                            var type = appdomain.GetType(j.Argument.Value, <span class="keyword">null</span>, <span class="keyword">null</span>);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                            prop.SetValue(ins, type.TypeForCLR, <span class="keyword">null</span>);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                        }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                            prop.SetValue(ins, j.Argument.Value, <span class="keyword">null</span>);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                    }</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                <span class="keywordflow">if</span>(attribute.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute.html#a3ad85dbfeaff9d4bc97db15ba781ce2a">HasFields</a>)</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                    <span class="keywordflow">foreach</span>(var j <span class="keywordflow">in</span> attribute.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute.html#a2037c99d15913e9299e38dfe571bdb77">Fields</a>)</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                    {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                        var field = at.<a class="code hl_property" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#aba5d36ea5d2dcdc676920bc4ca1164fe">TypeForCLR</a>.GetField(j.Name);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                        field.SetValue(ins, j.Argument.Value);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                    }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            <span class="keywordflow">return</span> ins;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        }</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>}</div>
+<div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_method_1_1_c_l_r_method_html"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_method_1_1_c_l_r_method.html">ILRuntime.CLR.Method.CLRMethod</a></div><div class="ttdef"><b>Definition:</b> <a href="_c_l_r_method_8cs_source.html#l00011">CLRMethod.cs:12</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_type_html"><div class="ttname"><a href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_type.html">ILRuntime.CLR.TypeSystem.ILType</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_l_type_8cs_source.html#l00016">ILType.cs:17</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute_html"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute.html">ILRuntime.Mono.Cecil.CustomAttribute</a></div><div class="ttdef"><b>Definition:</b> <a href="_custom_attribute_8cs_source.html#l00073">CustomAttribute.cs:73</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute_html_a1f03ffe378d803d9ed8fe9bce66dfb71"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute.html#a1f03ffe378d803d9ed8fe9bce66dfb71">ILRuntime.Mono.Cecil.CustomAttribute.HasProperties</a></div><div class="ttdeci">bool HasProperties</div><div class="ttdef"><b>Definition:</b> <a href="_custom_attribute_8cs_source.html#l00135">CustomAttribute.cs:135</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute_html_a2037c99d15913e9299e38dfe571bdb77"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute.html#a2037c99d15913e9299e38dfe571bdb77">ILRuntime.Mono.Cecil.CustomAttribute.Fields</a></div><div class="ttdeci">Collection&lt; CustomAttributeNamedArgument &gt; Fields</div><div class="ttdef"><b>Definition:</b> <a href="_custom_attribute_8cs_source.html#l00124">CustomAttribute.cs:124</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute_html_a226003c282bd80fe62a2f350a0f90547"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute.html#a226003c282bd80fe62a2f350a0f90547">ILRuntime.Mono.Cecil.CustomAttribute.HasConstructorArguments</a></div><div class="ttdeci">bool HasConstructorArguments</div><div class="ttdef"><b>Definition:</b> <a href="_custom_attribute_8cs_source.html#l00097">CustomAttribute.cs:97</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute_html_a3ad85dbfeaff9d4bc97db15ba781ce2a"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute.html#a3ad85dbfeaff9d4bc97db15ba781ce2a">ILRuntime.Mono.Cecil.CustomAttribute.HasFields</a></div><div class="ttdeci">bool HasFields</div><div class="ttdef"><b>Definition:</b> <a href="_custom_attribute_8cs_source.html#l00116">CustomAttribute.cs:116</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute_html_a678243c46f574cb72e85be41948468dd"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute.html#a678243c46f574cb72e85be41948468dd">ILRuntime.Mono.Cecil.CustomAttribute.Properties</a></div><div class="ttdeci">Collection&lt; CustomAttributeNamedArgument &gt; Properties</div><div class="ttdef"><b>Definition:</b> <a href="_custom_attribute_8cs_source.html#l00143">CustomAttribute.cs:143</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute_html_abff13d74a6374db087dec4c8ed67f5d7"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute.html#abff13d74a6374db087dec4c8ed67f5d7">ILRuntime.Mono.Cecil.CustomAttribute.ConstructorArguments</a></div><div class="ttdeci">Collection&lt; CustomAttributeArgument &gt; ConstructorArguments</div><div class="ttdef"><b>Definition:</b> <a href="_custom_attribute_8cs_source.html#l00105">CustomAttribute.cs:105</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_type_instance_html"><div class="ttname"><a href="class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_type_instance.html">ILRuntime.Runtime.Intepreter.ILTypeInstance</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_l_type_instance_8cs_source.html#l00132">ILTypeInstance.cs:133</a></div></div>
+<div class="ttc" id="ainterface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type_html"><div class="ttname"><a href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">ILRuntime.CLR.TypeSystem.IType</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_type_8cs_source.html#l00011">IType.cs:12</a></div></div>
+<div class="ttc" id="ainterface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type_html_aba5d36ea5d2dcdc676920bc4ca1164fe"><div class="ttname"><a href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#aba5d36ea5d2dcdc676920bc4ca1164fe">ILRuntime.CLR.TypeSystem.IType.TypeForCLR</a></div><div class="ttdeci">Type TypeForCLR</div><div class="ttdef"><b>Definition:</b> <a href="_i_type_8cs_source.html#l00015">IType.cs:15</a></div></div>
+<div class="ttc" id="ainterface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type_html_af485b64996efe2130b430f0a64986e73"><div class="ttname"><a href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#af485b64996efe2130b430f0a64986e73">ILRuntime.CLR.TypeSystem.IType.GetConstructor</a></div><div class="ttdeci">IMethod GetConstructor(List&lt; IType &gt; param)</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_c_l_r_1_1_method_html"><div class="ttname"><a href="namespace_i_l_runtime_1_1_c_l_r_1_1_method.html">ILRuntime.CLR.Method</a></div><div class="ttdef"><b>Definition:</b> <a href="_c_l_r_method_8cs_source.html#l00009">CLRMethod.cs:10</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_c_l_r_1_1_type_system_html"><div class="ttname"><a href="namespace_i_l_runtime_1_1_c_l_r_1_1_type_system.html">ILRuntime.CLR.TypeSystem</a></div><div class="ttdef"><b>Definition:</b> <a href="_c_l_r_type_8cs_source.html#l00013">CLRType.cs:14</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_c_l_r_html"><div class="ttname"><a href="namespace_i_l_runtime_1_1_c_l_r.html">ILRuntime.CLR</a></div><div class="ttdef"><b>Definition:</b> <a href="_c_l_r_method_8cs_source.html#l00009">CLRMethod.cs:10</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_html"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil.html">ILRuntime.Mono.Cecil</a></div><div class="ttdef"><b>Definition:</b> <a href="_code_8cs_source.html#l00011">Code.cs:11</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_html_add3b66373d989345fbe13d1e38bbc99babc366f2d0ba3d681e7a3899917c5d3de"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil.html#add3b66373d989345fbe13d1e38bbc99babc366f2d0ba3d681e7a3899917c5d3de">ILRuntime.Mono.Cecil.MethodImplAttributes.Runtime</a></div><div class="ttdeci">@ Runtime</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_html"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono.html">ILRuntime.Mono</a></div><div class="ttdef"><b>Definition:</b> <a href="_code_8cs_source.html#l00011">Code.cs:11</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_reflection_html"><div class="ttname"><a href="namespace_i_l_runtime_1_1_reflection.html">ILRuntime.Reflection</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_l_runtime_2_reflection_2_extensions_8cs_source.html#l00010">Extensions.cs:11</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_html"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter.html">ILRuntime.Runtime.Intepreter</a></div><div class="ttdef"><b>Definition:</b> <a href="_delegate_adapter_8cs_source.html#l00012">DelegateAdapter.cs:13</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_html"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime.html">ILRuntime.Runtime</a></div><div class="ttdef"><b>Definition:</b> <a href="_c_l_r_bindings_8cs_source.html#l00005">CLRBindings.cs:6</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_html"><div class="ttname"><a href="namespace_i_l_runtime.html">ILRuntime</a></div><div class="ttdef"><b>Definition:</b> <a href="_c_l_r_bindings_8cs_source.html#l00005">CLRBindings.cs:6</a></div></div>
+<div class="ttc" id="anamespace_system_1_1_collections_1_1_generic_html"><div class="ttname"><a href="namespace_system_1_1_collections_1_1_generic.html">System.Collections.Generic</a></div></div>
+<div class="ttc" id="anamespace_system_1_1_collections_html"><div class="ttname"><a href="namespace_system_1_1_collections.html">System.Collections</a></div></div>
+<div class="ttc" id="anamespace_system_html"><div class="ttname"><a href="namespace_system.html">System</a></div><div class="ttdef"><b>Definition:</b> <a href="_async_method_builder_attribute_8cs_source.html#l00002">AsyncMethodBuilderAttribute.cs:3</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_3b33dffaa21a2ac6f7978a949ffd4e41.html">Assets</a></li><li class="navelem"><a class="el" href="dir_5501c55c26a8d51fbc1fd8b7d8df04c3.html">ThirdParty</a></li><li class="navelem"><a class="el" href="dir_d7574f457851e45807c5ee4c7e6fc148.html">ILRuntime</a></li><li class="navelem"><a class="el" href="dir_9a13ff747ed301576689a378312c5653.html">Reflection</a></li><li class="navelem"><a class="el" href="_i_l_runtime_2_reflection_2_extensions_8cs.html">Extensions.cs</a></li>
+    <li class="footer">生成于 2022年 一月 23日 星期日 19:12:36 , 为 ET使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

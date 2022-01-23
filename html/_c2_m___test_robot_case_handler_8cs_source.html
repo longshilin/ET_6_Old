@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ET: Server/Hotfix/Demo/C2M_TestRobotCaseHandler.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ET<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_c2_m___test_robot_case_handler_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">C2M_TestRobotCaseHandler.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_c2_m___test_robot_case_handler_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using</span> <a class="code hl_variable" href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_e_t.html">ET</a></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>{</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_e_t_1_1_c2_m___test_robot_case_handler.html">    5</a></span>        <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_e_t_1_1_c2_m___test_robot_case_handler.html">C2M_TestRobotCaseHandler</a> : <a class="code hl_class" href="class_e_t_1_1_a_m_actor_location_rpc_handler.html">AMActorLocationRpcHandler</a>&lt;Unit, C2M_TestRobotCase, M2C_TestRobotCase&gt;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>        {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_e_t_1_1_c2_m___test_robot_case_handler.html#ab109c5b0117ea33b5e08918838de1655">    7</a></span>                <span class="keyword">protected</span> <span class="keyword">override</span> async <a class="code hl_class" href="class_e_t_1_1_e_t_task.html">ETTask</a> <a class="code hl_function" href="class_e_t_1_1_c2_m___test_robot_case_handler.html#ab109c5b0117ea33b5e08918838de1655">Run</a>(<a class="code hl_class" href="class_e_t_1_1_unit.html">Unit</a> unit, <a class="code hl_class" href="class_e_t_1_1_c2_m___test_robot_case.html">C2M_TestRobotCase</a> request, <a class="code hl_class" href="class_e_t_1_1_m2_c___test_robot_case.html">M2C_TestRobotCase</a> response, Action reply)</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>                {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>                        response.<a class="code hl_property" href="class_e_t_1_1_m2_c___test_robot_case.html#a61c0fc5593e75e8e936532bf80bae1f5">N</a> = request.<a class="code hl_property" href="class_e_t_1_1_c2_m___test_robot_case.html#a19266ac5111849bc687d17e8df597a13">N</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>                        reply();</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>                        await <a class="code hl_class" href="class_e_t_1_1_e_t_task.html">ETTask</a>.<a class="code hl_property" href="class_e_t_1_1_e_t_task.html#a20b41ed39b282c031c96d1c9c914fb4b">CompletedTask</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>                }</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        }</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>}</div>
+<div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_a_m_actor_location_rpc_handler_html"><div class="ttname"><a href="class_e_t_1_1_a_m_actor_location_rpc_handler.html">ET.AMActorLocationRpcHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="_a_m_actor_location_rpc_handler_8cs_source.html#l00006">AMActorLocationRpcHandler.cs:7</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_c2_m___test_robot_case_handler_html"><div class="ttname"><a href="class_e_t_1_1_c2_m___test_robot_case_handler.html">ET.C2M_TestRobotCaseHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="_c2_m___test_robot_case_handler_8cs_source.html#l00005">C2M_TestRobotCaseHandler.cs:6</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_c2_m___test_robot_case_handler_html_ab109c5b0117ea33b5e08918838de1655"><div class="ttname"><a href="class_e_t_1_1_c2_m___test_robot_case_handler.html#ab109c5b0117ea33b5e08918838de1655">ET.C2M_TestRobotCaseHandler.Run</a></div><div class="ttdeci">override async ETTask Run(Unit unit, C2M_TestRobotCase request, M2C_TestRobotCase response, Action reply)</div><div class="ttdef"><b>Definition:</b> <a href="_c2_m___test_robot_case_handler_8cs_source.html#l00007">C2M_TestRobotCaseHandler.cs:7</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_c2_m___test_robot_case_html"><div class="ttname"><a href="class_e_t_1_1_c2_m___test_robot_case.html">ET.C2M_TestRobotCase</a></div><div class="ttdef"><b>Definition:</b> <a href="_server_2_model_2_generate_2_message_2_outer_message_8cs_source.html#l00483">OuterMessage.cs:484</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_c2_m___test_robot_case_html_a19266ac5111849bc687d17e8df597a13"><div class="ttname"><a href="class_e_t_1_1_c2_m___test_robot_case.html#a19266ac5111849bc687d17e8df597a13">ET.C2M_TestRobotCase.N</a></div><div class="ttdeci">int N</div><div class="ttdef"><b>Definition:</b> <a href="_server_2_model_2_generate_2_message_2_outer_message_8cs_source.html#l00489">OuterMessage.cs:489</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_e_t_task_html"><div class="ttname"><a href="class_e_t_1_1_e_t_task.html">ET.ETTask</a></div><div class="ttdef"><b>Definition:</b> <a href="_e_t_task_8cs_source.html#l00166">ETTask.cs:167</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_e_t_task_html_a20b41ed39b282c031c96d1c9c914fb4b"><div class="ttname"><a href="class_e_t_1_1_e_t_task.html#a20b41ed39b282c031c96d1c9c914fb4b">ET.ETTask.CompletedTask</a></div><div class="ttdeci">static ETTaskCompleted CompletedTask</div><div class="ttdef"><b>Definition:</b> <a href="_e_t_task_8cs_source.html#l00014">ETTask.cs:15</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_m2_c___test_robot_case_html"><div class="ttname"><a href="class_e_t_1_1_m2_c___test_robot_case.html">ET.M2C_TestRobotCase</a></div><div class="ttdef"><b>Definition:</b> <a href="_server_2_model_2_generate_2_message_2_outer_message_8cs_source.html#l00495">OuterMessage.cs:496</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_m2_c___test_robot_case_html_a61c0fc5593e75e8e936532bf80bae1f5"><div class="ttname"><a href="class_e_t_1_1_m2_c___test_robot_case.html#a61c0fc5593e75e8e936532bf80bae1f5">ET.M2C_TestRobotCase.N</a></div><div class="ttdeci">int N</div><div class="ttdef"><b>Definition:</b> <a href="_server_2_model_2_generate_2_message_2_outer_message_8cs_source.html#l00507">OuterMessage.cs:507</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_unit_html"><div class="ttname"><a href="class_e_t_1_1_unit.html">ET.Unit</a></div><div class="ttdef"><b>Definition:</b> <a href="_server_2_model_2_demo_2_unit_2_unit_8cs_source.html#l00007">Unit.cs:8</a></div></div>
+<div class="ttc" id="anamespace_e_t_html"><div class="ttname"><a href="namespace_e_t.html">ET</a></div><div class="ttdef"><b>Definition:</b> <a href="_robot_2_app_2_program_8cs_source.html#l00008">Program.cs:9</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_1a445cb237d74f7a5f8d11ec3b0585cc.html">Server</a></li><li class="navelem"><a class="el" href="dir_0134ce7b2e6baa37e8c29df3d3b5b77b.html">Hotfix</a></li><li class="navelem"><a class="el" href="dir_41255c529257d9b5da5ae8954339fb27.html">Demo</a></li><li class="navelem"><a class="el" href="_c2_m___test_robot_case_handler_8cs.html">C2M_TestRobotCaseHandler.cs</a></li>
+    <li class="footer">生成于 2022年 一月 23日 星期日 19:12:30 , 为 ET使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

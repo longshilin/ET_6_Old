@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ET: Unity/Assets/ThirdParty/ILRuntime/Mono.Cecil/symbols/mdb/Mono.Cecil.Mdb/MdbWriter.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ET<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_mdb_writer_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">MdbWriter.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_mdb_writer_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Author:</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//   Jb Evain (jbevain@gmail.com)</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">// Copyright (c) 2008 - 2015 Jb Evain</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// Copyright (c) 2008 - 2011 Novell, Inc.</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">//</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// Licensed under the MIT/X11 license.</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">//</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">using</span> <a class="code hl_variable" href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_system.html">System</a>.<a class="code hl_namespace" href="namespace_system_1_1_collections.html">Collections</a>.<a class="code hl_namespace" href="namespace_system_1_1_collections_1_1_generic.html">Generic</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_system.html">System</a>.IO;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_i_l_runtime.html">ILRuntime</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_mono.html">Mono</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_mono_1_1_cecil.html">Cecil</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil.html">Cil</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_i_l_runtime.html">ILRuntime</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_mono.html">Mono</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_mono_1_1_collections.html">Collections</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_mono_1_1_collections_1_1_generic.html">Generic</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_i_l_runtime.html">ILRuntime</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_mono.html">Mono</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_mono_1_1_compiler_services.html">CompilerServices</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer.html">SymbolWriter</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb.html">ILRuntime.Mono.Cecil.Mdb</a> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer_provider.html">   21</a></span>        <span class="keyword">public</span> sealed <span class="keyword">class </span><a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer_provider.html">MdbWriterProvider</a> : <a class="code hl_interface" href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_i_symbol_writer_provider.html">ISymbolWriterProvider</a> {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer_provider.html#a52834eba8ff3f8f7c8dab0497fa49ed7">   23</a></span>                <span class="keyword">public</span> <a class="code hl_interface" href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_i_symbol_writer.html">ISymbolWriter</a> <a class="code hl_function" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer_provider.html#a52834eba8ff3f8f7c8dab0497fa49ed7">GetSymbolWriter</a> (<a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_module_definition.html">ModuleDefinition</a> module, <span class="keywordtype">string</span> fileName)</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                        Mixin.CheckModule (module);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                        Mixin.CheckFileName (fileName);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer.html">MdbWriter</a> (module, fileName);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer_provider.html#a0f230b61abf3c941c4ac66849b10be9a">   31</a></span>                <span class="keyword">public</span> <a class="code hl_interface" href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_i_symbol_writer.html">ISymbolWriter</a> <a class="code hl_function" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer_provider.html#a0f230b61abf3c941c4ac66849b10be9a">GetSymbolWriter</a> (<a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_module_definition.html">ModuleDefinition</a> module, Stream symbolStream)</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                        <span class="keywordflow">throw</span> <span class="keyword">new</span> NotImplementedException ();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer.html">   37</a></span>        <span class="keyword">public</span> sealed <span class="keyword">class </span><a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer.html">MdbWriter</a> : <a class="code hl_interface" href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_i_symbol_writer.html">ISymbolWriter</a> {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                readonly <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_module_definition.html">ModuleDefinition</a> module;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                readonly <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_mono_symbol_writer.html">MonoSymbolWriter</a> writer;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                readonly Dictionary&lt;string, SourceFile&gt; source_files;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer.html#a8d7ecc87d06dc8c41aae6b73714a973e">   43</a></span>                <span class="keyword">public</span> <a class="code hl_function" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer.html#a8d7ecc87d06dc8c41aae6b73714a973e">MdbWriter</a> (<a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_module_definition.html">ModuleDefinition</a> module, <span class="keywordtype">string</span> assembly)</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                        this.module = module;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                        this.writer = <span class="keyword">new</span> <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_mono_symbol_writer.html">MonoSymbolWriter</a> (assembly);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                        this.source_files = <span class="keyword">new</span> Dictionary&lt;string, SourceFile&gt; ();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer.html#a691046fd8d873dc3e2e84ad4045ae09b">   50</a></span>                <span class="keyword">public</span> <a class="code hl_interface" href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_i_symbol_reader_provider.html">ISymbolReaderProvider</a> <a class="code hl_function" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer.html#a691046fd8d873dc3e2e84ad4045ae09b">GetReaderProvider</a> ()</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_reader_provider.html">MdbReaderProvider</a> ();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                SourceFile GetSourceFile (<a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_document.html">Document</a> document)</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                        var url = document.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_document.html#ae50a240301fa1fd85e0bcc172360972f">Url</a>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                        SourceFile source_file;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                        <span class="keywordflow">if</span> (source_files.TryGetValue (url, out source_file))</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                                <span class="keywordflow">return</span> source_file;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                        var entry = writer.DefineDocument (url, <span class="keyword">null</span>, document.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_document.html#a3e5d90f548a197455c120da998a29c77">Hash</a> != <span class="keyword">null</span> &amp;&amp; document.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_document.html#a3e5d90f548a197455c120da998a29c77">Hash</a>.Length == 16 ? document.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_document.html#a3e5d90f548a197455c120da998a29c77">Hash</a> : <span class="keyword">null</span>);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                        var compile_unit = writer.DefineCompilationUnit (entry);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                        source_file = <span class="keyword">new</span> SourceFile (compile_unit, entry);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                        source_files.Add (url, source_file);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                        <span class="keywordflow">return</span> source_file;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                <span class="keywordtype">void</span> Populate (<a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html">Collection&lt;SequencePoint&gt;</a> sequencePoints, <span class="keywordtype">int</span> [] offsets,</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                        <span class="keywordtype">int</span> [] startRows, <span class="keywordtype">int</span> [] endRows, <span class="keywordtype">int</span> [] startCols, <span class="keywordtype">int</span> [] endCols, out SourceFile file)</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                        SourceFile source_file = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; sequencePoints.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html#abae64567798bae323ffb5b2f6ee2698c">Count</a>; i++) {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                                var sequence_point = sequencePoints [i];</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                                offsets [i] = sequence_point.Offset;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                                <span class="keywordflow">if</span> (source_file == <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                                        source_file = GetSourceFile (sequence_point.Document);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                                startRows [i] = sequence_point.StartLine;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                                endRows [i] = sequence_point.EndLine;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                                startCols [i] = sequence_point.StartColumn;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                                endCols [i] = sequence_point.EndColumn;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                        }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                        file = source_file;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer.html#ace749d76b95b40227dc8f3224d94b8c4">   92</a></span>                <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer.html#ace749d76b95b40227dc8f3224d94b8c4">Write</a> (<a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_method_debug_information.html">MethodDebugInformation</a> info)</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                        var method = <span class="keyword">new</span> SourceMethod (info.method);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                        var sequence_points = info.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_method_debug_information.html#ad28622a7637b7f3fc46424b34fe410f3">SequencePoints</a>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                        <span class="keywordtype">int</span> count = sequence_points.Count;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                        <span class="keywordflow">if</span> (count == 0)</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                        var offsets = <span class="keyword">new</span> <span class="keywordtype">int</span> [count];</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                        var start_rows = <span class="keyword">new</span> <span class="keywordtype">int</span> [count];</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                        var end_rows = <span class="keyword">new</span> <span class="keywordtype">int</span> [count];</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                        var start_cols = <span class="keyword">new</span> <span class="keywordtype">int</span> [count];</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                        var end_cols = <span class="keyword">new</span> <span class="keywordtype">int</span> [count];</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                        SourceFile file;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                        Populate (sequence_points, offsets, start_rows, end_rows, start_cols, end_cols, out file);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                        var builder = writer.OpenMethod (file.CompilationUnit, 0, method);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; count; i++) {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                                builder.MarkSequencePoint (</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                                        offsets [i],</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                                        file.CompilationUnit.SourceFile,</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                                        start_rows [i],</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                                        start_cols [i],</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                                        end_rows [i],</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                                        end_cols [i],</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                                        <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                        }</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>                        <span class="keywordflow">if</span> (info.scope != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                                WriteRootScope (info.scope, info);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>                        writer.CloseMethod ();</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                }</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>                <span class="keywordtype">void</span> WriteRootScope (<a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_scope_debug_information.html">ScopeDebugInformation</a> scope, <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_method_debug_information.html">MethodDebugInformation</a> info)</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>                {</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>                        WriteScopeVariables (scope);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>                        <span class="keywordflow">if</span> (scope.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_scope_debug_information.html#a265e92726e73b959539c66f74d5c2467">HasScopes</a>)</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                                WriteScopes (scope.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_scope_debug_information.html#a789a1d123d6091f9a92ce9c99d490a48">Scopes</a>, info);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>                }</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                <span class="keywordtype">void</span> WriteScope (<a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_scope_debug_information.html">ScopeDebugInformation</a> scope, <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_method_debug_information.html">MethodDebugInformation</a> info)</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                {</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                        writer.OpenScope (scope.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_scope_debug_information.html#a12e7ee554877195f9ddff7280225f178">Start</a>.<a class="code hl_property" href="struct_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_instruction_offset.html#a020efa699b2d938ff39c318c47c1fc6a">Offset</a>);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                        WriteScopeVariables (scope);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>                        <span class="keywordflow">if</span> (scope.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_scope_debug_information.html#a265e92726e73b959539c66f74d5c2467">HasScopes</a>)</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>                                WriteScopes (scope.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_scope_debug_information.html#a789a1d123d6091f9a92ce9c99d490a48">Scopes</a>, info);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                        writer.CloseScope (scope.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_scope_debug_information.html#a868018c1ed6f44bf0883ca399fcbe553">End</a>.<a class="code hl_property" href="struct_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_instruction_offset.html#afd0e7f35462ec5cd432b785337e52435">IsEndOfMethod</a> ? info.code_size : scope.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_scope_debug_information.html#a868018c1ed6f44bf0883ca399fcbe553">End</a>.<a class="code hl_property" href="struct_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_instruction_offset.html#a020efa699b2d938ff39c318c47c1fc6a">Offset</a>);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>                }</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                <span class="keywordtype">void</span> WriteScopes (<a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html">Collection&lt;ScopeDebugInformation&gt;</a> scopes, <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_method_debug_information.html">MethodDebugInformation</a> info)</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                {</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; scopes.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html#abae64567798bae323ffb5b2f6ee2698c">Count</a>; i++)</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>                                WriteScope (scopes [i], info);</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>                }</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                <span class="keywordtype">void</span> WriteScopeVariables (<a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_scope_debug_information.html">ScopeDebugInformation</a> scope)</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>                {</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>                        <span class="keywordflow">if</span> (!scope.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_scope_debug_information.html#a70fa5978618f701fcfd08511d07e5146">HasVariables</a>)</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>                                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>                        <span class="keywordflow">foreach</span> (var variable <span class="keywordflow">in</span> scope.variables)</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>                                <span class="keywordflow">if</span> (!<span class="keywordtype">string</span>.IsNullOrEmpty (variable.Name))</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>                                        writer.DefineLocalVariable (variable.Index, variable.Name);</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>                }</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer.html#ab4b08e8ced97ced4e25bbda6e8eada69">  165</a></span>                <span class="keyword">public</span> <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_image_debug_header.html">ImageDebugHeader</a> <a class="code hl_function" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer.html#ab4b08e8ced97ced4e25bbda6e8eada69">GetDebugHeader</a> ()</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>                {</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>                        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_image_debug_header.html">ImageDebugHeader</a> ();</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>                }</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer.html#a3602f3df6e2cc91fed40340fcc6ed8f5">  170</a></span>                <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer.html#a3602f3df6e2cc91fed40340fcc6ed8f5">Dispose</a> ()</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>                {</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>                        writer.WriteSymbolFile (module.Mvid);</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>                }</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                <span class="keyword">class </span>SourceFile : <a class="code hl_interface" href="interface_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_i_source_file.html">ISourceFile</a> {</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>                        readonly <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_compile_unit_entry.html">CompileUnitEntry</a> compilation_unit;</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                        readonly <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_source_file_entry.html">SourceFileEntry</a> entry;</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                        <span class="keyword">public</span> <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_source_file_entry.html">SourceFileEntry</a> Entry {</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>                                <span class="keyword">get</span> { <span class="keywordflow">return</span> entry; }</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>                        }</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>                        <span class="keyword">public</span> <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_compile_unit_entry.html">CompileUnitEntry</a> CompilationUnit {</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>                                <span class="keyword">get</span> { <span class="keywordflow">return</span> compilation_unit; }</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>                        }</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>                        <span class="keyword">public</span> SourceFile (<a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_compile_unit_entry.html">CompileUnitEntry</a> comp_unit, <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_source_file_entry.html">SourceFileEntry</a> entry)</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>                        {</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>                                this.compilation_unit = comp_unit;</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>                                this.entry = entry;</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>                        }</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>                }</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>                <span class="keyword">class </span>SourceMethod : <a class="code hl_interface" href="interface_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_i_method_def.html">IMethodDef</a> {</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>                        readonly MethodDefinition method;</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>                        <span class="keyword">public</span> <span class="keywordtype">string</span> Name {</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>                                <span class="keyword">get</span> { <span class="keywordflow">return</span> method.<a class="code hl_property" href="interface_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_i_method_def.html#a3f1a30676e63c67953388c2191d047e4">Name</a>; }</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>                        }</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>                        <span class="keyword">public</span> <span class="keywordtype">int</span> Token {</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>                                <span class="keyword">get</span> { <span class="keywordflow">return</span> method.MetadataToken.ToInt32 (); }</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>                        }</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                        <span class="keyword">public</span> SourceMethod (MethodDefinition method)</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>                        {</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>                                this.method = method;</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>                        }</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>                }</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        }</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>}</div>
+<div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_document_html"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_document.html">ILRuntime.Mono.Cecil.Cil.Document</a></div><div class="ttdef"><b>Definition:</b> <a href="_document_8cs_source.html#l00048">Document.cs:48</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_document_html_a3e5d90f548a197455c120da998a29c77"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_document.html#a3e5d90f548a197455c120da998a29c77">ILRuntime.Mono.Cecil.Cil.Document.Hash</a></div><div class="ttdeci">byte[] Hash</div><div class="ttdef"><b>Definition:</b> <a href="_document_8cs_source.html#l00105">Document.cs:105</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_document_html_ae50a240301fa1fd85e0bcc172360972f"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_document.html#ae50a240301fa1fd85e0bcc172360972f">ILRuntime.Mono.Cecil.Cil.Document.Url</a></div><div class="ttdeci">string Url</div><div class="ttdef"><b>Definition:</b> <a href="_document_8cs_source.html#l00060">Document.cs:60</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_image_debug_header_html"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_image_debug_header.html">ILRuntime.Mono.Cecil.Cil.ImageDebugHeader</a></div><div class="ttdef"><b>Definition:</b> <a href="_symbols_8cs_source.html#l00044">Symbols.cs:44</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_method_debug_information_html"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_method_debug_information.html">ILRuntime.Mono.Cecil.Cil.MethodDebugInformation</a></div><div class="ttdef"><b>Definition:</b> <a href="_symbols_8cs_source.html#l00671">Symbols.cs:671</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_method_debug_information_html_ad28622a7637b7f3fc46424b34fe410f3"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_method_debug_information.html#ad28622a7637b7f3fc46424b34fe410f3">ILRuntime.Mono.Cecil.Cil.MethodDebugInformation.SequencePoints</a></div><div class="ttdeci">Collection&lt; SequencePoint &gt; SequencePoints</div><div class="ttdef"><b>Definition:</b> <a href="_symbols_8cs_source.html#l00688">Symbols.cs:688</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_scope_debug_information_html"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_scope_debug_information.html">ILRuntime.Mono.Cecil.Cil.ScopeDebugInformation</a></div><div class="ttdef"><b>Definition:</b> <a href="_symbols_8cs_source.html#l00093">Symbols.cs:93</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_scope_debug_information_html_a12e7ee554877195f9ddff7280225f178"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_scope_debug_information.html#a12e7ee554877195f9ddff7280225f178">ILRuntime.Mono.Cecil.Cil.ScopeDebugInformation.Start</a></div><div class="ttdeci">InstructionOffset Start</div><div class="ttdef"><b>Definition:</b> <a href="_symbols_8cs_source.html#l00102">Symbols.cs:102</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_scope_debug_information_html_a265e92726e73b959539c66f74d5c2467"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_scope_debug_information.html#a265e92726e73b959539c66f74d5c2467">ILRuntime.Mono.Cecil.Cil.ScopeDebugInformation.HasScopes</a></div><div class="ttdeci">bool HasScopes</div><div class="ttdef"><b>Definition:</b> <a href="_symbols_8cs_source.html#l00117">Symbols.cs:117</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_scope_debug_information_html_a70fa5978618f701fcfd08511d07e5146"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_scope_debug_information.html#a70fa5978618f701fcfd08511d07e5146">ILRuntime.Mono.Cecil.Cil.ScopeDebugInformation.HasVariables</a></div><div class="ttdeci">bool HasVariables</div><div class="ttdef"><b>Definition:</b> <a href="_symbols_8cs_source.html#l00130">Symbols.cs:130</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_scope_debug_information_html_a789a1d123d6091f9a92ce9c99d490a48"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_scope_debug_information.html#a789a1d123d6091f9a92ce9c99d490a48">ILRuntime.Mono.Cecil.Cil.ScopeDebugInformation.Scopes</a></div><div class="ttdeci">Collection&lt; ScopeDebugInformation &gt; Scopes</div><div class="ttdef"><b>Definition:</b> <a href="_symbols_8cs_source.html#l00121">Symbols.cs:121</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_scope_debug_information_html_a868018c1ed6f44bf0883ca399fcbe553"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_scope_debug_information.html#a868018c1ed6f44bf0883ca399fcbe553">ILRuntime.Mono.Cecil.Cil.ScopeDebugInformation.End</a></div><div class="ttdeci">InstructionOffset End</div><div class="ttdef"><b>Definition:</b> <a href="_symbols_8cs_source.html#l00107">Symbols.cs:107</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_reader_provider_html"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_reader_provider.html">ILRuntime.Mono.Cecil.Mdb.MdbReaderProvider</a></div><div class="ttdef"><b>Definition:</b> <a href="_mdb_reader_8cs_source.html#l00021">MdbReader.cs:21</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer_html"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer.html">ILRuntime.Mono.Cecil.Mdb.MdbWriter</a></div><div class="ttdef"><b>Definition:</b> <a href="_mdb_writer_8cs_source.html#l00037">MdbWriter.cs:37</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer_html_a3602f3df6e2cc91fed40340fcc6ed8f5"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer.html#a3602f3df6e2cc91fed40340fcc6ed8f5">ILRuntime.Mono.Cecil.Mdb.MdbWriter.Dispose</a></div><div class="ttdeci">void Dispose()</div><div class="ttdef"><b>Definition:</b> <a href="_mdb_writer_8cs_source.html#l00170">MdbWriter.cs:170</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer_html_a691046fd8d873dc3e2e84ad4045ae09b"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer.html#a691046fd8d873dc3e2e84ad4045ae09b">ILRuntime.Mono.Cecil.Mdb.MdbWriter.GetReaderProvider</a></div><div class="ttdeci">ISymbolReaderProvider GetReaderProvider()</div><div class="ttdef"><b>Definition:</b> <a href="_mdb_writer_8cs_source.html#l00050">MdbWriter.cs:50</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer_html_a8d7ecc87d06dc8c41aae6b73714a973e"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer.html#a8d7ecc87d06dc8c41aae6b73714a973e">ILRuntime.Mono.Cecil.Mdb.MdbWriter.MdbWriter</a></div><div class="ttdeci">MdbWriter(ModuleDefinition module, string assembly)</div><div class="ttdef"><b>Definition:</b> <a href="_mdb_writer_8cs_source.html#l00043">MdbWriter.cs:43</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer_html_ab4b08e8ced97ced4e25bbda6e8eada69"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer.html#ab4b08e8ced97ced4e25bbda6e8eada69">ILRuntime.Mono.Cecil.Mdb.MdbWriter.GetDebugHeader</a></div><div class="ttdeci">ImageDebugHeader GetDebugHeader()</div><div class="ttdef"><b>Definition:</b> <a href="_mdb_writer_8cs_source.html#l00165">MdbWriter.cs:165</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer_html_ace749d76b95b40227dc8f3224d94b8c4"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer.html#ace749d76b95b40227dc8f3224d94b8c4">ILRuntime.Mono.Cecil.Mdb.MdbWriter.Write</a></div><div class="ttdeci">void Write(MethodDebugInformation info)</div><div class="ttdef"><b>Definition:</b> <a href="_mdb_writer_8cs_source.html#l00092">MdbWriter.cs:92</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer_provider_html"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer_provider.html">ILRuntime.Mono.Cecil.Mdb.MdbWriterProvider</a></div><div class="ttdef"><b>Definition:</b> <a href="_mdb_writer_8cs_source.html#l00021">MdbWriter.cs:21</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer_provider_html_a0f230b61abf3c941c4ac66849b10be9a"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer_provider.html#a0f230b61abf3c941c4ac66849b10be9a">ILRuntime.Mono.Cecil.Mdb.MdbWriterProvider.GetSymbolWriter</a></div><div class="ttdeci">ISymbolWriter GetSymbolWriter(ModuleDefinition module, Stream symbolStream)</div><div class="ttdef"><b>Definition:</b> <a href="_mdb_writer_8cs_source.html#l00031">MdbWriter.cs:31</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer_provider_html_a52834eba8ff3f8f7c8dab0497fa49ed7"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_1_1_mdb_writer_provider.html#a52834eba8ff3f8f7c8dab0497fa49ed7">ILRuntime.Mono.Cecil.Mdb.MdbWriterProvider.GetSymbolWriter</a></div><div class="ttdeci">ISymbolWriter GetSymbolWriter(ModuleDefinition module, string fileName)</div><div class="ttdef"><b>Definition:</b> <a href="_mdb_writer_8cs_source.html#l00023">MdbWriter.cs:23</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_module_definition_html"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_module_definition.html">ILRuntime.Mono.Cecil.ModuleDefinition</a></div><div class="ttdef"><b>Definition:</b> <a href="_module_definition_8cs_source.html#l00232">ModuleDefinition.cs:232</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection_html"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html">ILRuntime.Mono.Collections.Generic.Collection</a></div><div class="ttdef"><b>Definition:</b> <a href="_collection_8cs_source.html#l00019">Collection.cs:19</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection_html_abae64567798bae323ffb5b2f6ee2698c"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html#abae64567798bae323ffb5b2f6ee2698c">ILRuntime.Mono.Collections.Generic.Collection.Count</a></div><div class="ttdeci">int Count</div><div class="ttdef"><b>Definition:</b> <a href="_collection_8cs_source.html#l00025">Collection.cs:25</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_compile_unit_entry_html"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_compile_unit_entry.html">ILRuntime.Mono.CompilerServices.SymbolWriter.CompileUnitEntry</a></div><div class="ttdef"><b>Definition:</b> <a href="_mono_symbol_table_8cs_source.html#l00518">MonoSymbolTable.cs:519</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_mono_symbol_writer_html"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_mono_symbol_writer.html">ILRuntime.Mono.CompilerServices.SymbolWriter.MonoSymbolWriter</a></div><div class="ttdef"><b>Definition:</b> <a href="_mono_symbol_writer_8cs_source.html#l00041">MonoSymbolWriter.cs:42</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_source_file_entry_html"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_source_file_entry.html">ILRuntime.Mono.CompilerServices.SymbolWriter.SourceFileEntry</a></div><div class="ttdef"><b>Definition:</b> <a href="_mono_symbol_table_8cs_source.html#l00674">MonoSymbolTable.cs:675</a></div></div>
+<div class="ttc" id="ainterface_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_i_symbol_reader_provider_html"><div class="ttname"><a href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_i_symbol_reader_provider.html">ILRuntime.Mono.Cecil.Cil.ISymbolReaderProvider</a></div><div class="ttdef"><b>Definition:</b> <a href="_symbols_8cs_source.html#l00809">Symbols.cs:809</a></div></div>
+<div class="ttc" id="ainterface_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_i_symbol_writer_html"><div class="ttname"><a href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_i_symbol_writer.html">ILRuntime.Mono.Cecil.Cil.ISymbolWriter</a></div><div class="ttdef"><b>Definition:</b> <a href="_symbols_8cs_source.html#l01065">Symbols.cs:1065</a></div></div>
+<div class="ttc" id="ainterface_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_i_symbol_writer_provider_html"><div class="ttname"><a href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_i_symbol_writer_provider.html">ILRuntime.Mono.Cecil.Cil.ISymbolWriterProvider</a></div><div class="ttdef"><b>Definition:</b> <a href="_symbols_8cs_source.html#l01072">Symbols.cs:1072</a></div></div>
+<div class="ttc" id="ainterface_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_i_method_def_html"><div class="ttname"><a href="interface_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_i_method_def.html">ILRuntime.Mono.CompilerServices.SymbolWriter.IMethodDef</a></div><div class="ttdef"><b>Definition:</b> <a href="_mono_symbol_file_8cs_source.html#l00105">MonoSymbolFile.cs:106</a></div></div>
+<div class="ttc" id="ainterface_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_i_method_def_html_a3f1a30676e63c67953388c2191d047e4"><div class="ttname"><a href="interface_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_i_method_def.html#a3f1a30676e63c67953388c2191d047e4">ILRuntime.Mono.CompilerServices.SymbolWriter.IMethodDef.Name</a></div><div class="ttdeci">string Name</div><div class="ttdef"><b>Definition:</b> <a href="_mono_symbol_file_8cs_source.html#l00107">MonoSymbolFile.cs:107</a></div></div>
+<div class="ttc" id="ainterface_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_i_source_file_html"><div class="ttname"><a href="interface_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_i_source_file.html">ILRuntime.Mono.CompilerServices.SymbolWriter.ISourceFile</a></div><div class="ttdef"><b>Definition:</b> <a href="_mono_symbol_file_8cs_source.html#l00091">MonoSymbolFile.cs:92</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_html"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil.html">ILRuntime.Mono.Cecil.Cil</a></div><div class="ttdef"><b>Definition:</b> <a href="_code_8cs_source.html#l00011">Code.cs:11</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb_html"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_mdb.html">ILRuntime.Mono.Cecil.Mdb</a></div><div class="ttdef"><b>Definition:</b> <a href="_mdb_reader_8cs_source.html#l00019">MdbReader.cs:19</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_html"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil.html">ILRuntime.Mono.Cecil</a></div><div class="ttdef"><b>Definition:</b> <a href="_code_8cs_source.html#l00011">Code.cs:11</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_html"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_collections_1_1_generic.html">ILRuntime.Mono.Collections.Generic</a></div><div class="ttdef"><b>Definition:</b> <a href="_collection_8cs_source.html#l00017">Collection.cs:17</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_collections_html"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_collections.html">ILRuntime.Mono.Collections</a></div><div class="ttdef"><b>Definition:</b> <a href="_collection_8cs_source.html#l00017">Collection.cs:17</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_html"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer.html">ILRuntime.Mono.CompilerServices.SymbolWriter</a></div><div class="ttdef"><b>Definition:</b> <a href="_mono_symbol_file_8cs_source.html#l00037">MonoSymbolFile.cs:38</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_compiler_services_html"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_compiler_services.html">ILRuntime.Mono.CompilerServices</a></div><div class="ttdef"><b>Definition:</b> <a href="_mono_symbol_file_8cs_source.html#l00037">MonoSymbolFile.cs:38</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_html"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono.html">ILRuntime.Mono</a></div><div class="ttdef"><b>Definition:</b> <a href="_code_8cs_source.html#l00011">Code.cs:11</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_html"><div class="ttname"><a href="namespace_i_l_runtime.html">ILRuntime</a></div><div class="ttdef"><b>Definition:</b> <a href="_c_l_r_bindings_8cs_source.html#l00005">CLRBindings.cs:6</a></div></div>
+<div class="ttc" id="anamespace_system_1_1_collections_1_1_generic_html"><div class="ttname"><a href="namespace_system_1_1_collections_1_1_generic.html">System.Collections.Generic</a></div></div>
+<div class="ttc" id="anamespace_system_1_1_collections_html"><div class="ttname"><a href="namespace_system_1_1_collections.html">System.Collections</a></div></div>
+<div class="ttc" id="anamespace_system_html"><div class="ttname"><a href="namespace_system.html">System</a></div><div class="ttdef"><b>Definition:</b> <a href="_async_method_builder_attribute_8cs_source.html#l00002">AsyncMethodBuilderAttribute.cs:3</a></div></div>
+<div class="ttc" id="astruct_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_instruction_offset_html_a020efa699b2d938ff39c318c47c1fc6a"><div class="ttname"><a href="struct_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_instruction_offset.html#a020efa699b2d938ff39c318c47c1fc6a">ILRuntime.Mono.Cecil.Cil.InstructionOffset.Offset</a></div><div class="ttdeci">int Offset</div><div class="ttdef"><b>Definition:</b> <a href="_symbols_8cs_source.html#l00195">Symbols.cs:195</a></div></div>
+<div class="ttc" id="astruct_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_instruction_offset_html_afd0e7f35462ec5cd432b785337e52435"><div class="ttname"><a href="struct_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_instruction_offset.html#afd0e7f35462ec5cd432b785337e52435">ILRuntime.Mono.Cecil.Cil.InstructionOffset.IsEndOfMethod</a></div><div class="ttdeci">bool IsEndOfMethod</div><div class="ttdef"><b>Definition:</b> <a href="_symbols_8cs_source.html#l00206">Symbols.cs:206</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_3b33dffaa21a2ac6f7978a949ffd4e41.html">Assets</a></li><li class="navelem"><a class="el" href="dir_5501c55c26a8d51fbc1fd8b7d8df04c3.html">ThirdParty</a></li><li class="navelem"><a class="el" href="dir_d7574f457851e45807c5ee4c7e6fc148.html">ILRuntime</a></li><li class="navelem"><a class="el" href="dir_4b4645f3c34003797707cfb8ce358d82.html">Mono.Cecil</a></li><li class="navelem"><a class="el" href="dir_a752457934c5d5b9c485c35f763b4f98.html">symbols</a></li><li class="navelem"><a class="el" href="dir_0f0c74267bdebcceb43a6038f0d2d213.html">mdb</a></li><li class="navelem"><a class="el" href="dir_0a85431b2106e5fc33b1a7c34c68255a.html">Mono.Cecil.Mdb</a></li><li class="navelem"><a class="el" href="_mdb_writer_8cs.html">MdbWriter.cs</a></li>
+    <li class="footer">生成于 2022年 一月 23日 星期日 19:12:34 , 为 ET使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

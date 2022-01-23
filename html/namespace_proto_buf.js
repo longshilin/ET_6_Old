@@ -1,0 +1,75 @@
+var namespace_proto_buf =
+[
+    [ "Meta", "namespace_proto_buf_1_1_meta.html", "namespace_proto_buf_1_1_meta" ],
+    [ "Serializers", "namespace_proto_buf_1_1_serializers.html", "namespace_proto_buf_1_1_serializers" ],
+    [ "BufferExtension", "class_proto_buf_1_1_buffer_extension.html", null ],
+    [ "DiscriminatedUnion128", "struct_proto_buf_1_1_discriminated_union128.html", "struct_proto_buf_1_1_discriminated_union128" ],
+    [ "DiscriminatedUnion128Object", "struct_proto_buf_1_1_discriminated_union128_object.html", "struct_proto_buf_1_1_discriminated_union128_object" ],
+    [ "DiscriminatedUnion32", "struct_proto_buf_1_1_discriminated_union32.html", "struct_proto_buf_1_1_discriminated_union32" ],
+    [ "DiscriminatedUnion32Object", "struct_proto_buf_1_1_discriminated_union32_object.html", "struct_proto_buf_1_1_discriminated_union32_object" ],
+    [ "DiscriminatedUnion64", "struct_proto_buf_1_1_discriminated_union64.html", "struct_proto_buf_1_1_discriminated_union64" ],
+    [ "DiscriminatedUnion64Object", "struct_proto_buf_1_1_discriminated_union64_object.html", "struct_proto_buf_1_1_discriminated_union64_object" ],
+    [ "DiscriminatedUnionObject", "struct_proto_buf_1_1_discriminated_union_object.html", "struct_proto_buf_1_1_discriminated_union_object" ],
+    [ "Extensible", "class_proto_buf_1_1_extensible.html", "class_proto_buf_1_1_extensible" ],
+    [ "IExtensible", "interface_proto_buf_1_1_i_extensible.html", "interface_proto_buf_1_1_i_extensible" ],
+    [ "IExtension", "interface_proto_buf_1_1_i_extension.html", "interface_proto_buf_1_1_i_extension" ],
+    [ "IExtensionResettable", "interface_proto_buf_1_1_i_extension_resettable.html", "interface_proto_buf_1_1_i_extension_resettable" ],
+    [ "ProtoAfterDeserializationAttribute", "class_proto_buf_1_1_proto_after_deserialization_attribute.html", null ],
+    [ "ProtoAfterSerializationAttribute", "class_proto_buf_1_1_proto_after_serialization_attribute.html", null ],
+    [ "ProtoBeforeDeserializationAttribute", "class_proto_buf_1_1_proto_before_deserialization_attribute.html", null ],
+    [ "ProtoBeforeSerializationAttribute", "class_proto_buf_1_1_proto_before_serialization_attribute.html", null ],
+    [ "ProtobufPropertyHelper", "class_proto_buf_1_1_protobuf_property_helper.html", null ],
+    [ "ProtoContractAttribute", "class_proto_buf_1_1_proto_contract_attribute.html", "class_proto_buf_1_1_proto_contract_attribute" ],
+    [ "ProtoConverterAttribute", "class_proto_buf_1_1_proto_converter_attribute.html", null ],
+    [ "ProtoEnumAttribute", "class_proto_buf_1_1_proto_enum_attribute.html", "class_proto_buf_1_1_proto_enum_attribute" ],
+    [ "ProtoException", "class_proto_buf_1_1_proto_exception.html", "class_proto_buf_1_1_proto_exception" ],
+    [ "ProtoIgnoreAttribute", "class_proto_buf_1_1_proto_ignore_attribute.html", null ],
+    [ "ProtoIncludeAttribute", "class_proto_buf_1_1_proto_include_attribute.html", "class_proto_buf_1_1_proto_include_attribute" ],
+    [ "ProtoMapAttribute", "class_proto_buf_1_1_proto_map_attribute.html", "class_proto_buf_1_1_proto_map_attribute" ],
+    [ "ProtoMemberAttribute", "class_proto_buf_1_1_proto_member_attribute.html", "class_proto_buf_1_1_proto_member_attribute" ],
+    [ "ProtoPartialIgnoreAttribute", "class_proto_buf_1_1_proto_partial_ignore_attribute.html", "class_proto_buf_1_1_proto_partial_ignore_attribute" ],
+    [ "ProtoPartialMemberAttribute", "class_proto_buf_1_1_proto_partial_member_attribute.html", "class_proto_buf_1_1_proto_partial_member_attribute" ],
+    [ "ProtoReader", "class_proto_buf_1_1_proto_reader.html", "class_proto_buf_1_1_proto_reader" ],
+    [ "ProtoWriter", "class_proto_buf_1_1_proto_writer.html", "class_proto_buf_1_1_proto_writer" ],
+    [ "PType", "class_proto_buf_1_1_p_type.html", "class_proto_buf_1_1_p_type" ],
+    [ "SerializationContext", "class_proto_buf_1_1_serialization_context.html", "class_proto_buf_1_1_serialization_context" ],
+    [ "SubItemToken", "struct_proto_buf_1_1_sub_item_token.html", null ],
+    [ "DataFormat", "namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7", [
+      [ "Default", "namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7a7a1920d61156abc05a60135aefe8bc67", null ],
+      [ "ZigZag", "namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7aeacf3a101066b77f05938928385bd8d9", null ],
+      [ "TwosComplement", "namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7a870af7303a8bb73181a05007456fe8c3", null ],
+      [ "FixedSize", "namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7a8bc66ef376d634aaa714727085b9acfe", null ],
+      [ "Group", "namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7a03937134cedab9078be39a77ee3a48a0", null ],
+      [ "WellKnown", "namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7a42e11452f72d703d440ece85a1364451", null ]
+    ] ],
+    [ "ImplicitFields", "namespace_proto_buf.html#a73d6731b392e6d97ffb4280a4a80181b", [
+      [ "None", "namespace_proto_buf.html#a73d6731b392e6d97ffb4280a4a80181ba6adf97f83acf6453d4a6a4b1070f3754", null ],
+      [ "AllPublic", "namespace_proto_buf.html#a73d6731b392e6d97ffb4280a4a80181ba00efa75f5b55c854aad34eadd0e2a6a1", null ],
+      [ "AllFields", "namespace_proto_buf.html#a73d6731b392e6d97ffb4280a4a80181ba01e471eb49b92e739da22d38278aba6e", null ]
+    ] ],
+    [ "MemberSerializationOptions", "namespace_proto_buf.html#acec8c883ec6fcd9fd6138148af0f92b8", [
+      [ "None", "namespace_proto_buf.html#acec8c883ec6fcd9fd6138148af0f92b8a6adf97f83acf6453d4a6a4b1070f3754", null ],
+      [ "Packed", "namespace_proto_buf.html#acec8c883ec6fcd9fd6138148af0f92b8aa1977c3f68d4d3bbfe14d0e51a575482", null ],
+      [ "Required", "namespace_proto_buf.html#acec8c883ec6fcd9fd6138148af0f92b8ab651efdb98a5d6bd2b3935d0c3f4a5e2", null ],
+      [ "AsReference", "namespace_proto_buf.html#acec8c883ec6fcd9fd6138148af0f92b8a1df09af342c12b80da83fbab4aafe9a7", null ],
+      [ "DynamicType", "namespace_proto_buf.html#acec8c883ec6fcd9fd6138148af0f92b8a6f7e954364c4d2ec31f2bf14f96450eb", null ],
+      [ "OverwriteList", "namespace_proto_buf.html#acec8c883ec6fcd9fd6138148af0f92b8afdaa656b75e19205a91fe5eb9670eef0", null ],
+      [ "AsReferenceHasValue", "namespace_proto_buf.html#acec8c883ec6fcd9fd6138148af0f92b8a616050476a23c144daae492960ff247e", null ]
+    ] ],
+    [ "PrefixStyle", "namespace_proto_buf.html#ad0e7acc01d186ea358e62c31f19d73f5", [
+      [ "None", "namespace_proto_buf.html#ad0e7acc01d186ea358e62c31f19d73f5a6adf97f83acf6453d4a6a4b1070f3754", null ],
+      [ "Base128", "namespace_proto_buf.html#ad0e7acc01d186ea358e62c31f19d73f5a769255198d7277eb3127865419c6ee5e", null ],
+      [ "Fixed32", "namespace_proto_buf.html#ad0e7acc01d186ea358e62c31f19d73f5a6b4ba49845be85c2fbc01c3761cc154d", null ],
+      [ "Fixed32BigEndian", "namespace_proto_buf.html#ad0e7acc01d186ea358e62c31f19d73f5a1441972d1de1ce3afa4bd8589030ce32", null ]
+    ] ],
+    [ "WireType", "namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1", [
+      [ "None", "namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1a6adf97f83acf6453d4a6a4b1070f3754", null ],
+      [ "Variant", "namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1a492f18b60811bf85ce118c0c6a1a5c4a", null ],
+      [ "Fixed64", "namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1a6f5b591c351f00c8464817031216b22e", null ],
+      [ "String", "namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1a27118326006d3829667a400ad23d5d98", null ],
+      [ "StartGroup", "namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1a8468a30ae7d8f8c41daed04cf1f7253d", null ],
+      [ "EndGroup", "namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1a1e540b80dde88838699e9238de8b675e", null ],
+      [ "Fixed32", "namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1a6b4ba49845be85c2fbc01c3761cc154d", null ],
+      [ "SignedVariant", "namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1a799ff71fda7204237fb49b8921ecd425", null ]
+    ] ]
+];

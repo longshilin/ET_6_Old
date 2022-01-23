@@ -1,0 +1,37 @@
+var _type_reference_8cs =
+[
+    [ "ILRuntime.Mono.Cecil.TypeReference", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_reference.html", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_reference" ],
+    [ "MetadataType", "_type_reference_8cs.html#a26e57fe20277c41ec732cf0493ff110a", [
+      [ "Void", "_type_reference_8cs.html#a26e57fe20277c41ec732cf0493ff110aa81ceb48a978444906d80119200aa358d", null ],
+      [ "Boolean", "_type_reference_8cs.html#a26e57fe20277c41ec732cf0493ff110aa27226c864bac7454a8504f8edb15d95b", null ],
+      [ "Char", "_type_reference_8cs.html#a26e57fe20277c41ec732cf0493ff110aa8e95e84813830072b7516cfaa7dbc1a9", null ],
+      [ "SByte", "_type_reference_8cs.html#a26e57fe20277c41ec732cf0493ff110aa7e76fb67fc7b4cb0004bc45f2bd92723", null ],
+      [ "Byte", "_type_reference_8cs.html#a26e57fe20277c41ec732cf0493ff110aaa245c3230debe5c956484ecc6fa93877", null ],
+      [ "Int16", "_type_reference_8cs.html#a26e57fe20277c41ec732cf0493ff110aa39bc2ae44b184207f560ff8619823208", null ],
+      [ "UInt16", "_type_reference_8cs.html#a26e57fe20277c41ec732cf0493ff110aa8bd950a9d7779b83f5c30046c9aaf1cf", null ],
+      [ "Int32", "_type_reference_8cs.html#a26e57fe20277c41ec732cf0493ff110aac06129f6e6e15c09328365e553f1dc31", null ],
+      [ "UInt32", "_type_reference_8cs.html#a26e57fe20277c41ec732cf0493ff110aae7956ed7be1c5025a27ed3cb42a396bd", null ],
+      [ "Int64", "_type_reference_8cs.html#a26e57fe20277c41ec732cf0493ff110aafbde23b11d7e59af7828e81144c8b487", null ],
+      [ "UInt64", "_type_reference_8cs.html#a26e57fe20277c41ec732cf0493ff110aaaf71234725f0470ccf993e263a8b820a", null ],
+      [ "Single", "_type_reference_8cs.html#a26e57fe20277c41ec732cf0493ff110aa66ba162102bbf6ae31b522aec561735e", null ],
+      [ "Double", "_type_reference_8cs.html#a26e57fe20277c41ec732cf0493ff110aad909d38d705ce75386dd86e611a82f5b", null ],
+      [ "String", "_type_reference_8cs.html#a26e57fe20277c41ec732cf0493ff110aa27118326006d3829667a400ad23d5d98", null ],
+      [ "Pointer", "_type_reference_8cs.html#a26e57fe20277c41ec732cf0493ff110aa61cf8510205077b6f5491d38cd44c0f7", null ],
+      [ "ByReference", "_type_reference_8cs.html#a26e57fe20277c41ec732cf0493ff110aa14c8f55d70991895a619a26cee6b7a90", null ],
+      [ "ValueType", "_type_reference_8cs.html#a26e57fe20277c41ec732cf0493ff110aaed8819d3d6597312c0619016462c3640", null ],
+      [ "Class", "_type_reference_8cs.html#a26e57fe20277c41ec732cf0493ff110aa9bd81329febf6efe22788e03ddeaf0af", null ],
+      [ "Var", "_type_reference_8cs.html#a26e57fe20277c41ec732cf0493ff110aa5a92344ee95acf10c31901b36418be77", null ],
+      [ "Array", "_type_reference_8cs.html#a26e57fe20277c41ec732cf0493ff110aa4410ec34d9e6c1a68100ca0ce033fb17", null ],
+      [ "GenericInstance", "_type_reference_8cs.html#a26e57fe20277c41ec732cf0493ff110aa7b838a8fec7a0f80c8e8f93847f2fa27", null ],
+      [ "TypedByReference", "_type_reference_8cs.html#a26e57fe20277c41ec732cf0493ff110aa6e7d4e2edf90ebd1e267732d65df8e5c", null ],
+      [ "IntPtr", "_type_reference_8cs.html#a26e57fe20277c41ec732cf0493ff110aad01da193dfa4b0185a3f33d8c85d8b21", null ],
+      [ "UIntPtr", "_type_reference_8cs.html#a26e57fe20277c41ec732cf0493ff110aaf3d6390301b7bfeb54d505b8d1a6850f", null ],
+      [ "FunctionPointer", "_type_reference_8cs.html#a26e57fe20277c41ec732cf0493ff110aa208adf8bf2acdb0d453083d29d6e7afb", null ],
+      [ "Object", "_type_reference_8cs.html#a26e57fe20277c41ec732cf0493ff110aa497031794414a552435f90151ac3b54b", null ],
+      [ "MVar", "_type_reference_8cs.html#a26e57fe20277c41ec732cf0493ff110aaf0ae12ae94cf282f1e8da8dcdd41af4c", null ],
+      [ "RequiredModifier", "_type_reference_8cs.html#a26e57fe20277c41ec732cf0493ff110aad9122798103c3854f9ab7f4e8cc525b2", null ],
+      [ "OptionalModifier", "_type_reference_8cs.html#a26e57fe20277c41ec732cf0493ff110aad26017c10f0cbd3ea741df77489d5b7b", null ],
+      [ "Sentinel", "_type_reference_8cs.html#a26e57fe20277c41ec732cf0493ff110aa7b71dfec5c8dd524069eed634dc0a3a5", null ],
+      [ "Pinned", "_type_reference_8cs.html#a26e57fe20277c41ec732cf0493ff110aa3c5e891bff07947cbae2fda89162df9f", null ]
+    ] ]
+];

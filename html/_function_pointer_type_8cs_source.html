@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ET: Unity/Assets/ThirdParty/ILRuntime/Mono.Cecil/Mono.Cecil/FunctionPointerType.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ET<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_function_pointer_type_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">FunctionPointerType.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_function_pointer_type_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Author:</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//   Jb Evain (jbevain@gmail.com)</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">// Copyright (c) 2008 - 2015 Jb Evain</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// Copyright (c) 2008 - 2011 Novell, Inc.</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">//</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// Licensed under the MIT/X11 license.</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">//</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">using</span> <a class="code hl_variable" href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_system.html">System</a>.Text;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_i_l_runtime.html">ILRuntime</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_mono.html">Mono</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_mono_1_1_collections.html">Collections</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_mono_1_1_collections_1_1_generic.html">Generic</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="_function_pointer_type_8cs.html#ad088a2eeac95b74c0566592c62376eab">   14</a></span><span class="keyword">using</span> <a class="code hl_typedef" href="_array_type_8cs.html#ad088a2eeac95b74c0566592c62376eab">MD</a> = <a class="code hl_namespace" href="namespace_i_l_runtime.html">ILRuntime</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_mono.html">Mono</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_mono_1_1_cecil.html">Cecil</a>.<a class="code hl_namespace" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html">Metadata</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_i_l_runtime_1_1_mono_1_1_cecil.html">ILRuntime.Mono.Cecil</a> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html">   18</a></span>        <span class="keyword">public</span> sealed <span class="keyword">class </span><a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html">FunctionPointerType</a> : <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_specification.html">TypeSpecification</a>, <a class="code hl_interface" href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_method_signature.html">IMethodSignature</a> {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                readonly <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_method_reference.html">MethodReference</a> <span class="keyword">function</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#af9b1d21324396e089a66a192166e6e9e">   22</a></span>                <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#af9b1d21324396e089a66a192166e6e9e">HasThis</a> {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                        <span class="keyword">get</span> { <span class="keywordflow">return</span> <span class="keyword">function</span>.HasThis; }</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                        <span class="keyword">set</span> { <span class="keyword">function</span>.HasThis = value; }</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                }</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#a508a50b61dc6a47fc5d07bf25727ac3b">   27</a></span>                <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#a508a50b61dc6a47fc5d07bf25727ac3b">ExplicitThis</a> {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                        <span class="keyword">get</span> { <span class="keywordflow">return</span> <span class="keyword">function</span>.ExplicitThis; }</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                        <span class="keyword">set</span> { <span class="keyword">function</span>.ExplicitThis = value; }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#aec1f839898efc1819aa526e44319d70e">   32</a></span>                <span class="keyword">public</span> <a class="code hl_enumeration" href="namespace_i_l_runtime_1_1_mono_1_1_cecil.html#a59e6e6d233f7d1f2ecf9f98255672199">MethodCallingConvention</a> <a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#aec1f839898efc1819aa526e44319d70e">CallingConvention</a> {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                        <span class="keyword">get</span> { <span class="keywordflow">return</span> <span class="keyword">function</span>.CallingConvention; }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                        <span class="keyword">set</span> { <span class="keyword">function</span>.CallingConvention = value; }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#a76acb15987500152cfd0c33249cde2f3">   37</a></span>                <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#a76acb15987500152cfd0c33249cde2f3">HasParameters</a> {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                        <span class="keyword">get</span> { <span class="keywordflow">return</span> <span class="keyword">function</span>.HasParameters; }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#ad7fdf3a458bbd89146b009819065531c">   41</a></span>                <span class="keyword">public</span> <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html">Collection&lt;ParameterDefinition&gt;</a> <a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#ad7fdf3a458bbd89146b009819065531c">Parameters</a> {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                        <span class="keyword">get</span> { <span class="keywordflow">return</span> <span class="keyword">function</span>.Parameters; }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#a63b848f4f24699d04966a1c462cf17af">   45</a></span>                <span class="keyword">public</span> <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_reference.html">TypeReference</a> <a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#a63b848f4f24699d04966a1c462cf17af">ReturnType</a> {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                        <span class="keyword">get</span> { <span class="keywordflow">return</span> <span class="keyword">function</span>.MethodReturnType.ReturnType; }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                        <span class="keyword">set</span> { <span class="keyword">function</span>.MethodReturnType.ReturnType = value; }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#a481570ac953a8aa4f0a27f5eccfa328c">   50</a></span>                <span class="keyword">public</span> <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_method_return_type.html">MethodReturnType</a> <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_method_return_type.html">MethodReturnType</a> {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                        <span class="keyword">get</span> { <span class="keywordflow">return</span> <span class="keyword">function</span>.<a class="code hl_function" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_method_return_type.html#a3d84e44455c11cd79940dfb48e9e2e50">MethodReturnType</a>; }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#a87854127c41fac7e0fe88cbdf59560a0">   54</a></span>                <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#a87854127c41fac7e0fe88cbdf59560a0">Name</a> {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                        <span class="keyword">get</span> { <span class="keywordflow">return</span> <span class="keyword">function</span>.Name; }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                        <span class="keyword">set</span> { <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException (); }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#a818ff271df5c8c74bab544e599343077">   59</a></span>                <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#a818ff271df5c8c74bab544e599343077">Namespace</a> {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                        <span class="keyword">get</span> { <span class="keywordflow">return</span> <span class="keywordtype">string</span>.Empty; }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                        <span class="keyword">set</span> { <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException (); }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                }</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#ae78692e4f55a86bd8f8610966f2fb86b">   64</a></span>                <span class="keyword">public</span> <span class="keyword">override</span> <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_module_definition.html">ModuleDefinition</a> <a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#ae78692e4f55a86bd8f8610966f2fb86b">Module</a> {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                        <span class="keyword">get</span> { <span class="keywordflow">return</span> <a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#a63b848f4f24699d04966a1c462cf17af">ReturnType</a>.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_reference.html#a445448406e72eddac31eb6e651a6e61c">Module</a>; }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#aee1b2ff20940f9106b81b9430badc6c0">   68</a></span>                <span class="keyword">public</span> <span class="keyword">override</span> <a class="code hl_interface" href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_metadata_scope.html">IMetadataScope</a> <a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#aee1b2ff20940f9106b81b9430badc6c0">Scope</a> {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                        <span class="keyword">get</span> { <span class="keywordflow">return</span> <span class="keyword">function</span>.ReturnType.Scope; }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                        <span class="keyword">set</span> { <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException (); }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#a04c73834400e95c38dd025b92be03ded">   73</a></span>                <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#a04c73834400e95c38dd025b92be03ded">IsFunctionPointer</a> {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                        <span class="keyword">get</span> { <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#a0a9e68670eee16f06f2098c54e1db9a3">   77</a></span>                <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#a0a9e68670eee16f06f2098c54e1db9a3">ContainsGenericParameter</a> {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                        <span class="keyword">get</span> { <span class="keywordflow">return</span> <span class="keyword">function</span>.ContainsGenericParameter; }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#acd29aee48313867a4df3fef22b341465">   81</a></span>                <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#acd29aee48313867a4df3fef22b341465">FullName</a> {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                        <span class="keyword">get</span> {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                                var signature = <span class="keyword">new</span> StringBuilder ();</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                                signature.Append (<span class="keyword">function</span>.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#a87854127c41fac7e0fe88cbdf59560a0">Name</a>);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                                signature.Append (<span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                                signature.Append (<span class="keyword">function</span>.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#a63b848f4f24699d04966a1c462cf17af">ReturnType</a>.<a class="code hl_property" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_reference.html#accd7019f52c65786cb2c1fc25fc475b1">FullName</a>);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                                signature.Append (<span class="stringliteral">&quot; *&quot;</span>);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                                this.MethodSignatureFullName (signature);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                                <span class="keywordflow">return</span> signature.ToString ();</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                        }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#ac501c90cfda037349c7c463b4c5e8a17">   93</a></span>                <span class="keyword">public</span> <a class="code hl_function" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#ac501c90cfda037349c7c463b4c5e8a17">FunctionPointerType</a> ()</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                        : base (null)</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                        this.<span class="keyword">function</span> = <span class="keyword">new</span> MethodReference ();</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                        this.<span class="keyword">function</span>.Name = <span class="stringliteral">&quot;method&quot;</span>;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                        this.etype = <a class="code hl_typedef" href="_array_type_8cs.html#ad088a2eeac95b74c0566592c62376eab">MD</a>.ElementType.FnPtr;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#aca8237314b68a24a948959c3ac80066e">  101</a></span>                <span class="keyword">public</span> <span class="keyword">override</span> <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_definition.html">TypeDefinition</a> <a class="code hl_function" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#aca8237314b68a24a948959c3ac80066e">Resolve</a> ()</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                {</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                        <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                }</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#a3c6400a6c9dec2e6eafe37e85db8c9f4">  106</a></span>                <span class="keyword">public</span> <span class="keyword">override</span> <a class="code hl_class" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_reference.html">TypeReference</a> <a class="code hl_function" href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#a3c6400a6c9dec2e6eafe37e85db8c9f4">GetElementType</a> ()</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                        <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        }</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>}</div>
+<div class="ttc" id="a_array_type_8cs_html_ad088a2eeac95b74c0566592c62376eab"><div class="ttname"><a href="_array_type_8cs.html#ad088a2eeac95b74c0566592c62376eab">MD</a></div><div class="ttdeci">ILRuntime.Mono.Cecil.Metadata MD</div><div class="ttdef"><b>Definition:</b> <a href="_array_type_8cs_source.html#l00015">ArrayType.cs:15</a></div></div>
+<div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type_html"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html">ILRuntime.Mono.Cecil.FunctionPointerType</a></div><div class="ttdef"><b>Definition:</b> <a href="_function_pointer_type_8cs_source.html#l00018">FunctionPointerType.cs:18</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type_html_a04c73834400e95c38dd025b92be03ded"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#a04c73834400e95c38dd025b92be03ded">ILRuntime.Mono.Cecil.FunctionPointerType.IsFunctionPointer</a></div><div class="ttdeci">override bool IsFunctionPointer</div><div class="ttdef"><b>Definition:</b> <a href="_function_pointer_type_8cs_source.html#l00073">FunctionPointerType.cs:73</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type_html_a0a9e68670eee16f06f2098c54e1db9a3"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#a0a9e68670eee16f06f2098c54e1db9a3">ILRuntime.Mono.Cecil.FunctionPointerType.ContainsGenericParameter</a></div><div class="ttdeci">override bool ContainsGenericParameter</div><div class="ttdef"><b>Definition:</b> <a href="_function_pointer_type_8cs_source.html#l00077">FunctionPointerType.cs:77</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type_html_a3c6400a6c9dec2e6eafe37e85db8c9f4"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#a3c6400a6c9dec2e6eafe37e85db8c9f4">ILRuntime.Mono.Cecil.FunctionPointerType.GetElementType</a></div><div class="ttdeci">override TypeReference GetElementType()</div><div class="ttdef"><b>Definition:</b> <a href="_function_pointer_type_8cs_source.html#l00106">FunctionPointerType.cs:106</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type_html_a508a50b61dc6a47fc5d07bf25727ac3b"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#a508a50b61dc6a47fc5d07bf25727ac3b">ILRuntime.Mono.Cecil.FunctionPointerType.ExplicitThis</a></div><div class="ttdeci">bool ExplicitThis</div><div class="ttdef"><b>Definition:</b> <a href="_function_pointer_type_8cs_source.html#l00027">FunctionPointerType.cs:27</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type_html_a63b848f4f24699d04966a1c462cf17af"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#a63b848f4f24699d04966a1c462cf17af">ILRuntime.Mono.Cecil.FunctionPointerType.ReturnType</a></div><div class="ttdeci">TypeReference ReturnType</div><div class="ttdef"><b>Definition:</b> <a href="_function_pointer_type_8cs_source.html#l00045">FunctionPointerType.cs:45</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type_html_a76acb15987500152cfd0c33249cde2f3"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#a76acb15987500152cfd0c33249cde2f3">ILRuntime.Mono.Cecil.FunctionPointerType.HasParameters</a></div><div class="ttdeci">bool HasParameters</div><div class="ttdef"><b>Definition:</b> <a href="_function_pointer_type_8cs_source.html#l00037">FunctionPointerType.cs:37</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type_html_a818ff271df5c8c74bab544e599343077"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#a818ff271df5c8c74bab544e599343077">ILRuntime.Mono.Cecil.FunctionPointerType.Namespace</a></div><div class="ttdeci">override string Namespace</div><div class="ttdef"><b>Definition:</b> <a href="_function_pointer_type_8cs_source.html#l00059">FunctionPointerType.cs:59</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type_html_a87854127c41fac7e0fe88cbdf59560a0"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#a87854127c41fac7e0fe88cbdf59560a0">ILRuntime.Mono.Cecil.FunctionPointerType.Name</a></div><div class="ttdeci">override string Name</div><div class="ttdef"><b>Definition:</b> <a href="_function_pointer_type_8cs_source.html#l00054">FunctionPointerType.cs:54</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type_html_ac501c90cfda037349c7c463b4c5e8a17"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#ac501c90cfda037349c7c463b4c5e8a17">ILRuntime.Mono.Cecil.FunctionPointerType.FunctionPointerType</a></div><div class="ttdeci">FunctionPointerType()</div><div class="ttdef"><b>Definition:</b> <a href="_function_pointer_type_8cs_source.html#l00093">FunctionPointerType.cs:93</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type_html_aca8237314b68a24a948959c3ac80066e"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#aca8237314b68a24a948959c3ac80066e">ILRuntime.Mono.Cecil.FunctionPointerType.Resolve</a></div><div class="ttdeci">override TypeDefinition Resolve()</div><div class="ttdef"><b>Definition:</b> <a href="_function_pointer_type_8cs_source.html#l00101">FunctionPointerType.cs:101</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type_html_acd29aee48313867a4df3fef22b341465"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#acd29aee48313867a4df3fef22b341465">ILRuntime.Mono.Cecil.FunctionPointerType.FullName</a></div><div class="ttdeci">override string FullName</div><div class="ttdef"><b>Definition:</b> <a href="_function_pointer_type_8cs_source.html#l00081">FunctionPointerType.cs:81</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type_html_ad7fdf3a458bbd89146b009819065531c"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#ad7fdf3a458bbd89146b009819065531c">ILRuntime.Mono.Cecil.FunctionPointerType.Parameters</a></div><div class="ttdeci">Collection&lt; ParameterDefinition &gt; Parameters</div><div class="ttdef"><b>Definition:</b> <a href="_function_pointer_type_8cs_source.html#l00041">FunctionPointerType.cs:41</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type_html_ae78692e4f55a86bd8f8610966f2fb86b"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#ae78692e4f55a86bd8f8610966f2fb86b">ILRuntime.Mono.Cecil.FunctionPointerType.Module</a></div><div class="ttdeci">override ModuleDefinition Module</div><div class="ttdef"><b>Definition:</b> <a href="_function_pointer_type_8cs_source.html#l00064">FunctionPointerType.cs:64</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type_html_aec1f839898efc1819aa526e44319d70e"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#aec1f839898efc1819aa526e44319d70e">ILRuntime.Mono.Cecil.FunctionPointerType.CallingConvention</a></div><div class="ttdeci">MethodCallingConvention CallingConvention</div><div class="ttdef"><b>Definition:</b> <a href="_function_pointer_type_8cs_source.html#l00032">FunctionPointerType.cs:32</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type_html_aee1b2ff20940f9106b81b9430badc6c0"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#aee1b2ff20940f9106b81b9430badc6c0">ILRuntime.Mono.Cecil.FunctionPointerType.Scope</a></div><div class="ttdeci">override IMetadataScope Scope</div><div class="ttdef"><b>Definition:</b> <a href="_function_pointer_type_8cs_source.html#l00068">FunctionPointerType.cs:68</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type_html_af9b1d21324396e089a66a192166e6e9e"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html#af9b1d21324396e089a66a192166e6e9e">ILRuntime.Mono.Cecil.FunctionPointerType.HasThis</a></div><div class="ttdeci">bool HasThis</div><div class="ttdef"><b>Definition:</b> <a href="_function_pointer_type_8cs_source.html#l00022">FunctionPointerType.cs:22</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_method_reference_html"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_method_reference.html">ILRuntime.Mono.Cecil.MethodReference</a></div><div class="ttdef"><b>Definition:</b> <a href="_method_reference_8cs_source.html#l00018">MethodReference.cs:18</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_method_return_type_html"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_method_return_type.html">ILRuntime.Mono.Cecil.MethodReturnType</a></div><div class="ttdef"><b>Definition:</b> <a href="_method_return_type_8cs_source.html#l00017">MethodReturnType.cs:17</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_method_return_type_html_a3d84e44455c11cd79940dfb48e9e2e50"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_method_return_type.html#a3d84e44455c11cd79940dfb48e9e2e50">ILRuntime.Mono.Cecil.MethodReturnType.MethodReturnType</a></div><div class="ttdeci">MethodReturnType(IMethodSignature method)</div><div class="ttdef"><b>Definition:</b> <a href="_method_return_type_8cs_source.html#l00093">MethodReturnType.cs:93</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_module_definition_html"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_module_definition.html">ILRuntime.Mono.Cecil.ModuleDefinition</a></div><div class="ttdef"><b>Definition:</b> <a href="_module_definition_8cs_source.html#l00232">ModuleDefinition.cs:232</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_definition_html"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_definition.html">ILRuntime.Mono.Cecil.TypeDefinition</a></div><div class="ttdef"><b>Definition:</b> <a href="_type_definition_8cs_source.html#l00018">TypeDefinition.cs:18</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_reference_html"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_reference.html">ILRuntime.Mono.Cecil.TypeReference</a></div><div class="ttdef"><b>Definition:</b> <a href="_type_reference_8cs_source.html#l00052">TypeReference.cs:52</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_reference_html_a445448406e72eddac31eb6e651a6e61c"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_reference.html#a445448406e72eddac31eb6e651a6e61c">ILRuntime.Mono.Cecil.TypeReference.Module</a></div><div class="ttdeci">override ModuleDefinition Module</div><div class="ttdef"><b>Definition:</b> <a href="_type_reference_8cs_source.html#l00092">TypeReference.cs:92</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_reference_html_accd7019f52c65786cb2c1fc25fc475b1"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_reference.html#accd7019f52c65786cb2c1fc25fc475b1">ILRuntime.Mono.Cecil.TypeReference.FullName</a></div><div class="ttdeci">override string FullName</div><div class="ttdef"><b>Definition:</b> <a href="_type_reference_8cs_source.html#l00179">TypeReference.cs:179</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_specification_html"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_specification.html">ILRuntime.Mono.Cecil.TypeSpecification</a></div><div class="ttdef"><b>Definition:</b> <a href="_type_specification_8cs_source.html#l00017">TypeSpecification.cs:17</a></div></div>
+<div class="ttc" id="aclass_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection_html"><div class="ttname"><a href="class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html">ILRuntime.Mono.Collections.Generic.Collection&lt; ParameterDefinition &gt;</a></div></div>
+<div class="ttc" id="ainterface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_metadata_scope_html"><div class="ttname"><a href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_metadata_scope.html">ILRuntime.Mono.Cecil.IMetadataScope</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_metadata_scope_8cs_source.html#l00019">IMetadataScope.cs:19</a></div></div>
+<div class="ttc" id="ainterface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_method_signature_html"><div class="ttname"><a href="interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_i_method_signature.html">ILRuntime.Mono.Cecil.IMethodSignature</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_method_signature_8cs_source.html#l00017">IMethodSignature.cs:17</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_html"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html">ILRuntime.Mono.Cecil.Metadata</a></div><div class="ttdef"><b>Definition:</b> <a href="_blob_heap_8cs_source.html#l00013">BlobHeap.cs:13</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_html"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil.html">ILRuntime.Mono.Cecil</a></div><div class="ttdef"><b>Definition:</b> <a href="_code_8cs_source.html#l00011">Code.cs:11</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_html_a59e6e6d233f7d1f2ecf9f98255672199"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil.html#a59e6e6d233f7d1f2ecf9f98255672199">ILRuntime.Mono.Cecil.MethodCallingConvention</a></div><div class="ttdeci">MethodCallingConvention</div><div class="ttdef"><b>Definition:</b> <a href="_method_calling_convention_8cs_source.html#l00013">MethodCallingConvention.cs:13</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_html"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_collections_1_1_generic.html">ILRuntime.Mono.Collections.Generic</a></div><div class="ttdef"><b>Definition:</b> <a href="_collection_8cs_source.html#l00017">Collection.cs:17</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_collections_html"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_collections.html">ILRuntime.Mono.Collections</a></div><div class="ttdef"><b>Definition:</b> <a href="_collection_8cs_source.html#l00017">Collection.cs:17</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_html"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono.html">ILRuntime.Mono</a></div><div class="ttdef"><b>Definition:</b> <a href="_code_8cs_source.html#l00011">Code.cs:11</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_html"><div class="ttname"><a href="namespace_i_l_runtime.html">ILRuntime</a></div><div class="ttdef"><b>Definition:</b> <a href="_c_l_r_bindings_8cs_source.html#l00005">CLRBindings.cs:6</a></div></div>
+<div class="ttc" id="anamespace_system_html"><div class="ttname"><a href="namespace_system.html">System</a></div><div class="ttdef"><b>Definition:</b> <a href="_async_method_builder_attribute_8cs_source.html#l00002">AsyncMethodBuilderAttribute.cs:3</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_3b33dffaa21a2ac6f7978a949ffd4e41.html">Assets</a></li><li class="navelem"><a class="el" href="dir_5501c55c26a8d51fbc1fd8b7d8df04c3.html">ThirdParty</a></li><li class="navelem"><a class="el" href="dir_d7574f457851e45807c5ee4c7e6fc148.html">ILRuntime</a></li><li class="navelem"><a class="el" href="dir_4b4645f3c34003797707cfb8ce358d82.html">Mono.Cecil</a></li><li class="navelem"><a class="el" href="dir_694886da1201a1875b748e4807dbf668.html">Mono.Cecil</a></li><li class="navelem"><a class="el" href="_function_pointer_type_8cs.html">FunctionPointerType.cs</a></li>
+    <li class="footer">生成于 2022年 一月 23日 星期日 19:12:34 , 为 ET使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

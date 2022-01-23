@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ET: Unity/Assets/ThirdParty/ILRuntime/Runtime/Intepreter/OpCodes/OpCodeREnum.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ET<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_op_code_r_enum_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">OpCodeREnum.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_op_code_r_enum_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using</span> <a class="code hl_variable" href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_system.html">System</a>.<a class="code hl_namespace" href="namespace_system_1_1_collections.html">Collections</a>.<a class="code hl_namespace" href="namespace_system_1_1_collections_1_1_generic.html">Generic</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_system.html">System</a>.Linq;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_system.html">System</a>.Text;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html">ILRuntime.Runtime.Intepreter.OpCodes</a></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103">    8</a></span>    <span class="keyword">enum</span> <a class="code hl_enumeration" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103">OpCodeREnum</a></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        Nop,</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        Break,</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        Ldarg_0,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        Ldarg_1,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        Ldarg_2,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        Ldarg_3,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        Ldloc_0,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        Ldloc_1,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        Ldloc_2,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        Ldloc_3,</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        Stloc_0,</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        Stloc_1,</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        Stloc_2,</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        Stloc_3,</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        Ldarg_S,</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        Ldarga_S,</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        Starg_S,</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        Ldloc_S,</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        Ldloca_S,</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        Stloc_S,</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        Ldnull,</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        Ldc_I4_M1,</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        Ldc_I4_0,</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        Ldc_I4_1,</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        Ldc_I4_2,</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        Ldc_I4_3,</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        Ldc_I4_4,</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        Ldc_I4_5,</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        Ldc_I4_6,</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        Ldc_I4_7,</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        Ldc_I4_8,</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        Ldc_I4_S,</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        Ldc_I4,</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        Ldc_I8,</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        Ldc_R4,</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        Ldc_R8,</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        Dup,</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        Pop,</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        Jmp,</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        Call,</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        Calli,</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        Ret,</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        Br_S,</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        Brfalse_S,</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        Brtrue_S,</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        Beq_S,</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        Bge_S,</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        Bgt_S,</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        Ble_S,</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        Blt_S,</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        Bne_Un_S,</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        Bge_Un_S,</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>        Bgt_Un_S,</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        Ble_Un_S,</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        Blt_Un_S,</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        Br,</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        Brfalse,</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        Brtrue,</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        Beq,</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        Bge,</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>        Bgt,</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>        Ble,</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        Blt,</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        Bne_Un,</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        Bge_Un,</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        Bgt_Un,</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>        Ble_Un,</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        Blt_Un,</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>        Switch,</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>        Ldind_I1,</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>        Ldind_U1,</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>        Ldind_I2,</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>        Ldind_U2,</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>        Ldind_I4,</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>        Ldind_U4,</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>        Ldind_I8,</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>        Ldind_I,</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>        Ldind_R4,</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>        Ldind_R8,</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>        Ldind_Ref,</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>        Stind_Ref,</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>        Stind_I1,</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>        Stind_I2,</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>        Stind_I4,</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>        Stind_I8,</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>        Stind_R4,</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>        Stind_R8,</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>        Add,</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>        Sub,</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>        Mul,</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>        Div,</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>        Div_Un,</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>        Rem,</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>        Rem_Un,</div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>        And,</div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>        Or,</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>        Xor,</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>        Shl,</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>        Shr,</div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>        Shr_Un,</div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>        Neg,</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>        Not,</div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>        Conv_I1,</div>
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>        Conv_I2,</div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>        Conv_I4,</div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>        Conv_I8,</div>
+<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>        Conv_R4,</div>
+<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>        Conv_R8,</div>
+<div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>        Conv_U4,</div>
+<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>        Conv_U8,</div>
+<div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span>        Callvirt,</div>
+<div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>        Cpobj,</div>
+<div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span>        Ldobj,</div>
+<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>        Ldstr,</div>
+<div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>        Newobj,</div>
+<div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span>        Castclass,</div>
+<div class="line"><a id="l00477" name="l00477"></a><span class="lineno">  477</span>        Isinst,</div>
+<div class="line"><a id="l00481" name="l00481"></a><span class="lineno">  481</span>        Conv_R_Un,</div>
+<div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span>        Unbox,</div>
+<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>        Throw,</div>
+<div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span>        Ldfld,</div>
+<div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span>        Ldflda,</div>
+<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span>        Stfld,</div>
+<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>        Ldsfld,</div>
+<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>        Ldsflda,</div>
+<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span>        Stsfld,</div>
+<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>        Stobj,</div>
+<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>        Conv_Ovf_I1_Un,</div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>        Conv_Ovf_I2_Un,</div>
+<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>        Conv_Ovf_I4_Un,</div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>        Conv_Ovf_I8_Un,</div>
+<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>        Conv_Ovf_U1_Un,</div>
+<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>        Conv_Ovf_U2_Un,</div>
+<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>        Conv_Ovf_U4_Un,</div>
+<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>        Conv_Ovf_U8_Un,</div>
+<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>        Conv_Ovf_I_Un,</div>
+<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>        Conv_Ovf_U_Un,</div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>        Box,</div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>        Newarr,</div>
+<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>        Ldlen,</div>
+<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>        Ldelema,</div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>        Ldelem_I1,</div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>        Ldelem_U1,</div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>        Ldelem_I2,</div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>        Ldelem_U2,</div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>        Ldelem_I4,</div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>        Ldelem_U4,</div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>        Ldelem_I8,</div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>        Ldelem_I,</div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>        Ldelem_R4,</div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>        Ldelem_R8,</div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>        Ldelem_Ref,</div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>        Stelem_I,</div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>        Stelem_I1,</div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>        Stelem_I2,</div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>        Stelem_I4,</div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>        Stelem_I8,</div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>        Stelem_R4,</div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>        Stelem_R8,</div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>        Stelem_Ref,</div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>        Ldelem_Any,</div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>        Stelem_Any,</div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>        Unbox_Any,</div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>        Conv_Ovf_I1,</div>
+<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>        Conv_Ovf_U1,</div>
+<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>        Conv_Ovf_I2,</div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>        Conv_Ovf_U2,</div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>        Conv_Ovf_I4,</div>
+<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>        Conv_Ovf_U4,</div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>        Conv_Ovf_I8,</div>
+<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>        Conv_Ovf_U8,</div>
+<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span>        Refanyval,</div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>        Ckfinite,</div>
+<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>        Mkrefany,</div>
+<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>        Ldtoken,</div>
+<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>        Conv_U2,</div>
+<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>        Conv_U1,</div>
+<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>        Conv_I,</div>
+<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>        Conv_Ovf_I,</div>
+<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>        Conv_Ovf_U,</div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>        Add_Ovf,</div>
+<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>        Add_Ovf_Un,</div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>        Mul_Ovf,</div>
+<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>        Mul_Ovf_Un,</div>
+<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>        Sub_Ovf,</div>
+<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>        Sub_Ovf_Un,</div>
+<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>        Endfinally,</div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>        Leave,</div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>        Leave_S,</div>
+<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>        Stind_I,</div>
+<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>        Conv_U,</div>
+<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>        Arglist,</div>
+<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>        Ceq,</div>
+<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>        Cgt,</div>
+<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>        Cgt_Un,</div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>        Clt,</div>
+<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>        Clt_Un,</div>
+<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>        Ldftn,</div>
+<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>        Ldvirtftn,</div>
+<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>        Ldarg,</div>
+<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>        Ldarga,</div>
+<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>        Starg,</div>
+<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>        Ldloc,</div>
+<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>        Ldloca,</div>
+<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>        Stloc,</div>
+<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span>        Localloc,</div>
+<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span>        Endfilter,</div>
+<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>        Unaligned,</div>
+<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span>        Volatile,</div>
+<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span>        Tail,</div>
+<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span>        Initobj,</div>
+<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>        Constrained,</div>
+<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span>        Cpblk,</div>
+<div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span>        Initblk,</div>
+<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span>        No,</div>
+<div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span>        Rethrow,</div>
+<div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span>        Sizeof,</div>
+<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span>        Refanytype,</div>
+<div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span>        Readonly,</div>
+<div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span>        <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a6bc362dbf494c61ea117fe3c71ca48a5">Move</a>,</div>
+<div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span>        <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a9c6a9d9f033001a9b3104984d319563b">Push</a>,</div>
+<div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span>        <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103ae20130fe5c06c678de446ccc4868b1cb">InlineStart</a>,</div>
+<div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span>        <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103afdcce70b762f65bf5dc83eab7213081f">InlineEnd</a>,</div>
+<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span>        <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103adbf0281856638fb81ad6749480f4b4e8">Beqi</a>,</div>
+<div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span>        <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103af1b44d023879fd8c940918af4ebab198">Bgei</a>,</div>
+<div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span>        <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a3e5c1a76b23688f6374c49be0e126fbc">Bgti</a>,</div>
+<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span>        <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a2028914e249e28627dc30428050ac026">Blei</a>,</div>
+<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span>        <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a687ff2fff4349af91eb0430ac531b173">Blti</a>,</div>
+<div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span>        <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a69326da8982504eb7eb76c7918cd86d4">Bnei_Un</a>,</div>
+<div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span>        <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a91598f58be84b221e53fde655791fcfc">Bgei_Un</a>,</div>
+<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span>        <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103ab50c62577376d371210bc010fa25e460">Bgti_Un</a>,</div>
+<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span>        <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a9bd55ec554f5b781af83a6b6f51fd537">Blei_Un</a>,</div>
+<div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span>        <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103afc46d6db0c7cf572d09106d84b281918">Blti_Un</a>,</div>
+<div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span>        <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a8944a86a924c0a9275264d2cc7fff21e">Ceqi</a>,</div>
+<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span>        <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a088272895878c432465b39b12db55fb5">Cgti</a>,</div>
+<div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span>        <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a339e292a4771f3e252a08c428462ef9a">Cgti_Un</a>,</div>
+<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>        <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a18d1b042a1e9bb1ab659600956c8f4f7">Clti</a>,</div>
+<div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span>        <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a87a502a6b4cedf0b0e2f597da8b13bcf">Clti_Un</a>,</div>
+<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span>        <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103aff95837165f8d42ae5da0fa3abaa2a85">Addi</a>,</div>
+<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span>        <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a1458163d99f11b3df37451656c8387a6">Subi</a>,</div>
+<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>        <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103ac85b2458fecc0dfe933a4fc2cd098850">Muli</a>,</div>
+<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span>        <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a54159e1dbd22773e60b534a3fcd7cb7c">Divi</a>,</div>
+<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>        <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103af68699cc416c6dd41f35568a78744b57">Divi_Un</a>,</div>
+<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span>        <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a6b4ac436c57408ebb657471aae5020df">Remi</a>,</div>
+<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span>        <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103add1b49415cc2edeee3c27002c9edd35e">Remi_Un</a>,</div>
+<div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span>        <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a5f1d0630d2deaa9f541131a857240ac0">Andi</a>,</div>
+<div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span>        <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a7d8b6707950dad47da00aa2984b6289c">Ori</a>,</div>
+<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>        <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103acf0ba2cf6afc620d6c07f17b57c8cf8f">Xori</a>,</div>
+<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>        <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a5abb8953ce34f68d5b4896e22fa35216">Shli</a>,</div>
+<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>        <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a908326fa0a6ce46d99ce457757bd5ad8">Shri</a>,</div>
+<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span>        <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a87d96e698fcc876994686d8c1fed4f7c">Shri_Un</a>,</div>
+<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>    }</div>
+<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>}</div>
+<div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_html"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html">ILRuntime.Runtime.Intepreter.OpCodes</a></div><div class="ttdef"><b>Definition:</b> <a href="_runtime_2_intepreter_2_op_codes_2_op_code_8cs_source.html#l00008">OpCode.cs:9</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_html_aa8f6c4d1968497cd9211d61c4ab70103"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103">ILRuntime.Runtime.Intepreter.OpCodes.OpCodeREnum</a></div><div class="ttdeci">OpCodeREnum</div><div class="ttdef"><b>Definition:</b> <a href="_op_code_r_enum_8cs_source.html#l00008">OpCodeREnum.cs:9</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_html_aa8f6c4d1968497cd9211d61c4ab70103a088272895878c432465b39b12db55fb5"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a088272895878c432465b39b12db55fb5">ILRuntime.Runtime.Intepreter.OpCodes.OpCodeREnum.Cgti</a></div><div class="ttdeci">@ Cgti</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_html_aa8f6c4d1968497cd9211d61c4ab70103a1458163d99f11b3df37451656c8387a6"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a1458163d99f11b3df37451656c8387a6">ILRuntime.Runtime.Intepreter.OpCodes.OpCodeREnum.Subi</a></div><div class="ttdeci">@ Subi</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_html_aa8f6c4d1968497cd9211d61c4ab70103a18d1b042a1e9bb1ab659600956c8f4f7"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a18d1b042a1e9bb1ab659600956c8f4f7">ILRuntime.Runtime.Intepreter.OpCodes.OpCodeREnum.Clti</a></div><div class="ttdeci">@ Clti</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_html_aa8f6c4d1968497cd9211d61c4ab70103a2028914e249e28627dc30428050ac026"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a2028914e249e28627dc30428050ac026">ILRuntime.Runtime.Intepreter.OpCodes.OpCodeREnum.Blei</a></div><div class="ttdeci">@ Blei</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_html_aa8f6c4d1968497cd9211d61c4ab70103a339e292a4771f3e252a08c428462ef9a"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a339e292a4771f3e252a08c428462ef9a">ILRuntime.Runtime.Intepreter.OpCodes.OpCodeREnum.Cgti_Un</a></div><div class="ttdeci">@ Cgti_Un</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_html_aa8f6c4d1968497cd9211d61c4ab70103a3e5c1a76b23688f6374c49be0e126fbc"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a3e5c1a76b23688f6374c49be0e126fbc">ILRuntime.Runtime.Intepreter.OpCodes.OpCodeREnum.Bgti</a></div><div class="ttdeci">@ Bgti</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_html_aa8f6c4d1968497cd9211d61c4ab70103a54159e1dbd22773e60b534a3fcd7cb7c"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a54159e1dbd22773e60b534a3fcd7cb7c">ILRuntime.Runtime.Intepreter.OpCodes.OpCodeREnum.Divi</a></div><div class="ttdeci">@ Divi</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_html_aa8f6c4d1968497cd9211d61c4ab70103a5abb8953ce34f68d5b4896e22fa35216"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a5abb8953ce34f68d5b4896e22fa35216">ILRuntime.Runtime.Intepreter.OpCodes.OpCodeREnum.Shli</a></div><div class="ttdeci">@ Shli</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_html_aa8f6c4d1968497cd9211d61c4ab70103a5f1d0630d2deaa9f541131a857240ac0"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a5f1d0630d2deaa9f541131a857240ac0">ILRuntime.Runtime.Intepreter.OpCodes.OpCodeREnum.Andi</a></div><div class="ttdeci">@ Andi</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_html_aa8f6c4d1968497cd9211d61c4ab70103a687ff2fff4349af91eb0430ac531b173"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a687ff2fff4349af91eb0430ac531b173">ILRuntime.Runtime.Intepreter.OpCodes.OpCodeREnum.Blti</a></div><div class="ttdeci">@ Blti</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_html_aa8f6c4d1968497cd9211d61c4ab70103a69326da8982504eb7eb76c7918cd86d4"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a69326da8982504eb7eb76c7918cd86d4">ILRuntime.Runtime.Intepreter.OpCodes.OpCodeREnum.Bnei_Un</a></div><div class="ttdeci">@ Bnei_Un</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_html_aa8f6c4d1968497cd9211d61c4ab70103a6b4ac436c57408ebb657471aae5020df"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a6b4ac436c57408ebb657471aae5020df">ILRuntime.Runtime.Intepreter.OpCodes.OpCodeREnum.Remi</a></div><div class="ttdeci">@ Remi</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_html_aa8f6c4d1968497cd9211d61c4ab70103a6bc362dbf494c61ea117fe3c71ca48a5"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a6bc362dbf494c61ea117fe3c71ca48a5">ILRuntime.Runtime.Intepreter.OpCodes.OpCodeREnum.Move</a></div><div class="ttdeci">@ Move</div><div class="ttdoc">复制寄存器的值</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_html_aa8f6c4d1968497cd9211d61c4ab70103a7d8b6707950dad47da00aa2984b6289c"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a7d8b6707950dad47da00aa2984b6289c">ILRuntime.Runtime.Intepreter.OpCodes.OpCodeREnum.Ori</a></div><div class="ttdeci">@ Ori</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_html_aa8f6c4d1968497cd9211d61c4ab70103a87a502a6b4cedf0b0e2f597da8b13bcf"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a87a502a6b4cedf0b0e2f597da8b13bcf">ILRuntime.Runtime.Intepreter.OpCodes.OpCodeREnum.Clti_Un</a></div><div class="ttdeci">@ Clti_Un</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_html_aa8f6c4d1968497cd9211d61c4ab70103a87d96e698fcc876994686d8c1fed4f7c"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a87d96e698fcc876994686d8c1fed4f7c">ILRuntime.Runtime.Intepreter.OpCodes.OpCodeREnum.Shri_Un</a></div><div class="ttdeci">@ Shri_Un</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_html_aa8f6c4d1968497cd9211d61c4ab70103a8944a86a924c0a9275264d2cc7fff21e"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a8944a86a924c0a9275264d2cc7fff21e">ILRuntime.Runtime.Intepreter.OpCodes.OpCodeREnum.Ceqi</a></div><div class="ttdeci">@ Ceqi</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_html_aa8f6c4d1968497cd9211d61c4ab70103a908326fa0a6ce46d99ce457757bd5ad8"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a908326fa0a6ce46d99ce457757bd5ad8">ILRuntime.Runtime.Intepreter.OpCodes.OpCodeREnum.Shri</a></div><div class="ttdeci">@ Shri</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_html_aa8f6c4d1968497cd9211d61c4ab70103a91598f58be84b221e53fde655791fcfc"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a91598f58be84b221e53fde655791fcfc">ILRuntime.Runtime.Intepreter.OpCodes.OpCodeREnum.Bgei_Un</a></div><div class="ttdeci">@ Bgei_Un</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_html_aa8f6c4d1968497cd9211d61c4ab70103a9bd55ec554f5b781af83a6b6f51fd537"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a9bd55ec554f5b781af83a6b6f51fd537">ILRuntime.Runtime.Intepreter.OpCodes.OpCodeREnum.Blei_Un</a></div><div class="ttdeci">@ Blei_Un</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_html_aa8f6c4d1968497cd9211d61c4ab70103a9c6a9d9f033001a9b3104984d319563b"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103a9c6a9d9f033001a9b3104984d319563b">ILRuntime.Runtime.Intepreter.OpCodes.OpCodeREnum.Push</a></div><div class="ttdeci">@ Push</div><div class="ttdoc">将指定寄存器的值压入栈</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_html_aa8f6c4d1968497cd9211d61c4ab70103ab50c62577376d371210bc010fa25e460"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103ab50c62577376d371210bc010fa25e460">ILRuntime.Runtime.Intepreter.OpCodes.OpCodeREnum.Bgti_Un</a></div><div class="ttdeci">@ Bgti_Un</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_html_aa8f6c4d1968497cd9211d61c4ab70103ac85b2458fecc0dfe933a4fc2cd098850"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103ac85b2458fecc0dfe933a4fc2cd098850">ILRuntime.Runtime.Intepreter.OpCodes.OpCodeREnum.Muli</a></div><div class="ttdeci">@ Muli</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_html_aa8f6c4d1968497cd9211d61c4ab70103acf0ba2cf6afc620d6c07f17b57c8cf8f"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103acf0ba2cf6afc620d6c07f17b57c8cf8f">ILRuntime.Runtime.Intepreter.OpCodes.OpCodeREnum.Xori</a></div><div class="ttdeci">@ Xori</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_html_aa8f6c4d1968497cd9211d61c4ab70103adbf0281856638fb81ad6749480f4b4e8"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103adbf0281856638fb81ad6749480f4b4e8">ILRuntime.Runtime.Intepreter.OpCodes.OpCodeREnum.Beqi</a></div><div class="ttdeci">@ Beqi</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_html_aa8f6c4d1968497cd9211d61c4ab70103add1b49415cc2edeee3c27002c9edd35e"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103add1b49415cc2edeee3c27002c9edd35e">ILRuntime.Runtime.Intepreter.OpCodes.OpCodeREnum.Remi_Un</a></div><div class="ttdeci">@ Remi_Un</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_html_aa8f6c4d1968497cd9211d61c4ab70103ae20130fe5c06c678de446ccc4868b1cb"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103ae20130fe5c06c678de446ccc4868b1cb">ILRuntime.Runtime.Intepreter.OpCodes.OpCodeREnum.InlineStart</a></div><div class="ttdeci">@ InlineStart</div><div class="ttdoc">内联开始</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_html_aa8f6c4d1968497cd9211d61c4ab70103af1b44d023879fd8c940918af4ebab198"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103af1b44d023879fd8c940918af4ebab198">ILRuntime.Runtime.Intepreter.OpCodes.OpCodeREnum.Bgei</a></div><div class="ttdeci">@ Bgei</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_html_aa8f6c4d1968497cd9211d61c4ab70103af68699cc416c6dd41f35568a78744b57"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103af68699cc416c6dd41f35568a78744b57">ILRuntime.Runtime.Intepreter.OpCodes.OpCodeREnum.Divi_Un</a></div><div class="ttdeci">@ Divi_Un</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_html_aa8f6c4d1968497cd9211d61c4ab70103afc46d6db0c7cf572d09106d84b281918"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103afc46d6db0c7cf572d09106d84b281918">ILRuntime.Runtime.Intepreter.OpCodes.OpCodeREnum.Blti_Un</a></div><div class="ttdeci">@ Blti_Un</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_html_aa8f6c4d1968497cd9211d61c4ab70103afdcce70b762f65bf5dc83eab7213081f"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103afdcce70b762f65bf5dc83eab7213081f">ILRuntime.Runtime.Intepreter.OpCodes.OpCodeREnum.InlineEnd</a></div><div class="ttdeci">@ InlineEnd</div><div class="ttdoc">内联结束</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_html_aa8f6c4d1968497cd9211d61c4ab70103aff95837165f8d42ae5da0fa3abaa2a85"><div class="ttname"><a href="namespace_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes.html#aa8f6c4d1968497cd9211d61c4ab70103aff95837165f8d42ae5da0fa3abaa2a85">ILRuntime.Runtime.Intepreter.OpCodes.OpCodeREnum.Addi</a></div><div class="ttdeci">@ Addi</div></div>
+<div class="ttc" id="anamespace_system_1_1_collections_1_1_generic_html"><div class="ttname"><a href="namespace_system_1_1_collections_1_1_generic.html">System.Collections.Generic</a></div></div>
+<div class="ttc" id="anamespace_system_1_1_collections_html"><div class="ttname"><a href="namespace_system_1_1_collections.html">System.Collections</a></div></div>
+<div class="ttc" id="anamespace_system_html"><div class="ttname"><a href="namespace_system.html">System</a></div><div class="ttdef"><b>Definition:</b> <a href="_async_method_builder_attribute_8cs_source.html#l00002">AsyncMethodBuilderAttribute.cs:3</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_3b33dffaa21a2ac6f7978a949ffd4e41.html">Assets</a></li><li class="navelem"><a class="el" href="dir_5501c55c26a8d51fbc1fd8b7d8df04c3.html">ThirdParty</a></li><li class="navelem"><a class="el" href="dir_d7574f457851e45807c5ee4c7e6fc148.html">ILRuntime</a></li><li class="navelem"><a class="el" href="dir_8d7c37869e51958d7afd63cb2084ce69.html">Runtime</a></li><li class="navelem"><a class="el" href="dir_8e336f7303957dc0cc4462784ce7a731.html">Intepreter</a></li><li class="navelem"><a class="el" href="dir_b592a057ab2d22f90079bea7f45e01f5.html">OpCodes</a></li><li class="navelem"><a class="el" href="_op_code_r_enum_8cs.html">OpCodeREnum.cs</a></li>
+    <li class="footer">生成于 2022年 一月 23日 星期日 19:12:35 , 为 ET使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

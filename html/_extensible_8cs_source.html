@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ET: Unity/Assets/ThirdParty/protobuf-net/Extensible.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ET<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_extensible_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Extensible.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_extensible_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#if !NO_GENERICS</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_system.html">System</a>.<a class="code hl_namespace" href="namespace_system_1_1_collections.html">Collections</a>.<a class="code hl_namespace" href="namespace_system_1_1_collections_1_1_generic.html">Generic</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_proto_buf.html">ProtoBuf</a>.<a class="code hl_namespace" href="namespace_proto_buf_1_1_meta.html">Meta</a>;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_system.html">System</a>.<a class="code hl_namespace" href="namespace_system_1_1_collections.html">Collections</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_proto_buf.html">ProtoBuf</a></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_extensible.html">   19</a></span>    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class </span><a class="code hl_class" href="class_proto_buf_1_1_extensible.html">Extensible</a> : <a class="code hl_interface" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="comment">// note: not marked ProtoContract - no local state, and can&#39;t </span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="comment">// predict sub-classes</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keyword">private</span> <a class="code hl_interface" href="interface_proto_buf_1_1_i_extension.html">IExtension</a> extensionObject;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <a class="code hl_interface" href="interface_proto_buf_1_1_i_extension.html">IExtension</a> <a class="code hl_interface" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a>.<a class="code hl_function" href="interface_proto_buf_1_1_i_extensible.html#a6ffe5cf0016ddc5a6ae7234026e3a017">GetExtensionObject</a>(<span class="keywordtype">bool</span> createIfMissing)</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <span class="keywordflow">return</span> GetExtensionObject(createIfMissing);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_extensible.html#aa1236f0191e2fa469b099f6a106f20b6">   41</a></span>        <span class="keyword">protected</span> <span class="keyword">virtual</span> <a class="code hl_interface" href="interface_proto_buf_1_1_i_extension.html">IExtension</a> <a class="code hl_function" href="class_proto_buf_1_1_extensible.html#aa1236f0191e2fa469b099f6a106f20b6">GetExtensionObject</a>(<span class="keywordtype">bool</span> createIfMissing)</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="keywordflow">return</span> GetExtensionObject(ref extensionObject, createIfMissing);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_extensible.html#a7f8045a4a6d75fc7cfb1b0077dd4ac4e">   58</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_interface" href="interface_proto_buf_1_1_i_extension.html">IExtension</a> <a class="code hl_function" href="class_proto_buf_1_1_extensible.html#a7f8045a4a6d75fc7cfb1b0077dd4ac4e">GetExtensionObject</a>(ref <a class="code hl_interface" href="interface_proto_buf_1_1_i_extension.html">IExtension</a> extensionObject, <span class="keywordtype">bool</span> createIfMissing)</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keywordflow">if</span> (createIfMissing &amp;&amp; extensionObject == <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                extensionObject = <span class="keyword">new</span> <a class="code hl_class" href="class_proto_buf_1_1_buffer_extension.html">BufferExtension</a>();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <span class="keywordflow">return</span> extensionObject;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#if !NO_RUNTIME &amp;&amp; !NO_GENERICS</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_extensible.html#a3d9d96644fec7bcc676ee8fecdb596b9">   80</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_proto_buf_1_1_extensible.html#a3d9d96644fec7bcc676ee8fecdb596b9">AppendValue&lt;TValue&gt;</a>(<a class="code hl_interface" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a> instance, <span class="keywordtype">int</span> tag, TValue value)</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <a class="code hl_function" href="class_proto_buf_1_1_extensible.html#a3d9d96644fec7bcc676ee8fecdb596b9">AppendValue&lt;TValue&gt;</a>(instance, tag, <a class="code hl_enumeration" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a>.Default, value);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        }</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_extensible.html#ab7c64df8d24ed759bd5b9711e4a16bb0">   98</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_proto_buf_1_1_extensible.html#a3d9d96644fec7bcc676ee8fecdb596b9">AppendValue&lt;TValue&gt;</a>(<a class="code hl_interface" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a> instance, <span class="keywordtype">int</span> tag, <a class="code hl_enumeration" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a> format, TValue value)</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        {</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            ExtensibleUtil.AppendExtendValue(<a class="code hl_class" href="class_proto_buf_1_1_meta_1_1_runtime_type_model.html">RuntimeTypeModel</a>.<a class="code hl_property" href="class_proto_buf_1_1_meta_1_1_runtime_type_model.html#acc1aab388002cfd0132ac68a4510ad9c">Default</a>, instance, tag, format, value);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        }</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_extensible.html#aa4b4cdc0ef75b4990960cd5ea7638dc1">  111</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> TValue <a class="code hl_function" href="class_proto_buf_1_1_extensible.html#aa4b4cdc0ef75b4990960cd5ea7638dc1">GetValue&lt;TValue&gt;</a>(<a class="code hl_interface" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a> instance, <span class="keywordtype">int</span> tag)</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="class_proto_buf_1_1_extensible.html#aa4b4cdc0ef75b4990960cd5ea7638dc1">GetValue&lt;TValue&gt;</a>(instance, tag, <a class="code hl_enumeration" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a>.Default);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        }</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_extensible.html#a4251e51fb2b585ba20e174372b48cd80">  126</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> TValue <a class="code hl_function" href="class_proto_buf_1_1_extensible.html#aa4b4cdc0ef75b4990960cd5ea7638dc1">GetValue&lt;TValue&gt;</a>(<a class="code hl_interface" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a> instance, <span class="keywordtype">int</span> tag, <a class="code hl_enumeration" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a> format)</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        {</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            TValue value;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            <a class="code hl_function" href="class_proto_buf_1_1_extensible.html#afe3b777215333e361c13843885a343a3">TryGetValue&lt;TValue&gt;</a>(instance, tag, format, out value);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            <span class="keywordflow">return</span> value;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        }</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_extensible.html#afe3b777215333e361c13843885a343a3">  143</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_proto_buf_1_1_extensible.html#afe3b777215333e361c13843885a343a3">TryGetValue&lt;TValue&gt;</a>(<a class="code hl_interface" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a> instance, <span class="keywordtype">int</span> tag, out TValue value)</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        {</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="class_proto_buf_1_1_extensible.html#afe3b777215333e361c13843885a343a3">TryGetValue&lt;TValue&gt;</a>(instance, tag, <a class="code hl_enumeration" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a>.Default, out value);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        }</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_extensible.html#a454215e740a97c8c88f5378bcf7c15af">  159</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_proto_buf_1_1_extensible.html#afe3b777215333e361c13843885a343a3">TryGetValue&lt;TValue&gt;</a>(<a class="code hl_interface" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a> instance, <span class="keywordtype">int</span> tag, <a class="code hl_enumeration" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a> format, out TValue value)</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        {</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="class_proto_buf_1_1_extensible.html#afe3b777215333e361c13843885a343a3">TryGetValue&lt;TValue&gt;</a>(instance, tag, format, <span class="keyword">false</span>, out value);</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        }</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_extensible.html#adb77cf689553cf87a11103bbe93c0899">  176</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_proto_buf_1_1_extensible.html#afe3b777215333e361c13843885a343a3">TryGetValue&lt;TValue&gt;</a>(<a class="code hl_interface" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a> instance, <span class="keywordtype">int</span> tag, <a class="code hl_enumeration" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a> format, <span class="keywordtype">bool</span> allowDefinedTag, out TValue value)</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        {</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>            value = <span class="keywordflow">default</span>(TValue);</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>            <span class="keywordtype">bool</span> <span class="keyword">set</span> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>            <span class="keywordflow">foreach</span> (TValue val <span class="keywordflow">in</span> ExtensibleUtil.GetExtendedValues&lt;TValue&gt;(instance, tag, format, <span class="keyword">true</span>, allowDefinedTag))</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>            {</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>                <span class="comment">// expecting at most one yield...</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>                <span class="comment">// but don&#39;t break; need to read entire stream</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>                value = val;</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>                <span class="keyword">set</span> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>            }</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>            <span class="keywordflow">return</span> <span class="keyword">set</span>;</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        }</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_extensible.html#aef4d345270d0985610984ce3fb39d8c0">  201</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> IEnumerable&lt;TValue&gt; <a class="code hl_function" href="class_proto_buf_1_1_extensible.html#aef4d345270d0985610984ce3fb39d8c0">GetValues&lt;TValue&gt;</a>(<a class="code hl_interface" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a> instance, <span class="keywordtype">int</span> tag)</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        {</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>            <span class="keywordflow">return</span> ExtensibleUtil.GetExtendedValues&lt;TValue&gt;(instance, tag, <a class="code hl_enumeration" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a>.Default, <span class="keyword">false</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        }</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_extensible.html#af2a1338ce38fc9454c6713a0d8018a9a">  217</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> IEnumerable&lt;TValue&gt; <a class="code hl_function" href="class_proto_buf_1_1_extensible.html#aef4d345270d0985610984ce3fb39d8c0">GetValues&lt;TValue&gt;</a>(<a class="code hl_interface" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a> instance, <span class="keywordtype">int</span> tag, <a class="code hl_enumeration" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a> format)</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        {</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>            <span class="keywordflow">return</span> ExtensibleUtil.GetExtendedValues&lt;TValue&gt;(instance, tag, format, <span class="keyword">false</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        }</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_extensible.html#a47589c15e2ce00c38f15de2df8803a7a">  236</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_proto_buf_1_1_extensible.html#a47589c15e2ce00c38f15de2df8803a7a">TryGetValue</a>(<a class="code hl_class" href="class_proto_buf_1_1_meta_1_1_type_model.html">TypeModel</a> model, <a class="code hl_namespace" href="namespace_system.html">System</a>.Type type, <a class="code hl_interface" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a> instance, <span class="keywordtype">int</span> tag, <a class="code hl_enumeration" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a> format, <span class="keywordtype">bool</span> allowDefinedTag, out <span class="keywordtype">object</span> value)</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        {</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>            value = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>            <span class="keywordtype">bool</span> <span class="keyword">set</span> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>            <span class="keywordflow">foreach</span> (<span class="keywordtype">object</span> val <span class="keywordflow">in</span> ExtensibleUtil.GetExtendedValues(model, type, instance, tag, format, <span class="keyword">true</span>, allowDefinedTag))</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>            {</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>                <span class="comment">// expecting at most one yield...</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>                <span class="comment">// but don&#39;t break; need to read entire stream</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>                value = val;</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>                <span class="keyword">set</span> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>            }</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>            <span class="keywordflow">return</span> <span class="keyword">set</span>;</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        }</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_extensible.html#a25bd17a78f3b1b31c51730c53a129ae9">  262</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> IEnumerable <a class="code hl_function" href="class_proto_buf_1_1_extensible.html#a25bd17a78f3b1b31c51730c53a129ae9">GetValues</a>(<a class="code hl_class" href="class_proto_buf_1_1_meta_1_1_type_model.html">TypeModel</a> model, <a class="code hl_namespace" href="namespace_system.html">System</a>.Type type, <a class="code hl_interface" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a> instance, <span class="keywordtype">int</span> tag, <a class="code hl_enumeration" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a> format)</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        {</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>            <span class="keywordflow">return</span> ExtensibleUtil.GetExtendedValues(model, type, instance, tag, format, <span class="keyword">false</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        }</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno"><a class="line" href="class_proto_buf_1_1_extensible.html#a7f83b1589033618d989e7d540681cb0b">  280</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_proto_buf_1_1_extensible.html#a7f83b1589033618d989e7d540681cb0b">AppendValue</a>(<a class="code hl_class" href="class_proto_buf_1_1_meta_1_1_type_model.html">TypeModel</a> model, <a class="code hl_interface" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a> instance, <span class="keywordtype">int</span> tag, <a class="code hl_enumeration" href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">DataFormat</a> format, <span class="keywordtype">object</span> value)</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        {</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>            ExtensibleUtil.AppendExtendValue(model, instance, tag, format, value);</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>        }</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        </div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    }   </div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>}</div>
+<div class="ttc" id="aclass_proto_buf_1_1_buffer_extension_html"><div class="ttname"><a href="class_proto_buf_1_1_buffer_extension.html">ProtoBuf.BufferExtension</a></div><div class="ttdoc">Provides a simple buffer-based implementation of an extension object.</div><div class="ttdef"><b>Definition:</b> <a href="_buffer_extension_8cs_source.html#l00008">BufferExtension.cs:9</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_extensible_html"><div class="ttname"><a href="class_proto_buf_1_1_extensible.html">ProtoBuf.Extensible</a></div><div class="ttdoc">Simple base class for supporting unexpected fields allowing for loss-less round-tips/merge,...</div><div class="ttdef"><b>Definition:</b> <a href="_extensible_8cs_source.html#l00019">Extensible.cs:20</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_extensible_html_a25bd17a78f3b1b31c51730c53a129ae9"><div class="ttname"><a href="class_proto_buf_1_1_extensible.html#a25bd17a78f3b1b31c51730c53a129ae9">ProtoBuf.Extensible.GetValues</a></div><div class="ttdeci">static IEnumerable GetValues(TypeModel model, System.Type type, IExtensible instance, int tag, DataFormat format)</div><div class="ttdoc">Queries an extensible object for an additional (unexpected) data-field for the instance....</div><div class="ttdef"><b>Definition:</b> <a href="_extensible_8cs_source.html#l00262">Extensible.cs:262</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_extensible_html_a3d9d96644fec7bcc676ee8fecdb596b9"><div class="ttname"><a href="class_proto_buf_1_1_extensible.html#a3d9d96644fec7bcc676ee8fecdb596b9">ProtoBuf.Extensible.AppendValue&lt; TValue &gt;</a></div><div class="ttdeci">static void AppendValue&lt; TValue &gt;(IExtensible instance, int tag, TValue value)</div><div class="ttdoc">Appends the value as an additional (unexpected) data-field for the instance. Note that for non-repeat...</div><div class="ttdef"><b>Definition:</b> <a href="_extensible_8cs_source.html#l00080">Extensible.cs:80</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_extensible_html_a47589c15e2ce00c38f15de2df8803a7a"><div class="ttname"><a href="class_proto_buf_1_1_extensible.html#a47589c15e2ce00c38f15de2df8803a7a">ProtoBuf.Extensible.TryGetValue</a></div><div class="ttdeci">static bool TryGetValue(TypeModel model, System.Type type, IExtensible instance, int tag, DataFormat format, bool allowDefinedTag, out object value)</div><div class="ttdoc">Queries an extensible object for an additional (unexpected) data-field for the instance....</div><div class="ttdef"><b>Definition:</b> <a href="_extensible_8cs_source.html#l00236">Extensible.cs:236</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_extensible_html_a7f8045a4a6d75fc7cfb1b0077dd4ac4e"><div class="ttname"><a href="class_proto_buf_1_1_extensible.html#a7f8045a4a6d75fc7cfb1b0077dd4ac4e">ProtoBuf.Extensible.GetExtensionObject</a></div><div class="ttdeci">static IExtension GetExtensionObject(ref IExtension extensionObject, bool createIfMissing)</div><div class="ttdoc">Provides a simple, default implementation for extension support, optionally creating it if it does no...</div><div class="ttdef"><b>Definition:</b> <a href="_extensible_8cs_source.html#l00058">Extensible.cs:58</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_extensible_html_a7f83b1589033618d989e7d540681cb0b"><div class="ttname"><a href="class_proto_buf_1_1_extensible.html#a7f83b1589033618d989e7d540681cb0b">ProtoBuf.Extensible.AppendValue</a></div><div class="ttdeci">static void AppendValue(TypeModel model, IExtensible instance, int tag, DataFormat format, object value)</div><div class="ttdoc">Appends the value as an additional (unexpected) data-field for the instance. Note that for non-repeat...</div><div class="ttdef"><b>Definition:</b> <a href="_extensible_8cs_source.html#l00280">Extensible.cs:280</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_extensible_html_aa1236f0191e2fa469b099f6a106f20b6"><div class="ttname"><a href="class_proto_buf_1_1_extensible.html#aa1236f0191e2fa469b099f6a106f20b6">ProtoBuf.Extensible.GetExtensionObject</a></div><div class="ttdeci">virtual IExtension GetExtensionObject(bool createIfMissing)</div><div class="ttdoc">Retrieves the extension object for the current instance, optionally creating it if it does not alread...</div><div class="ttdef"><b>Definition:</b> <a href="_extensible_8cs_source.html#l00041">Extensible.cs:41</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_extensible_html_aa4b4cdc0ef75b4990960cd5ea7638dc1"><div class="ttname"><a href="class_proto_buf_1_1_extensible.html#aa4b4cdc0ef75b4990960cd5ea7638dc1">ProtoBuf.Extensible.GetValue&lt; TValue &gt;</a></div><div class="ttdeci">static TValue GetValue&lt; TValue &gt;(IExtensible instance, int tag)</div><div class="ttdoc">Queries an extensible object for an additional (unexpected) data-field for the instance....</div><div class="ttdef"><b>Definition:</b> <a href="_extensible_8cs_source.html#l00111">Extensible.cs:111</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_extensible_html_aef4d345270d0985610984ce3fb39d8c0"><div class="ttname"><a href="class_proto_buf_1_1_extensible.html#aef4d345270d0985610984ce3fb39d8c0">ProtoBuf.Extensible.GetValues&lt; TValue &gt;</a></div><div class="ttdeci">static IEnumerable&lt; TValue &gt; GetValues&lt; TValue &gt;(IExtensible instance, int tag)</div><div class="ttdoc">Queries an extensible object for an additional (unexpected) data-field for the instance....</div><div class="ttdef"><b>Definition:</b> <a href="_extensible_8cs_source.html#l00201">Extensible.cs:201</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_extensible_html_afe3b777215333e361c13843885a343a3"><div class="ttname"><a href="class_proto_buf_1_1_extensible.html#afe3b777215333e361c13843885a343a3">ProtoBuf.Extensible.TryGetValue&lt; TValue &gt;</a></div><div class="ttdeci">static bool TryGetValue&lt; TValue &gt;(IExtensible instance, int tag, out TValue value)</div><div class="ttdoc">Queries an extensible object for an additional (unexpected) data-field for the instance....</div><div class="ttdef"><b>Definition:</b> <a href="_extensible_8cs_source.html#l00143">Extensible.cs:143</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_meta_1_1_runtime_type_model_html"><div class="ttname"><a href="class_proto_buf_1_1_meta_1_1_runtime_type_model.html">ProtoBuf.Meta.RuntimeTypeModel</a></div><div class="ttdoc">Provides protobuf serialization support for a number of types that can be defined at runtime</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_type_model_8cs_source.html#l00026">RuntimeTypeModel.cs:27</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_meta_1_1_runtime_type_model_html_acc1aab388002cfd0132ac68a4510ad9c"><div class="ttname"><a href="class_proto_buf_1_1_meta_1_1_runtime_type_model.html#acc1aab388002cfd0132ac68a4510ad9c">ProtoBuf.Meta.RuntimeTypeModel.Default</a></div><div class="ttdeci">static RuntimeTypeModel Default</div><div class="ttdoc">The default model, used to support ProtoBuf.Serializer</div><div class="ttdef"><b>Definition:</b> <a href="_runtime_type_model_8cs_source.html#l00131">RuntimeTypeModel.cs:132</a></div></div>
+<div class="ttc" id="aclass_proto_buf_1_1_meta_1_1_type_model_html"><div class="ttname"><a href="class_proto_buf_1_1_meta_1_1_type_model.html">ProtoBuf.Meta.TypeModel</a></div><div class="ttdoc">Provides protobuf serialization support for a number of types</div><div class="ttdef"><b>Definition:</b> <a href="_type_model_8cs_source.html#l00018">TypeModel.cs:19</a></div></div>
+<div class="ttc" id="ainterface_proto_buf_1_1_i_extensible_html"><div class="ttname"><a href="interface_proto_buf_1_1_i_extensible.html">ProtoBuf.IExtensible</a></div><div class="ttdoc">Indicates that the implementing type has support for protocol-buffer extensions.</div><div class="ttdef"><b>Definition:</b> <a href="_i_extensible_8cs_source.html#l00011">IExtensible.cs:12</a></div></div>
+<div class="ttc" id="ainterface_proto_buf_1_1_i_extensible_html_a6ffe5cf0016ddc5a6ae7234026e3a017"><div class="ttname"><a href="interface_proto_buf_1_1_i_extensible.html#a6ffe5cf0016ddc5a6ae7234026e3a017">ProtoBuf.IExtensible.GetExtensionObject</a></div><div class="ttdeci">IExtension GetExtensionObject(bool createIfMissing)</div><div class="ttdoc">Retrieves the extension object for the current instance, optionally creating it if it does not alread...</div></div>
+<div class="ttc" id="ainterface_proto_buf_1_1_i_extension_html"><div class="ttname"><a href="interface_proto_buf_1_1_i_extension.html">ProtoBuf.IExtension</a></div><div class="ttdoc">Provides addition capability for supporting unexpected fields during protocol-buffer serialization/de...</div><div class="ttdef"><b>Definition:</b> <a href="_i_extension_8cs_source.html#l00010">IExtension.cs:11</a></div></div>
+<div class="ttc" id="anamespace_proto_buf_1_1_meta_html"><div class="ttname"><a href="namespace_proto_buf_1_1_meta.html">ProtoBuf.Meta</a></div><div class="ttdef"><b>Definition:</b> <a href="_attribute_map_8cs_source.html#l00011">AttributeMap.cs:12</a></div></div>
+<div class="ttc" id="anamespace_proto_buf_html"><div class="ttname"><a href="namespace_proto_buf.html">ProtoBuf</a></div><div class="ttdef"><b>Definition:</b> <a href="_bcl_helpers_8cs_source.html#l00003">BclHelpers.cs:4</a></div></div>
+<div class="ttc" id="anamespace_proto_buf_html_a995c29daf9a0d7f8466dd963d7f980e7"><div class="ttname"><a href="namespace_proto_buf.html#a995c29daf9a0d7f8466dd963d7f980e7">ProtoBuf.DataFormat</a></div><div class="ttdeci">DataFormat</div><div class="ttdoc">Sub-format to use when serializing/deserializing data</div><div class="ttdef"><b>Definition:</b> <a href="_data_format_8cs_source.html#l00007">DataFormat.cs:8</a></div></div>
+<div class="ttc" id="anamespace_system_1_1_collections_1_1_generic_html"><div class="ttname"><a href="namespace_system_1_1_collections_1_1_generic.html">System.Collections.Generic</a></div></div>
+<div class="ttc" id="anamespace_system_1_1_collections_html"><div class="ttname"><a href="namespace_system_1_1_collections.html">System.Collections</a></div></div>
+<div class="ttc" id="anamespace_system_html"><div class="ttname"><a href="namespace_system.html">System</a></div><div class="ttdef"><b>Definition:</b> <a href="_async_method_builder_attribute_8cs_source.html#l00002">AsyncMethodBuilderAttribute.cs:3</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_3b33dffaa21a2ac6f7978a949ffd4e41.html">Assets</a></li><li class="navelem"><a class="el" href="dir_5501c55c26a8d51fbc1fd8b7d8df04c3.html">ThirdParty</a></li><li class="navelem"><a class="el" href="dir_6648695deef2aa71b28671732c22e7e7.html">protobuf-net</a></li><li class="navelem"><a class="el" href="_extensible_8cs.html">Extensible.cs</a></li>
+    <li class="footer">生成于 2022年 一月 23日 星期日 19:12:36 , 为 ET使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

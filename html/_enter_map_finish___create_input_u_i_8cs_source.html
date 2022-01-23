@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ET: Unity/Codes/HotfixView/Demo/UI/DlgLobby/EnterMapFinish_CreateInputUI.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ET<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_enter_map_finish___create_input_u_i_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">EnterMapFinish_CreateInputUI.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_enter_map_finish___create_input_u_i_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_system.html">System</a>.ComponentModel;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_system.html">System</a>.Threading.Tasks;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_unity_engine.html">UnityEngine</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_e_t.html">ET</a></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_e_t_1_1_enter_map_finish___create_input_u_i.html">    7</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_e_t_1_1_enter_map_finish___create_input_u_i.html">EnterMapFinish_CreateInputUI</a>: <a class="code hl_class" href="class_e_t_1_1_a_event.html">AEvent</a>&lt;EventType.EnterMapFinish&gt;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_e_t_1_1_enter_map_finish___create_input_u_i.html#ac2b32846be1d985a97181109107bc3a3">    9</a></span>        <span class="keyword">protected</span> <span class="keyword">override</span> async <a class="code hl_class" href="class_e_t_1_1_e_t_task.html">ETTask</a> <a class="code hl_function" href="class_e_t_1_1_enter_map_finish___create_input_u_i.html#ac2b32846be1d985a97181109107bc3a3">Run</a>(EventType.EnterMapFinish args)</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>            <span class="comment">// 进入地图，关闭之前的界面并打开操作界面</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            <span class="keywordflow">if</span> (<a class="code hl_class" href="class_e_t_1_1_global_component.html">GlobalComponent</a>.<a class="code hl_variable" href="class_e_t_1_1_global_component.html#ab7df12932f2d83e6197924f28663bd25">Instance</a>.<a class="code hl_variable" href="class_e_t_1_1_global_component.html#a2b739ea96865ebc9757320a324b06b1a">IsStandaloneMode</a>)</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>                args.ZoneScene.DomainScene().GetComponent&lt;<a class="code hl_class" href="class_e_t_1_1_u_i_component.html">UIComponent</a>&gt;().CloseWindow(<a class="code hl_enumeration" href="namespace_e_t.html#afbe29f7b9a5f46b14589af6abe832d78">WindowID</a>.WindowID_RegisterAndLogin);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>                <a class="code hl_class" href="class_e_t_1_1_opera_standalone_component.html">OperaStandaloneComponent</a> operaStandaloneComponent = args.ZoneScene.<a class="code hl_function" href="class_e_t_1_1_entity.html#af1f5fa70a570892aafb3820456347346">AddComponent</a>&lt;<a class="code hl_class" href="class_e_t_1_1_opera_standalone_component.html">OperaStandaloneComponent</a>&gt;();</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>                operaStandaloneComponent.<a class="code hl_variable" href="class_e_t_1_1_opera_standalone_component.html#a2013e43f8840cffb78ed67fd3e3a7c5f">Unit</a> = args.MyUnit;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            }</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                args.ZoneScene.DomainScene().<a class="code hl_function" href="class_e_t_1_1_entity.html#a4f56fd1b9f333d8d7147ed62e331f44f">GetComponent</a>&lt;<a class="code hl_class" href="class_e_t_1_1_u_i_component.html">UIComponent</a>&gt;().CloseWindow(<a class="code hl_enumeration" href="namespace_e_t.html#afbe29f7b9a5f46b14589af6abe832d78">WindowID</a>.WindowID_Lobby);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                args.ZoneScene.AddComponent&lt;<a class="code hl_class" href="class_e_t_1_1_opera_component.html">OperaComponent</a>&gt;();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            }</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            args.ZoneScene.DomainScene().<a class="code hl_function" href="class_e_t_1_1_entity.html#a4f56fd1b9f333d8d7147ed62e331f44f">GetComponent</a>&lt;<a class="code hl_class" href="class_e_t_1_1_u_i_component.html">UIComponent</a>&gt;().ShowWindow(<a class="code hl_enumeration" href="namespace_e_t.html#afbe29f7b9a5f46b14589af6abe832d78">WindowID</a>.WindowID_Input);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            await Task.CompletedTask;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        }</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    }</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
+<div class="ttc" id="aclass_e_t_1_1_a_event_html"><div class="ttname"><a href="class_e_t_1_1_a_event.html">ET.AEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_event_8cs_source.html#l00011">IEvent.cs:12</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_e_t_task_html"><div class="ttname"><a href="class_e_t_1_1_e_t_task.html">ET.ETTask</a></div><div class="ttdef"><b>Definition:</b> <a href="_e_t_task_8cs_source.html#l00166">ETTask.cs:167</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_enter_map_finish___create_input_u_i_html"><div class="ttname"><a href="class_e_t_1_1_enter_map_finish___create_input_u_i.html">ET.EnterMapFinish_CreateInputUI</a></div><div class="ttdef"><b>Definition:</b> <a href="_enter_map_finish___create_input_u_i_8cs_source.html#l00007">EnterMapFinish_CreateInputUI.cs:8</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_enter_map_finish___create_input_u_i_html_ac2b32846be1d985a97181109107bc3a3"><div class="ttname"><a href="class_e_t_1_1_enter_map_finish___create_input_u_i.html#ac2b32846be1d985a97181109107bc3a3">ET.EnterMapFinish_CreateInputUI.Run</a></div><div class="ttdeci">override async ETTask Run(EventType.EnterMapFinish args)</div><div class="ttdef"><b>Definition:</b> <a href="_enter_map_finish___create_input_u_i_8cs_source.html#l00009">EnterMapFinish_CreateInputUI.cs:9</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_entity_html_a4f56fd1b9f333d8d7147ed62e331f44f"><div class="ttname"><a href="class_e_t_1_1_entity.html#a4f56fd1b9f333d8d7147ed62e331f44f">ET.Entity.GetComponent</a></div><div class="ttdeci">Entity GetComponent(Type type)</div><div class="ttdef"><b>Definition:</b> <a href="_entity_8cs_source.html#l00670">Entity.cs:670</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_entity_html_af1f5fa70a570892aafb3820456347346"><div class="ttname"><a href="class_e_t_1_1_entity.html#af1f5fa70a570892aafb3820456347346">ET.Entity.AddComponent</a></div><div class="ttdeci">Entity AddComponent(Entity component)</div><div class="ttdef"><b>Definition:</b> <a href="_entity_8cs_source.html#l00710">Entity.cs:710</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_global_component_html"><div class="ttname"><a href="class_e_t_1_1_global_component.html">ET.GlobalComponent</a></div><div class="ttdef"><b>Definition:</b> <a href="_global_component_8cs_source.html#l00005">GlobalComponent.cs:6</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_global_component_html_a2b739ea96865ebc9757320a324b06b1a"><div class="ttname"><a href="class_e_t_1_1_global_component.html#a2b739ea96865ebc9757320a324b06b1a">ET.GlobalComponent.IsStandaloneMode</a></div><div class="ttdeci">bool IsStandaloneMode</div><div class="ttdef"><b>Definition:</b> <a href="_global_component_8cs_source.html#l00018">GlobalComponent.cs:18</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_global_component_html_ab7df12932f2d83e6197924f28663bd25"><div class="ttname"><a href="class_e_t_1_1_global_component.html#ab7df12932f2d83e6197924f28663bd25">ET.GlobalComponent.Instance</a></div><div class="ttdeci">static GlobalComponent Instance</div><div class="ttdef"><b>Definition:</b> <a href="_global_component_8cs_source.html#l00007">GlobalComponent.cs:7</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_opera_component_html"><div class="ttname"><a href="class_e_t_1_1_opera_component.html">ET.OperaComponent</a></div><div class="ttdef"><b>Definition:</b> <a href="_opera_component_8cs_source.html#l00007">OperaComponent.cs:8</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_opera_standalone_component_html"><div class="ttname"><a href="class_e_t_1_1_opera_standalone_component.html">ET.OperaStandaloneComponent</a></div><div class="ttdef"><b>Definition:</b> <a href="_opera_standalone_component_8cs_source.html#l00007">OperaStandaloneComponent.cs:8</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_opera_standalone_component_html_a2013e43f8840cffb78ed67fd3e3a7c5f"><div class="ttname"><a href="class_e_t_1_1_opera_standalone_component.html#a2013e43f8840cffb78ed67fd3e3a7c5f">ET.OperaStandaloneComponent.Unit</a></div><div class="ttdeci">Unit Unit</div><div class="ttdef"><b>Definition:</b> <a href="_opera_standalone_component_8cs_source.html#l00013">OperaStandaloneComponent.cs:13</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_u_i_component_html"><div class="ttname"><a href="class_e_t_1_1_u_i_component.html">ET.UIComponent</a></div><div class="ttdef"><b>Definition:</b> <a href="_u_i_component_8cs_source.html#l00005">UIComponent.cs:6</a></div></div>
+<div class="ttc" id="anamespace_e_t_html"><div class="ttname"><a href="namespace_e_t.html">ET</a></div><div class="ttdef"><b>Definition:</b> <a href="_robot_2_app_2_program_8cs_source.html#l00008">Program.cs:9</a></div></div>
+<div class="ttc" id="anamespace_e_t_html_afbe29f7b9a5f46b14589af6abe832d78"><div class="ttname"><a href="namespace_e_t.html#afbe29f7b9a5f46b14589af6abe832d78">ET.WindowID</a></div><div class="ttdeci">WindowID</div><div class="ttdef"><b>Definition:</b> <a href="_window_id_8cs_source.html#l00003">WindowId.cs:4</a></div></div>
+<div class="ttc" id="anamespace_system_html"><div class="ttname"><a href="namespace_system.html">System</a></div><div class="ttdef"><b>Definition:</b> <a href="_async_method_builder_attribute_8cs_source.html#l00002">AsyncMethodBuilderAttribute.cs:3</a></div></div>
+<div class="ttc" id="anamespace_unity_engine_html"><div class="ttname"><a href="namespace_unity_engine.html">UnityEngine</a></div><div class="ttdef"><b>Definition:</b> <a href="_mathf_8cs_source.html#l00003">Mathf.cs:4</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_0593c8c31e62684349ddf63300956e7f.html">Codes</a></li><li class="navelem"><a class="el" href="dir_e64153545e168a22cb927133a94d943b.html">HotfixView</a></li><li class="navelem"><a class="el" href="dir_e7bd51a47f5bd8183956a80b432130f4.html">Demo</a></li><li class="navelem"><a class="el" href="dir_a757fc6e51f30410aff05290b9b186d6.html">UI</a></li><li class="navelem"><a class="el" href="dir_05e6bdac449e09ca384980b55153abca.html">DlgLobby</a></li><li class="navelem"><a class="el" href="_enter_map_finish___create_input_u_i_8cs.html">EnterMapFinish_CreateInputUI.cs</a></li>
+    <li class="footer">生成于 2022年 一月 23日 星期日 19:12:37 , 为 ET使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

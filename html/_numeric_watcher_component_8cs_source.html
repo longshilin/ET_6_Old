@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ET: Unity/Codes/Model/Module/Numeric/NumericWatcherComponent.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ET<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_numeric_watcher_component_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">NumericWatcherComponent.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_numeric_watcher_component_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using</span> <a class="code hl_variable" href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_system.html">System</a>.<a class="code hl_namespace" href="namespace_system_1_1_collections.html">Collections</a>.<a class="code hl_namespace" href="namespace_system_1_1_collections_1_1_generic.html">Generic</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_e_t.html">ET</a></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>        [ObjectSystem]</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_e_t_1_1_numeric_watcher_component_awake_system.html">    7</a></span>        <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_e_t_1_1_numeric_watcher_component_awake_system.html">NumericWatcherComponentAwakeSystem</a> : <a class="code hl_class" href="class_e_t_1_1_awake_system.html">AwakeSystem</a>&lt;NumericWatcherComponent&gt;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>        {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_e_t_1_1_numeric_watcher_component_awake_system.html#ad0dc97b2ab5a78e02815562ead5b9894">    9</a></span>                <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_e_t_1_1_numeric_watcher_component_awake_system.html#ad0dc97b2ab5a78e02815562ead5b9894">Awake</a>(<a class="code hl_class" href="class_e_t_1_1_numeric_watcher_component.html">NumericWatcherComponent</a> <span class="keyword">self</span>)</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>                {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>                        <a class="code hl_class" href="class_e_t_1_1_numeric_watcher_component.html">NumericWatcherComponent</a>.<a class="code hl_property" href="class_e_t_1_1_numeric_watcher_component.html#a7be64904407afc59368eb8ed579e61fc">Instance</a> = <span class="keyword">self</span>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>                        <span class="keyword">self</span>.<a class="code hl_function" href="class_e_t_1_1_numeric_watcher_component.html#ab698dbb1c341184156aad397bf33a9dd">Awake</a>();</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>                }</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        }</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_e_t_1_1_numeric_watcher_component_load_system.html">   17</a></span>        <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_e_t_1_1_numeric_watcher_component_load_system.html">NumericWatcherComponentLoadSystem</a> : <a class="code hl_class" href="class_e_t_1_1_load_system.html">LoadSystem</a>&lt;NumericWatcherComponent&gt;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_e_t_1_1_numeric_watcher_component_load_system.html#ac05184e407bf434acaa8540e6b5be76c">   19</a></span>                <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_e_t_1_1_numeric_watcher_component_load_system.html#ac05184e407bf434acaa8540e6b5be76c">Load</a>(<a class="code hl_class" href="class_e_t_1_1_numeric_watcher_component.html">NumericWatcherComponent</a> <span class="keyword">self</span>)</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                        <span class="keyword">self</span>.Load();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                }</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        }</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_e_t_1_1_numeric_watcher_component.html">   28</a></span>        <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_e_t_1_1_numeric_watcher_component.html">NumericWatcherComponent</a> : <a class="code hl_class" href="class_e_t_1_1_entity.html">Entity</a>, <a class="code hl_interface" href="interface_e_t_1_1_i_awake.html">IAwake</a>, <a class="code hl_interface" href="interface_e_t_1_1_i_load.html">ILoad</a></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_e_t_1_1_numeric_watcher_component.html#a7be64904407afc59368eb8ed579e61fc">   30</a></span>                <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_class" href="class_e_t_1_1_numeric_watcher_component.html">NumericWatcherComponent</a> <a class="code hl_property" href="class_e_t_1_1_numeric_watcher_component.html#a7be64904407afc59368eb8ed579e61fc">Instance</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                <span class="keyword">private</span> Dictionary&lt;NumericType, List&lt;INumericWatcher&gt;&gt; allWatchers;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_e_t_1_1_numeric_watcher_component.html#ab698dbb1c341184156aad397bf33a9dd">   34</a></span>                <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_e_t_1_1_numeric_watcher_component.html#ab698dbb1c341184156aad397bf33a9dd">Awake</a>()</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                        this.<a class="code hl_function" href="class_e_t_1_1_numeric_watcher_component.html#a924a4ba393ad66fcb29577e6325e44f0">Load</a>();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_e_t_1_1_numeric_watcher_component.html#a924a4ba393ad66fcb29577e6325e44f0">   39</a></span>                <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_e_t_1_1_numeric_watcher_component.html#a924a4ba393ad66fcb29577e6325e44f0">Load</a>()</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                        this.allWatchers = <span class="keyword">new</span> Dictionary&lt;NumericType, List&lt;INumericWatcher&gt;&gt;();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                        HashSet&lt;Type&gt; types = Game.EventSystem.GetTypes(typeof(<a class="code hl_class" href="class_e_t_1_1_numeric_watcher_attribute.html">NumericWatcherAttribute</a>));</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                        <span class="keywordflow">foreach</span> (Type type <span class="keywordflow">in</span> types)</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                        {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                                <span class="keywordtype">object</span>[] attrs = type.GetCustomAttributes(typeof(<a class="code hl_class" href="class_e_t_1_1_numeric_watcher_attribute.html">NumericWatcherAttribute</a>), <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                                <span class="keywordflow">foreach</span> (<span class="keywordtype">object</span> attr <span class="keywordflow">in</span> attrs)</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                                {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                                        <a class="code hl_class" href="class_e_t_1_1_numeric_watcher_attribute.html">NumericWatcherAttribute</a> numericWatcherAttribute = (<a class="code hl_class" href="class_e_t_1_1_numeric_watcher_attribute.html">NumericWatcherAttribute</a>)attr;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                                        <a class="code hl_interface" href="interface_e_t_1_1_i_numeric_watcher.html">INumericWatcher</a> obj = (<a class="code hl_interface" href="interface_e_t_1_1_i_numeric_watcher.html">INumericWatcher</a>)Activator.CreateInstance(type);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                                        <span class="keywordflow">if</span> (!this.allWatchers.ContainsKey(numericWatcherAttribute.<a class="code hl_property" href="class_e_t_1_1_numeric_watcher_attribute.html#a15007e3e2818916655f4f0718232807f">NumericType</a>))</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                                        {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                                                this.allWatchers.Add(numericWatcherAttribute.<a class="code hl_property" href="class_e_t_1_1_numeric_watcher_attribute.html#a15007e3e2818916655f4f0718232807f">NumericType</a>, <span class="keyword">new</span> List&lt;INumericWatcher&gt;());</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                                        }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                                        this.allWatchers[numericWatcherAttribute.<a class="code hl_property" href="class_e_t_1_1_numeric_watcher_attribute.html#a15007e3e2818916655f4f0718232807f">NumericType</a>].Add(obj);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                                }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                        }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_e_t_1_1_numeric_watcher_component.html#aebd211a3d287413b7c822438cf0c04c2">   61</a></span>                <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_e_t_1_1_numeric_watcher_component.html#aebd211a3d287413b7c822438cf0c04c2">Run</a>(<a class="code hl_enumeration" href="namespace_e_t.html#abd2b5e699e9e4650b27e25887659fb73">NumericType</a> numericType, <span class="keywordtype">long</span> <span class="keywordtype">id</span>, <span class="keywordtype">long</span> value)</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                        List&lt;INumericWatcher&gt; list;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                        <span class="keywordflow">if</span> (!this.allWatchers.TryGetValue(numericType, out list))</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                        {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                        }</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                        <span class="keywordflow">foreach</span> (<a class="code hl_interface" href="interface_e_t_1_1_i_numeric_watcher.html">INumericWatcher</a> numericWatcher <span class="keywordflow">in</span> list)</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                        {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                                numericWatcher.<a class="code hl_function" href="interface_e_t_1_1_i_numeric_watcher.html#a450baad1cdb68603ae416ef13e2c6fea">Run</a>(<span class="keywordtype">id</span>, value);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                        }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
+<div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_awake_system_html"><div class="ttname"><a href="class_e_t_1_1_awake_system.html">ET.AwakeSystem</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_awake_system_8cs_source.html#l00135">IAwakeSystem.cs:136</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_entity_html"><div class="ttname"><a href="class_e_t_1_1_entity.html">ET.Entity</a></div><div class="ttdef"><b>Definition:</b> <a href="_entity_8cs_source.html#l00019">Entity.cs:20</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_load_system_html"><div class="ttname"><a href="class_e_t_1_1_load_system.html">ET.LoadSystem</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_load_system_8cs_source.html#l00015">ILoadSystem.cs:16</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_numeric_watcher_attribute_html"><div class="ttname"><a href="class_e_t_1_1_numeric_watcher_attribute.html">ET.NumericWatcherAttribute</a></div><div class="ttdef"><b>Definition:</b> <a href="_numeric_watcher_attribute_8cs_source.html#l00003">NumericWatcherAttribute.cs:4</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_numeric_watcher_attribute_html_a15007e3e2818916655f4f0718232807f"><div class="ttname"><a href="class_e_t_1_1_numeric_watcher_attribute.html#a15007e3e2818916655f4f0718232807f">ET.NumericWatcherAttribute.NumericType</a></div><div class="ttdeci">NumericType NumericType</div><div class="ttdef"><b>Definition:</b> <a href="_numeric_watcher_attribute_8cs_source.html#l00005">NumericWatcherAttribute.cs:5</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_numeric_watcher_component_awake_system_html"><div class="ttname"><a href="class_e_t_1_1_numeric_watcher_component_awake_system.html">ET.NumericWatcherComponentAwakeSystem</a></div><div class="ttdef"><b>Definition:</b> <a href="_numeric_watcher_component_8cs_source.html#l00007">NumericWatcherComponent.cs:8</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_numeric_watcher_component_awake_system_html_ad0dc97b2ab5a78e02815562ead5b9894"><div class="ttname"><a href="class_e_t_1_1_numeric_watcher_component_awake_system.html#ad0dc97b2ab5a78e02815562ead5b9894">ET.NumericWatcherComponentAwakeSystem.Awake</a></div><div class="ttdeci">override void Awake(NumericWatcherComponent self)</div><div class="ttdef"><b>Definition:</b> <a href="_numeric_watcher_component_8cs_source.html#l00009">NumericWatcherComponent.cs:9</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_numeric_watcher_component_html"><div class="ttname"><a href="class_e_t_1_1_numeric_watcher_component.html">ET.NumericWatcherComponent</a></div><div class="ttdoc">监视数值变化组件,分发监听</div><div class="ttdef"><b>Definition:</b> <a href="_numeric_watcher_component_8cs_source.html#l00028">NumericWatcherComponent.cs:29</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_numeric_watcher_component_html_a7be64904407afc59368eb8ed579e61fc"><div class="ttname"><a href="class_e_t_1_1_numeric_watcher_component.html#a7be64904407afc59368eb8ed579e61fc">ET.NumericWatcherComponent.Instance</a></div><div class="ttdeci">static NumericWatcherComponent Instance</div><div class="ttdef"><b>Definition:</b> <a href="_numeric_watcher_component_8cs_source.html#l00030">NumericWatcherComponent.cs:30</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_numeric_watcher_component_html_a924a4ba393ad66fcb29577e6325e44f0"><div class="ttname"><a href="class_e_t_1_1_numeric_watcher_component.html#a924a4ba393ad66fcb29577e6325e44f0">ET.NumericWatcherComponent.Load</a></div><div class="ttdeci">void Load()</div><div class="ttdef"><b>Definition:</b> <a href="_numeric_watcher_component_8cs_source.html#l00039">NumericWatcherComponent.cs:39</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_numeric_watcher_component_html_ab698dbb1c341184156aad397bf33a9dd"><div class="ttname"><a href="class_e_t_1_1_numeric_watcher_component.html#ab698dbb1c341184156aad397bf33a9dd">ET.NumericWatcherComponent.Awake</a></div><div class="ttdeci">void Awake()</div><div class="ttdef"><b>Definition:</b> <a href="_numeric_watcher_component_8cs_source.html#l00034">NumericWatcherComponent.cs:34</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_numeric_watcher_component_html_aebd211a3d287413b7c822438cf0c04c2"><div class="ttname"><a href="class_e_t_1_1_numeric_watcher_component.html#aebd211a3d287413b7c822438cf0c04c2">ET.NumericWatcherComponent.Run</a></div><div class="ttdeci">void Run(NumericType numericType, long id, long value)</div><div class="ttdef"><b>Definition:</b> <a href="_numeric_watcher_component_8cs_source.html#l00061">NumericWatcherComponent.cs:61</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_numeric_watcher_component_load_system_html"><div class="ttname"><a href="class_e_t_1_1_numeric_watcher_component_load_system.html">ET.NumericWatcherComponentLoadSystem</a></div><div class="ttdef"><b>Definition:</b> <a href="_numeric_watcher_component_8cs_source.html#l00017">NumericWatcherComponent.cs:18</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_numeric_watcher_component_load_system_html_ac05184e407bf434acaa8540e6b5be76c"><div class="ttname"><a href="class_e_t_1_1_numeric_watcher_component_load_system.html#ac05184e407bf434acaa8540e6b5be76c">ET.NumericWatcherComponentLoadSystem.Load</a></div><div class="ttdeci">override void Load(NumericWatcherComponent self)</div><div class="ttdef"><b>Definition:</b> <a href="_numeric_watcher_component_8cs_source.html#l00019">NumericWatcherComponent.cs:19</a></div></div>
+<div class="ttc" id="ainterface_e_t_1_1_i_awake_html"><div class="ttname"><a href="interface_e_t_1_1_i_awake.html">ET.IAwake</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_awake_system_8cs_source.html#l00021">IAwakeSystem.cs:22</a></div></div>
+<div class="ttc" id="ainterface_e_t_1_1_i_load_html"><div class="ttname"><a href="interface_e_t_1_1_i_load.html">ET.ILoad</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_load_system_8cs_source.html#l00005">ILoadSystem.cs:6</a></div></div>
+<div class="ttc" id="ainterface_e_t_1_1_i_numeric_watcher_html"><div class="ttname"><a href="interface_e_t_1_1_i_numeric_watcher.html">ET.INumericWatcher</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_numeric_watcher_8cs_source.html#l00003">INumericWatcher.cs:4</a></div></div>
+<div class="ttc" id="ainterface_e_t_1_1_i_numeric_watcher_html_a450baad1cdb68603ae416ef13e2c6fea"><div class="ttname"><a href="interface_e_t_1_1_i_numeric_watcher.html#a450baad1cdb68603ae416ef13e2c6fea">ET.INumericWatcher.Run</a></div><div class="ttdeci">void Run(long id, long value)</div></div>
+<div class="ttc" id="anamespace_e_t_html"><div class="ttname"><a href="namespace_e_t.html">ET</a></div><div class="ttdef"><b>Definition:</b> <a href="_robot_2_app_2_program_8cs_source.html#l00008">Program.cs:9</a></div></div>
+<div class="ttc" id="anamespace_e_t_html_abd2b5e699e9e4650b27e25887659fb73"><div class="ttname"><a href="namespace_e_t.html#abd2b5e699e9e4650b27e25887659fb73">ET.NumericType</a></div><div class="ttdeci">NumericType</div><div class="ttdef"><b>Definition:</b> <a href="_numeric_type_8cs_source.html#l00003">NumericType.cs:4</a></div></div>
+<div class="ttc" id="anamespace_system_1_1_collections_1_1_generic_html"><div class="ttname"><a href="namespace_system_1_1_collections_1_1_generic.html">System.Collections.Generic</a></div></div>
+<div class="ttc" id="anamespace_system_1_1_collections_html"><div class="ttname"><a href="namespace_system_1_1_collections.html">System.Collections</a></div></div>
+<div class="ttc" id="anamespace_system_html"><div class="ttname"><a href="namespace_system.html">System</a></div><div class="ttdef"><b>Definition:</b> <a href="_async_method_builder_attribute_8cs_source.html#l00002">AsyncMethodBuilderAttribute.cs:3</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_0593c8c31e62684349ddf63300956e7f.html">Codes</a></li><li class="navelem"><a class="el" href="dir_318b4bff51c08ca39d91ce903db9adc7.html">Model</a></li><li class="navelem"><a class="el" href="dir_85e8860fbae2887c86e7e172e19d58a7.html">Module</a></li><li class="navelem"><a class="el" href="dir_694d2268ae32f4e32a160b9a690c408a.html">Numeric</a></li><li class="navelem"><a class="el" href="_numeric_watcher_component_8cs.html">NumericWatcherComponent.cs</a></li>
+    <li class="footer">生成于 2022年 一月 23日 星期日 19:12:37 , 为 ET使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

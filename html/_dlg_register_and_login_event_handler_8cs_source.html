@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ET: Unity/Codes/HotfixView/Demo/UI/DlgRegisterAndLogin/Event/DlgRegisterAndLoginEventHandler.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ET<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_dlg_register_and_login_event_handler_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">DlgRegisterAndLoginEventHandler.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_dlg_register_and_login_event_handler_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_e_t.html">ET</a></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>{</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>        [AUIEvent(<a class="code hl_enumeration" href="namespace_e_t.html#afbe29f7b9a5f46b14589af6abe832d78">WindowID</a>.WindowID_RegisterAndLogin)]</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="class_e_t_1_1_dlg_register_and_login_event_handler.html">    4</a></span>        <span class="keyword">public</span>  <span class="keyword">class </span><a class="code hl_class" href="class_e_t_1_1_dlg_register_and_login_event_handler.html">DlgRegisterAndLoginEventHandler</a> : <a class="code hl_interface" href="interface_e_t_1_1_i_a_u_i_event_handler.html">IAUIEventHandler</a></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>        {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_e_t_1_1_dlg_register_and_login_event_handler.html#a96bafe215f0f1c450b203f008d857ac3">    7</a></span>                <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_e_t_1_1_dlg_register_and_login_event_handler.html#a96bafe215f0f1c450b203f008d857ac3">OnInitWindowCoreData</a>(<a class="code hl_class" href="class_e_t_1_1_u_i_base_window.html">UIBaseWindow</a> uiBaseWindow)</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>                {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>                  uiBaseWindow.<a class="code hl_variable" href="class_e_t_1_1_u_i_base_window.html#a06fe8aea9f5c49c8be2ac2d49b359ec2">WindowData</a>.<a class="code hl_variable" href="class_e_t_1_1_window_core_data.html#a283cc920bdf07922e7c1bc2539bb154f">windowType</a> = <a class="code hl_enumeration" href="namespace_e_t.html#a5ee0c8a0ebc67785d3bfaa6705467656">UIWindowType</a>.Normal; </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>                }</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_e_t_1_1_dlg_register_and_login_event_handler.html#a4d7c31212f110800eeb498ad62070adb">   12</a></span>                <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_e_t_1_1_dlg_register_and_login_event_handler.html#a4d7c31212f110800eeb498ad62070adb">OnInitComponent</a>(<a class="code hl_class" href="class_e_t_1_1_u_i_base_window.html">UIBaseWindow</a> uiBaseWindow)</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>                {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>                  uiBaseWindow.<a class="code hl_function" href="class_e_t_1_1_entity.html#af1f5fa70a570892aafb3820456347346">AddComponent</a>&lt;<a class="code hl_class" href="class_e_t_1_1_dlg_register_and_login_view_component.html">DlgRegisterAndLoginViewComponent</a>&gt;(); </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>                  uiBaseWindow.<a class="code hl_function" href="class_e_t_1_1_entity.html#af1f5fa70a570892aafb3820456347346">AddComponent</a>&lt;<a class="code hl_class" href="class_e_t_1_1_dlg_register_and_login.html">DlgRegisterAndLogin</a>&gt;(); </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>                }</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_e_t_1_1_dlg_register_and_login_event_handler.html#a0d7e20d1401e1d906cf72449e0566adc">   18</a></span>                <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_e_t_1_1_dlg_register_and_login_event_handler.html#a0d7e20d1401e1d906cf72449e0566adc">OnRegisterUIEvent</a>(<a class="code hl_class" href="class_e_t_1_1_u_i_base_window.html">UIBaseWindow</a> uiBaseWindow)</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                  uiBaseWindow.<a class="code hl_function" href="class_e_t_1_1_entity.html#a4f56fd1b9f333d8d7147ed62e331f44f">GetComponent</a>&lt;<a class="code hl_class" href="class_e_t_1_1_dlg_register_and_login.html">DlgRegisterAndLogin</a>&gt;().RegisterUIEvent(); </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                }</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_e_t_1_1_dlg_register_and_login_event_handler.html#a57bd5f04189cb6f343478ac92789005a">   23</a></span>                <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_e_t_1_1_dlg_register_and_login_event_handler.html#a57bd5f04189cb6f343478ac92789005a">OnShowWindow</a>(<a class="code hl_class" href="class_e_t_1_1_u_i_base_window.html">UIBaseWindow</a> uiBaseWindow, <a class="code hl_class" href="class_e_t_1_1_entity.html">Entity</a> contextData = <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                  uiBaseWindow.<a class="code hl_function" href="class_e_t_1_1_entity.html#a4f56fd1b9f333d8d7147ed62e331f44f">GetComponent</a>&lt;<a class="code hl_class" href="class_e_t_1_1_dlg_register_and_login.html">DlgRegisterAndLogin</a>&gt;().ShowWindow(contextData); </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                }</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_e_t_1_1_dlg_register_and_login_event_handler.html#a993c2622934aac9be645e83ac8dd6743">   28</a></span>                <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_e_t_1_1_dlg_register_and_login_event_handler.html#a993c2622934aac9be645e83ac8dd6743">OnHideWindow</a>(<a class="code hl_class" href="class_e_t_1_1_u_i_base_window.html">UIBaseWindow</a> uiBaseWindow)</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_e_t_1_1_dlg_register_and_login_event_handler.html#a3ca8f46cfd38b4e6a78fe19b19d599bf">   32</a></span>                <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_e_t_1_1_dlg_register_and_login_event_handler.html#a3ca8f46cfd38b4e6a78fe19b19d599bf">BeforeUnload</a>(<a class="code hl_class" href="class_e_t_1_1_u_i_base_window.html">UIBaseWindow</a> uiBaseWindow)</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>}</div>
+<div class="ttc" id="aclass_e_t_1_1_dlg_register_and_login_event_handler_html"><div class="ttname"><a href="class_e_t_1_1_dlg_register_and_login_event_handler.html">ET.DlgRegisterAndLoginEventHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="_dlg_register_and_login_event_handler_8cs_source.html#l00004">DlgRegisterAndLoginEventHandler.cs:5</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_dlg_register_and_login_event_handler_html_a0d7e20d1401e1d906cf72449e0566adc"><div class="ttname"><a href="class_e_t_1_1_dlg_register_and_login_event_handler.html#a0d7e20d1401e1d906cf72449e0566adc">ET.DlgRegisterAndLoginEventHandler.OnRegisterUIEvent</a></div><div class="ttdeci">void OnRegisterUIEvent(UIBaseWindow uiBaseWindow)</div><div class="ttdoc">注册UI业务逻辑事件</div><div class="ttdef"><b>Definition:</b> <a href="_dlg_register_and_login_event_handler_8cs_source.html#l00018">DlgRegisterAndLoginEventHandler.cs:18</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_dlg_register_and_login_event_handler_html_a3ca8f46cfd38b4e6a78fe19b19d599bf"><div class="ttname"><a href="class_e_t_1_1_dlg_register_and_login_event_handler.html#a3ca8f46cfd38b4e6a78fe19b19d599bf">ET.DlgRegisterAndLoginEventHandler.BeforeUnload</a></div><div class="ttdeci">void BeforeUnload(UIBaseWindow uiBaseWindow)</div><div class="ttdoc">完全关闭销毁UI窗口之前的业务逻辑，用于完全释放UI相关对象</div><div class="ttdef"><b>Definition:</b> <a href="_dlg_register_and_login_event_handler_8cs_source.html#l00032">DlgRegisterAndLoginEventHandler.cs:32</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_dlg_register_and_login_event_handler_html_a4d7c31212f110800eeb498ad62070adb"><div class="ttname"><a href="class_e_t_1_1_dlg_register_and_login_event_handler.html#a4d7c31212f110800eeb498ad62070adb">ET.DlgRegisterAndLoginEventHandler.OnInitComponent</a></div><div class="ttdeci">void OnInitComponent(UIBaseWindow uiBaseWindow)</div><div class="ttdoc">UI实体加载后，初始化业务逻辑数据</div><div class="ttdef"><b>Definition:</b> <a href="_dlg_register_and_login_event_handler_8cs_source.html#l00012">DlgRegisterAndLoginEventHandler.cs:12</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_dlg_register_and_login_event_handler_html_a57bd5f04189cb6f343478ac92789005a"><div class="ttname"><a href="class_e_t_1_1_dlg_register_and_login_event_handler.html#a57bd5f04189cb6f343478ac92789005a">ET.DlgRegisterAndLoginEventHandler.OnShowWindow</a></div><div class="ttdeci">void OnShowWindow(UIBaseWindow uiBaseWindow, Entity contextData=null)</div><div class="ttdoc">打开UI窗口的业务逻辑</div><div class="ttdef"><b>Definition:</b> <a href="_dlg_register_and_login_event_handler_8cs_source.html#l00023">DlgRegisterAndLoginEventHandler.cs:23</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_dlg_register_and_login_event_handler_html_a96bafe215f0f1c450b203f008d857ac3"><div class="ttname"><a href="class_e_t_1_1_dlg_register_and_login_event_handler.html#a96bafe215f0f1c450b203f008d857ac3">ET.DlgRegisterAndLoginEventHandler.OnInitWindowCoreData</a></div><div class="ttdeci">void OnInitWindowCoreData(UIBaseWindow uiBaseWindow)</div><div class="ttdoc">UI实体加载后,初始化窗口数据</div><div class="ttdef"><b>Definition:</b> <a href="_dlg_register_and_login_event_handler_8cs_source.html#l00007">DlgRegisterAndLoginEventHandler.cs:7</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_dlg_register_and_login_event_handler_html_a993c2622934aac9be645e83ac8dd6743"><div class="ttname"><a href="class_e_t_1_1_dlg_register_and_login_event_handler.html#a993c2622934aac9be645e83ac8dd6743">ET.DlgRegisterAndLoginEventHandler.OnHideWindow</a></div><div class="ttdeci">void OnHideWindow(UIBaseWindow uiBaseWindow)</div><div class="ttdoc">隐藏UI窗口的业务逻辑</div><div class="ttdef"><b>Definition:</b> <a href="_dlg_register_and_login_event_handler_8cs_source.html#l00028">DlgRegisterAndLoginEventHandler.cs:28</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_dlg_register_and_login_html"><div class="ttname"><a href="class_e_t_1_1_dlg_register_and_login.html">ET.DlgRegisterAndLogin</a></div><div class="ttdef"><b>Definition:</b> <a href="_dlg_register_and_login_8cs_source.html#l00003">DlgRegisterAndLogin.cs:4</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_dlg_register_and_login_view_component_html"><div class="ttname"><a href="class_e_t_1_1_dlg_register_and_login_view_component.html">ET.DlgRegisterAndLoginViewComponent</a></div><div class="ttdef"><b>Definition:</b> <a href="_dlg_register_and_login_view_component_8cs_source.html#l00006">DlgRegisterAndLoginViewComponent.cs:7</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_entity_html"><div class="ttname"><a href="class_e_t_1_1_entity.html">ET.Entity</a></div><div class="ttdef"><b>Definition:</b> <a href="_entity_8cs_source.html#l00019">Entity.cs:20</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_entity_html_a4f56fd1b9f333d8d7147ed62e331f44f"><div class="ttname"><a href="class_e_t_1_1_entity.html#a4f56fd1b9f333d8d7147ed62e331f44f">ET.Entity.GetComponent</a></div><div class="ttdeci">Entity GetComponent(Type type)</div><div class="ttdef"><b>Definition:</b> <a href="_entity_8cs_source.html#l00670">Entity.cs:670</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_entity_html_af1f5fa70a570892aafb3820456347346"><div class="ttname"><a href="class_e_t_1_1_entity.html#af1f5fa70a570892aafb3820456347346">ET.Entity.AddComponent</a></div><div class="ttdeci">Entity AddComponent(Entity component)</div><div class="ttdef"><b>Definition:</b> <a href="_entity_8cs_source.html#l00710">Entity.cs:710</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_u_i_base_window_html"><div class="ttname"><a href="class_e_t_1_1_u_i_base_window.html">ET.UIBaseWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="_u_i_base_window_8cs_source.html#l00005">UIBaseWindow.cs:6</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_u_i_base_window_html_a06fe8aea9f5c49c8be2ac2d49b359ec2"><div class="ttname"><a href="class_e_t_1_1_u_i_base_window.html#a06fe8aea9f5c49c8be2ac2d49b359ec2">ET.UIBaseWindow.WindowData</a></div><div class="ttdeci">WindowCoreData WindowData</div><div class="ttdef"><b>Definition:</b> <a href="_u_i_base_window_8cs_source.html#l00050">UIBaseWindow.cs:50</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_window_core_data_html_a283cc920bdf07922e7c1bc2539bb154f"><div class="ttname"><a href="class_e_t_1_1_window_core_data.html#a283cc920bdf07922e7c1bc2539bb154f">ET.WindowCoreData.windowType</a></div><div class="ttdeci">UIWindowType windowType</div><div class="ttdef"><b>Definition:</b> <a href="_window_data_define_8cs_source.html#l00018">WindowDataDefine.cs:18</a></div></div>
+<div class="ttc" id="ainterface_e_t_1_1_i_a_u_i_event_handler_html"><div class="ttname"><a href="interface_e_t_1_1_i_a_u_i_event_handler.html">ET.IAUIEventHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_a_u_i_event_handler_8cs_source.html#l00003">IAUIEventHandler.cs:4</a></div></div>
+<div class="ttc" id="anamespace_e_t_html"><div class="ttname"><a href="namespace_e_t.html">ET</a></div><div class="ttdef"><b>Definition:</b> <a href="_robot_2_app_2_program_8cs_source.html#l00008">Program.cs:9</a></div></div>
+<div class="ttc" id="anamespace_e_t_html_a5ee0c8a0ebc67785d3bfaa6705467656"><div class="ttname"><a href="namespace_e_t.html#a5ee0c8a0ebc67785d3bfaa6705467656">ET.UIWindowType</a></div><div class="ttdeci">UIWindowType</div><div class="ttdef"><b>Definition:</b> <a href="_window_data_define_8cs_source.html#l00008">WindowDataDefine.cs:9</a></div></div>
+<div class="ttc" id="anamespace_e_t_html_afbe29f7b9a5f46b14589af6abe832d78"><div class="ttname"><a href="namespace_e_t.html#afbe29f7b9a5f46b14589af6abe832d78">ET.WindowID</a></div><div class="ttdeci">WindowID</div><div class="ttdef"><b>Definition:</b> <a href="_window_id_8cs_source.html#l00003">WindowId.cs:4</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_0593c8c31e62684349ddf63300956e7f.html">Codes</a></li><li class="navelem"><a class="el" href="dir_e64153545e168a22cb927133a94d943b.html">HotfixView</a></li><li class="navelem"><a class="el" href="dir_e7bd51a47f5bd8183956a80b432130f4.html">Demo</a></li><li class="navelem"><a class="el" href="dir_a757fc6e51f30410aff05290b9b186d6.html">UI</a></li><li class="navelem"><a class="el" href="dir_57f83997b6865e94e5c6b06b5da6cff8.html">DlgRegisterAndLogin</a></li><li class="navelem"><a class="el" href="dir_d9972737419bc7b355bf50c61027c748.html">Event</a></li><li class="navelem"><a class="el" href="_dlg_register_and_login_event_handler_8cs.html">DlgRegisterAndLoginEventHandler.cs</a></li>
+    <li class="footer">生成于 2022年 一月 23日 星期日 19:12:37 , 为 ET使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

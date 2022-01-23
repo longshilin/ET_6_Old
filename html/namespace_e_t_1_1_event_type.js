@@ -1,0 +1,28 @@
+var namespace_e_t_1_1_event_type =
+[
+    [ "AfterCreateCurrentScene", "struct_e_t_1_1_event_type_1_1_after_create_current_scene.html", "struct_e_t_1_1_event_type_1_1_after_create_current_scene" ],
+    [ "AfterCreateLoginScene", "struct_e_t_1_1_event_type_1_1_after_create_login_scene.html", "struct_e_t_1_1_event_type_1_1_after_create_login_scene" ],
+    [ "AfterCreateZoneScene", "struct_e_t_1_1_event_type_1_1_after_create_zone_scene.html", "struct_e_t_1_1_event_type_1_1_after_create_zone_scene" ],
+    [ "AfterUnitCreate", "struct_e_t_1_1_event_type_1_1_after_unit_create.html", "struct_e_t_1_1_event_type_1_1_after_unit_create" ],
+    [ "AppStart", "struct_e_t_1_1_event_type_1_1_app_start.html", null ],
+    [ "AppStartInitFinish", "struct_e_t_1_1_event_type_1_1_app_start_init_finish.html", "struct_e_t_1_1_event_type_1_1_app_start_init_finish" ],
+    [ "ChangePosition", "struct_e_t_1_1_event_type_1_1_change_position.html", "struct_e_t_1_1_event_type_1_1_change_position" ],
+    [ "ChangeRotation", "struct_e_t_1_1_event_type_1_1_change_rotation.html", "struct_e_t_1_1_event_type_1_1_change_rotation" ],
+    [ "CreateMyUnitFinish", "struct_e_t_1_1_event_type_1_1_create_my_unit_finish.html", "struct_e_t_1_1_event_type_1_1_create_my_unit_finish" ],
+    [ "EnterMapFinish", "struct_e_t_1_1_event_type_1_1_enter_map_finish.html", "struct_e_t_1_1_event_type_1_1_enter_map_finish" ],
+    [ "LeaveLobbyFinish", "struct_e_t_1_1_event_type_1_1_leave_lobby_finish.html", "struct_e_t_1_1_event_type_1_1_leave_lobby_finish" ],
+    [ "LeaveMapFinish", "struct_e_t_1_1_event_type_1_1_leave_map_finish.html", "struct_e_t_1_1_event_type_1_1_leave_map_finish" ],
+    [ "LoadingBegin", "struct_e_t_1_1_event_type_1_1_loading_begin.html", "struct_e_t_1_1_event_type_1_1_loading_begin" ],
+    [ "LoadingFinish", "struct_e_t_1_1_event_type_1_1_loading_finish.html", "struct_e_t_1_1_event_type_1_1_loading_finish" ],
+    [ "LoginFinish", "struct_e_t_1_1_event_type_1_1_login_finish.html", "struct_e_t_1_1_event_type_1_1_login_finish" ],
+    [ "MoveStart", "struct_e_t_1_1_event_type_1_1_move_start.html", "struct_e_t_1_1_event_type_1_1_move_start" ],
+    [ "MoveStop", "struct_e_t_1_1_event_type_1_1_move_stop.html", "struct_e_t_1_1_event_type_1_1_move_stop" ],
+    [ "NumbericChange", "struct_e_t_1_1_event_type_1_1_numberic_change.html", "struct_e_t_1_1_event_type_1_1_numberic_change" ],
+    [ "PingChange", "struct_e_t_1_1_event_type_1_1_ping_change.html", "struct_e_t_1_1_event_type_1_1_ping_change" ],
+    [ "RegisterFinish", "struct_e_t_1_1_event_type_1_1_register_finish.html", "struct_e_t_1_1_event_type_1_1_register_finish" ],
+    [ "RegsiterOrLoginFailed", "struct_e_t_1_1_event_type_1_1_regsiter_or_login_failed.html", "struct_e_t_1_1_event_type_1_1_regsiter_or_login_failed" ],
+    [ "SceneChangeFinish", "struct_e_t_1_1_event_type_1_1_scene_change_finish.html", "struct_e_t_1_1_event_type_1_1_scene_change_finish" ],
+    [ "SceneChangeStart", "struct_e_t_1_1_event_type_1_1_scene_change_start.html", "struct_e_t_1_1_event_type_1_1_scene_change_start" ],
+    [ "UnitEnterSightRange", "struct_e_t_1_1_event_type_1_1_unit_enter_sight_range.html", "struct_e_t_1_1_event_type_1_1_unit_enter_sight_range" ],
+    [ "UnitLeaveSightRange", "struct_e_t_1_1_event_type_1_1_unit_leave_sight_range.html", "struct_e_t_1_1_event_type_1_1_unit_leave_sight_range" ]
+];

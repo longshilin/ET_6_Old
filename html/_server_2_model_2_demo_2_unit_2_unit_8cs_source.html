@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ET: Server/Model/Demo/Unit/Unit.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ET<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_server_2_model_2_demo_2_unit_2_unit_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Unit.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_server_2_model_2_demo_2_unit_2_unit_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using</span> <a class="code hl_variable" href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_mongo_d_b.html">MongoDB</a>.<a class="code hl_namespace" href="namespace_mongo_d_b_1_1_bson.html">Bson</a>.<a class="code hl_namespace" href="namespace_mongo_d_b_1_1_bson_1_1_serialization.html">Serialization</a>.<a class="code hl_namespace" href="namespace_mongo_d_b_1_1_bson_1_1_serialization_1_1_attributes.html">Attributes</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_unity_engine.html">UnityEngine</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_e_t.html">ET</a></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_e_t_1_1_unit.html">    7</a></span>    <span class="keyword">public</span> sealed <span class="keyword">class </span><a class="code hl_class" href="class_e_t_1_1_unit.html">Unit</a>: <a class="code hl_class" href="class_e_t_1_1_entity.html">Entity</a>, <a class="code hl_interface" href="interface_e_t_1_1_i_awake.html">IAwake</a>&lt;int&gt;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_e_t_1_1_unit.html#ad88fe4b2d18332a714a8be5b6d175783">    9</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_e_t_1_1_unit.html#ad88fe4b2d18332a714a8be5b6d175783">ConfigId</a>; <span class="comment">//配置表id</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        [BsonIgnore]</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_e_t_1_1_unit.html#aed374c9f860daf102b3f5dd97f67e42b">   12</a></span>        <span class="keyword">public</span> <a class="code hl_enumeration" href="namespace_e_t.html#a7364dd7d92969e29c00a9721cc2cea3b">UnitType</a> <a class="code hl_property" href="class_e_t_1_1_unit.html#aed374c9f860daf102b3f5dd97f67e42b">Type</a> =&gt; (<a class="code hl_enumeration" href="namespace_e_t.html#a7364dd7d92969e29c00a9721cc2cea3b">UnitType</a>)this.<a class="code hl_property" href="class_e_t_1_1_unit.html#a740ca2b5a63f1da214ef5d0d1b4c7c1e">Config</a>.<a class="code hl_property" href="class_e_t_1_1_unit_config.html#a0d830ba88914fc47bc085809b0a07d9a">Type</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        [BsonIgnore]</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_e_t_1_1_unit.html#a740ca2b5a63f1da214ef5d0d1b4c7c1e">   15</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_e_t_1_1_unit_config.html">UnitConfig</a> <a class="code hl_property" href="class_e_t_1_1_unit.html#a740ca2b5a63f1da214ef5d0d1b4c7c1e">Config</a> =&gt; <a class="code hl_class" href="class_e_t_1_1_unit_config_category.html">UnitConfigCategory</a>.<a class="code hl_variable" href="class_e_t_1_1_unit_config_category.html#aad209356ad45eb74147ffc7cd1fcef06">Instance</a>.<a class="code hl_function" href="class_e_t_1_1_unit_config_category.html#a6c5f465bfbf0b0f6c49bcc0c0f80160e">Get</a>(<span class="keyword">this</span>.ConfigId);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keyword">private</span> <a class="code hl_struct" href="struct_unity_engine_1_1_vector3.html">Vector3</a> position; <span class="comment">//坐标</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_e_t_1_1_unit.html#a5df4e77b3b93e4159d9f5dac4ec42ac3">   19</a></span>        <span class="keyword">public</span> <a class="code hl_struct" href="struct_unity_engine_1_1_vector3.html">Vector3</a> <a class="code hl_property" href="class_e_t_1_1_unit.html#a5df4e77b3b93e4159d9f5dac4ec42ac3">Position</a></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <span class="keyword">get</span> =&gt; this.position;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            <span class="keyword">set</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                this.position = value;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                Game.EventSystem.Publish(<span class="keyword">new</span> EventType.ChangePosition() { <a class="code hl_class" href="class_e_t_1_1_unit.html">Unit</a> = <span class="keyword">this</span> });</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            }</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        }</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        [BsonIgnore]</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_e_t_1_1_unit.html#ad5e69fe4e5139b114802d7974071e482">   30</a></span>        <span class="keyword">public</span> <a class="code hl_struct" href="struct_unity_engine_1_1_vector3.html">Vector3</a> <a class="code hl_property" href="class_e_t_1_1_unit.html#ad5e69fe4e5139b114802d7974071e482">Forward</a></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <span class="keyword">get</span> =&gt; this.<a class="code hl_property" href="class_e_t_1_1_unit.html#af957c36bc8c6d6ec352cb7519264fdce">Rotation</a> * <a class="code hl_struct" href="struct_unity_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_variable" href="struct_unity_engine_1_1_vector3.html#acd01c55d3ff3bf00dfa650374f803907">forward</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <span class="keyword">set</span> =&gt; this.<a class="code hl_property" href="class_e_t_1_1_unit.html#af957c36bc8c6d6ec352cb7519264fdce">Rotation</a> = <a class="code hl_struct" href="struct_unity_engine_1_1_quaternion.html">Quaternion</a>.<a class="code hl_function" href="struct_unity_engine_1_1_quaternion.html#a902ab9c102c665492e199ff6024039d8">LookRotation</a>(value, <a class="code hl_struct" href="struct_unity_engine_1_1_vector3.html">Vector3</a>.<a class="code hl_variable" href="struct_unity_engine_1_1_vector3.html#ac922c88e8328a73b2d01ec8ef15e8bb8">up</a>);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keyword">private</span> <a class="code hl_struct" href="struct_unity_engine_1_1_quaternion.html">Quaternion</a> rotation;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_e_t_1_1_unit.html#af957c36bc8c6d6ec352cb7519264fdce">   37</a></span>        <span class="keyword">public</span> <a class="code hl_struct" href="struct_unity_engine_1_1_quaternion.html">Quaternion</a> <a class="code hl_property" href="class_e_t_1_1_unit.html#af957c36bc8c6d6ec352cb7519264fdce">Rotation</a></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <span class="keyword">get</span> =&gt; this.rotation;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="keyword">set</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                this.rotation = value;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                Game.EventSystem.Publish(<span class="keyword">new</span> EventType.ChangeRotation() {<a class="code hl_class" href="class_e_t_1_1_unit.html">Unit</a> = <span class="keyword">this</span>});</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
+<div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_entity_html"><div class="ttname"><a href="class_e_t_1_1_entity.html">ET.Entity</a></div><div class="ttdef"><b>Definition:</b> <a href="_entity_8cs_source.html#l00019">Entity.cs:20</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_unit_config_category_html"><div class="ttname"><a href="class_e_t_1_1_unit_config_category.html">ET.UnitConfigCategory</a></div><div class="ttdef"><b>Definition:</b> <a href="_server_2_model_2_generate_2_config_2_unit_config_8cs_source.html#l00010">UnitConfig.cs:11</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_unit_config_category_html_a6c5f465bfbf0b0f6c49bcc0c0f80160e"><div class="ttname"><a href="class_e_t_1_1_unit_config_category.html#a6c5f465bfbf0b0f6c49bcc0c0f80160e">ET.UnitConfigCategory.Get</a></div><div class="ttdeci">UnitConfig Get(int id)</div><div class="ttdef"><b>Definition:</b> <a href="_server_2_model_2_generate_2_config_2_unit_config_8cs_source.html#l00037">UnitConfig.cs:37</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_unit_config_category_html_aad209356ad45eb74147ffc7cd1fcef06"><div class="ttname"><a href="class_e_t_1_1_unit_config_category.html#aad209356ad45eb74147ffc7cd1fcef06">ET.UnitConfigCategory.Instance</a></div><div class="ttdeci">static UnitConfigCategory Instance</div><div class="ttdef"><b>Definition:</b> <a href="_server_2_model_2_generate_2_config_2_unit_config_8cs_source.html#l00012">UnitConfig.cs:12</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_unit_config_html"><div class="ttname"><a href="class_e_t_1_1_unit_config.html">ET.UnitConfig</a></div><div class="ttdef"><b>Definition:</b> <a href="_server_2_model_2_generate_2_config_2_unit_config_8cs_source.html#l00070">UnitConfig.cs:71</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_unit_config_html_a0d830ba88914fc47bc085809b0a07d9a"><div class="ttname"><a href="class_e_t_1_1_unit_config.html#a0d830ba88914fc47bc085809b0a07d9a">ET.UnitConfig.Type</a></div><div class="ttdeci">int Type</div><div class="ttdef"><b>Definition:</b> <a href="_server_2_model_2_generate_2_config_2_unit_config_8cs_source.html#l00075">UnitConfig.cs:75</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_unit_html"><div class="ttname"><a href="class_e_t_1_1_unit.html">ET.Unit</a></div><div class="ttdef"><b>Definition:</b> <a href="_server_2_model_2_demo_2_unit_2_unit_8cs_source.html#l00007">Unit.cs:8</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_unit_html_a5df4e77b3b93e4159d9f5dac4ec42ac3"><div class="ttname"><a href="class_e_t_1_1_unit.html#a5df4e77b3b93e4159d9f5dac4ec42ac3">ET.Unit.Position</a></div><div class="ttdeci">Vector3 Position</div><div class="ttdef"><b>Definition:</b> <a href="_server_2_model_2_demo_2_unit_2_unit_8cs_source.html#l00019">Unit.cs:20</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_unit_html_a740ca2b5a63f1da214ef5d0d1b4c7c1e"><div class="ttname"><a href="class_e_t_1_1_unit.html#a740ca2b5a63f1da214ef5d0d1b4c7c1e">ET.Unit.Config</a></div><div class="ttdeci">UnitConfig Config</div><div class="ttdef"><b>Definition:</b> <a href="_server_2_model_2_demo_2_unit_2_unit_8cs_source.html#l00015">Unit.cs:15</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_unit_html_ad5e69fe4e5139b114802d7974071e482"><div class="ttname"><a href="class_e_t_1_1_unit.html#ad5e69fe4e5139b114802d7974071e482">ET.Unit.Forward</a></div><div class="ttdeci">Vector3 Forward</div><div class="ttdef"><b>Definition:</b> <a href="_server_2_model_2_demo_2_unit_2_unit_8cs_source.html#l00030">Unit.cs:31</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_unit_html_ad88fe4b2d18332a714a8be5b6d175783"><div class="ttname"><a href="class_e_t_1_1_unit.html#ad88fe4b2d18332a714a8be5b6d175783">ET.Unit.ConfigId</a></div><div class="ttdeci">int ConfigId</div><div class="ttdef"><b>Definition:</b> <a href="_server_2_model_2_demo_2_unit_2_unit_8cs_source.html#l00009">Unit.cs:9</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_unit_html_aed374c9f860daf102b3f5dd97f67e42b"><div class="ttname"><a href="class_e_t_1_1_unit.html#aed374c9f860daf102b3f5dd97f67e42b">ET.Unit.Type</a></div><div class="ttdeci">UnitType Type</div><div class="ttdef"><b>Definition:</b> <a href="_server_2_model_2_demo_2_unit_2_unit_8cs_source.html#l00012">Unit.cs:12</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_unit_html_af957c36bc8c6d6ec352cb7519264fdce"><div class="ttname"><a href="class_e_t_1_1_unit.html#af957c36bc8c6d6ec352cb7519264fdce">ET.Unit.Rotation</a></div><div class="ttdeci">Quaternion Rotation</div><div class="ttdef"><b>Definition:</b> <a href="_server_2_model_2_demo_2_unit_2_unit_8cs_source.html#l00037">Unit.cs:38</a></div></div>
+<div class="ttc" id="ainterface_e_t_1_1_i_awake_html"><div class="ttname"><a href="interface_e_t_1_1_i_awake.html">ET.IAwake</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_awake_system_8cs_source.html#l00021">IAwakeSystem.cs:22</a></div></div>
+<div class="ttc" id="anamespace_e_t_html"><div class="ttname"><a href="namespace_e_t.html">ET</a></div><div class="ttdef"><b>Definition:</b> <a href="_robot_2_app_2_program_8cs_source.html#l00008">Program.cs:9</a></div></div>
+<div class="ttc" id="anamespace_e_t_html_a7364dd7d92969e29c00a9721cc2cea3b"><div class="ttname"><a href="namespace_e_t.html#a7364dd7d92969e29c00a9721cc2cea3b">ET.UnitType</a></div><div class="ttdeci">UnitType</div><div class="ttdef"><b>Definition:</b> <a href="_unit_type_8cs_source.html#l00003">UnitType.cs:4</a></div></div>
+<div class="ttc" id="anamespace_mongo_d_b_1_1_bson_1_1_serialization_1_1_attributes_html"><div class="ttname"><a href="namespace_mongo_d_b_1_1_bson_1_1_serialization_1_1_attributes.html">MongoDB.Bson.Serialization.Attributes</a></div><div class="ttdef"><b>Definition:</b> <a href="_bson_default_value_attribute_8cs_source.html#l00003">BsonDefaultValueAttribute.cs:4</a></div></div>
+<div class="ttc" id="anamespace_mongo_d_b_1_1_bson_1_1_serialization_html"><div class="ttname"><a href="namespace_mongo_d_b_1_1_bson_1_1_serialization.html">MongoDB.Bson.Serialization</a></div><div class="ttdef"><b>Definition:</b> <a href="_bson_default_value_attribute_8cs_source.html#l00003">BsonDefaultValueAttribute.cs:4</a></div></div>
+<div class="ttc" id="anamespace_mongo_d_b_1_1_bson_html"><div class="ttname"><a href="namespace_mongo_d_b_1_1_bson.html">MongoDB.Bson</a></div><div class="ttdef"><b>Definition:</b> <a href="_bson_default_value_attribute_8cs_source.html#l00003">BsonDefaultValueAttribute.cs:4</a></div></div>
+<div class="ttc" id="anamespace_mongo_d_b_html"><div class="ttname"><a href="namespace_mongo_d_b.html">MongoDB</a></div><div class="ttdef"><b>Definition:</b> <a href="_bson_default_value_attribute_8cs_source.html#l00003">BsonDefaultValueAttribute.cs:4</a></div></div>
+<div class="ttc" id="anamespace_unity_engine_html"><div class="ttname"><a href="namespace_unity_engine.html">UnityEngine</a></div><div class="ttdef"><b>Definition:</b> <a href="_mathf_8cs_source.html#l00003">Mathf.cs:4</a></div></div>
+<div class="ttc" id="astruct_unity_engine_1_1_quaternion_html"><div class="ttname"><a href="struct_unity_engine_1_1_quaternion.html">UnityEngine.Quaternion</a></div><div class="ttdef"><b>Definition:</b> <a href="_quaternion_8cs_source.html#l00007">Quaternion.cs:8</a></div></div>
+<div class="ttc" id="astruct_unity_engine_1_1_quaternion_html_a902ab9c102c665492e199ff6024039d8"><div class="ttname"><a href="struct_unity_engine_1_1_quaternion.html#a902ab9c102c665492e199ff6024039d8">UnityEngine.Quaternion.LookRotation</a></div><div class="ttdeci">static Quaternion LookRotation(Vector3 viewVec, Vector3 upVec)</div><div class="ttdef"><b>Definition:</b> <a href="_quaternion_8cs_source.html#l00428">Quaternion.cs:428</a></div></div>
+<div class="ttc" id="astruct_unity_engine_1_1_vector3_html"><div class="ttname"><a href="struct_unity_engine_1_1_vector3.html">UnityEngine.Vector3</a></div><div class="ttdef"><b>Definition:</b> <a href="_vector3_8cs_source.html#l00007">Vector3.cs:8</a></div></div>
+<div class="ttc" id="astruct_unity_engine_1_1_vector3_html_ac922c88e8328a73b2d01ec8ef15e8bb8"><div class="ttname"><a href="struct_unity_engine_1_1_vector3.html#ac922c88e8328a73b2d01ec8ef15e8bb8">UnityEngine.Vector3.up</a></div><div class="ttdeci">static readonly Vector3 up</div><div class="ttdef"><b>Definition:</b> <a href="_vector3_8cs_source.html#l00013">Vector3.cs:13</a></div></div>
+<div class="ttc" id="astruct_unity_engine_1_1_vector3_html_acd01c55d3ff3bf00dfa650374f803907"><div class="ttname"><a href="struct_unity_engine_1_1_vector3.html#acd01c55d3ff3bf00dfa650374f803907">UnityEngine.Vector3.forward</a></div><div class="ttdeci">static readonly Vector3 forward</div><div class="ttdef"><b>Definition:</b> <a href="_vector3_8cs_source.html#l00017">Vector3.cs:17</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_1a445cb237d74f7a5f8d11ec3b0585cc.html">Server</a></li><li class="navelem"><a class="el" href="dir_12c7c7f44207b94dac9b212b976bf45a.html">Model</a></li><li class="navelem"><a class="el" href="dir_eb38debbf75dce9c652661d0025674c8.html">Demo</a></li><li class="navelem"><a class="el" href="dir_04452e33b8c931cbdea0ee5990c2e81e.html">Unit</a></li><li class="navelem"><a class="el" href="_server_2_model_2_demo_2_unit_2_unit_8cs.html">Unit.cs</a></li>
+    <li class="footer">生成于 2022年 一月 23日 星期日 19:12:30 , 为 ET使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+var class_mongo_d_b_1_1_bson_1_1_serialization_1_1_attributes_1_1_bson_default_value_attribute =
+[
+    [ "BsonDefaultValueAttribute", "class_mongo_d_b_1_1_bson_1_1_serialization_1_1_attributes_1_1_bson_default_value_attribute.html#a2c13aab60ef9c3631b446b8e1476934a", null ]
+];

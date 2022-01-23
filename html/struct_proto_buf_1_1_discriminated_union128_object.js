@@ -1,0 +1,26 @@
+var struct_proto_buf_1_1_discriminated_union128_object =
+[
+    [ "DiscriminatedUnion128Object", "struct_proto_buf_1_1_discriminated_union128_object.html#a87002026e7326bd9f7993fe5ad0b426f", null ],
+    [ "DiscriminatedUnion128Object", "struct_proto_buf_1_1_discriminated_union128_object.html#a8feab2a3ae3fa8965db46b9f4872b59c", null ],
+    [ "DiscriminatedUnion128Object", "struct_proto_buf_1_1_discriminated_union128_object.html#a724dbc6c506e1a7d8b7d394aaf5928d0", null ],
+    [ "DiscriminatedUnion128Object", "struct_proto_buf_1_1_discriminated_union128_object.html#a7e71b8ab638d71aca8631262e553509a", null ],
+    [ "DiscriminatedUnion128Object", "struct_proto_buf_1_1_discriminated_union128_object.html#a58e69d496d792196d72d32ee4c009cbc", null ],
+    [ "DiscriminatedUnion128Object", "struct_proto_buf_1_1_discriminated_union128_object.html#a6793300dd03a885d46983d6ef3cf0fd2", null ],
+    [ "DiscriminatedUnion128Object", "struct_proto_buf_1_1_discriminated_union128_object.html#ab548cf6f01c999af5681f8f8dea05bda", null ],
+    [ "DiscriminatedUnion128Object", "struct_proto_buf_1_1_discriminated_union128_object.html#aa58b61087dead4113b35b155d7e39cab", null ],
+    [ "DiscriminatedUnion128Object", "struct_proto_buf_1_1_discriminated_union128_object.html#ab35f8683926c0e10dd026ffc8a3d465e", null ],
+    [ "DiscriminatedUnion128Object", "struct_proto_buf_1_1_discriminated_union128_object.html#aff2456cd988c0e1031232c22f61fa319", null ],
+    [ "DiscriminatedUnion128Object", "struct_proto_buf_1_1_discriminated_union128_object.html#a6c8473b0c94b74a9507adac2a809e017", null ],
+    [ "Is", "struct_proto_buf_1_1_discriminated_union128_object.html#a5b3beb9da136f075f297c130a888333b", null ],
+    [ "Boolean", "struct_proto_buf_1_1_discriminated_union128_object.html#aa725e21a7f0bd70ba8e6bacefeab2659", null ],
+    [ "DateTime", "struct_proto_buf_1_1_discriminated_union128_object.html#a6735cde5acb4a4b06f03b210e11aa3db", null ],
+    [ "Double", "struct_proto_buf_1_1_discriminated_union128_object.html#aca892d294bd5e23c2358b19ff6b120dc", null ],
+    [ "Guid", "struct_proto_buf_1_1_discriminated_union128_object.html#a4ea8d419efaf4d4403b048a29a51da1a", null ],
+    [ "Int32", "struct_proto_buf_1_1_discriminated_union128_object.html#a6ae53cbbeb4bfaf189911ce82e6db804", null ],
+    [ "Int64", "struct_proto_buf_1_1_discriminated_union128_object.html#af6ac8470c990669463e9c77c88d0eb59", null ],
+    [ "Object", "struct_proto_buf_1_1_discriminated_union128_object.html#aeb884f103952ac5ec7cf11d270ba8e1c", null ],
+    [ "Single", "struct_proto_buf_1_1_discriminated_union128_object.html#a72204d40c5d2f6236c33bafeb4570b2d", null ],
+    [ "TimeSpan", "struct_proto_buf_1_1_discriminated_union128_object.html#a100a9fa412fa17b8009e3c7be769f565", null ],
+    [ "UInt32", "struct_proto_buf_1_1_discriminated_union128_object.html#a6545c7d2712aaa932a4018187c2a56cf", null ],
+    [ "UInt64", "struct_proto_buf_1_1_discriminated_union128_object.html#af9574b6305b3251b9d8285fe5e419f99", null ]
+];

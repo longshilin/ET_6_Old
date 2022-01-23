@@ -1,0 +1,1736 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ET: ProtoBuf.ProtoReader类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ET<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_proto_buf_1_1_proto_reader.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#properties">属性</a>  </div>
+  <div class="headertitle"><div class="title">ProtoBuf.ProtoReader类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>A stateful reader, used to read a protobuf stream. Typical usage would be (sequentially) to call ReadFieldHeader and (after matching the field) an appropriate Read* method.  
+ <a href="class_proto_buf_1_1_proto_reader.html#details">更多...</a></p>
+<div class="dynheader">
+类 ProtoBuf.ProtoReader 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_proto_buf_1_1_proto_reader.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a9df59ea52f5efd69c211d4bc05f8e17f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#a9df59ea52f5efd69c211d4bc05f8e17f">ProtoReader</a> (Stream source, <a class="el" href="class_proto_buf_1_1_meta_1_1_type_model.html">TypeModel</a> model, <a class="el" href="class_proto_buf_1_1_serialization_context.html">SerializationContext</a> context)</td></tr>
+<tr class="memdesc:a9df59ea52f5efd69c211d4bc05f8e17f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new reader against a stream  <a href="class_proto_buf_1_1_proto_reader.html#a9df59ea52f5efd69c211d4bc05f8e17f">更多...</a><br /></td></tr>
+<tr class="separator:a9df59ea52f5efd69c211d4bc05f8e17f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1316810fa9b8056409c438aee4a5820"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#ac1316810fa9b8056409c438aee4a5820">ProtoReader</a> (Stream source, <a class="el" href="class_proto_buf_1_1_meta_1_1_type_model.html">TypeModel</a> model, <a class="el" href="class_proto_buf_1_1_serialization_context.html">SerializationContext</a> context, int length)</td></tr>
+<tr class="memdesc:ac1316810fa9b8056409c438aee4a5820"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new reader against a stream  <a href="class_proto_buf_1_1_proto_reader.html#ac1316810fa9b8056409c438aee4a5820">更多...</a><br /></td></tr>
+<tr class="separator:ac1316810fa9b8056409c438aee4a5820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a64b92ac304a757482f08991e51578f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#a0a64b92ac304a757482f08991e51578f">ProtoReader</a> (Stream source, <a class="el" href="class_proto_buf_1_1_meta_1_1_type_model.html">TypeModel</a> model, <a class="el" href="class_proto_buf_1_1_serialization_context.html">SerializationContext</a> context, long length)</td></tr>
+<tr class="memdesc:a0a64b92ac304a757482f08991e51578f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new reader against a stream  <a href="class_proto_buf_1_1_proto_reader.html#a0a64b92ac304a757482f08991e51578f">更多...</a><br /></td></tr>
+<tr class="separator:a0a64b92ac304a757482f08991e51578f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a729424920989037cde06822732d5e747"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#a729424920989037cde06822732d5e747">Dispose</a> ()</td></tr>
+<tr class="memdesc:a729424920989037cde06822732d5e747"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases resources used by the reader, but importantly <b>does not</b> Dispose the underlying stream; in many typical use-cases the stream is used for different processes, so it is assumed that the consumer will Dispose their stream separately.  <a href="class_proto_buf_1_1_proto_reader.html#a729424920989037cde06822732d5e747">更多...</a><br /></td></tr>
+<tr class="separator:a729424920989037cde06822732d5e747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c27cdff96bbcd4582d0b30979dfd70f"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#a1c27cdff96bbcd4582d0b30979dfd70f">ReadUInt32</a> ()</td></tr>
+<tr class="memdesc:a1c27cdff96bbcd4582d0b30979dfd70f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads an unsigned 32-bit integer from the stream; supported wire-types: Variant, Fixed32, Fixed64  <a href="class_proto_buf_1_1_proto_reader.html#a1c27cdff96bbcd4582d0b30979dfd70f">更多...</a><br /></td></tr>
+<tr class="separator:a1c27cdff96bbcd4582d0b30979dfd70f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb0c9282d3573dc5204c758ec4897084"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#aeb0c9282d3573dc5204c758ec4897084">ReadInt16</a> ()</td></tr>
+<tr class="memdesc:aeb0c9282d3573dc5204c758ec4897084"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a signed 16-bit integer from the stream: Variant, Fixed32, Fixed64, SignedVariant  <a href="class_proto_buf_1_1_proto_reader.html#aeb0c9282d3573dc5204c758ec4897084">更多...</a><br /></td></tr>
+<tr class="separator:aeb0c9282d3573dc5204c758ec4897084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c57113e89d14d0265fa57886f052b2f"><td class="memItemLeft" align="right" valign="top">ushort&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#a6c57113e89d14d0265fa57886f052b2f">ReadUInt16</a> ()</td></tr>
+<tr class="memdesc:a6c57113e89d14d0265fa57886f052b2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads an unsigned 16-bit integer from the stream; supported wire-types: Variant, Fixed32, Fixed64  <a href="class_proto_buf_1_1_proto_reader.html#a6c57113e89d14d0265fa57886f052b2f">更多...</a><br /></td></tr>
+<tr class="separator:a6c57113e89d14d0265fa57886f052b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a629be0f7b1e143c86b8401135d503dd8"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#a629be0f7b1e143c86b8401135d503dd8">ReadByte</a> ()</td></tr>
+<tr class="memdesc:a629be0f7b1e143c86b8401135d503dd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads an unsigned 8-bit integer from the stream; supported wire-types: Variant, Fixed32, Fixed64  <a href="class_proto_buf_1_1_proto_reader.html#a629be0f7b1e143c86b8401135d503dd8">更多...</a><br /></td></tr>
+<tr class="separator:a629be0f7b1e143c86b8401135d503dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bc66f7312d8afd2262cbff5b4043dc0"><td class="memItemLeft" align="right" valign="top">sbyte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#a6bc66f7312d8afd2262cbff5b4043dc0">ReadSByte</a> ()</td></tr>
+<tr class="memdesc:a6bc66f7312d8afd2262cbff5b4043dc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a signed 8-bit integer from the stream; supported wire-types: Variant, Fixed32, Fixed64, SignedVariant  <a href="class_proto_buf_1_1_proto_reader.html#a6bc66f7312d8afd2262cbff5b4043dc0">更多...</a><br /></td></tr>
+<tr class="separator:a6bc66f7312d8afd2262cbff5b4043dc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a886e75fdd50468b8a7844349b7d85dfc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#a886e75fdd50468b8a7844349b7d85dfc">ReadInt32</a> ()</td></tr>
+<tr class="memdesc:a886e75fdd50468b8a7844349b7d85dfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a signed 32-bit integer from the stream; supported wire-types: Variant, Fixed32, Fixed64, SignedVariant  <a href="class_proto_buf_1_1_proto_reader.html#a886e75fdd50468b8a7844349b7d85dfc">更多...</a><br /></td></tr>
+<tr class="separator:a886e75fdd50468b8a7844349b7d85dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd1d2832f8b1eb755782bcf87582b899"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#afd1d2832f8b1eb755782bcf87582b899">ReadInt64</a> ()</td></tr>
+<tr class="memdesc:afd1d2832f8b1eb755782bcf87582b899"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a signed 64-bit integer from the stream; supported wire-types: Variant, Fixed32, Fixed64, SignedVariant  <a href="class_proto_buf_1_1_proto_reader.html#afd1d2832f8b1eb755782bcf87582b899">更多...</a><br /></td></tr>
+<tr class="separator:afd1d2832f8b1eb755782bcf87582b899"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a697ff2a667c47198074b3fe9607ee098"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#a697ff2a667c47198074b3fe9607ee098">ReadString</a> ()</td></tr>
+<tr class="memdesc:a697ff2a667c47198074b3fe9607ee098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a string from the stream (using UTF8); supported wire-types: String  <a href="class_proto_buf_1_1_proto_reader.html#a697ff2a667c47198074b3fe9607ee098">更多...</a><br /></td></tr>
+<tr class="separator:a697ff2a667c47198074b3fe9607ee098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9ed9bcb77ca5ad1ee44c8af6173a01f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#ae9ed9bcb77ca5ad1ee44c8af6173a01f">ThrowEnumException</a> (System.Type type, int value)</td></tr>
+<tr class="memdesc:ae9ed9bcb77ca5ad1ee44c8af6173a01f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Throws an exception indication that the given value cannot be mapped to an enum.  <a href="class_proto_buf_1_1_proto_reader.html#ae9ed9bcb77ca5ad1ee44c8af6173a01f">更多...</a><br /></td></tr>
+<tr class="separator:ae9ed9bcb77ca5ad1ee44c8af6173a01f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68e62bca704ddb48eb4334a6a326cd04"><td class="memItemLeft" align="right" valign="top">unsafe double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#a68e62bca704ddb48eb4334a6a326cd04">ReadDouble</a> ()</td></tr>
+<tr class="memdesc:a68e62bca704ddb48eb4334a6a326cd04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a double-precision number from the stream; supported wire-types: Fixed32, Fixed64  <a href="class_proto_buf_1_1_proto_reader.html#a68e62bca704ddb48eb4334a6a326cd04">更多...</a><br /></td></tr>
+<tr class="separator:a68e62bca704ddb48eb4334a6a326cd04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7e7b43a7bf4db58077e08583d6992fc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#ac7e7b43a7bf4db58077e08583d6992fc">ReadFieldHeader</a> ()</td></tr>
+<tr class="memdesc:ac7e7b43a7bf4db58077e08583d6992fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a field header from the stream, setting the wire-type and retuning the field number. If no more fields are available, then 0 is returned. This methods respects sub-messages.  <a href="class_proto_buf_1_1_proto_reader.html#ac7e7b43a7bf4db58077e08583d6992fc">更多...</a><br /></td></tr>
+<tr class="separator:ac7e7b43a7bf4db58077e08583d6992fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af02898b562b458efe4675a2668d0d62d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#af02898b562b458efe4675a2668d0d62d">TryReadFieldHeader</a> (int field)</td></tr>
+<tr class="memdesc:af02898b562b458efe4675a2668d0d62d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Looks ahead to see whether the next field in the stream is what we expect (typically; what we've just finished reading - for example ot read successive list items)  <a href="class_proto_buf_1_1_proto_reader.html#af02898b562b458efe4675a2668d0d62d">更多...</a><br /></td></tr>
+<tr class="separator:af02898b562b458efe4675a2668d0d62d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95cab31e4062d58b796e5833a5142268"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#a95cab31e4062d58b796e5833a5142268">Hint</a> (<a class="el" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a> wireType)</td></tr>
+<tr class="memdesc:a95cab31e4062d58b796e5833a5142268"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the streams current wire-type to the hinted wire-type, updating the reader if necessary; for example, a Variant may be updated to SignedVariant. If the hinted wire-type is unrelated then no change is made.  <a href="class_proto_buf_1_1_proto_reader.html#a95cab31e4062d58b796e5833a5142268">更多...</a><br /></td></tr>
+<tr class="separator:a95cab31e4062d58b796e5833a5142268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ee879b845febde4b20dd220092ad5e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#a4ee879b845febde4b20dd220092ad5e9">Assert</a> (<a class="el" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a> wireType)</td></tr>
+<tr class="memdesc:a4ee879b845febde4b20dd220092ad5e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies that the stream's current wire-type is as expected, or a specialized sub-type (for example, SignedVariant) - in which case the current wire-type is updated. Otherwise an exception is thrown.  <a href="class_proto_buf_1_1_proto_reader.html#a4ee879b845febde4b20dd220092ad5e9">更多...</a><br /></td></tr>
+<tr class="separator:a4ee879b845febde4b20dd220092ad5e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac10c7c4d17cf89ed4803391fd3e46c3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#ac10c7c4d17cf89ed4803391fd3e46c3b">SkipField</a> ()</td></tr>
+<tr class="memdesc:ac10c7c4d17cf89ed4803391fd3e46c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discards the data for the current field.  <a href="class_proto_buf_1_1_proto_reader.html#ac10c7c4d17cf89ed4803391fd3e46c3b">更多...</a><br /></td></tr>
+<tr class="separator:ac10c7c4d17cf89ed4803391fd3e46c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a488df9387e0d3863a19666663f758349"><td class="memItemLeft" align="right" valign="top">ulong&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#a488df9387e0d3863a19666663f758349">ReadUInt64</a> ()</td></tr>
+<tr class="memdesc:a488df9387e0d3863a19666663f758349"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads an unsigned 64-bit integer from the stream; supported wire-types: Variant, Fixed32, Fixed64  <a href="class_proto_buf_1_1_proto_reader.html#a488df9387e0d3863a19666663f758349">更多...</a><br /></td></tr>
+<tr class="separator:a488df9387e0d3863a19666663f758349"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24f395296877680e983b9c85b04e1192"><td class="memItemLeft" align="right" valign="top">unsafe float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#a24f395296877680e983b9c85b04e1192">ReadSingle</a> ()</td></tr>
+<tr class="memdesc:a24f395296877680e983b9c85b04e1192"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a single-precision number from the stream; supported wire-types: Fixed32, Fixed64  <a href="class_proto_buf_1_1_proto_reader.html#a24f395296877680e983b9c85b04e1192">更多...</a><br /></td></tr>
+<tr class="separator:a24f395296877680e983b9c85b04e1192"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7b2ad0af7070add9a9531512f6512e3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#ad7b2ad0af7070add9a9531512f6512e3">ReadBoolean</a> ()</td></tr>
+<tr class="memdesc:ad7b2ad0af7070add9a9531512f6512e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a boolean value from the stream; supported wire-types: Variant, Fixed32, Fixed64  <a href="class_proto_buf_1_1_proto_reader.html#ad7b2ad0af7070add9a9531512f6512e3">更多...</a><br /></td></tr>
+<tr class="separator:ad7b2ad0af7070add9a9531512f6512e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15ec948c3c84d7762fb15cbafbc05019"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#a15ec948c3c84d7762fb15cbafbc05019">AppendExtensionData</a> (<a class="el" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a> instance)</td></tr>
+<tr class="memdesc:a15ec948c3c84d7762fb15cbafbc05019"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the current field into the instance as extension data  <a href="class_proto_buf_1_1_proto_reader.html#a15ec948c3c84d7762fb15cbafbc05019">更多...</a><br /></td></tr>
+<tr class="separator:a15ec948c3c84d7762fb15cbafbc05019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a043895e61c74493d5ad2bfccfadaaf41"><td class="memItemLeft" align="right" valign="top">System.Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#a043895e61c74493d5ad2bfccfadaaf41">ReadType</a> ()</td></tr>
+<tr class="memdesc:a043895e61c74493d5ad2bfccfadaaf41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a Type from the stream, using the model's DynamicTypeFormatting if appropriate; supported wire-types: String  <a href="class_proto_buf_1_1_proto_reader.html#a043895e61c74493d5ad2bfccfadaaf41">更多...</a><br /></td></tr>
+<tr class="separator:a043895e61c74493d5ad2bfccfadaaf41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a18a141d5faa03fe97b4eac9c939967a5"><td class="memItemLeft" align="right" valign="top">static object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#a18a141d5faa03fe97b4eac9c939967a5">ReadObject</a> (object value, int key, <a class="el" href="class_proto_buf_1_1_proto_reader.html">ProtoReader</a> reader)</td></tr>
+<tr class="memdesc:a18a141d5faa03fe97b4eac9c939967a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads (merges) a sub-message from the stream, internally calling StartSubItem and EndSubItem, and (in between) parsing the message in accordance with the model associated with the reader  <a href="class_proto_buf_1_1_proto_reader.html#a18a141d5faa03fe97b4eac9c939967a5">更多...</a><br /></td></tr>
+<tr class="separator:a18a141d5faa03fe97b4eac9c939967a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a571499a63ca9bb557b21fae3cb626ee0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#a571499a63ca9bb557b21fae3cb626ee0">EndSubItem</a> (<a class="el" href="struct_proto_buf_1_1_sub_item_token.html">SubItemToken</a> token, <a class="el" href="class_proto_buf_1_1_proto_reader.html">ProtoReader</a> reader)</td></tr>
+<tr class="memdesc:a571499a63ca9bb557b21fae3cb626ee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes the end of consuming a nested message in the stream; the stream must be either at the correct EndGroup marker, or all fields of the sub-message must have been consumed (in either case, this means ReadFieldHeader should return zero)  <a href="class_proto_buf_1_1_proto_reader.html#a571499a63ca9bb557b21fae3cb626ee0">更多...</a><br /></td></tr>
+<tr class="separator:a571499a63ca9bb557b21fae3cb626ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00ffaca81bb40c12316a06f1f2e6c85b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_proto_buf_1_1_sub_item_token.html">SubItemToken</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#a00ffaca81bb40c12316a06f1f2e6c85b">StartSubItem</a> (<a class="el" href="class_proto_buf_1_1_proto_reader.html">ProtoReader</a> reader)</td></tr>
+<tr class="memdesc:a00ffaca81bb40c12316a06f1f2e6c85b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begins consuming a nested message in the stream; supported wire-types: StartGroup, String  <a href="class_proto_buf_1_1_proto_reader.html#a00ffaca81bb40c12316a06f1f2e6c85b">更多...</a><br /></td></tr>
+<tr class="separator:a00ffaca81bb40c12316a06f1f2e6c85b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a532ee3c2a6c458116f5d5a1e065f1927"><td class="memItemLeft" align="right" valign="top">static byte[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#a532ee3c2a6c458116f5d5a1e065f1927">AppendBytes</a> (byte[] value, <a class="el" href="class_proto_buf_1_1_proto_reader.html">ProtoReader</a> reader)</td></tr>
+<tr class="memdesc:a532ee3c2a6c458116f5d5a1e065f1927"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a byte-sequence from the stream, appending them to an existing byte-sequence (which can be null); supported wire-types: String  <a href="class_proto_buf_1_1_proto_reader.html#a532ee3c2a6c458116f5d5a1e065f1927">更多...</a><br /></td></tr>
+<tr class="separator:a532ee3c2a6c458116f5d5a1e065f1927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada4033cd2a250ef1bb78abe91553aadd"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#ada4033cd2a250ef1bb78abe91553aadd">ReadLengthPrefix</a> (Stream source, bool expectHeader, <a class="el" href="namespace_proto_buf.html#ad0e7acc01d186ea358e62c31f19d73f5">PrefixStyle</a> style, out int fieldNumber)</td></tr>
+<tr class="memdesc:ada4033cd2a250ef1bb78abe91553aadd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the length-prefix of a message from a stream without buffering additional data, allowing a fixed-length reader to be created.  <a href="class_proto_buf_1_1_proto_reader.html#ada4033cd2a250ef1bb78abe91553aadd">更多...</a><br /></td></tr>
+<tr class="separator:ada4033cd2a250ef1bb78abe91553aadd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a620d585884f3fd0278d89ee03963eea3"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#a620d585884f3fd0278d89ee03963eea3">DirectReadLittleEndianInt32</a> (Stream source)</td></tr>
+<tr class="memdesc:a620d585884f3fd0278d89ee03963eea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a little-endian encoded integer. An exception is thrown if the data is not all available.  <a href="class_proto_buf_1_1_proto_reader.html#a620d585884f3fd0278d89ee03963eea3">更多...</a><br /></td></tr>
+<tr class="separator:a620d585884f3fd0278d89ee03963eea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17729e63e44761fcc57a0abd6cf95747"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#a17729e63e44761fcc57a0abd6cf95747">DirectReadBigEndianInt32</a> (Stream source)</td></tr>
+<tr class="memdesc:a17729e63e44761fcc57a0abd6cf95747"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a big-endian encoded integer. An exception is thrown if the data is not all available.  <a href="class_proto_buf_1_1_proto_reader.html#a17729e63e44761fcc57a0abd6cf95747">更多...</a><br /></td></tr>
+<tr class="separator:a17729e63e44761fcc57a0abd6cf95747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15ed2472bb69bc02e5c882e2d3fd07eb"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#a15ed2472bb69bc02e5c882e2d3fd07eb">DirectReadVarintInt32</a> (Stream source)</td></tr>
+<tr class="memdesc:a15ed2472bb69bc02e5c882e2d3fd07eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a varint encoded integer. An exception is thrown if the data is not all available.  <a href="class_proto_buf_1_1_proto_reader.html#a15ed2472bb69bc02e5c882e2d3fd07eb">更多...</a><br /></td></tr>
+<tr class="separator:a15ed2472bb69bc02e5c882e2d3fd07eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab58c73cee91fb59c2eb4799a0c975090"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#ab58c73cee91fb59c2eb4799a0c975090">DirectReadBytes</a> (Stream source, byte[] buffer, int offset, int count)</td></tr>
+<tr class="memdesc:ab58c73cee91fb59c2eb4799a0c975090"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a string (of a given lenth, in bytes) directly from the source into a pre-existing buffer. An exception is thrown if the data is not all available.  <a href="class_proto_buf_1_1_proto_reader.html#ab58c73cee91fb59c2eb4799a0c975090">更多...</a><br /></td></tr>
+<tr class="separator:ab58c73cee91fb59c2eb4799a0c975090"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab89902d922c8c8407e892f18c551cf48"><td class="memItemLeft" align="right" valign="top">static byte[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#ab89902d922c8c8407e892f18c551cf48">DirectReadBytes</a> (Stream source, int count)</td></tr>
+<tr class="memdesc:ab89902d922c8c8407e892f18c551cf48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a given number of bytes directly from the source. An exception is thrown if the data is not all available.  <a href="class_proto_buf_1_1_proto_reader.html#ab89902d922c8c8407e892f18c551cf48">更多...</a><br /></td></tr>
+<tr class="separator:ab89902d922c8c8407e892f18c551cf48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcf7b018d2e40c30de2e9b9b2b88478d"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#adcf7b018d2e40c30de2e9b9b2b88478d">DirectReadString</a> (Stream source, int length)</td></tr>
+<tr class="memdesc:adcf7b018d2e40c30de2e9b9b2b88478d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a string (of a given lenth, in bytes) directly from the source. An exception is thrown if the data is not all available.  <a href="class_proto_buf_1_1_proto_reader.html#adcf7b018d2e40c30de2e9b9b2b88478d">更多...</a><br /></td></tr>
+<tr class="separator:adcf7b018d2e40c30de2e9b9b2b88478d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad13ab26d5e90e3ccf3eaec82b827affe"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#ad13ab26d5e90e3ccf3eaec82b827affe">ReadLengthPrefix</a> (Stream source, bool expectHeader, <a class="el" href="namespace_proto_buf.html#ad0e7acc01d186ea358e62c31f19d73f5">PrefixStyle</a> style, out int fieldNumber, out int bytesRead)</td></tr>
+<tr class="memdesc:ad13ab26d5e90e3ccf3eaec82b827affe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the length-prefix of a message from a stream without buffering additional data, allowing a fixed-length reader to be created.  <a href="class_proto_buf_1_1_proto_reader.html#ad13ab26d5e90e3ccf3eaec82b827affe">更多...</a><br /></td></tr>
+<tr class="separator:ad13ab26d5e90e3ccf3eaec82b827affe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abef7af20f30bad2f9bde42746edb2faf"><td class="memItemLeft" align="right" valign="top">static long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#abef7af20f30bad2f9bde42746edb2faf">ReadLongLengthPrefix</a> (Stream source, bool expectHeader, <a class="el" href="namespace_proto_buf.html#ad0e7acc01d186ea358e62c31f19d73f5">PrefixStyle</a> style, out int fieldNumber, out int bytesRead)</td></tr>
+<tr class="memdesc:abef7af20f30bad2f9bde42746edb2faf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the length-prefix of a message from a stream without buffering additional data, allowing a fixed-length reader to be created.  <a href="class_proto_buf_1_1_proto_reader.html#abef7af20f30bad2f9bde42746edb2faf">更多...</a><br /></td></tr>
+<tr class="separator:abef7af20f30bad2f9bde42746edb2faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3393ab2aa185de7ae35ca5b5a535e72"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#ad3393ab2aa185de7ae35ca5b5a535e72">HasSubValue</a> (<a class="el" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">ProtoBuf.WireType</a> wireType, <a class="el" href="class_proto_buf_1_1_proto_reader.html">ProtoReader</a> source)</td></tr>
+<tr class="memdesc:ad3393ab2aa185de7ae35ca5b5a535e72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the reader still has data remaining in the current sub-item, additionally setting the wire-type for the next field if there is more data. This is used when decoding packed data.  <a href="class_proto_buf_1_1_proto_reader.html#ad3393ab2aa185de7ae35ca5b5a535e72">更多...</a><br /></td></tr>
+<tr class="separator:ad3393ab2aa185de7ae35ca5b5a535e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abae30a563c66e84b3e7213641f9d1221"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#abae30a563c66e84b3e7213641f9d1221">NoteObject</a> (object value, <a class="el" href="class_proto_buf_1_1_proto_reader.html">ProtoReader</a> reader)</td></tr>
+<tr class="memdesc:abae30a563c66e84b3e7213641f9d1221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility method, not intended for public use; this helps maintain the root object is complex scenarios  <a href="class_proto_buf_1_1_proto_reader.html#abae30a563c66e84b3e7213641f9d1221">更多...</a><br /></td></tr>
+<tr class="separator:abae30a563c66e84b3e7213641f9d1221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a695f60613f2db3be67c17219daf80741"><td class="memItemLeft" align="right" valign="top">static object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#a695f60613f2db3be67c17219daf80741">Merge</a> (<a class="el" href="class_proto_buf_1_1_proto_reader.html">ProtoReader</a> parent, object from, object to)</td></tr>
+<tr class="memdesc:a695f60613f2db3be67c17219daf80741"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merge two objects using the details from the current reader; this is used to change the type of objects when an inheritance relationship is discovered later than usual during deserilazation.  <a href="class_proto_buf_1_1_proto_reader.html#a695f60613f2db3be67c17219daf80741">更多...</a><br /></td></tr>
+<tr class="separator:a695f60613f2db3be67c17219daf80741"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:ad435790431557e6301ec4ab54b02395a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#ad435790431557e6301ec4ab54b02395a">FieldNumber</a><code> [get]</code></td></tr>
+<tr class="memdesc:ad435790431557e6301ec4ab54b02395a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of the field being processed.  <a href="class_proto_buf_1_1_proto_reader.html#ad435790431557e6301ec4ab54b02395a">更多...</a><br /></td></tr>
+<tr class="separator:ad435790431557e6301ec4ab54b02395a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af827c66feda0c6274469cab49b665481"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#af827c66feda0c6274469cab49b665481">WireType</a><code> [get]</code></td></tr>
+<tr class="memdesc:af827c66feda0c6274469cab49b665481"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the underlying proto serialization format on the wire.  <a href="class_proto_buf_1_1_proto_reader.html#af827c66feda0c6274469cab49b665481">更多...</a><br /></td></tr>
+<tr class="separator:af827c66feda0c6274469cab49b665481"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb0d00aab2b44380a5cc13aa49fc33e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#acb0d00aab2b44380a5cc13aa49fc33e2">InternStrings</a><code> [getset]</code></td></tr>
+<tr class="memdesc:acb0d00aab2b44380a5cc13aa49fc33e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets / sets a flag indicating whether strings should be checked for repetition; if true, any repeated UTF-8 byte sequence will result in the same String instance, rather than a second instance of the same string. Enabled by default. Note that this uses a <em>custom</em> interner - the system-wide string interner is not used.  <a href="class_proto_buf_1_1_proto_reader.html#acb0d00aab2b44380a5cc13aa49fc33e2">更多...</a><br /></td></tr>
+<tr class="separator:acb0d00aab2b44380a5cc13aa49fc33e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1fc22aebdcfda8f54cb4d58c2678daf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_proto_buf_1_1_serialization_context.html">SerializationContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#ad1fc22aebdcfda8f54cb4d58c2678daf">Context</a><code> [get]</code></td></tr>
+<tr class="memdesc:ad1fc22aebdcfda8f54cb4d58c2678daf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Addition information about this deserialization operation.  <a href="class_proto_buf_1_1_proto_reader.html#ad1fc22aebdcfda8f54cb4d58c2678daf">更多...</a><br /></td></tr>
+<tr class="separator:ad1fc22aebdcfda8f54cb4d58c2678daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73e5e8a52f187a717136c4cb0b20a579"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#a73e5e8a52f187a717136c4cb0b20a579">Position</a><code> [get]</code></td></tr>
+<tr class="memdesc:a73e5e8a52f187a717136c4cb0b20a579"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the position of the current reader (note that this is not necessarily the same as the position in the underlying stream, if multiple readers are used on the same stream)  <a href="class_proto_buf_1_1_proto_reader.html#a73e5e8a52f187a717136c4cb0b20a579">更多...</a><br /></td></tr>
+<tr class="separator:a73e5e8a52f187a717136c4cb0b20a579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af266ecba67b38ee2cd16069f27a9f06e"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#af266ecba67b38ee2cd16069f27a9f06e">LongPosition</a><code> [get]</code></td></tr>
+<tr class="memdesc:af266ecba67b38ee2cd16069f27a9f06e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the position of the current reader (note that this is not necessarily the same as the position in the underlying stream, if multiple readers are used on the same stream)  <a href="class_proto_buf_1_1_proto_reader.html#af266ecba67b38ee2cd16069f27a9f06e">更多...</a><br /></td></tr>
+<tr class="separator:af266ecba67b38ee2cd16069f27a9f06e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97e1f5d9897523112297a928095cfc51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_proto_buf_1_1_meta_1_1_type_model.html">TypeModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_proto_buf_1_1_proto_reader.html#a97e1f5d9897523112297a928095cfc51">Model</a><code> [get]</code></td></tr>
+<tr class="memdesc:a97e1f5d9897523112297a928095cfc51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the TypeModel associated with this reader  <a href="class_proto_buf_1_1_proto_reader.html#a97e1f5d9897523112297a928095cfc51">更多...</a><br /></td></tr>
+<tr class="separator:a97e1f5d9897523112297a928095cfc51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >A stateful reader, used to read a protobuf stream. Typical usage would be (sequentially) to call ReadFieldHeader and (after matching the field) an appropriate Read* method. </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00023">23</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a9df59ea52f5efd69c211d4bc05f8e17f" name="a9df59ea52f5efd69c211d4bc05f8e17f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9df59ea52f5efd69c211d4bc05f8e17f">&#9670;&nbsp;</a></span>ProtoReader() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ProtoBuf.ProtoReader.ProtoReader </td>
+          <td>(</td>
+          <td class="paramtype">Stream&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_meta_1_1_type_model.html">TypeModel</a>&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_serialization_context.html">SerializationContext</a>&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a new reader against a stream </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>The source stream</td></tr>
+    <tr><td class="paramname">model</td><td>The model to use for serialization; this can be null, but this will impair the ability to deserialize sub-objects</td></tr>
+    <tr><td class="paramname">context</td><td>Additional context about this serialization operation</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00056">56</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac1316810fa9b8056409c438aee4a5820" name="ac1316810fa9b8056409c438aee4a5820"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1316810fa9b8056409c438aee4a5820">&#9670;&nbsp;</a></span>ProtoReader() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ProtoBuf.ProtoReader.ProtoReader </td>
+          <td>(</td>
+          <td class="paramtype">Stream&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_meta_1_1_type_model.html">TypeModel</a>&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_serialization_context.html">SerializationContext</a>&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a new reader against a stream </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>The source stream</td></tr>
+    <tr><td class="paramname">model</td><td>The model to use for serialization; this can be null, but this will impair the ability to deserialize sub-objects</td></tr>
+    <tr><td class="paramname">context</td><td>Additional context about this serialization operation</td></tr>
+    <tr><td class="paramname">length</td><td>The number of bytes to read, or -1 to read until the end of the stream</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00080">80</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0a64b92ac304a757482f08991e51578f" name="a0a64b92ac304a757482f08991e51578f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a64b92ac304a757482f08991e51578f">&#9670;&nbsp;</a></span>ProtoReader() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ProtoBuf.ProtoReader.ProtoReader </td>
+          <td>(</td>
+          <td class="paramtype">Stream&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_meta_1_1_type_model.html">TypeModel</a>&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_serialization_context.html">SerializationContext</a>&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a new reader against a stream </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>The source stream</td></tr>
+    <tr><td class="paramname">model</td><td>The model to use for serialization; this can be null, but this will impair the ability to deserialize sub-objects</td></tr>
+    <tr><td class="paramname">context</td><td>Additional context about this serialization operation</td></tr>
+    <tr><td class="paramname">length</td><td>The number of bytes to read, or -1 to read until the end of the stream</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00091">91</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a532ee3c2a6c458116f5d5a1e065f1927" name="a532ee3c2a6c458116f5d5a1e065f1927"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a532ee3c2a6c458116f5d5a1e065f1927">&#9670;&nbsp;</a></span>AppendBytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static byte[] ProtoBuf.ProtoReader.AppendBytes </td>
+          <td>(</td>
+          <td class="paramtype">byte[]&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_proto_reader.html">ProtoReader</a>&#160;</td>
+          <td class="paramname"><em>reader</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reads a byte-sequence from the stream, appending them to an existing byte-sequence (which can be null); supported wire-types: String </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00912">912</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a15ec948c3c84d7762fb15cbafbc05019" name="a15ec948c3c84d7762fb15cbafbc05019"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15ec948c3c84d7762fb15cbafbc05019">&#9670;&nbsp;</a></span>AppendExtensionData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ProtoBuf.ProtoReader.AppendExtensionData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_proto_buf_1_1_i_extensible.html">IExtensible</a>&#160;</td>
+          <td class="paramname"><em>instance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copies the current field into the instance as extension data </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l01239">1239</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4ee879b845febde4b20dd220092ad5e9" name="a4ee879b845febde4b20dd220092ad5e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ee879b845febde4b20dd220092ad5e9">&#9670;&nbsp;</a></span>Assert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ProtoBuf.ProtoReader.Assert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a>&#160;</td>
+          <td class="paramname"><em>wireType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifies that the stream's current wire-type is as expected, or a specialized sub-type (for example, SignedVariant) - in which case the current wire-type is updated. Otherwise an exception is thrown. </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00755">755</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a17729e63e44761fcc57a0abd6cf95747" name="a17729e63e44761fcc57a0abd6cf95747"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17729e63e44761fcc57a0abd6cf95747">&#9670;&nbsp;</a></span>DirectReadBigEndianInt32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ProtoBuf.ProtoReader.DirectReadBigEndianInt32 </td>
+          <td>(</td>
+          <td class="paramtype">Stream&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reads a big-endian encoded integer. An exception is thrown if the data is not all available. </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l01007">1007</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab58c73cee91fb59c2eb4799a0c975090" name="ab58c73cee91fb59c2eb4799a0c975090"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab58c73cee91fb59c2eb4799a0c975090">&#9670;&nbsp;</a></span>DirectReadBytes() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ProtoBuf.ProtoReader.DirectReadBytes </td>
+          <td>(</td>
+          <td class="paramtype">Stream&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte[]&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reads a string (of a given lenth, in bytes) directly from the source into a pre-existing buffer. An exception is thrown if the data is not all available. </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l01027">1027</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab89902d922c8c8407e892f18c551cf48" name="ab89902d922c8c8407e892f18c551cf48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab89902d922c8c8407e892f18c551cf48">&#9670;&nbsp;</a></span>DirectReadBytes() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static byte[] ProtoBuf.ProtoReader.DirectReadBytes </td>
+          <td>(</td>
+          <td class="paramtype">Stream&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reads a given number of bytes directly from the source. An exception is thrown if the data is not all available. </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l01041">1041</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a620d585884f3fd0278d89ee03963eea3" name="a620d585884f3fd0278d89ee03963eea3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a620d585884f3fd0278d89ee03963eea3">&#9670;&nbsp;</a></span>DirectReadLittleEndianInt32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ProtoBuf.ProtoReader.DirectReadLittleEndianInt32 </td>
+          <td>(</td>
+          <td class="paramtype">Stream&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reads a little-endian encoded integer. An exception is thrown if the data is not all available. </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00997">997</a> 行定义.</p>
+
+</div>
+</div>
+<a id="adcf7b018d2e40c30de2e9b9b2b88478d" name="adcf7b018d2e40c30de2e9b9b2b88478d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcf7b018d2e40c30de2e9b9b2b88478d">&#9670;&nbsp;</a></span>DirectReadString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string ProtoBuf.ProtoReader.DirectReadString </td>
+          <td>(</td>
+          <td class="paramtype">Stream&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reads a string (of a given lenth, in bytes) directly from the source. An exception is thrown if the data is not all available. </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l01050">1050</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a15ed2472bb69bc02e5c882e2d3fd07eb" name="a15ed2472bb69bc02e5c882e2d3fd07eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15ed2472bb69bc02e5c882e2d3fd07eb">&#9670;&nbsp;</a></span>DirectReadVarintInt32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ProtoBuf.ProtoReader.DirectReadVarintInt32 </td>
+          <td>(</td>
+          <td class="paramtype">Stream&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reads a varint encoded integer. An exception is thrown if the data is not all available. </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l01017">1017</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a729424920989037cde06822732d5e747" name="a729424920989037cde06822732d5e747"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a729424920989037cde06822732d5e747">&#9670;&nbsp;</a></span>Dispose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ProtoBuf.ProtoReader.Dispose </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Releases resources used by the reader, but importantly <b>does not</b> Dispose the underlying stream; in many typical use-cases the stream is used for different processes, so it is assumed that the consumer will Dispose their stream separately. </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00130">130</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a571499a63ca9bb557b21fae3cb626ee0" name="a571499a63ca9bb557b21fae3cb626ee0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a571499a63ca9bb557b21fae3cb626ee0">&#9670;&nbsp;</a></span>EndSubItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ProtoBuf.ProtoReader.EndSubItem </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_proto_buf_1_1_sub_item_token.html">SubItemToken</a>&#160;</td>
+          <td class="paramname"><em>token</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_proto_reader.html">ProtoReader</a>&#160;</td>
+          <td class="paramname"><em>reader</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Makes the end of consuming a nested message in the stream; the stream must be either at the correct EndGroup marker, or all fields of the sub-message must have been consumed (in either case, this means ReadFieldHeader should return zero) </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00627">627</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad3393ab2aa185de7ae35ca5b5a535e72" name="ad3393ab2aa185de7ae35ca5b5a535e72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3393ab2aa185de7ae35ca5b5a535e72">&#9670;&nbsp;</a></span>HasSubValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ProtoBuf.ProtoReader.HasSubValue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">ProtoBuf.WireType</a>&#160;</td>
+          <td class="paramname"><em>wireType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_proto_reader.html">ProtoReader</a>&#160;</td>
+          <td class="paramname"><em>source</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicates whether the reader still has data remaining in the current sub-item, additionally setting the wire-type for the next field if there is more data. This is used when decoding packed data. </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l01294">1294</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a95cab31e4062d58b796e5833a5142268" name="a95cab31e4062d58b796e5833a5142268"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95cab31e4062d58b796e5833a5142268">&#9670;&nbsp;</a></span>Hint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ProtoBuf.ProtoReader.Hint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a>&#160;</td>
+          <td class="paramname"><em>wireType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compares the streams current wire-type to the hinted wire-type, updating the reader if necessary; for example, a Variant may be updated to SignedVariant. If the hinted wire-type is unrelated then no change is made. </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00741">741</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a695f60613f2db3be67c17219daf80741" name="a695f60613f2db3be67c17219daf80741"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a695f60613f2db3be67c17219daf80741">&#9670;&nbsp;</a></span>Merge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static object ProtoBuf.ProtoReader.Merge </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_proto_reader.html">ProtoReader</a>&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Merge two objects using the details from the current reader; this is used to change the type of objects when an inheritance relationship is discovered later than usual during deserilazation. </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l01368">1368</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abae30a563c66e84b3e7213641f9d1221" name="abae30a563c66e84b3e7213641f9d1221"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abae30a563c66e84b3e7213641f9d1221">&#9670;&nbsp;</a></span>NoteObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ProtoBuf.ProtoReader.NoteObject </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_proto_reader.html">ProtoReader</a>&#160;</td>
+          <td class="paramname"><em>reader</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Utility method, not intended for public use; this helps maintain the root object is complex scenarios </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l01328">1328</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad7b2ad0af7070add9a9531512f6512e3" name="ad7b2ad0af7070add9a9531512f6512e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7b2ad0af7070add9a9531512f6512e3">&#9670;&nbsp;</a></span>ReadBoolean()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ProtoBuf.ProtoReader.ReadBoolean </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads a boolean value from the stream; supported wire-types: Variant, Fixed32, Fixed64 </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00898">898</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a629be0f7b1e143c86b8401135d503dd8" name="a629be0f7b1e143c86b8401135d503dd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a629be0f7b1e143c86b8401135d503dd8">&#9670;&nbsp;</a></span>ReadByte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte ProtoBuf.ProtoReader.ReadByte </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads an unsigned 8-bit integer from the stream; supported wire-types: Variant, Fixed32, Fixed64 </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00303">303</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a68e62bca704ddb48eb4334a6a326cd04" name="a68e62bca704ddb48eb4334a6a326cd04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68e62bca704ddb48eb4334a6a326cd04">&#9670;&nbsp;</a></span>ReadDouble()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsafe double ProtoBuf.ProtoReader.ReadDouble </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads a double-precision number from the stream; supported wire-types: Fixed32, Fixed64 </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00567">567</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac7e7b43a7bf4db58077e08583d6992fc" name="ac7e7b43a7bf4db58077e08583d6992fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7e7b43a7bf4db58077e08583d6992fc">&#9670;&nbsp;</a></span>ReadFieldHeader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ProtoBuf.ProtoReader.ReadFieldHeader </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads a field header from the stream, setting the wire-type and retuning the field number. If no more fields are available, then 0 is returned. This methods respects sub-messages. </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00683">683</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aeb0c9282d3573dc5204c758ec4897084" name="aeb0c9282d3573dc5204c758ec4897084"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb0c9282d3573dc5204c758ec4897084">&#9670;&nbsp;</a></span>ReadInt16()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short ProtoBuf.ProtoReader.ReadInt16 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads a signed 16-bit integer from the stream: Variant, Fixed32, Fixed64, SignedVariant </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00288">288</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a886e75fdd50468b8a7844349b7d85dfc" name="a886e75fdd50468b8a7844349b7d85dfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a886e75fdd50468b8a7844349b7d85dfc">&#9670;&nbsp;</a></span>ReadInt32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ProtoBuf.ProtoReader.ReadInt32 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads a signed 32-bit integer from the stream; supported wire-types: Variant, Fixed32, Fixed64, SignedVariant </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00319">319</a> 行定义.</p>
+
+</div>
+</div>
+<a id="afd1d2832f8b1eb755782bcf87582b899" name="afd1d2832f8b1eb755782bcf87582b899"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd1d2832f8b1eb755782bcf87582b899">&#9670;&nbsp;</a></span>ReadInt64()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long ProtoBuf.ProtoReader.ReadInt64 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads a signed 64-bit integer from the stream; supported wire-types: Variant, Fixed32, Fixed64, SignedVariant </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00358">358</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ada4033cd2a250ef1bb78abe91553aadd" name="ada4033cd2a250ef1bb78abe91553aadd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada4033cd2a250ef1bb78abe91553aadd">&#9670;&nbsp;</a></span>ReadLengthPrefix() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ProtoBuf.ProtoReader.ReadLengthPrefix </td>
+          <td>(</td>
+          <td class="paramtype">Stream&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>expectHeader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_proto_buf.html#ad0e7acc01d186ea358e62c31f19d73f5">PrefixStyle</a>&#160;</td>
+          <td class="paramname"><em>style</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out int&#160;</td>
+          <td class="paramname"><em>fieldNumber</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reads the length-prefix of a message from a stream without buffering additional data, allowing a fixed-length reader to be created. </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00989">989</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad13ab26d5e90e3ccf3eaec82b827affe" name="ad13ab26d5e90e3ccf3eaec82b827affe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad13ab26d5e90e3ccf3eaec82b827affe">&#9670;&nbsp;</a></span>ReadLengthPrefix() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ProtoBuf.ProtoReader.ReadLengthPrefix </td>
+          <td>(</td>
+          <td class="paramtype">Stream&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>expectHeader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_proto_buf.html#ad0e7acc01d186ea358e62c31f19d73f5">PrefixStyle</a>&#160;</td>
+          <td class="paramname"><em>style</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out int&#160;</td>
+          <td class="paramname"><em>fieldNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out int&#160;</td>
+          <td class="paramname"><em>bytesRead</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reads the length-prefix of a message from a stream without buffering additional data, allowing a fixed-length reader to be created. </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l01061">1061</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abef7af20f30bad2f9bde42746edb2faf" name="abef7af20f30bad2f9bde42746edb2faf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abef7af20f30bad2f9bde42746edb2faf">&#9670;&nbsp;</a></span>ReadLongLengthPrefix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static long ProtoBuf.ProtoReader.ReadLongLengthPrefix </td>
+          <td>(</td>
+          <td class="paramtype">Stream&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>expectHeader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_proto_buf.html#ad0e7acc01d186ea358e62c31f19d73f5">PrefixStyle</a>&#160;</td>
+          <td class="paramname"><em>style</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out int&#160;</td>
+          <td class="paramname"><em>fieldNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out int&#160;</td>
+          <td class="paramname"><em>bytesRead</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reads the length-prefix of a message from a stream without buffering additional data, allowing a fixed-length reader to be created. </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l01075">1075</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a18a141d5faa03fe97b4eac9c939967a5" name="a18a141d5faa03fe97b4eac9c939967a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18a141d5faa03fe97b4eac9c939967a5">&#9670;&nbsp;</a></span>ReadObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static object ProtoBuf.ProtoReader.ReadObject </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_proto_reader.html">ProtoReader</a>&#160;</td>
+          <td class="paramname"><em>reader</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reads (merges) a sub-message from the stream, internally calling StartSubItem and EndSubItem, and (in between) parsing the message in accordance with the model associated with the reader </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00589">589</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6bc66f7312d8afd2262cbff5b4043dc0" name="a6bc66f7312d8afd2262cbff5b4043dc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bc66f7312d8afd2262cbff5b4043dc0">&#9670;&nbsp;</a></span>ReadSByte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sbyte ProtoBuf.ProtoReader.ReadSByte </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads a signed 8-bit integer from the stream; supported wire-types: Variant, Fixed32, Fixed64, SignedVariant </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00311">311</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a24f395296877680e983b9c85b04e1192" name="a24f395296877680e983b9c85b04e1192"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24f395296877680e983b9c85b04e1192">&#9670;&nbsp;</a></span>ReadSingle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsafe float ProtoBuf.ProtoReader.ReadSingle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads a single-precision number from the stream; supported wire-types: Fixed32, Fixed64 </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00865">865</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a697ff2a667c47198074b3fe9607ee098" name="a697ff2a667c47198074b3fe9607ee098"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a697ff2a667c47198074b3fe9607ee098">&#9670;&nbsp;</a></span>ReadString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string ProtoBuf.ProtoReader.ReadString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads a string from the stream (using UTF8); supported wire-types: String </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00516">516</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a043895e61c74493d5ad2bfccfadaaf41" name="a043895e61c74493d5ad2bfccfadaaf41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a043895e61c74493d5ad2bfccfadaaf41">&#9670;&nbsp;</a></span>ReadType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Type ProtoBuf.ProtoReader.ReadType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads a Type from the stream, using the model's DynamicTypeFormatting if appropriate; supported wire-types: String </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l01341">1341</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6c57113e89d14d0265fa57886f052b2f" name="a6c57113e89d14d0265fa57886f052b2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c57113e89d14d0265fa57886f052b2f">&#9670;&nbsp;</a></span>ReadUInt16()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ushort ProtoBuf.ProtoReader.ReadUInt16 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads an unsigned 16-bit integer from the stream; supported wire-types: Variant, Fixed32, Fixed64 </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00295">295</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1c27cdff96bbcd4582d0b30979dfd70f" name="a1c27cdff96bbcd4582d0b30979dfd70f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c27cdff96bbcd4582d0b30979dfd70f">&#9670;&nbsp;</a></span>ReadUInt32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint ProtoBuf.ProtoReader.ReadUInt32 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads an unsigned 32-bit integer from the stream; supported wire-types: Variant, Fixed32, Fixed64 </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00217">217</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a488df9387e0d3863a19666663f758349" name="a488df9387e0d3863a19666663f758349"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a488df9387e0d3863a19666663f758349">&#9670;&nbsp;</a></span>ReadUInt64()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ulong ProtoBuf.ProtoReader.ReadUInt64 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads an unsigned 64-bit integer from the stream; supported wire-types: Variant, Fixed32, Fixed64 </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00833">833</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac10c7c4d17cf89ed4803391fd3e46c3b" name="ac10c7c4d17cf89ed4803391fd3e46c3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac10c7c4d17cf89ed4803391fd3e46c3b">&#9670;&nbsp;</a></span>SkipField()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ProtoBuf.ProtoReader.SkipField </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Discards the data for the current field. </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00771">771</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a00ffaca81bb40c12316a06f1f2e6c85b" name="a00ffaca81bb40c12316a06f1f2e6c85b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00ffaca81bb40c12316a06f1f2e6c85b">&#9670;&nbsp;</a></span>StartSubItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="struct_proto_buf_1_1_sub_item_token.html">SubItemToken</a> ProtoBuf.ProtoReader.StartSubItem </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_proto_buf_1_1_proto_reader.html">ProtoReader</a>&#160;</td>
+          <td class="paramname"><em>reader</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Begins consuming a nested message in the stream; supported wire-types: StartGroup, String </p>
+<p >The token returned must be help and used when callining EndSubItem</p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00658">658</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae9ed9bcb77ca5ad1ee44c8af6173a01f" name="ae9ed9bcb77ca5ad1ee44c8af6173a01f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9ed9bcb77ca5ad1ee44c8af6173a01f">&#9670;&nbsp;</a></span>ThrowEnumException()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ProtoBuf.ProtoReader.ThrowEnumException </td>
+          <td>(</td>
+          <td class="paramtype">System.Type&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Throws an exception indication that the given value cannot be mapped to an enum. </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00547">547</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af02898b562b458efe4675a2668d0d62d" name="af02898b562b458efe4675a2668d0d62d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af02898b562b458efe4675a2668d0d62d">&#9670;&nbsp;</a></span>TryReadFieldHeader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ProtoBuf.ProtoReader.TryReadFieldHeader </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>field</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Looks ahead to see whether the next field in the stream is what we expect (typically; what we've just finished reading - for example ot read successive list items) </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00712">712</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">属性说明</h2>
+<a id="ad1fc22aebdcfda8f54cb4d58c2678daf" name="ad1fc22aebdcfda8f54cb4d58c2678daf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1fc22aebdcfda8f54cb4d58c2678daf">&#9670;&nbsp;</a></span>Context</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_proto_buf_1_1_serialization_context.html">SerializationContext</a> ProtoBuf.ProtoReader.Context</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Addition information about this deserialization operation. </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00124">124</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad435790431557e6301ec4ab54b02395a" name="ad435790431557e6301ec4ab54b02395a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad435790431557e6301ec4ab54b02395a">&#9670;&nbsp;</a></span>FieldNumber</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ProtoBuf.ProtoReader.FieldNumber</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the number of the field being processed. </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00044">44</a> 行定义.</p>
+
+</div>
+</div>
+<a id="acb0d00aab2b44380a5cc13aa49fc33e2" name="acb0d00aab2b44380a5cc13aa49fc33e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb0d00aab2b44380a5cc13aa49fc33e2">&#9670;&nbsp;</a></span>InternStrings</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ProtoBuf.ProtoReader.InternStrings</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets / sets a flag indicating whether strings should be checked for repetition; if true, any repeated UTF-8 byte sequence will result in the same String instance, rather than a second instance of the same string. Enabled by default. Note that this uses a <em>custom</em> interner - the system-wide string interner is not used. </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00071">71</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af266ecba67b38ee2cd16069f27a9f06e" name="af266ecba67b38ee2cd16069f27a9f06e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af266ecba67b38ee2cd16069f27a9f06e">&#9670;&nbsp;</a></span>LongPosition</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">long ProtoBuf.ProtoReader.LongPosition</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the position of the current reader (note that this is not necessarily the same as the position in the underlying stream, if multiple readers are used on the same stream) </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00249">249</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a97e1f5d9897523112297a928095cfc51" name="a97e1f5d9897523112297a928095cfc51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97e1f5d9897523112297a928095cfc51">&#9670;&nbsp;</a></span>Model</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_proto_buf_1_1_meta_1_1_type_model.html">TypeModel</a> ProtoBuf.ProtoReader.Model</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the TypeModel associated with this reader </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00735">735</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a73e5e8a52f187a717136c4cb0b20a579" name="a73e5e8a52f187a717136c4cb0b20a579"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73e5e8a52f187a717136c4cb0b20a579">&#9670;&nbsp;</a></span>Position</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ProtoBuf.ProtoReader.Position</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the position of the current reader (note that this is not necessarily the same as the position in the underlying stream, if multiple readers are used on the same stream) </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00243">243</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af827c66feda0c6274469cab49b665481" name="af827c66feda0c6274469cab49b665481"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af827c66feda0c6274469cab49b665481">&#9670;&nbsp;</a></span>WireType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_proto_buf.html#a65ab37a4ba78a8c3f83f0184feea2ce1">WireType</a> ProtoBuf.ProtoReader.WireType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicates the underlying proto serialization format on the wire. </p>
+
+<p class="definition">在文件 <a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a> 第 <a class="el" href="_proto_reader_8cs_source.html#l00048">48</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>Unity/Assets/ThirdParty/protobuf-net/<a class="el" href="_proto_reader_8cs_source.html">ProtoReader.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_proto_buf.html">ProtoBuf</a></li><li class="navelem"><a class="el" href="class_proto_buf_1_1_proto_reader.html">ProtoReader</a></li>
+    <li class="footer">生成于 2022年 一月 23日 星期日 19:12:44 , 为 ET使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

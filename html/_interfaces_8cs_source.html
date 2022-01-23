@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ET: Unity/Assets/ThirdParty/ILRuntime/Mono.Cecil/symbols/pdb/Microsoft.Cci.Pdb/Interfaces.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ET<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_interfaces_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Interfaces.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_interfaces_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using</span> <a class="code hl_variable" href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_system.html">System</a>.<a class="code hl_namespace" href="namespace_system_1_1_collections.html">Collections</a>.<a class="code hl_namespace" href="namespace_system_1_1_collections_1_1_generic.html">Generic</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_microsoft_1_1_cci_1_1_pdb.html">Microsoft.Cci.Pdb</a> {</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_local_scope.html">    9</a></span>  <span class="keyword">interface </span><a class="code hl_interface" href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_local_scope.html">ILocalScope</a> {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_local_scope.html#aafec39050a9038ac6940b5f12a98c4eb">   13</a></span>    uint <a class="code hl_property" href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_local_scope.html#aafec39050a9038ac6940b5f12a98c4eb">Offset</a> { <span class="keyword">get</span>; }</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_local_scope.html#a7f7817fee37776ec4272624e0b709288">   18</a></span>    uint <a class="code hl_property" href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_local_scope.html#a7f7817fee37776ec4272624e0b709288">Length</a> { <span class="keyword">get</span>; }</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  }</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_namespace_scope.html">   25</a></span>  <span class="keyword">interface </span><a class="code hl_interface" href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_namespace_scope.html">INamespaceScope</a> {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_namespace_scope.html#a7184ae9df01cef9da92377fda3b470c6">   30</a></span>    IEnumerable&lt;IUsedNamespace&gt; <a class="code hl_property" href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_namespace_scope.html#a7184ae9df01cef9da92377fda3b470c6">UsedNamespaces</a> { <span class="keyword">get</span>; }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_used_namespace.html">   38</a></span>  <span class="keyword">interface </span><a class="code hl_interface" href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_used_namespace.html">IUsedNamespace</a> {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_used_namespace.html#aff1e43c6806b651d59ae7cd05c4d9751">   42</a></span>    <a class="code hl_interface" href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_name.html">IName</a> <a class="code hl_property" href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_used_namespace.html#aff1e43c6806b651d59ae7cd05c4d9751">Alias</a> { <span class="keyword">get</span>; }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_used_namespace.html#af62be29bf5e9878ad6784467899291b7">   47</a></span>    <a class="code hl_interface" href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_name.html">IName</a> <a class="code hl_property" href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_used_namespace.html#af62be29bf5e9878ad6784467899291b7">NamespaceName</a> { <span class="keyword">get</span>; }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_name.html">   53</a></span>  <span class="keyword">interface </span><a class="code hl_interface" href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_name.html">IName</a> {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_name.html#a001b83f12a660ed9d883f2cb3127b76c">   57</a></span>    <span class="keywordtype">int</span> <a class="code hl_property" href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_name.html#a001b83f12a660ed9d883f2cb3127b76c">UniqueKey</a> {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      <span class="keyword">get</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="comment">//^ ensures result &gt; 0;</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_name.html#a5b0c9939d0b94ce875cf6f03ecad5ef8">   67</a></span>    <span class="keywordtype">int</span> <a class="code hl_property" href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_name.html#a5b0c9939d0b94ce875cf6f03ecad5ef8">UniqueKeyIgnoringCase</a> {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      <span class="keyword">get</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>      <span class="comment">//^ ensures result &gt; 0;</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_name.html#aea543ef442997a78c015c5cd84ecc9ab">   75</a></span>    <span class="keywordtype">string</span> <a class="code hl_property" href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_name.html#aea543ef442997a78c015c5cd84ecc9ab">Value</a> { <span class="keyword">get</span>; }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>}</div>
+<div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
+<div class="ttc" id="ainterface_microsoft_1_1_cci_1_1_pdb_1_1_i_local_scope_html"><div class="ttname"><a href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_local_scope.html">Microsoft.Cci.Pdb.ILocalScope</a></div><div class="ttdoc">A range of CLR IL operations that comprise a lexical scope, specified as an IL offset and a length.</div><div class="ttdef"><b>Definition:</b> <a href="_interfaces_8cs_source.html#l00009">Interfaces.cs:9</a></div></div>
+<div class="ttc" id="ainterface_microsoft_1_1_cci_1_1_pdb_1_1_i_local_scope_html_a7f7817fee37776ec4272624e0b709288"><div class="ttname"><a href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_local_scope.html#a7f7817fee37776ec4272624e0b709288">Microsoft.Cci.Pdb.ILocalScope.Length</a></div><div class="ttdeci">uint Length</div><div class="ttdoc">The length of the scope. Offset+Length equals the offset of the first operation outside the scope,...</div><div class="ttdef"><b>Definition:</b> <a href="_interfaces_8cs_source.html#l00018">Interfaces.cs:18</a></div></div>
+<div class="ttc" id="ainterface_microsoft_1_1_cci_1_1_pdb_1_1_i_local_scope_html_aafec39050a9038ac6940b5f12a98c4eb"><div class="ttname"><a href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_local_scope.html#aafec39050a9038ac6940b5f12a98c4eb">Microsoft.Cci.Pdb.ILocalScope.Offset</a></div><div class="ttdeci">uint Offset</div><div class="ttdoc">The offset of the first operation in the scope.</div><div class="ttdef"><b>Definition:</b> <a href="_interfaces_8cs_source.html#l00013">Interfaces.cs:13</a></div></div>
+<div class="ttc" id="ainterface_microsoft_1_1_cci_1_1_pdb_1_1_i_name_html"><div class="ttname"><a href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_name.html">Microsoft.Cci.Pdb.IName</a></div><div class="ttdoc">The name of an entity. Typically name instances come from a common pool. Within the pool no two disti...</div><div class="ttdef"><b>Definition:</b> <a href="_interfaces_8cs_source.html#l00053">Interfaces.cs:53</a></div></div>
+<div class="ttc" id="ainterface_microsoft_1_1_cci_1_1_pdb_1_1_i_name_html_a001b83f12a660ed9d883f2cb3127b76c"><div class="ttname"><a href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_name.html#a001b83f12a660ed9d883f2cb3127b76c">Microsoft.Cci.Pdb.IName.UniqueKey</a></div><div class="ttdeci">int UniqueKey</div><div class="ttdoc">An integer that is unique within the pool from which the name instance has been allocated....</div><div class="ttdef"><b>Definition:</b> <a href="_interfaces_8cs_source.html#l00057">Interfaces.cs:57</a></div></div>
+<div class="ttc" id="ainterface_microsoft_1_1_cci_1_1_pdb_1_1_i_name_html_a5b0c9939d0b94ce875cf6f03ecad5ef8"><div class="ttname"><a href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_name.html#a5b0c9939d0b94ce875cf6f03ecad5ef8">Microsoft.Cci.Pdb.IName.UniqueKeyIgnoringCase</a></div><div class="ttdeci">int UniqueKeyIgnoringCase</div><div class="ttdoc">An integer that is unique within the pool from which the name instance has been allocated....</div><div class="ttdef"><b>Definition:</b> <a href="_interfaces_8cs_source.html#l00067">Interfaces.cs:67</a></div></div>
+<div class="ttc" id="ainterface_microsoft_1_1_cci_1_1_pdb_1_1_i_name_html_aea543ef442997a78c015c5cd84ecc9ab"><div class="ttname"><a href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_name.html#aea543ef442997a78c015c5cd84ecc9ab">Microsoft.Cci.Pdb.IName.Value</a></div><div class="ttdeci">string Value</div><div class="ttdoc">The string value corresponding to this name.</div><div class="ttdef"><b>Definition:</b> <a href="_interfaces_8cs_source.html#l00075">Interfaces.cs:75</a></div></div>
+<div class="ttc" id="ainterface_microsoft_1_1_cci_1_1_pdb_1_1_i_namespace_scope_html"><div class="ttname"><a href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_namespace_scope.html">Microsoft.Cci.Pdb.INamespaceScope</a></div><div class="ttdoc">A description of the lexical scope in which a namespace type has been nested. This scope is tied to a...</div><div class="ttdef"><b>Definition:</b> <a href="_interfaces_8cs_source.html#l00025">Interfaces.cs:25</a></div></div>
+<div class="ttc" id="ainterface_microsoft_1_1_cci_1_1_pdb_1_1_i_namespace_scope_html_a7184ae9df01cef9da92377fda3b470c6"><div class="ttname"><a href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_namespace_scope.html#a7184ae9df01cef9da92377fda3b470c6">Microsoft.Cci.Pdb.INamespaceScope.UsedNamespaces</a></div><div class="ttdeci">IEnumerable&lt; IUsedNamespace &gt; UsedNamespaces</div><div class="ttdoc">Zero or more used namespaces. These correspond to using clauses in C#.</div><div class="ttdef"><b>Definition:</b> <a href="_interfaces_8cs_source.html#l00030">Interfaces.cs:30</a></div></div>
+<div class="ttc" id="ainterface_microsoft_1_1_cci_1_1_pdb_1_1_i_used_namespace_html"><div class="ttname"><a href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_used_namespace.html">Microsoft.Cci.Pdb.IUsedNamespace</a></div><div class="ttdoc">A namespace that is used (imported) inside a namespace scope.</div><div class="ttdef"><b>Definition:</b> <a href="_interfaces_8cs_source.html#l00038">Interfaces.cs:38</a></div></div>
+<div class="ttc" id="ainterface_microsoft_1_1_cci_1_1_pdb_1_1_i_used_namespace_html_af62be29bf5e9878ad6784467899291b7"><div class="ttname"><a href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_used_namespace.html#af62be29bf5e9878ad6784467899291b7">Microsoft.Cci.Pdb.IUsedNamespace.NamespaceName</a></div><div class="ttdeci">IName NamespaceName</div><div class="ttdoc">The name of a namepace that has been aliased. For example the &quot;y.z&quot; of &quot;using x = y....</div><div class="ttdef"><b>Definition:</b> <a href="_interfaces_8cs_source.html#l00047">Interfaces.cs:47</a></div></div>
+<div class="ttc" id="ainterface_microsoft_1_1_cci_1_1_pdb_1_1_i_used_namespace_html_aff1e43c6806b651d59ae7cd05c4d9751"><div class="ttname"><a href="interface_microsoft_1_1_cci_1_1_pdb_1_1_i_used_namespace.html#aff1e43c6806b651d59ae7cd05c4d9751">Microsoft.Cci.Pdb.IUsedNamespace.Alias</a></div><div class="ttdeci">IName Alias</div><div class="ttdoc">An alias for a namespace. For example the &quot;x&quot; of &quot;using x = y.z;&quot; in C#. Empty if no alias is present...</div><div class="ttdef"><b>Definition:</b> <a href="_interfaces_8cs_source.html#l00042">Interfaces.cs:42</a></div></div>
+<div class="ttc" id="anamespace_microsoft_1_1_cci_1_1_pdb_html"><div class="ttname"><a href="namespace_microsoft_1_1_cci_1_1_pdb.html">Microsoft.Cci.Pdb</a></div><div class="ttdef"><b>Definition:</b> <a href="_bit_access_8cs_source.html#l00008">BitAccess.cs:8</a></div></div>
+<div class="ttc" id="anamespace_system_1_1_collections_1_1_generic_html"><div class="ttname"><a href="namespace_system_1_1_collections_1_1_generic.html">System.Collections.Generic</a></div></div>
+<div class="ttc" id="anamespace_system_1_1_collections_html"><div class="ttname"><a href="namespace_system_1_1_collections.html">System.Collections</a></div></div>
+<div class="ttc" id="anamespace_system_html"><div class="ttname"><a href="namespace_system.html">System</a></div><div class="ttdef"><b>Definition:</b> <a href="_async_method_builder_attribute_8cs_source.html#l00002">AsyncMethodBuilderAttribute.cs:3</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_3b33dffaa21a2ac6f7978a949ffd4e41.html">Assets</a></li><li class="navelem"><a class="el" href="dir_5501c55c26a8d51fbc1fd8b7d8df04c3.html">ThirdParty</a></li><li class="navelem"><a class="el" href="dir_d7574f457851e45807c5ee4c7e6fc148.html">ILRuntime</a></li><li class="navelem"><a class="el" href="dir_4b4645f3c34003797707cfb8ce358d82.html">Mono.Cecil</a></li><li class="navelem"><a class="el" href="dir_a752457934c5d5b9c485c35f763b4f98.html">symbols</a></li><li class="navelem"><a class="el" href="dir_8fadb51ab63ef0c308e53d212fab069f.html">pdb</a></li><li class="navelem"><a class="el" href="dir_b37b6f85caab939cd47b05cc022f93cd.html">Microsoft.Cci.Pdb</a></li><li class="navelem"><a class="el" href="_interfaces_8cs.html">Interfaces.cs</a></li>
+    <li class="footer">生成于 2022年 一月 23日 星期日 19:12:34 , 为 ET使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

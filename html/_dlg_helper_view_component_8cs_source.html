@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ET: Unity/Codes/ModelView/Demo/UIBehaviour/DlgHelper/DlgHelperViewComponent.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ET<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_dlg_helper_view_component_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">DlgHelperViewComponent.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_dlg_helper_view_component_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_unity_engine.html">UnityEngine</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_unity_engine.html">UnityEngine</a>.<a class="code hl_namespace" href="namespace_unity_engine_1_1_u_i.html">UI</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_e_t.html">ET</a></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_e_t_1_1_dlg_helper_view_component.html">    6</a></span>        <span class="keyword">public</span>  <span class="keyword">class </span><a class="code hl_class" href="class_e_t_1_1_dlg_helper_view_component.html">DlgHelperViewComponent</a> : <a class="code hl_class" href="class_e_t_1_1_entity.html">Entity</a>,<a class="code hl_interface" href="interface_e_t_1_1_i_awake.html">IAwake</a>,<a class="code hl_interface" href="interface_e_t_1_1_i_destroy.html">IDestroy</a> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>        {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_e_t_1_1_dlg_helper_view_component.html#af5c2e26ebbcea2014941f47a7c4bfb4a">    8</a></span>                <span class="keyword">public</span> <a class="code hl_namespace" href="namespace_unity_engine.html">UnityEngine</a>.<a class="code hl_namespace" href="namespace_unity_engine_1_1_u_i.html">UI</a>.Text <a class="code hl_property" href="class_e_t_1_1_dlg_helper_view_component.html#af5c2e26ebbcea2014941f47a7c4bfb4a">E_TipText</a></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>                <span class="keyword">get</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>                {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>                        <span class="keywordflow">if</span> (this.<a class="code hl_variable" href="class_e_t_1_1_dlg_helper_view_component.html#a0449303a9ff9870bdcc8476588d330bd">uiTransform</a> == <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>                        {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>                                Log.Error(<span class="stringliteral">&quot;uiTransform is null.&quot;</span>);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>                                <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>                        }</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                        <span class="keywordflow">if</span>( this.m_E_TipText == <span class="keyword">null</span> )</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>                        {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                                this.m_E_TipText = <a class="code hl_class" href="class_u_i_find_helper.html">UIFindHelper</a>.<a class="code hl_function" href="class_u_i_find_helper.html#aa3c6766ead1a160e17cccb9bc7e72d25">FindDeepChild</a>&lt;<a class="code hl_namespace" href="namespace_unity_engine.html">UnityEngine</a>.<a class="code hl_namespace" href="namespace_unity_engine_1_1_u_i.html">UI</a>.Text&gt;(this.<a class="code hl_variable" href="class_e_t_1_1_dlg_helper_view_component.html#a0449303a9ff9870bdcc8476588d330bd">uiTransform</a>.gameObject,<span class="stringliteral">&quot;E_Tip&quot;</span>);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                        }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                        <span class="keywordflow">return</span> this.m_E_TipText;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                }</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        }</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_e_t_1_1_dlg_helper_view_component.html#aaa61069e8b1d230b10b48b47f48439ac">   25</a></span>                <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_e_t_1_1_dlg_helper_view_component.html#aaa61069e8b1d230b10b48b47f48439ac">DestroyWidget</a>()</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                        this.m_E_TipText = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                        this.<a class="code hl_variable" href="class_e_t_1_1_dlg_helper_view_component.html#a0449303a9ff9870bdcc8476588d330bd">uiTransform</a> = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                <span class="keyword">private</span> <a class="code hl_namespace" href="namespace_unity_engine.html">UnityEngine</a>.<a class="code hl_namespace" href="namespace_unity_engine_1_1_u_i.html">UI</a>.Text m_E_TipText = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_e_t_1_1_dlg_helper_view_component.html#a0449303a9ff9870bdcc8476588d330bd">   32</a></span>                <span class="keyword">public</span> Transform <a class="code hl_variable" href="class_e_t_1_1_dlg_helper_view_component.html#a0449303a9ff9870bdcc8476588d330bd">uiTransform</a> = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}</div>
+<div class="ttc" id="aclass_e_t_1_1_dlg_helper_view_component_html"><div class="ttname"><a href="class_e_t_1_1_dlg_helper_view_component.html">ET.DlgHelperViewComponent</a></div><div class="ttdef"><b>Definition:</b> <a href="_dlg_helper_view_component_8cs_source.html#l00006">DlgHelperViewComponent.cs:7</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_dlg_helper_view_component_html_a0449303a9ff9870bdcc8476588d330bd"><div class="ttname"><a href="class_e_t_1_1_dlg_helper_view_component.html#a0449303a9ff9870bdcc8476588d330bd">ET.DlgHelperViewComponent.uiTransform</a></div><div class="ttdeci">Transform uiTransform</div><div class="ttdef"><b>Definition:</b> <a href="_dlg_helper_view_component_8cs_source.html#l00032">DlgHelperViewComponent.cs:32</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_dlg_helper_view_component_html_aaa61069e8b1d230b10b48b47f48439ac"><div class="ttname"><a href="class_e_t_1_1_dlg_helper_view_component.html#aaa61069e8b1d230b10b48b47f48439ac">ET.DlgHelperViewComponent.DestroyWidget</a></div><div class="ttdeci">void DestroyWidget()</div><div class="ttdef"><b>Definition:</b> <a href="_dlg_helper_view_component_8cs_source.html#l00025">DlgHelperViewComponent.cs:25</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_dlg_helper_view_component_html_af5c2e26ebbcea2014941f47a7c4bfb4a"><div class="ttname"><a href="class_e_t_1_1_dlg_helper_view_component.html#af5c2e26ebbcea2014941f47a7c4bfb4a">ET.DlgHelperViewComponent.E_TipText</a></div><div class="ttdeci">UnityEngine.UI.Text E_TipText</div><div class="ttdef"><b>Definition:</b> <a href="_dlg_helper_view_component_8cs_source.html#l00008">DlgHelperViewComponent.cs:9</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_entity_html"><div class="ttname"><a href="class_e_t_1_1_entity.html">ET.Entity</a></div><div class="ttdef"><b>Definition:</b> <a href="_entity_8cs_source.html#l00019">Entity.cs:20</a></div></div>
+<div class="ttc" id="aclass_u_i_find_helper_html"><div class="ttname"><a href="class_u_i_find_helper.html">UIFindHelper</a></div><div class="ttdef"><b>Definition:</b> <a href="_u_i_find_helper_8cs_source.html#l00016">UIFindHelper.cs:17</a></div></div>
+<div class="ttc" id="aclass_u_i_find_helper_html_aa3c6766ead1a160e17cccb9bc7e72d25"><div class="ttname"><a href="class_u_i_find_helper.html#aa3c6766ead1a160e17cccb9bc7e72d25">UIFindHelper.FindDeepChild</a></div><div class="ttdeci">static Transform FindDeepChild(GameObject _target, string _childName)</div><div class="ttdoc">查找子节点</div><div class="ttdef"><b>Definition:</b> <a href="_u_i_find_helper_8cs_source.html#l00024">UIFindHelper.cs:24</a></div></div>
+<div class="ttc" id="ainterface_e_t_1_1_i_awake_html"><div class="ttname"><a href="interface_e_t_1_1_i_awake.html">ET.IAwake</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_awake_system_8cs_source.html#l00021">IAwakeSystem.cs:22</a></div></div>
+<div class="ttc" id="ainterface_e_t_1_1_i_destroy_html"><div class="ttname"><a href="interface_e_t_1_1_i_destroy.html">ET.IDestroy</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_destroy_system_8cs_source.html#l00005">IDestroySystem.cs:6</a></div></div>
+<div class="ttc" id="anamespace_e_t_html"><div class="ttname"><a href="namespace_e_t.html">ET</a></div><div class="ttdef"><b>Definition:</b> <a href="_robot_2_app_2_program_8cs_source.html#l00008">Program.cs:9</a></div></div>
+<div class="ttc" id="anamespace_unity_engine_1_1_u_i_html"><div class="ttname"><a href="namespace_unity_engine_1_1_u_i.html">UnityEngine.UI</a></div><div class="ttdef"><b>Definition:</b> <a href="_loop_scroll_rect_default_controls1_8cs_source.html#l00004">LoopScrollRectDefaultControls1.cs:5</a></div></div>
+<div class="ttc" id="anamespace_unity_engine_html"><div class="ttname"><a href="namespace_unity_engine.html">UnityEngine</a></div><div class="ttdef"><b>Definition:</b> <a href="_mathf_8cs_source.html#l00003">Mathf.cs:4</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_0593c8c31e62684349ddf63300956e7f.html">Codes</a></li><li class="navelem"><a class="el" href="dir_332bf7cd329ea52eea22f57320401452.html">ModelView</a></li><li class="navelem"><a class="el" href="dir_b0ca88b831dbe02d3f97d91901bb7fda.html">Demo</a></li><li class="navelem"><a class="el" href="dir_03b86663d0e438c5207c217705227b64.html">UIBehaviour</a></li><li class="navelem"><a class="el" href="dir_0cc474013d9975359c496429c151c32f.html">DlgHelper</a></li><li class="navelem"><a class="el" href="_dlg_helper_view_component_8cs.html">DlgHelperViewComponent.cs</a></li>
+    <li class="footer">生成于 2022年 一月 23日 星期日 19:12:37 , 为 ET使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

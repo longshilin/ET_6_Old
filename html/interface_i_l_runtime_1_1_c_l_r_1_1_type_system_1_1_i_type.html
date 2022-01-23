@@ -1,0 +1,1146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ET: ILRuntime.CLR.TypeSystem.IType接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ET<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#properties">属性</a>  </div>
+  <div class="headertitle"><div class="title">ILRuntime.CLR.TypeSystem.IType接口 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 ILRuntime.CLR.TypeSystem.IType 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.png" usemap="#ILRuntime.CLR.TypeSystem.IType_map" alt=""/>
+  <map id="ILRuntime.CLR.TypeSystem.IType_map" name="ILRuntime.CLR.TypeSystem.IType_map">
+<area href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_c_l_r_type.html" alt="ILRuntime.CLR.TypeSystem.CLRType" shape="rect" coords="0,56,311,80"/>
+<area href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html" alt="ILRuntime.CLR.TypeSystem.ILGenericParameterType" shape="rect" coords="321,56,632,80"/>
+<area href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_type.html" alt="ILRuntime.CLR.TypeSystem.ILType" shape="rect" coords="642,56,953,80"/>
+<area href="class_i_l_runtime_1_1_runtime_1_1_enviorment_1_1_cross_binding_adaptor.html" title="This interface is used for inheritance and implementation of CLR Types or interfaces" alt="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor" shape="rect" coords="963,56,1274,80"/>
+<area href="class_e_t_1_1_i_async_state_machine_class_inheritance_adaptor.html" title="用于async await适配" alt="ET.IAsyncStateMachineClassInheritanceAdaptor" shape="rect" coords="481,112,792,136"/>
+<area href="class_e_t_1_1_i_critical_notify_completion_adapter.html" alt="ET.ICriticalNotifyCompletionAdapter" shape="rect" coords="802,112,1113,136"/>
+<area href="class_e_t_1_1_i_disposable_adapter.html" alt="ET.IDisposableAdapter" shape="rect" coords="1123,112,1434,136"/>
+<area href="class_i_l_runtime_1_1_runtime_1_1_adapters_1_1_attribute_adapter.html" alt="ILRuntime.Runtime.Adapters.AttributeAdapter" shape="rect" coords="1444,112,1755,136"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a7bcc33d44934dca884eebaeb69585b6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_method_1_1_i_method.html">IMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#a7bcc33d44934dca884eebaeb69585b6a">GetMethod</a> (string name, int paramCount, bool declaredOnly=false)</td></tr>
+<tr class="memdesc:a7bcc33d44934dca884eebaeb69585b6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a specified <a class="el" href="namespace_i_l_runtime_1_1_c_l_r_1_1_method.html">Method</a> in this type  <a href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#a7bcc33d44934dca884eebaeb69585b6a">更多...</a><br /></td></tr>
+<tr class="separator:a7bcc33d44934dca884eebaeb69585b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1893f0c095bc1103cd788c5a183b75aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_method_1_1_i_method.html">IMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#a1893f0c095bc1103cd788c5a183b75aa">GetMethod</a> (string name, List&lt; <a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a> &gt; param, <a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a>[] genericArguments, <a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a> returnType=null, bool declaredOnly=false)</td></tr>
+<tr class="memdesc:a1893f0c095bc1103cd788c5a183b75aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a specified <a class="el" href="namespace_i_l_runtime_1_1_c_l_r_1_1_method.html">Method</a> in this type  <a href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#a1893f0c095bc1103cd788c5a183b75aa">更多...</a><br /></td></tr>
+<tr class="separator:a1893f0c095bc1103cd788c5a183b75aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a64fad73f640fde5b3eb2e4de1a5cc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_method_1_1_i_method.html">IMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#a7a64fad73f640fde5b3eb2e4de1a5cc5">GetVirtualMethod</a> (<a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_method_1_1_i_method.html">IMethod</a> method)</td></tr>
+<tr class="separator:a7a64fad73f640fde5b3eb2e4de1a5cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14bd8b07c01d487e74a423b2e6360ef2"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_method_1_1_i_method.html">IMethod</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#a14bd8b07c01d487e74a423b2e6360ef2">GetMethods</a> ()</td></tr>
+<tr class="separator:a14bd8b07c01d487e74a423b2e6360ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25f1a63fea4211c2a66d6633452e4709"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#a25f1a63fea4211c2a66d6633452e4709">GetFieldIndex</a> (object token)</td></tr>
+<tr class="separator:a25f1a63fea4211c2a66d6633452e4709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af485b64996efe2130b430f0a64986e73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_method_1_1_i_method.html">IMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#af485b64996efe2130b430f0a64986e73">GetConstructor</a> (List&lt; <a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a> &gt; param)</td></tr>
+<tr class="separator:af485b64996efe2130b430f0a64986e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf9a0679f887c5535ad28f0258ddfe9f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#acf9a0679f887c5535ad28f0258ddfe9f">CanAssignTo</a> (<a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a> type)</td></tr>
+<tr class="separator:acf9a0679f887c5535ad28f0258ddfe9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53acdff463ae6797f7ce3420b810f54a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#a53acdff463ae6797f7ce3420b810f54a">MakeGenericInstance</a> (KeyValuePair&lt; string, <a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a> &gt;[] genericArguments)</td></tr>
+<tr class="separator:a53acdff463ae6797f7ce3420b810f54a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae88446ca3d55655ca485f453fd0afed4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#ae88446ca3d55655ca485f453fd0afed4">MakeByRefType</a> ()</td></tr>
+<tr class="separator:ae88446ca3d55655ca485f453fd0afed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5376cb3df375205ad0717564a97fc733"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#a5376cb3df375205ad0717564a97fc733">MakeArrayType</a> (int rank)</td></tr>
+<tr class="separator:a5376cb3df375205ad0717564a97fc733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a001ff6b9a2f63bc5af37b91ccba66290"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#a001ff6b9a2f63bc5af37b91ccba66290">FindGenericArgument</a> (string key)</td></tr>
+<tr class="separator:a001ff6b9a2f63bc5af37b91ccba66290"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40839d4eaca7dcbedba1c78a53cad3ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#a40839d4eaca7dcbedba1c78a53cad3ae">ResolveGenericType</a> (<a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a> contextType)</td></tr>
+<tr class="separator:a40839d4eaca7dcbedba1c78a53cad3ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b82e80106d5a6c3b65cf2a92661621a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#a5b82e80106d5a6c3b65cf2a92661621a">GetValueTypeSize</a> (out int fieldCout, out int managedCount)</td></tr>
+<tr class="separator:a5b82e80106d5a6c3b65cf2a92661621a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a4ae0198e7fb36da48bd3f67904ced903"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#a4ae0198e7fb36da48bd3f67904ced903">IsGenericInstance</a><code> [get]</code></td></tr>
+<tr class="separator:a4ae0198e7fb36da48bd3f67904ced903"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61e1fa206e5f677934dd98762a7eec57"><td class="memItemLeft" align="right" valign="top">KeyValuePair&lt; string, <a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a> &gt;[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#a61e1fa206e5f677934dd98762a7eec57">GenericArguments</a><code> [get]</code></td></tr>
+<tr class="separator:a61e1fa206e5f677934dd98762a7eec57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba5d36ea5d2dcdc676920bc4ca1164fe"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#aba5d36ea5d2dcdc676920bc4ca1164fe">TypeForCLR</a><code> [get]</code></td></tr>
+<tr class="separator:aba5d36ea5d2dcdc676920bc4ca1164fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceb491d87357f3b6c98289f02c724915"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#aceb491d87357f3b6c98289f02c724915">ReflectionType</a><code> [get]</code></td></tr>
+<tr class="separator:aceb491d87357f3b6c98289f02c724915"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7876a4eeb19276a716a33a991376232f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#a7876a4eeb19276a716a33a991376232f">BaseType</a><code> [get]</code></td></tr>
+<tr class="separator:a7876a4eeb19276a716a33a991376232f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab694914fa12f8eb222ded954a49e8478"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#ab694914fa12f8eb222ded954a49e8478">Implements</a><code> [get]</code></td></tr>
+<tr class="separator:ab694914fa12f8eb222ded954a49e8478"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a815f690e30d79b16dd91a27c7c3b8a76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#a815f690e30d79b16dd91a27c7c3b8a76">ByRefType</a><code> [get]</code></td></tr>
+<tr class="separator:a815f690e30d79b16dd91a27c7c3b8a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a1c6ed74a0a75ee290171513d28333f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#a5a1c6ed74a0a75ee290171513d28333f">ArrayType</a><code> [get]</code></td></tr>
+<tr class="separator:a5a1c6ed74a0a75ee290171513d28333f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af52a30aa05d3135d5da7709c9b777797"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#af52a30aa05d3135d5da7709c9b777797">FullName</a><code> [get]</code></td></tr>
+<tr class="separator:af52a30aa05d3135d5da7709c9b777797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70f6c466a8910173391e99f8d6b9f24c"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#a70f6c466a8910173391e99f8d6b9f24c">Name</a><code> [get]</code></td></tr>
+<tr class="separator:a70f6c466a8910173391e99f8d6b9f24c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46462540d7cb54ab9296c22ae6f37c33"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#a46462540d7cb54ab9296c22ae6f37c33">IsArray</a><code> [get]</code></td></tr>
+<tr class="separator:a46462540d7cb54ab9296c22ae6f37c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c822f9bfc1364aed22e790a9ba81345"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#a6c822f9bfc1364aed22e790a9ba81345">ArrayRank</a><code> [get]</code></td></tr>
+<tr class="separator:a6c822f9bfc1364aed22e790a9ba81345"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa15bf14322433ddaa264f33ffd5696b6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#aa15bf14322433ddaa264f33ffd5696b6">IsValueType</a><code> [get]</code></td></tr>
+<tr class="separator:aa15bf14322433ddaa264f33ffd5696b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81075945b76b0199452a09e55eb0a95d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#a81075945b76b0199452a09e55eb0a95d">IsDelegate</a><code> [get]</code></td></tr>
+<tr class="separator:a81075945b76b0199452a09e55eb0a95d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fb4109ee4a84dd813c77fbec7316b0e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#a1fb4109ee4a84dd813c77fbec7316b0e">IsPrimitive</a><code> [get]</code></td></tr>
+<tr class="separator:a1fb4109ee4a84dd813c77fbec7316b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae63ae39416e22e605e9628d283580e1f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#ae63ae39416e22e605e9628d283580e1f">IsEnum</a><code> [get]</code></td></tr>
+<tr class="separator:ae63ae39416e22e605e9628d283580e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac687d16dc28c618755b7752206515293"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#ac687d16dc28c618755b7752206515293">IsByRef</a><code> [get]</code></td></tr>
+<tr class="separator:ac687d16dc28c618755b7752206515293"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7d5bacafdc27cdfaee0678686593c6e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#ad7d5bacafdc27cdfaee0678686593c6e">IsInterface</a><code> [get]</code></td></tr>
+<tr class="separator:ad7d5bacafdc27cdfaee0678686593c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca859c2f38bb711b3ec61a6e231b6cb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#aca859c2f38bb711b3ec61a6e231b6cb9">ElementType</a><code> [get]</code></td></tr>
+<tr class="separator:aca859c2f38bb711b3ec61a6e231b6cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b512966b6615b5b4c84c9b14b1d61f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#a9b512966b6615b5b4c84c9b14b1d61f1">HasGenericParameter</a><code> [get]</code></td></tr>
+<tr class="separator:a9b512966b6615b5b4c84c9b14b1d61f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a7db30bfe8b5a9ed193d3e4e5aa01ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#a5a7db30bfe8b5a9ed193d3e4e5aa01ad">IsGenericParameter</a><code> [get]</code></td></tr>
+<tr class="separator:a5a7db30bfe8b5a9ed193d3e4e5aa01ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d5c30dedc9bf9faaaf592ff4b6d63a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_i_l_runtime_1_1_runtime_1_1_stack_1_1_stack_object.html">StackObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#a6d5c30dedc9bf9faaaf592ff4b6d63a0">DefaultObject</a><code> [get]</code></td></tr>
+<tr class="separator:a6d5c30dedc9bf9faaaf592ff4b6d63a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbe3bf1c5595a53b9bbf484219622dbd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#abbe3bf1c5595a53b9bbf484219622dbd">TypeIndex</a><code> [get]</code></td></tr>
+<tr class="separator:abbe3bf1c5595a53b9bbf484219622dbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd71cee05e8523dae43fa671956c76c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_enviorment_1_1_app_domain.html">ILRuntime.Runtime.Enviorment.AppDomain</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#afd71cee05e8523dae43fa671956c76c7">AppDomain</a><code> [get]</code></td></tr>
+<tr class="separator:afd71cee05e8523dae43fa671956c76c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e818c71493534c24ce259536849acf9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html#a9e818c71493534c24ce259536849acf9">TotalFieldCount</a><code> [get]</code></td></tr>
+<tr class="separator:a9e818c71493534c24ce259536849acf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="_i_type_8cs_source.html">IType.cs</a> 第 <a class="el" href="_i_type_8cs_source.html#l00011">11</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="acf9a0679f887c5535ad28f0258ddfe9f" name="acf9a0679f887c5535ad28f0258ddfe9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf9a0679f887c5535ad28f0258ddfe9f">&#9670;&nbsp;</a></span>CanAssignTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ILRuntime.CLR.TypeSystem.IType.CanAssignTo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_c_l_r_type.html#a8ae3d3ea1e3efe371cac886177028340">ILRuntime.CLR.TypeSystem.CLRType</a>, <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a7d76d537a556b96c72c110adfa3e0216">ILRuntime.CLR.TypeSystem.ILGenericParameterType</a>, <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_type.html#af1cd40ff4e483bca80262ac514fad397">ILRuntime.CLR.TypeSystem.ILType</a> , 以及 <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_enviorment_1_1_cross_binding_adaptor.html#ad6d9b9868226615374a05a7bc90ea8e0">ILRuntime.Runtime.Enviorment.CrossBindingAdaptor</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a001ff6b9a2f63bc5af37b91ccba66290" name="a001ff6b9a2f63bc5af37b91ccba66290"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a001ff6b9a2f63bc5af37b91ccba66290">&#9670;&nbsp;</a></span>FindGenericArgument()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a> ILRuntime.CLR.TypeSystem.IType.FindGenericArgument </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_c_l_r_type.html#a3848039091d98452ea294a219b270ab9">ILRuntime.CLR.TypeSystem.CLRType</a>, <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a07bfbc10b123f9bf07bf37ddb6b4b9a2">ILRuntime.CLR.TypeSystem.ILGenericParameterType</a>, <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_type.html#a6f90b787bf226334414980e67741e9d7">ILRuntime.CLR.TypeSystem.ILType</a> , 以及 <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_enviorment_1_1_cross_binding_adaptor.html#aaa520011ff73159494b8faced415e559">ILRuntime.Runtime.Enviorment.CrossBindingAdaptor</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="af485b64996efe2130b430f0a64986e73" name="af485b64996efe2130b430f0a64986e73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af485b64996efe2130b430f0a64986e73">&#9670;&nbsp;</a></span>GetConstructor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_method_1_1_i_method.html">IMethod</a> ILRuntime.CLR.TypeSystem.IType.GetConstructor </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a> &gt;&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_c_l_r_type.html#a192fa42900c3c4ced8416fd9d96c65d8">ILRuntime.CLR.TypeSystem.CLRType</a>, <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a435fed4979cbf8e892fcd9e1afaa3c32">ILRuntime.CLR.TypeSystem.ILGenericParameterType</a>, <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_type.html#a3930fc6b2eebc2f30c19afbe141a1fe7">ILRuntime.CLR.TypeSystem.ILType</a> , 以及 <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_enviorment_1_1_cross_binding_adaptor.html#acf5f605633bb59e0373e3c3727247c47">ILRuntime.Runtime.Enviorment.CrossBindingAdaptor</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a25f1a63fea4211c2a66d6633452e4709" name="a25f1a63fea4211c2a66d6633452e4709"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25f1a63fea4211c2a66d6633452e4709">&#9670;&nbsp;</a></span>GetFieldIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ILRuntime.CLR.TypeSystem.IType.GetFieldIndex </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>token</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_c_l_r_type.html#a2cb91237c379de3c1c23f7c674c31f5d">ILRuntime.CLR.TypeSystem.CLRType</a>, <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a0670dd2740ac19b336db762cdc94f582">ILRuntime.CLR.TypeSystem.ILGenericParameterType</a>, <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_type.html#a4ce4ab005dabdb8b3646085f33817bce">ILRuntime.CLR.TypeSystem.ILType</a> , 以及 <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_enviorment_1_1_cross_binding_adaptor.html#aae61d77452267b2fdaf878ad595e8aea">ILRuntime.Runtime.Enviorment.CrossBindingAdaptor</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a7bcc33d44934dca884eebaeb69585b6a" name="a7bcc33d44934dca884eebaeb69585b6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bcc33d44934dca884eebaeb69585b6a">&#9670;&nbsp;</a></span>GetMethod() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_method_1_1_i_method.html">IMethod</a> ILRuntime.CLR.TypeSystem.IType.GetMethod </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>paramCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>declaredOnly</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a specified <a class="el" href="namespace_i_l_runtime_1_1_c_l_r_1_1_method.html">Method</a> in this type </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Name of the Type</td></tr>
+    <tr><td class="paramname">paramCount</td><td>Parameter count</td></tr>
+    <tr><td class="paramname">declaredOnly</td><td>True to search the methods decleared in this type only, false to search base types.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>在 <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_c_l_r_type.html#af1595b95d132fcc95976e3da6ccaf2b3">ILRuntime.CLR.TypeSystem.CLRType</a>, <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a9fb68fc892a084068dee242680807d70">ILRuntime.CLR.TypeSystem.ILGenericParameterType</a>, <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_type.html#ad22ce27c6343c7e82b1f2c2630fd9e48">ILRuntime.CLR.TypeSystem.ILType</a> , 以及 <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_enviorment_1_1_cross_binding_adaptor.html#aa3ca2122ed96abe63f4de1fb32b8c2ad">ILRuntime.Runtime.Enviorment.CrossBindingAdaptor</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a1893f0c095bc1103cd788c5a183b75aa" name="a1893f0c095bc1103cd788c5a183b75aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1893f0c095bc1103cd788c5a183b75aa">&#9670;&nbsp;</a></span>GetMethod() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_method_1_1_i_method.html">IMethod</a> ILRuntime.CLR.TypeSystem.IType.GetMethod </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; <a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a> &gt;&#160;</td>
+          <td class="paramname"><em>param</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a>[]&#160;</td>
+          <td class="paramname"><em>genericArguments</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a>&#160;</td>
+          <td class="paramname"><em>returnType</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>declaredOnly</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a specified <a class="el" href="namespace_i_l_runtime_1_1_c_l_r_1_1_method.html">Method</a> in this type </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Name of the Type</td></tr>
+    <tr><td class="paramname">param</td><td>List of parameter's types</td></tr>
+    <tr><td class="paramname">genericArguments</td><td>List of Generic Arguments</td></tr>
+    <tr><td class="paramname">returnType</td><td>Return Type</td></tr>
+    <tr><td class="paramname">declaredOnly</td><td>True to search the methods decleared in this type only, false to search base types.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p>在 <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_c_l_r_type.html#a1a69deeecc1ad1de36cdc31f44c92c14">ILRuntime.CLR.TypeSystem.CLRType</a>, <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#aa71d46f7de489bf315706aad098cf45d">ILRuntime.CLR.TypeSystem.ILGenericParameterType</a>, <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_type.html#a2740f542ff09372bf24ddfefc344fab5">ILRuntime.CLR.TypeSystem.ILType</a> , 以及 <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_enviorment_1_1_cross_binding_adaptor.html#a7b1df0febed2e9b2d80c483d3483a03f">ILRuntime.Runtime.Enviorment.CrossBindingAdaptor</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a14bd8b07c01d487e74a423b2e6360ef2" name="a14bd8b07c01d487e74a423b2e6360ef2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14bd8b07c01d487e74a423b2e6360ef2">&#9670;&nbsp;</a></span>GetMethods()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_method_1_1_i_method.html">IMethod</a> &gt; ILRuntime.CLR.TypeSystem.IType.GetMethods </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_c_l_r_type.html#a449b32f71c47314f4f3346d7e5facaf1">ILRuntime.CLR.TypeSystem.CLRType</a>, <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#a1df765c2b9f4a580bf6490576f402171">ILRuntime.CLR.TypeSystem.ILGenericParameterType</a>, <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_type.html#a1971d90be58d9a56b400662cfdf8ca77">ILRuntime.CLR.TypeSystem.ILType</a> , 以及 <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_enviorment_1_1_cross_binding_adaptor.html#a819d22132c789897a85da35464ff7eba">ILRuntime.Runtime.Enviorment.CrossBindingAdaptor</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a5b82e80106d5a6c3b65cf2a92661621a" name="a5b82e80106d5a6c3b65cf2a92661621a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b82e80106d5a6c3b65cf2a92661621a">&#9670;&nbsp;</a></span>GetValueTypeSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ILRuntime.CLR.TypeSystem.IType.GetValueTypeSize </td>
+          <td>(</td>
+          <td class="paramtype">out int&#160;</td>
+          <td class="paramname"><em>fieldCout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out int&#160;</td>
+          <td class="paramname"><em>managedCount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_c_l_r_type.html#a256b16f0d7dff5d17e915718e5c15d91">ILRuntime.CLR.TypeSystem.CLRType</a>, <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#aaeee7e55f1179cee7db80ce8129bc035">ILRuntime.CLR.TypeSystem.ILGenericParameterType</a>, <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_type.html#aa349b63b8bdd387fc441a05c2f5fd8fd">ILRuntime.CLR.TypeSystem.ILType</a> , 以及 <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_enviorment_1_1_cross_binding_adaptor.html#ab3eb0e4816a6ce2f94888b4af07d7b48">ILRuntime.Runtime.Enviorment.CrossBindingAdaptor</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a7a64fad73f640fde5b3eb2e4de1a5cc5" name="a7a64fad73f640fde5b3eb2e4de1a5cc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a64fad73f640fde5b3eb2e4de1a5cc5">&#9670;&nbsp;</a></span>GetVirtualMethod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_method_1_1_i_method.html">IMethod</a> ILRuntime.CLR.TypeSystem.IType.GetVirtualMethod </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_method_1_1_i_method.html">IMethod</a>&#160;</td>
+          <td class="paramname"><em>method</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_c_l_r_type.html#a76c27c1aa1ea8982c67a8717b372424e">ILRuntime.CLR.TypeSystem.CLRType</a>, <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_type.html#a44605fd647c7ba3b451cedec7a13ccfd">ILRuntime.CLR.TypeSystem.ILType</a> , 以及 <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_enviorment_1_1_cross_binding_adaptor.html#a794cd62d82e980f34e937fb0d8636af3">ILRuntime.Runtime.Enviorment.CrossBindingAdaptor</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a5376cb3df375205ad0717564a97fc733" name="a5376cb3df375205ad0717564a97fc733"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5376cb3df375205ad0717564a97fc733">&#9670;&nbsp;</a></span>MakeArrayType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a> ILRuntime.CLR.TypeSystem.IType.MakeArrayType </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rank</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_c_l_r_type.html#a1f7ef7795b5511aa60d1e6d0a1e41ad7">ILRuntime.CLR.TypeSystem.CLRType</a>, <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#ae9c4d6ee7ec99473132a9b0c3f6d0e0c">ILRuntime.CLR.TypeSystem.ILGenericParameterType</a>, <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_type.html#a599cf7eebdabbdc0037a822dc10e93b3">ILRuntime.CLR.TypeSystem.ILType</a> , 以及 <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_enviorment_1_1_cross_binding_adaptor.html#a260d76e43c174cdba921621226deca5f">ILRuntime.Runtime.Enviorment.CrossBindingAdaptor</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="ae88446ca3d55655ca485f453fd0afed4" name="ae88446ca3d55655ca485f453fd0afed4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae88446ca3d55655ca485f453fd0afed4">&#9670;&nbsp;</a></span>MakeByRefType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a> ILRuntime.CLR.TypeSystem.IType.MakeByRefType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_c_l_r_type.html#a39df3a5f212cfe5a9ad7220241d79e22">ILRuntime.CLR.TypeSystem.CLRType</a>, <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#ad7ac374c2e95ba460e46b851176238f4">ILRuntime.CLR.TypeSystem.ILGenericParameterType</a>, <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_type.html#a6821f171eba56f4f102a851907325674">ILRuntime.CLR.TypeSystem.ILType</a> , 以及 <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_enviorment_1_1_cross_binding_adaptor.html#aef00ff26861070edbcabb29b1ea5790b">ILRuntime.Runtime.Enviorment.CrossBindingAdaptor</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a53acdff463ae6797f7ce3420b810f54a" name="a53acdff463ae6797f7ce3420b810f54a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53acdff463ae6797f7ce3420b810f54a">&#9670;&nbsp;</a></span>MakeGenericInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a> ILRuntime.CLR.TypeSystem.IType.MakeGenericInstance </td>
+          <td>(</td>
+          <td class="paramtype">KeyValuePair&lt; string, <a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a> &gt;[]&#160;</td>
+          <td class="paramname"><em>genericArguments</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_c_l_r_type.html#a178a4a593fb5d7ca56dbfd2a50f05a84">ILRuntime.CLR.TypeSystem.CLRType</a>, <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#afda9da1dfc2dcfe7ad5bda805f50e239">ILRuntime.CLR.TypeSystem.ILGenericParameterType</a>, <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_type.html#a6702c029b62f26fdd7278d5644d9556a">ILRuntime.CLR.TypeSystem.ILType</a> , 以及 <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_enviorment_1_1_cross_binding_adaptor.html#ae9cbcbe2809f21ce2b129e902154cd10">ILRuntime.Runtime.Enviorment.CrossBindingAdaptor</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a40839d4eaca7dcbedba1c78a53cad3ae" name="a40839d4eaca7dcbedba1c78a53cad3ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40839d4eaca7dcbedba1c78a53cad3ae">&#9670;&nbsp;</a></span>ResolveGenericType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a> ILRuntime.CLR.TypeSystem.IType.ResolveGenericType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a>&#160;</td>
+          <td class="paramname"><em>contextType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_c_l_r_type.html#af00d0d50ea183432bab95872cae9ffb0">ILRuntime.CLR.TypeSystem.CLRType</a>, <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_generic_parameter_type.html#aff9965536f4033d178a7bab9418dd569">ILRuntime.CLR.TypeSystem.ILGenericParameterType</a>, <a class="el" href="class_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_l_type.html#a2daaaff1d658a51283b543ea4100a9d4">ILRuntime.CLR.TypeSystem.ILType</a> , 以及 <a class="el" href="class_i_l_runtime_1_1_runtime_1_1_enviorment_1_1_cross_binding_adaptor.html#afbac30518aca98310e1a45e99c91725d">ILRuntime.Runtime.Enviorment.CrossBindingAdaptor</a> 内被实现.</p>
+
+</div>
+</div>
+<h2 class="groupheader">属性说明</h2>
+<a id="afd71cee05e8523dae43fa671956c76c7" name="afd71cee05e8523dae43fa671956c76c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd71cee05e8523dae43fa671956c76c7">&#9670;&nbsp;</a></span>AppDomain</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_i_l_runtime_1_1_runtime_1_1_enviorment_1_1_app_domain.html">ILRuntime.Runtime.Enviorment.AppDomain</a> ILRuntime.CLR.TypeSystem.IType.AppDomain</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_type_8cs_source.html">IType.cs</a> 第 <a class="el" href="_i_type_8cs_source.html#l00056">56</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6c822f9bfc1364aed22e790a9ba81345" name="a6c822f9bfc1364aed22e790a9ba81345"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c822f9bfc1364aed22e790a9ba81345">&#9670;&nbsp;</a></span>ArrayRank</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ILRuntime.CLR.TypeSystem.IType.ArrayRank</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_type_8cs_source.html">IType.cs</a> 第 <a class="el" href="_i_type_8cs_source.html#l00032">32</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5a1c6ed74a0a75ee290171513d28333f" name="a5a1c6ed74a0a75ee290171513d28333f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a1c6ed74a0a75ee290171513d28333f">&#9670;&nbsp;</a></span>ArrayType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a> ILRuntime.CLR.TypeSystem.IType.ArrayType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_type_8cs_source.html">IType.cs</a> 第 <a class="el" href="_i_type_8cs_source.html#l00024">24</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7876a4eeb19276a716a33a991376232f" name="a7876a4eeb19276a716a33a991376232f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7876a4eeb19276a716a33a991376232f">&#9670;&nbsp;</a></span>BaseType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a> ILRuntime.CLR.TypeSystem.IType.BaseType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_type_8cs_source.html">IType.cs</a> 第 <a class="el" href="_i_type_8cs_source.html#l00018">18</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a815f690e30d79b16dd91a27c7c3b8a76" name="a815f690e30d79b16dd91a27c7c3b8a76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a815f690e30d79b16dd91a27c7c3b8a76">&#9670;&nbsp;</a></span>ByRefType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a> ILRuntime.CLR.TypeSystem.IType.ByRefType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_type_8cs_source.html">IType.cs</a> 第 <a class="el" href="_i_type_8cs_source.html#l00022">22</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6d5c30dedc9bf9faaaf592ff4b6d63a0" name="a6d5c30dedc9bf9faaaf592ff4b6d63a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d5c30dedc9bf9faaaf592ff4b6d63a0">&#9670;&nbsp;</a></span>DefaultObject</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_i_l_runtime_1_1_runtime_1_1_stack_1_1_stack_object.html">StackObject</a> ILRuntime.CLR.TypeSystem.IType.DefaultObject</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_type_8cs_source.html">IType.cs</a> 第 <a class="el" href="_i_type_8cs_source.html#l00052">52</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aca859c2f38bb711b3ec61a6e231b6cb9" name="aca859c2f38bb711b3ec61a6e231b6cb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca859c2f38bb711b3ec61a6e231b6cb9">&#9670;&nbsp;</a></span>ElementType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a> ILRuntime.CLR.TypeSystem.IType.ElementType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_type_8cs_source.html">IType.cs</a> 第 <a class="el" href="_i_type_8cs_source.html#l00046">46</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af52a30aa05d3135d5da7709c9b777797" name="af52a30aa05d3135d5da7709c9b777797"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af52a30aa05d3135d5da7709c9b777797">&#9670;&nbsp;</a></span>FullName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string ILRuntime.CLR.TypeSystem.IType.FullName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_type_8cs_source.html">IType.cs</a> 第 <a class="el" href="_i_type_8cs_source.html#l00026">26</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a61e1fa206e5f677934dd98762a7eec57" name="a61e1fa206e5f677934dd98762a7eec57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61e1fa206e5f677934dd98762a7eec57">&#9670;&nbsp;</a></span>GenericArguments</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">KeyValuePair&lt;string, <a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a>&gt; [] ILRuntime.CLR.TypeSystem.IType.GenericArguments</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_type_8cs_source.html">IType.cs</a> 第 <a class="el" href="_i_type_8cs_source.html#l00014">14</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9b512966b6615b5b4c84c9b14b1d61f1" name="a9b512966b6615b5b4c84c9b14b1d61f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b512966b6615b5b4c84c9b14b1d61f1">&#9670;&nbsp;</a></span>HasGenericParameter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ILRuntime.CLR.TypeSystem.IType.HasGenericParameter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_type_8cs_source.html">IType.cs</a> 第 <a class="el" href="_i_type_8cs_source.html#l00048">48</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab694914fa12f8eb222ded954a49e8478" name="ab694914fa12f8eb222ded954a49e8478"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab694914fa12f8eb222ded954a49e8478">&#9670;&nbsp;</a></span>Implements</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a> [] ILRuntime.CLR.TypeSystem.IType.Implements</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_type_8cs_source.html">IType.cs</a> 第 <a class="el" href="_i_type_8cs_source.html#l00020">20</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a46462540d7cb54ab9296c22ae6f37c33" name="a46462540d7cb54ab9296c22ae6f37c33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46462540d7cb54ab9296c22ae6f37c33">&#9670;&nbsp;</a></span>IsArray</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ILRuntime.CLR.TypeSystem.IType.IsArray</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_type_8cs_source.html">IType.cs</a> 第 <a class="el" href="_i_type_8cs_source.html#l00030">30</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac687d16dc28c618755b7752206515293" name="ac687d16dc28c618755b7752206515293"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac687d16dc28c618755b7752206515293">&#9670;&nbsp;</a></span>IsByRef</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ILRuntime.CLR.TypeSystem.IType.IsByRef</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_type_8cs_source.html">IType.cs</a> 第 <a class="el" href="_i_type_8cs_source.html#l00042">42</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a81075945b76b0199452a09e55eb0a95d" name="a81075945b76b0199452a09e55eb0a95d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81075945b76b0199452a09e55eb0a95d">&#9670;&nbsp;</a></span>IsDelegate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ILRuntime.CLR.TypeSystem.IType.IsDelegate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_type_8cs_source.html">IType.cs</a> 第 <a class="el" href="_i_type_8cs_source.html#l00036">36</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae63ae39416e22e605e9628d283580e1f" name="ae63ae39416e22e605e9628d283580e1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae63ae39416e22e605e9628d283580e1f">&#9670;&nbsp;</a></span>IsEnum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ILRuntime.CLR.TypeSystem.IType.IsEnum</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_type_8cs_source.html">IType.cs</a> 第 <a class="el" href="_i_type_8cs_source.html#l00040">40</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4ae0198e7fb36da48bd3f67904ced903" name="a4ae0198e7fb36da48bd3f67904ced903"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ae0198e7fb36da48bd3f67904ced903">&#9670;&nbsp;</a></span>IsGenericInstance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ILRuntime.CLR.TypeSystem.IType.IsGenericInstance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_type_8cs_source.html">IType.cs</a> 第 <a class="el" href="_i_type_8cs_source.html#l00013">13</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5a7db30bfe8b5a9ed193d3e4e5aa01ad" name="a5a7db30bfe8b5a9ed193d3e4e5aa01ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a7db30bfe8b5a9ed193d3e4e5aa01ad">&#9670;&nbsp;</a></span>IsGenericParameter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ILRuntime.CLR.TypeSystem.IType.IsGenericParameter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_type_8cs_source.html">IType.cs</a> 第 <a class="el" href="_i_type_8cs_source.html#l00050">50</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad7d5bacafdc27cdfaee0678686593c6e" name="ad7d5bacafdc27cdfaee0678686593c6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7d5bacafdc27cdfaee0678686593c6e">&#9670;&nbsp;</a></span>IsInterface</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ILRuntime.CLR.TypeSystem.IType.IsInterface</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_type_8cs_source.html">IType.cs</a> 第 <a class="el" href="_i_type_8cs_source.html#l00044">44</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1fb4109ee4a84dd813c77fbec7316b0e" name="a1fb4109ee4a84dd813c77fbec7316b0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fb4109ee4a84dd813c77fbec7316b0e">&#9670;&nbsp;</a></span>IsPrimitive</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ILRuntime.CLR.TypeSystem.IType.IsPrimitive</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_type_8cs_source.html">IType.cs</a> 第 <a class="el" href="_i_type_8cs_source.html#l00038">38</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa15bf14322433ddaa264f33ffd5696b6" name="aa15bf14322433ddaa264f33ffd5696b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa15bf14322433ddaa264f33ffd5696b6">&#9670;&nbsp;</a></span>IsValueType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ILRuntime.CLR.TypeSystem.IType.IsValueType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_type_8cs_source.html">IType.cs</a> 第 <a class="el" href="_i_type_8cs_source.html#l00034">34</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a70f6c466a8910173391e99f8d6b9f24c" name="a70f6c466a8910173391e99f8d6b9f24c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70f6c466a8910173391e99f8d6b9f24c">&#9670;&nbsp;</a></span>Name</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string ILRuntime.CLR.TypeSystem.IType.Name</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_type_8cs_source.html">IType.cs</a> 第 <a class="el" href="_i_type_8cs_source.html#l00028">28</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aceb491d87357f3b6c98289f02c724915" name="aceb491d87357f3b6c98289f02c724915"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceb491d87357f3b6c98289f02c724915">&#9670;&nbsp;</a></span>ReflectionType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Type ILRuntime.CLR.TypeSystem.IType.ReflectionType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_type_8cs_source.html">IType.cs</a> 第 <a class="el" href="_i_type_8cs_source.html#l00016">16</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9e818c71493534c24ce259536849acf9" name="a9e818c71493534c24ce259536849acf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e818c71493534c24ce259536849acf9">&#9670;&nbsp;</a></span>TotalFieldCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ILRuntime.CLR.TypeSystem.IType.TotalFieldCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_type_8cs_source.html">IType.cs</a> 第 <a class="el" href="_i_type_8cs_source.html#l00095">95</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aba5d36ea5d2dcdc676920bc4ca1164fe" name="aba5d36ea5d2dcdc676920bc4ca1164fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba5d36ea5d2dcdc676920bc4ca1164fe">&#9670;&nbsp;</a></span>TypeForCLR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Type ILRuntime.CLR.TypeSystem.IType.TypeForCLR</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_type_8cs_source.html">IType.cs</a> 第 <a class="el" href="_i_type_8cs_source.html#l00015">15</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abbe3bf1c5595a53b9bbf484219622dbd" name="abbe3bf1c5595a53b9bbf484219622dbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbe3bf1c5595a53b9bbf484219622dbd">&#9670;&nbsp;</a></span>TypeIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ILRuntime.CLR.TypeSystem.IType.TypeIndex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_i_type_8cs_source.html">IType.cs</a> 第 <a class="el" href="_i_type_8cs_source.html#l00054">54</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该接口的文档由以下文件生成:<ul>
+<li>Unity/Assets/ThirdParty/ILRuntime/CLR/TypeSystem/<a class="el" href="_i_type_8cs_source.html">IType.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_i_l_runtime.html">ILRuntime</a></li><li class="navelem"><a class="el" href="namespace_i_l_runtime_1_1_c_l_r.html">CLR</a></li><li class="navelem"><a class="el" href="namespace_i_l_runtime_1_1_c_l_r_1_1_type_system.html">TypeSystem</a></li><li class="navelem"><a class="el" href="interface_i_l_runtime_1_1_c_l_r_1_1_type_system_1_1_i_type.html">IType</a></li>
+    <li class="footer">生成于 2022年 一月 23日 星期日 19:12:41 , 为 ET使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

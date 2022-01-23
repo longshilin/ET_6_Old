@@ -1,0 +1,26 @@
+var class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection =
+[
+    [ "Enumerator", "struct_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection_1_1_enumerator.html", "struct_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection_1_1_enumerator" ],
+    [ "Collection", "class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html#a2dce068f6485f6f10f85cbd0d5eec76b", null ],
+    [ "Collection", "class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html#adb529d6daf73a18f7697bc58312bfe5e", null ],
+    [ "Collection", "class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html#a75b21103ed9c8defcd7ec819989d2c37", null ],
+    [ "Add", "class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html#a8cfdeddbe1f9262fcb942b2eba6d1160", null ],
+    [ "Clear", "class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html#adbd22f306f47490bf9889d6705cccc20", null ],
+    [ "Contains", "class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html#a8162638c68223cf5b1014217a074cdc2", null ],
+    [ "CopyTo", "class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html#a1bd02e84df49bf358413c626e97b8796", null ],
+    [ "GetEnumerator", "class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html#a7bc71aa0e5a9a54f0f816e9f6e6c2f38", null ],
+    [ "IndexOf", "class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html#a654cad9b90318e04e06450af9872b607", null ],
+    [ "Insert", "class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html#ab6986d738a4f4dd8b58c07c58696aaca", null ],
+    [ "OnAdd", "class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html#a15b266688fd2e5651a36f34c750328aa", null ],
+    [ "OnClear", "class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html#a374bc0881da4c2ba30ed8bd1b5540342", null ],
+    [ "OnInsert", "class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html#ada33608142b3c212661804c0f834e4c9", null ],
+    [ "OnRemove", "class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html#a511b991dc85ad29ab71336e1ff96488c", null ],
+    [ "OnSet", "class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html#a39f134231fef65eedf85d88a0c90a312", null ],
+    [ "Remove", "class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html#a9e62d8d33574eaac9c75195cfe4ab531", null ],
+    [ "RemoveAt", "class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html#aead4bee6b96699a3af9d2ca1277cd9b3", null ],
+    [ "Resize", "class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html#aaee08501cc061668633c3e758ad0b700", null ],
+    [ "ToArray", "class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html#a2321e927559c0a624bec51b0e0dbae7f", null ],
+    [ "Capacity", "class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html#af26ce0a367e5147d3397874bfa787223", null ],
+    [ "Count", "class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html#abae64567798bae323ffb5b2f6ee2698c", null ],
+    [ "this[int index]", "class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html#ad7102a286a1377ea3594a199fc8946c4", null ]
+];
