@@ -1,7 +1,7 @@
 var dir_c96592d245a7132bf4b367792e96ba21 =
 [
     [ "Commands", "dir_89780e9ada7c3427d6acf55122dc789e.html", "dir_89780e9ada7c3427d6acf55122dc789e" ],
-    [ "CircularBuffer.cs", "_plugins_2_ingame_debug_console_2_scripts_2_circular_buffer_8cs.html", [
+    [ "CircularBuffer.cs", "_plugins_2_ingame_debug_console_2_scripts_2_circularbuffer_8cs.html", [
       [ "IngameDebugConsole.CircularBuffer< T >", "class_ingame_debug_console_1_1_circular_buffer.html", "class_ingame_debug_console_1_1_circular_buffer" ],
       [ "IngameDebugConsole.DynamicCircularBuffer< T >", "class_ingame_debug_console_1_1_dynamic_circular_buffer.html", "class_ingame_debug_console_1_1_dynamic_circular_buffer" ]
     ] ],
