@@ -1,5 +1,6 @@
 var dir_2a9f4792debd9d21999b57de5dce11e0 =
 [
+    [ "Input", "dir_124562843b0c91c520e05bb567aba3cc.html", "dir_124562843b0c91c520e05bb567aba3cc" ],
     [ "LoopScrollRect", "dir_d5b516504a2b5784129bba5996d4c2e6.html", "dir_d5b516504a2b5784129bba5996d4c2e6" ],
     [ "CanvasConfig.cs", "_canvas_config_8cs.html", [
       [ "ET.CanvasConfig", "class_e_t_1_1_canvas_config.html", "class_e_t_1_1_canvas_config" ]
@@ -11,9 +12,6 @@ var dir_2a9f4792debd9d21999b57de5dce11e0 =
       [ "ET.GizmosDebug", "class_e_t_1_1_gizmos_debug.html", "class_e_t_1_1_gizmos_debug" ]
     ] ],
     [ "Init.cs", "_init_8cs.html", "_init_8cs" ],
-    [ "InputHelperMono.cs", "_input_helper_mono_8cs.html", [
-      [ "ET.InputHelperMono", "class_e_t_1_1_input_helper_mono.html", "class_e_t_1_1_input_helper_mono" ]
-    ] ],
     [ "PoolObject.cs", "_pool_object_8cs.html", [
       [ "ET.PoolObject", "class_e_t_1_1_pool_object.html", "class_e_t_1_1_pool_object" ]
     ] ],

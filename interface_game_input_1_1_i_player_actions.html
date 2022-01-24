@@ -92,8 +92,10 @@ $(document).ready(function(){initNavTree('interface_game_input_1_1_i_player_acti
 Public 成员函数</h2></td></tr>
 <tr class="memitem:a3325cfdfeb0a1b90d142a03fdc983db0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_game_input_1_1_i_player_actions.html#a3325cfdfeb0a1b90d142a03fdc983db0">OnMove</a> (InputAction.CallbackContext context)</td></tr>
 <tr class="separator:a3325cfdfeb0a1b90d142a03fdc983db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ae115bc715dce3e61a3318bbe237d57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_game_input_1_1_i_player_actions.html#a2ae115bc715dce3e61a3318bbe237d57">OnLook</a> (InputAction.CallbackContext context)</td></tr>
-<tr class="separator:a2ae115bc715dce3e61a3318bbe237d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50b378c26163c5144c583b9eed39f818"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_game_input_1_1_i_player_actions.html#a50b378c26163c5144c583b9eed39f818">OnAim</a> (InputAction.CallbackContext context)</td></tr>
+<tr class="separator:a50b378c26163c5144c583b9eed39f818"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75dd5cdf4e7770f4d15716346fda3b2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_game_input_1_1_i_player_actions.html#a75dd5cdf4e7770f4d15716346fda3b2c">OnAtk</a> (InputAction.CallbackContext context)</td></tr>
+<tr class="separator:a75dd5cdf4e7770f4d15716346fda3b2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2be61699fde0ed32541c8387e505d7e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_game_input_1_1_i_player_actions.html#a2be61699fde0ed32541c8387e505d7e4">OnTouchPosition</a> (InputAction.CallbackContext context)</td></tr>
 <tr class="separator:a2be61699fde0ed32541c8387e505d7e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a764bfcc2792bca7c7be124648e5fb045"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_game_input_1_1_i_player_actions.html#a764bfcc2792bca7c7be124648e5fb045">OnTouchButton</a> (InputAction.CallbackContext context)</td></tr>
@@ -101,16 +103,34 @@ Public 成员函数</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock">
-<p class="definition">在文件 <a class="el" href="_game_input_8cs_source.html">GameInput.cs</a> 第 <a class="el" href="_game_input_8cs_source.html#l01150">1150</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_game_input_8cs_source.html">GameInput.cs</a> 第 <a class="el" href="_game_input_8cs_source.html#l00535">535</a> 行定义.</p>
 </div><h2 class="groupheader">成员函数说明</h2>
-<a id="a2ae115bc715dce3e61a3318bbe237d57" name="a2ae115bc715dce3e61a3318bbe237d57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ae115bc715dce3e61a3318bbe237d57">&#9670;&nbsp;</a></span>OnLook()</h2>
+<a id="a50b378c26163c5144c583b9eed39f818" name="a50b378c26163c5144c583b9eed39f818"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50b378c26163c5144c583b9eed39f818">&#9670;&nbsp;</a></span>OnAim()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void GameInput.IPlayerActions.OnLook </td>
+          <td class="memname">void GameInput.IPlayerActions.OnAim </td>
+          <td>(</td>
+          <td class="paramtype">InputAction.CallbackContext&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a75dd5cdf4e7770f4d15716346fda3b2c" name="a75dd5cdf4e7770f4d15716346fda3b2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75dd5cdf4e7770f4d15716346fda3b2c">&#9670;&nbsp;</a></span>OnAtk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameInput.IPlayerActions.OnAtk </td>
           <td>(</td>
           <td class="paramtype">InputAction.CallbackContext&#160;</td>
           <td class="paramname"><em>context</em></td><td>)</td>
@@ -184,7 +204,7 @@ Public 成员函数</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_game_input.html">GameInput</a></li><li class="navelem"><a class="el" href="interface_game_input_1_1_i_player_actions.html">IPlayerActions</a></li>
-    <li class="footer">生成于 2022年 一月 24日 星期一 14:00:35 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">生成于 2022年 一月 24日 星期一 18:17:06 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

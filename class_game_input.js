@@ -1,9 +1,7 @@
 var class_game_input =
 [
     [ "IPlayerActions", "interface_game_input_1_1_i_player_actions.html", "interface_game_input_1_1_i_player_actions" ],
-    [ "IUIActions", "interface_game_input_1_1_i_u_i_actions.html", "interface_game_input_1_1_i_u_i_actions" ],
     [ "PlayerActions", "struct_game_input_1_1_player_actions.html", "struct_game_input_1_1_player_actions" ],
-    [ "UIActions", "struct_game_input_1_1_u_i_actions.html", "struct_game_input_1_1_u_i_actions" ],
     [ "GameInput", "class_game_input.html#a60fa907641498448e9a2c68d82d700da", null ],
     [ "Contains", "class_game_input.html#aa2bc755a52a36b128db9a9d944ca563b", null ],
     [ "Disable", "class_game_input.html#a0bfd55877546b4113e5051cd6702712f", null ],
@@ -22,6 +20,5 @@ var class_game_input =
     [ "KeyboardMouseScheme", "class_game_input.html#a5cafc13c07e02d75c9034c4b0b9c231d", null ],
     [ "Player", "class_game_input.html#ad02a8772abb61b9949278e18311148af", null ],
     [ "TouchScheme", "class_game_input.html#ac193fc3f0604dfb682dc416477a0cb95", null ],
-    [ "UI", "class_game_input.html#a6299f68992906baba15805dce91e92a2", null ],
     [ "XRScheme", "class_game_input.html#ae84e1c38415588bba8f37947bff4d3c4", null ]
 ];

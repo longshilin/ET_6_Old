@@ -1360,6 +1360,8 @@ var hierarchy =
     [ "IDragHandler", null, [
       [ "IngameDebugConsole.DebugLogPopup", "class_ingame_debug_console_1_1_debug_log_popup.html", null ],
       [ "IngameDebugConsole.DebugLogResizeListener", "class_ingame_debug_console_1_1_debug_log_resize_listener.html", null ],
+      [ "JoyStick_Aim", "class_joy_stick___aim.html", null ],
+      [ "JoyStick_Move", "class_joy_stick___move.html", null ],
       [ "UnityEngine.UI.LoopScrollRectBase", "class_unity_engine_1_1_u_i_1_1_loop_scroll_rect_base.html", null ]
     ] ],
     [ "ET.IdStruct", "struct_e_t_1_1_id_struct.html", null ],
@@ -1761,6 +1763,14 @@ var hierarchy =
       [ "IngameDebugConsole.DebugLogPopup", "class_ingame_debug_console_1_1_debug_log_popup.html", null ],
       [ "UIExtensionHandler", "class_u_i_extension_handler.html", null ]
     ] ],
+    [ "IPointerDownHandler", null, [
+      [ "JoyStick_Aim", "class_joy_stick___aim.html", null ],
+      [ "JoyStick_Move", "class_joy_stick___move.html", null ]
+    ] ],
+    [ "IPointerUpHandler", null, [
+      [ "JoyStick_Aim", "class_joy_stick___aim.html", null ],
+      [ "JoyStick_Move", "class_joy_stick___move.html", null ]
+    ] ],
     [ "ProtoBuf.Serializers.IProtoSerializer", "interface_proto_buf_1_1_serializers_1_1_i_proto_serializer.html", [
       [ "ProtoBuf.Serializers.BlobSerializer", "class_proto_buf_1_1_serializers_1_1_blob_serializer.html", null ],
       [ "ProtoBuf.Serializers.BooleanSerializer", "class_proto_buf_1_1_serializers_1_1_boolean_serializer.html", null ],
@@ -1974,7 +1984,6 @@ var hierarchy =
       [ "ET.Vector3TypeDrawer", "class_e_t_1_1_vector3_type_drawer.html", null ],
       [ "ET.Vector4TypeDrawer", "class_e_t_1_1_vector4_type_drawer.html", null ]
     ] ],
-    [ "GameInput.IUIActions", "interface_game_input_1_1_i_u_i_actions.html", null ],
     [ "ET.IUpdate", "interface_e_t_1_1_i_update.html", [
       [ "ET.AnimatorComponent", "class_e_t_1_1_animator_component.html", null ],
       [ "ET.CoroutineLockComponent", "class_e_t_1_1_coroutine_lock_component.html", null ],
@@ -2294,6 +2303,11 @@ var hierarchy =
     [ "ILRuntime.Mono.Cecil.OneRowTable< ModuleRow >", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_one_row_table.html", [
       [ "ILRuntime.Mono.Cecil.ModuleTable", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_module_table.html", null ]
     ] ],
+    [ "OnScreenControl", null, [
+      [ "Button_Atk", "class_button___atk.html", null ],
+      [ "JoyStick_Aim", "class_joy_stick___aim.html", null ],
+      [ "JoyStick_Move", "class_joy_stick___move.html", null ]
+    ] ],
     [ "ILRuntime.Runtime.Intepreter.OpCodes.OpCode", "struct_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_1_1_op_code.html", null ],
     [ "ILRuntime.Runtime.Intepreter.OpCodes.OpCodeR", "struct_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_1_1_op_code_r.html", null ],
     [ "ILRuntime.Runtime.Intepreter.RegisterVM.Optimizer", "class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_optimizer.html", null ],
@@ -2566,7 +2580,6 @@ var hierarchy =
     [ "ILRuntime.Mono.Cecil.TypeReferenceProjection", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_reference_projection.html", null ],
     [ "ILRuntime.Runtime.Enviorment.TypeSizeInfo", "struct_i_l_runtime_1_1_runtime_1_1_enviorment_1_1_type_size_info.html", null ],
     [ "ILRuntime.Mono.Cecil.TypeSystem", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_system.html", null ],
-    [ "GameInput.UIActions", "struct_game_input_1_1_u_i_actions.html", null ],
     [ "UIBehaviour", null, [
       [ "UnityEngine.UI.LoopScrollRectBase", "class_unity_engine_1_1_u_i_1_1_loop_scroll_rect_base.html", null ]
     ] ],

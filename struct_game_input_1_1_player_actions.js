@@ -5,8 +5,9 @@ var struct_game_input_1_1_player_actions =
     [ "Enable", "struct_game_input_1_1_player_actions.html#a629cbdf07e6788f02395d3dcf545366a", null ],
     [ "Get", "struct_game_input_1_1_player_actions.html#a84e833c5a398eec0c56ca0ebaa898503", null ],
     [ "SetCallbacks", "struct_game_input_1_1_player_actions.html#aab6eebc3c6fda825473caf8c44a2ccf4", null ],
+    [ "Aim", "struct_game_input_1_1_player_actions.html#a82e8b9aba88d095988d81dfbbc6c138d", null ],
+    [ "Atk", "struct_game_input_1_1_player_actions.html#a1f701891466d59187cbdf07ce0dac605", null ],
     [ "enabled", "struct_game_input_1_1_player_actions.html#a44df73bc77cb3fed1ac54978dc5ccd6d", null ],
-    [ "Look", "struct_game_input_1_1_player_actions.html#a15989dfeac4315e2f52aaeb675db8a4f", null ],
     [ "Move", "struct_game_input_1_1_player_actions.html#a4ff3399e3d325f7f09252a9a9e75b70b", null ],
     [ "TouchButton", "struct_game_input_1_1_player_actions.html#a57e8f61d965f91caeadb2562970e0ed0", null ],
     [ "TouchPosition", "struct_game_input_1_1_player_actions.html#a4507678fda82b5ff7560b5c34db543d5", null ]

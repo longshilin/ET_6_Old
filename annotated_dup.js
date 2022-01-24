@@ -1441,10 +1441,13 @@ var annotated_dup =
       [ "Vector3", "struct_unity_engine_1_1_vector3.html", "struct_unity_engine_1_1_vector3" ],
       [ "Vector4", "struct_unity_engine_1_1_vector4.html", "struct_unity_engine_1_1_vector4" ]
     ] ],
+    [ "Button_Atk", "class_button___atk.html", "class_button___atk" ],
     [ "GameInput", "class_game_input.html", "class_game_input" ],
     [ "IKCPCB", "struct_i_k_c_p_c_b.html", "struct_i_k_c_p_c_b" ],
     [ "IKCPSEG", "struct_i_k_c_p_s_e_g.html", "struct_i_k_c_p_s_e_g" ],
     [ "IQUEUEHEAD", "struct_i_q_u_e_u_e_h_e_a_d.html", "struct_i_q_u_e_u_e_h_e_a_d" ],
+    [ "JoyStick_Aim", "class_joy_stick___aim.html", "class_joy_stick___aim" ],
+    [ "JoyStick_Move", "class_joy_stick___move.html", "class_joy_stick___move" ],
     [ "LoopScrollRectInspector", "class_loop_scroll_rect_inspector.html", "class_loop_scroll_rect_inspector" ],
     [ "NavMesh", "class_nav_mesh.html", "class_nav_mesh" ],
     [ "NavMeshContex", "class_nav_mesh_contex.html", "class_nav_mesh_contex" ],
