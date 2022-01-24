@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ET: Unity/Codes/HotfixView/Demo/UI/DlgLobby/LeaveMapFinish_CreateLobbyUI.cs 源文件</title>
+<title>My Project: Unity/Codes/HotfixView/Demo/UI/DlgLobby/LeaveMapFinish_CreateLobbyUI.cs 源文件</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">ET<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">My Project
    </div>
   </td>
  </tr>
@@ -129,17 +129,17 @@ $(document).ready(function(){initNavTree('_leave_map_finish___create_lobby_u_i_8
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            }</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="keywordflow">else</span> <span class="comment">//否则 应该回到游戏大厅</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            {</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                gameScene.<a class="code hl_function" href="class_e_t_1_1_entity.html#aad7ddd5b5a89fb9abbb79fa7554cd053">RemoveComponent</a>&lt;<a class="code hl_class" href="class_e_t_1_1_opera_component.html">OperaComponent</a>&gt;();</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                gameScene.<a class="code hl_function" href="class_e_t_1_1_entity.html#aad7ddd5b5a89fb9abbb79fa7554cd053">RemoveComponent</a>&lt;<a class="code hl_class" href="class_e_t_1_1_u_i_component.html">UIComponent</a>&gt;();</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                gameScene.<a class="code hl_function" href="class_e_t_1_1_entity.html#aad7ddd5b5a89fb9abbb79fa7554cd053">RemoveComponent</a>&lt;<a class="code hl_class" href="class_e_t_1_1_u_i_path_component.html">UIPathComponent</a>&gt;();</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                gameScene.<a class="code hl_function" href="class_e_t_1_1_entity.html#aad7ddd5b5a89fb9abbb79fa7554cd053">RemoveComponent</a>&lt;<a class="code hl_class" href="class_e_t_1_1_u_i_event_component.html">UIEventComponent</a>&gt;();</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                <a class="code hl_class" href="class_e_t_1_1_session.html">Session</a> session = gameScene.<a class="code hl_function" href="class_e_t_1_1_entity.html#a4f56fd1b9f333d8d7147ed62e331f44f">GetComponent</a>&lt;<a class="code hl_class" href="class_e_t_1_1_session_component.html">SessionComponent</a>&gt;().<a class="code hl_class" href="class_e_t_1_1_session.html">Session</a>;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                await session.<a class="code hl_function" href="class_e_t_1_1_session.html#a2bcb5c226b89a7bfb693ada3b0738b94">Call</a>(<span class="keyword">new</span> <a class="code hl_class" href="class_e_t_1_1_c2_g___leave_map.html">C2G_LeaveMap</a>()); <span class="comment">// await等待返回</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                Debug.Log($<span class="stringliteral">&quot;客户端：玩家 {gameScene.GetComponent&lt;PlayerComponent&gt;().MyId} 退出&quot;</span>);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                gameScene.CurrentScene().<a class="code hl_function" href="class_e_t_1_1_scene.html#a12ab65e29699d542d99f9323298f7942">Dispose</a>(); <span class="comment">// 删除 Map Scene</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                <a class="code hl_class" href="class_e_t_1_1_session.html">Session</a> session = gameScene.<a class="code hl_function" href="class_e_t_1_1_entity.html#a4f56fd1b9f333d8d7147ed62e331f44f">GetComponent</a>&lt;<a class="code hl_class" href="class_e_t_1_1_session_component.html">SessionComponent</a>&gt;().<a class="code hl_class" href="class_e_t_1_1_session.html">Session</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                await session.<a class="code hl_function" href="class_e_t_1_1_session.html#a2bcb5c226b89a7bfb693ada3b0738b94">Call</a>(<span class="keyword">new</span> <a class="code hl_class" href="class_e_t_1_1_c2_g___leave_map.html">C2G_LeaveMap</a>()); <span class="comment">// await等待返回</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                Debug.Log($<span class="stringliteral">&quot;客户端：玩家 {gameScene.GetComponent&lt;PlayerComponent&gt;().MyId} 退出&quot;</span>);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                gameScene.<a class="code hl_function" href="class_e_t_1_1_entity.html#aad7ddd5b5a89fb9abbb79fa7554cd053">RemoveComponent</a>&lt;<a class="code hl_class" href="class_e_t_1_1_opera_component.html">OperaComponent</a>&gt;();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                gameScene.CurrentScene().<a class="code hl_function" href="class_e_t_1_1_scene.html#a12ab65e29699d542d99f9323298f7942">Dispose</a>(); <span class="comment">// 删除 Map Scene</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                gameScene.<a class="code hl_function" href="class_e_t_1_1_entity.html#aad7ddd5b5a89fb9abbb79fa7554cd053">RemoveComponent</a>&lt;<a class="code hl_class" href="class_e_t_1_1_u_i_component.html">UIComponent</a>&gt;();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                gameScene.<a class="code hl_function" href="class_e_t_1_1_entity.html#aad7ddd5b5a89fb9abbb79fa7554cd053">RemoveComponent</a>&lt;<a class="code hl_class" href="class_e_t_1_1_u_i_path_component.html">UIPathComponent</a>&gt;();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                gameScene.<a class="code hl_function" href="class_e_t_1_1_entity.html#aad7ddd5b5a89fb9abbb79fa7554cd053">RemoveComponent</a>&lt;<a class="code hl_class" href="class_e_t_1_1_u_i_event_component.html">UIEventComponent</a>&gt;();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                gameScene.<a class="code hl_function" href="class_e_t_1_1_entity.html#af1f5fa70a570892aafb3820456347346">AddComponent</a>&lt;<a class="code hl_class" href="class_e_t_1_1_u_i_component.html">UIComponent</a>&gt;();</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                gameScene.<a class="code hl_function" href="class_e_t_1_1_entity.html#af1f5fa70a570892aafb3820456347346">AddComponent</a>&lt;<a class="code hl_class" href="class_e_t_1_1_u_i_path_component.html">UIPathComponent</a>&gt;();</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                gameScene.<a class="code hl_function" href="class_e_t_1_1_entity.html#af1f5fa70a570892aafb3820456347346">AddComponent</a>&lt;<a class="code hl_class" href="class_e_t_1_1_u_i_event_component.html">UIEventComponent</a>&gt;();</div>
@@ -186,7 +186,7 @@ $(document).ready(function(){initNavTree('_leave_map_finish___create_lobby_u_i_8
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_0593c8c31e62684349ddf63300956e7f.html">Codes</a></li><li class="navelem"><a class="el" href="dir_e64153545e168a22cb927133a94d943b.html">HotfixView</a></li><li class="navelem"><a class="el" href="dir_e7bd51a47f5bd8183956a80b432130f4.html">Demo</a></li><li class="navelem"><a class="el" href="dir_a757fc6e51f30410aff05290b9b186d6.html">UI</a></li><li class="navelem"><a class="el" href="dir_05e6bdac449e09ca384980b55153abca.html">DlgLobby</a></li><li class="navelem"><a class="el" href="_leave_map_finish___create_lobby_u_i_8cs.html">LeaveMapFinish_CreateLobbyUI.cs</a></li>
-    <li class="footer">生成于 2022年 一月 23日 星期日 19:26:23 , 为 ET使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">生成于 2022年 一月 24日 星期一 02:23:15 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "ET", "index.html", [
+  [ "My Project", "index.html", [
     [ "包", "namespaces.html", [
       [ "包", "namespaces.html", "namespaces_dup" ],
       [ "包函数", "namespacemembers.html", [
