@@ -176,6 +176,8 @@ var NAVTREEINDEX6 =
 "_marshal_info_8cs_source.html":[2,0,5,0,3,1,1,1,42],
 "_math_helper_8cs.html":[2,0,5,0,1,0,0,4],
 "_math_helper_8cs_source.html":[2,0,5,0,1,0,0,4],
+"_mathematics_drawers_8cs.html":[2,0,5,0,2,1,0,0,0,0],
+"_mathematics_drawers_8cs_source.html":[2,0,5,0,2,1,0,0,0,0],
 "_mathf_8cs.html":[2,0,3,0,0],
 "_mathf_8cs_source.html":[2,0,3,0,0],
 "_matrix3x3_8cs.html":[2,0,3,0,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX6 =
 "_method_body_8cs.html":[2,0,5,0,3,1,1,2,7],
 "_method_body_8cs_source.html":[2,0,5,0,3,1,1,2,7],
 "_method_calling_convention_8cs.html":[2,0,5,0,3,1,1,1,48],
-"_method_calling_convention_8cs.html#a59e6e6d233f7d1f2ecf9f98255672199":[2,0,5,0,3,1,1,1,48,0],
-"_method_calling_convention_8cs.html#a59e6e6d233f7d1f2ecf9f98255672199a06449ba4d35b27a9080de03bbaa1eefe":[2,0,5,0,3,1,1,1,48,0,4],
-"_method_calling_convention_8cs.html#a59e6e6d233f7d1f2ecf9f98255672199a0d61f8370cad1d412f80b84d143e1257":[2,0,5,0,3,1,1,1,48,0,1]
+"_method_calling_convention_8cs.html#a59e6e6d233f7d1f2ecf9f98255672199":[2,0,5,0,3,1,1,1,48,0]
 };
