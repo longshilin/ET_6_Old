@@ -165,7 +165,7 @@ $(document).ready(function(){initNavTree('_tools_editor_8cs_source.html',''); in
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> CopyEditorProcessId()</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        {</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="preprocessor">#if UNITY_EDITOR_WIN</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            <span class="keywordtype">string</span> comand = $<span class="stringliteral">&quot;xcopy -p ../Library &amp;&amp; cp Library/EditorInstance.json ../Library/ &quot;</span>;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            <span class="keywordtype">string</span> comand = $<span class="stringliteral">&quot;echo F| xcopy Library\\EditorInstance.json ..\\Library\\EditorInstance.json /Y&quot;</span>;</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <span class="keywordtype">string</span> comand = $<span class="stringliteral">&quot;mkdir -p ../Library &amp;&amp; cp -f Library/EditorInstance.json ../Library/ &quot;</span>;</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="preprocessor">#endif</span></div>
@@ -187,7 +187,7 @@ $(document).ready(function(){initNavTree('_tools_editor_8cs_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_3b33dffaa21a2ac6f7978a949ffd4e41.html">Assets</a></li><li class="navelem"><a class="el" href="dir_3a76d1108beca0c0cd39a902932cb060.html">Editor</a></li><li class="navelem"><a class="el" href="dir_fb27f27c84d05fbd21c3170a4224e691.html">ToolEditor</a></li><li class="navelem"><a class="el" href="_tools_editor_8cs.html">ToolsEditor.cs</a></li>
-    <li class="footer">生成于 2022年 二月 7日 星期一 03:57:31 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">生成于 2022年 二月 7日 星期一 04:17:18 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
