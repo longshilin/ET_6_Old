@@ -8,5 +8,6 @@ var dir_a757fc6e51f30410aff05290b9b186d6 =
     [ "DlgRedDot", "dir_e479ec31d1bdb51fcbc0ac985529d2b6.html", "dir_e479ec31d1bdb51fcbc0ac985529d2b6" ],
     [ "DlgRegisterAndLogin", "dir_57f83997b6865e94e5c6b06b5da6cff8.html", "dir_57f83997b6865e94e5c6b06b5da6cff8" ],
     [ "DlgTest", "dir_251afdb58494a42287cad1625770441d.html", "dir_251afdb58494a42287cad1625770441d" ],
-    [ "UIHelp", "dir_d831fdf76016f8d75ed3725b305d60d0.html", "dir_d831fdf76016f8d75ed3725b305d60d0" ]
+    [ "UIHelp", "dir_d831fdf76016f8d75ed3725b305d60d0.html", "dir_d831fdf76016f8d75ed3725b305d60d0" ],
+    [ "UILoading", "dir_7646ee282147251456b8dcb78c23dd05.html", "dir_7646ee282147251456b8dcb78c23dd05" ]
 ];

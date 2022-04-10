@@ -85,26 +85,34 @@ $(document).ready(function(){initNavTree('_scene_change_finish___show_current_sc
   <div class="headertitle"><div class="title">SceneChangeFinish_ShowCurrentSceneUI.cs</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_scene_change_finish___show_current_scene_u_i_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// namespace ET</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// {</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//     </span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//     public class SceneChangeFinish_ShowCurrentSceneUI: AEvent&lt;EventType.SceneChangeFinish&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//     {</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">//         protected override async ETTask Run(EventType.SceneChangeFinish args)</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">//         {</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">//             args.ZoneScene.GetComponent&lt;UIComponent&gt;().HideWindow(WindowID.WindowID_Lobby);</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">//             await ETTask.CompletedTask;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">//         }</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">//     }</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">//     </span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// }</span></div>
+<a href="_scene_change_finish___show_current_scene_u_i_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_e_t.html">ET</a></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>{</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>    </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="class_e_t_1_1_scene_change_finish___show_current_scene_u_i.html">    4</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_e_t_1_1_scene_change_finish___show_current_scene_u_i.html">SceneChangeFinish_ShowCurrentSceneUI</a>: <a class="code hl_class" href="class_e_t_1_1_a_event_async.html">AEventAsync</a>&lt;EventType.SceneChangeFinish&gt;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_e_t_1_1_scene_change_finish___show_current_scene_u_i.html#a585cfefcac792d5a6d07cfe656816005">    6</a></span>        <span class="keyword">protected</span> <span class="keyword">override</span> async <a class="code hl_class" href="class_e_t_1_1_e_t_task.html">ETTask</a> <a class="code hl_function" href="class_e_t_1_1_scene_change_finish___show_current_scene_u_i.html#a585cfefcac792d5a6d07cfe656816005">Run</a>(EventType.SceneChangeFinish args)</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>        {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>            args.ZoneScene.GetComponent&lt;<a class="code hl_class" href="class_e_t_1_1_u_i_component.html">UIComponent</a>&gt;().HideWindow(<a class="code hl_enumeration" href="namespace_e_t.html#afbe29f7b9a5f46b14589af6abe832d78">WindowID</a>.WindowID_Lobby);</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>            await <a class="code hl_class" href="class_e_t_1_1_e_t_task.html">ETTask</a>.<a class="code hl_property" href="class_e_t_1_1_e_t_task.html#a20b41ed39b282c031c96d1c9c914fb4b">CompletedTask</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        }</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    }</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>}</div>
+<div class="ttc" id="aclass_e_t_1_1_a_event_async_html"><div class="ttname"><a href="class_e_t_1_1_a_event_async.html">ET.AEventAsync</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_event_8cs_source.html#l00062">IEvent.cs:63</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_e_t_task_html"><div class="ttname"><a href="class_e_t_1_1_e_t_task.html">ET.ETTask</a></div><div class="ttdef"><b>Definition:</b> <a href="_e_t_task_8cs_source.html#l00166">ETTask.cs:167</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_e_t_task_html_a20b41ed39b282c031c96d1c9c914fb4b"><div class="ttname"><a href="class_e_t_1_1_e_t_task.html#a20b41ed39b282c031c96d1c9c914fb4b">ET.ETTask.CompletedTask</a></div><div class="ttdeci">static ETTaskCompleted CompletedTask</div><div class="ttdef"><b>Definition:</b> <a href="_e_t_task_8cs_source.html#l00014">ETTask.cs:15</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_scene_change_finish___show_current_scene_u_i_html"><div class="ttname"><a href="class_e_t_1_1_scene_change_finish___show_current_scene_u_i.html">ET.SceneChangeFinish_ShowCurrentSceneUI</a></div><div class="ttdef"><b>Definition:</b> <a href="_scene_change_finish___show_current_scene_u_i_8cs_source.html#l00004">SceneChangeFinish_ShowCurrentSceneUI.cs:5</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_scene_change_finish___show_current_scene_u_i_html_a585cfefcac792d5a6d07cfe656816005"><div class="ttname"><a href="class_e_t_1_1_scene_change_finish___show_current_scene_u_i.html#a585cfefcac792d5a6d07cfe656816005">ET.SceneChangeFinish_ShowCurrentSceneUI.Run</a></div><div class="ttdeci">override async ETTask Run(EventType.SceneChangeFinish args)</div><div class="ttdef"><b>Definition:</b> <a href="_scene_change_finish___show_current_scene_u_i_8cs_source.html#l00006">SceneChangeFinish_ShowCurrentSceneUI.cs:6</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_u_i_component_html"><div class="ttname"><a href="class_e_t_1_1_u_i_component.html">ET.UIComponent</a></div><div class="ttdef"><b>Definition:</b> <a href="_u_i_component_8cs_source.html#l00016">UIComponent.cs:17</a></div></div>
+<div class="ttc" id="anamespace_e_t_html"><div class="ttname"><a href="namespace_e_t.html">ET</a></div><div class="ttdef"><b>Definition:</b> <a href="_robot_2_app_2_program_8cs_source.html#l00008">Program.cs:9</a></div></div>
+<div class="ttc" id="anamespace_e_t_html_afbe29f7b9a5f46b14589af6abe832d78"><div class="ttname"><a href="namespace_e_t.html#afbe29f7b9a5f46b14589af6abe832d78">ET.WindowID</a></div><div class="ttdeci">WindowID</div><div class="ttdef"><b>Definition:</b> <a href="_window_id_8cs_source.html#l00003">WindowId.cs:4</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_0593c8c31e62684349ddf63300956e7f.html">Codes</a></li><li class="navelem"><a class="el" href="dir_e64153545e168a22cb927133a94d943b.html">HotfixView</a></li><li class="navelem"><a class="el" href="dir_e7bd51a47f5bd8183956a80b432130f4.html">Demo</a></li><li class="navelem"><a class="el" href="dir_a757fc6e51f30410aff05290b9b186d6.html">UI</a></li><li class="navelem"><a class="el" href="dir_3d8be4c0132feef9eb7cec4f63417d2e.html">DlgHelper</a></li><li class="navelem"><a class="el" href="dir_2462b0c8f9c4e2fdcfc9b7ff3aa43ee0.html">Event</a></li><li class="navelem"><a class="el" href="_scene_change_finish___show_current_scene_u_i_8cs.html">SceneChangeFinish_ShowCurrentSceneUI.cs</a></li>
-    <li class="footer">生成于 2022年 二月 11日 星期五 14:38:24 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">生成于 2022年 四月 10日 星期日 03:17:36 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -100,28 +100,29 @@ $(document).ready(function(){initNavTree('_server_2_hotfix_2_demo_2_unit_2_unit_
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="namespace_e_t.html#a7364dd7d92969e29c00a9721cc2cea3b">UnitType</a>.Player:</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>                {</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>                    Unit unit = unitComponent.AddChildWithId&lt;Unit, <span class="keywordtype">int</span>&gt;(id, 1001);</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>                    unit.AddComponent&lt;MoveComponent&gt;();</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                    unit.Position = <span class="keyword">new</span> <a class="code hl_struct" href="struct_unity_engine_1_1_vector3.html">Vector3</a>(-10, 0, -10);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>                        </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                    NumericComponent numericComponent = unit.AddComponent&lt;NumericComponent&gt;();</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                    numericComponent.Set(<a class="code hl_enumeration" href="namespace_e_t.html#abd2b5e699e9e4650b27e25887659fb73">NumericType</a>.Speed, 6f); <span class="comment">// 速度是6米每秒</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                    numericComponent.Set(<a class="code hl_enumeration" href="namespace_e_t.html#abd2b5e699e9e4650b27e25887659fb73">NumericType</a>.AOI, 15000); <span class="comment">// 视野15米</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                    </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                    unitComponent.Add(unit);</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                    <span class="comment">// 加入aoi</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                    unit.AddComponent&lt;AOIEntity, int, <a class="code hl_struct" href="struct_unity_engine_1_1_vector3.html">Vector3</a>&gt;(9 * 1000, unit.Position);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                    <span class="keywordflow">return</span> unit;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                }</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception($<span class="stringliteral">&quot;not such unit type: {unitType}&quot;</span>);</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            }</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        }</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    }</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>}</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>                    <span class="comment">//ChildType测试代码 取消注释 编译Server.hotfix 可发现报错</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                    <span class="comment">//unitComponent.AddChild&lt;Player, string&gt;(&quot;Player&quot;);</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>                    unit.AddComponent&lt;MoveComponent&gt;();</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                    unit.Position = <span class="keyword">new</span> <a class="code hl_struct" href="struct_unity_engine_1_1_vector3.html">Vector3</a>(-10, 0, -10);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                        </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                    NumericComponent numericComponent = unit.AddComponent&lt;NumericComponent&gt;();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                    numericComponent.Set(NumericType.Speed, 6f); <span class="comment">// 速度是6米每秒</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                    numericComponent.Set(NumericType.AOI, 15000); <span class="comment">// 视野15米</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                    </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                    unitComponent.Add(unit);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                    <span class="comment">// 加入aoi</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                    unit.AddComponent&lt;AOIEntity, int, <a class="code hl_struct" href="struct_unity_engine_1_1_vector3.html">Vector3</a>&gt;(9 * 1000, unit.Position);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                    <span class="keywordflow">return</span> unit;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception($<span class="stringliteral">&quot;not such unit type: {unitType}&quot;</span>);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
 <div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
 <div class="ttc" id="anamespace_e_t_html"><div class="ttname"><a href="namespace_e_t.html">ET</a></div><div class="ttdef"><b>Definition:</b> <a href="_robot_2_app_2_program_8cs_source.html#l00008">Program.cs:9</a></div></div>
 <div class="ttc" id="anamespace_e_t_html_a7364dd7d92969e29c00a9721cc2cea3b"><div class="ttname"><a href="namespace_e_t.html#a7364dd7d92969e29c00a9721cc2cea3b">ET.UnitType</a></div><div class="ttdeci">UnitType</div><div class="ttdef"><b>Definition:</b> <a href="_unit_type_8cs_source.html#l00003">UnitType.cs:4</a></div></div>
-<div class="ttc" id="anamespace_e_t_html_abd2b5e699e9e4650b27e25887659fb73"><div class="ttname"><a href="namespace_e_t.html#abd2b5e699e9e4650b27e25887659fb73">ET.NumericType</a></div><div class="ttdeci">NumericType</div><div class="ttdef"><b>Definition:</b> <a href="_numeric_type_8cs_source.html#l00003">NumericType.cs:4</a></div></div>
 <div class="ttc" id="anamespace_unity_engine_html"><div class="ttname"><a href="namespace_unity_engine.html">UnityEngine</a></div><div class="ttdef"><b>Definition:</b> <a href="_mathf_8cs_source.html#l00003">Mathf.cs:4</a></div></div>
 <div class="ttc" id="astruct_unity_engine_1_1_vector3_html"><div class="ttname"><a href="struct_unity_engine_1_1_vector3.html">UnityEngine.Vector3</a></div><div class="ttdef"><b>Definition:</b> <a href="_vector3_8cs_source.html#l00007">Vector3.cs:8</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -130,7 +131,7 @@ $(document).ready(function(){initNavTree('_server_2_hotfix_2_demo_2_unit_2_unit_
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1a445cb237d74f7a5f8d11ec3b0585cc.html">Server</a></li><li class="navelem"><a class="el" href="dir_0134ce7b2e6baa37e8c29df3d3b5b77b.html">Hotfix</a></li><li class="navelem"><a class="el" href="dir_41255c529257d9b5da5ae8954339fb27.html">Demo</a></li><li class="navelem"><a class="el" href="dir_217f9f85fad259a58a1a0c8bb1ede3b3.html">Unit</a></li><li class="navelem"><a class="el" href="_server_2_hotfix_2_demo_2_unit_2_unit_factory_8cs.html">UnitFactory.cs</a></li>
-    <li class="footer">生成于 2022年 二月 11日 星期五 14:38:24 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">生成于 2022年 四月 10日 星期日 03:17:27 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

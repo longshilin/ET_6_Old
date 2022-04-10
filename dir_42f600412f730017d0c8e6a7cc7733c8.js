@@ -11,5 +11,8 @@ var dir_42f600412f730017d0c8e6a7cc7733c8 =
     ] ],
     [ "IConfigLoader.cs", "_i_config_loader_8cs.html", [
       [ "ET.IConfigLoader", "interface_e_t_1_1_i_config_loader.html", "interface_e_t_1_1_i_config_loader" ]
+    ] ],
+    [ "IMerge.cs", "_i_merge_8cs.html", [
+      [ "ET.IMerge", "interface_e_t_1_1_i_merge.html", "interface_e_t_1_1_i_merge" ]
     ] ]
 ];

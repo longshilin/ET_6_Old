@@ -7,8 +7,8 @@ var dir_eb38debbf75dce9c652661d0025674c8 =
     [ "Unit", "dir_04452e33b8c931cbdea0ee5990c2e81e.html", "dir_04452e33b8c931cbdea0ee5990c2e81e" ],
     [ "EventType.cs", "_server_2_model_2_demo_2_event_type_8cs.html", [
       [ "ET.EventType.AppStart", "struct_e_t_1_1_event_type_1_1_app_start.html", null ],
-      [ "ET.EventType.ChangePosition", "struct_e_t_1_1_event_type_1_1_change_position.html", "struct_e_t_1_1_event_type_1_1_change_position" ],
-      [ "ET.EventType.ChangeRotation", "struct_e_t_1_1_event_type_1_1_change_rotation.html", "struct_e_t_1_1_event_type_1_1_change_rotation" ],
+      [ "ET.EventType.ChangePosition", "class_e_t_1_1_event_type_1_1_change_position.html", "class_e_t_1_1_event_type_1_1_change_position" ],
+      [ "ET.EventType.ChangeRotation", "class_e_t_1_1_event_type_1_1_change_rotation.html", "class_e_t_1_1_event_type_1_1_change_rotation" ],
       [ "ET.EventType.MoveStart", "struct_e_t_1_1_event_type_1_1_move_start.html", "struct_e_t_1_1_event_type_1_1_move_start" ],
       [ "ET.EventType.MoveStop", "struct_e_t_1_1_event_type_1_1_move_stop.html", "struct_e_t_1_1_event_type_1_1_move_stop" ],
       [ "ET.EventType.UnitEnterSightRange", "struct_e_t_1_1_event_type_1_1_unit_enter_sight_range.html", "struct_e_t_1_1_event_type_1_1_unit_enter_sight_range" ],

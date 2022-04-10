@@ -9,6 +9,9 @@ var searchData=
   ['wchannel_6',['WChannel',['../class_e_t_1_1_w_channel.html',1,'ET']]],
   ['windowcoredata_7',['WindowCoreData',['../class_e_t_1_1_window_core_data.html',1,'ET']]],
   ['windowsruntimeprojections_8',['WindowsRuntimeProjections',['../class_i_l_runtime_1_1_mono_1_1_cecil_1_1_windows_runtime_projections.html',1,'ILRuntime::Mono::Cecil']]],
-  ['writerparameters_9',['WriterParameters',['../class_i_l_runtime_1_1_mono_1_1_cecil_1_1_writer_parameters.html',1,'ILRuntime::Mono::Cecil']]],
-  ['wservice_10',['WService',['../class_e_t_1_1_w_service.html',1,'ET']]]
+  ['wrapquaternion_9',['WrapQuaternion',['../class_e_t_1_1_wrap_quaternion.html',1,'ET']]],
+  ['wrapvector2_10',['WrapVector2',['../class_e_t_1_1_wrap_vector2.html',1,'ET']]],
+  ['wrapvector3_11',['WrapVector3',['../class_e_t_1_1_wrap_vector3.html',1,'ET']]],
+  ['writerparameters_12',['WriterParameters',['../class_i_l_runtime_1_1_mono_1_1_cecil_1_1_writer_parameters.html',1,'ILRuntime::Mono::Cecil']]],
+  ['wservice_13',['WService',['../class_e_t_1_1_w_service.html',1,'ET']]]
 ];

@@ -3,6 +3,9 @@ var dir_d7104f11b3f15e32e96ef785a5a4bfdc =
     [ "BaseAttribute.cs", "_base_attribute_8cs.html", [
       [ "ET.BaseAttribute", "class_e_t_1_1_base_attribute.html", null ]
     ] ],
+    [ "ChildTypeAttribute.cs", "_child_type_attribute_8cs.html", [
+      [ "ET.ChildTypeAttribute", "class_e_t_1_1_child_type_attribute.html", "class_e_t_1_1_child_type_attribute" ]
+    ] ],
     [ "Entity.cs", "_entity_8cs.html", "_entity_8cs" ],
     [ "EventSystem.cs", "_event_system_8cs.html", "_event_system_8cs" ],
     [ "IAddComponentSystem.cs", "_i_add_component_system_8cs.html", [

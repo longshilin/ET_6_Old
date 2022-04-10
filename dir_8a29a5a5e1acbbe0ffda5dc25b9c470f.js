@@ -4,7 +4,7 @@ var dir_8a29a5a5e1acbbe0ffda5dc25b9c470f =
     [ "AService.cs", "_a_service_8cs.html", [
       [ "ET.AService", "class_e_t_1_1_a_service.html", "class_e_t_1_1_a_service" ]
     ] ],
-    [ "Circularbuffer.cs", "_mono_2_module_2_network_2_circularbuffer_8cs.html", [
+    [ "Circularbuffer.cs", "_mono_2_module_2_network_2_circular_buffer_8cs.html", [
       [ "ET.CircularBuffer", "class_e_t_1_1_circular_buffer.html", "class_e_t_1_1_circular_buffer" ]
     ] ],
     [ "ErrorCore.cs", "_error_core_8cs.html", null ],

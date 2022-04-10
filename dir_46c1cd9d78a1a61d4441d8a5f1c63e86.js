@@ -69,14 +69,17 @@ var dir_46c1cd9d78a1a61d4441d8a5f1c63e86 =
     [ "ET_ETTaskHelper_Binding.cs", "_e_t___e_t_task_helper___binding_8cs.html", [
       [ "ILRuntime.Runtime.Generated.ET_ETTaskHelper_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_e_t___e_t_task_helper___binding.html", null ]
     ] ],
+    [ "ET_ForeachHelper_Binding.cs", "_e_t___foreach_helper___binding_8cs.html", [
+      [ "ILRuntime.Runtime.Generated.ET_ForeachHelper_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_e_t___foreach_helper___binding.html", null ]
+    ] ],
     [ "ET_GameObjectPoolHelper_Binding.cs", "_e_t___game_object_pool_helper___binding_8cs.html", [
       [ "ILRuntime.Runtime.Generated.ET_GameObjectPoolHelper_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_e_t___game_object_pool_helper___binding.html", null ]
     ] ],
     [ "ET_ILog_Binding.cs", "_e_t___i_log___binding_8cs.html", [
       [ "ILRuntime.Runtime.Generated.ET_ILog_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_e_t___i_log___binding.html", null ]
     ] ],
-    [ "ET_JsonHelper_Binding.cs", "_e_t___json_helper___binding_8cs.html", [
-      [ "ILRuntime.Runtime.Generated.ET_JsonHelper_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_e_t___json_helper___binding.html", null ]
+    [ "ET_InputHelper_Binding.cs", "_e_t___input_helper___binding_8cs.html", [
+      [ "ILRuntime.Runtime.Generated.ET_InputHelper_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_e_t___input_helper___binding.html", null ]
     ] ],
     [ "ET_ListComponent_1_ETTask_Binding.cs", "_e_t___list_component__1___e_t_task___binding_8cs.html", [
       [ "ILRuntime.Runtime.Generated.ET_ListComponent_1_ETTask_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_e_t___list_component__1___e_t_task___binding.html", null ]
@@ -147,8 +150,17 @@ var dir_46c1cd9d78a1a61d4441d8a5f1c63e86 =
     [ "ET_UnOrderMultiMap_2_Type_Object_Binding.cs", "_e_t___un_order_multi_map__2___type___object___binding_8cs.html", [
       [ "ILRuntime.Runtime.Generated.ET_UnOrderMultiMap_2_Type_Object_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_e_t___un_order_multi_map__2___type___object___binding.html", null ]
     ] ],
-    [ "ET_UnOrderMultiMapSet_2_Type_Type_Binding.cs", "_e_t___un_order_multi_map_set__2___type___type___binding_8cs.html", [
-      [ "ILRuntime.Runtime.Generated.ET_UnOrderMultiMapSet_2_Type_Type_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_e_t___un_order_multi_map_set__2___type___type___binding.html", null ]
+    [ "ET_UnOrderMultiMap_2_Type_Type_Binding.cs", "_e_t___un_order_multi_map__2___type___type___binding_8cs.html", [
+      [ "ILRuntime.Runtime.Generated.ET_UnOrderMultiMap_2_Type_Type_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_e_t___un_order_multi_map__2___type___type___binding.html", null ]
+    ] ],
+    [ "ET_WrapQuaternion_Binding.cs", "_e_t___wrap_quaternion___binding_8cs.html", [
+      [ "ILRuntime.Runtime.Generated.ET_WrapQuaternion_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_e_t___wrap_quaternion___binding.html", null ]
+    ] ],
+    [ "ET_WrapVector3_Binding.cs", "_e_t___wrap_vector3___binding_8cs.html", [
+      [ "ILRuntime.Runtime.Generated.ET_WrapVector3_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_e_t___wrap_vector3___binding.html", null ]
+    ] ],
+    [ "LitJson_JsonMapper_Binding.cs", "_lit_json___json_mapper___binding_8cs.html", [
+      [ "ILRuntime.Runtime.Generated.LitJson_JsonMapper_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_lit_json___json_mapper___binding.html", null ]
     ] ],
     [ "ProtoBuf_Meta_RuntimeTypeModel_Binding.cs", "_proto_buf___meta___runtime_type_model___binding_8cs.html", [
       [ "ILRuntime.Runtime.Generated.ProtoBuf_Meta_RuntimeTypeModel_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_proto_buf___meta___runtime_type_model___binding.html", null ]
@@ -291,9 +303,6 @@ var dir_46c1cd9d78a1a61d4441d8a5f1c63e86 =
     [ "System_Collections_Generic_Dictionary_2_String_Type_Binding.cs", "_system___collections___generic___dictionary__2___string___type___binding_8cs.html", [
       [ "ILRuntime.Runtime.Generated.System_Collections_Generic_Dictionary_2_String_Type_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___dictionary__2___string___type___binding.html", null ]
     ] ],
-    [ "System_Collections_Generic_Dictionary_2_Type_HashSet_1_Type_Binding.cs", "_system___collections___generic___dictionary__2___type___hash_set__1___type___binding_8cs.html", [
-      [ "ILRuntime.Runtime.Generated.System_Collections_Generic_Dictionary_2_Type_HashSet_1_Type_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___dictionary__2__5cff7a6f2e8259d229bac70014c7c9f8.html", null ]
-    ] ],
     [ "System_Collections_Generic_Dictionary_2_Type_ILTypeInstance_Binding.cs", "_system___collections___generic___dictionary__2___type___i_l_type_instance___binding_8cs.html", [
       [ "ILRuntime.Runtime.Generated.System_Collections_Generic_Dictionary_2_Type_ILTypeInstance_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___dictionary__2__2d86bae1cdc2385da3b793333f4f9277.html", null ]
     ] ],
@@ -311,6 +320,9 @@ var dir_46c1cd9d78a1a61d4441d8a5f1c63e86 =
     ] ],
     [ "System_Collections_Generic_Dictionary_2_Type_List_1_Object_Binding.cs", "_system___collections___generic___dictionary__2___type___list__1___object___binding_8cs.html", [
       [ "ILRuntime.Runtime.Generated.System_Collections_Generic_Dictionary_2_Type_List_1_Object_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___dictionary__2__1cef31a61c09ac79bdbc28999c476d8d.html", null ]
+    ] ],
+    [ "System_Collections_Generic_Dictionary_2_Type_List_1_Type_Binding.cs", "_system___collections___generic___dictionary__2___type___list__1___type___binding_8cs.html", [
+      [ "ILRuntime.Runtime.Generated.System_Collections_Generic_Dictionary_2_Type_List_1_Type_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___dictionary__2__6906afc72b30ecb7d7f9795e6fd90223.html", null ]
     ] ],
     [ "System_Collections_Generic_Dictionary_2_Type_Object_Binding.cs", "_system___collections___generic___dictionary__2___type___object___binding_8cs.html", [
       [ "ILRuntime.Runtime.Generated.System_Collections_Generic_Dictionary_2_Type_Object_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___dictionary__2___type___object___binding.html", null ]
@@ -335,9 +347,6 @@ var dir_46c1cd9d78a1a61d4441d8a5f1c63e86 =
     ] ],
     [ "System_Collections_Generic_HashSet_1_AService_Binding.cs", "_system___collections___generic___hash_set__1___a_service___binding_8cs.html", [
       [ "ILRuntime.Runtime.Generated.System_Collections_Generic_HashSet_1_AService_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___hash_set__1___a_service___binding.html", null ]
-    ] ],
-    [ "System_Collections_Generic_HashSet_1_AService_Binding_Enumerator_Bind.cs", "_system___collections___generic___hash_set__1___a_service___binding___enumerator___bind_8cs.html", [
-      [ "ILRuntime.Runtime.Generated.System_Collections_Generic_HashSet_1_AService_Binding_Enumerator_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___hash_set__1___a01b3e2e6deb210f2242bfca867598a71.html", null ]
     ] ],
     [ "System_Collections_Generic_HashSet_1_ILTypeInstance_Binding.cs", "_system___collections___generic___hash_set__1___i_l_type_instance___binding_8cs.html", [
       [ "ILRuntime.Runtime.Generated.System_Collections_Generic_HashSet_1_ILTypeInstance_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___hash_set__1___i_l_type_instance___binding.html", null ]
@@ -371,12 +380,6 @@ var dir_46c1cd9d78a1a61d4441d8a5f1c63e86 =
     ] ],
     [ "System_Collections_Generic_KeyValuePair_2_Int64_ILTypeInstance_Bindin.cs", "_system___collections___generic___key_value_pair__2___int64___i_l_type_instance___bindin_8cs.html", [
       [ "ILRuntime.Runtime.Generated.System_Collections_Generic_KeyValuePair_2_Int64_ILTypeInstance_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___key_value_pair_e851f2e05809fa929e92c90363b6410b.html", null ]
-    ] ],
-    [ "System_Collections_Generic_KeyValuePair_2_Int64_List_1_ILTypeInstance.cs", "_system___collections___generic___key_value_pair__2___int64___list__1___i_l_type_instance_8cs.html", [
-      [ "ILRuntime.Runtime.Generated.System_Collections_Generic_KeyValuePair_2_Int64_List_1_ILTypeInstance_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___key_value_pair_875bd6a6b4611a18e2e20f7ef6b2d6bb.html", null ]
-    ] ],
-    [ "System_Collections_Generic_KeyValuePair_2_Int64_List_1_Int64_Binding.cs", "_system___collections___generic___key_value_pair__2___int64___list__1___int64___binding_8cs.html", [
-      [ "ILRuntime.Runtime.Generated.System_Collections_Generic_KeyValuePair_2_Int64_List_1_Int64_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___key_value_pair_a01044d57fccf01404db3ead3aa2d484.html", null ]
     ] ],
     [ "System_Collections_Generic_KeyValuePair_2_String_ILTypeInstance_Bindi.cs", "_system___collections___generic___key_value_pair__2___string___i_l_type_instance___bindi_8cs.html", [
       [ "ILRuntime.Runtime.Generated.System_Collections_Generic_KeyValuePair_2_String_ILTypeInstance_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___key_value_pair_eb1886a53e34f30469504571a4e97c88.html", null ]
@@ -419,9 +422,6 @@ var dir_46c1cd9d78a1a61d4441d8a5f1c63e86 =
     ] ],
     [ "System_Collections_Generic_List_1_Object_Binding.cs", "_system___collections___generic___list__1___object___binding_8cs.html", [
       [ "ILRuntime.Runtime.Generated.System_Collections_Generic_List_1_Object_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___list__1___object___binding.html", null ]
-    ] ],
-    [ "System_Collections_Generic_List_1_Object_Binding_Enumerator_Binding.cs", "_system___collections___generic___list__1___object___binding___enumerator___binding_8cs.html", [
-      [ "ILRuntime.Runtime.Generated.System_Collections_Generic_List_1_Object_Binding_Enumerator_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___list__1___objec9f20e839aa3f4298e4c7ac9baea1f3a4.html", null ]
     ] ],
     [ "System_Collections_Generic_List_1_Single_Binding.cs", "_system___collections___generic___list__1___single___binding_8cs.html", [
       [ "ILRuntime.Runtime.Generated.System_Collections_Generic_List_1_Single_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___list__1___single___binding.html", null ]
@@ -474,14 +474,8 @@ var dir_46c1cd9d78a1a61d4441d8a5f1c63e86 =
     [ "System_Collections_Generic_SortedDictionary_2_Int64_List_1_ILTypeInst.cs", "_system___collections___generic___sorted_dictionary__2___int64___list__1___i_l_type_inst_8cs.html", [
       [ "ILRuntime.Runtime.Generated.System_Collections_Generic_SortedDictionary_2_Int64_List_1_ILTypeInstance_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___sorted_dictiona49732d4528cb33a87e243de749f5c08c.html", null ]
     ] ],
-    [ "System_Collections_Generic_SortedDictionary_2_Int64_List_1_ILTypeInst_t1.cs", "_system___collections___generic___sorted_dictionary__2___int64___list__1___i_l_type_inst__t1_8cs.html", [
-      [ "ILRuntime.Runtime.Generated.System_Collections_Generic_SortedDictionary_2_Int64_List_1_ILTypeInstance_Binding_Enumerator_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___sorted_dictiona41a517b42cc589531cec1a86af5749be.html", null ]
-    ] ],
     [ "System_Collections_Generic_SortedDictionary_2_Int64_List_1_Int64_Bind.cs", "_system___collections___generic___sorted_dictionary__2___int64___list__1___int64___bind_8cs.html", [
       [ "ILRuntime.Runtime.Generated.System_Collections_Generic_SortedDictionary_2_Int64_List_1_Int64_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___sorted_dictiona872733d91e3a6790e7dccc644d35669f.html", null ]
-    ] ],
-    [ "System_Collections_Generic_SortedDictionary_2_Int64_List_1_Int64_Bind_t1.cs", "_system___collections___generic___sorted_dictionary__2___int64___list__1___int64___bind__t1_8cs.html", [
-      [ "ILRuntime.Runtime.Generated.System_Collections_Generic_SortedDictionary_2_Int64_List_1_Int64_Binding_Enumerator_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___sorted_dictionad574c54520d41cb4f6c8eb04ac93e220.html", null ]
     ] ],
     [ "System_Collections_Generic_Stack_1_Int32_Binding.cs", "_system___collections___generic___stack__1___int32___binding_8cs.html", [
       [ "ILRuntime.Runtime.Generated.System_Collections_Generic_Stack_1_Int32_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___stack__1___int32___binding.html", null ]

@@ -36,5 +36,14 @@ var dir_af246fe73084506dd0aaf52d5512b706 =
     ] ],
     [ "UnOrderMultiMapSet.cs", "_un_order_multi_map_set_8cs.html", [
       [ "ET.UnOrderMultiMapSet< T, K >", "class_e_t_1_1_un_order_multi_map_set.html", "class_e_t_1_1_un_order_multi_map_set" ]
+    ] ],
+    [ "WrapQuaternion.cs", "_wrap_quaternion_8cs.html", [
+      [ "ET.WrapQuaternion", "class_e_t_1_1_wrap_quaternion.html", "class_e_t_1_1_wrap_quaternion" ]
+    ] ],
+    [ "WrapVector2.cs", "_wrap_vector2_8cs.html", [
+      [ "ET.WrapVector2", "class_e_t_1_1_wrap_vector2.html", "class_e_t_1_1_wrap_vector2" ]
+    ] ],
+    [ "WrapVector3.cs", "_wrap_vector3_8cs.html", [
+      [ "ET.WrapVector3", "class_e_t_1_1_wrap_vector3.html", "class_e_t_1_1_wrap_vector3" ]
     ] ]
 ];

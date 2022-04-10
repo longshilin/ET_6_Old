@@ -11,5 +11,7 @@ var class_e_t_1_1_unit_config_category =
     [ "GetAll", "class_e_t_1_1_unit_config_category.html#aa2bbcd03edda2063287113e07fafcb10", null ],
     [ "GetAll", "class_e_t_1_1_unit_config_category.html#aa2bbcd03edda2063287113e07fafcb10", null ],
     [ "GetOne", "class_e_t_1_1_unit_config_category.html#a8650cca24bcfef1b382dcfb1f7e205b5", null ],
-    [ "GetOne", "class_e_t_1_1_unit_config_category.html#a8650cca24bcfef1b382dcfb1f7e205b5", null ]
+    [ "GetOne", "class_e_t_1_1_unit_config_category.html#a8650cca24bcfef1b382dcfb1f7e205b5", null ],
+    [ "Merge", "class_e_t_1_1_unit_config_category.html#a96d1453c74622e52cc611c9e2018ffbe", null ],
+    [ "Merge", "class_e_t_1_1_unit_config_category.html#a96d1453c74622e52cc611c9e2018ffbe", null ]
 ];

@@ -6,6 +6,7 @@ var dir_335cc68b411e9bf3976cbb185811ba4a =
     [ "Scene", "dir_2a43006d313b254c27b785a2e3ff2f2a.html", "dir_2a43006d313b254c27b785a2e3ff2f2a" ],
     [ "Timer", "dir_2ed7651a286e30fccc7b0185d613b148.html", "dir_2ed7651a286e30fccc7b0185d613b148" ],
     [ "ETCancelationTokenHelper.cs", "_e_t_cancelation_token_helper_8cs.html", null ],
+    [ "JsonHelper.cs", "_json_helper_8cs.html", null ],
     [ "ObjectWait.cs", "_object_wait_8cs.html", [
       [ "ET.IWaitType", "interface_e_t_1_1_i_wait_type.html", "interface_e_t_1_1_i_wait_type" ],
       [ "ET.ObjectWaitAwakeSystem", "class_e_t_1_1_object_wait_awake_system.html", "class_e_t_1_1_object_wait_awake_system" ],

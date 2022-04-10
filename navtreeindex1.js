@@ -1,5 +1,9 @@
 var NAVTREEINDEX1 =
 {
+"_bson_element_attribute_8cs.html":[2,0,5,0,1,3,2,2],
+"_bson_element_attribute_8cs_source.html":[2,0,5,0,1,3,2,2],
+"_bson_id_attribute_8cs.html":[2,0,5,0,1,3,2,3],
+"_bson_id_attribute_8cs_source.html":[2,0,5,0,1,3,2,3],
 "_bson_ignore_attribute_8cs.html":[2,0,5,0,1,3,2,4],
 "_bson_ignore_attribute_8cs_source.html":[2,0,5,0,1,3,2,4],
 "_bson_ignore_extra_elements_attribute_8cs.html":[2,0,5,0,1,3,2,5],
@@ -121,6 +125,8 @@ var NAVTREEINDEX1 =
 "_char_serializer_8cs_source.html":[2,0,5,0,3,3,2,4],
 "_char_type_drawer_8cs.html":[2,0,5,0,0,1,1,3],
 "_char_type_drawer_8cs_source.html":[2,0,5,0,0,1,1,3],
+"_child_type_attribute_8cs.html":[2,0,5,1,2,0,2,1],
+"_child_type_attribute_8cs_source.html":[2,0,5,1,2,0,2,1],
 "_code_8cs.html":[2,0,5,0,3,1,1,2,0],
 "_code_8cs.html#aa0ef070da47adbba93faed05fa12217a":[2,0,5,0,3,1,1,2,0,0],
 "_code_8cs.html#aa0ef070da47adbba93faed05fa12217aa005107008695cb213bacf5dee8c62788":[2,0,5,0,3,1,1,2,0,0,170],
@@ -243,11 +249,5 @@ var NAVTREEINDEX1 =
 "_code_8cs.html#aa0ef070da47adbba93faed05fa12217aa83e1c7f4ac4cc598a864736fd1541ea6":[2,0,5,0,3,1,1,2,0,0,51],
 "_code_8cs.html#aa0ef070da47adbba93faed05fa12217aa83f4b26a5a0d7de33f6f7dc32764a938":[2,0,5,0,3,1,1,2,0,0,162],
 "_code_8cs.html#aa0ef070da47adbba93faed05fa12217aa840790112a2eefba9db4c7fb004bface":[2,0,5,0,3,1,1,2,0,0,200],
-"_code_8cs.html#aa0ef070da47adbba93faed05fa12217aa84660b9cfef8afec8dac03904a8b750f":[2,0,5,0,3,1,1,2,0,0,49],
-"_code_8cs.html#aa0ef070da47adbba93faed05fa12217aa850e49f86c6e0f9779013ea42e7be479":[2,0,5,0,3,1,1,2,0,0,21],
-"_code_8cs.html#aa0ef070da47adbba93faed05fa12217aa87824ae6d46b095a0a3d2c5e4199d67f":[2,0,5,0,3,1,1,2,0,0,180],
-"_code_8cs.html#aa0ef070da47adbba93faed05fa12217aa8889f8549452772634538b0d2e599510":[2,0,5,0,3,1,1,2,0,0,26],
-"_code_8cs.html#aa0ef070da47adbba93faed05fa12217aa88f2a650b177b4434858740b76bdc755":[2,0,5,0,3,1,1,2,0,0,196],
-"_code_8cs.html#aa0ef070da47adbba93faed05fa12217aa897ad60513ff48c41d6d647055082fb5":[2,0,5,0,3,1,1,2,0,0,3],
-"_code_8cs.html#aa0ef070da47adbba93faed05fa12217aa8aae59446d9032da3233d2320ea51c14":[2,0,5,0,3,1,1,2,0,0,13]
+"_code_8cs.html#aa0ef070da47adbba93faed05fa12217aa84660b9cfef8afec8dac03904a8b750f":[2,0,5,0,3,1,1,2,0,0,49]
 };

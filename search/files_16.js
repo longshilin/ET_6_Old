@@ -9,5 +9,8 @@ var searchData=
   ['windowid_2ecs_6',['WindowId.cs',['../_window_id_8cs.html',1,'']]],
   ['windowsruntimeprojections_2ecs_7',['WindowsRuntimeProjections.cs',['../_windows_runtime_projections_8cs.html',1,'']]],
   ['wiretype_2ecs_8',['WireType.cs',['../_wire_type_8cs.html',1,'']]],
-  ['wservice_2ecs_9',['WService.cs',['../_w_service_8cs.html',1,'']]]
+  ['wrapquaternion_2ecs_9',['WrapQuaternion.cs',['../_wrap_quaternion_8cs.html',1,'']]],
+  ['wrapvector2_2ecs_10',['WrapVector2.cs',['../_wrap_vector2_8cs.html',1,'']]],
+  ['wrapvector3_2ecs_11',['WrapVector3.cs',['../_wrap_vector3_8cs.html',1,'']]],
+  ['wservice_2ecs_12',['WService.cs',['../_w_service_8cs.html',1,'']]]
 ];

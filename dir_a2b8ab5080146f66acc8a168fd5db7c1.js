@@ -12,6 +12,8 @@ var dir_a2b8ab5080146f66acc8a168fd5db7c1 =
       [ "ET.UIBaseWindow", "class_e_t_1_1_u_i_base_window.html", "class_e_t_1_1_u_i_base_window" ]
     ] ],
     [ "UIComponent.cs", "_u_i_component_8cs.html", [
+      [ "ET.IUILogic", "interface_e_t_1_1_i_u_i_logic.html", null ],
+      [ "ET.IUIScrollItem", "interface_e_t_1_1_i_u_i_scroll_item.html", null ],
       [ "ET.UIComponent", "class_e_t_1_1_u_i_component.html", "class_e_t_1_1_u_i_component" ]
     ] ],
     [ "UIEventComponent.cs", "_u_i_event_component_8cs.html", [

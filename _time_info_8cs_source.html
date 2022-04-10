@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('_time_info_8cs_source.html',''); initR
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="comment">// 线程安全</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_e_t_1_1_time_info.html#ad991a4816258c39d508d33913be4eada">   50</a></span>        <span class="keyword">public</span> <span class="keywordtype">long</span> <a class="code hl_function" href="class_e_t_1_1_time_info.html#ad991a4816258c39d508d33913be4eada">ClientNow</a>()</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        {</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keywordflow">return</span> (DateTime.Now.Ticks - <span class="keyword">this</span>.dt1970.Ticks) / 10000;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keywordflow">return</span> (DateTime.UtcNow.Ticks - <span class="keyword">this</span>.dt1970.Ticks) / 10000;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        }</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        </div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_e_t_1_1_time_info.html#a01e69c8ee0f66e05bb05b50cf02b6730">   55</a></span>        <span class="keyword">public</span> <span class="keywordtype">long</span> <a class="code hl_function" href="class_e_t_1_1_time_info.html#a01e69c8ee0f66e05bb05b50cf02b6730">ServerNow</a>()</div>
@@ -184,7 +184,7 @@ $(document).ready(function(){initNavTree('_time_info_8cs_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_3b33dffaa21a2ac6f7978a949ffd4e41.html">Assets</a></li><li class="navelem"><a class="el" href="dir_32b52fdc2965fe1c83ca367fdb1ff171.html">Mono</a></li><li class="navelem"><a class="el" href="dir_af246fe73084506dd0aaf52d5512b706.html">Core</a></li><li class="navelem"><a class="el" href="_time_info_8cs.html">TimeInfo.cs</a></li>
-    <li class="footer">生成于 2022年 二月 11日 星期五 14:38:16 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">生成于 2022年 四月 10日 星期日 03:17:28 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

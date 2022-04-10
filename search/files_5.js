@@ -10,5 +10,6 @@ var searchData=
   ['filelogger_2ecs_7',['FileLogger.cs',['../_file_logger_8cs.html',1,'']]],
   ['fixbrokenunityobjectwrapperdrawer_2ecs_8',['FixBrokenUnityObjectWrapperDrawer.cs',['../_fix_broken_unity_object_wrapper_drawer_8cs.html',1,'']]],
   ['floattypedrawer_2ecs_9',['FloatTypeDrawer.cs',['../_float_type_drawer_8cs.html',1,'']]],
-  ['functionpointertype_2ecs_10',['FunctionPointerType.cs',['../_function_pointer_type_8cs.html',1,'']]]
+  ['foreachhelper_2ecs_10',['ForeachHelper.cs',['../_foreach_helper_8cs.html',1,'']]],
+  ['functionpointertype_2ecs_11',['FunctionPointerType.cs',['../_function_pointer_type_8cs.html',1,'']]]
 ];

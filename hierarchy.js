@@ -19,36 +19,17 @@ var hierarchy =
       [ "ET.AppStart_Init", "class_e_t_1_1_app_start___init.html", null ],
       [ "ET.AppStart_Init", "class_e_t_1_1_app_start___init.html", null ]
     ] ],
-    [ "ET.AEvent< EventType.ChangePosition >", "class_e_t_1_1_a_event.html", [
-      [ "ET.ChangePosition_NotifyAOI", "class_e_t_1_1_change_position___notify_a_o_i.html", null ],
-      [ "ET.ChangePosition_SyncGameObjectPos", "class_e_t_1_1_change_position___sync_game_object_pos.html", null ]
-    ] ],
-    [ "ET.AEvent< EventType.ChangeRotation >", "class_e_t_1_1_a_event.html", [
-      [ "ET.ChangeRotation_SyncGameObjectRotation", "class_e_t_1_1_change_rotation___sync_game_object_rotation.html", null ]
-    ] ],
     [ "ET.AEvent< EventType.CreateMyUnitFinish >", "class_e_t_1_1_a_event.html", [
       [ "ET.EnterMapFinish_CreateMyUnitFinish", "class_e_t_1_1_enter_map_finish___create_my_unit_finish.html", null ]
     ] ],
     [ "ET.AEvent< EventType.EnterMapFinish >", "class_e_t_1_1_a_event.html", [
       [ "ET.EnterMapFinish_CreateInputUI", "class_e_t_1_1_enter_map_finish___create_input_u_i.html", null ]
     ] ],
-    [ "ET.AEvent< EventType.LeaveLobbyFinish >", "class_e_t_1_1_a_event.html", [
-      [ "ET.LeaveLobbyFinish_CreateLoginUI", "class_e_t_1_1_leave_lobby_finish___create_login_u_i.html", null ]
+    [ "ET.AEvent< EventType.LoadingBegin >", "class_e_t_1_1_a_event.html", [
+      [ "ET.LoadingBeginEventAsyncCreateLoadingUI", "class_e_t_1_1_loading_begin_event_async_create_loading_u_i.html", null ]
     ] ],
-    [ "ET.AEvent< EventType.LeaveMapFinish >", "class_e_t_1_1_a_event.html", [
-      [ "ET.LeaveMapFinish_CreateLobbyUI", "class_e_t_1_1_leave_map_finish___create_lobby_u_i.html", null ]
-    ] ],
-    [ "ET.AEvent< EventType.LoginFinish >", "class_e_t_1_1_a_event.html", [
-      [ "ET.LoginFinish_CreateLobbyUI", "class_e_t_1_1_login_finish___create_lobby_u_i.html", null ]
-    ] ],
-    [ "ET.AEvent< EventType.NumbericChange >", "class_e_t_1_1_a_event.html", [
-      [ "ET.NumericChangeEvent_NotifyWatcher", "class_e_t_1_1_numeric_change_event___notify_watcher.html", null ]
-    ] ],
-    [ "ET.AEvent< EventType.RegsiterOrLoginFailed >", "class_e_t_1_1_a_event.html", [
-      [ "ET.RegisterAndLogin_InfoMessage", "class_e_t_1_1_register_and_login___info_message.html", null ]
-    ] ],
-    [ "ET.AEvent< EventType.SceneChangeFinish >", "class_e_t_1_1_a_event.html", [
-      [ "ET.SceneChangeFinishEvent_CreateUIHelp", "class_e_t_1_1_scene_change_finish_event___create_u_i_help.html", null ]
+    [ "ET.AEvent< EventType.LoadingFinish >", "class_e_t_1_1_a_event.html", [
+      [ "ET.LoadingFinishEventAsyncRemoveLoadingUI", "class_e_t_1_1_loading_finish_event_async_remove_loading_u_i.html", null ]
     ] ],
     [ "ET.AEvent< EventType.SceneChangeStart >", "class_e_t_1_1_a_event.html", [
       [ "ET.SceneChangeStart_AddComponent", "class_e_t_1_1_scene_change_start___add_component.html", null ]
@@ -58,6 +39,33 @@ var hierarchy =
     ] ],
     [ "ET.AEvent< EventType.UnitLeaveSightRange >", "class_e_t_1_1_a_event.html", [
       [ "ET.UnitLeaveSightRange_NotifyClient", "class_e_t_1_1_unit_leave_sight_range___notify_client.html", null ]
+    ] ],
+    [ "ET.AEventAsync< EventType.LeaveLobbyFinish >", "class_e_t_1_1_a_event_async.html", [
+      [ "ET.LeaveLobbyFinish_CreateLoginUI", "class_e_t_1_1_leave_lobby_finish___create_login_u_i.html", null ]
+    ] ],
+    [ "ET.AEventAsync< EventType.LeaveMapFinish >", "class_e_t_1_1_a_event_async.html", [
+      [ "ET.LeaveMapFinish_CreateLobbyUI", "class_e_t_1_1_leave_map_finish___create_lobby_u_i.html", null ]
+    ] ],
+    [ "ET.AEventAsync< EventType.LoginFinish >", "class_e_t_1_1_a_event_async.html", [
+      [ "ET.LoginFinish_CreateLobbyUI", "class_e_t_1_1_login_finish___create_lobby_u_i.html", null ]
+    ] ],
+    [ "ET.AEventAsync< EventType.RegsiterOrLoginFailed >", "class_e_t_1_1_a_event_async.html", [
+      [ "ET.RegisterAndLogin_InfoMessage", "class_e_t_1_1_register_and_login___info_message.html", null ]
+    ] ],
+    [ "ET.AEventAsync< EventType.SceneChangeFinish >", "class_e_t_1_1_a_event_async.html", [
+      [ "ET.SceneChangeFinishEventAsyncCreateUIHelp", "class_e_t_1_1_scene_change_finish_event_async_create_u_i_help.html", null ],
+      [ "ET.SceneChangeFinishEvent_CreateUIHelp", "class_e_t_1_1_scene_change_finish_event___create_u_i_help.html", null ],
+      [ "ET.SceneChangeFinish_ShowCurrentSceneUI", "class_e_t_1_1_scene_change_finish___show_current_scene_u_i.html", null ]
+    ] ],
+    [ "ET.AEventClass< EventType.ChangePosition >", "class_e_t_1_1_a_event_class.html", [
+      [ "ET.ChangePosition_NotifyAOI", "class_e_t_1_1_change_position___notify_a_o_i.html", null ],
+      [ "ET.ChangePosition_SyncGameObjectPos", "class_e_t_1_1_change_position___sync_game_object_pos.html", null ]
+    ] ],
+    [ "ET.AEventClass< EventType.ChangeRotation >", "class_e_t_1_1_a_event_class.html", [
+      [ "ET.ChangeRotation_SyncGameObjectRotation", "class_e_t_1_1_change_rotation___sync_game_object_rotation.html", null ]
+    ] ],
+    [ "ET.AEventClass< EventType.NumbericChange >", "class_e_t_1_1_a_event_class.html", [
+      [ "ET.NumericChangeEventAsyncNotifyWatcher", "class_e_t_1_1_numeric_change_event_async_notify_watcher.html", null ]
     ] ],
     [ "ET.EventType.AfterCreateCurrentScene", "struct_e_t_1_1_event_type_1_1_after_create_current_scene.html", null ],
     [ "ET.EventType.AfterCreateLoginScene", "struct_e_t_1_1_event_type_1_1_after_create_login_scene.html", null ],
@@ -194,6 +202,7 @@ var hierarchy =
         [ "ET.SessionStreamDispatcherAttribute", "class_e_t_1_1_session_stream_dispatcher_attribute.html", null ],
         [ "ET.TimerAttribute", "class_e_t_1_1_timer_attribute.html", null ]
       ] ],
+      [ "ET.ChildTypeAttribute", "class_e_t_1_1_child_type_attribute.html", null ],
       [ "ET.NoMemoryCheck", "class_e_t_1_1_no_memory_check.html", null ],
       [ "ET.TypeDrawerAttribute", "class_e_t_1_1_type_drawer_attribute.html", null ],
       [ "LitJson.Extensions.JsonIgnore", "class_lit_json_1_1_extensions_1_1_json_ignore.html", null ]
@@ -494,8 +503,6 @@ var hierarchy =
     [ "CertificateHandler", null, [
       [ "ET.AcceptAllCertificate", "class_e_t_1_1_accept_all_certificate.html", null ]
     ] ],
-    [ "ET.EventType.ChangePosition", "struct_e_t_1_1_event_type_1_1_change_position.html", null ],
-    [ "ET.EventType.ChangeRotation", "struct_e_t_1_1_event_type_1_1_change_rotation.html", null ],
     [ "IngameDebugConsole.CircularBuffer< T >", "class_ingame_debug_console_1_1_circular_buffer.html", null ],
     [ "ILRuntime.Runtime.Generated.CLRBindings", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_c_l_r_bindings.html", null ],
     [ "ILRuntime.Runtime.CLRBinding.CLRBindingUtils", "class_i_l_runtime_1_1_runtime_1_1_c_l_r_binding_1_1_c_l_r_binding_utils.html", null ],
@@ -752,6 +759,9 @@ var hierarchy =
     [ "ET.DestroySystem< ZoneSceneManagerComponent >", "class_e_t_1_1_destroy_system.html", [
       [ "ET.ZoneSceneManagerComponentDestroySystem", "class_e_t_1_1_zone_scene_manager_component_destroy_system.html", null ]
     ] ],
+    [ "DiagnosticAnalyzer", null, [
+      [ "ET.Analyzer.AddChildTypeAnalyzer", "class_e_t_1_1_analyzer_1_1_add_child_type_analyzer.html", null ]
+    ] ],
     [ "Dictionary", null, [
       [ "ET.MultiDictionary< T, M, N >", "class_e_t_1_1_multi_dictionary.html", null ],
       [ "ET.UnOrderMultiMap< T, K >", "class_e_t_1_1_un_order_multi_map.html", null ],
@@ -802,9 +812,10 @@ var hierarchy =
     [ "ILRuntime.Runtime.Generated.ET_ETTask_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_e_t___e_t_task___binding.html", null ],
     [ "ILRuntime.Runtime.Generated.ET_ETTaskCompleted_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_e_t___e_t_task_completed___binding.html", null ],
     [ "ILRuntime.Runtime.Generated.ET_ETTaskHelper_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_e_t___e_t_task_helper___binding.html", null ],
+    [ "ILRuntime.Runtime.Generated.ET_ForeachHelper_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_e_t___foreach_helper___binding.html", null ],
     [ "ILRuntime.Runtime.Generated.ET_GameObjectPoolHelper_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_e_t___game_object_pool_helper___binding.html", null ],
     [ "ILRuntime.Runtime.Generated.ET_ILog_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_e_t___i_log___binding.html", null ],
-    [ "ILRuntime.Runtime.Generated.ET_JsonHelper_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_e_t___json_helper___binding.html", null ],
+    [ "ILRuntime.Runtime.Generated.ET_InputHelper_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_e_t___input_helper___binding.html", null ],
     [ "ILRuntime.Runtime.Generated.ET_ListComponent_1_ETTask_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_e_t___list_component__1___e_t_task___binding.html", null ],
     [ "ILRuntime.Runtime.Generated.ET_ListComponent_1_ILTypeInstance_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_e_t___list_component__1___i_l_type_instance___binding.html", null ],
     [ "ILRuntime.Runtime.Generated.ET_ListComponent_1_String_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_e_t___list_component__1___string___binding.html", null ],
@@ -828,7 +839,9 @@ var hierarchy =
     [ "ILRuntime.Runtime.Generated.ET_TimeInfo_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_e_t___time_info___binding.html", null ],
     [ "ILRuntime.Runtime.Generated.ET_TService_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_e_t___t_service___binding.html", null ],
     [ "ILRuntime.Runtime.Generated.ET_UnOrderMultiMap_2_Type_Object_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_e_t___un_order_multi_map__2___type___object___binding.html", null ],
-    [ "ILRuntime.Runtime.Generated.ET_UnOrderMultiMapSet_2_Type_Type_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_e_t___un_order_multi_map_set__2___type___type___binding.html", null ],
+    [ "ILRuntime.Runtime.Generated.ET_UnOrderMultiMap_2_Type_Type_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_e_t___un_order_multi_map__2___type___type___binding.html", null ],
+    [ "ILRuntime.Runtime.Generated.ET_WrapQuaternion_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_e_t___wrap_quaternion___binding.html", null ],
+    [ "ILRuntime.Runtime.Generated.ET_WrapVector3_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_e_t___wrap_vector3___binding.html", null ],
     [ "ET.ETAsyncTaskMethodBuilder< T >", "struct_e_t_1_1_e_t_async_task_method_builder.html", null ],
     [ "ET.ETCancellationToken", "class_e_t_1_1_e_t_cancellation_token.html", null ],
     [ "ET.EUIRootHelper", "class_e_t_1_1_e_u_i_root_helper.html", null ],
@@ -1065,12 +1078,8 @@ var hierarchy =
       [ "ET.AIConfig", "class_e_t_1_1_a_i_config.html", null ],
       [ "ET.AIConfig", "class_e_t_1_1_a_i_config.html", null ],
       [ "ET.StartMachineConfig", "class_e_t_1_1_start_machine_config.html", null ],
-      [ "ET.StartMachineConfig", "class_e_t_1_1_start_machine_config.html", null ],
-      [ "ET.StartProcessConfig", "class_e_t_1_1_start_process_config.html", null ],
       [ "ET.StartProcessConfig", "class_e_t_1_1_start_process_config.html", null ],
       [ "ET.StartSceneConfig", "class_e_t_1_1_start_scene_config.html", null ],
-      [ "ET.StartSceneConfig", "class_e_t_1_1_start_scene_config.html", null ],
-      [ "ET.StartZoneConfig", "class_e_t_1_1_start_zone_config.html", null ],
       [ "ET.StartZoneConfig", "class_e_t_1_1_start_zone_config.html", null ],
       [ "ET.UnitConfig", "class_e_t_1_1_unit_config.html", null ],
       [ "ET.UnitConfig", "class_e_t_1_1_unit_config.html", null ]
@@ -1314,7 +1323,12 @@ var hierarchy =
           [ "ET.XunLuoPathComponent", "class_e_t_1_1_xun_luo_path_component.html", null ],
           [ "ET.ZoneSceneFlagComponent", "class_e_t_1_1_zone_scene_flag_component.html", null ],
           [ "ET.ZoneSceneManagerComponent", "class_e_t_1_1_zone_scene_manager_component.html", null ]
-        ] ]
+        ] ],
+        [ "ET.EventType.ChangePosition", "class_e_t_1_1_event_type_1_1_change_position.html", null ],
+        [ "ET.EventType.ChangePosition", "class_e_t_1_1_event_type_1_1_change_position.html", null ],
+        [ "ET.EventType.ChangeRotation", "class_e_t_1_1_event_type_1_1_change_rotation.html", null ],
+        [ "ET.EventType.ChangeRotation", "class_e_t_1_1_event_type_1_1_change_rotation.html", null ],
+        [ "ET.EventType.NumbericChange", "class_e_t_1_1_event_type_1_1_numberic_change.html", null ]
       ] ],
       [ "ET.EventSystem", "class_e_t_1_1_event_system.html", null ],
       [ "ET.HashSetComponent< T >", "class_e_t_1_1_hash_set_component.html", null ],
@@ -1409,7 +1423,11 @@ var hierarchy =
       [ "UnityEngine.Vector4", "struct_unity_engine_1_1_vector4.html", null ]
     ] ],
     [ "ET.IEvent", "interface_e_t_1_1_i_event.html", [
-      [ "ET.AEvent< A >", "class_e_t_1_1_a_event.html", null ]
+      [ "ET.AEvent< A >", "class_e_t_1_1_a_event.html", null ],
+      [ "ET.AEventAsync< A >", "class_e_t_1_1_a_event_async.html", null ],
+      [ "ET.IEventClass", "interface_e_t_1_1_i_event_class.html", [
+        [ "ET.AEventClass< A >", "class_e_t_1_1_a_event_class.html", null ]
+      ] ]
     ] ],
     [ "ProtoBuf.IExtensible", "interface_proto_buf_1_1_i_extensible.html", [
       [ "ProtoBuf.Extensible", "class_proto_buf_1_1_extensible.html", null ]
@@ -1511,6 +1529,16 @@ var hierarchy =
     [ "ILRuntime.Mono.Cecil.Cil.ImageDebugDirectory", "struct_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_image_debug_directory.html", null ],
     [ "ILRuntime.Mono.Cecil.Cil.ImageDebugHeader", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_image_debug_header.html", null ],
     [ "ILRuntime.Mono.Cecil.Cil.ImageDebugHeaderEntry", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_image_debug_header_entry.html", null ],
+    [ "ET.IMerge", "interface_e_t_1_1_i_merge.html", [
+      [ "ET.AIConfigCategory", "class_e_t_1_1_a_i_config_category.html", null ],
+      [ "ET.AIConfigCategory", "class_e_t_1_1_a_i_config_category.html", null ],
+      [ "ET.StartMachineConfigCategory", "class_e_t_1_1_start_machine_config_category.html", null ],
+      [ "ET.StartProcessConfigCategory", "class_e_t_1_1_start_process_config_category.html", null ],
+      [ "ET.StartSceneConfigCategory", "class_e_t_1_1_start_scene_config_category.html", null ],
+      [ "ET.StartZoneConfigCategory", "class_e_t_1_1_start_zone_config_category.html", null ],
+      [ "ET.UnitConfigCategory", "class_e_t_1_1_unit_config_category.html", null ],
+      [ "ET.UnitConfigCategory", "class_e_t_1_1_unit_config_category.html", null ]
+    ] ],
     [ "ET.IMessage", "interface_e_t_1_1_i_message.html", [
       [ "ET.G2C_Test", "class_e_t_1_1_g2_c___test.html", null ],
       [ "ET.G2C_Test", "class_e_t_1_1_g2_c___test.html", null ],
@@ -1858,20 +1886,12 @@ var hierarchy =
         [ "ET.AIConfigCategory", "class_e_t_1_1_a_i_config_category.html", null ],
         [ "ET.ActorResponse", "class_e_t_1_1_actor_response.html", null ],
         [ "ET.StartMachineConfig", "class_e_t_1_1_start_machine_config.html", null ],
-        [ "ET.StartMachineConfig", "class_e_t_1_1_start_machine_config.html", null ],
-        [ "ET.StartMachineConfigCategory", "class_e_t_1_1_start_machine_config_category.html", null ],
         [ "ET.StartMachineConfigCategory", "class_e_t_1_1_start_machine_config_category.html", null ],
         [ "ET.StartProcessConfig", "class_e_t_1_1_start_process_config.html", null ],
-        [ "ET.StartProcessConfig", "class_e_t_1_1_start_process_config.html", null ],
-        [ "ET.StartProcessConfigCategory", "class_e_t_1_1_start_process_config_category.html", null ],
         [ "ET.StartProcessConfigCategory", "class_e_t_1_1_start_process_config_category.html", null ],
         [ "ET.StartSceneConfig", "class_e_t_1_1_start_scene_config.html", null ],
-        [ "ET.StartSceneConfig", "class_e_t_1_1_start_scene_config.html", null ],
-        [ "ET.StartSceneConfigCategory", "class_e_t_1_1_start_scene_config_category.html", null ],
         [ "ET.StartSceneConfigCategory", "class_e_t_1_1_start_scene_config_category.html", null ],
         [ "ET.StartZoneConfig", "class_e_t_1_1_start_zone_config.html", null ],
-        [ "ET.StartZoneConfig", "class_e_t_1_1_start_zone_config.html", null ],
-        [ "ET.StartZoneConfigCategory", "class_e_t_1_1_start_zone_config_category.html", null ],
         [ "ET.StartZoneConfigCategory", "class_e_t_1_1_start_zone_config_category.html", null ],
         [ "ET.UnitConfig", "class_e_t_1_1_unit_config.html", null ],
         [ "ET.UnitConfig", "class_e_t_1_1_unit_config.html", null ],
@@ -1984,6 +2004,16 @@ var hierarchy =
       [ "ET.Vector3TypeDrawer", "class_e_t_1_1_vector3_type_drawer.html", null ],
       [ "ET.Vector4TypeDrawer", "class_e_t_1_1_vector4_type_drawer.html", null ]
     ] ],
+    [ "ET.IUILogic", "interface_e_t_1_1_i_u_i_logic.html", [
+      [ "ET.DlgHelper", "class_e_t_1_1_dlg_helper.html", null ],
+      [ "ET.DlgLobby", "class_e_t_1_1_dlg_lobby.html", null ],
+      [ "ET.DlgRedDot", "class_e_t_1_1_dlg_red_dot.html", null ],
+      [ "ET.DlgTest", "class_e_t_1_1_dlg_test.html", null ]
+    ] ],
+    [ "ET.IUIScrollItem", "interface_e_t_1_1_i_u_i_scroll_item.html", [
+      [ "ET.Scroll_Item_serverTest", "class_e_t_1_1_scroll___item__server_test.html", null ],
+      [ "ET.Scroll_Item_test", "class_e_t_1_1_scroll___item__test.html", null ]
+    ] ],
     [ "ET.IUpdate", "interface_e_t_1_1_i_update.html", [
       [ "ET.AnimatorComponent", "class_e_t_1_1_animator_component.html", null ],
       [ "ET.CoroutineLockComponent", "class_e_t_1_1_coroutine_lock_component.html", null ],
@@ -2018,6 +2048,7 @@ var hierarchy =
     [ "List", null, [
       [ "ET.ListComponent< T >", "class_e_t_1_1_list_component.html", null ]
     ] ],
+    [ "ILRuntime.Runtime.Generated.LitJson_JsonMapper_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_lit_json___json_mapper___binding.html", null ],
     [ "ET.EventType.LoadingBegin", "struct_e_t_1_1_event_type_1_1_loading_begin.html", null ],
     [ "ET.EventType.LoadingFinish", "struct_e_t_1_1_event_type_1_1_loading_finish.html", null ],
     [ "ET.LoadSystem< ActorMessageDispatcherComponent >", "class_e_t_1_1_load_system.html", [
@@ -2197,7 +2228,6 @@ var hierarchy =
     [ "NetworkBehaviour", null, [
       [ "Sirenix.OdinInspector.SerializedNetworkBehaviour", "class_sirenix_1_1_odin_inspector_1_1_serialized_network_behaviour.html", null ]
     ] ],
-    [ "ET.EventType.NumbericChange", "struct_e_t_1_1_event_type_1_1_numberic_change.html", null ],
     [ "ET.Object", "class_e_t_1_1_object.html", [
       [ "ET.A2M_Reload", "class_e_t_1_1_a2_m___reload.html", null ],
       [ "ET.Actor_TransferRequest", "class_e_t_1_1_actor___transfer_request.html", null ],
@@ -2470,13 +2500,13 @@ var hierarchy =
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_Dictionary_2_String_String_Array_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___dictionary__2__bd6f0d8e36b04ddbc0f68dc64c0fd1f2.html", null ],
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_Dictionary_2_String_String_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___dictionary__2___string___string___binding.html", null ],
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_Dictionary_2_String_Type_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___dictionary__2___string___type___binding.html", null ],
-    [ "ILRuntime.Runtime.Generated.System_Collections_Generic_Dictionary_2_Type_HashSet_1_Type_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___dictionary__2__5cff7a6f2e8259d229bac70014c7c9f8.html", null ],
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_Dictionary_2_Type_ILTypeInstance_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___dictionary__2__2d86bae1cdc2385da3b793333f4f9277.html", null ],
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_Dictionary_2_Type_ILTypeInstance_Binding_Enumerator_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___dictionary__2__e555a9401eb12a853992b17ef4701fc9.html", null ],
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_Dictionary_2_Type_ILTypeInstance_Binding_ValueCollection_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___dictionary__2__ddcbbab2c1a31e0affbdb4e3ff172f30.html", null ],
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_Dictionary_2_Type_ILTypeInstance_Binding_ValueCollection_Binding_Enumerator_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___dictionary__2__b8fb0e2130bbd30e2254b1fb7b953759.html", null ],
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_Dictionary_2_Type_Int32_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___dictionary__2___type___int32___binding.html", null ],
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_Dictionary_2_Type_List_1_Object_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___dictionary__2__1cef31a61c09ac79bdbc28999c476d8d.html", null ],
+    [ "ILRuntime.Runtime.Generated.System_Collections_Generic_Dictionary_2_Type_List_1_Type_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___dictionary__2__6906afc72b30ecb7d7f9795e6fd90223.html", null ],
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_Dictionary_2_Type_Object_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___dictionary__2___type___object___binding.html", null ],
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_Dictionary_2_Type_Queue_1_ILTypeInstance_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___dictionary__2__3b270f01287080904d3529ab6515c2e9.html", null ],
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_Dictionary_2_Type_Type_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___dictionary__2___type___type___binding.html", null ],
@@ -2485,7 +2515,6 @@ var hierarchy =
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_Dictionary_2_UInt16_List_1_ILTypeInstance_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___dictionary__2__f25a24d3257f254827d0853ea2ca299a.html", null ],
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_Dictionary_2_UInt16_Type_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___dictionary__2___u_int16___type___binding.html", null ],
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_HashSet_1_AService_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___hash_set__1___a_service___binding.html", null ],
-    [ "ILRuntime.Runtime.Generated.System_Collections_Generic_HashSet_1_AService_Binding_Enumerator_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___hash_set__1___a01b3e2e6deb210f2242bfca867598a71.html", null ],
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_HashSet_1_ILTypeInstance_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___hash_set__1___i_l_type_instance___binding.html", null ],
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_HashSet_1_ILTypeInstance_Binding_Enumerator_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___hash_set__1___i78432c545487fb9e916d60eaa7543312.html", null ],
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_HashSet_1_Int32_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___hash_set__1___int32___binding.html", null ],
@@ -2497,8 +2526,6 @@ var hierarchy =
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_IEnumerator_1_KeyValuePair_2_Type_Int32_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___i_enumerator__1b13cdb45ccf6f890bdcb9fd81609bbba.html", null ],
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_KeyValuePair_2_Int32_ILTypeInstance_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___key_value_pair_3b151990367a5246758f6f68ab8ce6b1.html", null ],
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_KeyValuePair_2_Int64_ILTypeInstance_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___key_value_pair_e851f2e05809fa929e92c90363b6410b.html", null ],
-    [ "ILRuntime.Runtime.Generated.System_Collections_Generic_KeyValuePair_2_Int64_List_1_ILTypeInstance_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___key_value_pair_875bd6a6b4611a18e2e20f7ef6b2d6bb.html", null ],
-    [ "ILRuntime.Runtime.Generated.System_Collections_Generic_KeyValuePair_2_Int64_List_1_Int64_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___key_value_pair_a01044d57fccf01404db3ead3aa2d484.html", null ],
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_KeyValuePair_2_String_ILTypeInstance_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___key_value_pair_eb1886a53e34f30469504571a4e97c88.html", null ],
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_KeyValuePair_2_String_Int32_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___key_value_pair__2___string___int32___binding.html", null ],
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_KeyValuePair_2_String_Object_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___key_value_pair__2___string___object___binding.html", null ],
@@ -2513,7 +2540,6 @@ var hierarchy =
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_List_1_Int64_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___list__1___int64___binding.html", null ],
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_List_1_Int64_Binding_Enumerator_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___list__1___int64c0d38e81da77f96e8cce2dc6a55d84b0.html", null ],
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_List_1_Object_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___list__1___object___binding.html", null ],
-    [ "ILRuntime.Runtime.Generated.System_Collections_Generic_List_1_Object_Binding_Enumerator_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___list__1___objec9f20e839aa3f4298e4c7ac9baea1f3a4.html", null ],
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_List_1_Single_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___list__1___single___binding.html", null ],
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_List_1_String_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___list__1___string___binding.html", null ],
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_List_1_String_Binding_Enumerator_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___list__1___strin5c34c7c9d1e83e6ef2b310cd87c6aad4.html", null ],
@@ -2531,9 +2557,7 @@ var hierarchy =
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_SortedDictionary_2_Int32_ILTypeInstance_Binding_ValueCollection_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___sorted_dictiona13bc3f6e96386149bc1b7558ffbba769.html", null ],
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_SortedDictionary_2_Int32_ILTypeInstance_Binding_ValueCollection_Binding_Enumerator_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___sorted_dictiona42da6024b5c4806bf47022cc37189aed.html", null ],
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_SortedDictionary_2_Int64_List_1_ILTypeInstance_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___sorted_dictiona49732d4528cb33a87e243de749f5c08c.html", null ],
-    [ "ILRuntime.Runtime.Generated.System_Collections_Generic_SortedDictionary_2_Int64_List_1_ILTypeInstance_Binding_Enumerator_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___sorted_dictiona41a517b42cc589531cec1a86af5749be.html", null ],
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_SortedDictionary_2_Int64_List_1_Int64_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___sorted_dictiona872733d91e3a6790e7dccc644d35669f.html", null ],
-    [ "ILRuntime.Runtime.Generated.System_Collections_Generic_SortedDictionary_2_Int64_List_1_Int64_Binding_Enumerator_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___sorted_dictionad574c54520d41cb4f6c8eb04ac93e220.html", null ],
     [ "ILRuntime.Runtime.Generated.System_Collections_Generic_Stack_1_Int32_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___generic___stack__1___int32___binding.html", null ],
     [ "ILRuntime.Runtime.Generated.System_Collections_IEnumerator_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___collections___i_enumerator___binding.html", null ],
     [ "ILRuntime.Runtime.Generated.System_DateTime_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___date_time___binding.html", null ],
@@ -2564,6 +2588,7 @@ var hierarchy =
     [ "ILRuntime.Runtime.Generated.System_ValueTuple_2_Int32_Toggle_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___value_tuple__2___int32___toggle___binding.html", null ],
     [ "ILRuntime.Runtime.Generated.System_ValueTuple_2_UInt16_MemoryStream_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___value_tuple__2___u_int16___memory_stream___binding.html", null ],
     [ "ILRuntime.Runtime.Generated.System_ValueTuple_3_Int32_Int64_Int32_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___value_tuple__3___int32___int64___int32___binding.html", null ],
+    [ "ET.Table", "class_e_t_1_1_table.html", null ],
     [ "ILRuntime.Mono.Cecil.Metadata.TableInformation", "struct_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_1_1_table_information.html", null ],
     [ "ILRuntime.Mono.Cecil.PE.TextMap", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_text_map.html", null ],
     [ "IngameDebugConsole.Commands.TimeCommands", "class_ingame_debug_console_1_1_commands_1_1_time_commands.html", null ],
@@ -2658,6 +2683,15 @@ var hierarchy =
     [ "ValueTypeBinder", null, [
       [ "ILRuntime.Runtime.Enviorment.ValueTypeBinder< T >", "class_i_l_runtime_1_1_runtime_1_1_enviorment_1_1_value_type_binder.html", null ]
     ] ],
+    [ "ILRuntime.Runtime.Enviorment.ValueTypeBinder< Quaternion >", "class_i_l_runtime_1_1_runtime_1_1_enviorment_1_1_value_type_binder.html", [
+      [ "QuaternionBinder", "class_quaternion_binder.html", null ]
+    ] ],
+    [ "ILRuntime.Runtime.Enviorment.ValueTypeBinder< Vector2 >", "class_i_l_runtime_1_1_runtime_1_1_enviorment_1_1_value_type_binder.html", [
+      [ "Vector2Binder", "class_vector2_binder.html", null ]
+    ] ],
+    [ "ILRuntime.Runtime.Enviorment.ValueTypeBinder< Vector3 >", "class_i_l_runtime_1_1_runtime_1_1_enviorment_1_1_value_type_binder.html", [
+      [ "Vector3Binder", "class_vector3_binder.html", null ]
+    ] ],
     [ "ILRuntime.Mono.Cecil.Cil.VariableIndex", "struct_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_variable_index.html", null ],
     [ "ILRuntime.Runtime.Debugger.VariableInfo", "class_i_l_runtime_1_1_runtime_1_1_debugger_1_1_variable_info.html", null ],
     [ "ILRuntime.Mono.Cecil.Cil.VariableReference", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_variable_reference.html", [
@@ -2665,5 +2699,8 @@ var hierarchy =
     ] ],
     [ "ILRuntime.Runtime.Debugger.VariableReference", "class_i_l_runtime_1_1_runtime_1_1_debugger_1_1_variable_reference.html", null ],
     [ "ILRuntime.Mono.Cecil.WindowsRuntimeProjections", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_windows_runtime_projections.html", null ],
+    [ "ET.WrapQuaternion", "class_e_t_1_1_wrap_quaternion.html", null ],
+    [ "ET.WrapVector2", "class_e_t_1_1_wrap_vector2.html", null ],
+    [ "ET.WrapVector3", "class_e_t_1_1_wrap_vector3.html", null ],
     [ "ILRuntime.Mono.Cecil.WriterParameters", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_writer_parameters.html", null ]
 ];
