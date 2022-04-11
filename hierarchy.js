@@ -31,6 +31,9 @@ var hierarchy =
     [ "ET.AEvent< EventType.LoadingFinish >", "class_e_t_1_1_a_event.html", [
       [ "ET.LoadingFinishEventAsyncRemoveLoadingUI", "class_e_t_1_1_loading_finish_event_async_remove_loading_u_i.html", null ]
     ] ],
+    [ "ET.AEvent< EventType.RegsiterOrLoginFailed >", "class_e_t_1_1_a_event.html", [
+      [ "ET.RegisterAndLogin_InfoMessage", "class_e_t_1_1_register_and_login___info_message.html", null ]
+    ] ],
     [ "ET.AEvent< EventType.SceneChangeStart >", "class_e_t_1_1_a_event.html", [
       [ "ET.SceneChangeStart_AddComponent", "class_e_t_1_1_scene_change_start___add_component.html", null ]
     ] ],
@@ -48,9 +51,6 @@ var hierarchy =
     ] ],
     [ "ET.AEventAsync< EventType.LoginFinish >", "class_e_t_1_1_a_event_async.html", [
       [ "ET.LoginFinish_CreateLobbyUI", "class_e_t_1_1_login_finish___create_lobby_u_i.html", null ]
-    ] ],
-    [ "ET.AEventAsync< EventType.RegsiterOrLoginFailed >", "class_e_t_1_1_a_event_async.html", [
-      [ "ET.RegisterAndLogin_InfoMessage", "class_e_t_1_1_register_and_login___info_message.html", null ]
     ] ],
     [ "ET.AEventAsync< EventType.SceneChangeFinish >", "class_e_t_1_1_a_event_async.html", [
       [ "ET.SceneChangeFinishEventAsyncCreateUIHelp", "class_e_t_1_1_scene_change_finish_event_async_create_u_i_help.html", null ],
