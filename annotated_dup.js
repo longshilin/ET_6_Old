@@ -5,7 +5,11 @@ var annotated_dup =
     ] ],
     [ "ET", "namespace_e_t.html", [
       [ "Analyzer", "namespace_e_t_1_1_analyzer.html", [
-        [ "AddChildTypeAnalyzer", "class_e_t_1_1_analyzer_1_1_add_child_type_analyzer.html", "class_e_t_1_1_analyzer_1_1_add_child_type_analyzer" ]
+        [ "AddChildTypeAnalyzer", "class_e_t_1_1_analyzer_1_1_add_child_type_analyzer.html", "class_e_t_1_1_analyzer_1_1_add_child_type_analyzer" ],
+        [ "ClassDeclarationInHotfixAnalyzer", "class_e_t_1_1_analyzer_1_1_class_declaration_in_hotfix_analyzer.html", "class_e_t_1_1_analyzer_1_1_class_declaration_in_hotfix_analyzer" ],
+        [ "EntityClassDeclarationAnalyzer", "class_e_t_1_1_analyzer_1_1_entity_class_declaration_analyzer.html", "class_e_t_1_1_analyzer_1_1_entity_class_declaration_analyzer" ],
+        [ "EntityFiledAccessAnalyzer", "class_e_t_1_1_analyzer_1_1_entity_filed_access_analyzer.html", "class_e_t_1_1_analyzer_1_1_entity_filed_access_analyzer" ],
+        [ "HotfixProjectFieldDeclarationAnalyzer", "class_e_t_1_1_analyzer_1_1_hotfix_project_field_declaration_analyzer.html", "class_e_t_1_1_analyzer_1_1_hotfix_project_field_declaration_analyzer" ]
       ] ],
       [ "EventType", "namespace_e_t_1_1_event_type.html", [
         [ "AfterCreateCurrentScene", "struct_e_t_1_1_event_type_1_1_after_create_current_scene.html", "struct_e_t_1_1_event_type_1_1_after_create_current_scene" ],
@@ -241,11 +245,11 @@ var annotated_dup =
       [ "ETCancellationToken", "class_e_t_1_1_e_t_cancellation_token.html", "class_e_t_1_1_e_t_cancellation_token" ],
       [ "ETTask", "class_e_t_1_1_e_t_task.html", "class_e_t_1_1_e_t_task" ],
       [ "ETTaskCompleted", "struct_e_t_1_1_e_t_task_completed.html", "struct_e_t_1_1_e_t_task_completed" ],
-      [ "EUIRootHelper", "class_e_t_1_1_e_u_i_root_helper.html", null ],
       [ "EventAttribute", "class_e_t_1_1_event_attribute.html", null ],
       [ "EventSystem", "class_e_t_1_1_event_system.html", "class_e_t_1_1_event_system" ],
       [ "FileLogger", "class_e_t_1_1_file_logger.html", "class_e_t_1_1_file_logger" ],
       [ "FloatTypeDrawer", "class_e_t_1_1_float_type_drawer.html", "class_e_t_1_1_float_type_drawer" ],
+      [ "FriendClassAttribute", "class_e_t_1_1_friend_class_attribute.html", "class_e_t_1_1_friend_class_attribute" ],
       [ "G2C_EnterMap", "class_e_t_1_1_g2_c___enter_map.html", "class_e_t_1_1_g2_c___enter_map" ],
       [ "G2C_LeaveMap", "class_e_t_1_1_g2_c___leave_map.html", "class_e_t_1_1_g2_c___leave_map" ],
       [ "G2C_LoginGate", "class_e_t_1_1_g2_c___login_gate.html", "class_e_t_1_1_g2_c___login_gate" ],
@@ -443,6 +447,7 @@ var annotated_dup =
       [ "ObjectWait", "class_e_t_1_1_object_wait.html", "class_e_t_1_1_object_wait" ],
       [ "ObjectWaitAwakeSystem", "class_e_t_1_1_object_wait_awake_system.html", "class_e_t_1_1_object_wait_awake_system" ],
       [ "ObjectWaitDestroySystem", "class_e_t_1_1_object_wait_destroy_system.html", "class_e_t_1_1_object_wait_destroy_system" ],
+      [ "OnGenerateCSProjectProcessor", "class_e_t_1_1_on_generate_c_s_project_processor.html", null ],
       [ "OpcodeTypeComponent", "class_e_t_1_1_opcode_type_component.html", "class_e_t_1_1_opcode_type_component" ],
       [ "OpcodeTypeComponentAwakeSystem", "class_e_t_1_1_opcode_type_component_awake_system.html", "class_e_t_1_1_opcode_type_component_awake_system" ],
       [ "OpcodeTypeComponentDestroySystem", "class_e_t_1_1_opcode_type_component_destroy_system.html", "class_e_t_1_1_opcode_type_component_destroy_system" ],

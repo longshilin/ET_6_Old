@@ -3,7 +3,9 @@ var dir_6e562b7e9556a467c124c52c8529b37d =
     [ "ActorLocationSender.cs", "_actor_location_sender_8cs.html", [
       [ "ET.ActorLocationSender", "class_e_t_1_1_actor_location_sender.html", "class_e_t_1_1_actor_location_sender" ]
     ] ],
-    [ "ActorLocationSenderComponent.cs", "_actor_location_sender_component_8cs.html", "_actor_location_sender_component_8cs" ],
+    [ "ActorLocationSenderComponent.cs", "_actor_location_sender_component_8cs.html", [
+      [ "ET.ActorLocationSenderComponent", "class_e_t_1_1_actor_location_sender_component.html", "class_e_t_1_1_actor_location_sender_component" ]
+    ] ],
     [ "AMActorLocationHandler.cs", "_a_m_actor_location_handler_8cs.html", [
       [ "ET.AMActorLocationHandler< E, Message >", "class_e_t_1_1_a_m_actor_location_handler.html", "class_e_t_1_1_a_m_actor_location_handler" ]
     ] ],

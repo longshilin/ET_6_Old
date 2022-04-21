@@ -1,9 +1,7 @@
 var dir_9ad12242999bcb3dd8865b23ae5bec0b =
 [
     [ "EUIHelper.cs", "_e_u_i_helper_8cs.html", null ],
-    [ "EUIRootHelper.cs", "_e_u_i_root_helper_8cs.html", [
-      [ "ET.EUIRootHelper", "class_e_t_1_1_e_u_i_root_helper.html", null ]
-    ] ],
+    [ "EUIRootHelper.cs", "_e_u_i_root_helper_8cs.html", null ],
     [ "IconHelper.cs", "_icon_helper_8cs.html", "_icon_helper_8cs" ],
     [ "RedDotComponentSystem.cs", "_red_dot_component_system_8cs.html", [
       [ "ET.RedDotComponentAwakeSystem", "class_e_t_1_1_red_dot_component_awake_system.html", "class_e_t_1_1_red_dot_component_awake_system" ],

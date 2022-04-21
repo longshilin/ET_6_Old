@@ -108,21 +108,22 @@ $(document).ready(function(){initNavTree('_robot_case_component_system_8cs_sourc
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        }</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    }</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span>RobotCaseComponentSystem</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span> GetN(<span class="keyword">this</span> RobotCaseComponent <span class="keyword">self</span>)</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        {</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <span class="keywordflow">return</span> ++<span class="keyword">self</span>.<a class="code hl_variable" href="class_e_t_1_1_robot_case_component.html#a0224a70e4df2ff5496968bcf3394419a">N</a>;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        }</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keyword">public</span> <span class="keyword">static</span> async ETTask&lt;RobotCase&gt; New(<span class="keyword">this</span> RobotCaseComponent <span class="keyword">self</span>)</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        {</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            await ETTask.CompletedTask;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            RobotCase robotCase = <span class="keyword">self</span>.AddChild&lt;RobotCase&gt;();</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <span class="keywordflow">return</span> robotCase;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        }</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    [FriendClass(typeof(RobotCaseComponent))]</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span>RobotCaseComponentSystem</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">int</span> GetN(<span class="keyword">this</span> RobotCaseComponent <span class="keyword">self</span>)</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <span class="keywordflow">return</span> ++<span class="keyword">self</span>.<a class="code hl_variable" href="class_e_t_1_1_robot_case_component.html#a0224a70e4df2ff5496968bcf3394419a">N</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keyword">public</span> <span class="keyword">static</span> async ETTask&lt;RobotCase&gt; New(<span class="keyword">this</span> RobotCaseComponent <span class="keyword">self</span>)</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            await ETTask.CompletedTask;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            RobotCase robotCase = <span class="keyword">self</span>.AddChild&lt;RobotCase&gt;();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <span class="keywordflow">return</span> robotCase;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
 <div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
 <div class="ttc" id="aclass_e_t_1_1_awake_system_html"><div class="ttname"><a href="class_e_t_1_1_awake_system.html">ET.AwakeSystem</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_awake_system_8cs_source.html#l00135">IAwakeSystem.cs:136</a></div></div>
 <div class="ttc" id="aclass_e_t_1_1_destroy_system_html"><div class="ttname"><a href="class_e_t_1_1_destroy_system.html">ET.DestroySystem</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_destroy_system_8cs_source.html#l00016">IDestroySystem.cs:17</a></div></div>
@@ -130,9 +131,9 @@ $(document).ready(function(){initNavTree('_robot_case_component_system_8cs_sourc
 <div class="ttc" id="aclass_e_t_1_1_robot_case_component_awake_system_html_a24a64d7c9f4c9dc81a1cdc1e0b11f5b4"><div class="ttname"><a href="class_e_t_1_1_robot_case_component_awake_system.html#a24a64d7c9f4c9dc81a1cdc1e0b11f5b4">ET.RobotCaseComponentAwakeSystem.Awake</a></div><div class="ttdeci">override void Awake(RobotCaseComponent self)</div><div class="ttdef"><b>Definition:</b> <a href="_robot_case_component_system_8cs_source.html#l00009">RobotCaseComponentSystem.cs:9</a></div></div>
 <div class="ttc" id="aclass_e_t_1_1_robot_case_component_destroy_system_html"><div class="ttname"><a href="class_e_t_1_1_robot_case_component_destroy_system.html">ET.RobotCaseComponentDestroySystem</a></div><div class="ttdef"><b>Definition:</b> <a href="_robot_case_component_system_8cs_source.html#l00016">RobotCaseComponentSystem.cs:17</a></div></div>
 <div class="ttc" id="aclass_e_t_1_1_robot_case_component_destroy_system_html_af3df4b354382804a3352e0955c82f4ff"><div class="ttname"><a href="class_e_t_1_1_robot_case_component_destroy_system.html#af3df4b354382804a3352e0955c82f4ff">ET.RobotCaseComponentDestroySystem.Destroy</a></div><div class="ttdeci">override void Destroy(RobotCaseComponent self)</div><div class="ttdef"><b>Definition:</b> <a href="_robot_case_component_system_8cs_source.html#l00018">RobotCaseComponentSystem.cs:18</a></div></div>
-<div class="ttc" id="aclass_e_t_1_1_robot_case_component_html"><div class="ttname"><a href="class_e_t_1_1_robot_case_component.html">ET.RobotCaseComponent</a></div><div class="ttdef"><b>Definition:</b> <a href="_robot_case_component_8cs_source.html#l00005">RobotCaseComponent.cs:6</a></div></div>
-<div class="ttc" id="aclass_e_t_1_1_robot_case_component_html_a0224a70e4df2ff5496968bcf3394419a"><div class="ttname"><a href="class_e_t_1_1_robot_case_component.html#a0224a70e4df2ff5496968bcf3394419a">ET.RobotCaseComponent.N</a></div><div class="ttdeci">int N</div><div class="ttdef"><b>Definition:</b> <a href="_robot_case_component_8cs_source.html#l00009">RobotCaseComponent.cs:9</a></div></div>
-<div class="ttc" id="aclass_e_t_1_1_robot_case_component_html_a54087ecb5da4c26343aa91310dd1d186"><div class="ttname"><a href="class_e_t_1_1_robot_case_component.html#a54087ecb5da4c26343aa91310dd1d186">ET.RobotCaseComponent.Instance</a></div><div class="ttdeci">static RobotCaseComponent Instance</div><div class="ttdef"><b>Definition:</b> <a href="_robot_case_component_8cs_source.html#l00007">RobotCaseComponent.cs:7</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_robot_case_component_html"><div class="ttname"><a href="class_e_t_1_1_robot_case_component.html">ET.RobotCaseComponent</a></div><div class="ttdef"><b>Definition:</b> <a href="_robot_case_component_8cs_source.html#l00006">RobotCaseComponent.cs:7</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_robot_case_component_html_a0224a70e4df2ff5496968bcf3394419a"><div class="ttname"><a href="class_e_t_1_1_robot_case_component.html#a0224a70e4df2ff5496968bcf3394419a">ET.RobotCaseComponent.N</a></div><div class="ttdeci">int N</div><div class="ttdef"><b>Definition:</b> <a href="_robot_case_component_8cs_source.html#l00010">RobotCaseComponent.cs:10</a></div></div>
+<div class="ttc" id="aclass_e_t_1_1_robot_case_component_html_a54087ecb5da4c26343aa91310dd1d186"><div class="ttname"><a href="class_e_t_1_1_robot_case_component.html#a54087ecb5da4c26343aa91310dd1d186">ET.RobotCaseComponent.Instance</a></div><div class="ttdeci">static RobotCaseComponent Instance</div><div class="ttdef"><b>Definition:</b> <a href="_robot_case_component_8cs_source.html#l00008">RobotCaseComponent.cs:8</a></div></div>
 <div class="ttc" id="anamespace_e_t_html"><div class="ttname"><a href="namespace_e_t.html">ET</a></div><div class="ttdef"><b>Definition:</b> <a href="_robot_2_app_2_program_8cs_source.html#l00008">Program.cs:9</a></div></div>
 <div class="ttc" id="anamespace_system_1_1_collections_1_1_generic_html"><div class="ttname"><a href="namespace_system_1_1_collections_1_1_generic.html">System.Collections.Generic</a></div></div>
 <div class="ttc" id="anamespace_system_1_1_collections_html"><div class="ttname"><a href="namespace_system_1_1_collections.html">System.Collections</a></div></div>
@@ -143,7 +144,7 @@ $(document).ready(function(){initNavTree('_robot_case_component_system_8cs_sourc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_63b3edbb6dcb5a7e8e866ca08f7102c4.html">Robot</a></li><li class="navelem"><a class="el" href="dir_f68d3d5de05b36e0fd39558a02f05528.html">Hotfix</a></li><li class="navelem"><a class="el" href="dir_15471f551c6b5250308a7e20ef389cbd.html">Module</a></li><li class="navelem"><a class="el" href="dir_e58838a55230fafe98b350ac43a08382.html">RobotCase</a></li><li class="navelem"><a class="el" href="_robot_case_component_system_8cs.html">RobotCaseComponentSystem.cs</a></li>
-    <li class="footer">生成于 2022年 四月 16日 星期六 03:26:36 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">生成于 2022年 四月 21日 星期四 07:49:28 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

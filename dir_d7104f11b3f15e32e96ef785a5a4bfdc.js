@@ -8,6 +8,9 @@ var dir_d7104f11b3f15e32e96ef785a5a4bfdc =
     ] ],
     [ "Entity.cs", "_entity_8cs.html", "_entity_8cs" ],
     [ "EventSystem.cs", "_event_system_8cs.html", "_event_system_8cs" ],
+    [ "FriendClassAttribute.cs", "_friend_class_attribute_8cs.html", [
+      [ "ET.FriendClassAttribute", "class_e_t_1_1_friend_class_attribute.html", "class_e_t_1_1_friend_class_attribute" ]
+    ] ],
     [ "IAddComponentSystem.cs", "_i_add_component_system_8cs.html", [
       [ "ET.IAddComponent", "interface_e_t_1_1_i_add_component.html", null ],
       [ "ET.IAddComponentSystem", "interface_e_t_1_1_i_add_component_system.html", "interface_e_t_1_1_i_add_component_system" ],

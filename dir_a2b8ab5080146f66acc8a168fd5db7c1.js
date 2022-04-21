@@ -4,6 +4,7 @@ var dir_a2b8ab5080146f66acc8a168fd5db7c1 =
     [ "AUIEventAttribute.cs", "_a_u_i_event_attribute_8cs.html", [
       [ "ET.AUIEventAttribute", "class_e_t_1_1_a_u_i_event_attribute.html", "class_e_t_1_1_a_u_i_event_attribute" ]
     ] ],
+    [ "EUIModelViewHelper.cs", "_e_u_i_model_view_helper_8cs.html", null ],
     [ "IAUIEventHandler.cs", "_i_a_u_i_event_handler_8cs.html", [
       [ "ET.IAUIEventHandler", "interface_e_t_1_1_i_a_u_i_event_handler.html", "interface_e_t_1_1_i_a_u_i_event_handler" ]
     ] ],

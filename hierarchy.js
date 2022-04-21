@@ -163,6 +163,9 @@ var hierarchy =
       [ "ILRuntime.Mono.ArgumentNullOrEmptyException", "class_i_l_runtime_1_1_mono_1_1_argument_null_or_empty_exception.html", null ]
     ] ],
     [ "ILRuntime.Mono.Cecil.ArrayDimension", "struct_i_l_runtime_1_1_mono_1_1_cecil_1_1_array_dimension.html", null ],
+    [ "AssetPostprocessor", null, [
+      [ "ET.OnGenerateCSProjectProcessor", "class_e_t_1_1_on_generate_c_s_project_processor.html", null ]
+    ] ],
     [ "ET.AsyncETTaskCompletedMethodBuilder", "struct_e_t_1_1_async_e_t_task_completed_method_builder.html", null ],
     [ "ILRuntime.Runtime.Intepreter.RegisterVM.AsyncJITCompileWorker", "class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_async_j_i_t_compile_worker.html", null ],
     [ "ET.ATimer< ActorLocationSenderComponent >", "class_e_t_1_1_a_timer.html", [
@@ -203,6 +206,7 @@ var hierarchy =
         [ "ET.TimerAttribute", "class_e_t_1_1_timer_attribute.html", null ]
       ] ],
       [ "ET.ChildTypeAttribute", "class_e_t_1_1_child_type_attribute.html", null ],
+      [ "ET.FriendClassAttribute", "class_e_t_1_1_friend_class_attribute.html", null ],
       [ "ET.NoMemoryCheck", "class_e_t_1_1_no_memory_check.html", null ],
       [ "ET.TypeDrawerAttribute", "class_e_t_1_1_type_drawer_attribute.html", null ],
       [ "LitJson.Extensions.JsonIgnore", "class_lit_json_1_1_extensions_1_1_json_ignore.html", null ]
@@ -760,7 +764,11 @@ var hierarchy =
       [ "ET.ZoneSceneManagerComponentDestroySystem", "class_e_t_1_1_zone_scene_manager_component_destroy_system.html", null ]
     ] ],
     [ "DiagnosticAnalyzer", null, [
-      [ "ET.Analyzer.AddChildTypeAnalyzer", "class_e_t_1_1_analyzer_1_1_add_child_type_analyzer.html", null ]
+      [ "ET.Analyzer.AddChildTypeAnalyzer", "class_e_t_1_1_analyzer_1_1_add_child_type_analyzer.html", null ],
+      [ "ET.Analyzer.ClassDeclarationInHotfixAnalyzer", "class_e_t_1_1_analyzer_1_1_class_declaration_in_hotfix_analyzer.html", null ],
+      [ "ET.Analyzer.EntityClassDeclarationAnalyzer", "class_e_t_1_1_analyzer_1_1_entity_class_declaration_analyzer.html", null ],
+      [ "ET.Analyzer.EntityFiledAccessAnalyzer", "class_e_t_1_1_analyzer_1_1_entity_filed_access_analyzer.html", null ],
+      [ "ET.Analyzer.HotfixProjectFieldDeclarationAnalyzer", "class_e_t_1_1_analyzer_1_1_hotfix_project_field_declaration_analyzer.html", null ]
     ] ],
     [ "Dictionary", null, [
       [ "ET.MultiDictionary< T, M, N >", "class_e_t_1_1_multi_dictionary.html", null ],
@@ -844,7 +852,6 @@ var hierarchy =
     [ "ILRuntime.Runtime.Generated.ET_WrapVector3_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_e_t___wrap_vector3___binding.html", null ],
     [ "ET.ETAsyncTaskMethodBuilder< T >", "struct_e_t_1_1_e_t_async_task_method_builder.html", null ],
     [ "ET.ETCancellationToken", "class_e_t_1_1_e_t_cancellation_token.html", null ],
-    [ "ET.EUIRootHelper", "class_e_t_1_1_e_u_i_root_helper.html", null ],
     [ "EventArgs", null, [
       [ "ILRuntime.Mono.Cecil.AssemblyResolveEventArgs", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_resolve_event_args.html", null ],
       [ "ProtoBuf.Meta.LockContentedEventArgs", "class_proto_buf_1_1_meta_1_1_lock_contented_event_args.html", null ],

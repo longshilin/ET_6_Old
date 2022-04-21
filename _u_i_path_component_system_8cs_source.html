@@ -111,19 +111,20 @@ $(document).ready(function(){initNavTree('_u_i_path_component_system_8cs_source.
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        }</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    }</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span>UIPathComponentSystem</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    {</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> Awake(<span class="keyword">this</span> UIPathComponent <span class="keyword">self</span>)</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        {</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <span class="keywordflow">foreach</span> (<a class="code hl_enumeration" href="namespace_e_t.html#afbe29f7b9a5f46b14589af6abe832d78">WindowID</a> windowID <span class="keywordflow">in</span> Enum.GetValues(typeof(<a class="code hl_enumeration" href="namespace_e_t.html#afbe29f7b9a5f46b14589af6abe832d78">WindowID</a>)))</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            {</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                <span class="keywordtype">string</span> dlgName = <span class="stringliteral">&quot;Dlg&quot;</span> + windowID.<a class="code hl_function" href="class_e_t_1_1_dispose_object.html#ad8eb53ce32ea7744055ba1b254a74871">ToString</a>().Split(<span class="charliteral">&#39;_&#39;</span>)[1];</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                <span class="keyword">self</span>.WindowPrefabPath.Add((<span class="keywordtype">int</span>)windowID , dlgName);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                <span class="keyword">self</span>.WindowTypeIdDict.Add(dlgName, (<span class="keywordtype">int</span>)windowID );</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            }</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        }</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    [FriendClass(typeof(UIPathComponent))]</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span>UIPathComponentSystem</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> Awake(<span class="keyword">this</span> UIPathComponent <span class="keyword">self</span>)</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <span class="keywordflow">foreach</span> (<a class="code hl_enumeration" href="namespace_e_t.html#afbe29f7b9a5f46b14589af6abe832d78">WindowID</a> windowID <span class="keywordflow">in</span> Enum.GetValues(typeof(<a class="code hl_enumeration" href="namespace_e_t.html#afbe29f7b9a5f46b14589af6abe832d78">WindowID</a>)))</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                <span class="keywordtype">string</span> dlgName = <span class="stringliteral">&quot;Dlg&quot;</span> + windowID.<a class="code hl_function" href="class_e_t_1_1_dispose_object.html#ad8eb53ce32ea7744055ba1b254a74871">ToString</a>().Split(<span class="charliteral">&#39;_&#39;</span>)[1];</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                <span class="keyword">self</span>.WindowPrefabPath.Add((<span class="keywordtype">int</span>)windowID , dlgName);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                <span class="keyword">self</span>.WindowTypeIdDict.Add(dlgName, (<span class="keywordtype">int</span>)windowID );</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}</div>
 <div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
 <div class="ttc" id="aclass_e_t_1_1_awake_system_html"><div class="ttname"><a href="class_e_t_1_1_awake_system.html">ET.AwakeSystem</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_awake_system_8cs_source.html#l00135">IAwakeSystem.cs:136</a></div></div>
 <div class="ttc" id="aclass_e_t_1_1_destroy_system_html"><div class="ttname"><a href="class_e_t_1_1_destroy_system.html">ET.DestroySystem</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_destroy_system_8cs_source.html#l00016">IDestroySystem.cs:17</a></div></div>
@@ -142,7 +143,7 @@ $(document).ready(function(){initNavTree('_u_i_path_component_system_8cs_source.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_0593c8c31e62684349ddf63300956e7f.html">Codes</a></li><li class="navelem"><a class="el" href="dir_e64153545e168a22cb927133a94d943b.html">HotfixView</a></li><li class="navelem"><a class="el" href="dir_3874c4c4ca4f42c5a192faec48d8548a.html">Module</a></li><li class="navelem"><a class="el" href="dir_9ad12242999bcb3dd8865b23ae5bec0b.html">EUI</a></li><li class="navelem"><a class="el" href="_u_i_path_component_system_8cs.html">UIPathComponentSystem.cs</a></li>
-    <li class="footer">生成于 2022年 四月 16日 星期六 03:26:44 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">生成于 2022年 四月 21日 星期四 07:49:36 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -106,24 +106,25 @@ $(document).ready(function(){initNavTree('_watcher_component_system_8cs_source.h
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        }</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    }</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span>WatcherComponentSystem</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    {</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> Start(<span class="keyword">this</span> WatcherComponent <span class="keyword">self</span>, <span class="keywordtype">int</span> createScenes = 0)</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <span class="keywordtype">string</span>[] localIP = NetworkHelper.GetAddressIPs();</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            var processConfigs = StartProcessConfigCategory.<a class="code hl_property" href="class_e_t_1_1_watcher_component.html#acd611e02aa7970895942778de57b93bf">Instance</a>.GetAll();</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <span class="keywordflow">foreach</span> (StartProcessConfig startProcessConfig <span class="keywordflow">in</span> processConfigs.Values)</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            {</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                <span class="keywordflow">if</span> (!WatcherHelper.IsThisMachine(startProcessConfig.InnerIP, localIP))</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                {</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                    <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                }</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                <a class="code hl_enumvalue" href="namespace_e_t.html#af48dc22f9cb3861ebf5f79087abae36cab6ec7abeb6ae29cc35a4b47475e12afe">Process</a> process = WatcherHelper.StartProcess(startProcessConfig.Id, createScenes);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                <span class="keyword">self</span>.Processes.Add(startProcessConfig.Id, process);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            }</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        }</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    [FriendClass(typeof(WatcherComponent))]</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span>WatcherComponentSystem</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> Start(<span class="keyword">this</span> WatcherComponent <span class="keyword">self</span>, <span class="keywordtype">int</span> createScenes = 0)</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            <span class="keywordtype">string</span>[] localIP = NetworkHelper.GetAddressIPs();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            var processConfigs = StartProcessConfigCategory.<a class="code hl_property" href="class_e_t_1_1_watcher_component.html#acd611e02aa7970895942778de57b93bf">Instance</a>.GetAll();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <span class="keywordflow">foreach</span> (StartProcessConfig startProcessConfig <span class="keywordflow">in</span> processConfigs.Values)</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                <span class="keywordflow">if</span> (!WatcherHelper.IsThisMachine(startProcessConfig.InnerIP, localIP))</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                <a class="code hl_enumvalue" href="namespace_e_t.html#af48dc22f9cb3861ebf5f79087abae36cab6ec7abeb6ae29cc35a4b47475e12afe">Process</a> process = WatcherHelper.StartProcess(startProcessConfig.Id, createScenes);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                <span class="keyword">self</span>.Processes.Add(startProcessConfig.Id, process);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}</div>
 <div class="ttc" id="aclass_e_t_1_1_awake_system_html"><div class="ttname"><a href="class_e_t_1_1_awake_system.html">ET.AwakeSystem</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_awake_system_8cs_source.html#l00135">IAwakeSystem.cs:136</a></div></div>
 <div class="ttc" id="aclass_e_t_1_1_destroy_system_html"><div class="ttname"><a href="class_e_t_1_1_destroy_system.html">ET.DestroySystem</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_destroy_system_8cs_source.html#l00016">IDestroySystem.cs:17</a></div></div>
 <div class="ttc" id="aclass_e_t_1_1_watcher_component_awake_system_html"><div class="ttname"><a href="class_e_t_1_1_watcher_component_awake_system.html">ET.WatcherComponentAwakeSystem</a></div><div class="ttdef"><b>Definition:</b> <a href="_watcher_component_system_8cs_source.html#l00006">WatcherComponentSystem.cs:7</a></div></div>
@@ -142,7 +143,7 @@ $(document).ready(function(){initNavTree('_watcher_component_system_8cs_source.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1a445cb237d74f7a5f8d11ec3b0585cc.html">Server</a></li><li class="navelem"><a class="el" href="dir_0134ce7b2e6baa37e8c29df3d3b5b77b.html">Hotfix</a></li><li class="navelem"><a class="el" href="dir_8cae0c884229412dcf0f7ef228f3295f.html">Watcher</a></li><li class="navelem"><a class="el" href="_watcher_component_system_8cs.html">WatcherComponentSystem.cs</a></li>
-    <li class="footer">生成于 2022年 四月 16日 星期六 03:26:36 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">生成于 2022年 四月 21日 星期四 07:49:28 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

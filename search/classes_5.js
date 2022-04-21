@@ -13,6 +13,7 @@ var searchData=
   ['fixedarraymarshalinfo_10',['FixedArrayMarshalInfo',['../class_i_l_runtime_1_1_mono_1_1_cecil_1_1_fixed_array_marshal_info.html',1,'ILRuntime::Mono::Cecil']]],
   ['fixedsysstringmarshalinfo_11',['FixedSysStringMarshalInfo',['../class_i_l_runtime_1_1_mono_1_1_cecil_1_1_fixed_sys_string_marshal_info.html',1,'ILRuntime::Mono::Cecil']]],
   ['floattypedrawer_12',['FloatTypeDrawer',['../class_e_t_1_1_float_type_drawer.html',1,'ET']]],
-  ['functiondelegateadapter_13',['FunctionDelegateAdapter',['../class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_function_delegate_adapter.html',1,'ILRuntime::Runtime::Intepreter']]],
-  ['functionpointertype_14',['FunctionPointerType',['../class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html',1,'ILRuntime::Mono::Cecil']]]
+  ['friendclassattribute_13',['FriendClassAttribute',['../class_e_t_1_1_friend_class_attribute.html',1,'ET']]],
+  ['functiondelegateadapter_14',['FunctionDelegateAdapter',['../class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_function_delegate_adapter.html',1,'ILRuntime::Runtime::Intepreter']]],
+  ['functionpointertype_15',['FunctionPointerType',['../class_i_l_runtime_1_1_mono_1_1_cecil_1_1_function_pointer_type.html',1,'ILRuntime::Mono::Cecil']]]
 ];

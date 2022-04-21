@@ -108,42 +108,43 @@ $(document).ready(function(){initNavTree('_opera_component_system_8cs_source.htm
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        }</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    }</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span>OperaComponentSystem</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keyword">private</span> <span class="keyword">static</span> Ray ray;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> Update(<span class="keyword">this</span> OperaComponent <span class="keyword">self</span>)</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        {</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <span class="keywordflow">if</span> (InputHelperMono.GetTouchScreenPointToRay(ref ray))</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            {</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                RaycastHit hit;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                <span class="keywordflow">if</span> (Physics.Raycast(ray, out hit, 1000, <span class="keyword">self</span>.mapMask))</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                {</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                    <span class="keyword">self</span>.ClickPoint = hit.point;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                    <span class="keyword">self</span>.frameClickMap.X = <span class="keyword">self</span>.ClickPoint.x;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                    <span class="keyword">self</span>.frameClickMap.Y = <span class="keyword">self</span>.ClickPoint.y;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                    <span class="keyword">self</span>.frameClickMap.Z = <span class="keyword">self</span>.ClickPoint.z;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                    <span class="keyword">self</span>.ZoneScene().GetComponent&lt;SessionComponent&gt;().Session.Send(<span class="keyword">self</span>.frameClickMap);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                }</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            }</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="keywordflow">if</span> (InputHelperMono.WasPressedRKey())</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            {</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                CodeLoader.Instance.LoadLogic();</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                Game.EventSystem.Add(CodeLoader.Instance.GetTypes());</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                Game.EventSystem.Load();</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                Log.Debug(<span class="stringliteral">&quot;hot reload success!&quot;</span>);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            }</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <span class="keywordflow">if</span> (InputHelperMono.WasPressedTKey())</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            {</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                Debug.Log(<span class="stringliteral">&quot;T Key PressDown！&quot;</span>);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                C2M_TransferMap c2MTransferMap = <span class="keyword">new</span> C2M_TransferMap();</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                <span class="keyword">self</span>.ZoneScene().GetComponent&lt;SessionComponent&gt;().Session.Call(c2MTransferMap).Coroutine();</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            }</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        }</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    [FriendClass(typeof(OperaComponent))]</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span>OperaComponentSystem</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keyword">private</span> <span class="keyword">static</span> Ray ray;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> Update(<span class="keyword">this</span> OperaComponent <span class="keyword">self</span>)</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <span class="keywordflow">if</span> (InputHelperMono.GetTouchScreenPointToRay(ref ray))</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                RaycastHit hit;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                <span class="keywordflow">if</span> (Physics.Raycast(ray, out hit, 1000, <span class="keyword">self</span>.mapMask))</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                    <span class="keyword">self</span>.ClickPoint = hit.point;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                    <span class="keyword">self</span>.frameClickMap.X = <span class="keyword">self</span>.ClickPoint.x;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                    <span class="keyword">self</span>.frameClickMap.Y = <span class="keyword">self</span>.ClickPoint.y;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                    <span class="keyword">self</span>.frameClickMap.Z = <span class="keyword">self</span>.ClickPoint.z;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                    <span class="keyword">self</span>.ZoneScene().GetComponent&lt;SessionComponent&gt;().Session.Send(<span class="keyword">self</span>.frameClickMap);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <span class="keywordflow">if</span> (InputHelperMono.WasPressedRKey())</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                CodeLoader.Instance.LoadLogic();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                Game.EventSystem.Add(CodeLoader.Instance.GetTypes());</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                Game.EventSystem.Load();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                Log.Debug(<span class="stringliteral">&quot;hot reload success!&quot;</span>);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keywordflow">if</span> (InputHelperMono.WasPressedTKey())</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                Debug.Log(<span class="stringliteral">&quot;T Key PressDown！&quot;</span>);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                C2M_TransferMap c2MTransferMap = <span class="keyword">new</span> C2M_TransferMap();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                <span class="keyword">self</span>.ZoneScene().GetComponent&lt;SessionComponent&gt;().Session.Call(c2MTransferMap).Coroutine();</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
 <div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
 <div class="ttc" id="aclass_e_t_1_1_awake_system_html"><div class="ttname"><a href="class_e_t_1_1_awake_system.html">ET.AwakeSystem</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_awake_system_8cs_source.html#l00135">IAwakeSystem.cs:136</a></div></div>
 <div class="ttc" id="aclass_e_t_1_1_opera_component_awake_system_html"><div class="ttname"><a href="class_e_t_1_1_opera_component_awake_system.html">ET.OperaComponentAwakeSystem</a></div><div class="ttdef"><b>Definition:</b> <a href="_opera_component_system_8cs_source.html#l00007">OperaComponentSystem.cs:8</a></div></div>
@@ -160,7 +161,7 @@ $(document).ready(function(){initNavTree('_opera_component_system_8cs_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_0593c8c31e62684349ddf63300956e7f.html">Codes</a></li><li class="navelem"><a class="el" href="dir_e64153545e168a22cb927133a94d943b.html">HotfixView</a></li><li class="navelem"><a class="el" href="dir_e7bd51a47f5bd8183956a80b432130f4.html">Demo</a></li><li class="navelem"><a class="el" href="dir_82feb713bdc43dfb19638f9943e3cf28.html">Opera</a></li><li class="navelem"><a class="el" href="_opera_component_system_8cs.html">OperaComponentSystem.cs</a></li>
-    <li class="footer">生成于 2022年 四月 16日 星期六 03:26:44 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">生成于 2022年 四月 21日 星期四 07:49:36 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

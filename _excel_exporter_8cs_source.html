@@ -643,75 +643,80 @@ $(document).ready(function(){initNavTree('_excel_exporter_8cs_source.html',''); 
 <div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>                <span class="keywordflow">case</span> <span class="stringliteral">&quot;int[]&quot;</span>:</div>
 <div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>                <span class="keywordflow">case</span> <span class="stringliteral">&quot;int32[]&quot;</span>:</div>
 <div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>                <span class="keywordflow">case</span> <span class="stringliteral">&quot;long[]&quot;</span>:</div>
-<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>                    <span class="keywordflow">return</span> $<span class="stringliteral">&quot;[{value}]&quot;</span>;</div>
-<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>                <span class="keywordflow">case</span> <span class="stringliteral">&quot;string[]&quot;</span>:</div>
-<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>                <span class="keywordflow">case</span> <span class="stringliteral">&quot;int[][]&quot;</span>:</div>
-<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>                    <span class="keywordflow">return</span> $<span class="stringliteral">&quot;[{value}]&quot;</span>;</div>
-<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>                <span class="keywordflow">case</span> <span class="stringliteral">&quot;int&quot;</span>:</div>
-<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>                <span class="keywordflow">case</span> <span class="stringliteral">&quot;uint&quot;</span>:</div>
-<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>                <span class="keywordflow">case</span> <span class="stringliteral">&quot;int32&quot;</span>:</div>
-<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>                <span class="keywordflow">case</span> <span class="stringliteral">&quot;int64&quot;</span>:</div>
-<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>                <span class="keywordflow">case</span> <span class="stringliteral">&quot;long&quot;</span>:</div>
-<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>                <span class="keywordflow">case</span> <span class="stringliteral">&quot;float&quot;</span>:</div>
-<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>                <span class="keywordflow">case</span> <span class="stringliteral">&quot;double&quot;</span>:</div>
-<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>                    <span class="keywordflow">if</span> (value == <span class="stringliteral">&quot;&quot;</span>)</div>
-<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>                    {</div>
-<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>                        <span class="keywordflow">return</span> <span class="stringliteral">&quot;0&quot;</span>;</div>
-<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>                    }</div>
-<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span> </div>
-<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>                    <span class="keywordflow">return</span> value;</div>
-<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>                <span class="keywordflow">case</span> <span class="stringliteral">&quot;string&quot;</span>:</div>
-<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>                    <span class="keywordflow">return</span> $<span class="stringliteral">&quot;\&quot;{value}\&quot;&quot;</span>;</div>
-<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>                <span class="keywordflow">case</span> <span class="stringliteral">&quot;AttrConfig&quot;</span>:</div>
-<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>                    <span class="keywordtype">string</span>[] ss = value.Split(<span class="charliteral">&#39;:&#39;</span>);</div>
-<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>                    <span class="keywordflow">return</span> <span class="stringliteral">&quot;{\&quot;_t\&quot;:\&quot;AttrConfig\&quot;,&quot;</span> + <span class="stringliteral">&quot;\&quot;Ks\&quot;:&quot;</span> + ss[0] + <span class="stringliteral">&quot;,\&quot;Vs\&quot;:&quot;</span> + ss[1] + <span class="stringliteral">&quot;}&quot;</span>;</div>
-<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>                <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception($<span class="stringliteral">&quot;不支持此类型: {type}&quot;</span>);</div>
-<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>            }</div>
-<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>        }</div>
-<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span> </div>
-<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span><span class="preprocessor">        #endregion</span></div>
-<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span> </div>
-<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span> </div>
-<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>        <span class="comment">// 根据生成的类，把json转成protobuf</span></div>
-<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>        <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">void</span> ExportExcelProtobuf(<a class="code hl_enumeration" href="namespace_e_t.html#a998904d546bf4d60e243f2b8c9bf1239">ConfigType</a> configType, <span class="keywordtype">string</span> protoName, <span class="keywordtype">string</span> relativeDir)</div>
-<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>        {</div>
-<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>            <span class="keywordtype">string</span> dir = GetProtoDir(configType, relativeDir);</div>
-<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>            <span class="keywordflow">if</span> (!Directory.Exists(dir))</div>
-<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>            {</div>
-<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>                Directory.CreateDirectory(dir);</div>
-<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>            }</div>
-<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span> </div>
-<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>            <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a07e14046345a55289df7d86530739aadad75c45e11c8aeb13494dba59a388a164">Assembly</a> ass = GetAssembly(configType);</div>
-<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>            <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#ae7671ef7df96a23c9f8cbf77d72f04b1aa1fa27779242b4902f7ae3bdd5c6d508">Type</a> type = ass.GetType($<span class="stringliteral">&quot;ET.{protoName}Category&quot;</span>);</div>
-<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>            <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#ae7671ef7df96a23c9f8cbf77d72f04b1aa1fa27779242b4902f7ae3bdd5c6d508">Type</a> subType = ass.GetType($<span class="stringliteral">&quot;ET.{protoName}&quot;</span>);</div>
-<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span> </div>
-<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>            Serializer.NonGeneric.PrepareSerializer(type);</div>
-<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>            Serializer.NonGeneric.PrepareSerializer(subType);</div>
-<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span> </div>
-<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>            IMerge <span class="keyword">final</span> = Activator.CreateInstance(type) as IMerge;</div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>                    {</div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>                        value = value.Replace(<span class="stringliteral">&quot;{&quot;</span>, <span class="stringliteral">&quot;&quot;</span>).Replace(<span class="stringliteral">&quot;}&quot;</span>, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>                        <span class="keywordflow">return</span> $<span class="stringliteral">&quot;[{value}]&quot;</span>;</div>
+<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>                    }</div>
+<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>                <span class="keywordflow">case</span> <span class="stringliteral">&quot;string[]&quot;</span>:</div>
+<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>                <span class="keywordflow">case</span> <span class="stringliteral">&quot;int[][]&quot;</span>:</div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>                    <span class="keywordflow">return</span> $<span class="stringliteral">&quot;[{value}]&quot;</span>;</div>
+<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>                <span class="keywordflow">case</span> <span class="stringliteral">&quot;int&quot;</span>:</div>
+<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>                <span class="keywordflow">case</span> <span class="stringliteral">&quot;uint&quot;</span>:</div>
+<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>                <span class="keywordflow">case</span> <span class="stringliteral">&quot;int32&quot;</span>:</div>
+<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>                <span class="keywordflow">case</span> <span class="stringliteral">&quot;int64&quot;</span>:</div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>                <span class="keywordflow">case</span> <span class="stringliteral">&quot;long&quot;</span>:</div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>                <span class="keywordflow">case</span> <span class="stringliteral">&quot;float&quot;</span>:</div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>                <span class="keywordflow">case</span> <span class="stringliteral">&quot;double&quot;</span>:</div>
+<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>                    {</div>
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>                        value = value.Replace(<span class="stringliteral">&quot;{&quot;</span>, <span class="stringliteral">&quot;&quot;</span>).Replace(<span class="stringliteral">&quot;}&quot;</span>, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>                        <span class="keywordflow">if</span> (value == <span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>                        {</div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>                            <span class="keywordflow">return</span> <span class="stringliteral">&quot;0&quot;</span>;</div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>                        }</div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>                        <span class="keywordflow">return</span> value;</div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>                    }</div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>                <span class="keywordflow">case</span> <span class="stringliteral">&quot;string&quot;</span>:</div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>                    <span class="keywordflow">return</span> $<span class="stringliteral">&quot;\&quot;{value}\&quot;&quot;</span>;</div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>                <span class="keywordflow">case</span> <span class="stringliteral">&quot;AttrConfig&quot;</span>:</div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>                    <span class="keywordtype">string</span>[] ss = value.Split(<span class="charliteral">&#39;:&#39;</span>);</div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>                    <span class="keywordflow">return</span> <span class="stringliteral">&quot;{\&quot;_t\&quot;:\&quot;AttrConfig\&quot;,&quot;</span> + <span class="stringliteral">&quot;\&quot;Ks\&quot;:&quot;</span> + ss[0] + <span class="stringliteral">&quot;,\&quot;Vs\&quot;:&quot;</span> + ss[1] + <span class="stringliteral">&quot;}&quot;</span>;</div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>                <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception($<span class="stringliteral">&quot;不支持此类型: {type}&quot;</span>);</div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>            }</div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>        }</div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span> </div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span><span class="preprocessor">        #endregion</span></div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span> </div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span> </div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>        <span class="comment">// 根据生成的类，把json转成protobuf</span></div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>        <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">void</span> ExportExcelProtobuf(<a class="code hl_enumeration" href="namespace_e_t.html#a998904d546bf4d60e243f2b8c9bf1239">ConfigType</a> configType, <span class="keywordtype">string</span> protoName, <span class="keywordtype">string</span> relativeDir)</div>
+<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>        {</div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>            <span class="keywordtype">string</span> dir = GetProtoDir(configType, relativeDir);</div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>            <span class="keywordflow">if</span> (!Directory.Exists(dir))</div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>            {</div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>                Directory.CreateDirectory(dir);</div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>            }</div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span> </div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>            <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a07e14046345a55289df7d86530739aadad75c45e11c8aeb13494dba59a388a164">Assembly</a> ass = GetAssembly(configType);</div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>            <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#ae7671ef7df96a23c9f8cbf77d72f04b1aa1fa27779242b4902f7ae3bdd5c6d508">Type</a> type = ass.GetType($<span class="stringliteral">&quot;ET.{protoName}Category&quot;</span>);</div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>            <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#ae7671ef7df96a23c9f8cbf77d72f04b1aa1fa27779242b4902f7ae3bdd5c6d508">Type</a> subType = ass.GetType($<span class="stringliteral">&quot;ET.{protoName}&quot;</span>);</div>
 <div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span> </div>
-<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>            <span class="keywordtype">string</span> p = <a class="code hl_typedef" href="_process_helper_8cs.html#a5d3f395d3257bcd58335037355f0d7cc">Path</a>.Combine(<span class="keywordtype">string</span>.Format(jsonDir, configType, relativeDir));</div>
-<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>            <span class="keywordtype">string</span>[] ss = Directory.GetFiles(p, $<span class="stringliteral">&quot;{protoName}_*.txt&quot;</span>);</div>
-<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>            List&lt;string&gt; jsonPaths = ss.ToList();</div>
-<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>            jsonPaths.Add(<a class="code hl_typedef" href="_process_helper_8cs.html#a5d3f395d3257bcd58335037355f0d7cc">Path</a>.Combine(<span class="keywordtype">string</span>.Format(jsonDir, configType, relativeDir), $<span class="stringliteral">&quot;{protoName}.txt&quot;</span>));</div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>            Serializer.NonGeneric.PrepareSerializer(type);</div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>            Serializer.NonGeneric.PrepareSerializer(subType);</div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span> </div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>            IMerge <span class="keyword">final</span> = Activator.CreateInstance(type) as IMerge;</div>
 <div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span> </div>
-<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>            jsonPaths.Sort();</div>
-<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>            jsonPaths.Reverse();</div>
-<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>            <span class="keywordflow">foreach</span> (<span class="keywordtype">string</span> jsonPath <span class="keywordflow">in</span> jsonPaths)</div>
-<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>            {</div>
-<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>                <span class="keywordtype">string</span> json = <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a07e14046345a55289df7d86530739aada0b27918290ff5323bea1e3b78a9cf04e">File</a>.ReadAllText(jsonPath);</div>
-<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>                <span class="keywordtype">object</span> deserialize = BsonSerializer.Deserialize(json, type);</div>
-<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>                <span class="keyword">final</span>.Merge(deserialize);</div>
-<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>            }</div>
-<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span> </div>
-<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>            <span class="keywordtype">string</span> path = <a class="code hl_typedef" href="_process_helper_8cs.html#a5d3f395d3257bcd58335037355f0d7cc">Path</a>.Combine(dir, $<span class="stringliteral">&quot;{protoName}Category.bytes&quot;</span>);</div>
-<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span> </div>
-<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>            <span class="keyword">using</span> FileStream file = <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a07e14046345a55289df7d86530739aada0b27918290ff5323bea1e3b78a9cf04e">File</a>.Create(path);</div>
-<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>            Serializer.Serialize(file, <span class="keyword">final</span>);</div>
-<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>        }</div>
-<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>    }</div>
-<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>}</div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>            <span class="keywordtype">string</span> p = <a class="code hl_typedef" href="_process_helper_8cs.html#a5d3f395d3257bcd58335037355f0d7cc">Path</a>.Combine(<span class="keywordtype">string</span>.Format(jsonDir, configType, relativeDir));</div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>            <span class="keywordtype">string</span>[] ss = Directory.GetFiles(p, $<span class="stringliteral">&quot;{protoName}_*.txt&quot;</span>);</div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>            List&lt;string&gt; jsonPaths = ss.ToList();</div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>            jsonPaths.Add(<a class="code hl_typedef" href="_process_helper_8cs.html#a5d3f395d3257bcd58335037355f0d7cc">Path</a>.Combine(<span class="keywordtype">string</span>.Format(jsonDir, configType, relativeDir), $<span class="stringliteral">&quot;{protoName}.txt&quot;</span>));</div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span> </div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>            jsonPaths.Sort();</div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>            jsonPaths.Reverse();</div>
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>            <span class="keywordflow">foreach</span> (<span class="keywordtype">string</span> jsonPath <span class="keywordflow">in</span> jsonPaths)</div>
+<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>            {</div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>                <span class="keywordtype">string</span> json = <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a07e14046345a55289df7d86530739aada0b27918290ff5323bea1e3b78a9cf04e">File</a>.ReadAllText(jsonPath);</div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>                <span class="keywordtype">object</span> deserialize = BsonSerializer.Deserialize(json, type);</div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>                <span class="keyword">final</span>.Merge(deserialize);</div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>            }</div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span> </div>
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>            <span class="keywordtype">string</span> path = <a class="code hl_typedef" href="_process_helper_8cs.html#a5d3f395d3257bcd58335037355f0d7cc">Path</a>.Combine(dir, $<span class="stringliteral">&quot;{protoName}Category.bytes&quot;</span>);</div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span> </div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>            <span class="keyword">using</span> FileStream file = <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a07e14046345a55289df7d86530739aada0b27918290ff5323bea1e3b78a9cf04e">File</a>.Create(path);</div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>            Serializer.Serialize(file, <span class="keyword">final</span>);</div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>        }</div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>    }</div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>}</div>
 <div class="ttc" id="a_excel_exporter_8cs_html_ae42502766fcaf84ccdc7e937dbd0cd8f"><div class="ttname"><a href="_excel_exporter_8cs.html#ae42502766fcaf84ccdc7e937dbd0cd8f">LicenseContext</a></div><div class="ttdeci">OfficeOpenXml.LicenseContext LicenseContext</div><div class="ttdef"><b>Definition:</b> <a href="_excel_exporter_8cs_source.html#l00014">ExcelExporter.cs:14</a></div></div>
 <div class="ttc" id="a_i_async_state_machine_adaptor_8cs_html_a005712ac87927f1c9f5a95d35c4bc855"><div class="ttname"><a href="_i_async_state_machine_adaptor_8cs.html#a005712ac87927f1c9f5a95d35c4bc855">AppDomain</a></div><div class="ttdeci">ILRuntime.Runtime.Enviorment.AppDomain AppDomain</div><div class="ttdef"><b>Definition:</b> <a href="_i_async_state_machine_adaptor_8cs_source.html#l00006">IAsyncStateMachineAdaptor.cs:6</a></div></div>
 <div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
@@ -752,7 +757,7 @@ $(document).ready(function(){initNavTree('_excel_exporter_8cs_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_7e461070e7b716e896e0d97cd6a82321.html">Tools</a></li><li class="navelem"><a class="el" href="dir_6aadbe95ffdc5563d1acdbecad5561b9.html">App</a></li><li class="navelem"><a class="el" href="dir_d5496edf32ef3fc9c03ed2df2c9ced08.html">Apps</a></li><li class="navelem"><a class="el" href="dir_88072aab48bc4c388d98dbfc98cfb590.html">ExcelExporter</a></li><li class="navelem"><a class="el" href="_excel_exporter_8cs.html">ExcelExporter.cs</a></li>
-    <li class="footer">生成于 2022年 四月 16日 星期六 03:26:36 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">生成于 2022年 四月 21日 星期四 07:49:29 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
