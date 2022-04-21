@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: Unity/Assets/ThirdParty/StompyRobot/SRDebugger/Scripts/Services/IProfilerService.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_i_profiler_service_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">IProfilerService.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_i_profiler_service_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_s_r_debugger_1_1_services.html">SRDebugger.Services</a></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>{</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    <span class="keyword">using</span> <a class="code hl_variable" href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a>;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    <span class="keyword">using</span> <a class="code hl_enumvalue" href="namespace_s_r_debugger.html#ab0bfefe002d183864a55192041feba9fa65b4c7424dd695c30efa73da8396c90c">Profiler</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="keyword">using</span> <a class="code hl_namespace" href="namespace_s_r_f.html">SRF</a>.<a class="code hl_namespace" href="namespace_s_r_f_1_1_service.html">Service</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#if UNITY_2018_1_OR_NEWER</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keyword">using</span> <a class="code hl_namespace" href="namespace_unity_engine.html">UnityEngine</a>.Rendering;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">using</span> <a class="code hl_namespace" href="namespace_unity_engine.html">UnityEngine</a>.Experimental.Rendering;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class </span>ProfilerServiceSelector</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        [ServiceSelector(typeof(IProfilerService))]</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#ae7671ef7df96a23c9f8cbf77d72f04b1aa1fa27779242b4902f7ae3bdd5c6d508">Type</a> GetProfilerServiceType()</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#if UNITY_2018_1_OR_NEWER</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            <span class="keywordflow">if</span>(GraphicsSettings.renderPipelineAsset != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                <span class="keywordflow">return</span> typeof(SRPProfilerService);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            }</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <span class="keywordflow">return</span> typeof(ProfilerServiceImpl);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        }</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    }</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="struct_s_r_debugger_1_1_services_1_1_profiler_frame.html">   28</a></span>    <span class="keyword">public</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct_s_r_debugger_1_1_services_1_1_profiler_frame.html">ProfilerFrame</a></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="struct_s_r_debugger_1_1_services_1_1_profiler_frame.html#a92b204ff93b61757f1b888755192abc4">   30</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="struct_s_r_debugger_1_1_services_1_1_profiler_frame.html#a92b204ff93b61757f1b888755192abc4">FrameTime</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="struct_s_r_debugger_1_1_services_1_1_profiler_frame.html#ae5d48df4f59707a25a8ebd8c6af68f99">   31</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="struct_s_r_debugger_1_1_services_1_1_profiler_frame.html#ae5d48df4f59707a25a8ebd8c6af68f99">OtherTime</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="struct_s_r_debugger_1_1_services_1_1_profiler_frame.html#a4f167ce33e7b59686e12f7fad06238f2">   32</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="struct_s_r_debugger_1_1_services_1_1_profiler_frame.html#a4f167ce33e7b59686e12f7fad06238f2">RenderTime</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="struct_s_r_debugger_1_1_services_1_1_profiler_frame.html#a3f2aeb07bb572d3ff22648bce27b7a45">   33</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="struct_s_r_debugger_1_1_services_1_1_profiler_frame.html#a3f2aeb07bb572d3ff22648bce27b7a45">UpdateTime</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="interface_s_r_debugger_1_1_services_1_1_i_profiler_service.html">   36</a></span>    <span class="keyword">public</span> <span class="keyword">interface </span><a class="code hl_interface" href="interface_s_r_debugger_1_1_services_1_1_i_profiler_service.html">IProfilerService</a></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="interface_s_r_debugger_1_1_services_1_1_i_profiler_service.html#a0a29c552d2ff64632eb1c25b9b52a693">   38</a></span>        <span class="keywordtype">float</span> <a class="code hl_property" href="interface_s_r_debugger_1_1_services_1_1_i_profiler_service.html#a0a29c552d2ff64632eb1c25b9b52a693">AverageFrameTime</a> { <span class="keyword">get</span>; }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="interface_s_r_debugger_1_1_services_1_1_i_profiler_service.html#a35328ed672639185b7da667b3b59e60e">   39</a></span>        <span class="keywordtype">float</span> <a class="code hl_property" href="interface_s_r_debugger_1_1_services_1_1_i_profiler_service.html#a35328ed672639185b7da667b3b59e60e">LastFrameTime</a> { <span class="keyword">get</span>; }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="interface_s_r_debugger_1_1_services_1_1_i_profiler_service.html#a9d7d79de8064de2e9a0c3c260c0d1302">   40</a></span>        <a class="code hl_class" href="class_s_r_debugger_1_1_circular_buffer.html">CircularBuffer&lt;ProfilerFrame&gt;</a> <a class="code hl_property" href="interface_s_r_debugger_1_1_services_1_1_i_profiler_service.html#a9d7d79de8064de2e9a0c3c260c0d1302">FrameBuffer</a> { <span class="keyword">get</span>; }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}</div>
+<div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_circular_buffer_html"><div class="ttname"><a href="class_s_r_debugger_1_1_circular_buffer.html">SRDebugger.CircularBuffer</a></div><div class="ttdoc">Circular buffer. When writting to a full buffer: PushBack -&gt; removes this[0] / Front() PushFront -&gt; r...</div><div class="ttdef"><b>Definition:</b> <a href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00034">CircularBuffer.cs:35</a></div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_services_1_1_i_profiler_service_html"><div class="ttname"><a href="interface_s_r_debugger_1_1_services_1_1_i_profiler_service.html">SRDebugger.Services.IProfilerService</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_profiler_service_8cs_source.html#l00036">IProfilerService.cs:37</a></div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_services_1_1_i_profiler_service_html_a0a29c552d2ff64632eb1c25b9b52a693"><div class="ttname"><a href="interface_s_r_debugger_1_1_services_1_1_i_profiler_service.html#a0a29c552d2ff64632eb1c25b9b52a693">SRDebugger.Services.IProfilerService.AverageFrameTime</a></div><div class="ttdeci">float AverageFrameTime</div><div class="ttdef"><b>Definition:</b> <a href="_i_profiler_service_8cs_source.html#l00038">IProfilerService.cs:38</a></div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_services_1_1_i_profiler_service_html_a35328ed672639185b7da667b3b59e60e"><div class="ttname"><a href="interface_s_r_debugger_1_1_services_1_1_i_profiler_service.html#a35328ed672639185b7da667b3b59e60e">SRDebugger.Services.IProfilerService.LastFrameTime</a></div><div class="ttdeci">float LastFrameTime</div><div class="ttdef"><b>Definition:</b> <a href="_i_profiler_service_8cs_source.html#l00039">IProfilerService.cs:39</a></div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_services_1_1_i_profiler_service_html_a9d7d79de8064de2e9a0c3c260c0d1302"><div class="ttname"><a href="interface_s_r_debugger_1_1_services_1_1_i_profiler_service.html#a9d7d79de8064de2e9a0c3c260c0d1302">SRDebugger.Services.IProfilerService.FrameBuffer</a></div><div class="ttdeci">CircularBuffer&lt; ProfilerFrame &gt; FrameBuffer</div><div class="ttdef"><b>Definition:</b> <a href="_i_profiler_service_8cs_source.html#l00040">IProfilerService.cs:40</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_html_ae7671ef7df96a23c9f8cbf77d72f04b1aa1fa27779242b4902f7ae3bdd5c6d508"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#ae7671ef7df96a23c9f8cbf77d72f04b1aa1fa27779242b4902f7ae3bdd5c6d508">ILRuntime.Mono.Cecil.Metadata.ElementType.Type</a></div><div class="ttdeci">@ Type</div></div>
+<div class="ttc" id="anamespace_s_r_debugger_1_1_services_html"><div class="ttname"><a href="namespace_s_r_debugger_1_1_services.html">SRDebugger.Services</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_bug_report_service_8cs_source.html#l00001">IBugReportService.cs:2</a></div></div>
+<div class="ttc" id="anamespace_s_r_debugger_html_ab0bfefe002d183864a55192041feba9fa65b4c7424dd695c30efa73da8396c90c"><div class="ttname"><a href="namespace_s_r_debugger.html#ab0bfefe002d183864a55192041feba9fa65b4c7424dd695c30efa73da8396c90c">SRDebugger.DefaultTabs.Profiler</a></div><div class="ttdeci">@ Profiler</div></div>
+<div class="ttc" id="anamespace_s_r_f_1_1_service_html"><div class="ttname"><a href="namespace_s_r_f_1_1_service.html">SRF.Service</a></div><div class="ttdef"><b>Definition:</b> <a href="_attributes_8cs_source.html#l00003">Attributes.cs:4</a></div></div>
+<div class="ttc" id="anamespace_s_r_f_html"><div class="ttname"><a href="namespace_s_r_f.html">SRF</a></div><div class="ttdef"><b>Definition:</b> <a href="_mini_j_s_o_n_8cs_source.html#l00032">MiniJSON.cs:33</a></div></div>
+<div class="ttc" id="anamespace_unity_engine_html"><div class="ttname"><a href="namespace_unity_engine.html">UnityEngine</a></div><div class="ttdef"><b>Definition:</b> <a href="_mathf_8cs_source.html#l00003">Mathf.cs:4</a></div></div>
+<div class="ttc" id="astruct_s_r_debugger_1_1_services_1_1_profiler_frame_html"><div class="ttname"><a href="struct_s_r_debugger_1_1_services_1_1_profiler_frame.html">SRDebugger.Services.ProfilerFrame</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_profiler_service_8cs_source.html#l00028">IProfilerService.cs:29</a></div></div>
+<div class="ttc" id="astruct_s_r_debugger_1_1_services_1_1_profiler_frame_html_a3f2aeb07bb572d3ff22648bce27b7a45"><div class="ttname"><a href="struct_s_r_debugger_1_1_services_1_1_profiler_frame.html#a3f2aeb07bb572d3ff22648bce27b7a45">SRDebugger.Services.ProfilerFrame.UpdateTime</a></div><div class="ttdeci">double UpdateTime</div><div class="ttdef"><b>Definition:</b> <a href="_i_profiler_service_8cs_source.html#l00033">IProfilerService.cs:33</a></div></div>
+<div class="ttc" id="astruct_s_r_debugger_1_1_services_1_1_profiler_frame_html_a4f167ce33e7b59686e12f7fad06238f2"><div class="ttname"><a href="struct_s_r_debugger_1_1_services_1_1_profiler_frame.html#a4f167ce33e7b59686e12f7fad06238f2">SRDebugger.Services.ProfilerFrame.RenderTime</a></div><div class="ttdeci">double RenderTime</div><div class="ttdef"><b>Definition:</b> <a href="_i_profiler_service_8cs_source.html#l00032">IProfilerService.cs:32</a></div></div>
+<div class="ttc" id="astruct_s_r_debugger_1_1_services_1_1_profiler_frame_html_a92b204ff93b61757f1b888755192abc4"><div class="ttname"><a href="struct_s_r_debugger_1_1_services_1_1_profiler_frame.html#a92b204ff93b61757f1b888755192abc4">SRDebugger.Services.ProfilerFrame.FrameTime</a></div><div class="ttdeci">double FrameTime</div><div class="ttdef"><b>Definition:</b> <a href="_i_profiler_service_8cs_source.html#l00030">IProfilerService.cs:30</a></div></div>
+<div class="ttc" id="astruct_s_r_debugger_1_1_services_1_1_profiler_frame_html_ae5d48df4f59707a25a8ebd8c6af68f99"><div class="ttname"><a href="struct_s_r_debugger_1_1_services_1_1_profiler_frame.html#ae5d48df4f59707a25a8ebd8c6af68f99">SRDebugger.Services.ProfilerFrame.OtherTime</a></div><div class="ttdeci">double OtherTime</div><div class="ttdef"><b>Definition:</b> <a href="_i_profiler_service_8cs_source.html#l00031">IProfilerService.cs:31</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_3b33dffaa21a2ac6f7978a949ffd4e41.html">Assets</a></li><li class="navelem"><a class="el" href="dir_5501c55c26a8d51fbc1fd8b7d8df04c3.html">ThirdParty</a></li><li class="navelem"><a class="el" href="dir_0f5df078a02ed03b6776122c2b87cb60.html">StompyRobot</a></li><li class="navelem"><a class="el" href="dir_94017e9a8ea42ed0c35aefd43f85b68b.html">SRDebugger</a></li><li class="navelem"><a class="el" href="dir_7a8f801e87ec51abc5da4d4cde89dc5d.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_11732da70f6b7ca00416c1d145838732.html">Services</a></li><li class="navelem"><a class="el" href="_i_profiler_service_8cs.html">IProfilerService.cs</a></li>
+    <li class="footer">生成于 2022年 四月 21日 星期四 10:43:01 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

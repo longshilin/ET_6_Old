@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: Unity/Assets/ThirdParty/StompyRobot/SRF/Scripts/UI/SRNumberSpinner.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_s_r_number_spinner_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">SRNumberSpinner.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_s_r_number_spinner_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_s_r_f_1_1_u_i.html">SRF.UI</a></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>{</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>    <span class="keyword">using</span> <a class="code hl_variable" href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    <span class="keyword">using</span> <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#ae7671ef7df96a23c9f8cbf77d72f04b1aafbf0897a5a83fdd873dfb032ec695d3">Internal</a>;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    <span class="keyword">using</span> <a class="code hl_namespace" href="namespace_unity_engine.html">UnityEngine</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="keyword">using</span> <a class="code hl_namespace" href="namespace_unity_engine.html">UnityEngine</a>.EventSystems;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keyword">using</span> <a class="code hl_namespace" href="namespace_unity_engine.html">UnityEngine</a>.<a class="code hl_namespace" href="namespace_unity_engine_1_1_u_i.html">UI</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    [AddComponentMenu(ComponentMenuPaths.NumberSpinner)]</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html">   10</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html">SRNumberSpinner</a> : InputField</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keyword">private</span> <span class="keywordtype">double</span> _currentValue;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keyword">private</span> <span class="keywordtype">double</span> _dragStartAmount;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keyword">private</span> <span class="keywordtype">double</span> _dragStep;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#aa565b235ad800aa7f355408523cf3284">   15</a></span>        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#aa565b235ad800aa7f355408523cf3284">DragSensitivity</a> = 0.01f;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#abbfc561623f8753bd183b1d7ddfdfbf4">   16</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#abbfc561623f8753bd183b1d7ddfdfbf4">MaxValue</a> = <span class="keywordtype">double</span>.MaxValue;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#a651f7edce4e9ba255c509e2a23cfcc7b">   17</a></span>        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#a651f7edce4e9ba255c509e2a23cfcc7b">MinValue</a> = <span class="keywordtype">double</span>.MinValue;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#a91e29515648404718b4d8f69a7f2759c">   19</a></span>        <span class="keyword">protected</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#a91e29515648404718b4d8f69a7f2759c">Awake</a>()</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            base.Awake();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <span class="keywordflow">if</span> (contentType != ContentType.IntegerNumber &amp;&amp; contentType != ContentType.DecimalNumber)</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                <a class="code hl_typedef" href="namespace_s_r_f_1_1_components.html#a6348be36dc001e60722e740235ae6713">Debug</a>.LogError(<span class="stringliteral">&quot;[SRNumberSpinner] contentType must be integer or decimal. Defaulting to integer&quot;</span>);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                contentType = ContentType.DecimalNumber;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            }</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        }</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#a3387c6cd2914ac47ef8f901204e1324c">   30</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#a3387c6cd2914ac47ef8f901204e1324c">OnPointerClick</a>(PointerEventData eventData)</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <span class="comment">//Debug.Log(&quot;OnPointerClick (isFocused: {0}, isUsed: {1}, isDragging: {2})&quot;.Fmt(isFocused, eventData.used, eventData.dragging));</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <span class="keywordflow">if</span> (!interactable)</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <span class="keywordflow">if</span> (eventData.dragging)</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            EventSystem.current.SetSelectedGameObject(gameObject, eventData);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            base.OnPointerClick(eventData);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <span class="keywordflow">if</span> ((m_Keyboard == <span class="keyword">null</span> || !m_Keyboard.active))</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                OnSelect(eventData);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                UpdateLabel();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                eventData.Use();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#a9c02ac59429a17e361f4d4c92a4c6d88">   59</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#a9c02ac59429a17e361f4d4c92a4c6d88">OnPointerDown</a>(PointerEventData eventData)</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="comment">//Debug.Log(&quot;OnPointerDown (isFocused: {0}, isUsed: {1})&quot;.Fmt(isFocused, eventData.used));</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="comment">//base.OnPointerDown(eventData);</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#a943739721f5bcde780f894eabee951cf">   66</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#a943739721f5bcde780f894eabee951cf">OnPointerUp</a>(PointerEventData eventData)</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <span class="comment">//Debug.Log(&quot;OnPointerUp (isFocused: {0}, isUsed: {1})&quot;.Fmt(isFocused, eventData.used));</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <span class="comment">//base.OnPointerUp(eventData);</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#a9a823777a7c4ef49597b740c76ff2ad5">   73</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#a9a823777a7c4ef49597b740c76ff2ad5">OnBeginDrag</a>(PointerEventData eventData)</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keywordflow">if</span> (!interactable)</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="comment">//Debug.Log(&quot;OnBeginDrag (isFocused: {0}, isUsed: {1}, delta: {2})&quot;.Fmt(isFocused, eventData.used, eventData.delta));</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <span class="comment">// Pass event to parent if it is a vertical drag</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            <span class="keywordflow">if</span> (Mathf.Abs(eventData.delta.y) &gt; Mathf.Abs(eventData.delta.x))</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            {</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                <span class="comment">//Debug.Log(&quot;Passing To Parent&quot;);</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                var parent = transform.parent;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                <span class="keywordflow">if</span> (parent != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                {</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                    eventData.pointerDrag = ExecuteEvents.GetEventHandler&lt;IBeginDragHandler&gt;(parent.gameObject);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                    <span class="keywordflow">if</span> (eventData.pointerDrag != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                    {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                        ExecuteEvents.Execute(eventData.pointerDrag, eventData, ExecuteEvents.beginDragHandler);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                    }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            eventData.Use();</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            _dragStartAmount = <span class="keywordtype">double</span>.Parse(text);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            _currentValue = _dragStartAmount;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            var minStep = 1f;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            <span class="comment">// Use a larger minimum step for integer numbers, since there are no fractional values</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            <span class="keywordflow">if</span> (contentType == ContentType.IntegerNumber)</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            {</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                minStep *= 10;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            }</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            _dragStep = Math.Max(minStep, _dragStartAmount*0.05f);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            <span class="keywordflow">if</span> (isFocused)</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            {</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                DeactivateInputField();</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            }</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        }</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#abe3a07ca11308ae76987a3af6bb38e70">  122</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#abe3a07ca11308ae76987a3af6bb38e70">OnDrag</a>(PointerEventData eventData)</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        {</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            <span class="keywordflow">if</span> (!interactable)</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            {</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            }</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            <span class="comment">//Debug.Log(&quot;OnDrag (isFocused: {0}, isUsed: {1})&quot;.Fmt(isFocused, eventData.used));</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            var diff = eventData.delta.x;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            _currentValue += Math.Abs(_dragStep)*diff*<a class="code hl_variable" href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#aa565b235ad800aa7f355408523cf3284">DragSensitivity</a>;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            _currentValue = Math.Round(_currentValue, 2);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            <span class="keywordflow">if</span> (_currentValue &gt; <a class="code hl_variable" href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#abbfc561623f8753bd183b1d7ddfdfbf4">MaxValue</a>)</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>            {</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                _currentValue = <a class="code hl_variable" href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#abbfc561623f8753bd183b1d7ddfdfbf4">MaxValue</a>;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            }</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>            <span class="keywordflow">if</span> (_currentValue &lt; <a class="code hl_variable" href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#a651f7edce4e9ba255c509e2a23cfcc7b">MinValue</a>)</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            {</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>                _currentValue = <a class="code hl_variable" href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#a651f7edce4e9ba255c509e2a23cfcc7b">MinValue</a>;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            }</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            <span class="keywordflow">if</span> (contentType == ContentType.IntegerNumber)</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            {</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>                text = ((int) Math.Round(_currentValue)).ToString();</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>            }</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>            {</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>                text = _currentValue.ToString();</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            }</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        }</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#a9764bc500cc6bfa8abbf10729e97f379">  156</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#a9764bc500cc6bfa8abbf10729e97f379">OnEndDrag</a>(PointerEventData eventData)</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        {</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>            <span class="keywordflow">if</span> (!interactable)</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            {</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            }</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            <span class="comment">//Debug.Log(&quot;OnEndDrag (isFocused: {0}, isUsed: {1})&quot;.Fmt(isFocused, eventData.used));</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>            <span class="comment">//base.OnEndDrag(eventData);</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>            eventData.Use();</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>            <span class="keywordflow">if</span> (_dragStartAmount != _currentValue)</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>            {</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>                DeactivateInputField();</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>                SendOnSubmit();</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>            }</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        }</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    }</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>}</div>
+<div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
+<div class="ttc" id="aclass_s_r_f_1_1_u_i_1_1_s_r_number_spinner_html"><div class="ttname"><a href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html">SRF.UI.SRNumberSpinner</a></div><div class="ttdef"><b>Definition:</b> <a href="_s_r_number_spinner_8cs_source.html#l00010">SRNumberSpinner.cs:11</a></div></div>
+<div class="ttc" id="aclass_s_r_f_1_1_u_i_1_1_s_r_number_spinner_html_a3387c6cd2914ac47ef8f901204e1324c"><div class="ttname"><a href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#a3387c6cd2914ac47ef8f901204e1324c">SRF.UI.SRNumberSpinner.OnPointerClick</a></div><div class="ttdeci">override void OnPointerClick(PointerEventData eventData)</div><div class="ttdef"><b>Definition:</b> <a href="_s_r_number_spinner_8cs_source.html#l00030">SRNumberSpinner.cs:30</a></div></div>
+<div class="ttc" id="aclass_s_r_f_1_1_u_i_1_1_s_r_number_spinner_html_a651f7edce4e9ba255c509e2a23cfcc7b"><div class="ttname"><a href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#a651f7edce4e9ba255c509e2a23cfcc7b">SRF.UI.SRNumberSpinner.MinValue</a></div><div class="ttdeci">double MinValue</div><div class="ttdef"><b>Definition:</b> <a href="_s_r_number_spinner_8cs_source.html#l00017">SRNumberSpinner.cs:17</a></div></div>
+<div class="ttc" id="aclass_s_r_f_1_1_u_i_1_1_s_r_number_spinner_html_a91e29515648404718b4d8f69a7f2759c"><div class="ttname"><a href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#a91e29515648404718b4d8f69a7f2759c">SRF.UI.SRNumberSpinner.Awake</a></div><div class="ttdeci">override void Awake()</div><div class="ttdef"><b>Definition:</b> <a href="_s_r_number_spinner_8cs_source.html#l00019">SRNumberSpinner.cs:19</a></div></div>
+<div class="ttc" id="aclass_s_r_f_1_1_u_i_1_1_s_r_number_spinner_html_a943739721f5bcde780f894eabee951cf"><div class="ttname"><a href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#a943739721f5bcde780f894eabee951cf">SRF.UI.SRNumberSpinner.OnPointerUp</a></div><div class="ttdeci">override void OnPointerUp(PointerEventData eventData)</div><div class="ttdef"><b>Definition:</b> <a href="_s_r_number_spinner_8cs_source.html#l00066">SRNumberSpinner.cs:66</a></div></div>
+<div class="ttc" id="aclass_s_r_f_1_1_u_i_1_1_s_r_number_spinner_html_a9764bc500cc6bfa8abbf10729e97f379"><div class="ttname"><a href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#a9764bc500cc6bfa8abbf10729e97f379">SRF.UI.SRNumberSpinner.OnEndDrag</a></div><div class="ttdeci">override void OnEndDrag(PointerEventData eventData)</div><div class="ttdef"><b>Definition:</b> <a href="_s_r_number_spinner_8cs_source.html#l00156">SRNumberSpinner.cs:156</a></div></div>
+<div class="ttc" id="aclass_s_r_f_1_1_u_i_1_1_s_r_number_spinner_html_a9a823777a7c4ef49597b740c76ff2ad5"><div class="ttname"><a href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#a9a823777a7c4ef49597b740c76ff2ad5">SRF.UI.SRNumberSpinner.OnBeginDrag</a></div><div class="ttdeci">override void OnBeginDrag(PointerEventData eventData)</div><div class="ttdef"><b>Definition:</b> <a href="_s_r_number_spinner_8cs_source.html#l00073">SRNumberSpinner.cs:73</a></div></div>
+<div class="ttc" id="aclass_s_r_f_1_1_u_i_1_1_s_r_number_spinner_html_a9c02ac59429a17e361f4d4c92a4c6d88"><div class="ttname"><a href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#a9c02ac59429a17e361f4d4c92a4c6d88">SRF.UI.SRNumberSpinner.OnPointerDown</a></div><div class="ttdeci">override void OnPointerDown(PointerEventData eventData)</div><div class="ttdef"><b>Definition:</b> <a href="_s_r_number_spinner_8cs_source.html#l00059">SRNumberSpinner.cs:59</a></div></div>
+<div class="ttc" id="aclass_s_r_f_1_1_u_i_1_1_s_r_number_spinner_html_aa565b235ad800aa7f355408523cf3284"><div class="ttname"><a href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#aa565b235ad800aa7f355408523cf3284">SRF.UI.SRNumberSpinner.DragSensitivity</a></div><div class="ttdeci">float DragSensitivity</div><div class="ttdef"><b>Definition:</b> <a href="_s_r_number_spinner_8cs_source.html#l00015">SRNumberSpinner.cs:15</a></div></div>
+<div class="ttc" id="aclass_s_r_f_1_1_u_i_1_1_s_r_number_spinner_html_abbfc561623f8753bd183b1d7ddfdfbf4"><div class="ttname"><a href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#abbfc561623f8753bd183b1d7ddfdfbf4">SRF.UI.SRNumberSpinner.MaxValue</a></div><div class="ttdeci">double MaxValue</div><div class="ttdef"><b>Definition:</b> <a href="_s_r_number_spinner_8cs_source.html#l00016">SRNumberSpinner.cs:16</a></div></div>
+<div class="ttc" id="aclass_s_r_f_1_1_u_i_1_1_s_r_number_spinner_html_abe3a07ca11308ae76987a3af6bb38e70"><div class="ttname"><a href="class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html#abe3a07ca11308ae76987a3af6bb38e70">SRF.UI.SRNumberSpinner.OnDrag</a></div><div class="ttdeci">override void OnDrag(PointerEventData eventData)</div><div class="ttdef"><b>Definition:</b> <a href="_s_r_number_spinner_8cs_source.html#l00122">SRNumberSpinner.cs:122</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_html_ae7671ef7df96a23c9f8cbf77d72f04b1aafbf0897a5a83fdd873dfb032ec695d3"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#ae7671ef7df96a23c9f8cbf77d72f04b1aafbf0897a5a83fdd873dfb032ec695d3">ILRuntime.Mono.Cecil.Metadata.ElementType.Internal</a></div><div class="ttdeci">@ Internal</div></div>
+<div class="ttc" id="anamespace_s_r_f_1_1_components_html_a6348be36dc001e60722e740235ae6713"><div class="ttname"><a href="namespace_s_r_f_1_1_components.html#a6348be36dc001e60722e740235ae6713">SRF.Components.Debug</a></div><div class="ttdeci">UnityEngine.Debug Debug</div><div class="ttdef"><b>Definition:</b> <a href="_s_r_auto_singleton_8cs_source.html#l00005">SRAutoSingleton.cs:5</a></div></div>
+<div class="ttc" id="anamespace_s_r_f_1_1_u_i_html"><div class="ttname"><a href="namespace_s_r_f_1_1_u_i.html">SRF.UI</a></div><div class="ttdef"><b>Definition:</b> <a href="_content_fit_text_8cs_source.html#l00001">ContentFitText.cs:2</a></div></div>
+<div class="ttc" id="anamespace_unity_engine_1_1_u_i_html"><div class="ttname"><a href="namespace_unity_engine_1_1_u_i.html">UnityEngine.UI</a></div><div class="ttdef"><b>Definition:</b> <a href="_loop_scroll_rect_default_controls1_8cs_source.html#l00004">LoopScrollRectDefaultControls1.cs:5</a></div></div>
+<div class="ttc" id="anamespace_unity_engine_html"><div class="ttname"><a href="namespace_unity_engine.html">UnityEngine</a></div><div class="ttdef"><b>Definition:</b> <a href="_mathf_8cs_source.html#l00003">Mathf.cs:4</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_3b33dffaa21a2ac6f7978a949ffd4e41.html">Assets</a></li><li class="navelem"><a class="el" href="dir_5501c55c26a8d51fbc1fd8b7d8df04c3.html">ThirdParty</a></li><li class="navelem"><a class="el" href="dir_0f5df078a02ed03b6776122c2b87cb60.html">StompyRobot</a></li><li class="navelem"><a class="el" href="dir_f2aabdcf9088c7d28b4e6e5b4fc8b0df.html">SRF</a></li><li class="navelem"><a class="el" href="dir_7cf0c85d58fe913f94ff1308054599e7.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_f5cafad11acf677a024ffb30ffb4c358.html">UI</a></li><li class="navelem"><a class="el" href="_s_r_number_spinner_8cs.html">SRNumberSpinner.cs</a></li>
+    <li class="footer">生成于 2022年 四月 21日 星期四 10:43:02 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

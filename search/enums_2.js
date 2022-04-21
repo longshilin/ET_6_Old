@@ -6,7 +6,9 @@ var searchData=
   ['codedindex_3',['CodedIndex',['../namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a30759c5cf911443fa06c4a4154c5afad',1,'ILRuntime::Mono::Cecil::Metadata']]],
   ['codemode_4',['CodeMode',['../namespace_e_t.html#a037427556d3d9113c2b39ac7545a2756',1,'ET']]],
   ['configtype_5',['ConfigType',['../namespace_e_t.html#a998904d546bf4d60e243f2b8c9bf1239',1,'ET']]],
-  ['customattributevaluetreatment_6',['CustomAttributeValueTreatment',['../namespace_i_l_runtime_1_1_mono_1_1_cecil.html#ab17417b2de06cfe3535b70d48b6e3208',1,'ILRuntime::Mono::Cecil']]],
-  ['customdebuginformationkind_7',['CustomDebugInformationKind',['../namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil.html#a2d1093d60386d0a6baf3cc663f9474ae',1,'ILRuntime::Mono::Cecil::Cil']]],
-  ['custommetadatatype_8',['CustomMetadataType',['../namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_pdb.html#aae75e33a357326849939bdc41e68f0c7',1,'ILRuntime::Mono::Cecil::Pdb']]]
+  ['consolealignment_6',['ConsoleAlignment',['../namespace_s_r_debugger.html#a909046960b19d305fe12ffa407912644',1,'SRDebugger']]],
+  ['copytoclipboardstates_7',['CopyToClipboardStates',['../class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a4d089a6cbfbb68bde472d52d6c0b532c',1,'SRDebugger::UI::Tabs::ConsoleTabController']]],
+  ['customattributevaluetreatment_8',['CustomAttributeValueTreatment',['../namespace_i_l_runtime_1_1_mono_1_1_cecil.html#ab17417b2de06cfe3535b70d48b6e3208',1,'ILRuntime::Mono::Cecil']]],
+  ['customdebuginformationkind_9',['CustomDebugInformationKind',['../namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil.html#a2d1093d60386d0a6baf3cc663f9474ae',1,'ILRuntime::Mono::Cecil::Cil']]],
+  ['custommetadatatype_10',['CustomMetadataType',['../namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_pdb.html#aae75e33a357326849939bdc41e68f0c7',1,'ILRuntime::Mono::Cecil::Pdb']]]
 ];

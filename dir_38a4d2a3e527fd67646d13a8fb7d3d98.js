@@ -1,6 +1,7 @@
 var dir_38a4d2a3e527fd67646d13a8fb7d3d98 =
 [
     [ "AI", "dir_a0f946960176e8f01a6982e5c35bf693.html", "dir_a0f946960176e8f01a6982e5c35bf693" ],
+    [ "AOI", "dir_61f739826bd159dc5549a3ceee788048.html", "dir_61f739826bd159dc5549a3ceee788048" ],
     [ "Helper", "dir_97ae793c09e71ea462732fb8ae590144.html", "dir_97ae793c09e71ea462732fb8ae590144" ],
     [ "Move", "dir_77e700e1451be98b8d75c3a735974be8.html", "dir_77e700e1451be98b8d75c3a735974be8" ],
     [ "RecastLoader", "dir_5f160fd027e908b34953a17e9726b161.html", "dir_5f160fd027e908b34953a17e9726b161" ],

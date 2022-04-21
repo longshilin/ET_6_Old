@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: Unity/Assets/ThirdParty/StompyRobot/SRDebugger/Scripts/Services/IDebugPanelService.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_i_debug_panel_service_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">IDebugPanelService.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_i_debug_panel_service_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_s_r_debugger_1_1_services.html">SRDebugger.Services</a></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>{</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>    <span class="keyword">using</span> <a class="code hl_variable" href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="interface_s_r_debugger_1_1_services_1_1_i_debug_panel_service.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">interface </span><a class="code hl_interface" href="interface_s_r_debugger_1_1_services_1_1_i_debug_panel_service.html">IDebugPanelService</a></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="interface_s_r_debugger_1_1_services_1_1_i_debug_panel_service.html#a948cbb7bcd5b0f23884b4dc0c99509d6">   10</a></span>        <span class="keywordtype">bool</span> <a class="code hl_property" href="interface_s_r_debugger_1_1_services_1_1_i_debug_panel_service.html#a948cbb7bcd5b0f23884b4dc0c99509d6">IsLoaded</a> { <span class="keyword">get</span>; }</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="interface_s_r_debugger_1_1_services_1_1_i_debug_panel_service.html#ae5f8bc0d05e5870d2a9fb7b8ef6956b6">   15</a></span>        <span class="keywordtype">bool</span> <a class="code hl_property" href="interface_s_r_debugger_1_1_services_1_1_i_debug_panel_service.html#ae5f8bc0d05e5870d2a9fb7b8ef6956b6">IsVisible</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="interface_s_r_debugger_1_1_services_1_1_i_debug_panel_service.html#afaa37997a605a300d53145e63a5c8f0b">   20</a></span>        <a class="code hl_enumeration" href="namespace_s_r_debugger.html#ab0bfefe002d183864a55192041feba9f">DefaultTabs</a>? <a class="code hl_property" href="interface_s_r_debugger_1_1_services_1_1_i_debug_panel_service.html#afaa37997a605a300d53145e63a5c8f0b">ActiveTab</a> { <span class="keyword">get</span>; }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="interface_s_r_debugger_1_1_services_1_1_i_debug_panel_service.html#ac1ed0b13c18607403f3762a7b72b77f5">   22</a></span>        <span class="keyword">event</span> Action&lt;IDebugPanelService, bool&gt; <a class="code hl_event" href="interface_s_r_debugger_1_1_services_1_1_i_debug_panel_service.html#ac1ed0b13c18607403f3762a7b72b77f5">VisibilityChanged</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="interface_s_r_debugger_1_1_services_1_1_i_debug_panel_service.html#aa8dc0a569b317ce9d58c6ac53cf7835e">   27</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="interface_s_r_debugger_1_1_services_1_1_i_debug_panel_service.html#aa8dc0a569b317ce9d58c6ac53cf7835e">Unload</a>();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="interface_s_r_debugger_1_1_services_1_1_i_debug_panel_service.html#a605e9c58f3202877813b31343e83f54b">   33</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="interface_s_r_debugger_1_1_services_1_1_i_debug_panel_service.html#a605e9c58f3202877813b31343e83f54b">OpenTab</a>(<a class="code hl_enumeration" href="namespace_s_r_debugger.html#ab0bfefe002d183864a55192041feba9f">DefaultTabs</a> tab);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
+<div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_services_1_1_i_debug_panel_service_html"><div class="ttname"><a href="interface_s_r_debugger_1_1_services_1_1_i_debug_panel_service.html">SRDebugger.Services.IDebugPanelService</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_debug_panel_service_8cs_source.html#l00005">IDebugPanelService.cs:6</a></div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_services_1_1_i_debug_panel_service_html_a605e9c58f3202877813b31343e83f54b"><div class="ttname"><a href="interface_s_r_debugger_1_1_services_1_1_i_debug_panel_service.html#a605e9c58f3202877813b31343e83f54b">SRDebugger.Services.IDebugPanelService.OpenTab</a></div><div class="ttdeci">void OpenTab(DefaultTabs tab)</div><div class="ttdoc">Open the given tab</div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_services_1_1_i_debug_panel_service_html_a948cbb7bcd5b0f23884b4dc0c99509d6"><div class="ttname"><a href="interface_s_r_debugger_1_1_services_1_1_i_debug_panel_service.html#a948cbb7bcd5b0f23884b4dc0c99509d6">SRDebugger.Services.IDebugPanelService.IsLoaded</a></div><div class="ttdeci">bool IsLoaded</div><div class="ttdoc">Is the debug panel currently loaded into the scene</div><div class="ttdef"><b>Definition:</b> <a href="_i_debug_panel_service_8cs_source.html#l00010">IDebugPanelService.cs:10</a></div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_services_1_1_i_debug_panel_service_html_aa8dc0a569b317ce9d58c6ac53cf7835e"><div class="ttname"><a href="interface_s_r_debugger_1_1_services_1_1_i_debug_panel_service.html#aa8dc0a569b317ce9d58c6ac53cf7835e">SRDebugger.Services.IDebugPanelService.Unload</a></div><div class="ttdeci">void Unload()</div><div class="ttdoc">Force the debug panel to unload from the scene</div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_services_1_1_i_debug_panel_service_html_ac1ed0b13c18607403f3762a7b72b77f5"><div class="ttname"><a href="interface_s_r_debugger_1_1_services_1_1_i_debug_panel_service.html#ac1ed0b13c18607403f3762a7b72b77f5">SRDebugger.Services.IDebugPanelService.VisibilityChanged</a></div><div class="ttdeci">Action&lt; IDebugPanelService, bool &gt; VisibilityChanged</div><div class="ttdef"><b>Definition:</b> <a href="_i_debug_panel_service_8cs_source.html#l00022">IDebugPanelService.cs:22</a></div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_services_1_1_i_debug_panel_service_html_ae5f8bc0d05e5870d2a9fb7b8ef6956b6"><div class="ttname"><a href="interface_s_r_debugger_1_1_services_1_1_i_debug_panel_service.html#ae5f8bc0d05e5870d2a9fb7b8ef6956b6">SRDebugger.Services.IDebugPanelService.IsVisible</a></div><div class="ttdeci">bool IsVisible</div><div class="ttdoc">Get or set whether the debug pane should be visible</div><div class="ttdef"><b>Definition:</b> <a href="_i_debug_panel_service_8cs_source.html#l00015">IDebugPanelService.cs:15</a></div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_services_1_1_i_debug_panel_service_html_afaa37997a605a300d53145e63a5c8f0b"><div class="ttname"><a href="interface_s_r_debugger_1_1_services_1_1_i_debug_panel_service.html#afaa37997a605a300d53145e63a5c8f0b">SRDebugger.Services.IDebugPanelService.ActiveTab</a></div><div class="ttdeci">DefaultTabs? ActiveTab</div><div class="ttdoc">Currently active tab (if available in DefaultTabs, otherwise null)</div><div class="ttdef"><b>Definition:</b> <a href="_i_debug_panel_service_8cs_source.html#l00020">IDebugPanelService.cs:20</a></div></div>
+<div class="ttc" id="anamespace_s_r_debugger_1_1_services_html"><div class="ttname"><a href="namespace_s_r_debugger_1_1_services.html">SRDebugger.Services</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_bug_report_service_8cs_source.html#l00001">IBugReportService.cs:2</a></div></div>
+<div class="ttc" id="anamespace_s_r_debugger_html_ab0bfefe002d183864a55192041feba9f"><div class="ttname"><a href="namespace_s_r_debugger.html#ab0bfefe002d183864a55192041feba9f">SRDebugger.DefaultTabs</a></div><div class="ttdeci">DefaultTabs</div><div class="ttdef"><b>Definition:</b> <a href="_settings_8cs_source.html#l00019">Settings.cs:20</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_3b33dffaa21a2ac6f7978a949ffd4e41.html">Assets</a></li><li class="navelem"><a class="el" href="dir_5501c55c26a8d51fbc1fd8b7d8df04c3.html">ThirdParty</a></li><li class="navelem"><a class="el" href="dir_0f5df078a02ed03b6776122c2b87cb60.html">StompyRobot</a></li><li class="navelem"><a class="el" href="dir_94017e9a8ea42ed0c35aefd43f85b68b.html">SRDebugger</a></li><li class="navelem"><a class="el" href="dir_7a8f801e87ec51abc5da4d4cde89dc5d.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_11732da70f6b7ca00416c1d145838732.html">Services</a></li><li class="navelem"><a class="el" href="_i_debug_panel_service_8cs.html">IDebugPanelService.cs</a></li>
+    <li class="footer">生成于 2022年 四月 21日 星期四 10:43:01 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

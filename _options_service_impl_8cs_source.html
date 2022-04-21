@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: Unity/Assets/ThirdParty/StompyRobot/SRDebugger/Scripts/Services/Implementation/OptionsServiceImpl.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_options_service_impl_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">OptionsServiceImpl.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_options_service_impl_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_s_r_debugger_1_1_services_1_1_implementation.html">SRDebugger.Services.Implementation</a></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>{</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>    <span class="keyword">using</span> <a class="code hl_variable" href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    <span class="keyword">using</span> <a class="code hl_namespace" href="namespace_system.html">System</a>.<a class="code hl_namespace" href="namespace_system_1_1_collections.html">Collections</a>.<a class="code hl_namespace" href="namespace_system_1_1_collections_1_1_generic.html">Generic</a>;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    <span class="keyword">using</span> <a class="code hl_namespace" href="namespace_system.html">System</a>.<a class="code hl_namespace" href="namespace_system_1_1_collections.html">Collections</a>.ObjectModel;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="keyword">using</span> <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#ae7671ef7df96a23c9f8cbf77d72f04b1aafbf0897a5a83fdd873dfb032ec695d3">Internal</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keyword">using</span> <a class="code hl_namespace" href="namespace_s_r_f.html">SRF</a>.<a class="code hl_namespace" href="namespace_s_r_f_1_1_service.html">Service</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keyword">using</span> <a class="code hl_namespace" href="namespace_s_r_f.html">SRF</a>.<a class="code hl_namespace" href="namespace_s_r_f_1_1_helpers.html">Helpers</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">using</span> <a class="code hl_namespace" href="namespace_unity_engine.html">UnityEngine</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    [Service(typeof (IOptionsService))]</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html">   12</a></span>    <span class="keyword">public</span> <span class="keyword">partial class </span><a class="code hl_class" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html">OptionsServiceImpl</a> : <a class="code hl_interface" href="interface_s_r_debugger_1_1_services_1_1_i_options_service.html">IOptionsService</a></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html#ac8e5ec76af485b07b95156ba3e45db3d">   14</a></span>        <span class="keyword">public</span> <span class="keyword">event</span> EventHandler <a class="code hl_event" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html#ac8e5ec76af485b07b95156ba3e45db3d">OptionsUpdated</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html#a65f3544cc0db45127d61432f96670bca">   16</a></span>        <span class="keyword">public</span> ICollection&lt;OptionDefinition&gt; <a class="code hl_property" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html#a65f3544cc0db45127d61432f96670bca">Options</a></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> _optionsReadonly; }</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        }</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keyword">private</span> <span class="keywordtype">void</span> OptionsContainerOnOptionAdded(<a class="code hl_interface" href="interface_s_r_debugger_1_1_i_option_container.html">IOptionContainer</a> container, <a class="code hl_class" href="class_s_r_debugger_1_1_option_definition.html">OptionDefinition</a> optionDefinition)</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            List&lt;OptionDefinition&gt; options;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <span class="keywordflow">if</span>(!_optionContainerLookup.TryGetValue(container, out options))</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                <a class="code hl_typedef" href="namespace_s_r_f_1_1_components.html#a6348be36dc001e60722e740235ae6713">Debug</a>.LogWarning(<span class="stringliteral">&quot;[SRDebugger] Received event from unknown option container.&quot;</span>);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            }</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <span class="keywordflow">if</span> (options.Contains(optionDefinition))</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                <a class="code hl_typedef" href="namespace_s_r_f_1_1_components.html#a6348be36dc001e60722e740235ae6713">Debug</a>.LogWarning(<span class="stringliteral">&quot;[SRDebugger] Received option added event from option container, but option has already been added.&quot;</span>);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            options.Add(optionDefinition);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            _options.Add(optionDefinition);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            OnOptionsUpdated();</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keyword">private</span> <span class="keywordtype">void</span> OptionsContainerOnOptionRemoved(IOptionContainer container, OptionDefinition optionDefinition)</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            List&lt;OptionDefinition&gt; options;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <span class="keywordflow">if</span> (!_optionContainerLookup.TryGetValue(container, out options))</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                <a class="code hl_typedef" href="_s_r_debug_util_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.LogWarning(<span class="stringliteral">&quot;[SRDebugger] Received event from unknown option container.&quot;</span>);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <span class="keywordflow">if</span> (options.Remove(optionDefinition))</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                _options.Remove(optionDefinition);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                OnOptionsUpdated();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                <a class="code hl_typedef" href="_s_r_debug_util_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.LogWarning(<span class="stringliteral">&quot;[SRDebugger] Received option removed event from option container, but option does not exist.&quot;</span>);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keyword">private</span> readonly Dictionary&lt;IOptionContainer, List&lt;OptionDefinition&gt;&gt; _optionContainerLookup = <span class="keyword">new</span> Dictionary&lt;IOptionContainer, List&lt;OptionDefinition&gt;&gt;();</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keyword">private</span> readonly Dictionary&lt;IOptionContainer, OptionContainerEventHandler&gt; _optionContainerEventHandlerLookup = <span class="keyword">new</span> Dictionary&lt;IOptionContainer, OptionContainerEventHandler&gt;();</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keyword">private</span> readonly List&lt;OptionDefinition&gt; _options = <span class="keyword">new</span> List&lt;OptionDefinition&gt;();</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keyword">private</span> readonly IList&lt;OptionDefinition&gt; _optionsReadonly;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html#a4e9566efc27b6f07a884596a598cc841">   69</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html#a4e9566efc27b6f07a884596a598cc841">OptionsServiceImpl</a>()</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            _optionsReadonly = <span class="keyword">new</span> ReadOnlyCollection&lt;OptionDefinition&gt;(_options);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html#a889f843e8cd9014a5fa6700e67d91c45">   74</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html#a889f843e8cd9014a5fa6700e67d91c45">Scan</a>(<span class="keywordtype">object</span> obj)</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <a class="code hl_function" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html#a72d0948ef133588ce149e20b3ddcfe7e">AddContainer</a>(obj);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html#a72d0948ef133588ce149e20b3ddcfe7e">   79</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html#a72d0948ef133588ce149e20b3ddcfe7e">AddContainer</a>(<span class="keywordtype">object</span> obj)</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        {</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            var container = obj as <a class="code hl_interface" href="interface_s_r_debugger_1_1_i_option_container.html">IOptionContainer</a> ?? <span class="keyword">new</span> ReflectionOptionContainer(obj);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <a class="code hl_function" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html#a72d0948ef133588ce149e20b3ddcfe7e">AddContainer</a>(container);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        }</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html#aea3892dff4383ed975e99fc7fb8f8d7f">   85</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html#aea3892dff4383ed975e99fc7fb8f8d7f">AddContainer</a>(<a class="code hl_interface" href="interface_s_r_debugger_1_1_i_option_container.html">IOptionContainer</a> optionContainer)</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            <span class="keywordflow">if</span> (_optionContainerLookup.ContainsKey(optionContainer))</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception(<span class="stringliteral">&quot;An options container should only be added once.&quot;</span>);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            List&lt;OptionDefinition&gt; options = <span class="keyword">new</span> List&lt;OptionDefinition&gt;();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            options.AddRange(optionContainer.<a class="code hl_function" href="interface_s_r_debugger_1_1_i_option_container.html#a276a24473a8863e0fd1b012d6f3393e5">GetOptions</a>());</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            _optionContainerLookup.Add(optionContainer, options);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            <span class="keywordflow">if</span> (optionContainer.<a class="code hl_property" href="interface_s_r_debugger_1_1_i_option_container.html#a123de1bd98e24bbd6d164c94f0026aff">IsDynamic</a>)</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            {</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                var handler = <span class="keyword">new</span> OptionContainerEventHandler(<span class="keyword">this</span>, optionContainer);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                _optionContainerEventHandlerLookup.Add(optionContainer, handler);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            }</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            <span class="keywordflow">if</span> (options.Count &gt; 0)</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                _options.AddRange(options);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                OnOptionsUpdated();</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            }</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        }</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html#a6b1d47050924927ac609280713b5027c">  110</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html#a6b1d47050924927ac609280713b5027c">RemoveContainer</a>(<span class="keywordtype">object</span> obj)</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        {</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            var container = obj as <a class="code hl_interface" href="interface_s_r_debugger_1_1_i_option_container.html">IOptionContainer</a> ?? <span class="keyword">new</span> ReflectionOptionContainer(obj);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            <a class="code hl_function" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html#a6b1d47050924927ac609280713b5027c">RemoveContainer</a>(container);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        }</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html#abf100e66bfbce2948d2291f8068b48a9">  116</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html#abf100e66bfbce2948d2291f8068b48a9">RemoveContainer</a>(<a class="code hl_interface" href="interface_s_r_debugger_1_1_i_option_container.html">IOptionContainer</a> optionContainer)</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        {</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            <span class="keywordflow">if</span> (!_optionContainerLookup.ContainsKey(optionContainer))</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            {</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            }</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            <span class="keywordtype">bool</span> isDirty = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            var list = _optionContainerLookup[optionContainer];</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            _optionContainerLookup.Remove(optionContainer);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            <span class="keywordflow">foreach</span> (var op <span class="keywordflow">in</span> list)</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            {</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>                _options.Remove(op);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>                isDirty = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            }</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>            OptionContainerEventHandler handler;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            <span class="keywordflow">if</span> (_optionContainerEventHandlerLookup.TryGetValue(optionContainer,</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                out handler))</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>            {</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                handler.Dispose();</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                _optionContainerEventHandlerLookup.Remove(optionContainer);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            }</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            <span class="keywordflow">if</span> (isDirty)</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>            {</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                OnOptionsUpdated();</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>            }</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        }</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        <span class="keyword">private</span> <span class="keywordtype">void</span> OnOptionsUpdated()</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        {</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            <span class="keywordflow">if</span> (<a class="code hl_event" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html#ac8e5ec76af485b07b95156ba3e45db3d">OptionsUpdated</a> != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>            {</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                <a class="code hl_event" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html#ac8e5ec76af485b07b95156ba3e45db3d">OptionsUpdated</a>(<span class="keyword">this</span>, EventArgs.Empty);</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>            }</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        }</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        <span class="keyword">class </span>OptionContainerEventHandler : IDisposable</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        {</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            <span class="keyword">private</span> readonly <a class="code hl_function" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html#a4e9566efc27b6f07a884596a598cc841">OptionsServiceImpl</a> _service;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>            <span class="keyword">private</span> readonly <a class="code hl_interface" href="interface_s_r_debugger_1_1_i_option_container.html">IOptionContainer</a> _container;</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            <span class="keyword">public</span> OptionContainerEventHandler(<a class="code hl_function" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html#a4e9566efc27b6f07a884596a598cc841">OptionsServiceImpl</a> service, <a class="code hl_interface" href="interface_s_r_debugger_1_1_i_option_container.html">IOptionContainer</a> container)</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>            {</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>                _container = container;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>                _service = service;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>                container.<a class="code hl_event" href="interface_s_r_debugger_1_1_i_option_container.html#acbe5ae2e78cb08073b753717dd75dff1">OptionAdded</a> += ContainerOnOptionAdded;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                container.<a class="code hl_event" href="interface_s_r_debugger_1_1_i_option_container.html#aae9f0bd686d95f1ec4ad999e11a3ab40">OptionRemoved</a> += ContainerOnOptionRemoved;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            }</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>            <span class="keyword">private</span> <span class="keywordtype">void</span> ContainerOnOptionAdded(OptionDefinition obj)</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>            {</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>                _service.OptionsContainerOnOptionAdded(_container, obj);</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>            }</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>            <span class="keyword">private</span> <span class="keywordtype">void</span> ContainerOnOptionRemoved(OptionDefinition obj)</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>            {</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                _service.OptionsContainerOnOptionRemoved(_container, obj);</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>            }</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>            <span class="keyword">public</span> <span class="keywordtype">void</span> Dispose()</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>            {</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                _container.OptionAdded -= ContainerOnOptionAdded;</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>                _container.OptionRemoved -= ContainerOnOptionRemoved;</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>            }</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        }</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    }</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>}</div>
+<div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
+<div class="ttc" id="a_s_r_debug_util_8cs_html_a0100be52d45f14348918ea69ec09f959"><div class="ttname"><a href="_s_r_debug_util_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a></div><div class="ttdeci">UnityEngine.Debug Debug</div><div class="ttdef"><b>Definition:</b> <a href="_s_r_debug_util_8cs_source.html#l00006">SRDebugUtil.cs:6</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_option_definition_html"><div class="ttname"><a href="class_s_r_debugger_1_1_option_definition.html">SRDebugger.OptionDefinition</a></div><div class="ttdoc">Class describing how an option should be presented within the options panel.</div><div class="ttdef"><b>Definition:</b> <a href="_option_definition_8cs_source.html#l00009">OptionDefinition.cs:10</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl_html"><div class="ttname"><a href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html">SRDebugger.Services.Implementation.OptionsServiceImpl</a></div><div class="ttdef"><b>Definition:</b> <a href="_options_service_impl_8cs_source.html#l00012">OptionsServiceImpl.cs:13</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl_html_a4e9566efc27b6f07a884596a598cc841"><div class="ttname"><a href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html#a4e9566efc27b6f07a884596a598cc841">SRDebugger.Services.Implementation.OptionsServiceImpl.OptionsServiceImpl</a></div><div class="ttdeci">OptionsServiceImpl()</div><div class="ttdef"><b>Definition:</b> <a href="_options_service_impl_8cs_source.html#l00069">OptionsServiceImpl.cs:69</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl_html_a65f3544cc0db45127d61432f96670bca"><div class="ttname"><a href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html#a65f3544cc0db45127d61432f96670bca">SRDebugger.Services.Implementation.OptionsServiceImpl.Options</a></div><div class="ttdeci">ICollection&lt; OptionDefinition &gt; Options</div><div class="ttdef"><b>Definition:</b> <a href="_options_service_impl_8cs_source.html#l00016">OptionsServiceImpl.cs:17</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl_html_a6b1d47050924927ac609280713b5027c"><div class="ttname"><a href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html#a6b1d47050924927ac609280713b5027c">SRDebugger.Services.Implementation.OptionsServiceImpl.RemoveContainer</a></div><div class="ttdeci">void RemoveContainer(object obj)</div><div class="ttdoc">Remove any options that were added from the obj  container.</div><div class="ttdef"><b>Definition:</b> <a href="_options_service_impl_8cs_source.html#l00110">OptionsServiceImpl.cs:110</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl_html_a72d0948ef133588ce149e20b3ddcfe7e"><div class="ttname"><a href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html#a72d0948ef133588ce149e20b3ddcfe7e">SRDebugger.Services.Implementation.OptionsServiceImpl.AddContainer</a></div><div class="ttdeci">void AddContainer(object obj)</div><div class="ttdoc">Scan obj  for options and add them to the Options collection.</div><div class="ttdef"><b>Definition:</b> <a href="_options_service_impl_8cs_source.html#l00079">OptionsServiceImpl.cs:79</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl_html_a889f843e8cd9014a5fa6700e67d91c45"><div class="ttname"><a href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html#a889f843e8cd9014a5fa6700e67d91c45">SRDebugger.Services.Implementation.OptionsServiceImpl.Scan</a></div><div class="ttdeci">void Scan(object obj)</div><div class="ttdoc">Scan obj  for options add them to the Options collection</div><div class="ttdef"><b>Definition:</b> <a href="_options_service_impl_8cs_source.html#l00074">OptionsServiceImpl.cs:74</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl_html_abf100e66bfbce2948d2291f8068b48a9"><div class="ttname"><a href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html#abf100e66bfbce2948d2291f8068b48a9">SRDebugger.Services.Implementation.OptionsServiceImpl.RemoveContainer</a></div><div class="ttdeci">void RemoveContainer(IOptionContainer optionContainer)</div><div class="ttdoc">Remove an options container from the options collection.</div><div class="ttdef"><b>Definition:</b> <a href="_options_service_impl_8cs_source.html#l00116">OptionsServiceImpl.cs:116</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl_html_ac8e5ec76af485b07b95156ba3e45db3d"><div class="ttname"><a href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html#ac8e5ec76af485b07b95156ba3e45db3d">SRDebugger.Services.Implementation.OptionsServiceImpl.OptionsUpdated</a></div><div class="ttdeci">EventHandler OptionsUpdated</div><div class="ttdef"><b>Definition:</b> <a href="_options_service_impl_8cs_source.html#l00014">OptionsServiceImpl.cs:14</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl_html_aea3892dff4383ed975e99fc7fb8f8d7f"><div class="ttname"><a href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html#aea3892dff4383ed975e99fc7fb8f8d7f">SRDebugger.Services.Implementation.OptionsServiceImpl.AddContainer</a></div><div class="ttdeci">void AddContainer(IOptionContainer optionContainer)</div><div class="ttdoc">Add an options container to the options collection.</div><div class="ttdef"><b>Definition:</b> <a href="_options_service_impl_8cs_source.html#l00085">OptionsServiceImpl.cs:85</a></div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_i_option_container_html"><div class="ttname"><a href="interface_s_r_debugger_1_1_i_option_container.html">SRDebugger.IOptionContainer</a></div><div class="ttdoc">You can implement this interface to create a dynamic &quot;options container&quot;. Add the container to SRDebu...</div><div class="ttdef"><b>Definition:</b> <a href="_i_option_container_8cs_source.html#l00016">IOptionContainer.cs:17</a></div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_i_option_container_html_a123de1bd98e24bbd6d164c94f0026aff"><div class="ttname"><a href="interface_s_r_debugger_1_1_i_option_container.html#a123de1bd98e24bbd6d164c94f0026aff">SRDebugger.IOptionContainer.IsDynamic</a></div><div class="ttdeci">bool IsDynamic</div><div class="ttdoc">Will the options collection be changed via events? If true, changes to the option set can be provided...</div><div class="ttdef"><b>Definition:</b> <a href="_i_option_container_8cs_source.html#l00028">IOptionContainer.cs:28</a></div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_i_option_container_html_a276a24473a8863e0fd1b012d6f3393e5"><div class="ttname"><a href="interface_s_r_debugger_1_1_i_option_container.html#a276a24473a8863e0fd1b012d6f3393e5">SRDebugger.IOptionContainer.GetOptions</a></div><div class="ttdeci">IEnumerable&lt; OptionDefinition &gt; GetOptions()</div><div class="ttdoc">Get the initial set of options contained in this object.</div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_i_option_container_html_aae9f0bd686d95f1ec4ad999e11a3ab40"><div class="ttname"><a href="interface_s_r_debugger_1_1_i_option_container.html#aae9f0bd686d95f1ec4ad999e11a3ab40">SRDebugger.IOptionContainer.OptionRemoved</a></div><div class="ttdeci">Action&lt; OptionDefinition &gt; OptionRemoved</div><div class="ttdef"><b>Definition:</b> <a href="_i_option_container_8cs_source.html#l00031">IOptionContainer.cs:31</a></div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_i_option_container_html_acbe5ae2e78cb08073b753717dd75dff1"><div class="ttname"><a href="interface_s_r_debugger_1_1_i_option_container.html#acbe5ae2e78cb08073b753717dd75dff1">SRDebugger.IOptionContainer.OptionAdded</a></div><div class="ttdeci">Action&lt; OptionDefinition &gt; OptionAdded</div><div class="ttdef"><b>Definition:</b> <a href="_i_option_container_8cs_source.html#l00030">IOptionContainer.cs:30</a></div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_services_1_1_i_options_service_html"><div class="ttname"><a href="interface_s_r_debugger_1_1_services_1_1_i_options_service.html">SRDebugger.Services.IOptionsService</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_options_service_8cs_source.html#l00007">IOptionsService.cs:8</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_html_ae7671ef7df96a23c9f8cbf77d72f04b1aafbf0897a5a83fdd873dfb032ec695d3"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#ae7671ef7df96a23c9f8cbf77d72f04b1aafbf0897a5a83fdd873dfb032ec695d3">ILRuntime.Mono.Cecil.Metadata.ElementType.Internal</a></div><div class="ttdeci">@ Internal</div></div>
+<div class="ttc" id="anamespace_s_r_debugger_1_1_services_1_1_implementation_html"><div class="ttname"><a href="namespace_s_r_debugger_1_1_services_1_1_implementation.html">SRDebugger.Services.Implementation</a></div><div class="ttdef"><b>Definition:</b> <a href="_bug_report_api_service_8cs_source.html#l00006">BugReportApiService.cs:7</a></div></div>
+<div class="ttc" id="anamespace_s_r_f_1_1_components_html_a6348be36dc001e60722e740235ae6713"><div class="ttname"><a href="namespace_s_r_f_1_1_components.html#a6348be36dc001e60722e740235ae6713">SRF.Components.Debug</a></div><div class="ttdeci">UnityEngine.Debug Debug</div><div class="ttdef"><b>Definition:</b> <a href="_s_r_auto_singleton_8cs_source.html#l00005">SRAutoSingleton.cs:5</a></div></div>
+<div class="ttc" id="anamespace_s_r_f_1_1_helpers_html"><div class="ttname"><a href="namespace_s_r_f_1_1_helpers.html">SRF.Helpers</a></div><div class="ttdef"><b>Definition:</b> <a href="_asset_util_8cs_source.html#l00006">AssetUtil.cs:7</a></div></div>
+<div class="ttc" id="anamespace_s_r_f_1_1_service_html"><div class="ttname"><a href="namespace_s_r_f_1_1_service.html">SRF.Service</a></div><div class="ttdef"><b>Definition:</b> <a href="_attributes_8cs_source.html#l00003">Attributes.cs:4</a></div></div>
+<div class="ttc" id="anamespace_s_r_f_html"><div class="ttname"><a href="namespace_s_r_f.html">SRF</a></div><div class="ttdef"><b>Definition:</b> <a href="_mini_j_s_o_n_8cs_source.html#l00032">MiniJSON.cs:33</a></div></div>
+<div class="ttc" id="anamespace_system_1_1_collections_1_1_generic_html"><div class="ttname"><a href="namespace_system_1_1_collections_1_1_generic.html">System.Collections.Generic</a></div></div>
+<div class="ttc" id="anamespace_system_1_1_collections_html"><div class="ttname"><a href="namespace_system_1_1_collections.html">System.Collections</a></div></div>
+<div class="ttc" id="anamespace_system_html"><div class="ttname"><a href="namespace_system.html">System</a></div><div class="ttdef"><b>Definition:</b> <a href="_async_method_builder_attribute_8cs_source.html#l00002">AsyncMethodBuilderAttribute.cs:3</a></div></div>
+<div class="ttc" id="anamespace_unity_engine_html"><div class="ttname"><a href="namespace_unity_engine.html">UnityEngine</a></div><div class="ttdef"><b>Definition:</b> <a href="_mathf_8cs_source.html#l00003">Mathf.cs:4</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_3b33dffaa21a2ac6f7978a949ffd4e41.html">Assets</a></li><li class="navelem"><a class="el" href="dir_5501c55c26a8d51fbc1fd8b7d8df04c3.html">ThirdParty</a></li><li class="navelem"><a class="el" href="dir_0f5df078a02ed03b6776122c2b87cb60.html">StompyRobot</a></li><li class="navelem"><a class="el" href="dir_94017e9a8ea42ed0c35aefd43f85b68b.html">SRDebugger</a></li><li class="navelem"><a class="el" href="dir_7a8f801e87ec51abc5da4d4cde89dc5d.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_11732da70f6b7ca00416c1d145838732.html">Services</a></li><li class="navelem"><a class="el" href="dir_119f475e985d5874deb5913ef8f71d99.html">Implementation</a></li><li class="navelem"><a class="el" href="_options_service_impl_8cs.html">OptionsServiceImpl.cs</a></li>
+    <li class="footer">生成于 2022年 四月 21日 星期四 10:43:01 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

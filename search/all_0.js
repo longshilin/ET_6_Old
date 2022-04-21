@@ -11,6 +11,18 @@ var searchData=
   ['_5f_5fiuint32_5fdefined_8',['__IUINT32_DEFINED',['../ikcp_8h.html#aabc768f821c2efda06e32df1a97d63de',1,'ikcp.h']]],
   ['_5f_5fiuint64_5fdefined_9',['__IUINT64_DEFINED',['../ikcp_8h.html#a1fbec0c16cf2bce6e71fcae71ad1e661',1,'ikcp.h']]],
   ['_5f_5fiuint8_5fdefined_10',['__IUINT8_DEFINED',['../ikcp_8h.html#a03552fed5e9b5bcb91b5e37dea79be08',1,'ikcp.h']]],
-  ['_5fdebugconsole_5fcopytext_11',['_DebugConsole_CopyText',['../_ingame_debug_console_8mm.html#a2f9632429d4c2024ec5c96dd346e20f3',1,'IngameDebugConsole.mm']]],
-  ['_5fline_5fnumbers_12',['_line_numbers',['../class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_table.html#a73b899885d378a72f74b1e09ddf47049',1,'ILRuntime::Mono::CompilerServices::SymbolWriter::LineNumberTable']]]
+  ['_5fbuglyconfigcrashreportertype_11',['_BuglyConfigCrashReporterType',['../_bugly_bridge_8h.html#a463b01fcade1895703e0694647f3bd42',1,'BuglyBridge.h']]],
+  ['_5fbuglydefaultconfig_12',['_BuglyDefaultConfig',['../_bugly_bridge_8h.html#acfddb364e3e76ab3cc863cc362be74c4',1,'BuglyBridge.h']]],
+  ['_5fbuglyinit_13',['_BuglyInit',['../_bugly_bridge_8h.html#a574a0e8b41e26554de61e5ccf73f06ba',1,'BuglyBridge.h']]],
+  ['_5fbuglylogmessage_14',['_BuglyLogMessage',['../_bugly_bridge_8h.html#a01c1444689383ff3a610e754ee7ec8ed',1,'BuglyBridge.h']]],
+  ['_5fbuglyreportexception_15',['_BuglyReportException',['../_bugly_bridge_8h.html#a8f13815e22c6216909320c679db2bc82',1,'BuglyBridge.h']]],
+  ['_5fbuglysetextraconfig_16',['_BuglySetExtraConfig',['../_bugly_bridge_8h.html#a79c25d1c24552bd351d592a97d3e423c',1,'BuglyBridge.h']]],
+  ['_5fbuglysetkeyvalue_17',['_BuglySetKeyValue',['../_bugly_bridge_8h.html#a2dee075c574fb25e823f654ffd08f6dd',1,'BuglyBridge.h']]],
+  ['_5fbuglysettag_18',['_BuglySetTag',['../_bugly_bridge_8h.html#a8a9fcb60ef15c11c64db44e1ea1e9980',1,'BuglyBridge.h']]],
+  ['_5fbuglysetuserid_19',['_BuglySetUserId',['../_bugly_bridge_8h.html#a8c5d88b3047f8c1ee50e513ab01bf9d8',1,'BuglyBridge.h']]],
+  ['_5fcleanlocaldata_20',['_cleanLocalData',['../_local_data_8mm.html#a7959b098390a09af02cf2e3683542c9b',1,'LocalData.mm']]],
+  ['_5fgetlocaldata_21',['_getLocalData',['../_local_data_8mm.html#a254e5a8b5f21320ae154a534330e4470',1,'LocalData.mm']]],
+  ['_5fiseditorbuild_22',['_isEditorBuild',['../class_e_t_1_1_packager.html#aab5615fdf9761ca8cd72da2920683114',1,'ET::Packager']]],
+  ['_5fline_5fnumbers_23',['_line_numbers',['../class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_table.html#a73b899885d378a72f74b1e09ddf47049',1,'ILRuntime::Mono::CompilerServices::SymbolWriter::LineNumberTable']]],
+  ['_5fsetlocaldata_24',['_setLocalData',['../_local_data_8mm.html#ad1445723914712daf5d23cb5e345ce7e',1,'LocalData.mm']]]
 ];

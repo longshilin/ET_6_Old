@@ -1,0 +1,526 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: Unity/Assets/ThirdParty/StompyRobot/SRDebugger/Scripts/UI/Tabs/ConsoleTabController.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_console_tab_controller_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ConsoleTabController.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_console_tab_controller_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//#define SR_CONSOLE_DEBUG</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_system.html">System</a>.<a class="code hl_namespace" href="namespace_system_1_1_collections.html">Collections</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_s_r_debugger_1_1_u_i_1_1_tabs.html">SRDebugger.UI.Tabs</a></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keyword">using</span> <a class="code hl_variable" href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keyword">using</span> Controls;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">using</span> <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#ae7671ef7df96a23c9f8cbf77d72f04b1aafbf0897a5a83fdd873dfb032ec695d3">Internal</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">using</span> Services;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">using</span> <a class="code hl_namespace" href="namespace_s_r_f.html">SRF</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">using</span> <a class="code hl_namespace" href="namespace_unity_engine.html">UnityEngine</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">using</span> <a class="code hl_namespace" href="namespace_unity_engine.html">UnityEngine</a>.<a class="code hl_namespace" href="namespace_unity_engine_1_1_u_i.html">UI</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html">   15</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html">ConsoleTabController</a> : <a class="code hl_class" href="class_s_r_f_1_1_s_r_mono_behaviour_ex.html">SRMonoBehaviourEx</a></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keyword">private</span> <span class="keyword">const</span> <span class="keywordtype">int</span> MaxLength = 2600;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keyword">private</span> Canvas _consoleCanvas;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keyword">private</span> <span class="keywordtype">bool</span> _isDirty;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> _hasWarnedAboutLogHandler;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> _hasWarnedAboutLoggingDisabled;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        [RequiredField]</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a08700177c3ca3049c85eeb9126d2028a">   26</a></span>        <span class="keyword">public</span> <a class="code hl_class" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_console_log_control.html">ConsoleLogControl</a> <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a08700177c3ca3049c85eeb9126d2028a">ConsoleLogControl</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        [RequiredField]</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a2d5aae0d4a7a5f25be0b451939612692">   29</a></span>        <span class="keyword">public</span> Toggle <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a2d5aae0d4a7a5f25be0b451939612692">PinToggle</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="comment">//public bool IsListening = true;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        [RequiredField]</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a1822dc72f57d67f28bce0ac6ef770b93">   33</a></span>        <span class="keyword">public</span> ScrollRect <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a1822dc72f57d67f28bce0ac6ef770b93">StackTraceScrollRect</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        [RequiredField]</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#ae9a7e891a5447e1a5c57bde047e65964">   35</a></span>        <span class="keyword">public</span> Text <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#ae9a7e891a5447e1a5c57bde047e65964">StackTraceText</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        [RequiredField]</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#aa59a05050a36e3c6b694399e1445bb1d">   37</a></span>        <span class="keyword">public</span> Toggle <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#aa59a05050a36e3c6b694399e1445bb1d">ToggleErrors</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        [RequiredField]</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a4880876f2971910b586b586fc1f965bf">   39</a></span>        <span class="keyword">public</span> Text <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a4880876f2971910b586b586fc1f965bf">ToggleErrorsText</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        [RequiredField]</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a4b210ad3f5d5a5be5a8f344e6ab5ed0c">   41</a></span>        <span class="keyword">public</span> Toggle <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a4b210ad3f5d5a5be5a8f344e6ab5ed0c">ToggleInfo</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        [RequiredField]</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#ab9796471b9f95fc0bd9651819b81a6bd">   43</a></span>        <span class="keyword">public</span> Text <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#ab9796471b9f95fc0bd9651819b81a6bd">ToggleInfoText</a>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        [RequiredField]</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#abf33d432255d3b53111f9d945b6479be">   45</a></span>        <span class="keyword">public</span> Toggle <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#abf33d432255d3b53111f9d945b6479be">ToggleWarnings</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        [RequiredField]</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#aefad1bee2027e00ac37b680e0b8b9e31">   47</a></span>        <span class="keyword">public</span> Text <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#aefad1bee2027e00ac37b680e0b8b9e31">ToggleWarningsText</a>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        [RequiredField]</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#acc3f09a8da584d3a98537220f6a3f416">   50</a></span>        <span class="keyword">public</span> GameObject <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#acc3f09a8da584d3a98537220f6a3f416">CopyToClipboardContainer</a>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        [RequiredField]</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a167b5daa3abef942dd3ce7b9f423c3ee">   53</a></span>        <span class="keyword">public</span> GameObject <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a167b5daa3abef942dd3ce7b9f423c3ee">CopyToClipboardButton</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        [RequiredField]</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a31766596b5a04fa83044901a17a8902f">   56</a></span>        <span class="keyword">public</span> GameObject <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a31766596b5a04fa83044901a17a8902f">CopyToClipboardMessage</a>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        [RequiredField]</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#ac6ed193633fc07ded6927ce479efb6ad">   59</a></span>        <span class="keyword">public</span> CanvasGroup <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#ac6ed193633fc07ded6927ce479efb6ad">CopyToClipboardMessageCanvasGroup</a>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        [RequiredField]</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a48f6490fbeb969f3002a7117cacb9b47">   62</a></span>        <span class="keyword">public</span> GameObject <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a48f6490fbeb969f3002a7117cacb9b47">LoggingIsDisabledCanvasGroup</a>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        [RequiredField]</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#ae51af951f70ad11d1743c7ff7ea6ac70">   65</a></span>        <span class="keyword">public</span> GameObject <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#ae51af951f70ad11d1743c7ff7ea6ac70">LogHandlerHasBeenOverridenGroup</a>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        [RequiredField]</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a97b59020fded57d4f05188b951c729be">   68</a></span>        <span class="keyword">public</span> Toggle <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a97b59020fded57d4f05188b951c729be">FilterToggle</a>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        [RequiredField]</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a03bf951c48239ba62832e2b4eff29da2">   70</a></span>        <span class="keyword">public</span> InputField <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a03bf951c48239ba62832e2b4eff29da2">FilterField</a>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        [RequiredField]</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a063ea8dd2b45ad313982e6eff4dd9a95">   72</a></span>        <span class="keyword">public</span> GameObject <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a063ea8dd2b45ad313982e6eff4dd9a95">FilterBarContainer</a>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keyword">private</span> <a class="code hl_class" href="class_s_r_debugger_1_1_services_1_1_console_entry.html">ConsoleEntry</a> _selectedItem;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keyword">private</span> Coroutine _fadeButtonCoroutine;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a91efda6e8fb5280f8477059c425eacf2">   78</a></span>        <span class="keyword">protected</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a91efda6e8fb5280f8477059c425eacf2">Start</a>()</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            base.Start();</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            _consoleCanvas = GetComponent&lt;Canvas&gt;();</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#aa59a05050a36e3c6b694399e1445bb1d">ToggleErrors</a>.onValueChanged.AddListener(isOn =&gt; _isDirty = <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#abf33d432255d3b53111f9d945b6479be">ToggleWarnings</a>.onValueChanged.AddListener(isOn =&gt; _isDirty = <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a4b210ad3f5d5a5be5a8f344e6ab5ed0c">ToggleInfo</a>.onValueChanged.AddListener(isOn =&gt; _isDirty = <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a2d5aae0d4a7a5f25be0b451939612692">PinToggle</a>.onValueChanged.AddListener(PinToggleValueChanged);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a97b59020fded57d4f05188b951c729be">FilterToggle</a>.onValueChanged.AddListener(FilterToggleValueChanged);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a063ea8dd2b45ad313982e6eff4dd9a95">FilterBarContainer</a>.SetActive(<a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a97b59020fded57d4f05188b951c729be">FilterToggle</a>.isOn);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="preprocessor">#if UNITY_5_3_OR_NEWER</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a03bf951c48239ba62832e2b4eff29da2">FilterField</a>.onValueChanged.AddListener(FilterValueChanged);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a03bf951c48239ba62832e2b4eff29da2">FilterField</a>.onValueChange.AddListener(FilterValueChanged);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <a class="code hl_class" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_console_log_control.html">ConsoleLogControl</a>.<a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_console_log_control.html#a623eaf9c108964a1f43241e612a58d56">SelectedItemChanged</a> = ConsoleLogSelectedItemChanged;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            Service.Console.Updated += ConsoleOnUpdated;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            Service.Panel.VisibilityChanged += PanelOnVisibilityChanged;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#ae9a7e891a5447e1a5c57bde047e65964">StackTraceText</a>.supportRichText = <a class="code hl_class" href="class_s_r_debugger_1_1_settings.html">Settings</a>.<a class="code hl_property" href="class_s_r_debugger_1_1_settings.html#abb13cfe8a6344a51544abb7f3e8555b8">Instance</a>.<a class="code hl_property" href="class_s_r_debugger_1_1_settings.html#a6174c12ddc109cab573f557249a16a66">RichTextInConsole</a>;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            PopulateStackTraceArea(<span class="keyword">null</span>);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            Refresh();</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        }</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <span class="keyword">private</span> <span class="keywordtype">void</span> FilterToggleValueChanged(<span class="keywordtype">bool</span> isOn)</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            <span class="keywordflow">if</span> (isOn)</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            {</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a063ea8dd2b45ad313982e6eff4dd9a95">FilterBarContainer</a>.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                <a class="code hl_class" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_console_log_control.html">ConsoleLogControl</a>.<a class="code hl_property" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_console_log_control.html#a00dc3b63de929a2ca60412894bc1d05d">Filter</a> = <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a03bf951c48239ba62832e2b4eff29da2">FilterField</a>.text;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            }</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            {</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                <a class="code hl_class" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_console_log_control.html">ConsoleLogControl</a>.<a class="code hl_property" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_console_log_control.html#a00dc3b63de929a2ca60412894bc1d05d">Filter</a> = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a063ea8dd2b45ad313982e6eff4dd9a95">FilterBarContainer</a>.SetActive(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            }</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        }</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <span class="keyword">private</span> <span class="keywordtype">void</span> FilterValueChanged(<span class="keywordtype">string</span> filterText)</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        {</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a97b59020fded57d4f05188b951c729be">FilterToggle</a>.isOn &amp;&amp; !<span class="keywordtype">string</span>.IsNullOrEmpty(filterText) &amp;&amp; filterText.Trim().Length != 0)</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            {</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>                <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a08700177c3ca3049c85eeb9126d2028a">ConsoleLogControl</a>.<a class="code hl_property" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_console_log_control.html#a00dc3b63de929a2ca60412894bc1d05d">Filter</a> = filterText;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            }</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            {</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>                <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a08700177c3ca3049c85eeb9126d2028a">ConsoleLogControl</a>.<a class="code hl_property" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_console_log_control.html#a00dc3b63de929a2ca60412894bc1d05d">Filter</a> = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            }</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        }</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        <span class="keyword">private</span> <span class="keywordtype">void</span> PanelOnVisibilityChanged(IDebugPanelService debugPanelService, <span class="keywordtype">bool</span> b)</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        {</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            <span class="keywordflow">if</span> (_consoleCanvas == <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            {</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>            }</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>            <span class="keywordflow">if</span> (b)</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            {</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>                _consoleCanvas.enabled = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            }</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            {</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                _consoleCanvas.enabled = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                StopAnimations();</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>            }</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        }</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        <span class="keyword">private</span> <span class="keywordtype">void</span> PinToggleValueChanged(<span class="keywordtype">bool</span> isOn)</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        {</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            Service.DockConsole.IsVisible = isOn;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        }</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#aa0904891f62f426411cf9edb589c4a96">  159</a></span>        <span class="keyword">protected</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#aa0904891f62f426411cf9edb589c4a96">OnDestroy</a>()</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        {</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            StopAnimations();</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            <span class="keywordflow">if</span> (Service.Console != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>            {</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                Service.Console.Updated -= ConsoleOnUpdated;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            }</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>            </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>            base.OnDestroy();</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        }</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#af3c17360193f1892c0953849b65d0251">  172</a></span>        <span class="keyword">protected</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#af3c17360193f1892c0953849b65d0251">OnEnable</a>()</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        {</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>            base.OnEnable();</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>            _isDirty = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        }</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#abf25a48ef22b01220c6801ff985c6ca2">  179</a></span>        <span class="keyword">protected</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#abf25a48ef22b01220c6801ff985c6ca2">OnDisable</a>()</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        {</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>            base.OnDisable();</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>            StopAnimations();</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        }</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        <span class="keyword">private</span> <span class="keywordtype">void</span> ConsoleLogSelectedItemChanged(<span class="keywordtype">object</span> item)</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        {</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>            var log = item as <a class="code hl_class" href="class_s_r_debugger_1_1_services_1_1_console_entry.html">ConsoleEntry</a>;</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>            PopulateStackTraceArea(log);</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        }</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a0029d37fa17e0298feaa2e97f1a69f35">  191</a></span>        <span class="keyword">protected</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a0029d37fa17e0298feaa2e97f1a69f35">Update</a>()</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        {</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            base.Update();</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>            <span class="keywordflow">if</span> (_isDirty)</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>            {</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>                Refresh();</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>            }</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        }</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        <span class="keyword">private</span> <span class="keywordtype">void</span> PopulateStackTraceArea(<a class="code hl_class" href="class_s_r_debugger_1_1_services_1_1_console_entry.html">ConsoleEntry</a> entry)</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        {</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>            <span class="keywordflow">if</span> (entry == <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>            {</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>                SetCopyToClipboardButtonState(<a class="code hl_enumeration" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a4d089a6cbfbb68bde472d52d6c0b532c">CopyToClipboardStates</a>.Hidden);</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>                <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#ae9a7e891a5447e1a5c57bde047e65964">StackTraceText</a>.text = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>            }</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>            <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>            {</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>                <span class="keywordflow">if</span> (SRDebug.CopyConsoleItemCallback != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>                {</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>                    SetCopyToClipboardButtonState(<a class="code hl_enumeration" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a4d089a6cbfbb68bde472d52d6c0b532c">CopyToClipboardStates</a>.Visible);</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>                }</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>                var text = entry.<a class="code hl_variable" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a1efe8688b4c17bb266a63bb520912b48">Message</a> + Environment.NewLine +</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>                           (!<span class="keywordtype">string</span>.IsNullOrEmpty(entry.<a class="code hl_variable" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#ac8c02be01e8454d2d592ad399228dd46">StackTrace</a>)</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>                               ? entry.<a class="code hl_variable" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#ac8c02be01e8454d2d592ad399228dd46">StackTrace</a></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>                               : <a class="code hl_class" href="class_s_r_debugger_1_1_internal_1_1_s_r_debug_strings.html">SRDebugStrings</a>.<a class="code hl_variable" href="class_s_r_debugger_1_1_internal_1_1_s_r_debug_strings.html#ad9f2311cf9c92e1176f8bd6aaa712cf9">Current</a>.<a class="code hl_variable" href="class_s_r_debugger_1_1_internal_1_1_s_r_debug_strings.html#a15bdf3b363aa011a3f4d1bc0cb1cf440">Console_NoStackTrace</a>);</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>                <span class="keywordflow">if</span> (text.Length &gt; MaxLength)</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>                {</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>                    text = text.Substring(0, MaxLength);</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>                    text += <span class="stringliteral">&quot;\n&quot;</span> + <a class="code hl_class" href="class_s_r_debugger_1_1_internal_1_1_s_r_debug_strings.html">SRDebugStrings</a>.<a class="code hl_variable" href="class_s_r_debugger_1_1_internal_1_1_s_r_debug_strings.html#ad9f2311cf9c92e1176f8bd6aaa712cf9">Current</a>.<a class="code hl_variable" href="class_s_r_debugger_1_1_internal_1_1_s_r_debug_strings.html#a4823d2d1b29bf349204ec4a76b1a1bd2">Console_MessageTruncated</a>;</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>                }</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>                <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#ae9a7e891a5447e1a5c57bde047e65964">StackTraceText</a>.text = text;</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>            }</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>            <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a1822dc72f57d67f28bce0ac6ef770b93">StackTraceScrollRect</a>.normalizedPosition = <span class="keyword">new</span> Vector2(0, 1);</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>            _selectedItem = entry;</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>        }</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#ac2a069b5b4a1840fa74d23e77f661f6d">  233</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#ac2a069b5b4a1840fa74d23e77f661f6d">CopyToClipboard</a>()</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        {</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>            <span class="keywordflow">if</span> (_selectedItem != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>            {</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>                SetCopyToClipboardButtonState(<a class="code hl_enumeration" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a4d089a6cbfbb68bde472d52d6c0b532c">CopyToClipboardStates</a>.Activated);</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>                <span class="keywordflow">if</span> (SRDebug.CopyConsoleItemCallback != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>                {</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>                    SRDebug.CopyConsoleItemCallback(_selectedItem);</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>                }</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>                <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>                {</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>                    <a class="code hl_typedef" href="namespace_s_r_f_1_1_components.html#a6348be36dc001e60722e740235ae6713">Debug</a>.LogError(<span class="stringliteral">&quot;[SRDebugger] Copy to clipboard is not available.&quot;</span>);</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>                }</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>            }</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        }</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a4d089a6cbfbb68bde472d52d6c0b532c">  249</a></span>        <span class="keyword">public</span> <span class="keyword">enum</span> <a class="code hl_enumeration" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a4d089a6cbfbb68bde472d52d6c0b532c">CopyToClipboardStates</a></div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        {</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>            Hidden,</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>            Visible,</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>            Activated</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>        }</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>        <span class="keywordtype">void</span> SetCopyToClipboardButtonState(<a class="code hl_enumeration" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a4d089a6cbfbb68bde472d52d6c0b532c">CopyToClipboardStates</a> state)</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>        {</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>            StopAnimations();</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>            <span class="keywordflow">switch</span> (state)</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>            {</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a4d089a6cbfbb68bde472d52d6c0b532c">CopyToClipboardStates</a>.Hidden:</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>                    <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#acc3f09a8da584d3a98537220f6a3f416">CopyToClipboardContainer</a>.SetActive(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>                    <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a167b5daa3abef942dd3ce7b9f423c3ee">CopyToClipboardButton</a>.SetActive(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>                    <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a31766596b5a04fa83044901a17a8902f">CopyToClipboardMessage</a>.SetActive(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a4d089a6cbfbb68bde472d52d6c0b532c">CopyToClipboardStates</a>.Visible:</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>                    <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#acc3f09a8da584d3a98537220f6a3f416">CopyToClipboardContainer</a>.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>                    <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a167b5daa3abef942dd3ce7b9f423c3ee">CopyToClipboardButton</a>.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>                    <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a31766596b5a04fa83044901a17a8902f">CopyToClipboardMessage</a>.SetActive(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>                <span class="keywordflow">case</span> <a class="code hl_enumeration" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a4d089a6cbfbb68bde472d52d6c0b532c">CopyToClipboardStates</a>.Activated:</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>                    <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#ac6ed193633fc07ded6927ce479efb6ad">CopyToClipboardMessageCanvasGroup</a>.alpha = 1;</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>                    <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#acc3f09a8da584d3a98537220f6a3f416">CopyToClipboardContainer</a>.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>                    <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a167b5daa3abef942dd3ce7b9f423c3ee">CopyToClipboardButton</a>.SetActive(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>                    <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a31766596b5a04fa83044901a17a8902f">CopyToClipboardMessage</a>.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span> </div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>                    _fadeButtonCoroutine = StartCoroutine(FadeCopyButton());</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>                <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentOutOfRangeException(<span class="stringliteral">&quot;state&quot;</span>, state, <span class="keyword">null</span>);</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>            }</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>        }</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span> </div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>        IEnumerator FadeCopyButton()</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>        {</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>            yield <span class="keywordflow">return</span> <span class="keyword">new</span> WaitForSecondsRealtime(2f);</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span> </div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>            <span class="keywordtype">float</span> startTime = Time.realtimeSinceStartup;</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>            <span class="keywordtype">float</span> endTime = Time.realtimeSinceStartup + 1f;</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> </div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>            <span class="keywordflow">while</span> (Time.realtimeSinceStartup &lt; endTime)</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>            {</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>                <span class="keywordtype">float</span> currentAlpha = Mathf.InverseLerp(endTime, startTime, Time.realtimeSinceStartup);</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>                <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#ac6ed193633fc07ded6927ce479efb6ad">CopyToClipboardMessageCanvasGroup</a>.alpha = currentAlpha;</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>                yield <span class="keywordflow">return</span> <span class="keyword">new</span> WaitForEndOfFrame();</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>            }</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span> </div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>            <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#ac6ed193633fc07ded6927ce479efb6ad">CopyToClipboardMessageCanvasGroup</a>.alpha = 0;</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>            _fadeButtonCoroutine = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>        }</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span> </div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>        <span class="keywordtype">void</span> StopAnimations()</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>        {</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>            <span class="keywordflow">if</span> (_fadeButtonCoroutine != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>            {</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>                StopCoroutine(_fadeButtonCoroutine);</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>                _fadeButtonCoroutine = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>                <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#ac6ed193633fc07ded6927ce479efb6ad">CopyToClipboardMessageCanvasGroup</a>.alpha = 0;</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>            }</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>        }</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span> </div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>        <span class="keyword">private</span> <span class="keywordtype">void</span> Refresh()</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>        {</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>            <span class="comment">// Update total counts labels</span></div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>            <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#ab9796471b9f95fc0bd9651819b81a6bd">ToggleInfoText</a>.text = SRDebuggerUtil.GetNumberString(Service.Console.InfoCount, 999, <span class="stringliteral">&quot;999+&quot;</span>);</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>            <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#aefad1bee2027e00ac37b680e0b8b9e31">ToggleWarningsText</a>.text = SRDebuggerUtil.GetNumberString(Service.Console.WarningCount, 999, <span class="stringliteral">&quot;999+&quot;</span>);</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>            <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a4880876f2971910b586b586fc1f965bf">ToggleErrorsText</a>.text = SRDebuggerUtil.GetNumberString(Service.Console.ErrorCount, 999, <span class="stringliteral">&quot;999+&quot;</span>);</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span> </div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>            <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a08700177c3ca3049c85eeb9126d2028a">ConsoleLogControl</a>.<a class="code hl_property" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_console_log_control.html#ad081783b10af4a5ceb742d02a8a25358">ShowErrors</a> = <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#aa59a05050a36e3c6b694399e1445bb1d">ToggleErrors</a>.isOn;</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>            <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a08700177c3ca3049c85eeb9126d2028a">ConsoleLogControl</a>.<a class="code hl_property" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_console_log_control.html#a1b8866bf5aa208697a21408dcf82e6ee">ShowWarnings</a> = <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#abf33d432255d3b53111f9d945b6479be">ToggleWarnings</a>.isOn;</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>            <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a08700177c3ca3049c85eeb9126d2028a">ConsoleLogControl</a>.<a class="code hl_property" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_console_log_control.html#a419d2063688570e4c1d7912d32818fd5">ShowInfo</a> = <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a4b210ad3f5d5a5be5a8f344e6ab5ed0c">ToggleInfo</a>.isOn;</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span> </div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>            <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a2d5aae0d4a7a5f25be0b451939612692">PinToggle</a>.isOn = Service.DockConsole.IsVisible;</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span> </div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>            _isDirty = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>            <span class="keywordflow">if</span> (!_hasWarnedAboutLogHandler &amp;&amp; Service.Console.LogHandlerIsOverriden)</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>            {</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>                <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#ae51af951f70ad11d1743c7ff7ea6ac70">LogHandlerHasBeenOverridenGroup</a>.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>                _hasWarnedAboutLogHandler = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>            }</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>            <span class="keywordflow">if</span> (!_hasWarnedAboutLoggingDisabled &amp;&amp; !Service.Console.LoggingEnabled)</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>            {</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>                <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a48f6490fbeb969f3002a7117cacb9b47">LoggingIsDisabledCanvasGroup</a>.SetActive(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>            }</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>        }</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span> </div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>        <span class="keyword">private</span> <span class="keywordtype">void</span> ConsoleOnUpdated(IConsoleService console)</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>        {</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>            _isDirty = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>        }</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span> </div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a6df6dcbb0915e0caaed86055c5109d07">  345</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a6df6dcbb0915e0caaed86055c5109d07">Clear</a>()</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>        {</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>            Service.Console.Clear();</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>            _isDirty = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>        }</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span> </div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#ab3031c5d519662bde5f2cffd084dc6b0">  351</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#ab3031c5d519662bde5f2cffd084dc6b0">LogHandlerHasBeenOverridenOkayButtonPress</a>()</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>        {</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>            _hasWarnedAboutLogHandler = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>            <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#ae51af951f70ad11d1743c7ff7ea6ac70">LogHandlerHasBeenOverridenGroup</a>.SetActive(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>        }</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span> </div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#afa79daf05c617da22bd66a628a9dd442">  357</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#afa79daf05c617da22bd66a628a9dd442">LoggingDisableCloseAndIgnorePressed</a>()</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>        {</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>            <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a48f6490fbeb969f3002a7117cacb9b47">LoggingIsDisabledCanvasGroup</a>.SetActive(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>            _hasWarnedAboutLoggingDisabled = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>        }       </div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>        </div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a25e6209079ac70a11382281a00bada80">  363</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a25e6209079ac70a11382281a00bada80">LoggingDisableReenablePressed</a>()</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>        {</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>            Service.Console.LoggingEnabled = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>            <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a48f6490fbeb969f3002a7117cacb9b47">LoggingIsDisabledCanvasGroup</a>.SetActive(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span> </div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>            <a class="code hl_typedef" href="namespace_s_r_f_1_1_components.html#a6348be36dc001e60722e740235ae6713">Debug</a>.Log(<span class="stringliteral">&quot;[SRDebugger] Re-enabled logging.&quot;</span>);</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>        }</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>    }</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>}</div>
+<div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_internal_1_1_s_r_debug_strings_html"><div class="ttname"><a href="class_s_r_debugger_1_1_internal_1_1_s_r_debug_strings.html">SRDebugger.Internal.SRDebugStrings</a></div><div class="ttdef"><b>Definition:</b> <a href="_strings_8cs_source.html#l00003">Strings.cs:4</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_internal_1_1_s_r_debug_strings_html_a15bdf3b363aa011a3f4d1bc0cb1cf440"><div class="ttname"><a href="class_s_r_debugger_1_1_internal_1_1_s_r_debug_strings.html#a15bdf3b363aa011a3f4d1bc0cb1cf440">SRDebugger.Internal.SRDebugStrings.Console_NoStackTrace</a></div><div class="ttdeci">readonly string Console_NoStackTrace</div><div class="ttdef"><b>Definition:</b> <a href="_strings_8cs_source.html#l00007">Strings.cs:7</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_internal_1_1_s_r_debug_strings_html_a4823d2d1b29bf349204ec4a76b1a1bd2"><div class="ttname"><a href="class_s_r_debugger_1_1_internal_1_1_s_r_debug_strings.html#a4823d2d1b29bf349204ec4a76b1a1bd2">SRDebugger.Internal.SRDebugStrings.Console_MessageTruncated</a></div><div class="ttdeci">readonly string Console_MessageTruncated</div><div class="ttdef"><b>Definition:</b> <a href="_strings_8cs_source.html#l00006">Strings.cs:6</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_internal_1_1_s_r_debug_strings_html_ad9f2311cf9c92e1176f8bd6aaa712cf9"><div class="ttname"><a href="class_s_r_debugger_1_1_internal_1_1_s_r_debug_strings.html#ad9f2311cf9c92e1176f8bd6aaa712cf9">SRDebugger.Internal.SRDebugStrings.Current</a></div><div class="ttdeci">static readonly SRDebugStrings Current</div><div class="ttdef"><b>Definition:</b> <a href="_strings_8cs_source.html#l00005">Strings.cs:5</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_services_1_1_console_entry_html"><div class="ttname"><a href="class_s_r_debugger_1_1_services_1_1_console_entry.html">SRDebugger.Services.ConsoleEntry</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_console_service_8cs_source.html#l00034">IConsoleService.cs:35</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_services_1_1_console_entry_html_a1efe8688b4c17bb266a63bb520912b48"><div class="ttname"><a href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a1efe8688b4c17bb266a63bb520912b48">SRDebugger.Services.ConsoleEntry.Message</a></div><div class="ttdeci">string Message</div><div class="ttdef"><b>Definition:</b> <a href="_i_console_service_8cs_source.html#l00047">IConsoleService.cs:47</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_services_1_1_console_entry_html_ac8c02be01e8454d2d592ad399228dd46"><div class="ttname"><a href="class_s_r_debugger_1_1_services_1_1_console_entry.html#ac8c02be01e8454d2d592ad399228dd46">SRDebugger.Services.ConsoleEntry.StackTrace</a></div><div class="ttdeci">string StackTrace</div><div class="ttdef"><b>Definition:</b> <a href="_i_console_service_8cs_source.html#l00048">IConsoleService.cs:48</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_settings_html"><div class="ttname"><a href="class_s_r_debugger_1_1_settings.html">SRDebugger.Settings</a></div><div class="ttdef"><b>Definition:</b> <a href="_settings_8cs_source.html#l00046">Settings.cs:47</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_settings_html_a6174c12ddc109cab573f557249a16a66"><div class="ttname"><a href="class_s_r_debugger_1_1_settings.html#a6174c12ddc109cab573f557249a16a66">SRDebugger.Settings.RichTextInConsole</a></div><div class="ttdeci">bool RichTextInConsole</div><div class="ttdef"><b>Definition:</b> <a href="_settings_8cs_source.html#l00348">Settings.cs:349</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_settings_html_abb13cfe8a6344a51544abb7f3e8555b8"><div class="ttname"><a href="class_s_r_debugger_1_1_settings.html#abb13cfe8a6344a51544abb7f3e8555b8">SRDebugger.Settings.Instance</a></div><div class="ttdeci">static Settings Instance</div><div class="ttdef"><b>Definition:</b> <a href="_settings_8cs_source.html#l00091">Settings.cs:92</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_controls_1_1_console_log_control_html"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_console_log_control.html">SRDebugger.UI.Controls.ConsoleLogControl</a></div><div class="ttdef"><b>Definition:</b> <a href="_console_log_control_8cs_source.html#l00016">ConsoleLogControl.cs:17</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_controls_1_1_console_log_control_html_a00dc3b63de929a2ca60412894bc1d05d"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_console_log_control.html#a00dc3b63de929a2ca60412894bc1d05d">SRDebugger.UI.Controls.ConsoleLogControl.Filter</a></div><div class="ttdeci">string Filter</div><div class="ttdef"><b>Definition:</b> <a href="_console_log_control_8cs_source.html#l00066">ConsoleLogControl.cs:67</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_controls_1_1_console_log_control_html_a1b8866bf5aa208697a21408dcf82e6ee"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_console_log_control.html#a1b8866bf5aa208697a21408dcf82e6ee">SRDebugger.UI.Controls.ConsoleLogControl.ShowWarnings</a></div><div class="ttdeci">bool ShowWarnings</div><div class="ttdef"><b>Definition:</b> <a href="_console_log_control_8cs_source.html#l00040">ConsoleLogControl.cs:41</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_controls_1_1_console_log_control_html_a419d2063688570e4c1d7912d32818fd5"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_console_log_control.html#a419d2063688570e4c1d7912d32818fd5">SRDebugger.UI.Controls.ConsoleLogControl.ShowInfo</a></div><div class="ttdeci">bool ShowInfo</div><div class="ttdef"><b>Definition:</b> <a href="_console_log_control_8cs_source.html#l00050">ConsoleLogControl.cs:51</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_controls_1_1_console_log_control_html_a623eaf9c108964a1f43241e612a58d56"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_console_log_control.html#a623eaf9c108964a1f43241e612a58d56">SRDebugger.UI.Controls.ConsoleLogControl.SelectedItemChanged</a></div><div class="ttdeci">Action&lt; ConsoleEntry &gt; SelectedItemChanged</div><div class="ttdef"><b>Definition:</b> <a href="_console_log_control_8cs_source.html#l00027">ConsoleLogControl.cs:27</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_controls_1_1_console_log_control_html_ad081783b10af4a5ceb742d02a8a25358"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_console_log_control.html#ad081783b10af4a5ceb742d02a8a25358">SRDebugger.UI.Controls.ConsoleLogControl.ShowErrors</a></div><div class="ttdeci">bool ShowErrors</div><div class="ttdef"><b>Definition:</b> <a href="_console_log_control_8cs_source.html#l00030">ConsoleLogControl.cs:31</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller_html"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html">SRDebugger.UI.Tabs.ConsoleTabController</a></div><div class="ttdef"><b>Definition:</b> <a href="_console_tab_controller_8cs_source.html#l00015">ConsoleTabController.cs:16</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller_html_a0029d37fa17e0298feaa2e97f1a69f35"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a0029d37fa17e0298feaa2e97f1a69f35">SRDebugger.UI.Tabs.ConsoleTabController.Update</a></div><div class="ttdeci">override void Update()</div><div class="ttdef"><b>Definition:</b> <a href="_console_tab_controller_8cs_source.html#l00191">ConsoleTabController.cs:191</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller_html_a03bf951c48239ba62832e2b4eff29da2"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a03bf951c48239ba62832e2b4eff29da2">SRDebugger.UI.Tabs.ConsoleTabController.FilterField</a></div><div class="ttdeci">InputField FilterField</div><div class="ttdef"><b>Definition:</b> <a href="_console_tab_controller_8cs_source.html#l00070">ConsoleTabController.cs:70</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller_html_a063ea8dd2b45ad313982e6eff4dd9a95"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a063ea8dd2b45ad313982e6eff4dd9a95">SRDebugger.UI.Tabs.ConsoleTabController.FilterBarContainer</a></div><div class="ttdeci">GameObject FilterBarContainer</div><div class="ttdef"><b>Definition:</b> <a href="_console_tab_controller_8cs_source.html#l00072">ConsoleTabController.cs:72</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller_html_a08700177c3ca3049c85eeb9126d2028a"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a08700177c3ca3049c85eeb9126d2028a">SRDebugger.UI.Tabs.ConsoleTabController.ConsoleLogControl</a></div><div class="ttdeci">ConsoleLogControl ConsoleLogControl</div><div class="ttdef"><b>Definition:</b> <a href="_console_tab_controller_8cs_source.html#l00026">ConsoleTabController.cs:26</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller_html_a167b5daa3abef942dd3ce7b9f423c3ee"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a167b5daa3abef942dd3ce7b9f423c3ee">SRDebugger.UI.Tabs.ConsoleTabController.CopyToClipboardButton</a></div><div class="ttdeci">GameObject CopyToClipboardButton</div><div class="ttdef"><b>Definition:</b> <a href="_console_tab_controller_8cs_source.html#l00053">ConsoleTabController.cs:53</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller_html_a1822dc72f57d67f28bce0ac6ef770b93"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a1822dc72f57d67f28bce0ac6ef770b93">SRDebugger.UI.Tabs.ConsoleTabController.StackTraceScrollRect</a></div><div class="ttdeci">ScrollRect StackTraceScrollRect</div><div class="ttdef"><b>Definition:</b> <a href="_console_tab_controller_8cs_source.html#l00033">ConsoleTabController.cs:33</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller_html_a25e6209079ac70a11382281a00bada80"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a25e6209079ac70a11382281a00bada80">SRDebugger.UI.Tabs.ConsoleTabController.LoggingDisableReenablePressed</a></div><div class="ttdeci">void LoggingDisableReenablePressed()</div><div class="ttdef"><b>Definition:</b> <a href="_console_tab_controller_8cs_source.html#l00363">ConsoleTabController.cs:363</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller_html_a2d5aae0d4a7a5f25be0b451939612692"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a2d5aae0d4a7a5f25be0b451939612692">SRDebugger.UI.Tabs.ConsoleTabController.PinToggle</a></div><div class="ttdeci">Toggle PinToggle</div><div class="ttdef"><b>Definition:</b> <a href="_console_tab_controller_8cs_source.html#l00029">ConsoleTabController.cs:29</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller_html_a31766596b5a04fa83044901a17a8902f"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a31766596b5a04fa83044901a17a8902f">SRDebugger.UI.Tabs.ConsoleTabController.CopyToClipboardMessage</a></div><div class="ttdeci">GameObject CopyToClipboardMessage</div><div class="ttdef"><b>Definition:</b> <a href="_console_tab_controller_8cs_source.html#l00056">ConsoleTabController.cs:56</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller_html_a4880876f2971910b586b586fc1f965bf"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a4880876f2971910b586b586fc1f965bf">SRDebugger.UI.Tabs.ConsoleTabController.ToggleErrorsText</a></div><div class="ttdeci">Text ToggleErrorsText</div><div class="ttdef"><b>Definition:</b> <a href="_console_tab_controller_8cs_source.html#l00039">ConsoleTabController.cs:39</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller_html_a48f6490fbeb969f3002a7117cacb9b47"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a48f6490fbeb969f3002a7117cacb9b47">SRDebugger.UI.Tabs.ConsoleTabController.LoggingIsDisabledCanvasGroup</a></div><div class="ttdeci">GameObject LoggingIsDisabledCanvasGroup</div><div class="ttdef"><b>Definition:</b> <a href="_console_tab_controller_8cs_source.html#l00062">ConsoleTabController.cs:62</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller_html_a4b210ad3f5d5a5be5a8f344e6ab5ed0c"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a4b210ad3f5d5a5be5a8f344e6ab5ed0c">SRDebugger.UI.Tabs.ConsoleTabController.ToggleInfo</a></div><div class="ttdeci">Toggle ToggleInfo</div><div class="ttdef"><b>Definition:</b> <a href="_console_tab_controller_8cs_source.html#l00041">ConsoleTabController.cs:41</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller_html_a4d089a6cbfbb68bde472d52d6c0b532c"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a4d089a6cbfbb68bde472d52d6c0b532c">SRDebugger.UI.Tabs.ConsoleTabController.CopyToClipboardStates</a></div><div class="ttdeci">CopyToClipboardStates</div><div class="ttdef"><b>Definition:</b> <a href="_console_tab_controller_8cs_source.html#l00249">ConsoleTabController.cs:250</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller_html_a6df6dcbb0915e0caaed86055c5109d07"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a6df6dcbb0915e0caaed86055c5109d07">SRDebugger.UI.Tabs.ConsoleTabController.Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdef"><b>Definition:</b> <a href="_console_tab_controller_8cs_source.html#l00345">ConsoleTabController.cs:345</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller_html_a91efda6e8fb5280f8477059c425eacf2"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a91efda6e8fb5280f8477059c425eacf2">SRDebugger.UI.Tabs.ConsoleTabController.Start</a></div><div class="ttdeci">override void Start()</div><div class="ttdef"><b>Definition:</b> <a href="_console_tab_controller_8cs_source.html#l00078">ConsoleTabController.cs:78</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller_html_a97b59020fded57d4f05188b951c729be"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#a97b59020fded57d4f05188b951c729be">SRDebugger.UI.Tabs.ConsoleTabController.FilterToggle</a></div><div class="ttdeci">Toggle FilterToggle</div><div class="ttdef"><b>Definition:</b> <a href="_console_tab_controller_8cs_source.html#l00068">ConsoleTabController.cs:68</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller_html_aa0904891f62f426411cf9edb589c4a96"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#aa0904891f62f426411cf9edb589c4a96">SRDebugger.UI.Tabs.ConsoleTabController.OnDestroy</a></div><div class="ttdeci">override void OnDestroy()</div><div class="ttdef"><b>Definition:</b> <a href="_console_tab_controller_8cs_source.html#l00159">ConsoleTabController.cs:159</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller_html_aa59a05050a36e3c6b694399e1445bb1d"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#aa59a05050a36e3c6b694399e1445bb1d">SRDebugger.UI.Tabs.ConsoleTabController.ToggleErrors</a></div><div class="ttdeci">Toggle ToggleErrors</div><div class="ttdef"><b>Definition:</b> <a href="_console_tab_controller_8cs_source.html#l00037">ConsoleTabController.cs:37</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller_html_ab3031c5d519662bde5f2cffd084dc6b0"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#ab3031c5d519662bde5f2cffd084dc6b0">SRDebugger.UI.Tabs.ConsoleTabController.LogHandlerHasBeenOverridenOkayButtonPress</a></div><div class="ttdeci">void LogHandlerHasBeenOverridenOkayButtonPress()</div><div class="ttdef"><b>Definition:</b> <a href="_console_tab_controller_8cs_source.html#l00351">ConsoleTabController.cs:351</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller_html_ab9796471b9f95fc0bd9651819b81a6bd"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#ab9796471b9f95fc0bd9651819b81a6bd">SRDebugger.UI.Tabs.ConsoleTabController.ToggleInfoText</a></div><div class="ttdeci">Text ToggleInfoText</div><div class="ttdef"><b>Definition:</b> <a href="_console_tab_controller_8cs_source.html#l00043">ConsoleTabController.cs:43</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller_html_abf25a48ef22b01220c6801ff985c6ca2"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#abf25a48ef22b01220c6801ff985c6ca2">SRDebugger.UI.Tabs.ConsoleTabController.OnDisable</a></div><div class="ttdeci">override void OnDisable()</div><div class="ttdef"><b>Definition:</b> <a href="_console_tab_controller_8cs_source.html#l00179">ConsoleTabController.cs:179</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller_html_abf33d432255d3b53111f9d945b6479be"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#abf33d432255d3b53111f9d945b6479be">SRDebugger.UI.Tabs.ConsoleTabController.ToggleWarnings</a></div><div class="ttdeci">Toggle ToggleWarnings</div><div class="ttdef"><b>Definition:</b> <a href="_console_tab_controller_8cs_source.html#l00045">ConsoleTabController.cs:45</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller_html_ac2a069b5b4a1840fa74d23e77f661f6d"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#ac2a069b5b4a1840fa74d23e77f661f6d">SRDebugger.UI.Tabs.ConsoleTabController.CopyToClipboard</a></div><div class="ttdeci">void CopyToClipboard()</div><div class="ttdef"><b>Definition:</b> <a href="_console_tab_controller_8cs_source.html#l00233">ConsoleTabController.cs:233</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller_html_ac6ed193633fc07ded6927ce479efb6ad"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#ac6ed193633fc07ded6927ce479efb6ad">SRDebugger.UI.Tabs.ConsoleTabController.CopyToClipboardMessageCanvasGroup</a></div><div class="ttdeci">CanvasGroup CopyToClipboardMessageCanvasGroup</div><div class="ttdef"><b>Definition:</b> <a href="_console_tab_controller_8cs_source.html#l00059">ConsoleTabController.cs:59</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller_html_acc3f09a8da584d3a98537220f6a3f416"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#acc3f09a8da584d3a98537220f6a3f416">SRDebugger.UI.Tabs.ConsoleTabController.CopyToClipboardContainer</a></div><div class="ttdeci">GameObject CopyToClipboardContainer</div><div class="ttdef"><b>Definition:</b> <a href="_console_tab_controller_8cs_source.html#l00050">ConsoleTabController.cs:50</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller_html_ae51af951f70ad11d1743c7ff7ea6ac70"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#ae51af951f70ad11d1743c7ff7ea6ac70">SRDebugger.UI.Tabs.ConsoleTabController.LogHandlerHasBeenOverridenGroup</a></div><div class="ttdeci">GameObject LogHandlerHasBeenOverridenGroup</div><div class="ttdef"><b>Definition:</b> <a href="_console_tab_controller_8cs_source.html#l00065">ConsoleTabController.cs:65</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller_html_ae9a7e891a5447e1a5c57bde047e65964"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#ae9a7e891a5447e1a5c57bde047e65964">SRDebugger.UI.Tabs.ConsoleTabController.StackTraceText</a></div><div class="ttdeci">Text StackTraceText</div><div class="ttdef"><b>Definition:</b> <a href="_console_tab_controller_8cs_source.html#l00035">ConsoleTabController.cs:35</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller_html_aefad1bee2027e00ac37b680e0b8b9e31"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#aefad1bee2027e00ac37b680e0b8b9e31">SRDebugger.UI.Tabs.ConsoleTabController.ToggleWarningsText</a></div><div class="ttdeci">Text ToggleWarningsText</div><div class="ttdef"><b>Definition:</b> <a href="_console_tab_controller_8cs_source.html#l00047">ConsoleTabController.cs:47</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller_html_af3c17360193f1892c0953849b65d0251"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#af3c17360193f1892c0953849b65d0251">SRDebugger.UI.Tabs.ConsoleTabController.OnEnable</a></div><div class="ttdeci">override void OnEnable()</div><div class="ttdef"><b>Definition:</b> <a href="_console_tab_controller_8cs_source.html#l00172">ConsoleTabController.cs:172</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller_html_afa79daf05c617da22bd66a628a9dd442"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html#afa79daf05c617da22bd66a628a9dd442">SRDebugger.UI.Tabs.ConsoleTabController.LoggingDisableCloseAndIgnorePressed</a></div><div class="ttdeci">void LoggingDisableCloseAndIgnorePressed()</div><div class="ttdef"><b>Definition:</b> <a href="_console_tab_controller_8cs_source.html#l00357">ConsoleTabController.cs:357</a></div></div>
+<div class="ttc" id="aclass_s_r_f_1_1_s_r_mono_behaviour_ex_html"><div class="ttname"><a href="class_s_r_f_1_1_s_r_mono_behaviour_ex.html">SRF.SRMonoBehaviourEx</a></div><div class="ttdef"><b>Definition:</b> <a href="_s_r_mono_behaviour_ex_8cs_source.html#l00062">SRMonoBehaviourEx.cs:63</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_html_ae7671ef7df96a23c9f8cbf77d72f04b1aafbf0897a5a83fdd873dfb032ec695d3"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#ae7671ef7df96a23c9f8cbf77d72f04b1aafbf0897a5a83fdd873dfb032ec695d3">ILRuntime.Mono.Cecil.Metadata.ElementType.Internal</a></div><div class="ttdeci">@ Internal</div></div>
+<div class="ttc" id="anamespace_s_r_debugger_1_1_u_i_1_1_tabs_html"><div class="ttname"><a href="namespace_s_r_debugger_1_1_u_i_1_1_tabs.html">SRDebugger.UI.Tabs</a></div><div class="ttdef"><b>Definition:</b> <a href="_bug_report_tab_controller_8cs_source.html#l00001">BugReportTabController.cs:2</a></div></div>
+<div class="ttc" id="anamespace_s_r_f_1_1_components_html_a6348be36dc001e60722e740235ae6713"><div class="ttname"><a href="namespace_s_r_f_1_1_components.html#a6348be36dc001e60722e740235ae6713">SRF.Components.Debug</a></div><div class="ttdeci">UnityEngine.Debug Debug</div><div class="ttdef"><b>Definition:</b> <a href="_s_r_auto_singleton_8cs_source.html#l00005">SRAutoSingleton.cs:5</a></div></div>
+<div class="ttc" id="anamespace_s_r_f_html"><div class="ttname"><a href="namespace_s_r_f.html">SRF</a></div><div class="ttdef"><b>Definition:</b> <a href="_mini_j_s_o_n_8cs_source.html#l00032">MiniJSON.cs:33</a></div></div>
+<div class="ttc" id="anamespace_system_1_1_collections_html"><div class="ttname"><a href="namespace_system_1_1_collections.html">System.Collections</a></div></div>
+<div class="ttc" id="anamespace_system_html"><div class="ttname"><a href="namespace_system.html">System</a></div><div class="ttdef"><b>Definition:</b> <a href="_async_method_builder_attribute_8cs_source.html#l00002">AsyncMethodBuilderAttribute.cs:3</a></div></div>
+<div class="ttc" id="anamespace_unity_engine_1_1_u_i_html"><div class="ttname"><a href="namespace_unity_engine_1_1_u_i.html">UnityEngine.UI</a></div><div class="ttdef"><b>Definition:</b> <a href="_loop_scroll_rect_default_controls1_8cs_source.html#l00004">LoopScrollRectDefaultControls1.cs:5</a></div></div>
+<div class="ttc" id="anamespace_unity_engine_html"><div class="ttname"><a href="namespace_unity_engine.html">UnityEngine</a></div><div class="ttdef"><b>Definition:</b> <a href="_mathf_8cs_source.html#l00003">Mathf.cs:4</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_3b33dffaa21a2ac6f7978a949ffd4e41.html">Assets</a></li><li class="navelem"><a class="el" href="dir_5501c55c26a8d51fbc1fd8b7d8df04c3.html">ThirdParty</a></li><li class="navelem"><a class="el" href="dir_0f5df078a02ed03b6776122c2b87cb60.html">StompyRobot</a></li><li class="navelem"><a class="el" href="dir_94017e9a8ea42ed0c35aefd43f85b68b.html">SRDebugger</a></li><li class="navelem"><a class="el" href="dir_7a8f801e87ec51abc5da4d4cde89dc5d.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_eff075d89f6ea7c65dd0b2e968a7ea05.html">UI</a></li><li class="navelem"><a class="el" href="dir_32c658cb92c9c2d006784bc2c046aa65.html">Tabs</a></li><li class="navelem"><a class="el" href="_console_tab_controller_8cs.html">ConsoleTabController.cs</a></li>
+    <li class="footer">生成于 2022年 四月 21日 星期四 10:43:02 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

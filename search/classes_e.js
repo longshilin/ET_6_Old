@@ -42,5 +42,9 @@ var searchData=
   ['operastandalonecomponentupdatesystem_39',['OperaStandaloneComponentUpdateSystem',['../class_e_t_1_1_opera_standalone_component_update_system.html',1,'ET']]],
   ['optimizer_40',['Optimizer',['../class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_optimizer.html',1,'ILRuntime::Runtime::Intepreter::RegisterVM']]],
   ['optionalmodifiertype_41',['OptionalModifierType',['../class_i_l_runtime_1_1_mono_1_1_cecil_1_1_optional_modifier_type.html',1,'ILRuntime::Mono::Cecil']]],
-  ['options_42',['Options',['../class_e_t_1_1_options.html',1,'ET']]]
+  ['optiondefinition_42',['OptionDefinition',['../class_s_r_debugger_1_1_option_definition.html',1,'SRDebugger']]],
+  ['options_43',['Options',['../class_e_t_1_1_options.html',1,'ET']]],
+  ['optionscontrolbase_44',['OptionsControlBase',['../class_s_r_debugger_1_1_u_i_1_1_controls_1_1_options_control_base.html',1,'SRDebugger::UI::Controls']]],
+  ['optionsserviceimpl_45',['OptionsServiceImpl',['../class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html',1,'SRDebugger::Services::Implementation']]],
+  ['optionstabcontroller_46',['OptionsTabController',['../class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_options_tab_controller.html',1,'SRDebugger::UI::Tabs']]]
 ];

@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('_robot_case_dispatcher_component_syste
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                IRobotCase robotCase = Activator.CreateInstance(type) as IRobotCase;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                <span class="keywordflow">if</span> (robotCase == <span class="keyword">null</span>)</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                {</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                    Log.Error($<span class="stringliteral">&quot;RobotCase handle {type.Name} 需要继承 IRobotCase&quot;</span>);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                    <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Error($<span class="stringliteral">&quot;RobotCase handle {type.Name} 需要继承 IRobotCase&quot;</span>);</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                    <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                }</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                </div>
@@ -161,12 +161,13 @@ $(document).ready(function(){initNavTree('_robot_case_dispatcher_component_syste
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            }</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keywordflow">catch</span> (Exception e)</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            {</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                Log.Error($<span class="stringliteral">&quot;{self.DomainZone()} {e}&quot;</span>);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Error($<span class="stringliteral">&quot;{self.DomainZone()} {e}&quot;</span>);</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                RobotLog.Console($<span class="stringliteral">&quot;RobotCase Error {caseType}:\n\t{e}&quot;</span>);</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            }</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        }</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>}</div>
+<div class="ttc" id="a_bugly_agent_8cs_html_a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b"><div class="ttname"><a href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">LogSeverity.Log</a></div><div class="ttdeci">@ Log</div></div>
 <div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
 <div class="ttc" id="aclass_e_t_1_1_awake_system_html"><div class="ttname"><a href="class_e_t_1_1_awake_system.html">ET.AwakeSystem</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_awake_system_8cs_source.html#l00135">IAwakeSystem.cs:136</a></div></div>
 <div class="ttc" id="aclass_e_t_1_1_load_system_html"><div class="ttname"><a href="class_e_t_1_1_load_system.html">ET.LoadSystem</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_load_system_8cs_source.html#l00015">ILoadSystem.cs:16</a></div></div>
@@ -187,7 +188,7 @@ $(document).ready(function(){initNavTree('_robot_case_dispatcher_component_syste
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_63b3edbb6dcb5a7e8e866ca08f7102c4.html">Robot</a></li><li class="navelem"><a class="el" href="dir_f68d3d5de05b36e0fd39558a02f05528.html">Hotfix</a></li><li class="navelem"><a class="el" href="dir_15471f551c6b5250308a7e20ef389cbd.html">Module</a></li><li class="navelem"><a class="el" href="dir_e58838a55230fafe98b350ac43a08382.html">RobotCase</a></li><li class="navelem"><a class="el" href="_robot_case_dispatcher_component_system_8cs.html">RobotCaseDispatcherComponentSystem.cs</a></li>
-    <li class="footer">生成于 2022年 四月 21日 星期四 07:49:28 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">生成于 2022年 四月 21日 星期四 10:42:54 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('_build_helper_8cs_source.html',''); in
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> BuildFolder = <span class="stringliteral">&quot;../Release/{0}/StreamingAssets/&quot;</span>;</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> Build(<a class="code hl_enumeration" href="namespace_e_t.html#abf9694334179f75bc47b2c9b854b3dcb">PlatformType</a> type, BuildAssetBundleOptions buildAssetBundleOptions, BuildOptions buildOptions, <span class="keywordtype">bool</span> isBuildExe,</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_enumvalue" href="namespace_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode.html#aa6b865bcf32cba151324de7c4ac0044bac74c1f42f141c011ca6bd8b1114fc3d0">Build</a>(<a class="code hl_enumeration" href="namespace_e_t.html#abf9694334179f75bc47b2c9b854b3dcb">PlatformType</a> type, BuildAssetBundleOptions buildAssetBundleOptions, BuildOptions buildOptions, <span class="keywordtype">bool</span> isBuildExe,</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keywordtype">bool</span> isContainAB, <span class="keywordtype">bool</span> clearFolder)</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        {</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            BuildTarget buildTarget = BuildTarget.StandaloneWindows;</div>
@@ -180,7 +180,7 @@ $(document).ready(function(){initNavTree('_build_helper_8cs_source.html',''); in
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                {</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                    <span class="keywordtype">string</span> targetPath = <a class="code hl_typedef" href="_process_helper_8cs.html#a5d3f395d3257bcd58335037355f0d7cc">Path</a>.Combine(relativeDirPrefix, $<span class="stringliteral">&quot;{programName}_Data/StreamingAssets/&quot;</span>);</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                    FileHelper.CleanDirectory(targetPath);</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                    Debug.Log($<span class="stringliteral">&quot;src dir: {fold}    target: {targetPath}&quot;</span>);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                    <a class="code hl_typedef" href="_s_r_debug_util_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log($<span class="stringliteral">&quot;src dir: {fold}    target: {targetPath}&quot;</span>);</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                    FileHelper.CopyDirectory(fold, targetPath);</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                }</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            }</div>
@@ -188,6 +188,8 @@ $(document).ready(function(){initNavTree('_build_helper_8cs_source.html',''); in
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    }</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>}</div>
 <div class="ttc" id="a_process_helper_8cs_html_a5d3f395d3257bcd58335037355f0d7cc"><div class="ttname"><a href="_process_helper_8cs.html#a5d3f395d3257bcd58335037355f0d7cc">Path</a></div><div class="ttdeci">System.IO.Path Path</div><div class="ttdef"><b>Definition:</b> <a href="_process_helper_8cs_source.html#l00005">ProcessHelper.cs:5</a></div></div>
+<div class="ttc" id="a_s_r_debug_util_8cs_html_a0100be52d45f14348918ea69ec09f959"><div class="ttname"><a href="_s_r_debug_util_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a></div><div class="ttdeci">UnityEngine.Debug Debug</div><div class="ttdef"><b>Definition:</b> <a href="_s_r_debug_util_8cs_source.html#l00006">SRDebugUtil.cs:6</a></div></div>
+<div class="ttc" id="anamespace_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_html_aa6b865bcf32cba151324de7c4ac0044bac74c1f42f141c011ca6bd8b1114fc3d0"><div class="ttname"><a href="namespace_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode.html#aa6b865bcf32cba151324de7c4ac0044bac74c1f42f141c011ca6bd8b1114fc3d0">ChillyRoom.UnityEditor.iOS.Xcode.PBXSourceTree.Build</a></div><div class="ttdeci">@ Build</div></div>
 <div class="ttc" id="anamespace_e_t_html"><div class="ttname"><a href="namespace_e_t.html">ET</a></div><div class="ttdef"><b>Definition:</b> <a href="_robot_2_app_2_program_8cs_source.html#l00008">Program.cs:9</a></div></div>
 <div class="ttc" id="anamespace_e_t_html_abf9694334179f75bc47b2c9b854b3dcb"><div class="ttname"><a href="namespace_e_t.html#abf9694334179f75bc47b2c9b854b3dcb">ET.PlatformType</a></div><div class="ttdeci">PlatformType</div><div class="ttdef"><b>Definition:</b> <a href="_build_editor_8cs_source.html#l00012">BuildEditor.cs:13</a></div></div>
 <div class="ttc" id="anamespace_system_1_1_collections_1_1_generic_html"><div class="ttname"><a href="namespace_system_1_1_collections_1_1_generic.html">System.Collections.Generic</a></div></div>
@@ -201,7 +203,7 @@ $(document).ready(function(){initNavTree('_build_helper_8cs_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_3b33dffaa21a2ac6f7978a949ffd4e41.html">Assets</a></li><li class="navelem"><a class="el" href="dir_3a76d1108beca0c0cd39a902932cb060.html">Editor</a></li><li class="navelem"><a class="el" href="dir_bb7e890493c0b3f2297165065665898e.html">BuildEditor</a></li><li class="navelem"><a class="el" href="_build_helper_8cs.html">BuildHelper.cs</a></li>
-    <li class="footer">生成于 2022年 四月 21日 星期四 07:49:29 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">生成于 2022年 四月 21日 星期四 10:42:54 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

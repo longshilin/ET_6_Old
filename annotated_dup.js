@@ -1,5 +1,45 @@
 var annotated_dup =
 [
+    [ "ChillyRoom", "namespace_chilly_room.html", [
+      [ "UnityEditor", "namespace_chilly_room_1_1_unity_editor.html", [
+        [ "iOS", "namespace_chilly_room_1_1_unity_editor_1_1i_o_s.html", [
+          [ "Xcode", "namespace_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode.html", [
+            [ "PBX", "namespace_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x.html", [
+              [ "ArrayAST", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_array_a_s_t.html", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_array_a_s_t" ],
+              [ "GUIDList", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_g_u_i_d_list.html", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_g_u_i_d_list" ],
+              [ "IdentifierAST", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_identifier_a_s_t.html", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_identifier_a_s_t" ],
+              [ "KeyValueAST", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_key_value_a_s_t.html", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_key_value_a_s_t" ],
+              [ "Lexer", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_lexer.html", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_lexer" ],
+              [ "Parser", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_parser.html", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_parser" ],
+              [ "PBXElement", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_p_b_x_element.html", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_p_b_x_element" ],
+              [ "PBXElementArray", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_p_b_x_element_array.html", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_p_b_x_element_array" ],
+              [ "PBXElementDict", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_p_b_x_element_dict.html", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_p_b_x_element_dict" ],
+              [ "PBXElementString", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_p_b_x_element_string.html", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_p_b_x_element_string" ],
+              [ "PropertyCommentChecker", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_property_comment_checker.html", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_property_comment_checker" ],
+              [ "Serializer", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_serializer.html", null ],
+              [ "Token", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_token.html", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_token" ],
+              [ "TokenList", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_token_list.html", null ],
+              [ "TreeAST", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_tree_a_s_t.html", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_tree_a_s_t" ],
+              [ "ValueAST", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_value_a_s_t.html", null ]
+            ] ],
+            [ "AssetBrandAssetGroup", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_asset_brand_asset_group.html", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_asset_brand_asset_group" ],
+            [ "AssetCatalogItemWithVariants", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_asset_catalog_item_with_variants.html", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_asset_catalog_item_with_variants" ],
+            [ "AssetImageStack", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_asset_image_stack.html", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_asset_image_stack" ],
+            [ "AssetImageStackLayer", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_asset_image_stack_layer.html", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_asset_image_stack_layer" ],
+            [ "PBXCapabilityType", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_capability_type.html", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_capability_type" ],
+            [ "PBXProject", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_project.html", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_project" ],
+            [ "PlistDocument", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_plist_document.html", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_plist_document" ],
+            [ "PlistElement", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_plist_element.html", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_plist_element" ],
+            [ "PlistElementArray", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_plist_element_array.html", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_plist_element_array" ],
+            [ "PlistElementBoolean", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_plist_element_boolean.html", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_plist_element_boolean" ],
+            [ "PlistElementDict", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_plist_element_dict.html", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_plist_element_dict" ],
+            [ "PlistElementInteger", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_plist_element_integer.html", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_plist_element_integer" ],
+            [ "PlistElementString", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_plist_element_string.html", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_plist_element_string" ],
+            [ "ProjectCapabilityManager", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_project_capability_manager.html", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_project_capability_manager" ]
+          ] ]
+        ] ]
+      ] ]
+    ] ],
     [ "ClientEditor", "namespace_client_editor.html", [
       [ "UIEditorController", "class_client_editor_1_1_u_i_editor_controller.html", null ]
     ] ],
@@ -458,6 +498,7 @@ var annotated_dup =
       [ "OperaStandaloneComponentAwakeSystem", "class_e_t_1_1_opera_standalone_component_awake_system.html", "class_e_t_1_1_opera_standalone_component_awake_system" ],
       [ "OperaStandaloneComponentUpdateSystem", "class_e_t_1_1_opera_standalone_component_update_system.html", "class_e_t_1_1_opera_standalone_component_update_system" ],
       [ "Options", "class_e_t_1_1_options.html", "class_e_t_1_1_options" ],
+      [ "Packager", "class_e_t_1_1_packager.html", null ],
       [ "Packet", "struct_e_t_1_1_packet.html", "struct_e_t_1_1_packet" ],
       [ "PacketParser", "class_e_t_1_1_packet_parser.html", "class_e_t_1_1_packet_parser" ],
       [ "PathfindingComponent", "class_e_t_1_1_pathfinding_component.html", "class_e_t_1_1_pathfinding_component" ],
@@ -1275,28 +1316,6 @@ var annotated_dup =
         [ "ILRuntimeJITAttribute", "class_i_l_runtime_1_1_runtime_1_1_i_l_runtime_j_i_t_attribute.html", "class_i_l_runtime_1_1_runtime_1_1_i_l_runtime_j_i_t_attribute" ]
       ] ]
     ] ],
-    [ "IngameDebugConsole", "namespace_ingame_debug_console.html", [
-      [ "Commands", "namespace_ingame_debug_console_1_1_commands.html", [
-        [ "PlayerPrefsCommands", "class_ingame_debug_console_1_1_commands_1_1_player_prefs_commands.html", null ],
-        [ "SceneCommands", "class_ingame_debug_console_1_1_commands_1_1_scene_commands.html", null ],
-        [ "TimeCommands", "class_ingame_debug_console_1_1_commands_1_1_time_commands.html", null ]
-      ] ],
-      [ "CircularBuffer", "class_ingame_debug_console_1_1_circular_buffer.html", "class_ingame_debug_console_1_1_circular_buffer" ],
-      [ "ConsoleMethodAttribute", "class_ingame_debug_console_1_1_console_method_attribute.html", "class_ingame_debug_console_1_1_console_method_attribute" ],
-      [ "ConsoleMethodInfo", "class_ingame_debug_console_1_1_console_method_info.html", "class_ingame_debug_console_1_1_console_method_info" ],
-      [ "DebugLogEntry", "class_ingame_debug_console_1_1_debug_log_entry.html", "class_ingame_debug_console_1_1_debug_log_entry" ],
-      [ "DebugLogEntryTimestamp", "struct_ingame_debug_console_1_1_debug_log_entry_timestamp.html", "struct_ingame_debug_console_1_1_debug_log_entry_timestamp" ],
-      [ "DebugLogIndexList", "class_ingame_debug_console_1_1_debug_log_index_list.html", "class_ingame_debug_console_1_1_debug_log_index_list" ],
-      [ "DebugLogItem", "class_ingame_debug_console_1_1_debug_log_item.html", "class_ingame_debug_console_1_1_debug_log_item" ],
-      [ "DebugLogManager", "class_ingame_debug_console_1_1_debug_log_manager.html", "class_ingame_debug_console_1_1_debug_log_manager" ],
-      [ "DebugLogManagerEditor", "class_ingame_debug_console_1_1_debug_log_manager_editor.html", "class_ingame_debug_console_1_1_debug_log_manager_editor" ],
-      [ "DebugLogPopup", "class_ingame_debug_console_1_1_debug_log_popup.html", "class_ingame_debug_console_1_1_debug_log_popup" ],
-      [ "DebugLogRecycledListView", "class_ingame_debug_console_1_1_debug_log_recycled_list_view.html", "class_ingame_debug_console_1_1_debug_log_recycled_list_view" ],
-      [ "DebugLogResizeListener", "class_ingame_debug_console_1_1_debug_log_resize_listener.html", null ],
-      [ "DebugsOnScrollListener", "class_ingame_debug_console_1_1_debugs_on_scroll_listener.html", "class_ingame_debug_console_1_1_debugs_on_scroll_listener" ],
-      [ "DynamicCircularBuffer", "class_ingame_debug_console_1_1_dynamic_circular_buffer.html", "class_ingame_debug_console_1_1_dynamic_circular_buffer" ],
-      [ "QueuedDebugLogEntry", "struct_ingame_debug_console_1_1_queued_debug_log_entry.html", "struct_ingame_debug_console_1_1_queued_debug_log_entry" ]
-    ] ],
     [ "Linity", "namespace_linity.html", [
       [ "ToDo", "namespace_linity_1_1_to_do.html", [
         [ "ToDo", "class_linity_1_1_to_do_1_1_to_do.html", "class_linity_1_1_to_do_1_1_to_do" ],
@@ -1433,6 +1452,196 @@ var annotated_dup =
         [ "SerializedNetworkBehaviour", "class_sirenix_1_1_odin_inspector_1_1_serialized_network_behaviour.html", "class_sirenix_1_1_odin_inspector_1_1_serialized_network_behaviour" ]
       ] ]
     ] ],
+    [ "SRDebugger", "namespace_s_r_debugger.html", [
+      [ "Editor", "namespace_s_r_debugger_1_1_editor.html", [
+        [ "ApiSignupTermsWindow", "class_s_r_debugger_1_1_editor_1_1_api_signup_terms_window.html", null ],
+        [ "DelegateFix", "class_s_r_debugger_1_1_editor_1_1_delegate_fix.html", "class_s_r_debugger_1_1_editor_1_1_delegate_fix" ],
+        [ "Fix", "class_s_r_debugger_1_1_editor_1_1_fix.html", "class_s_r_debugger_1_1_editor_1_1_fix" ],
+        [ "IntegrityIssue", "class_s_r_debugger_1_1_editor_1_1_integrity_issue.html", "class_s_r_debugger_1_1_editor_1_1_integrity_issue" ],
+        [ "SettingsEditor", "class_s_r_debugger_1_1_editor_1_1_settings_editor.html", "class_s_r_debugger_1_1_editor_1_1_settings_editor" ],
+        [ "SRDebugEditor", "class_s_r_debugger_1_1_editor_1_1_s_r_debug_editor.html", null ],
+        [ "SRDebugEditorStrings", "class_s_r_debugger_1_1_editor_1_1_s_r_debug_editor_strings.html", "class_s_r_debugger_1_1_editor_1_1_s_r_debug_editor_strings" ],
+        [ "SRDebuggerSettingsWindow", "class_s_r_debugger_1_1_editor_1_1_s_r_debugger_settings_window.html", null ],
+        [ "SRIntegrityCheckWindow", "class_s_r_debugger_1_1_editor_1_1_s_r_integrity_check_window.html", "class_s_r_debugger_1_1_editor_1_1_s_r_integrity_check_window" ],
+        [ "SROptionsWindow", "class_s_r_debugger_1_1_editor_1_1_s_r_options_window.html", "class_s_r_debugger_1_1_editor_1_1_s_r_options_window" ],
+        [ "WelcomeWindow", "class_s_r_debugger_1_1_editor_1_1_welcome_window.html", null ]
+      ] ],
+      [ "Internal", "namespace_s_r_debugger_1_1_internal.html", [
+        [ "BugReportApi", "class_s_r_debugger_1_1_internal_1_1_bug_report_api.html", "class_s_r_debugger_1_1_internal_1_1_bug_report_api" ],
+        [ "BugReportScreenshotUtil", "class_s_r_debugger_1_1_internal_1_1_bug_report_screenshot_util.html", null ],
+        [ "InternalOptionsRegistry", "class_s_r_debugger_1_1_internal_1_1_internal_options_registry.html", "class_s_r_debugger_1_1_internal_1_1_internal_options_registry" ],
+        [ "SRDebugStrings", "class_s_r_debugger_1_1_internal_1_1_s_r_debug_strings.html", "class_s_r_debugger_1_1_internal_1_1_s_r_debug_strings" ]
+      ] ],
+      [ "Profiler", "namespace_s_r_debugger_1_1_profiler.html", [
+        [ "ProfilerLateUpdateListener", "class_s_r_debugger_1_1_profiler_1_1_profiler_late_update_listener.html", "class_s_r_debugger_1_1_profiler_1_1_profiler_late_update_listener" ],
+        [ "ProfilerServiceImpl", "class_s_r_debugger_1_1_profiler_1_1_profiler_service_impl.html", "class_s_r_debugger_1_1_profiler_1_1_profiler_service_impl" ]
+      ] ],
+      [ "Scripts", "namespace_s_r_debugger_1_1_scripts.html", [
+        [ "DebuggerTabController", "class_s_r_debugger_1_1_scripts_1_1_debugger_tab_controller.html", "class_s_r_debugger_1_1_scripts_1_1_debugger_tab_controller" ]
+      ] ],
+      [ "Services", "namespace_s_r_debugger_1_1_services.html", [
+        [ "Implementation", "namespace_s_r_debugger_1_1_services_1_1_implementation.html", [
+          [ "BugReportApiService", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_bug_report_api_service.html", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_bug_report_api_service" ],
+          [ "BugReportPopoverService", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_bug_report_popover_service.html", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_bug_report_popover_service" ],
+          [ "DebugCameraServiceImpl", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_debug_camera_service_impl.html", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_debug_camera_service_impl" ],
+          [ "DebugPanelServiceImpl", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_debug_panel_service_impl.html", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_debug_panel_service_impl" ],
+          [ "DebugTriggerImpl", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_debug_trigger_impl.html", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_debug_trigger_impl" ],
+          [ "DockConsoleServiceImpl", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_dock_console_service_impl.html", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_dock_console_service_impl" ],
+          [ "KeyboardShortcutListenerService", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_keyboard_shortcut_listener_service.html", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_keyboard_shortcut_listener_service" ],
+          [ "OptionsServiceImpl", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl" ],
+          [ "PinEntryServiceImpl", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_pin_entry_service_impl.html", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_pin_entry_service_impl" ],
+          [ "PinnedUIServiceImpl", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_pinned_u_i_service_impl.html", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_pinned_u_i_service_impl" ],
+          [ "SRDebugService", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_s_r_debug_service.html", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_s_r_debug_service" ],
+          [ "StandardConsoleService", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_standard_console_service.html", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_standard_console_service" ],
+          [ "StandardSystemInformationService", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_standard_system_information_service.html", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_standard_system_information_service" ]
+        ] ],
+        [ "BugReport", "class_s_r_debugger_1_1_services_1_1_bug_report.html", "class_s_r_debugger_1_1_services_1_1_bug_report" ],
+        [ "ConsoleEntry", "class_s_r_debugger_1_1_services_1_1_console_entry.html", "class_s_r_debugger_1_1_services_1_1_console_entry" ],
+        [ "IBugReportService", "interface_s_r_debugger_1_1_services_1_1_i_bug_report_service.html", "interface_s_r_debugger_1_1_services_1_1_i_bug_report_service" ],
+        [ "IConsoleService", "interface_s_r_debugger_1_1_services_1_1_i_console_service.html", "interface_s_r_debugger_1_1_services_1_1_i_console_service" ],
+        [ "IDebugCameraService", "interface_s_r_debugger_1_1_services_1_1_i_debug_camera_service.html", "interface_s_r_debugger_1_1_services_1_1_i_debug_camera_service" ],
+        [ "IDebugPanelService", "interface_s_r_debugger_1_1_services_1_1_i_debug_panel_service.html", "interface_s_r_debugger_1_1_services_1_1_i_debug_panel_service" ],
+        [ "IDebugService", "interface_s_r_debugger_1_1_services_1_1_i_debug_service.html", "interface_s_r_debugger_1_1_services_1_1_i_debug_service" ],
+        [ "IDebugTriggerService", "interface_s_r_debugger_1_1_services_1_1_i_debug_trigger_service.html", "interface_s_r_debugger_1_1_services_1_1_i_debug_trigger_service" ],
+        [ "IDockConsoleService", "interface_s_r_debugger_1_1_services_1_1_i_dock_console_service.html", "interface_s_r_debugger_1_1_services_1_1_i_dock_console_service" ],
+        [ "IOptionsService", "interface_s_r_debugger_1_1_services_1_1_i_options_service.html", "interface_s_r_debugger_1_1_services_1_1_i_options_service" ],
+        [ "IPinEntryService", "interface_s_r_debugger_1_1_services_1_1_i_pin_entry_service.html", "interface_s_r_debugger_1_1_services_1_1_i_pin_entry_service" ],
+        [ "IPinnedUIService", "interface_s_r_debugger_1_1_services_1_1_i_pinned_u_i_service.html", "interface_s_r_debugger_1_1_services_1_1_i_pinned_u_i_service" ],
+        [ "IProfilerService", "interface_s_r_debugger_1_1_services_1_1_i_profiler_service.html", "interface_s_r_debugger_1_1_services_1_1_i_profiler_service" ],
+        [ "ISystemInformationService", "interface_s_r_debugger_1_1_services_1_1_i_system_information_service.html", "interface_s_r_debugger_1_1_services_1_1_i_system_information_service" ],
+        [ "ProfilerFrame", "struct_s_r_debugger_1_1_services_1_1_profiler_frame.html", "struct_s_r_debugger_1_1_services_1_1_profiler_frame" ]
+      ] ],
+      [ "UI", "namespace_s_r_debugger_1_1_u_i.html", [
+        [ "Controls", "namespace_s_r_debugger_1_1_u_i_1_1_controls.html", [
+          [ "Data", "namespace_s_r_debugger_1_1_u_i_1_1_controls_1_1_data.html", [
+            [ "ActionControl", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_action_control.html", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_action_control" ],
+            [ "BoolControl", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_bool_control.html", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_bool_control" ],
+            [ "EnumControl", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control" ],
+            [ "NumberControl", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_number_control.html", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_number_control" ],
+            [ "ReadOnlyControl", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_read_only_control.html", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_read_only_control" ],
+            [ "StringControl", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_string_control.html", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_string_control" ]
+          ] ],
+          [ "ConsoleEntryView", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_console_entry_view.html", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_console_entry_view" ],
+          [ "ConsoleLogControl", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_console_log_control.html", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_console_log_control" ],
+          [ "DataBoundControl", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_bound_control.html", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_bound_control" ],
+          [ "InfoBlock", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_info_block.html", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_info_block" ],
+          [ "MultiTapButton", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_multi_tap_button.html", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_multi_tap_button" ],
+          [ "OptionsControlBase", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_options_control_base.html", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_options_control_base" ],
+          [ "PinEntryControl", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_pin_entry_control.html", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_pin_entry_control" ],
+          [ "ProfilerEnableControl", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_profiler_enable_control.html", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_profiler_enable_control" ],
+          [ "ProfilerGraphAxisLabel", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_profiler_graph_axis_label.html", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_profiler_graph_axis_label" ],
+          [ "ProfilerGraphControl", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_profiler_graph_control.html", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_profiler_graph_control" ],
+          [ "ProfilerMemoryBlock", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_profiler_memory_block.html", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_profiler_memory_block" ],
+          [ "ProfilerMonoBlock", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_profiler_mono_block.html", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_profiler_mono_block" ],
+          [ "SRTabButton", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_s_r_tab_button.html", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_s_r_tab_button" ]
+        ] ],
+        [ "Other", "namespace_s_r_debugger_1_1_u_i_1_1_other.html", [
+          [ "BugReportPopoverRoot", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_bug_report_popover_root.html", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_bug_report_popover_root" ],
+          [ "BugReportSheetController", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_bug_report_sheet_controller.html", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_bug_report_sheet_controller" ],
+          [ "CategoryGroup", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_category_group.html", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_category_group" ],
+          [ "ConfigureCanvasFromSettings", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_configure_canvas_from_settings.html", null ],
+          [ "ConsoleTabQuickViewControl", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_console_tab_quick_view_control.html", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_console_tab_quick_view_control" ],
+          [ "DebugPanelBackgroundBehaviour", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_debug_panel_background_behaviour.html", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_debug_panel_background_behaviour" ],
+          [ "DockConsoleController", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_dock_console_controller.html", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_dock_console_controller" ],
+          [ "ErrorNotifier", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_error_notifier.html", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_error_notifier" ],
+          [ "FloatOverElement", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_float_over_element.html", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_float_over_element" ],
+          [ "HandleManager", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_handle_manager.html", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_handle_manager" ],
+          [ "IEnableTab", "interface_s_r_debugger_1_1_u_i_1_1_other_1_1_i_enable_tab.html", "interface_s_r_debugger_1_1_u_i_1_1_other_1_1_i_enable_tab" ],
+          [ "LoadingSpinnerBehaviour", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_loading_spinner_behaviour.html", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_loading_spinner_behaviour" ],
+          [ "PinnedUIRoot", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_pinned_u_i_root.html", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_pinned_u_i_root" ],
+          [ "SafeAreaSizer", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_safe_area_sizer.html", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_safe_area_sizer" ],
+          [ "ScrollSettingsBehaviour", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_scroll_settings_behaviour.html", null ],
+          [ "SetLayerFromSettings", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_set_layer_from_settings.html", null ],
+          [ "SRTab", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_s_r_tab.html", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_s_r_tab" ],
+          [ "SRTabController", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_s_r_tab_controller.html", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_s_r_tab_controller" ],
+          [ "TriggerRoot", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_trigger_root.html", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_trigger_root" ],
+          [ "VersionTextBehaviour", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_version_text_behaviour.html", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_version_text_behaviour" ]
+        ] ],
+        [ "Tabs", "namespace_s_r_debugger_1_1_u_i_1_1_tabs.html", [
+          [ "BugReportTabController", "class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_bug_report_tab_controller.html", "class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_bug_report_tab_controller" ],
+          [ "ConsoleTabController", "class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html", "class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller" ],
+          [ "InfoTabController", "class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_info_tab_controller.html", "class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_info_tab_controller" ],
+          [ "OptionsTabController", "class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_options_tab_controller.html", "class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_options_tab_controller" ],
+          [ "ProfilerTabController", "class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_profiler_tab_controller.html", "class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_profiler_tab_controller" ]
+        ] ],
+        [ "DebugPanelRoot", "class_s_r_debugger_1_1_u_i_1_1_debug_panel_root.html", "class_s_r_debugger_1_1_u_i_1_1_debug_panel_root" ],
+        [ "MobileMenuController", "class_s_r_debugger_1_1_u_i_1_1_mobile_menu_controller.html", "class_s_r_debugger_1_1_u_i_1_1_mobile_menu_controller" ],
+        [ "ProfilerFPSLabel", "class_s_r_debugger_1_1_u_i_1_1_profiler_f_p_s_label.html", "class_s_r_debugger_1_1_u_i_1_1_profiler_f_p_s_label" ]
+      ] ],
+      [ "CircularBuffer", "class_s_r_debugger_1_1_circular_buffer.html", "class_s_r_debugger_1_1_circular_buffer" ],
+      [ "DynamicOptionContainer", "class_s_r_debugger_1_1_dynamic_option_container.html", "class_s_r_debugger_1_1_dynamic_option_container" ],
+      [ "IncrementAttribute", "class_s_r_debugger_1_1_increment_attribute.html", "class_s_r_debugger_1_1_increment_attribute" ],
+      [ "InfoEntry", "class_s_r_debugger_1_1_info_entry.html", "class_s_r_debugger_1_1_info_entry" ],
+      [ "IOptionContainer", "interface_s_r_debugger_1_1_i_option_container.html", "interface_s_r_debugger_1_1_i_option_container" ],
+      [ "IReadOnlyList", "interface_s_r_debugger_1_1_i_read_only_list.html", "interface_s_r_debugger_1_1_i_read_only_list" ],
+      [ "NumberRangeAttribute", "class_s_r_debugger_1_1_number_range_attribute.html", "class_s_r_debugger_1_1_number_range_attribute" ],
+      [ "OptionDefinition", "class_s_r_debugger_1_1_option_definition.html", "class_s_r_debugger_1_1_option_definition" ],
+      [ "Settings", "class_s_r_debugger_1_1_settings.html", "class_s_r_debugger_1_1_settings" ],
+      [ "SortAttribute", "class_s_r_debugger_1_1_sort_attribute.html", "class_s_r_debugger_1_1_sort_attribute" ],
+      [ "SRDebuggerInit", "class_s_r_debugger_1_1_s_r_debugger_init.html", null ]
+    ] ],
+    [ "SRF", "namespace_s_r_f.html", [
+      [ "Components", "namespace_s_r_f_1_1_components.html", [
+        [ "SRAutoSingleton", "class_s_r_f_1_1_components_1_1_s_r_auto_singleton.html", "class_s_r_f_1_1_components_1_1_s_r_auto_singleton" ],
+        [ "SRSingleton", "class_s_r_f_1_1_components_1_1_s_r_singleton.html", "class_s_r_f_1_1_components_1_1_s_r_singleton" ]
+      ] ],
+      [ "Helpers", "namespace_s_r_f_1_1_helpers.html", [
+        [ "MethodReference", "class_s_r_f_1_1_helpers_1_1_method_reference.html", "class_s_r_f_1_1_helpers_1_1_method_reference" ],
+        [ "PropertyReference", "class_s_r_f_1_1_helpers_1_1_property_reference.html", "class_s_r_f_1_1_helpers_1_1_property_reference" ]
+      ] ],
+      [ "Service", "namespace_s_r_f_1_1_service.html", [
+        [ "IAsyncService", "interface_s_r_f_1_1_service_1_1_i_async_service.html", "interface_s_r_f_1_1_service_1_1_i_async_service" ],
+        [ "ServiceAttribute", "class_s_r_f_1_1_service_1_1_service_attribute.html", "class_s_r_f_1_1_service_1_1_service_attribute" ],
+        [ "ServiceConstructorAttribute", "class_s_r_f_1_1_service_1_1_service_constructor_attribute.html", "class_s_r_f_1_1_service_1_1_service_constructor_attribute" ],
+        [ "ServiceSelectorAttribute", "class_s_r_f_1_1_service_1_1_service_selector_attribute.html", "class_s_r_f_1_1_service_1_1_service_selector_attribute" ],
+        [ "SRDependencyServiceBase", "class_s_r_f_1_1_service_1_1_s_r_dependency_service_base.html", "class_s_r_f_1_1_service_1_1_s_r_dependency_service_base" ],
+        [ "SRSceneServiceBase", "class_s_r_f_1_1_service_1_1_s_r_scene_service_base.html", "class_s_r_f_1_1_service_1_1_s_r_scene_service_base" ],
+        [ "SRServiceBase", "class_s_r_f_1_1_service_1_1_s_r_service_base.html", "class_s_r_f_1_1_service_1_1_s_r_service_base" ],
+        [ "SRServiceManager", "class_s_r_f_1_1_service_1_1_s_r_service_manager.html", "class_s_r_f_1_1_service_1_1_s_r_service_manager" ]
+      ] ],
+      [ "UI", "namespace_s_r_f_1_1_u_i.html", [
+        [ "Editor", "namespace_s_r_f_1_1_u_i_1_1_editor.html", [
+          [ "CopyPreferredSizeEditor", "class_s_r_f_1_1_u_i_1_1_editor_1_1_copy_preferred_size_editor.html", "class_s_r_f_1_1_u_i_1_1_editor_1_1_copy_preferred_size_editor" ],
+          [ "LongPressButtonEditor", "class_s_r_f_1_1_u_i_1_1_editor_1_1_long_press_button_editor.html", "class_s_r_f_1_1_u_i_1_1_editor_1_1_long_press_button_editor" ],
+          [ "SRNumberButtonEditor", "class_s_r_f_1_1_u_i_1_1_editor_1_1_s_r_number_button_editor.html", "class_s_r_f_1_1_u_i_1_1_editor_1_1_s_r_number_button_editor" ],
+          [ "StyleComponentEditor", "class_s_r_f_1_1_u_i_1_1_editor_1_1_style_component_editor.html", "class_s_r_f_1_1_u_i_1_1_editor_1_1_style_component_editor" ],
+          [ "StyleSheetEditor", "class_s_r_f_1_1_u_i_1_1_editor_1_1_style_sheet_editor.html", "class_s_r_f_1_1_u_i_1_1_editor_1_1_style_sheet_editor" ]
+        ] ],
+        [ "Layout", "namespace_s_r_f_1_1_u_i_1_1_layout.html", [
+          [ "FlowLayoutGroup", "class_s_r_f_1_1_u_i_1_1_layout_1_1_flow_layout_group.html", "class_s_r_f_1_1_u_i_1_1_layout_1_1_flow_layout_group" ],
+          [ "IVirtualView", "interface_s_r_f_1_1_u_i_1_1_layout_1_1_i_virtual_view.html", "interface_s_r_f_1_1_u_i_1_1_layout_1_1_i_virtual_view" ],
+          [ "VirtualVerticalLayoutGroup", "class_s_r_f_1_1_u_i_1_1_layout_1_1_virtual_vertical_layout_group.html", "class_s_r_f_1_1_u_i_1_1_layout_1_1_virtual_vertical_layout_group" ]
+        ] ],
+        [ "ContentFitText", "class_s_r_f_1_1_u_i_1_1_content_fit_text.html", "class_s_r_f_1_1_u_i_1_1_content_fit_text" ],
+        [ "CopyLayoutElement", "class_s_r_f_1_1_u_i_1_1_copy_layout_element.html", "class_s_r_f_1_1_u_i_1_1_copy_layout_element" ],
+        [ "CopyPreferredSize", "class_s_r_f_1_1_u_i_1_1_copy_preferred_size.html", "class_s_r_f_1_1_u_i_1_1_copy_preferred_size" ],
+        [ "CopySizeIntoLayoutElement", "class_s_r_f_1_1_u_i_1_1_copy_size_into_layout_element.html", "class_s_r_f_1_1_u_i_1_1_copy_size_into_layout_element" ],
+        [ "DragHandle", "class_s_r_f_1_1_u_i_1_1_drag_handle.html", "class_s_r_f_1_1_u_i_1_1_drag_handle" ],
+        [ "FlashGraphic", "class_s_r_f_1_1_u_i_1_1_flash_graphic.html", "class_s_r_f_1_1_u_i_1_1_flash_graphic" ],
+        [ "InheritColour", "class_s_r_f_1_1_u_i_1_1_inherit_colour.html", "class_s_r_f_1_1_u_i_1_1_inherit_colour" ],
+        [ "LongPressButton", "class_s_r_f_1_1_u_i_1_1_long_press_button.html", "class_s_r_f_1_1_u_i_1_1_long_press_button" ],
+        [ "ResponsiveBase", "class_s_r_f_1_1_u_i_1_1_responsive_base.html", "class_s_r_f_1_1_u_i_1_1_responsive_base" ],
+        [ "ResponsiveEnable", "class_s_r_f_1_1_u_i_1_1_responsive_enable.html", "class_s_r_f_1_1_u_i_1_1_responsive_enable" ],
+        [ "ResponsiveResize", "class_s_r_f_1_1_u_i_1_1_responsive_resize.html", "class_s_r_f_1_1_u_i_1_1_responsive_resize" ],
+        [ "ScrollToBottomBehaviour", "class_s_r_f_1_1_u_i_1_1_scroll_to_bottom_behaviour.html", "class_s_r_f_1_1_u_i_1_1_scroll_to_bottom_behaviour" ],
+        [ "SRNumberButton", "class_s_r_f_1_1_u_i_1_1_s_r_number_button.html", "class_s_r_f_1_1_u_i_1_1_s_r_number_button" ],
+        [ "SRNumberSpinner", "class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html", "class_s_r_f_1_1_u_i_1_1_s_r_number_spinner" ],
+        [ "SRRetinaScaler", "class_s_r_f_1_1_u_i_1_1_s_r_retina_scaler.html", null ],
+        [ "SRSpinner", "class_s_r_f_1_1_u_i_1_1_s_r_spinner.html", "class_s_r_f_1_1_u_i_1_1_s_r_spinner" ],
+        [ "SRText", "class_s_r_f_1_1_u_i_1_1_s_r_text.html", "class_s_r_f_1_1_u_i_1_1_s_r_text" ],
+        [ "Style", "class_s_r_f_1_1_u_i_1_1_style.html", "class_s_r_f_1_1_u_i_1_1_style" ],
+        [ "StyleComponent", "class_s_r_f_1_1_u_i_1_1_style_component.html", "class_s_r_f_1_1_u_i_1_1_style_component" ],
+        [ "StyleRoot", "class_s_r_f_1_1_u_i_1_1_style_root.html", "class_s_r_f_1_1_u_i_1_1_style_root" ],
+        [ "StyleSheet", "class_s_r_f_1_1_u_i_1_1_style_sheet.html", "class_s_r_f_1_1_u_i_1_1_style_sheet" ],
+        [ "Unselectable", "class_s_r_f_1_1_u_i_1_1_unselectable.html", "class_s_r_f_1_1_u_i_1_1_unselectable" ]
+      ] ],
+      [ "Hierarchy", "class_s_r_f_1_1_hierarchy.html", "class_s_r_f_1_1_hierarchy" ],
+      [ "ImportAttribute", "class_s_r_f_1_1_import_attribute.html", "class_s_r_f_1_1_import_attribute" ],
+      [ "RequiredFieldAttribute", "class_s_r_f_1_1_required_field_attribute.html", "class_s_r_f_1_1_required_field_attribute" ],
+      [ "SRList", "class_s_r_f_1_1_s_r_list.html", "class_s_r_f_1_1_s_r_list" ],
+      [ "SRMonoBehaviour", "class_s_r_f_1_1_s_r_mono_behaviour.html", "class_s_r_f_1_1_s_r_mono_behaviour" ],
+      [ "SRMonoBehaviourEx", "class_s_r_f_1_1_s_r_mono_behaviour_ex.html", "class_s_r_f_1_1_s_r_mono_behaviour_ex" ]
+    ] ],
     [ "System", "namespace_system.html", [
       [ "Runtime", "namespace_system_1_1_runtime.html", [
         [ "CompilerServices", "namespace_system_1_1_runtime_1_1_compiler_services.html", [
@@ -1462,28 +1671,46 @@ var annotated_dup =
       [ "Vector3", "struct_unity_engine_1_1_vector3.html", "struct_unity_engine_1_1_vector3" ],
       [ "Vector4", "struct_unity_engine_1_1_vector4.html", "struct_unity_engine_1_1_vector4" ]
     ] ],
+    [ "Bugly", "interface_bugly.html", null ],
+    [ "BuglyAgent", "class_bugly_agent.html", "class_bugly_agent" ],
+    [ "BuglyCallback", "class_bugly_callback.html", "class_bugly_callback" ],
+    [ "BuglyConfig", "interface_bugly_config.html", "interface_bugly_config" ],
+    [ "<BuglyDelegate>", "protocol_bugly_delegate-p.html", "protocol_bugly_delegate-p" ],
+    [ "BuglyInit", "class_bugly_init.html", null ],
+    [ "BuglyLog", "interface_bugly_log.html", null ],
+    [ "BuildInfo", "class_build_info.html", "class_build_info" ],
     [ "Button_Atk", "class_button___atk.html", "class_button___atk" ],
+    [ "CapabilityProcessor", "class_capability_processor.html", "class_capability_processor" ],
     [ "GameInput", "class_game_input.html", "class_game_input" ],
     [ "IKCPCB", "struct_i_k_c_p_c_b.html", "struct_i_k_c_p_c_b" ],
     [ "IKCPSEG", "struct_i_k_c_p_s_e_g.html", "struct_i_k_c_p_s_e_g" ],
     [ "IQUEUEHEAD", "struct_i_q_u_e_u_e_h_e_a_d.html", "struct_i_q_u_e_u_e_h_e_a_d" ],
     [ "JoyStick_Aim", "class_joy_stick___aim.html", "class_joy_stick___aim" ],
     [ "JoyStick_Move", "class_joy_stick___move.html", "class_joy_stick___move" ],
+    [ "KeychainItemWrapper", "interface_keychain_item_wrapper.html", "interface_keychain_item_wrapper" ],
+    [ "KeychainItemWrapper(PrivateMethods)", "category_keychain_item_wrapper_07_private_methods_08.html", "category_keychain_item_wrapper_07_private_methods_08" ],
+    [ "LocalData", "interface_local_data.html", null ],
     [ "LoopScrollRectInspector", "class_loop_scroll_rect_inspector.html", "class_loop_scroll_rect_inspector" ],
     [ "NavMesh", "class_nav_mesh.html", "class_nav_mesh" ],
     [ "NavMeshContex", "class_nav_mesh_contex.html", "class_nav_mesh_contex" ],
     [ "NavMeshSetHeader", "struct_nav_mesh_set_header.html", "struct_nav_mesh_set_header" ],
     [ "NavMeshTileHeader", "struct_nav_mesh_tile_header.html", "struct_nav_mesh_tile_header" ],
+    [ "NObject", "interface_n_object.html", "interface_n_object" ],
     [ "QuaternionBinder", "class_quaternion_binder.html", "class_quaternion_binder" ],
     [ "RedDotMonoView", "class_red_dot_mono_view.html", "class_red_dot_mono_view" ],
     [ "ReferenceCollector", "class_reference_collector.html", "class_reference_collector" ],
     [ "ReferenceCollectorData", "class_reference_collector_data.html", "class_reference_collector_data" ],
     [ "ReferenceCollectorDataComparer", "class_reference_collector_data_comparer.html", "class_reference_collector_data_comparer" ],
     [ "ReferenceCollectorEditor", "class_reference_collector_editor.html", "class_reference_collector_editor" ],
+    [ "SROptions", "class_s_r_options.html", "class_s_r_options" ],
     [ "UICodeSpawner", "class_u_i_code_spawner.html", null ],
     [ "UIExtensionHandler", "class_u_i_extension_handler.html", "class_u_i_extension_handler" ],
     [ "UIFindHelper", "class_u_i_find_helper.html", null ],
     [ "UncheckedStack", "class_unchecked_stack.html", "class_unchecked_stack" ],
+    [ "Util", "interface_util.html", null ],
     [ "Vector2Binder", "class_vector2_binder.html", "class_vector2_binder" ],
-    [ "Vector3Binder", "class_vector3_binder.html", "class_vector3_binder" ]
+    [ "Vector3Binder", "class_vector3_binder.html", "class_vector3_binder" ],
+    [ "XCodeProjectMod", "class_x_code_project_mod.html", null ],
+    [ "XcodeProjectSetting", "class_xcode_project_setting.html", "class_xcode_project_setting" ],
+    [ "XcodeProjectSettingCreator", "class_xcode_project_setting_creator.html", null ]
 ];

@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: Unity/Assets/ThirdParty/StompyRobot/SRDebugger/Scripts/Internal/OptionDefinition.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_option_definition_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">OptionDefinition.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_option_definition_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using</span> <a class="code hl_variable" href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_s_r_f.html">SRF</a>.<a class="code hl_namespace" href="namespace_s_r_f_1_1_helpers.html">Helpers</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_s_r_debugger.html">SRDebugger</a></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_option_definition.html">    9</a></span>    <span class="keyword">public</span> sealed <span class="keyword">class </span><a class="code hl_class" href="class_s_r_debugger_1_1_option_definition.html">OptionDefinition</a></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_option_definition.html#a2f4861d130ea7c5ad8b5e40d9a569529">   14</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_s_r_debugger_1_1_option_definition.html#a2f4861d130ea7c5ad8b5e40d9a569529">Name</a> { <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_option_definition.html#a022a64dd862bbfb2f5e57387a92d5718">   19</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_s_r_debugger_1_1_option_definition.html#a022a64dd862bbfb2f5e57387a92d5718">Category</a> { <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_option_definition.html#ab2c31a42de89c83843b909e120fe1970">   25</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_property" href="class_s_r_debugger_1_1_option_definition.html#ab2c31a42de89c83843b909e120fe1970">SortPriority</a> { <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_option_definition.html#a8756a6ba67af951f6590928113ee203d">   30</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_s_r_debugger_1_1_option_definition.html#a8756a6ba67af951f6590928113ee203d">IsMethod</a></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> <a class="code hl_property" href="class_s_r_debugger_1_1_option_definition.html#ae09a134b5702bfbaec0bedb16b51121d">Method</a> != <span class="keyword">null</span>; }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_option_definition.html#a260a53c7b4e602864b306eb90f3f644f">   38</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_s_r_debugger_1_1_option_definition.html#a260a53c7b4e602864b306eb90f3f644f">IsProperty</a></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> <a class="code hl_property" href="class_s_r_debugger_1_1_option_definition.html#acfeab89b8d431ae20a9f8ba1a2751f63">Property</a> != <span class="keyword">null</span>; }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_option_definition.html#ae09a134b5702bfbaec0bedb16b51121d">   47</a></span>        <span class="keyword">public</span> <a class="code hl_namespace" href="namespace_s_r_f.html">SRF</a>.<a class="code hl_namespace" href="namespace_s_r_f_1_1_helpers.html">Helpers</a>.<a class="code hl_class" href="class_s_r_f_1_1_helpers_1_1_method_reference.html">MethodReference</a> <a class="code hl_property" href="class_s_r_debugger_1_1_option_definition.html#ae09a134b5702bfbaec0bedb16b51121d">Method</a> { <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_option_definition.html#acfeab89b8d431ae20a9f8ba1a2751f63">   53</a></span>        <span class="keyword">public</span> <a class="code hl_namespace" href="namespace_s_r_f.html">SRF</a>.<a class="code hl_namespace" href="namespace_s_r_f_1_1_helpers.html">Helpers</a>.<a class="code hl_class" href="class_s_r_f_1_1_helpers_1_1_property_reference.html">PropertyReference</a> <a class="code hl_property" href="class_s_r_debugger_1_1_option_definition.html#acfeab89b8d431ae20a9f8ba1a2751f63">Property</a> { <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keyword">private</span> <a class="code hl_class" href="class_s_r_debugger_1_1_option_definition.html">OptionDefinition</a>(<span class="keywordtype">string</span> name, <span class="keywordtype">string</span> category, <span class="keywordtype">int</span> sortPriority)</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <a class="code hl_property" href="class_s_r_debugger_1_1_option_definition.html#a2f4861d130ea7c5ad8b5e40d9a569529">Name</a> = name;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <a class="code hl_property" href="class_s_r_debugger_1_1_option_definition.html#a022a64dd862bbfb2f5e57387a92d5718">Category</a> = category;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <a class="code hl_property" href="class_s_r_debugger_1_1_option_definition.html#ab2c31a42de89c83843b909e120fe1970">SortPriority</a> = sortPriority;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_option_definition.html#a89150f2bd6dd72765759fe445c3b7902">   62</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_s_r_debugger_1_1_option_definition.html#a89150f2bd6dd72765759fe445c3b7902">OptionDefinition</a>(<span class="keywordtype">string</span> name, <span class="keywordtype">string</span> category, <span class="keywordtype">int</span> sortPriority, <a class="code hl_namespace" href="namespace_s_r_f.html">SRF</a>.<a class="code hl_namespace" href="namespace_s_r_f_1_1_helpers.html">Helpers</a>.<a class="code hl_class" href="class_s_r_f_1_1_helpers_1_1_method_reference.html">MethodReference</a> method)</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            : this(name, category, sortPriority)</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <a class="code hl_property" href="class_s_r_debugger_1_1_option_definition.html#ae09a134b5702bfbaec0bedb16b51121d">Method</a> = method;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_option_definition.html#a38006ab3042996f1223f069165beba22">   68</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_s_r_debugger_1_1_option_definition.html#a38006ab3042996f1223f069165beba22">OptionDefinition</a>(<span class="keywordtype">string</span> name, <span class="keywordtype">string</span> category, <span class="keywordtype">int</span> sortPriority, <a class="code hl_namespace" href="namespace_s_r_f.html">SRF</a>.<a class="code hl_namespace" href="namespace_s_r_f_1_1_helpers.html">Helpers</a>.<a class="code hl_class" href="class_s_r_f_1_1_helpers_1_1_property_reference.html">PropertyReference</a> property)</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            : this(name, category, sortPriority)</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            <a class="code hl_property" href="class_s_r_debugger_1_1_option_definition.html#acfeab89b8d431ae20a9f8ba1a2751f63">Property</a> = property;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_option_definition.html#a39669838c59fe2aea7d7c595e586b9a4">   74</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_class" href="class_s_r_debugger_1_1_option_definition.html">OptionDefinition</a> <a class="code hl_function" href="class_s_r_debugger_1_1_option_definition.html#a39669838c59fe2aea7d7c595e586b9a4">FromMethod</a>(<span class="keywordtype">string</span> name, Action callback, <span class="keywordtype">string</span> category = <span class="stringliteral">&quot;Default&quot;</span>, <span class="keywordtype">int</span> sortPriority = 0)</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_s_r_debugger_1_1_option_definition.html">OptionDefinition</a>(name, category, sortPriority, callback);;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_option_definition.html#a5a124e7d1831d8cc5581b3d6841d2297">   88</a></span>        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_class" href="class_s_r_debugger_1_1_option_definition.html">OptionDefinition</a> <a class="code hl_function" href="class_s_r_debugger_1_1_option_definition.html#a5a124e7d1831d8cc5581b3d6841d2297">Create&lt;T&gt;</a>(<span class="keywordtype">string</span> name, Func&lt;T&gt; getter, Action&lt;T&gt; setter = <span class="keyword">null</span>, <span class="keywordtype">string</span> category = <span class="stringliteral">&quot;Default&quot;</span>, <span class="keywordtype">int</span> sortPriority = 0)</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_s_r_debugger_1_1_option_definition.html">OptionDefinition</a>(name, category, sortPriority, <a class="code hl_class" href="class_s_r_f_1_1_helpers_1_1_property_reference.html">PropertyReference</a>.FromLambda(getter, setter));</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>}</div>
+<div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_option_definition_html"><div class="ttname"><a href="class_s_r_debugger_1_1_option_definition.html">SRDebugger.OptionDefinition</a></div><div class="ttdoc">Class describing how an option should be presented within the options panel.</div><div class="ttdef"><b>Definition:</b> <a href="_option_definition_8cs_source.html#l00009">OptionDefinition.cs:10</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_option_definition_html_a022a64dd862bbfb2f5e57387a92d5718"><div class="ttname"><a href="class_s_r_debugger_1_1_option_definition.html#a022a64dd862bbfb2f5e57387a92d5718">SRDebugger.OptionDefinition.Category</a></div><div class="ttdeci">string Category</div><div class="ttdoc">The category that this option should be placed within.</div><div class="ttdef"><b>Definition:</b> <a href="_option_definition_8cs_source.html#l00019">OptionDefinition.cs:19</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_option_definition_html_a260a53c7b4e602864b306eb90f3f644f"><div class="ttname"><a href="class_s_r_debugger_1_1_option_definition.html#a260a53c7b4e602864b306eb90f3f644f">SRDebugger.OptionDefinition.IsProperty</a></div><div class="ttdeci">bool IsProperty</div><div class="ttdoc">Whether this option is a property that has a value.</div><div class="ttdef"><b>Definition:</b> <a href="_option_definition_8cs_source.html#l00038">OptionDefinition.cs:39</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_option_definition_html_a2f4861d130ea7c5ad8b5e40d9a569529"><div class="ttname"><a href="class_s_r_debugger_1_1_option_definition.html#a2f4861d130ea7c5ad8b5e40d9a569529">SRDebugger.OptionDefinition.Name</a></div><div class="ttdeci">string Name</div><div class="ttdoc">Display-name for the option.</div><div class="ttdef"><b>Definition:</b> <a href="_option_definition_8cs_source.html#l00014">OptionDefinition.cs:14</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_option_definition_html_a38006ab3042996f1223f069165beba22"><div class="ttname"><a href="class_s_r_debugger_1_1_option_definition.html#a38006ab3042996f1223f069165beba22">SRDebugger.OptionDefinition.OptionDefinition</a></div><div class="ttdeci">OptionDefinition(string name, string category, int sortPriority, SRF.Helpers.PropertyReference property)</div><div class="ttdef"><b>Definition:</b> <a href="_option_definition_8cs_source.html#l00068">OptionDefinition.cs:68</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_option_definition_html_a39669838c59fe2aea7d7c595e586b9a4"><div class="ttname"><a href="class_s_r_debugger_1_1_option_definition.html#a39669838c59fe2aea7d7c595e586b9a4">SRDebugger.OptionDefinition.FromMethod</a></div><div class="ttdeci">static OptionDefinition FromMethod(string name, Action callback, string category=&quot;Default&quot;, int sortPriority=0)</div><div class="ttdef"><b>Definition:</b> <a href="_option_definition_8cs_source.html#l00074">OptionDefinition.cs:74</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_option_definition_html_a5a124e7d1831d8cc5581b3d6841d2297"><div class="ttname"><a href="class_s_r_debugger_1_1_option_definition.html#a5a124e7d1831d8cc5581b3d6841d2297">SRDebugger.OptionDefinition.Create&lt; T &gt;</a></div><div class="ttdeci">static OptionDefinition Create&lt; T &gt;(string name, Func&lt; T &gt; getter, Action&lt; T &gt; setter=null, string category=&quot;Default&quot;, int sortPriority=0)</div><div class="ttdoc">Create an option definition from a setter and getter lambda.</div><div class="ttdef"><b>Definition:</b> <a href="_option_definition_8cs_source.html#l00088">OptionDefinition.cs:88</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_option_definition_html_a8756a6ba67af951f6590928113ee203d"><div class="ttname"><a href="class_s_r_debugger_1_1_option_definition.html#a8756a6ba67af951f6590928113ee203d">SRDebugger.OptionDefinition.IsMethod</a></div><div class="ttdeci">bool IsMethod</div><div class="ttdoc">Whether this option is a method that should be invoked.</div><div class="ttdef"><b>Definition:</b> <a href="_option_definition_8cs_source.html#l00030">OptionDefinition.cs:31</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_option_definition_html_a89150f2bd6dd72765759fe445c3b7902"><div class="ttname"><a href="class_s_r_debugger_1_1_option_definition.html#a89150f2bd6dd72765759fe445c3b7902">SRDebugger.OptionDefinition.OptionDefinition</a></div><div class="ttdeci">OptionDefinition(string name, string category, int sortPriority, SRF.Helpers.MethodReference method)</div><div class="ttdef"><b>Definition:</b> <a href="_option_definition_8cs_source.html#l00062">OptionDefinition.cs:62</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_option_definition_html_ab2c31a42de89c83843b909e120fe1970"><div class="ttname"><a href="class_s_r_debugger_1_1_option_definition.html#ab2c31a42de89c83843b909e120fe1970">SRDebugger.OptionDefinition.SortPriority</a></div><div class="ttdeci">int SortPriority</div><div class="ttdoc">Sort order within the category. Order is low to high, (options with lower SortPriority will appear be...</div><div class="ttdef"><b>Definition:</b> <a href="_option_definition_8cs_source.html#l00025">OptionDefinition.cs:25</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_option_definition_html_acfeab89b8d431ae20a9f8ba1a2751f63"><div class="ttname"><a href="class_s_r_debugger_1_1_option_definition.html#acfeab89b8d431ae20a9f8ba1a2751f63">SRDebugger.OptionDefinition.Property</a></div><div class="ttdeci">SRF.Helpers.PropertyReference Property</div><div class="ttdoc">The underlying property for this OptionDefinition. Can be null if IsProperty is false.</div><div class="ttdef"><b>Definition:</b> <a href="_option_definition_8cs_source.html#l00053">OptionDefinition.cs:53</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_option_definition_html_ae09a134b5702bfbaec0bedb16b51121d"><div class="ttname"><a href="class_s_r_debugger_1_1_option_definition.html#ae09a134b5702bfbaec0bedb16b51121d">SRDebugger.OptionDefinition.Method</a></div><div class="ttdeci">SRF.Helpers.MethodReference Method</div><div class="ttdoc">The underlying method for this OptionDefinition. Can be null if IsMethod is false.</div><div class="ttdef"><b>Definition:</b> <a href="_option_definition_8cs_source.html#l00047">OptionDefinition.cs:47</a></div></div>
+<div class="ttc" id="aclass_s_r_f_1_1_helpers_1_1_method_reference_html"><div class="ttname"><a href="class_s_r_f_1_1_helpers_1_1_method_reference.html">SRF.Helpers.MethodReference</a></div><div class="ttdef"><b>Definition:</b> <a href="_stompy_robot_2_s_r_f_2_scripts_2_helpers_2_method_reference_8cs_source.html#l00007">MethodReference.cs:8</a></div></div>
+<div class="ttc" id="aclass_s_r_f_1_1_helpers_1_1_property_reference_html"><div class="ttname"><a href="class_s_r_f_1_1_helpers_1_1_property_reference.html">SRF.Helpers.PropertyReference</a></div><div class="ttdef"><b>Definition:</b> <a href="_stompy_robot_2_s_r_f_2_scripts_2_helpers_2_property_reference_8cs_source.html#l00014">PropertyReference.cs:15</a></div></div>
+<div class="ttc" id="anamespace_s_r_debugger_html"><div class="ttname"><a href="namespace_s_r_debugger.html">SRDebugger</a></div><div class="ttdef"><b>Definition:</b> <a href="_auto_initialize_8cs_source.html#l00004">AutoInitialize.cs:5</a></div></div>
+<div class="ttc" id="anamespace_s_r_f_1_1_helpers_html"><div class="ttname"><a href="namespace_s_r_f_1_1_helpers.html">SRF.Helpers</a></div><div class="ttdef"><b>Definition:</b> <a href="_asset_util_8cs_source.html#l00006">AssetUtil.cs:7</a></div></div>
+<div class="ttc" id="anamespace_s_r_f_html"><div class="ttname"><a href="namespace_s_r_f.html">SRF</a></div><div class="ttdef"><b>Definition:</b> <a href="_mini_j_s_o_n_8cs_source.html#l00032">MiniJSON.cs:33</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_3b33dffaa21a2ac6f7978a949ffd4e41.html">Assets</a></li><li class="navelem"><a class="el" href="dir_5501c55c26a8d51fbc1fd8b7d8df04c3.html">ThirdParty</a></li><li class="navelem"><a class="el" href="dir_0f5df078a02ed03b6776122c2b87cb60.html">StompyRobot</a></li><li class="navelem"><a class="el" href="dir_94017e9a8ea42ed0c35aefd43f85b68b.html">SRDebugger</a></li><li class="navelem"><a class="el" href="dir_7a8f801e87ec51abc5da4d4cde89dc5d.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_628535e322c387540fa0a28bedde7059.html">Internal</a></li><li class="navelem"><a class="el" href="_option_definition_8cs.html">OptionDefinition.cs</a></li>
+    <li class="footer">生成于 2022年 四月 21日 星期四 10:43:01 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

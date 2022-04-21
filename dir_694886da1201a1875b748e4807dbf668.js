@@ -122,7 +122,7 @@ var dir_694886da1201a1875b748e4807dbf668 =
     [ "MethodCallingConvention.cs", "_method_calling_convention_8cs.html", "_method_calling_convention_8cs" ],
     [ "MethodDefinition.cs", "_method_definition_8cs.html", "_method_definition_8cs" ],
     [ "MethodImplAttributes.cs", "_method_impl_attributes_8cs.html", "_method_impl_attributes_8cs" ],
-    [ "MethodReference.cs", "_method_reference_8cs.html", [
+    [ "MethodReference.cs", "_i_l_runtime_2_mono_8_cecil_2_mono_8_cecil_2_method_reference_8cs.html", [
       [ "ILRuntime.Mono.Cecil.MethodReference", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_method_reference.html", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_method_reference" ]
     ] ],
     [ "MethodReferenceComparer.cs", "_method_reference_comparer_8cs.html", null ],
@@ -160,7 +160,7 @@ var dir_694886da1201a1875b748e4807dbf668 =
     [ "PropertyDefinition.cs", "_property_definition_8cs.html", [
       [ "ILRuntime.Mono.Cecil.PropertyDefinition", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_property_definition.html", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_property_definition" ]
     ] ],
-    [ "PropertyReference.cs", "_property_reference_8cs.html", [
+    [ "PropertyReference.cs", "_i_l_runtime_2_mono_8_cecil_2_mono_8_cecil_2_property_reference_8cs.html", [
       [ "ILRuntime.Mono.Cecil.PropertyReference", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_property_reference.html", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_property_reference" ]
     ] ],
     [ "ReferenceType.cs", "_reference_type_8cs.html", "_reference_type_8cs" ],

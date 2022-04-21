@@ -163,6 +163,10 @@ var hierarchy =
       [ "ILRuntime.Mono.ArgumentNullOrEmptyException", "class_i_l_runtime_1_1_mono_1_1_argument_null_or_empty_exception.html", null ]
     ] ],
     [ "ILRuntime.Mono.Cecil.ArrayDimension", "struct_i_l_runtime_1_1_mono_1_1_cecil_1_1_array_dimension.html", null ],
+    [ "ChillyRoom.UnityEditor.iOS.Xcode.AssetBrandAssetGroup", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_asset_brand_asset_group.html", null ],
+    [ "ChillyRoom.UnityEditor.iOS.Xcode.AssetCatalogItemWithVariants", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_asset_catalog_item_with_variants.html", null ],
+    [ "ChillyRoom.UnityEditor.iOS.Xcode.AssetImageStack", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_asset_image_stack.html", null ],
+    [ "ChillyRoom.UnityEditor.iOS.Xcode.AssetImageStackLayer", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_asset_image_stack_layer.html", null ],
     [ "AssetPostprocessor", null, [
       [ "ET.OnGenerateCSProjectProcessor", "class_e_t_1_1_on_generate_c_s_project_processor.html", null ]
     ] ],
@@ -216,7 +220,6 @@ var hierarchy =
       [ "ILRuntime.Other.NeedAdaptorAttribute", "class_i_l_runtime_1_1_other_1_1_need_adaptor_attribute.html", null ],
       [ "ILRuntime.Runtime.Adapters.AttributeAdapter.Adapter", "class_i_l_runtime_1_1_runtime_1_1_adapters_1_1_attribute_adapter_1_1_adapter.html", null ],
       [ "ILRuntime.Runtime.ILRuntimeJITAttribute", "class_i_l_runtime_1_1_runtime_1_1_i_l_runtime_j_i_t_attribute.html", null ],
-      [ "IngameDebugConsole.ConsoleMethodAttribute", "class_ingame_debug_console_1_1_console_method_attribute.html", null ],
       [ "MongoDB.Bson.Serialization.Attributes.BsonDefaultValueAttribute", "class_mongo_d_b_1_1_bson_1_1_serialization_1_1_attributes_1_1_bson_default_value_attribute.html", null ],
       [ "MongoDB.Bson.Serialization.Attributes.BsonDictionaryOptionsAttribute", "class_mongo_d_b_1_1_bson_1_1_serialization_1_1_attributes_1_1_bson_dictionary_options_attribute.html", null ],
       [ "MongoDB.Bson.Serialization.Attributes.BsonElementAttribute", "class_mongo_d_b_1_1_bson_1_1_serialization_1_1_attributes_1_1_bson_element_attribute.html", null ],
@@ -240,6 +243,17 @@ var hierarchy =
       [ "ProtoBuf.ProtoMemberAttribute", "class_proto_buf_1_1_proto_member_attribute.html", [
         [ "ProtoBuf.ProtoPartialMemberAttribute", "class_proto_buf_1_1_proto_partial_member_attribute.html", null ]
       ] ],
+      [ "SRDebugger.IncrementAttribute", "class_s_r_debugger_1_1_increment_attribute.html", [
+        [ "SROptions.IncrementAttribute", "class_s_r_options_1_1_increment_attribute.html", null ]
+      ] ],
+      [ "SRDebugger.NumberRangeAttribute", "class_s_r_debugger_1_1_number_range_attribute.html", [
+        [ "SROptions.NumberRangeAttribute", "class_s_r_options_1_1_number_range_attribute.html", null ]
+      ] ],
+      [ "SRDebugger.SortAttribute", "class_s_r_debugger_1_1_sort_attribute.html", [
+        [ "SROptions.SortAttribute", "class_s_r_options_1_1_sort_attribute.html", null ]
+      ] ],
+      [ "SRF.ImportAttribute", "class_s_r_f_1_1_import_attribute.html", null ],
+      [ "SRF.RequiredFieldAttribute", "class_s_r_f_1_1_required_field_attribute.html", null ],
       [ "System.Runtime.CompilerServices.AsyncMethodBuilderAttribute", "class_system_1_1_runtime_1_1_compiler_services_1_1_async_method_builder_attribute.html", null ]
     ] ],
     [ "ET.AwakeSystem< ABInfo, string, AssetBundle >", "class_e_t_1_1_awake_system.html", [
@@ -484,6 +498,22 @@ var hierarchy =
     [ "ILRuntime.Runtime.CLRBinding.BindingCodeGenerator", "class_i_l_runtime_1_1_runtime_1_1_c_l_r_binding_1_1_binding_code_generator.html", null ],
     [ "ILRuntime.Runtime.Debugger.BreakPointContext", "class_i_l_runtime_1_1_runtime_1_1_debugger_1_1_break_point_context.html", null ],
     [ "ILRuntime.Runtime.Debugger.BreakpointInfo", "class_i_l_runtime_1_1_runtime_1_1_debugger_1_1_breakpoint_info.html", null ],
+    [ "BuglyAgent", "class_bugly_agent.html", null ],
+    [ "BuglyCallback", "class_bugly_callback.html", null ],
+    [ "SRDebugger.Services.BugReport", "class_s_r_debugger_1_1_services_1_1_bug_report.html", null ],
+    [ "SRDebugger.Internal.BugReportApi", "class_s_r_debugger_1_1_internal_1_1_bug_report_api.html", null ],
+    [ "SRDebugger.Internal.BugReportScreenshotUtil", "class_s_r_debugger_1_1_internal_1_1_bug_report_screenshot_util.html", null ],
+    [ "BuildInfo", "class_build_info.html", null ],
+    [ "XcodeProjectSetting.BundleUrlType", "struct_xcode_project_setting_1_1_bundle_url_type.html", null ],
+    [ "UnityEngine.UI.Button", null, [
+      [ "SRDebugger.UI.Controls.MultiTapButton", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_multi_tap_button.html", null ],
+      [ "SRF.UI.LongPressButton", "class_s_r_f_1_1_u_i_1_1_long_press_button.html", null ],
+      [ "SRF.UI.SRNumberButton", "class_s_r_f_1_1_u_i_1_1_s_r_number_button.html", null ]
+    ] ],
+    [ "ButtonEditor", null, [
+      [ "SRF.UI.Editor.LongPressButtonEditor", "class_s_r_f_1_1_u_i_1_1_editor_1_1_long_press_button_editor.html", null ],
+      [ "SRF.UI.Editor.SRNumberButtonEditor", "class_s_r_f_1_1_u_i_1_1_editor_1_1_s_r_number_button_editor.html", null ]
+    ] ],
     [ "ILRuntime.Mono.Cecil.PE.ByteBuffer", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_byte_buffer.html", [
       [ "ILRuntime.Mono.Cecil.Cil.CodeWriter", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_code_writer.html", null ],
       [ "ILRuntime.Mono.Cecil.Metadata.DataBuffer", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_1_1_data_buffer.html", null ],
@@ -502,12 +532,12 @@ var hierarchy =
       [ "ILRuntime.Mono.Cecil.SignatureWriter", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_signature_writer.html", null ]
     ] ],
     [ "ProtoBuf.Meta.CallbackSet", "class_proto_buf_1_1_meta_1_1_callback_set.html", null ],
+    [ "CapabilityProcessor", "class_capability_processor.html", null ],
     [ "ILRuntime.Mono.CompilerServices.SymbolWriter.CapturedScope", "struct_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_captured_scope.html", null ],
     [ "ILRuntime.Mono.CompilerServices.SymbolWriter.CapturedVariable", "struct_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_captured_variable.html", null ],
     [ "CertificateHandler", null, [
       [ "ET.AcceptAllCertificate", "class_e_t_1_1_accept_all_certificate.html", null ]
     ] ],
-    [ "IngameDebugConsole.CircularBuffer< T >", "class_ingame_debug_console_1_1_circular_buffer.html", null ],
     [ "ILRuntime.Runtime.Generated.CLRBindings", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_c_l_r_bindings.html", null ],
     [ "ILRuntime.Runtime.CLRBinding.CLRBindingUtils", "class_i_l_runtime_1_1_runtime_1_1_c_l_r_binding_1_1_c_l_r_binding_utils.html", null ],
     [ "ILRuntime.Runtime.Intepreter.RegisterVM.CodeBasicBlock", "class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_code_basic_block.html", null ],
@@ -533,10 +563,12 @@ var hierarchy =
     [ "ILRuntime.Mono.Collections.Generic.Collection< VariableDefinition >", "class_i_l_runtime_1_1_mono_1_1_collections_1_1_generic_1_1_collection.html", [
       [ "ILRuntime.Mono.Cecil.Cil.VariableDefinitionCollection", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_variable_definition_collection.html", null ]
     ] ],
-    [ "IngameDebugConsole.ConsoleMethodInfo", "class_ingame_debug_console_1_1_console_method_info.html", null ],
+    [ "XcodeProjectSetting.CompilerFlagsSet", "struct_xcode_project_setting_1_1_compiler_flags_set.html", null ],
+    [ "SRDebugger.Services.ConsoleEntry", "class_s_r_debugger_1_1_services_1_1_console_entry.html", null ],
     [ "ConstructorInfo", null, [
       [ "ILRuntime.Reflection.ILRuntimeConstructorInfo", "class_i_l_runtime_1_1_reflection_1_1_i_l_runtime_constructor_info.html", null ]
     ] ],
+    [ "XcodeProjectSetting.CopyFiles", "struct_xcode_project_setting_1_1_copy_files.html", null ],
     [ "ET.CoroutineLockInfo", "struct_e_t_1_1_coroutine_lock_info.html", null ],
     [ "ET.CoroutineLockTimer", "struct_e_t_1_1_coroutine_lock_timer.html", null ],
     [ "ET.EventType.CreateMyUnitFinish", "struct_e_t_1_1_event_type_1_1_create_my_unit_finish.html", null ],
@@ -574,8 +606,6 @@ var hierarchy =
     [ "ILRuntime.Mono.Cecil.CustomAttributeValueProjection", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_custom_attribute_value_projection.html", null ],
     [ "ILRuntime.Mono.Cecil.PE.DataDirectory", "struct_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_data_directory.html", null ],
     [ "ILRuntime.Runtime.Debugger.DebuggerServer", "class_i_l_runtime_1_1_runtime_1_1_debugger_1_1_debugger_server.html", null ],
-    [ "IngameDebugConsole.DebugLogEntryTimestamp", "struct_ingame_debug_console_1_1_debug_log_entry_timestamp.html", null ],
-    [ "IngameDebugConsole.DebugLogIndexList< T >", "class_ingame_debug_console_1_1_debug_log_index_list.html", null ],
     [ "ILRuntime.Runtime.Debugger.DebugService", "class_i_l_runtime_1_1_runtime_1_1_debugger_1_1_debug_service.html", null ],
     [ "ILRuntime.Runtime.Debugger.DebugSocket", "class_i_l_runtime_1_1_runtime_1_1_debugger_1_1_debug_socket.html", null ],
     [ "ILRuntime.Runtime.Enviorment.DelegateManager", "class_i_l_runtime_1_1_runtime_1_1_enviorment_1_1_delegate_manager.html", null ],
@@ -782,21 +812,35 @@ var hierarchy =
     [ "ProtoBuf.DiscriminatedUnion64", "struct_proto_buf_1_1_discriminated_union64.html", null ],
     [ "ProtoBuf.DiscriminatedUnion64Object", "struct_proto_buf_1_1_discriminated_union64_object.html", null ],
     [ "ProtoBuf.DiscriminatedUnionObject", "struct_proto_buf_1_1_discriminated_union_object.html", null ],
+    [ "System.ComponentModel.DisplayNameAttribute", null, [
+      [ "SROptions.DisplayNameAttribute", "class_s_r_options_1_1_display_name_attribute.html", null ]
+    ] ],
     [ "ET.DoubleMap< K, V >", "class_e_t_1_1_double_map.html", null ],
-    [ "IngameDebugConsole.DynamicCircularBuffer< T >", "class_ingame_debug_console_1_1_dynamic_circular_buffer.html", null ],
     [ "Editor", null, [
       [ "ET.ComponentViewEditor", "class_e_t_1_1_component_view_editor.html", null ],
       [ "ETEditor.NavMeshExporter", "class_e_t_editor_1_1_nav_mesh_exporter.html", null ],
-      [ "IngameDebugConsole.DebugLogManagerEditor", "class_ingame_debug_console_1_1_debug_log_manager_editor.html", null ],
       [ "LoopScrollRectInspector", "class_loop_scroll_rect_inspector.html", null ],
       [ "ReferenceCollectorEditor", "class_reference_collector_editor.html", null ]
+    ] ],
+    [ "UnityEditor.Editor", null, [
+      [ "SRDebugger.Editor.SettingsEditor", "class_s_r_debugger_1_1_editor_1_1_settings_editor.html", null ],
+      [ "SRF.UI.Editor.CopyPreferredSizeEditor", "class_s_r_f_1_1_u_i_1_1_editor_1_1_copy_preferred_size_editor.html", null ],
+      [ "SRF.UI.Editor.StyleComponentEditor", "class_s_r_f_1_1_u_i_1_1_editor_1_1_style_component_editor.html", null ],
+      [ "SRF.UI.Editor.StyleSheetEditor", "class_s_r_f_1_1_u_i_1_1_editor_1_1_style_sheet_editor.html", null ]
     ] ],
     [ "ET.EditorResHelper", "class_e_t_1_1_editor_res_helper.html", null ],
     [ "EditorWindow", null, [
       [ "ET.BuildEditor", "class_e_t_1_1_build_editor.html", null ],
-      [ "ET.ServerCommandLineEditor", "class_e_t_1_1_server_command_line_editor.html", null ]
+      [ "ET.ServerCommandLineEditor", "class_e_t_1_1_server_command_line_editor.html", null ],
+      [ "SRDebugger.Editor.ApiSignupTermsWindow", "class_s_r_debugger_1_1_editor_1_1_api_signup_terms_window.html", null ],
+      [ "SRDebugger.Editor.SRDebuggerSettingsWindow", "class_s_r_debugger_1_1_editor_1_1_s_r_debugger_settings_window.html", null ],
+      [ "SRDebugger.Editor.SRIntegrityCheckWindow", "class_s_r_debugger_1_1_editor_1_1_s_r_integrity_check_window.html", null ],
+      [ "SRDebugger.Editor.SROptionsWindow", "class_s_r_debugger_1_1_editor_1_1_s_r_options_window.html", null ],
+      [ "SRDebugger.Editor.WelcomeWindow", "class_s_r_debugger_1_1_editor_1_1_welcome_window.html", null ]
     ] ],
+    [ "SRF.UI.ResponsiveResize.Element", "struct_s_r_f_1_1_u_i_1_1_responsive_resize_1_1_element.html", null ],
     [ "ET.EventType.EnterMapFinish", "struct_e_t_1_1_event_type_1_1_enter_map_finish.html", null ],
+    [ "SRF.UI.ResponsiveEnable.Entry", "struct_s_r_f_1_1_u_i_1_1_responsive_enable_1_1_entry.html", null ],
     [ "ProtoBuf.Serializers.EnumSerializer.EnumPair", "struct_proto_buf_1_1_serializers_1_1_enum_serializer_1_1_enum_pair.html", null ],
     [ "ILRuntime.Runtime.Generated.ET_AcceptAllCertificate_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_e_t___accept_all_certificate___binding.html", null ],
     [ "ILRuntime.Runtime.Generated.ET_AService_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_e_t___a_service___binding.html", null ],
@@ -874,7 +918,14 @@ var hierarchy =
       [ "ILRuntime.Mono.Cecil.AssemblyResolutionException", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_assembly_resolution_exception.html", null ],
       [ "ILRuntime.Mono.Cecil.Cil.SymbolsNotFoundException", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_symbols_not_found_exception.html", null ]
     ] ],
+    [ "SRDebugger.Editor.Fix", "class_s_r_debugger_1_1_editor_1_1_fix.html", [
+      [ "SRDebugger.Editor.DelegateFix", "class_s_r_debugger_1_1_editor_1_1_delegate_fix.html", null ]
+    ] ],
+    [ "XcodeProjectSetting.Framework", "struct_xcode_project_setting_1_1_framework.html", null ],
     [ "ET.GameObjectPool", "class_e_t_1_1_game_object_pool.html", null ],
+    [ "Graphic", null, [
+      [ "SRDebugger.UI.Controls.ProfilerGraphControl", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_profiler_graph_control.html", null ]
+    ] ],
     [ "HashSet", null, [
       [ "ET.HashSetComponent< T >", "class_e_t_1_1_hash_set_component.html", null ]
     ] ],
@@ -888,7 +939,12 @@ var hierarchy =
       ] ],
       [ "ILRuntime.Mono.Cecil.Metadata.TableHeap", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_1_1_table_heap.html", null ]
     ] ],
+    [ "SRF.Hierarchy", "class_s_r_f_1_1_hierarchy.html", null ],
     [ "ET.IAddComponent", "interface_e_t_1_1_i_add_component.html", null ],
+    [ "SRF.Service.IAsyncService", "interface_s_r_f_1_1_service_1_1_i_async_service.html", [
+      [ "SRF.Service.SRDependencyServiceBase< T >", "class_s_r_f_1_1_service_1_1_s_r_dependency_service_base.html", null ],
+      [ "SRF.Service.SRSceneServiceBase< T, TImpl >", "class_s_r_f_1_1_service_1_1_s_r_scene_service_base.html", null ]
+    ] ],
     [ "IAsyncStateMachine", null, [
       [ "ET.IAsyncStateMachineClassInheritanceAdaptor.IAsyncStateMachineAdaptor", "class_e_t_1_1_i_async_state_machine_class_inheritance_adaptor_1_1_i_async_state_machine_adaptor.html", null ]
     ] ],
@@ -1042,9 +1098,8 @@ var hierarchy =
       [ "ET.ESReuseUI", "class_e_t_1_1_e_s_reuse_u_i.html", null ]
     ] ],
     [ "IBeginDragHandler", null, [
-      [ "IngameDebugConsole.DebugLogPopup", "class_ingame_debug_console_1_1_debug_log_popup.html", null ],
-      [ "IngameDebugConsole.DebugLogResizeListener", "class_ingame_debug_console_1_1_debug_log_resize_listener.html", null ],
-      [ "IngameDebugConsole.DebugsOnScrollListener", "class_ingame_debug_console_1_1_debugs_on_scroll_listener.html", null ],
+      [ "SRF.UI.DragHandle", "class_s_r_f_1_1_u_i_1_1_drag_handle.html", null ],
+      [ "SRF.UI.SRSpinner", "class_s_r_f_1_1_u_i_1_1_s_r_spinner.html", null ],
       [ "UnityEngine.UI.LoopScrollRectBase", "class_unity_engine_1_1_u_i_1_1_loop_scroll_rect_base.html", [
         [ "UnityEngine.UI.LoopScrollRect", "class_unity_engine_1_1_u_i_1_1_loop_scroll_rect.html", [
           [ "UnityEngine.UI.LoopHorizontalScrollRect", "class_unity_engine_1_1_u_i_1_1_loop_horizontal_scroll_rect.html", null ],
@@ -1055,6 +1110,9 @@ var hierarchy =
           [ "UnityEngine.UI.LoopVerticalScrollRectMulti", "class_unity_engine_1_1_u_i_1_1_loop_vertical_scroll_rect_multi.html", null ]
         ] ]
       ] ]
+    ] ],
+    [ "SRDebugger.Services.IBugReportService", "interface_s_r_debugger_1_1_services_1_1_i_bug_report_service.html", [
+      [ "SRDebugger.Services.Implementation.BugReportApiService", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_bug_report_api_service.html", null ]
     ] ],
     [ "ICanvasElement", null, [
       [ "UnityEngine.UI.LoopScrollRectBase", "class_unity_engine_1_1_u_i_1_1_loop_scroll_rect_base.html", null ]
@@ -1102,6 +1160,9 @@ var hierarchy =
       [ "ET.ReloadDllConsoleHandler", "class_e_t_1_1_reload_dll_console_handler.html", null ],
       [ "ET.RobotConsoleHandler", "class_e_t_1_1_robot_console_handler.html", null ]
     ] ],
+    [ "SRDebugger.Services.IConsoleService", "interface_s_r_debugger_1_1_services_1_1_i_console_service.html", [
+      [ "SRDebugger.Services.Implementation.StandardConsoleService", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_standard_console_service.html", null ]
+    ] ],
     [ "ICriticalNotifyCompletion", null, [
       [ "ET.ETTask< T >", "class_e_t_1_1_e_t_task.html", null ],
       [ "ET.ETTask< T >", "class_e_t_1_1_e_t_task.html", null ],
@@ -1115,6 +1176,18 @@ var hierarchy =
       [ "ILRuntime.Mono.Cecil.SecurityAttribute", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_security_attribute.html", null ]
     ] ],
     [ "ET.IDBCollection", "interface_e_t_1_1_i_d_b_collection.html", null ],
+    [ "SRDebugger.Services.IDebugCameraService", "interface_s_r_debugger_1_1_services_1_1_i_debug_camera_service.html", [
+      [ "SRDebugger.Services.Implementation.DebugCameraServiceImpl", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_debug_camera_service_impl.html", null ]
+    ] ],
+    [ "SRDebugger.Services.IDebugPanelService", "interface_s_r_debugger_1_1_services_1_1_i_debug_panel_service.html", [
+      [ "SRDebugger.Services.Implementation.DebugPanelServiceImpl", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_debug_panel_service_impl.html", null ]
+    ] ],
+    [ "SRDebugger.Services.IDebugService", "interface_s_r_debugger_1_1_services_1_1_i_debug_service.html", [
+      [ "SRDebugger.Services.Implementation.SRDebugService", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_s_r_debug_service.html", null ]
+    ] ],
+    [ "SRDebugger.Services.IDebugTriggerService", "interface_s_r_debugger_1_1_services_1_1_i_debug_trigger_service.html", [
+      [ "SRDebugger.Services.Implementation.DebugTriggerImpl", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_debug_trigger_impl.html", null ]
+    ] ],
     [ "ILRuntime.Runtime.Intepreter.IDelegateAdapter", "interface_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_delegate_adapter.html", [
       [ "ILRuntime.Runtime.Intepreter.DelegateAdapter", "class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_delegate_adapter.html", [
         [ "ILRuntime.Runtime.Intepreter.DummyDelegateAdapter", "class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_dummy_delegate_adapter.html", null ],
@@ -1376,26 +1449,38 @@ var hierarchy =
       [ "ILRuntime.Runtime.Stack.RuntimeStack", "class_i_l_runtime_1_1_runtime_1_1_stack_1_1_runtime_stack.html", null ],
       [ "ProtoBuf.ProtoReader", "class_proto_buf_1_1_proto_reader.html", null ],
       [ "ProtoBuf.ProtoWriter", "class_proto_buf_1_1_proto_writer.html", null ],
+      [ "SRDebugger.Services.Implementation.DebugPanelServiceImpl", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_debug_panel_service_impl.html", null ],
+      [ "SRDebugger.Services.Implementation.StandardConsoleService", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_standard_console_service.html", null ],
       [ "UncheckedStack< T >.Enumerator", "struct_unchecked_stack_1_1_enumerator.html", null ]
     ] ],
+    [ "SRDebugger.Services.IDockConsoleService", "interface_s_r_debugger_1_1_services_1_1_i_dock_console_service.html", [
+      [ "SRDebugger.Services.Implementation.DockConsoleServiceImpl", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_dock_console_service_impl.html", null ]
+    ] ],
     [ "IDragHandler", null, [
-      [ "IngameDebugConsole.DebugLogPopup", "class_ingame_debug_console_1_1_debug_log_popup.html", null ],
-      [ "IngameDebugConsole.DebugLogResizeListener", "class_ingame_debug_console_1_1_debug_log_resize_listener.html", null ],
       [ "JoyStick_Aim", "class_joy_stick___aim.html", null ],
       [ "JoyStick_Move", "class_joy_stick___move.html", null ],
+      [ "SRF.UI.DragHandle", "class_s_r_f_1_1_u_i_1_1_drag_handle.html", null ],
+      [ "SRF.UI.SRSpinner", "class_s_r_f_1_1_u_i_1_1_s_r_spinner.html", null ],
       [ "UnityEngine.UI.LoopScrollRectBase", "class_unity_engine_1_1_u_i_1_1_loop_scroll_rect_base.html", null ]
     ] ],
     [ "ET.IdStruct", "struct_e_t_1_1_id_struct.html", null ],
+    [ "SRDebugger.UI.Other.IEnableTab", "interface_s_r_debugger_1_1_u_i_1_1_other_1_1_i_enable_tab.html", [
+      [ "SRDebugger.UI.Tabs.BugReportTabController", "class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_bug_report_tab_controller.html", null ]
+    ] ],
     [ "IEndDragHandler", null, [
-      [ "IngameDebugConsole.DebugLogPopup", "class_ingame_debug_console_1_1_debug_log_popup.html", null ],
-      [ "IngameDebugConsole.DebugsOnScrollListener", "class_ingame_debug_console_1_1_debugs_on_scroll_listener.html", null ],
+      [ "SRF.UI.DragHandle", "class_s_r_f_1_1_u_i_1_1_drag_handle.html", null ],
       [ "UnityEngine.UI.LoopScrollRectBase", "class_unity_engine_1_1_u_i_1_1_loop_scroll_rect_base.html", null ]
     ] ],
     [ "IEnumerable", null, [
+      [ "ChillyRoom.UnityEditor.iOS.Xcode.PBX.GUIDList", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_g_u_i_d_list.html", null ],
       [ "ILRuntime.Other.UncheckedList< T >", "class_i_l_runtime_1_1_other_1_1_unchecked_list.html", null ],
       [ "ILRuntime.Other.UncheckedList< T >", "class_i_l_runtime_1_1_other_1_1_unchecked_list.html", null ]
     ] ],
     [ "System.Collections.Generic.IEnumerable", null, [
+      [ "SRDebugger.CircularBuffer< T >", "class_s_r_debugger_1_1_circular_buffer.html", null ],
+      [ "SRDebugger.IReadOnlyList< T >", "interface_s_r_debugger_1_1_i_read_only_list.html", [
+        [ "SRDebugger.CircularBuffer< T >", "class_s_r_debugger_1_1_circular_buffer.html", null ]
+      ] ],
       [ "UncheckedStack< T >", "class_unchecked_stack.html", null ],
       [ "UncheckedStack< T >", "class_unchecked_stack.html", null ]
     ] ],
@@ -1418,10 +1503,7 @@ var hierarchy =
     ] ],
     [ "IEquatable", null, [
       [ "ILRuntime.Mono.Cecil.Cil.OpCode", "struct_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_op_code.html", null ],
-      [ "ILRuntime.Mono.Cecil.MetadataToken", "struct_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_token.html", null ]
-    ] ],
-    [ "System.IEquatable", null, [
-      [ "IngameDebugConsole.DebugLogEntry", "class_ingame_debug_console_1_1_debug_log_entry.html", null ],
+      [ "ILRuntime.Mono.Cecil.MetadataToken", "struct_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_token.html", null ],
       [ "LitJson.JsonData", "class_lit_json_1_1_json_data.html", null ],
       [ "UnityEngine.Matrix4x4", "struct_unity_engine_1_1_matrix4x4.html", null ],
       [ "UnityEngine.Quaternion", "struct_unity_engine_1_1_quaternion.html", null ],
@@ -1485,10 +1567,16 @@ var hierarchy =
       [ "ET.NetThreadComponent", "class_e_t_1_1_net_thread_component.html", null ]
     ] ],
     [ "ILayoutElement", null, [
+      [ "SRDebugger.UI.Other.SafeAreaSizer", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_safe_area_sizer.html", null ],
+      [ "SRF.UI.ContentFitText", "class_s_r_f_1_1_u_i_1_1_content_fit_text.html", null ],
+      [ "SRF.UI.CopyLayoutElement", "class_s_r_f_1_1_u_i_1_1_copy_layout_element.html", null ],
       [ "UnityEngine.UI.LoopScrollRectBase", "class_unity_engine_1_1_u_i_1_1_loop_scroll_rect_base.html", null ]
     ] ],
     [ "ILayoutGroup", null, [
       [ "UnityEngine.UI.LoopScrollRectBase", "class_unity_engine_1_1_u_i_1_1_loop_scroll_rect_base.html", null ]
+    ] ],
+    [ "ILayoutSelfController", null, [
+      [ "SRDebugger.UI.Other.FloatOverElement", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_float_over_element.html", null ]
     ] ],
     [ "ILRuntime.Runtime.Intepreter.ILIntepreter", "class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_i_l_intepreter.html", null ],
     [ "IList", null, [
@@ -1503,7 +1591,8 @@ var hierarchy =
       [ "LitJson.IJsonWrapper", "interface_lit_json_1_1_i_json_wrapper.html", [
         [ "LitJson.JsonData", "class_lit_json_1_1_json_data.html", null ],
         [ "LitJson.JsonMockWrapper", "class_lit_json_1_1_json_mock_wrapper.html", null ]
-      ] ]
+      ] ],
+      [ "SRF.SRList< T >", "class_s_r_f_1_1_s_r_list.html", null ]
     ] ],
     [ "ET.ILoad", "interface_e_t_1_1_i_load.html", [
       [ "ET.AIDispatcherComponent", "class_e_t_1_1_a_i_dispatcher_component.html", null ],
@@ -1778,33 +1867,67 @@ var hierarchy =
     [ "ILRuntime.Mono.Cecil.Cil.ImportTarget", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_import_target.html", null ],
     [ "Microsoft.Cci.Pdb.IName", "interface_microsoft_1_1_cci_1_1_pdb_1_1_i_name.html", null ],
     [ "Microsoft.Cci.Pdb.INamespaceScope", "interface_microsoft_1_1_cci_1_1_pdb_1_1_i_namespace_scope.html", null ],
+    [ "SRDebugger.InfoEntry", "class_s_r_debugger_1_1_info_entry.html", null ],
     [ "ILRuntime.Runtime.Intepreter.RegisterVM.InlineMethodInfo", "struct_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_inline_method_info.html", null ],
+    [ "INotifyPropertyChanged", null, [
+      [ "SROptions", "class_s_r_options.html", null ]
+    ] ],
+    [ "InputField", null, [
+      [ "SRF.UI.SRNumberSpinner", "class_s_r_f_1_1_u_i_1_1_s_r_number_spinner.html", null ]
+    ] ],
     [ "ET.InstanceIdStruct", "struct_e_t_1_1_instance_id_struct.html", null ],
     [ "ILRuntime.Mono.Cecil.Cil.Instruction", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_instruction.html", null ],
     [ "ILRuntime.Mono.Cecil.Cil.InstructionOffset", "struct_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_instruction_offset.html", null ],
     [ "ILRuntime.Runtime.Stack.IntegerReference", "class_i_l_runtime_1_1_runtime_1_1_stack_1_1_integer_reference.html", null ],
+    [ "SRDebugger.Editor.IntegrityIssue", "class_s_r_debugger_1_1_editor_1_1_integrity_issue.html", null ],
+    [ "SRDebugger.Internal.InternalOptionsRegistry", "class_s_r_debugger_1_1_internal_1_1_internal_options_registry.html", null ],
     [ "ET.INumericWatcher", "interface_e_t_1_1_i_numeric_watcher.html", [
       [ "ET.NumericWatcher_Hp_ShowUI", "class_e_t_1_1_numeric_watcher___hp___show_u_i.html", null ]
     ] ],
     [ "InvalidOperationException", null, [
       [ "ILRuntime.Mono.Cecil.Cil.SymbolsNotMatchingException", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_symbols_not_matching_exception.html", null ]
     ] ],
+    [ "SRDebugger.IOptionContainer", "interface_s_r_debugger_1_1_i_option_container.html", [
+      [ "SRDebugger.DynamicOptionContainer", "class_s_r_debugger_1_1_dynamic_option_container.html", null ]
+    ] ],
+    [ "SRDebugger.Services.IOptionsService", "interface_s_r_debugger_1_1_services_1_1_i_options_service.html", [
+      [ "SRDebugger.Services.Implementation.OptionsServiceImpl", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_options_service_impl.html", null ]
+    ] ],
     [ "IOrderedDictionary", null, [
       [ "LitJson.IJsonWrapper", "interface_lit_json_1_1_i_json_wrapper.html", null ]
     ] ],
+    [ "SRDebugger.Services.IPinEntryService", "interface_s_r_debugger_1_1_services_1_1_i_pin_entry_service.html", [
+      [ "SRDebugger.Services.Implementation.PinEntryServiceImpl", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_pin_entry_service_impl.html", null ]
+    ] ],
+    [ "SRDebugger.Services.IPinnedUIService", "interface_s_r_debugger_1_1_services_1_1_i_pinned_u_i_service.html", [
+      [ "SRDebugger.Services.Implementation.PinnedUIServiceImpl", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_pinned_u_i_service_impl.html", null ]
+    ] ],
     [ "GameInput.IPlayerActions", "interface_game_input_1_1_i_player_actions.html", null ],
     [ "IPointerClickHandler", null, [
-      [ "IngameDebugConsole.DebugLogItem", "class_ingame_debug_console_1_1_debug_log_item.html", null ],
-      [ "IngameDebugConsole.DebugLogPopup", "class_ingame_debug_console_1_1_debug_log_popup.html", null ],
+      [ "SRF.UI.Layout.VirtualVerticalLayoutGroup", "class_s_r_f_1_1_u_i_1_1_layout_1_1_virtual_vertical_layout_group.html", null ],
+      [ "SRF.UI.SRNumberButton", "class_s_r_f_1_1_u_i_1_1_s_r_number_button.html", null ],
       [ "UIExtensionHandler", "class_u_i_extension_handler.html", null ]
     ] ],
     [ "IPointerDownHandler", null, [
       [ "JoyStick_Aim", "class_joy_stick___aim.html", null ],
-      [ "JoyStick_Move", "class_joy_stick___move.html", null ]
+      [ "JoyStick_Move", "class_joy_stick___move.html", null ],
+      [ "SRF.UI.FlashGraphic", "class_s_r_f_1_1_u_i_1_1_flash_graphic.html", null ],
+      [ "SRF.UI.SRNumberButton", "class_s_r_f_1_1_u_i_1_1_s_r_number_button.html", null ]
+    ] ],
+    [ "IPointerEnterHandler", null, [
+      [ "SRDebugger.UI.Other.DockConsoleController", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_dock_console_controller.html", null ]
+    ] ],
+    [ "IPointerExitHandler", null, [
+      [ "SRDebugger.UI.Other.DockConsoleController", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_dock_console_controller.html", null ]
     ] ],
     [ "IPointerUpHandler", null, [
       [ "JoyStick_Aim", "class_joy_stick___aim.html", null ],
-      [ "JoyStick_Move", "class_joy_stick___move.html", null ]
+      [ "JoyStick_Move", "class_joy_stick___move.html", null ],
+      [ "SRF.UI.FlashGraphic", "class_s_r_f_1_1_u_i_1_1_flash_graphic.html", null ],
+      [ "SRF.UI.SRNumberButton", "class_s_r_f_1_1_u_i_1_1_s_r_number_button.html", null ]
+    ] ],
+    [ "SRDebugger.Services.IProfilerService", "interface_s_r_debugger_1_1_services_1_1_i_profiler_service.html", [
+      [ "SRDebugger.Profiler.ProfilerServiceImpl", "class_s_r_debugger_1_1_profiler_1_1_profiler_service_impl.html", null ]
     ] ],
     [ "ProtoBuf.Serializers.IProtoSerializer", "interface_proto_buf_1_1_serializers_1_1_i_proto_serializer.html", [
       [ "ProtoBuf.Serializers.BlobSerializer", "class_proto_buf_1_1_serializers_1_1_blob_serializer.html", null ],
@@ -1861,11 +1984,14 @@ var hierarchy =
       [ "ET.RobotCase_FirstCase", "class_e_t_1_1_robot_case___first_case.html", null ]
     ] ],
     [ "IScrollHandler", null, [
-      [ "IngameDebugConsole.DebugsOnScrollListener", "class_ingame_debug_console_1_1_debugs_on_scroll_listener.html", null ],
       [ "UnityEngine.UI.LoopScrollRectBase", "class_unity_engine_1_1_u_i_1_1_loop_scroll_rect_base.html", null ]
+    ] ],
+    [ "ISelectHandler", null, [
+      [ "SRF.UI.Unselectable", "class_s_r_f_1_1_u_i_1_1_unselectable.html", null ]
     ] ],
     [ "ISerializationCallbackReceiver", null, [
       [ "ReferenceCollector", "class_reference_collector.html", null ],
+      [ "SRF.SRList< T >", "class_s_r_f_1_1_s_r_list.html", null ],
       [ "Sirenix.OdinInspector.SerializedNetworkBehaviour", "class_sirenix_1_1_odin_inspector_1_1_serialized_network_behaviour.html", null ]
     ] ],
     [ "ProtoBuf.Serializers.ISerializerProxy", "interface_proto_buf_1_1_serializers_1_1_i_serializer_proxy.html", [
@@ -1934,6 +2060,9 @@ var hierarchy =
     ] ],
     [ "ILRuntime.Mono.Cecil.Pdb.ISymUnmanagedDocumentWriter", "interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_pdb_1_1_i_sym_unmanaged_document_writer.html", null ],
     [ "ILRuntime.Mono.Cecil.Pdb.ISymUnmanagedWriter2", "interface_i_l_runtime_1_1_mono_1_1_cecil_1_1_pdb_1_1_i_sym_unmanaged_writer2.html", null ],
+    [ "SRDebugger.Services.ISystemInformationService", "interface_s_r_debugger_1_1_services_1_1_i_system_information_service.html", [
+      [ "SRDebugger.Services.Implementation.StandardSystemInformationService", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_standard_system_information_service.html", null ]
+    ] ],
     [ "ET.ISystemType", "interface_e_t_1_1_i_system_type.html", [
       [ "ET.IAwakeSystem< A >", "interface_e_t_1_1_i_awake_system.html", [
         [ "ET.AwakeSystem< T, A, B, C, D >", "class_e_t_1_1_awake_system.html", null ]
@@ -2032,6 +2161,9 @@ var hierarchy =
       [ "ET.UnityWebRequestRenewalAsync", "class_e_t_1_1_unity_web_request_renewal_async.html", null ]
     ] ],
     [ "Microsoft.Cci.Pdb.IUsedNamespace", "interface_microsoft_1_1_cci_1_1_pdb_1_1_i_used_namespace.html", null ],
+    [ "SRF.UI.Layout.IVirtualView", "interface_s_r_f_1_1_u_i_1_1_layout_1_1_i_virtual_view.html", [
+      [ "SRDebugger.UI.Controls.ConsoleEntryView", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_console_entry_view.html", null ]
+    ] ],
     [ "ET.IWaitType", "interface_e_t_1_1_i_wait_type.html", [
       [ "ET.WaitType.Wait_CreateMyUnit", "struct_e_t_1_1_wait_type_1_1_wait___create_my_unit.html", null ],
       [ "ET.WaitType.Wait_SceneChangeFinish", "struct_e_t_1_1_wait_type_1_1_wait___scene_change_finish.html", null ],
@@ -2042,17 +2174,30 @@ var hierarchy =
     [ "LitJson.JsonReader", "class_lit_json_1_1_json_reader.html", null ],
     [ "LitJson.JsonWriter", "class_lit_json_1_1_json_writer.html", null ],
     [ "ET.KcpWaitPacket", "struct_e_t_1_1_kcp_wait_packet.html", null ],
+    [ "SRDebugger.Settings.KeyboardShortcut", "class_s_r_debugger_1_1_settings_1_1_keyboard_shortcut.html", null ],
+    [ "KeychainItemWrapper(PrivateMethods)", "category_keychain_item_wrapper_07_private_methods_08.html", null ],
+    [ "ChillyRoom.UnityEditor.iOS.Xcode.PBX.KeyValueAST", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_key_value_a_s_t.html", null ],
     [ "ET.LateUpdateSystem< CameraComponent >", "class_e_t_1_1_late_update_system.html", [
       [ "ET.CameraComponentLateUpdateSystem", "class_e_t_1_1_camera_component_late_update_system.html", null ]
     ] ],
     [ "ET.LateUpdateSystem< NetThreadComponent >", "class_e_t_1_1_late_update_system.html", [
       [ "ET.NetThreadComponentUpdateSystem", "class_e_t_1_1_net_thread_component_update_system.html", null ]
     ] ],
+    [ "LayoutElement", null, [
+      [ "SRF.UI.CopyPreferredSize", "class_s_r_f_1_1_u_i_1_1_copy_preferred_size.html", null ],
+      [ "SRF.UI.CopySizeIntoLayoutElement", "class_s_r_f_1_1_u_i_1_1_copy_size_into_layout_element.html", null ]
+    ] ],
+    [ "LayoutGroup", null, [
+      [ "SRF.UI.Layout.FlowLayoutGroup", "class_s_r_f_1_1_u_i_1_1_layout_1_1_flow_layout_group.html", null ],
+      [ "SRF.UI.Layout.VirtualVerticalLayoutGroup", "class_s_r_f_1_1_u_i_1_1_layout_1_1_virtual_vertical_layout_group.html", null ]
+    ] ],
     [ "ET.EventType.LeaveLobbyFinish", "struct_e_t_1_1_event_type_1_1_leave_lobby_finish.html", null ],
     [ "ET.EventType.LeaveMapFinish", "struct_e_t_1_1_event_type_1_1_leave_map_finish.html", null ],
+    [ "ChillyRoom.UnityEditor.iOS.Xcode.PBX.Lexer", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_lexer.html", null ],
     [ "ILRuntime.Mono.CompilerServices.SymbolWriter.LineNumberEntry", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_entry.html", null ],
     [ "ILRuntime.Mono.CompilerServices.SymbolWriter.LineNumberTable", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_line_number_table.html", null ],
     [ "List", null, [
+      [ "ChillyRoom.UnityEditor.iOS.Xcode.PBX.TokenList", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_token_list.html", null ],
       [ "ET.ListComponent< T >", "class_e_t_1_1_list_component.html", null ]
     ] ],
     [ "ILRuntime.Runtime.Generated.LitJson_JsonMapper_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_lit_json___json_mapper___binding.html", null ],
@@ -2199,12 +2344,15 @@ var hierarchy =
     [ "MethodInfo", null, [
       [ "ILRuntime.Reflection.ILRuntimeMethodInfo", "class_i_l_runtime_1_1_reflection_1_1_i_l_runtime_method_info.html", null ]
     ] ],
+    [ "SRF.Helpers.MethodReference", "class_s_r_f_1_1_helpers_1_1_method_reference.html", null ],
+    [ "SRDebugger.Editor.Migrations.Migration", "class_s_r_debugger_1_1_editor_1_1_migrations_1_1_migration.html", null ],
     [ "ILRuntime.Mono.Cecil.ModuleParameters", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_module_parameters.html", null ],
     [ "ILRuntime.Mono.Cecil.ModuleReader", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_module_reader.html", [
       [ "ILRuntime.Mono.Cecil.DeferredModuleReader", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_deferred_module_reader.html", null ],
       [ "ILRuntime.Mono.Cecil.ImmediateModuleReader", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_immediate_module_reader.html", null ]
     ] ],
     [ "MonoBehaviour", null, [
+      [ "BuglyInit", "class_bugly_init.html", null ],
       [ "ET.CanvasConfig", "class_e_t_1_1_canvas_config.html", null ],
       [ "ET.ComponentView", "class_e_t_1_1_component_view.html", null ],
       [ "ET.GizmosDebug", "class_e_t_1_1_gizmos_debug.html", null ],
@@ -2212,15 +2360,77 @@ var hierarchy =
       [ "ET.InputHelperMono", "class_e_t_1_1_input_helper_mono.html", null ],
       [ "ET.PoolObject", "class_e_t_1_1_pool_object.html", null ],
       [ "ET.UILayerScript", "class_e_t_1_1_u_i_layer_script.html", null ],
-      [ "IngameDebugConsole.DebugLogItem", "class_ingame_debug_console_1_1_debug_log_item.html", null ],
-      [ "IngameDebugConsole.DebugLogManager", "class_ingame_debug_console_1_1_debug_log_manager.html", null ],
-      [ "IngameDebugConsole.DebugLogPopup", "class_ingame_debug_console_1_1_debug_log_popup.html", null ],
-      [ "IngameDebugConsole.DebugLogRecycledListView", "class_ingame_debug_console_1_1_debug_log_recycled_list_view.html", null ],
-      [ "IngameDebugConsole.DebugLogResizeListener", "class_ingame_debug_console_1_1_debug_log_resize_listener.html", null ],
-      [ "IngameDebugConsole.DebugsOnScrollListener", "class_ingame_debug_console_1_1_debugs_on_scroll_listener.html", null ],
       [ "Linity.ToDo.ToDo", "class_linity_1_1_to_do_1_1_to_do.html", null ],
       [ "RedDotMonoView", "class_red_dot_mono_view.html", null ],
       [ "ReferenceCollector", "class_reference_collector.html", null ],
+      [ "SRDebugger.Profiler.ProfilerLateUpdateListener", "class_s_r_debugger_1_1_profiler_1_1_profiler_late_update_listener.html", null ],
+      [ "SRDebugger.UI.Other.ErrorNotifier", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_error_notifier.html", null ],
+      [ "SRDebugger.UI.Other.ScrollSettingsBehaviour", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_scroll_settings_behaviour.html", null ],
+      [ "SRF.SRMonoBehaviour", "class_s_r_f_1_1_s_r_mono_behaviour.html", [
+        [ "SRDebugger.UI.Other.ConfigureCanvasFromSettings", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_configure_canvas_from_settings.html", null ],
+        [ "SRDebugger.UI.Other.DebugPanelBackgroundBehaviour", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_debug_panel_background_behaviour.html", null ],
+        [ "SRDebugger.UI.Other.HandleManager", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_handle_manager.html", null ],
+        [ "SRDebugger.UI.Other.LoadingSpinnerBehaviour", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_loading_spinner_behaviour.html", null ],
+        [ "SRDebugger.UI.Other.SetLayerFromSettings", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_set_layer_from_settings.html", null ],
+        [ "SRF.Components.SRAutoSingleton< T >", "class_s_r_f_1_1_components_1_1_s_r_auto_singleton.html", null ],
+        [ "SRF.Components.SRSingleton< T >", "class_s_r_f_1_1_components_1_1_s_r_singleton.html", null ],
+        [ "SRF.SRMonoBehaviourEx", "class_s_r_f_1_1_s_r_mono_behaviour_ex.html", [
+          [ "SRDebugger.SRDebuggerInit", "class_s_r_debugger_1_1_s_r_debugger_init.html", null ],
+          [ "SRDebugger.Scripts.DebuggerTabController", "class_s_r_debugger_1_1_scripts_1_1_debugger_tab_controller.html", null ],
+          [ "SRDebugger.UI.Controls.ConsoleEntryView", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_console_entry_view.html", null ],
+          [ "SRDebugger.UI.Controls.ConsoleLogControl", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_console_log_control.html", null ],
+          [ "SRDebugger.UI.Controls.InfoBlock", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_info_block.html", null ],
+          [ "SRDebugger.UI.Controls.OptionsControlBase", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_options_control_base.html", [
+            [ "SRDebugger.UI.Controls.Data.ActionControl", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_action_control.html", null ],
+            [ "SRDebugger.UI.Controls.DataBoundControl", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_bound_control.html", [
+              [ "SRDebugger.UI.Controls.Data.BoolControl", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_bool_control.html", null ],
+              [ "SRDebugger.UI.Controls.Data.EnumControl", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html", null ],
+              [ "SRDebugger.UI.Controls.Data.NumberControl", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_number_control.html", null ],
+              [ "SRDebugger.UI.Controls.Data.ReadOnlyControl", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_read_only_control.html", null ],
+              [ "SRDebugger.UI.Controls.Data.StringControl", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_string_control.html", null ]
+            ] ]
+          ] ],
+          [ "SRDebugger.UI.Controls.PinEntryControl", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_pin_entry_control.html", null ],
+          [ "SRDebugger.UI.Controls.ProfilerEnableControl", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_profiler_enable_control.html", null ],
+          [ "SRDebugger.UI.Controls.ProfilerGraphAxisLabel", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_profiler_graph_axis_label.html", null ],
+          [ "SRDebugger.UI.Controls.ProfilerMemoryBlock", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_profiler_memory_block.html", null ],
+          [ "SRDebugger.UI.Controls.ProfilerMonoBlock", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_profiler_mono_block.html", null ],
+          [ "SRDebugger.UI.Controls.SRTabButton", "class_s_r_debugger_1_1_u_i_1_1_controls_1_1_s_r_tab_button.html", null ],
+          [ "SRDebugger.UI.DebugPanelRoot", "class_s_r_debugger_1_1_u_i_1_1_debug_panel_root.html", null ],
+          [ "SRDebugger.UI.MobileMenuController", "class_s_r_debugger_1_1_u_i_1_1_mobile_menu_controller.html", null ],
+          [ "SRDebugger.UI.Other.BugReportPopoverRoot", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_bug_report_popover_root.html", null ],
+          [ "SRDebugger.UI.Other.BugReportSheetController", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_bug_report_sheet_controller.html", null ],
+          [ "SRDebugger.UI.Other.CategoryGroup", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_category_group.html", null ],
+          [ "SRDebugger.UI.Other.ConsoleTabQuickViewControl", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_console_tab_quick_view_control.html", null ],
+          [ "SRDebugger.UI.Other.DockConsoleController", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_dock_console_controller.html", null ],
+          [ "SRDebugger.UI.Other.PinnedUIRoot", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_pinned_u_i_root.html", null ],
+          [ "SRDebugger.UI.Other.SRTab", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_s_r_tab.html", null ],
+          [ "SRDebugger.UI.Other.SRTabController", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_s_r_tab_controller.html", null ],
+          [ "SRDebugger.UI.Other.TriggerRoot", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_trigger_root.html", null ],
+          [ "SRDebugger.UI.Other.VersionTextBehaviour", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_version_text_behaviour.html", null ],
+          [ "SRDebugger.UI.ProfilerFPSLabel", "class_s_r_debugger_1_1_u_i_1_1_profiler_f_p_s_label.html", null ],
+          [ "SRDebugger.UI.Tabs.BugReportTabController", "class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_bug_report_tab_controller.html", null ],
+          [ "SRDebugger.UI.Tabs.ConsoleTabController", "class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_console_tab_controller.html", null ],
+          [ "SRDebugger.UI.Tabs.InfoTabController", "class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_info_tab_controller.html", null ],
+          [ "SRDebugger.UI.Tabs.OptionsTabController", "class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_options_tab_controller.html", null ],
+          [ "SRDebugger.UI.Tabs.ProfilerTabController", "class_s_r_debugger_1_1_u_i_1_1_tabs_1_1_profiler_tab_controller.html", null ],
+          [ "SRF.Service.SRServiceBase< T >", "class_s_r_f_1_1_service_1_1_s_r_service_base.html", [
+            [ "SRF.Service.SRDependencyServiceBase< T >", "class_s_r_f_1_1_service_1_1_s_r_dependency_service_base.html", null ],
+            [ "SRF.Service.SRSceneServiceBase< T, TImpl >", "class_s_r_f_1_1_service_1_1_s_r_scene_service_base.html", null ]
+          ] ]
+        ] ],
+        [ "SRF.UI.InheritColour", "class_s_r_f_1_1_u_i_1_1_inherit_colour.html", null ],
+        [ "SRF.UI.ResponsiveBase", "class_s_r_f_1_1_u_i_1_1_responsive_base.html", [
+          [ "SRF.UI.ResponsiveEnable", "class_s_r_f_1_1_u_i_1_1_responsive_enable.html", null ],
+          [ "SRF.UI.ResponsiveResize", "class_s_r_f_1_1_u_i_1_1_responsive_resize.html", null ]
+        ] ],
+        [ "SRF.UI.SRRetinaScaler", "class_s_r_f_1_1_u_i_1_1_s_r_retina_scaler.html", null ],
+        [ "SRF.UI.StyleComponent", "class_s_r_f_1_1_u_i_1_1_style_component.html", null ],
+        [ "SRF.UI.StyleRoot", "class_s_r_f_1_1_u_i_1_1_style_root.html", null ],
+        [ "SRF.UI.Unselectable", "class_s_r_f_1_1_u_i_1_1_unselectable.html", null ]
+      ] ],
+      [ "SRF.UI.DragHandle", "class_s_r_f_1_1_u_i_1_1_drag_handle.html", null ],
+      [ "SRF.UI.ScrollToBottomBehaviour", "class_s_r_f_1_1_u_i_1_1_scroll_to_bottom_behaviour.html", null ],
       [ "UIExtensionHandler", "class_u_i_extension_handler.html", null ]
     ] ],
     [ "ILRuntime.Mono.CompilerServices.SymbolWriter.MonoSymbolWriter", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_mono_symbol_writer.html", null ],
@@ -2234,6 +2444,18 @@ var hierarchy =
     [ "NavMeshTileHeader", "struct_nav_mesh_tile_header.html", null ],
     [ "NetworkBehaviour", null, [
       [ "Sirenix.OdinInspector.SerializedNetworkBehaviour", "class_sirenix_1_1_odin_inspector_1_1_serialized_network_behaviour.html", null ]
+    ] ],
+    [ "NSObject", null, [
+      [ "Bugly", "interface_bugly.html", null ],
+      [ "BuglyConfig", "interface_bugly_config.html", null ],
+      [ "BuglyLog", "interface_bugly_log.html", null ],
+      [ "KeychainItemWrapper", "interface_keychain_item_wrapper.html", null ],
+      [ "LocalData", "interface_local_data.html", null ],
+      [ "NObject", "interface_n_object.html", null ],
+      [ "Util", "interface_util.html", null ]
+    ] ],
+    [ "<NSObject>", null, [
+      [ "<BuglyDelegate>", "protocol_bugly_delegate-p.html", null ]
     ] ],
     [ "ET.Object", "class_e_t_1_1_object.html", [
       [ "ET.A2M_Reload", "class_e_t_1_1_a2_m___reload.html", null ],
@@ -2348,27 +2570,53 @@ var hierarchy =
     [ "ILRuntime.Runtime.Intepreter.OpCodes.OpCode", "struct_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_1_1_op_code.html", null ],
     [ "ILRuntime.Runtime.Intepreter.OpCodes.OpCodeR", "struct_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_op_codes_1_1_op_code_r.html", null ],
     [ "ILRuntime.Runtime.Intepreter.RegisterVM.Optimizer", "class_i_l_runtime_1_1_runtime_1_1_intepreter_1_1_register_v_m_1_1_optimizer.html", null ],
+    [ "SRDebugger.OptionDefinition", "class_s_r_debugger_1_1_option_definition.html", null ],
     [ "ET.Options", "class_e_t_1_1_options.html", null ],
+    [ "ET.Packager", "class_e_t_1_1_packager.html", null ],
     [ "ET.Packet", "struct_e_t_1_1_packet.html", null ],
     [ "ET.PacketParser", "class_e_t_1_1_packet_parser.html", null ],
     [ "ParameterInfo", null, [
       [ "ILRuntime.Reflection.ILRuntimeParameterInfo", "class_i_l_runtime_1_1_reflection_1_1_i_l_runtime_parameter_info.html", null ]
     ] ],
+    [ "ChillyRoom.UnityEditor.iOS.Xcode.PBX.Parser", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_parser.html", null ],
+    [ "ChillyRoom.UnityEditor.iOS.Xcode.PBXCapabilityType", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_capability_type.html", null ],
+    [ "ChillyRoom.UnityEditor.iOS.Xcode.PBX.PBXElement", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_p_b_x_element.html", [
+      [ "ChillyRoom.UnityEditor.iOS.Xcode.PBX.PBXElementArray", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_p_b_x_element_array.html", null ],
+      [ "ChillyRoom.UnityEditor.iOS.Xcode.PBX.PBXElementDict", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_p_b_x_element_dict.html", null ],
+      [ "ChillyRoom.UnityEditor.iOS.Xcode.PBX.PBXElementString", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_p_b_x_element_string.html", null ]
+    ] ],
+    [ "ChillyRoom.UnityEditor.iOS.Xcode.PBXProject", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_project.html", null ],
     [ "ET.EventType.PingChange", "struct_e_t_1_1_event_type_1_1_ping_change.html", null ],
     [ "ILRuntime.Mono.Cecil.PInvokeInfo", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_invoke_info.html", null ],
     [ "GameInput.PlayerActions", "struct_game_input_1_1_player_actions.html", null ],
-    [ "IngameDebugConsole.Commands.PlayerPrefsCommands", "class_ingame_debug_console_1_1_commands_1_1_player_prefs_commands.html", null ],
+    [ "ChillyRoom.UnityEditor.iOS.Xcode.PlistDocument", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_plist_document.html", null ],
+    [ "ChillyRoom.UnityEditor.iOS.Xcode.PlistElement", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_plist_element.html", [
+      [ "ChillyRoom.UnityEditor.iOS.Xcode.PlistElementArray", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_plist_element_array.html", null ],
+      [ "ChillyRoom.UnityEditor.iOS.Xcode.PlistElementBoolean", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_plist_element_boolean.html", null ],
+      [ "ChillyRoom.UnityEditor.iOS.Xcode.PlistElementDict", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_plist_element_dict.html", null ],
+      [ "ChillyRoom.UnityEditor.iOS.Xcode.PlistElementInteger", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_plist_element_integer.html", null ],
+      [ "ChillyRoom.UnityEditor.iOS.Xcode.PlistElementString", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_plist_element_string.html", null ]
+    ] ],
+    [ "PreserveAttribute", null, [
+      [ "SRF.Service.ServiceAttribute", "class_s_r_f_1_1_service_1_1_service_attribute.html", null ],
+      [ "SRF.Service.ServiceConstructorAttribute", "class_s_r_f_1_1_service_1_1_service_constructor_attribute.html", null ],
+      [ "SRF.Service.ServiceSelectorAttribute", "class_s_r_f_1_1_service_1_1_service_selector_attribute.html", null ]
+    ] ],
     [ "ILRuntime.Runtime.Enviorment.PrewarmInfo", "struct_i_l_runtime_1_1_runtime_1_1_enviorment_1_1_prewarm_info.html", null ],
+    [ "XcodeProjectSetting.PrivacySensiticeData", "struct_xcode_project_setting_1_1_privacy_sensitice_data.html", null ],
     [ "ET.ProcessActorId", "struct_e_t_1_1_process_actor_id.html", null ],
+    [ "SRDebugger.Services.ProfilerFrame", "struct_s_r_debugger_1_1_services_1_1_profiler_frame.html", null ],
+    [ "ChillyRoom.UnityEditor.iOS.Xcode.ProjectCapabilityManager", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_project_capability_manager.html", null ],
+    [ "ChillyRoom.UnityEditor.iOS.Xcode.PBX.PropertyCommentChecker", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_property_comment_checker.html", null ],
     [ "PropertyInfo", null, [
       [ "ILRuntime.Reflection.ILRuntimePropertyInfo", "class_i_l_runtime_1_1_reflection_1_1_i_l_runtime_property_info.html", null ]
     ] ],
+    [ "SRF.Helpers.PropertyReference", "class_s_r_f_1_1_helpers_1_1_property_reference.html", null ],
     [ "ILRuntime.Runtime.Generated.ProtoBuf_Meta_RuntimeTypeModel_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_proto_buf___meta___runtime_type_model___binding.html", null ],
     [ "ILRuntime.Runtime.Generated.ProtoBuf_Meta_TypeModel_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_proto_buf___meta___type_model___binding.html", null ],
     [ "ILRuntime.Runtime.Generated.ProtoBuf_Serializer_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_proto_buf___serializer___binding.html", null ],
     [ "ProtoBuf.ProtobufPropertyHelper", "class_proto_buf_1_1_protobuf_property_helper.html", null ],
     [ "ProtoBuf.PType", "class_proto_buf_1_1_p_type.html", null ],
-    [ "IngameDebugConsole.QueuedDebugLogEntry", "struct_ingame_debug_console_1_1_queued_debug_log_entry.html", null ],
     [ "ET.QueueDictionary< T, K >", "class_e_t_1_1_queue_dictionary.html", null ],
     [ "ILRuntime.Mono.Cecil.Range", "struct_i_l_runtime_1_1_mono_1_1_cecil_1_1_range.html", null ],
     [ "ILRuntime.Mono.Cecil.ReaderParameters", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_reader_parameters.html", null ],
@@ -2393,22 +2641,30 @@ var hierarchy =
     [ "ILRuntime.Runtime.Debugger.Protocol.SCBreakpointHit", "class_i_l_runtime_1_1_runtime_1_1_debugger_1_1_protocol_1_1_s_c_breakpoint_hit.html", null ],
     [ "ET.EventType.SceneChangeFinish", "struct_e_t_1_1_event_type_1_1_scene_change_finish.html", null ],
     [ "ET.EventType.SceneChangeStart", "struct_e_t_1_1_event_type_1_1_scene_change_start.html", null ],
-    [ "IngameDebugConsole.Commands.SceneCommands", "class_ingame_debug_console_1_1_commands_1_1_scene_commands.html", null ],
     [ "ILRuntime.Runtime.Debugger.Protocol.SCEnumChildrenResult", "class_i_l_runtime_1_1_runtime_1_1_debugger_1_1_protocol_1_1_s_c_enum_children_result.html", null ],
     [ "ILRuntime.Runtime.Debugger.Protocol.SCModuleLoaded", "class_i_l_runtime_1_1_runtime_1_1_debugger_1_1_protocol_1_1_s_c_module_loaded.html", null ],
     [ "ILRuntime.Mono.CompilerServices.SymbolWriter.ScopeVariable", "struct_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_scope_variable.html", null ],
     [ "ILRuntime.Runtime.Debugger.Protocol.SCResolveVariableResult", "class_i_l_runtime_1_1_runtime_1_1_debugger_1_1_protocol_1_1_s_c_resolve_variable_result.html", null ],
     [ "ScriptableObject", null, [
-      [ "ET.ETBuildSettings", "class_e_t_1_1_e_t_build_settings.html", null ]
+      [ "ET.ETBuildSettings", "class_e_t_1_1_e_t_build_settings.html", null ],
+      [ "SRDebugger.Services.Implementation.DebugPanelServiceImpl", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_debug_panel_service_impl.html", null ],
+      [ "SRDebugger.Settings", "class_s_r_debugger_1_1_settings.html", null ],
+      [ "SRF.UI.StyleSheet", "class_s_r_f_1_1_u_i_1_1_style_sheet.html", null ],
+      [ "XcodeProjectSetting", "class_xcode_project_setting.html", null ]
     ] ],
     [ "ILRuntime.Runtime.Debugger.Protocol.SCStepComplete", "class_i_l_runtime_1_1_runtime_1_1_debugger_1_1_protocol_1_1_s_c_step_complete.html", null ],
     [ "ILRuntime.Runtime.Debugger.Protocol.SCThreadEnded", "class_i_l_runtime_1_1_runtime_1_1_debugger_1_1_protocol_1_1_s_c_thread_ended.html", null ],
     [ "ILRuntime.Runtime.Debugger.Protocol.SCThreadStarted", "class_i_l_runtime_1_1_runtime_1_1_debugger_1_1_protocol_1_1_s_c_thread_started.html", null ],
     [ "ILRuntime.Mono.Cecil.PE.Section", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_section.html", null ],
     [ "ILRuntime.Mono.Cecil.SecurityDeclaration", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_security_declaration.html", null ],
+    [ "Selectable", null, [
+      [ "SRF.UI.SRSpinner", "class_s_r_f_1_1_u_i_1_1_s_r_spinner.html", null ]
+    ] ],
     [ "ILRuntime.Mono.Cecil.Cil.SequencePoint", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_sequence_point.html", null ],
     [ "ProtoBuf.SerializationContext", "class_proto_buf_1_1_serialization_context.html", null ],
+    [ "ChillyRoom.UnityEditor.iOS.Xcode.PBX.Serializer", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_serializer.html", null ],
     [ "ET.Singleton< T >", "class_e_t_1_1_singleton.html", null ],
+    [ "SRF.UI.ResponsiveResize.Element.SizeDefinition", "struct_s_r_f_1_1_u_i_1_1_responsive_resize_1_1_element_1_1_size_definition.html", null ],
     [ "SortedDictionary", null, [
       [ "ET.MultiMap< T, K >", "class_e_t_1_1_multi_map.html", null ],
       [ "ET.MultiMapSet< T, K >", "class_e_t_1_1_multi_map_set.html", null ]
@@ -2448,6 +2704,33 @@ var hierarchy =
     ] ],
     [ "ILRuntime.Mono.CompilerServices.SymbolWriter.SourceFileEntry", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_source_file_entry.html", null ],
     [ "ILRuntime.Mono.CompilerServices.SymbolWriter.SourceMethodBuilder", "class_i_l_runtime_1_1_mono_1_1_compiler_services_1_1_symbol_writer_1_1_source_method_builder.html", null ],
+    [ "SRF.Components.SRAutoSingleton< SRServiceManager >", "class_s_r_f_1_1_components_1_1_s_r_auto_singleton.html", [
+      [ "SRF.Service.SRServiceManager", "class_s_r_f_1_1_service_1_1_s_r_service_manager.html", null ]
+    ] ],
+    [ "SRDebugger.Editor.SRDebugEditor", "class_s_r_debugger_1_1_editor_1_1_s_r_debug_editor.html", null ],
+    [ "SRDebugger.Editor.SRDebugEditorStrings", "class_s_r_debugger_1_1_editor_1_1_s_r_debug_editor_strings.html", null ],
+    [ "SRDebugger.Internal.SRDebugStrings", "class_s_r_debugger_1_1_internal_1_1_s_r_debug_strings.html", null ],
+    [ "SRF.Service.SRServiceBase< BugReportPopoverService >", "class_s_r_f_1_1_service_1_1_s_r_service_base.html", [
+      [ "SRDebugger.Services.Implementation.BugReportPopoverService", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_bug_report_popover_service.html", null ]
+    ] ],
+    [ "SRF.Service.SRServiceBase< IBugReportService >", "class_s_r_f_1_1_service_1_1_s_r_service_base.html", [
+      [ "SRDebugger.Services.Implementation.BugReportApiService", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_bug_report_api_service.html", null ]
+    ] ],
+    [ "SRF.Service.SRServiceBase< IDebugTriggerService >", "class_s_r_f_1_1_service_1_1_s_r_service_base.html", [
+      [ "SRDebugger.Services.Implementation.DebugTriggerImpl", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_debug_trigger_impl.html", null ]
+    ] ],
+    [ "SRF.Service.SRServiceBase< IPinEntryService >", "class_s_r_f_1_1_service_1_1_s_r_service_base.html", [
+      [ "SRDebugger.Services.Implementation.PinEntryServiceImpl", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_pin_entry_service_impl.html", null ]
+    ] ],
+    [ "SRF.Service.SRServiceBase< IPinnedUIService >", "class_s_r_f_1_1_service_1_1_s_r_service_base.html", [
+      [ "SRDebugger.Services.Implementation.PinnedUIServiceImpl", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_pinned_u_i_service_impl.html", null ]
+    ] ],
+    [ "SRF.Service.SRServiceBase< IProfilerService >", "class_s_r_f_1_1_service_1_1_s_r_service_base.html", [
+      [ "SRDebugger.Profiler.ProfilerServiceImpl", "class_s_r_debugger_1_1_profiler_1_1_profiler_service_impl.html", null ]
+    ] ],
+    [ "SRF.Service.SRServiceBase< KeyboardShortcutListenerService >", "class_s_r_f_1_1_service_1_1_s_r_service_base.html", [
+      [ "SRDebugger.Services.Implementation.KeyboardShortcutListenerService", "class_s_r_debugger_1_1_services_1_1_implementation_1_1_keyboard_shortcut_listener_service.html", null ]
+    ] ],
     [ "ILRuntime.Runtime.Stack.StackFrame", "struct_i_l_runtime_1_1_runtime_1_1_stack_1_1_stack_frame.html", null ],
     [ "ILRuntime.Runtime.Debugger.StackFrameInfo", "class_i_l_runtime_1_1_runtime_1_1_debugger_1_1_stack_frame_info.html", null ],
     [ "ILRuntime.Runtime.Stack.StackObject", "struct_i_l_runtime_1_1_runtime_1_1_stack_1_1_stack_object.html", null ],
@@ -2460,6 +2743,7 @@ var hierarchy =
     [ "StructSerializerBase", null, [
       [ "ET.StructBsonSerialize< TValue >", "class_e_t_1_1_struct_bson_serialize.html", null ]
     ] ],
+    [ "SRF.UI.Style", "class_s_r_f_1_1_u_i_1_1_style.html", null ],
     [ "ProtoBuf.SubItemToken", "struct_proto_buf_1_1_sub_item_token.html", null ],
     [ "ProtoBuf.Meta.SubType", "class_proto_buf_1_1_meta_1_1_sub_type.html", null ],
     [ "SynchronizationContext", null, [
@@ -2597,9 +2881,10 @@ var hierarchy =
     [ "ILRuntime.Runtime.Generated.System_ValueTuple_3_Int32_Int64_Int32_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_system___value_tuple__3___int32___int64___int32___binding.html", null ],
     [ "ET.Table", "class_e_t_1_1_table.html", null ],
     [ "ILRuntime.Mono.Cecil.Metadata.TableInformation", "struct_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_1_1_table_information.html", null ],
+    [ "ChillyRoom.UnityEditor.iOS.Xcode.PBXCapabilityType.TargetCapabilityPair", "struct_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_capability_type_1_1_target_capability_pair.html", null ],
     [ "ILRuntime.Mono.Cecil.PE.TextMap", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_p_e_1_1_text_map.html", null ],
-    [ "IngameDebugConsole.Commands.TimeCommands", "class_ingame_debug_console_1_1_commands_1_1_time_commands.html", null ],
     [ "Linity.ToDo.ToDoElement", "class_linity_1_1_to_do_1_1_to_do_element.html", null ],
+    [ "ChillyRoom.UnityEditor.iOS.Xcode.PBX.Token", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_token.html", null ],
     [ "Type", null, [
       [ "ILRuntime.Reflection.ILRuntimeType", "class_i_l_runtime_1_1_reflection_1_1_i_l_runtime_type.html", null ],
       [ "ILRuntime.Reflection.ILRuntimeWrapperType", "class_i_l_runtime_1_1_reflection_1_1_i_l_runtime_wrapper_type.html", null ]
@@ -2613,6 +2898,11 @@ var hierarchy =
     [ "ILRuntime.Runtime.Enviorment.TypeSizeInfo", "struct_i_l_runtime_1_1_runtime_1_1_enviorment_1_1_type_size_info.html", null ],
     [ "ILRuntime.Mono.Cecil.TypeSystem", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_type_system.html", null ],
     [ "UIBehaviour", null, [
+      [ "SRDebugger.UI.Other.FloatOverElement", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_float_over_element.html", null ],
+      [ "SRDebugger.UI.Other.SafeAreaSizer", "class_s_r_debugger_1_1_u_i_1_1_other_1_1_safe_area_sizer.html", null ],
+      [ "SRF.UI.ContentFitText", "class_s_r_f_1_1_u_i_1_1_content_fit_text.html", null ],
+      [ "SRF.UI.CopyLayoutElement", "class_s_r_f_1_1_u_i_1_1_copy_layout_element.html", null ],
+      [ "SRF.UI.FlashGraphic", "class_s_r_f_1_1_u_i_1_1_flash_graphic.html", null ],
       [ "UnityEngine.UI.LoopScrollRectBase", "class_unity_engine_1_1_u_i_1_1_loop_scroll_rect_base.html", null ]
     ] ],
     [ "UICodeSpawner", "class_u_i_code_spawner.html", null ],
@@ -2660,6 +2950,8 @@ var hierarchy =
     [ "ILRuntime.Runtime.Generated.UnityEngine_Vector2_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_unity_engine___vector2___binding.html", null ],
     [ "ILRuntime.Runtime.Generated.UnityEngine_Vector3_Binding", "class_i_l_runtime_1_1_runtime_1_1_generated_1_1_unity_engine___vector3___binding.html", null ],
     [ "UnityEvent", null, [
+      [ "SRF.UI.Layout.VirtualVerticalLayoutGroup.SelectedItemChangedEvent", "class_s_r_f_1_1_u_i_1_1_layout_1_1_virtual_vertical_layout_group_1_1_selected_item_changed_event.html", null ],
+      [ "SRF.UI.SRSpinner.SpinEvent", "class_s_r_f_1_1_u_i_1_1_s_r_spinner_1_1_spin_event.html", null ],
       [ "UnityEngine.UI.LoopScrollRectBase.ScrollRectEvent", "class_unity_engine_1_1_u_i_1_1_loop_scroll_rect_base_1_1_scroll_rect_event.html", null ]
     ] ],
     [ "ET.UpdateSystem< AnimatorComponent >", "class_e_t_1_1_update_system.html", [
@@ -2686,7 +2978,13 @@ var hierarchy =
     [ "ET.UpdateSystem< UnityWebRequestRenewalAsync >", "class_e_t_1_1_update_system.html", [
       [ "ET.UnityWebRequestRenewalUpdateSystem", "class_e_t_1_1_unity_web_request_renewal_update_system.html", null ]
     ] ],
+    [ "ChillyRoom.UnityEditor.iOS.Xcode.PBX.ValueAST", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_value_a_s_t.html", [
+      [ "ChillyRoom.UnityEditor.iOS.Xcode.PBX.ArrayAST", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_array_a_s_t.html", null ],
+      [ "ChillyRoom.UnityEditor.iOS.Xcode.PBX.IdentifierAST", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_identifier_a_s_t.html", null ],
+      [ "ChillyRoom.UnityEditor.iOS.Xcode.PBX.TreeAST", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_p_b_x_1_1_tree_a_s_t.html", null ]
+    ] ],
     [ "ProtoBuf.Meta.ValueMember", "class_proto_buf_1_1_meta_1_1_value_member.html", null ],
+    [ "SRDebugger.UI.Controls.Data.NumberControl.ValueRange", "struct_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_number_control_1_1_value_range.html", null ],
     [ "ValueTypeBinder", null, [
       [ "ILRuntime.Runtime.Enviorment.ValueTypeBinder< T >", "class_i_l_runtime_1_1_runtime_1_1_enviorment_1_1_value_type_binder.html", null ]
     ] ],
@@ -2705,9 +3003,15 @@ var hierarchy =
       [ "ILRuntime.Mono.Cecil.Cil.VariableDefinition", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_1_1_variable_definition.html", null ]
     ] ],
     [ "ILRuntime.Runtime.Debugger.VariableReference", "class_i_l_runtime_1_1_runtime_1_1_debugger_1_1_variable_reference.html", null ],
+    [ "ChillyRoom.UnityEditor.iOS.Xcode.AssetCatalogItemWithVariants.VariantData", "class_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode_1_1_asset_catalog_item_with_variants_1_1_variant_data.html", null ],
     [ "ILRuntime.Mono.Cecil.WindowsRuntimeProjections", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_windows_runtime_projections.html", null ],
     [ "ET.WrapQuaternion", "class_e_t_1_1_wrap_quaternion.html", null ],
     [ "ET.WrapVector2", "class_e_t_1_1_wrap_vector2.html", null ],
     [ "ET.WrapVector3", "class_e_t_1_1_wrap_vector3.html", null ],
-    [ "ILRuntime.Mono.Cecil.WriterParameters", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_writer_parameters.html", null ]
+    [ "ILRuntime.Mono.Cecil.WriterParameters", "class_i_l_runtime_1_1_mono_1_1_cecil_1_1_writer_parameters.html", null ],
+    [ "XCodeProjectMod", "class_x_code_project_mod.html", null ],
+    [ "XcodeProjectSettingCreator", "class_xcode_project_setting_creator.html", null ],
+    [ "Text", null, [
+      [ "SRF.UI.SRText", "class_s_r_f_1_1_u_i_1_1_s_r_text.html", null ]
+    ] ]
 ];

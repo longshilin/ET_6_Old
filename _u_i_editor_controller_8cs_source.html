@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('_u_i_editor_controller_8cs_source.html
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                <span class="comment">//MARKER：判断是否是.prefab</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                <span class="keywordflow">if</span> (prefabName.EndsWith(<span class="stringliteral">&quot;.prefab&quot;</span>))</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                {</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                    Debug.Log(prefabName);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                    <a class="code hl_typedef" href="_s_r_debug_util_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log(prefabName);</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                    AssetImporter importer = AssetImporter.GetAtPath(prefabName);</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                    importer.assetBundleName = selectAsset[i].name.ToLower() + suffix;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                }</div>
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('_u_i_editor_controller_8cs_source.html
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                <span class="keywordtype">string</span> prefabName = AssetDatabase.GetAssetPath(selectAsset[i]);</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                AssetImporter importer = AssetImporter.GetAtPath(prefabName);</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                importer.assetBundleName = <span class="keywordtype">string</span>.Empty;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                Debug.Log(prefabName);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                <a class="code hl_typedef" href="_s_r_debug_util_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log(prefabName);</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            }</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            AssetDatabase.Refresh();</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            AssetDatabase.RemoveUnusedAssetBundleNames();</div>
@@ -143,6 +143,7 @@ $(document).ready(function(){initNavTree('_u_i_editor_controller_8cs_source.html
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    }</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}</div>
 <div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
+<div class="ttc" id="a_s_r_debug_util_8cs_html_a0100be52d45f14348918ea69ec09f959"><div class="ttname"><a href="_s_r_debug_util_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a></div><div class="ttdeci">UnityEngine.Debug Debug</div><div class="ttdef"><b>Definition:</b> <a href="_s_r_debug_util_8cs_source.html#l00006">SRDebugUtil.cs:6</a></div></div>
 <div class="ttc" id="aclass_client_editor_1_1_u_i_editor_controller_html"><div class="ttname"><a href="class_client_editor_1_1_u_i_editor_controller.html">ClientEditor.UIEditorController</a></div><div class="ttdef"><b>Definition:</b> <a href="_u_i_editor_controller_8cs_source.html#l00012">UIEditorController.cs:13</a></div></div>
 <div class="ttc" id="aclass_client_editor_1_1_u_i_editor_controller_html_a40ca4514b383462e06150efcf5ef8d4e"><div class="ttname"><a href="class_client_editor_1_1_u_i_editor_controller.html#a40ca4514b383462e06150efcf5ef8d4e">ClientEditor.UIEditorController.ClearABName</a></div><div class="ttdeci">static void ClearABName()</div><div class="ttdef"><b>Definition:</b> <a href="_u_i_editor_controller_8cs_source.html#l00043">UIEditorController.cs:43</a></div></div>
 <div class="ttc" id="aclass_client_editor_1_1_u_i_editor_controller_html_ad2f63d7aacb0f730e6c4786c1e718dac"><div class="ttname"><a href="class_client_editor_1_1_u_i_editor_controller.html#ad2f63d7aacb0f730e6c4786c1e718dac">ClientEditor.UIEditorController.CreateNewCode</a></div><div class="ttdeci">static void CreateNewCode()</div><div class="ttdef"><b>Definition:</b> <a href="_u_i_editor_controller_8cs_source.html#l00015">UIEditorController.cs:15</a></div></div>
@@ -162,7 +163,7 @@ $(document).ready(function(){initNavTree('_u_i_editor_controller_8cs_source.html
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_3b33dffaa21a2ac6f7978a949ffd4e41.html">Assets</a></li><li class="navelem"><a class="el" href="dir_3a76d1108beca0c0cd39a902932cb060.html">Editor</a></li><li class="navelem"><a class="el" href="dir_9dae62b4a1b366361ea594db88f25393.html">EUI</a></li><li class="navelem"><a class="el" href="_u_i_editor_controller_8cs.html">UIEditorController.cs</a></li>
-    <li class="footer">生成于 2022年 四月 21日 星期四 07:49:29 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">生成于 2022年 四月 21日 星期四 10:42:54 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

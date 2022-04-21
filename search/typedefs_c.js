@@ -2,6 +2,19 @@ var searchData=
 [
   ['paramrow_0',['ParamRow',['../namespace_i_l_runtime_1_1_mono_1_1_cecil.html#a003c949c8d6498d28556be410efa6c84',1,'ILRuntime::Mono::Cecil']]],
   ['path_1',['Path',['../_process_helper_8cs.html#a5d3f395d3257bcd58335037355f0d7cc',1,'ProcessHelper.cs']]],
-  ['propertymaprow_2',['PropertyMapRow',['../namespace_i_l_runtime_1_1_mono_1_1_cecil.html#a8e93b725ecd27be5300de3725de06d7b',1,'ILRuntime::Mono::Cecil']]],
-  ['propertyrow_3',['PropertyRow',['../namespace_i_l_runtime_1_1_mono_1_1_cecil.html#a0f4f6d1a429f7305537b91b3a00c62eb',1,'ILRuntime::Mono::Cecil']]]
+  ['pbxbuildfilesection_2',['PBXBuildFileSection',['../namespace_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode.html#ad85237cc0c0eda490338429f4e5d9a11',1,'ChillyRoom::UnityEditor::iOS::Xcode']]],
+  ['pbxcontaineritemproxysection_3',['PBXContainerItemProxySection',['../namespace_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode.html#a9b1b0efff045fa78c3d4d8913845d54f',1,'ChillyRoom::UnityEditor::iOS::Xcode']]],
+  ['pbxcopyfilesbuildphasesection_4',['PBXCopyFilesBuildPhaseSection',['../namespace_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode.html#ae08fd82a9f54901578446fb4bb23ae0f',1,'ChillyRoom::UnityEditor::iOS::Xcode']]],
+  ['pbxfilereferencesection_5',['PBXFileReferenceSection',['../namespace_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode.html#a46220cc668eced7c72f31cb6df76357e',1,'ChillyRoom::UnityEditor::iOS::Xcode']]],
+  ['pbxframeworksbuildphasesection_6',['PBXFrameworksBuildPhaseSection',['../namespace_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode.html#a8623bcfbb9984d0f856187c45e368712',1,'ChillyRoom::UnityEditor::iOS::Xcode']]],
+  ['pbxgroupsection_7',['PBXGroupSection',['../namespace_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode.html#a96393f21e9460b1310027b4c6cd8c35d',1,'ChillyRoom::UnityEditor::iOS::Xcode']]],
+  ['pbxnativetargetsection_8',['PBXNativeTargetSection',['../namespace_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode.html#a631138c904c044c61f624628d6b24562',1,'ChillyRoom::UnityEditor::iOS::Xcode']]],
+  ['pbxreferenceproxysection_9',['PBXReferenceProxySection',['../namespace_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode.html#afd068dc4a8df09a7cbdfbc9a8162c497',1,'ChillyRoom::UnityEditor::iOS::Xcode']]],
+  ['pbxresourcesbuildphasesection_10',['PBXResourcesBuildPhaseSection',['../namespace_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode.html#aa5248330ef84aa4e5dd76eff80eaedbe',1,'ChillyRoom::UnityEditor::iOS::Xcode']]],
+  ['pbxshellscriptbuildphasesection_11',['PBXShellScriptBuildPhaseSection',['../namespace_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode.html#a22da232c6f51727c4ed3d69186f1cd6e',1,'ChillyRoom::UnityEditor::iOS::Xcode']]],
+  ['pbxsourcesbuildphasesection_12',['PBXSourcesBuildPhaseSection',['../namespace_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode.html#a36ad7588624440c5bb5f1f9899baf636',1,'ChillyRoom::UnityEditor::iOS::Xcode']]],
+  ['pbxtargetdependencysection_13',['PBXTargetDependencySection',['../namespace_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode.html#a86cc161769e51d2eb592870b8a1d1e73',1,'ChillyRoom::UnityEditor::iOS::Xcode']]],
+  ['pbxvariantgroupsection_14',['PBXVariantGroupSection',['../namespace_chilly_room_1_1_unity_editor_1_1i_o_s_1_1_xcode.html#a32388fdb9209a7a44e2e5488ca1bc9cc',1,'ChillyRoom::UnityEditor::iOS::Xcode']]],
+  ['propertymaprow_15',['PropertyMapRow',['../namespace_i_l_runtime_1_1_mono_1_1_cecil.html#a8e93b725ecd27be5300de3725de06d7b',1,'ILRuntime::Mono::Cecil']]],
+  ['propertyrow_16',['PropertyRow',['../namespace_i_l_runtime_1_1_mono_1_1_cecil.html#a0f4f6d1a429f7305537b91b3a00c62eb',1,'ILRuntime::Mono::Cecil']]]
 ];

@@ -116,28 +116,28 @@ $(document).ready(function(){initNavTree('_location_proxy_component_system_8cs_s
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keyword">public</span> <span class="keyword">static</span> async ETTask <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil.html#aa0ef070da47adbba93faed05fa12217aaec211f7c20af43e742bf2570c3cb84f9">Add</a>(<span class="keyword">this</span> LocationProxyComponent <span class="keyword">self</span>, <span class="keywordtype">long</span> key, <span class="keywordtype">long</span> instanceId)</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        {</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            Log.Info($<span class="stringliteral">&quot;location proxy add {key}, {instanceId} {TimeHelper.ServerNow()}&quot;</span>);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Info($<span class="stringliteral">&quot;location proxy add {key}, {instanceId} {TimeHelper.ServerNow()}&quot;</span>);</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            await MessageHelper.CallActor(GetLocationSceneId(key),</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                <span class="keyword">new</span> ObjectAddRequest() { Key = key, InstanceId = instanceId });</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        }</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keyword">public</span> <span class="keyword">static</span> async ETTask Lock(<span class="keyword">this</span> LocationProxyComponent <span class="keyword">self</span>, <span class="keywordtype">long</span> key, <span class="keywordtype">long</span> instanceId, <span class="keywordtype">int</span> time = 60000)</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        {</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            Log.Info($<span class="stringliteral">&quot;location proxy lock {key}, {instanceId} {TimeHelper.ServerNow()}&quot;</span>);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Info($<span class="stringliteral">&quot;location proxy lock {key}, {instanceId} {TimeHelper.ServerNow()}&quot;</span>);</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            await MessageHelper.CallActor(GetLocationSceneId(key),</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                <span class="keyword">new</span> ObjectLockRequest() { Key = key, InstanceId = instanceId, Time = time });</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        }</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keyword">public</span> <span class="keyword">static</span> async ETTask UnLock(<span class="keyword">this</span> LocationProxyComponent <span class="keyword">self</span>, <span class="keywordtype">long</span> key, <span class="keywordtype">long</span> oldInstanceId, <span class="keywordtype">long</span> instanceId)</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        {</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            Log.Info($<span class="stringliteral">&quot;location proxy unlock {key}, {instanceId} {TimeHelper.ServerNow()}&quot;</span>);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Info($<span class="stringliteral">&quot;location proxy unlock {key}, {instanceId} {TimeHelper.ServerNow()}&quot;</span>);</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            await MessageHelper.CallActor(GetLocationSceneId(key),</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                <span class="keyword">new</span> ObjectUnLockRequest() { Key = key, OldInstanceId = oldInstanceId, InstanceId = instanceId });</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        }</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keyword">public</span> <span class="keyword">static</span> async ETTask Remove(<span class="keyword">this</span> LocationProxyComponent <span class="keyword">self</span>, <span class="keywordtype">long</span> key)</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        {</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            Log.Info($<span class="stringliteral">&quot;location proxy add {key}, {TimeHelper.ServerNow()}&quot;</span>);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Info($<span class="stringliteral">&quot;location proxy add {key}, {TimeHelper.ServerNow()}&quot;</span>);</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            await MessageHelper.CallActor(GetLocationSceneId(key),</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                <span class="keyword">new</span> ObjectRemoveRequest() { Key = key });</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        }</div>
@@ -167,6 +167,7 @@ $(document).ready(function(){initNavTree('_location_proxy_component_system_8cs_s
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        }</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>}</div>
+<div class="ttc" id="a_bugly_agent_8cs_html_a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b"><div class="ttname"><a href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">LogSeverity.Log</a></div><div class="ttdeci">@ Log</div></div>
 <div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
 <div class="ttc" id="aclass_e_t_1_1_awake_system_html"><div class="ttname"><a href="class_e_t_1_1_awake_system.html">ET.AwakeSystem</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_awake_system_8cs_source.html#l00135">IAwakeSystem.cs:136</a></div></div>
 <div class="ttc" id="aclass_e_t_1_1_destroy_system_html"><div class="ttname"><a href="class_e_t_1_1_destroy_system.html">ET.DestroySystem</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_destroy_system_8cs_source.html#l00016">IDestroySystem.cs:17</a></div></div>
@@ -185,7 +186,7 @@ $(document).ready(function(){initNavTree('_location_proxy_component_system_8cs_s
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1a445cb237d74f7a5f8d11ec3b0585cc.html">Server</a></li><li class="navelem"><a class="el" href="dir_0134ce7b2e6baa37e8c29df3d3b5b77b.html">Hotfix</a></li><li class="navelem"><a class="el" href="dir_4822d068f22e06f0f7845927638ec428.html">Module</a></li><li class="navelem"><a class="el" href="dir_271a391b155e8c34ecfc02918d2dda6f.html">ActorLocation</a></li><li class="navelem"><a class="el" href="_location_proxy_component_system_8cs.html">LocationProxyComponentSystem.cs</a></li>
-    <li class="footer">生成于 2022年 四月 21日 星期四 07:49:28 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">生成于 2022年 四月 21日 星期四 10:42:54 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

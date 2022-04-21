@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: Unity/Assets/ThirdParty/StompyRobot/SRDebugger/Scripts/Services/IBugReportService.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_i_bug_report_service_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">IBugReportService.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_i_bug_report_service_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno"><a class="line" href="namespace_s_r_debugger_1_1_services.html">    1</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_s_r_debugger_1_1_services.html">SRDebugger.Services</a></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>{</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>    <span class="keyword">using</span> <a class="code hl_namespace" href="namespace_system.html">System</a>.<a class="code hl_namespace" href="namespace_system_1_1_collections.html">Collections</a>.<a class="code hl_namespace" href="namespace_system_1_1_collections_1_1_generic.html">Generic</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_services_1_1_bug_report.html">    5</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_s_r_debugger_1_1_services_1_1_bug_report.html">BugReport</a></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_services_1_1_bug_report.html#ac6b84151728118c6269c17c650b247b5">    7</a></span>        <span class="keyword">public</span> List&lt;ConsoleEntry&gt; <a class="code hl_variable" href="class_s_r_debugger_1_1_services_1_1_bug_report.html#ac6b84151728118c6269c17c650b247b5">ConsoleLog</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_services_1_1_bug_report.html#a16ae262574b1f95ad84a2821517b5920">    8</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_s_r_debugger_1_1_services_1_1_bug_report.html#a16ae262574b1f95ad84a2821517b5920">Email</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_services_1_1_bug_report.html#ad9cdd0bf4fb1a6b1e8bb989a5469e040">    9</a></span>        <span class="keyword">public</span> <span class="keywordtype">byte</span>[] <a class="code hl_variable" href="class_s_r_debugger_1_1_services_1_1_bug_report.html#ad9cdd0bf4fb1a6b1e8bb989a5469e040">ScreenshotData</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_services_1_1_bug_report.html#a440894be814d5b2f7601e6b638fbcbc8">   10</a></span>        <span class="keyword">public</span> Dictionary&lt;string, Dictionary&lt;string, object&gt;&gt; <a class="code hl_variable" href="class_s_r_debugger_1_1_services_1_1_bug_report.html#a440894be814d5b2f7601e6b638fbcbc8">SystemInformation</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_services_1_1_bug_report.html#ac16bd87cca49dc649a96c28e919e0579">   11</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_s_r_debugger_1_1_services_1_1_bug_report.html#ac16bd87cca49dc649a96c28e919e0579">UserDescription</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    }</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="namespace_s_r_debugger_1_1_services.html#aee767971aa24158a068ef65c46465913">   14</a></span>    <span class="keyword">public</span> delegate <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_s_r_debugger_1_1_services.html#aee767971aa24158a068ef65c46465913">BugReportCompleteCallback</a>(<span class="keywordtype">bool</span> didSucceed, <span class="keywordtype">string</span> errorMessage);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="namespace_s_r_debugger_1_1_services.html#a1be58216834bcd8b4386c0313d7824f3">   16</a></span>    <span class="keyword">public</span> delegate <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_s_r_debugger_1_1_services.html#a1be58216834bcd8b4386c0313d7824f3">BugReportProgressCallback</a>(<span class="keywordtype">float</span> progress);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="interface_s_r_debugger_1_1_services_1_1_i_bug_report_service.html">   18</a></span>    <span class="keyword">public</span> <span class="keyword">interface </span><a class="code hl_interface" href="interface_s_r_debugger_1_1_services_1_1_i_bug_report_service.html">IBugReportService</a></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="interface_s_r_debugger_1_1_services_1_1_i_bug_report_service.html#aced2256ecd1ed7239fbf9475a50e510f">   28</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="interface_s_r_debugger_1_1_services_1_1_i_bug_report_service.html#aced2256ecd1ed7239fbf9475a50e510f">SendBugReport</a>(<a class="code hl_class" href="class_s_r_debugger_1_1_services_1_1_bug_report.html">BugReport</a> report, <a class="code hl_function" href="namespace_s_r_debugger_1_1_services.html#aee767971aa24158a068ef65c46465913">BugReportCompleteCallback</a> completeHandler,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <a class="code hl_function" href="namespace_s_r_debugger_1_1_services.html#a1be58216834bcd8b4386c0313d7824f3">BugReportProgressCallback</a> progressCallback = <span class="keyword">null</span>);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}</div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_services_1_1_bug_report_html"><div class="ttname"><a href="class_s_r_debugger_1_1_services_1_1_bug_report.html">SRDebugger.Services.BugReport</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_bug_report_service_8cs_source.html#l00005">IBugReportService.cs:6</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_services_1_1_bug_report_html_a16ae262574b1f95ad84a2821517b5920"><div class="ttname"><a href="class_s_r_debugger_1_1_services_1_1_bug_report.html#a16ae262574b1f95ad84a2821517b5920">SRDebugger.Services.BugReport.Email</a></div><div class="ttdeci">string Email</div><div class="ttdef"><b>Definition:</b> <a href="_i_bug_report_service_8cs_source.html#l00008">IBugReportService.cs:8</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_services_1_1_bug_report_html_a440894be814d5b2f7601e6b638fbcbc8"><div class="ttname"><a href="class_s_r_debugger_1_1_services_1_1_bug_report.html#a440894be814d5b2f7601e6b638fbcbc8">SRDebugger.Services.BugReport.SystemInformation</a></div><div class="ttdeci">Dictionary&lt; string, Dictionary&lt; string, object &gt; &gt; SystemInformation</div><div class="ttdef"><b>Definition:</b> <a href="_i_bug_report_service_8cs_source.html#l00010">IBugReportService.cs:10</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_services_1_1_bug_report_html_ac16bd87cca49dc649a96c28e919e0579"><div class="ttname"><a href="class_s_r_debugger_1_1_services_1_1_bug_report.html#ac16bd87cca49dc649a96c28e919e0579">SRDebugger.Services.BugReport.UserDescription</a></div><div class="ttdeci">string UserDescription</div><div class="ttdef"><b>Definition:</b> <a href="_i_bug_report_service_8cs_source.html#l00011">IBugReportService.cs:11</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_services_1_1_bug_report_html_ac6b84151728118c6269c17c650b247b5"><div class="ttname"><a href="class_s_r_debugger_1_1_services_1_1_bug_report.html#ac6b84151728118c6269c17c650b247b5">SRDebugger.Services.BugReport.ConsoleLog</a></div><div class="ttdeci">List&lt; ConsoleEntry &gt; ConsoleLog</div><div class="ttdef"><b>Definition:</b> <a href="_i_bug_report_service_8cs_source.html#l00007">IBugReportService.cs:7</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_services_1_1_bug_report_html_ad9cdd0bf4fb1a6b1e8bb989a5469e040"><div class="ttname"><a href="class_s_r_debugger_1_1_services_1_1_bug_report.html#ad9cdd0bf4fb1a6b1e8bb989a5469e040">SRDebugger.Services.BugReport.ScreenshotData</a></div><div class="ttdeci">byte[] ScreenshotData</div><div class="ttdef"><b>Definition:</b> <a href="_i_bug_report_service_8cs_source.html#l00009">IBugReportService.cs:9</a></div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_services_1_1_i_bug_report_service_html"><div class="ttname"><a href="interface_s_r_debugger_1_1_services_1_1_i_bug_report_service.html">SRDebugger.Services.IBugReportService</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_bug_report_service_8cs_source.html#l00018">IBugReportService.cs:19</a></div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_services_1_1_i_bug_report_service_html_aced2256ecd1ed7239fbf9475a50e510f"><div class="ttname"><a href="interface_s_r_debugger_1_1_services_1_1_i_bug_report_service.html#aced2256ecd1ed7239fbf9475a50e510f">SRDebugger.Services.IBugReportService.SendBugReport</a></div><div class="ttdeci">void SendBugReport(BugReport report, BugReportCompleteCallback completeHandler, BugReportProgressCallback progressCallback=null)</div><div class="ttdoc">Submit a bug report to the SRDebugger API. completeHandler can be invoked any time after the method i...</div></div>
+<div class="ttc" id="anamespace_s_r_debugger_1_1_services_html"><div class="ttname"><a href="namespace_s_r_debugger_1_1_services.html">SRDebugger.Services</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_bug_report_service_8cs_source.html#l00001">IBugReportService.cs:2</a></div></div>
+<div class="ttc" id="anamespace_s_r_debugger_1_1_services_html_a1be58216834bcd8b4386c0313d7824f3"><div class="ttname"><a href="namespace_s_r_debugger_1_1_services.html#a1be58216834bcd8b4386c0313d7824f3">SRDebugger.Services.BugReportProgressCallback</a></div><div class="ttdeci">delegate void BugReportProgressCallback(float progress)</div></div>
+<div class="ttc" id="anamespace_s_r_debugger_1_1_services_html_aee767971aa24158a068ef65c46465913"><div class="ttname"><a href="namespace_s_r_debugger_1_1_services.html#aee767971aa24158a068ef65c46465913">SRDebugger.Services.BugReportCompleteCallback</a></div><div class="ttdeci">delegate void BugReportCompleteCallback(bool didSucceed, string errorMessage)</div></div>
+<div class="ttc" id="anamespace_system_1_1_collections_1_1_generic_html"><div class="ttname"><a href="namespace_system_1_1_collections_1_1_generic.html">System.Collections.Generic</a></div></div>
+<div class="ttc" id="anamespace_system_1_1_collections_html"><div class="ttname"><a href="namespace_system_1_1_collections.html">System.Collections</a></div></div>
+<div class="ttc" id="anamespace_system_html"><div class="ttname"><a href="namespace_system.html">System</a></div><div class="ttdef"><b>Definition:</b> <a href="_async_method_builder_attribute_8cs_source.html#l00002">AsyncMethodBuilderAttribute.cs:3</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_3b33dffaa21a2ac6f7978a949ffd4e41.html">Assets</a></li><li class="navelem"><a class="el" href="dir_5501c55c26a8d51fbc1fd8b7d8df04c3.html">ThirdParty</a></li><li class="navelem"><a class="el" href="dir_0f5df078a02ed03b6776122c2b87cb60.html">StompyRobot</a></li><li class="navelem"><a class="el" href="dir_94017e9a8ea42ed0c35aefd43f85b68b.html">SRDebugger</a></li><li class="navelem"><a class="el" href="dir_7a8f801e87ec51abc5da4d4cde89dc5d.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_11732da70f6b7ca00416c1d145838732.html">Services</a></li><li class="navelem"><a class="el" href="_i_bug_report_service_8cs.html">IBugReportService.cs</a></li>
+    <li class="footer">生成于 2022年 四月 21日 星期四 10:43:01 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

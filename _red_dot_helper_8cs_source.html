@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('_red_dot_helper_8cs_source.html',''); 
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <span class="keywordflow">if</span> (!<span class="keywordtype">string</span>.IsNullOrEmpty(parent) &amp;&amp; !RedDotComponent.RedDotNodeParentsDict.ContainsKey(parent))</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                Log.Warning(<span class="stringliteral">&quot;Runtime动态添加的红点，其父节点是新节点： &quot;</span> + parent);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Warning(<span class="stringliteral">&quot;Runtime动态添加的红点，其父节点是新节点： &quot;</span> + parent);</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            }</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            RedDotComponent.AddRedDotNode(parent, target, isNeedShowNum);</div>
@@ -189,7 +189,7 @@ $(document).ready(function(){initNavTree('_red_dot_helper_8cs_source.html',''); 
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>            RedDotComponent redDotComponent = ZoneScene.GetComponent&lt;RedDotComponent&gt;();</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            <span class="keywordflow">if</span> (redDotComponent == <span class="keyword">null</span>)</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            {</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                Log.Error(<span class="stringliteral">&quot;redDotComponent is not exist!&quot;</span>);</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Error(<span class="stringliteral">&quot;redDotComponent is not exist!&quot;</span>);</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            }</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
@@ -212,6 +212,7 @@ $(document).ready(function(){initNavTree('_red_dot_helper_8cs_source.html',''); 
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        }</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    }</div>
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>}</div>
+<div class="ttc" id="a_bugly_agent_8cs_html_a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b"><div class="ttname"><a href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">LogSeverity.Log</a></div><div class="ttdeci">@ Log</div></div>
 <div class="ttc" id="aclass_red_dot_mono_view_html"><div class="ttname"><a href="class_red_dot_mono_view.html">RedDotMonoView</a></div><div class="ttdef"><b>Definition:</b> <a href="_red_dot_mono_view_8cs_source.html#l00005">RedDotMonoView.cs:6</a></div></div>
 <div class="ttc" id="aclass_red_dot_mono_view_html_a72eaacd3cafe2985ab47bf0016fafbb4"><div class="ttname"><a href="class_red_dot_mono_view.html#a72eaacd3cafe2985ab47bf0016fafbb4">RedDotMonoView.RedDotScale</a></div><div class="ttdeci">Vector3 RedDotScale</div><div class="ttdef"><b>Definition:</b> <a href="_red_dot_mono_view_8cs_source.html#l00012">RedDotMonoView.cs:12</a></div></div>
 <div class="ttc" id="aclass_red_dot_mono_view_html_ac45d546e2d473246993395f294782c6b"><div class="ttname"><a href="class_red_dot_mono_view.html#ac45d546e2d473246993395f294782c6b">RedDotMonoView.PositionOffset</a></div><div class="ttdeci">Vector2 PositionOffset</div><div class="ttdef"><b>Definition:</b> <a href="_red_dot_mono_view_8cs_source.html#l00013">RedDotMonoView.cs:13</a></div></div>
@@ -225,7 +226,7 @@ $(document).ready(function(){initNavTree('_red_dot_helper_8cs_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_0593c8c31e62684349ddf63300956e7f.html">Codes</a></li><li class="navelem"><a class="el" href="dir_e64153545e168a22cb927133a94d943b.html">HotfixView</a></li><li class="navelem"><a class="el" href="dir_3874c4c4ca4f42c5a192faec48d8548a.html">Module</a></li><li class="navelem"><a class="el" href="dir_9ad12242999bcb3dd8865b23ae5bec0b.html">EUI</a></li><li class="navelem"><a class="el" href="_red_dot_helper_8cs.html">RedDotHelper.cs</a></li>
-    <li class="footer">生成于 2022年 四月 21日 星期四 07:49:36 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">生成于 2022年 四月 21日 星期四 10:43:02 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: Unity/Assets/ThirdParty/StompyRobot/SRDebugger/Scripts/UI/Controls/Data/EnumControl.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_enum_control_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">EnumControl.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_enum_control_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// ReSharper disable once RedundantUsingDirective</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_system.html">System</a>.Reflection;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_s_r_debugger_1_1_u_i_1_1_controls_1_1_data.html">SRDebugger.UI.Controls.Data</a></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="keyword">using</span> <a class="code hl_variable" href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keyword">using</span> <a class="code hl_namespace" href="namespace_s_r_f.html">SRF</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keyword">using</span> <a class="code hl_namespace" href="namespace_s_r_f.html">SRF</a>.<a class="code hl_namespace" href="namespace_s_r_f_1_1_u_i.html">UI</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">using</span> <a class="code hl_namespace" href="namespace_unity_engine.html">UnityEngine</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">using</span> <a class="code hl_namespace" href="namespace_unity_engine.html">UnityEngine</a>.<a class="code hl_namespace" href="namespace_unity_engine_1_1_u_i.html">UI</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html">   12</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html">EnumControl</a> : <a class="code hl_class" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_bound_control.html">DataBoundControl</a></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keyword">private</span> <span class="keywordtype">object</span> _lastValue;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keyword">private</span> <span class="keywordtype">string</span>[] _names;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keyword">private</span> Array _values;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#a374a0226ed4ad2954e464edad4ae66b9">   18</a></span>        [RequiredField] <span class="keyword">public</span> LayoutElement <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#a374a0226ed4ad2954e464edad4ae66b9">ContentLayoutElement</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#acdb3d067edd4211e8d827def5a11ce3f">   20</a></span>        <span class="keyword">public</span> GameObject[] <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#acdb3d067edd4211e8d827def5a11ce3f">DisableOnReadOnly</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#aa1fd9449ef26502bd95f4af0adaf900b">   22</a></span>        [RequiredField] <span class="keyword">public</span> <a class="code hl_class" href="class_s_r_f_1_1_u_i_1_1_s_r_spinner.html">SRSpinner</a> <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#aa1fd9449ef26502bd95f4af0adaf900b">Spinner</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#a32414b479f8195b74a61d5cb156d7329">   24</a></span>        [RequiredField] <span class="keyword">public</span> Text <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#a32414b479f8195b74a61d5cb156d7329">Title</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#a516527e4bb77b8c29c2717dd3a276cf0">   26</a></span>        [RequiredField] <span class="keyword">public</span> Text <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#a516527e4bb77b8c29c2717dd3a276cf0">Value</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#add56747a6b045791590a36592c13c943">   28</a></span>        <span class="keyword">protected</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#add56747a6b045791590a36592c13c943">Start</a>()</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            base.Start();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        }</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#ad5a49516563f3c933a24b7af9658eee2">   33</a></span>        <span class="keyword">protected</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#ad5a49516563f3c933a24b7af9658eee2">OnBind</a>(<span class="keywordtype">string</span> propertyName, Type t)</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            base.OnBind(propertyName, t);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#a32414b479f8195b74a61d5cb156d7329">Title</a>.text = propertyName;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#aa1fd9449ef26502bd95f4af0adaf900b">Spinner</a>.interactable = !<a class="code hl_property" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_bound_control.html#a5f276542e6c3492f29ab4381753a2da9">IsReadOnly</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#acdb3d067edd4211e8d827def5a11ce3f">DisableOnReadOnly</a> != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                <span class="keywordflow">foreach</span> (var child <span class="keywordflow">in</span> <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#acdb3d067edd4211e8d827def5a11ce3f">DisableOnReadOnly</a>)</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                    child.SetActive(!<a class="code hl_property" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_bound_control.html#a5f276542e6c3492f29ab4381753a2da9">IsReadOnly</a>);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            _names = Enum.GetNames(t);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            _values = Enum.GetValues(t);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            var longestName = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="keywordflow">for</span> (var i = 0; i &lt; _names.Length; i++)</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                <span class="keywordflow">if</span> (_names[i].Length &gt; longestName.Length)</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                    longestName = _names[i];</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordflow">if</span> (_names.Length == 0)</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <span class="comment">// Set preferred width of content to the largest possible value size</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            var width = <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#a516527e4bb77b8c29c2717dd3a276cf0">Value</a>.cachedTextGeneratorForLayout.GetPreferredWidth(longestName,</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#a516527e4bb77b8c29c2717dd3a276cf0">Value</a>.GetGenerationSettings(<span class="keyword">new</span> <a class="code hl_struct" href="struct_unity_engine_1_1_vector2.html">Vector2</a>(<span class="keywordtype">float</span>.MaxValue, <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#a516527e4bb77b8c29c2717dd3a276cf0">Value</a>.preferredHeight)));</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#a374a0226ed4ad2954e464edad4ae66b9">ContentLayoutElement</a>.preferredWidth = width;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#a86c44260aa4249fe558680fd7e65f995">   75</a></span>        <span class="keyword">protected</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#a86c44260aa4249fe558680fd7e65f995">OnValueUpdated</a>(<span class="keywordtype">object</span> newValue)</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            _lastValue = newValue;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <a class="code hl_variable" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#a516527e4bb77b8c29c2717dd3a276cf0">Value</a>.text = newValue.ToString();</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#a24eac0339d1fae55d3bcaf093840b371">   81</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#a24eac0339d1fae55d3bcaf093840b371">CanBind</a>(Type type, <span class="keywordtype">bool</span> isReadOnly)</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#if NETFX_CORE</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                        <span class="keywordflow">return</span> type.GetTypeInfo().IsEnum;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            <span class="keywordflow">return</span> type.IsEnum;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keyword">private</span> <span class="keywordtype">void</span> SetIndex(<span class="keywordtype">int</span> i)</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        {</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            <a class="code hl_function" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_bound_control.html#a6aa4236e98a845bc52c5d2e46ee00d66">UpdateValue</a>(_values.GetValue(i));</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <a class="code hl_function" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_bound_control.html#a7bead36993938801e85ae8dafd6cc097">Refresh</a>();</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#a5737c12743e19574a2bcf8a83063d7ba">   96</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#a5737c12743e19574a2bcf8a83063d7ba">GoToNext</a>()</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            var currentIndex = Array.IndexOf(_values, _lastValue);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            SetIndex(SRMath.Wrap(_values.Length, currentIndex + 1));</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#a1fdf27e9bcec246b7e1d0298cd50d0b9">  102</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#a1fdf27e9bcec246b7e1d0298cd50d0b9">GoToPrevious</a>()</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        {</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            var currentIndex = Array.IndexOf(_values, _lastValue);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            SetIndex(SRMath.Wrap(_values.Length, currentIndex - 1));</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        }</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    }</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>}</div>
+<div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control_html"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html">SRDebugger.UI.Controls.Data.EnumControl</a></div><div class="ttdef"><b>Definition:</b> <a href="_enum_control_8cs_source.html#l00012">EnumControl.cs:13</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control_html_a1fdf27e9bcec246b7e1d0298cd50d0b9"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#a1fdf27e9bcec246b7e1d0298cd50d0b9">SRDebugger.UI.Controls.Data.EnumControl.GoToPrevious</a></div><div class="ttdeci">void GoToPrevious()</div><div class="ttdef"><b>Definition:</b> <a href="_enum_control_8cs_source.html#l00102">EnumControl.cs:102</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control_html_a24eac0339d1fae55d3bcaf093840b371"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#a24eac0339d1fae55d3bcaf093840b371">SRDebugger.UI.Controls.Data.EnumControl.CanBind</a></div><div class="ttdeci">override bool CanBind(Type type, bool isReadOnly)</div><div class="ttdef"><b>Definition:</b> <a href="_enum_control_8cs_source.html#l00081">EnumControl.cs:81</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control_html_a32414b479f8195b74a61d5cb156d7329"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#a32414b479f8195b74a61d5cb156d7329">SRDebugger.UI.Controls.Data.EnumControl.Title</a></div><div class="ttdeci">Text Title</div><div class="ttdef"><b>Definition:</b> <a href="_enum_control_8cs_source.html#l00024">EnumControl.cs:24</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control_html_a374a0226ed4ad2954e464edad4ae66b9"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#a374a0226ed4ad2954e464edad4ae66b9">SRDebugger.UI.Controls.Data.EnumControl.ContentLayoutElement</a></div><div class="ttdeci">LayoutElement ContentLayoutElement</div><div class="ttdef"><b>Definition:</b> <a href="_enum_control_8cs_source.html#l00018">EnumControl.cs:18</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control_html_a516527e4bb77b8c29c2717dd3a276cf0"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#a516527e4bb77b8c29c2717dd3a276cf0">SRDebugger.UI.Controls.Data.EnumControl.Value</a></div><div class="ttdeci">Text Value</div><div class="ttdef"><b>Definition:</b> <a href="_enum_control_8cs_source.html#l00026">EnumControl.cs:26</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control_html_a5737c12743e19574a2bcf8a83063d7ba"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#a5737c12743e19574a2bcf8a83063d7ba">SRDebugger.UI.Controls.Data.EnumControl.GoToNext</a></div><div class="ttdeci">void GoToNext()</div><div class="ttdef"><b>Definition:</b> <a href="_enum_control_8cs_source.html#l00096">EnumControl.cs:96</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control_html_a86c44260aa4249fe558680fd7e65f995"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#a86c44260aa4249fe558680fd7e65f995">SRDebugger.UI.Controls.Data.EnumControl.OnValueUpdated</a></div><div class="ttdeci">override void OnValueUpdated(object newValue)</div><div class="ttdef"><b>Definition:</b> <a href="_enum_control_8cs_source.html#l00075">EnumControl.cs:75</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control_html_aa1fd9449ef26502bd95f4af0adaf900b"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#aa1fd9449ef26502bd95f4af0adaf900b">SRDebugger.UI.Controls.Data.EnumControl.Spinner</a></div><div class="ttdeci">SRSpinner Spinner</div><div class="ttdef"><b>Definition:</b> <a href="_enum_control_8cs_source.html#l00022">EnumControl.cs:22</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control_html_acdb3d067edd4211e8d827def5a11ce3f"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#acdb3d067edd4211e8d827def5a11ce3f">SRDebugger.UI.Controls.Data.EnumControl.DisableOnReadOnly</a></div><div class="ttdeci">GameObject[] DisableOnReadOnly</div><div class="ttdef"><b>Definition:</b> <a href="_enum_control_8cs_source.html#l00020">EnumControl.cs:20</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control_html_ad5a49516563f3c933a24b7af9658eee2"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#ad5a49516563f3c933a24b7af9658eee2">SRDebugger.UI.Controls.Data.EnumControl.OnBind</a></div><div class="ttdeci">override void OnBind(string propertyName, Type t)</div><div class="ttdef"><b>Definition:</b> <a href="_enum_control_8cs_source.html#l00033">EnumControl.cs:33</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control_html_add56747a6b045791590a36592c13c943"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_1_1_enum_control.html#add56747a6b045791590a36592c13c943">SRDebugger.UI.Controls.Data.EnumControl.Start</a></div><div class="ttdeci">override void Start()</div><div class="ttdef"><b>Definition:</b> <a href="_enum_control_8cs_source.html#l00028">EnumControl.cs:28</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_bound_control_html"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_bound_control.html">SRDebugger.UI.Controls.DataBoundControl</a></div><div class="ttdef"><b>Definition:</b> <a href="_data_bound_control_8cs_source.html#l00007">DataBoundControl.cs:8</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_bound_control_html_a5f276542e6c3492f29ab4381753a2da9"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_bound_control.html#a5f276542e6c3492f29ab4381753a2da9">SRDebugger.UI.Controls.DataBoundControl.IsReadOnly</a></div><div class="ttdeci">bool IsReadOnly</div><div class="ttdef"><b>Definition:</b> <a href="_data_bound_control_8cs_source.html#l00019">DataBoundControl.cs:20</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_bound_control_html_a6aa4236e98a845bc52c5d2e46ee00d66"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_bound_control.html#a6aa4236e98a845bc52c5d2e46ee00d66">SRDebugger.UI.Controls.DataBoundControl.UpdateValue</a></div><div class="ttdeci">void UpdateValue(object newValue)</div><div class="ttdef"><b>Definition:</b> <a href="_data_bound_control_8cs_source.html#l00046">DataBoundControl.cs:46</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_bound_control_html_a7bead36993938801e85ae8dafd6cc097"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_bound_control.html#a7bead36993938801e85ae8dafd6cc097">SRDebugger.UI.Controls.DataBoundControl.Refresh</a></div><div class="ttdeci">override void Refresh()</div><div class="ttdef"><b>Definition:</b> <a href="_data_bound_control_8cs_source.html#l00062">DataBoundControl.cs:62</a></div></div>
+<div class="ttc" id="aclass_s_r_f_1_1_u_i_1_1_s_r_spinner_html"><div class="ttname"><a href="class_s_r_f_1_1_u_i_1_1_s_r_spinner.html">SRF.UI.SRSpinner</a></div><div class="ttdef"><b>Definition:</b> <a href="_s_r_spinner_8cs_source.html#l00011">SRSpinner.cs:12</a></div></div>
+<div class="ttc" id="anamespace_s_r_debugger_1_1_u_i_1_1_controls_1_1_data_html"><div class="ttname"><a href="namespace_s_r_debugger_1_1_u_i_1_1_controls_1_1_data.html">SRDebugger.UI.Controls.Data</a></div><div class="ttdef"><b>Definition:</b> <a href="_action_control_8cs_source.html#l00001">ActionControl.cs:2</a></div></div>
+<div class="ttc" id="anamespace_s_r_f_1_1_u_i_html"><div class="ttname"><a href="namespace_s_r_f_1_1_u_i.html">SRF.UI</a></div><div class="ttdef"><b>Definition:</b> <a href="_content_fit_text_8cs_source.html#l00001">ContentFitText.cs:2</a></div></div>
+<div class="ttc" id="anamespace_s_r_f_html"><div class="ttname"><a href="namespace_s_r_f.html">SRF</a></div><div class="ttdef"><b>Definition:</b> <a href="_mini_j_s_o_n_8cs_source.html#l00032">MiniJSON.cs:33</a></div></div>
+<div class="ttc" id="anamespace_system_html"><div class="ttname"><a href="namespace_system.html">System</a></div><div class="ttdef"><b>Definition:</b> <a href="_async_method_builder_attribute_8cs_source.html#l00002">AsyncMethodBuilderAttribute.cs:3</a></div></div>
+<div class="ttc" id="anamespace_unity_engine_1_1_u_i_html"><div class="ttname"><a href="namespace_unity_engine_1_1_u_i.html">UnityEngine.UI</a></div><div class="ttdef"><b>Definition:</b> <a href="_loop_scroll_rect_default_controls1_8cs_source.html#l00004">LoopScrollRectDefaultControls1.cs:5</a></div></div>
+<div class="ttc" id="anamespace_unity_engine_html"><div class="ttname"><a href="namespace_unity_engine.html">UnityEngine</a></div><div class="ttdef"><b>Definition:</b> <a href="_mathf_8cs_source.html#l00003">Mathf.cs:4</a></div></div>
+<div class="ttc" id="astruct_unity_engine_1_1_vector2_html"><div class="ttname"><a href="struct_unity_engine_1_1_vector2.html">UnityEngine.Vector2</a></div><div class="ttdef"><b>Definition:</b> <a href="_vector2_8cs_source.html#l00007">Vector2.cs:8</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_3b33dffaa21a2ac6f7978a949ffd4e41.html">Assets</a></li><li class="navelem"><a class="el" href="dir_5501c55c26a8d51fbc1fd8b7d8df04c3.html">ThirdParty</a></li><li class="navelem"><a class="el" href="dir_0f5df078a02ed03b6776122c2b87cb60.html">StompyRobot</a></li><li class="navelem"><a class="el" href="dir_94017e9a8ea42ed0c35aefd43f85b68b.html">SRDebugger</a></li><li class="navelem"><a class="el" href="dir_7a8f801e87ec51abc5da4d4cde89dc5d.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_eff075d89f6ea7c65dd0b2e968a7ea05.html">UI</a></li><li class="navelem"><a class="el" href="dir_ca0cc71ce10e112cd34cafb7f2bea71d.html">Controls</a></li><li class="navelem"><a class="el" href="dir_7fb80d991acdbea7d92446cf8dd3624e.html">Data</a></li><li class="navelem"><a class="el" href="_enum_control_8cs.html">EnumControl.cs</a></li>
+    <li class="footer">生成于 2022年 四月 21日 星期四 10:43:02 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

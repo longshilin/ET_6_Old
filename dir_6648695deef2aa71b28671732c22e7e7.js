@@ -80,7 +80,7 @@ var dir_6648695deef2aa71b28671732c22e7e7 =
     [ "SerializationContext.cs", "_serialization_context_8cs.html", [
       [ "ProtoBuf.SerializationContext", "class_proto_buf_1_1_serialization_context.html", "class_proto_buf_1_1_serialization_context" ]
     ] ],
-    [ "Serializer.cs", "_serializer_8cs.html", null ],
+    [ "Serializer.cs", "_third_party_2protobuf-net_2_serializer_8cs.html", null ],
     [ "SubItemToken.cs", "_sub_item_token_8cs.html", [
       [ "ProtoBuf.SubItemToken", "struct_proto_buf_1_1_sub_item_token.html", null ]
     ] ],

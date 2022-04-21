@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('_location_component_8cs_source.html','
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="keyword">using</span> (await <a class="code hl_class" href="class_e_t_1_1_coroutine_lock_component.html">CoroutineLockComponent</a>.<a class="code hl_variable" href="class_e_t_1_1_coroutine_lock_component.html#a7218217e99f4b158197b79933d6c61b7">Instance</a>.Wait(CoroutineLockType.Location, key))</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            {</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                this.locations[key] = instanceId;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                Log.Info($<span class="stringliteral">&quot;location add key: {key} instanceId: {instanceId}&quot;</span>);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Info($<span class="stringliteral">&quot;location add key: {key} instanceId: {instanceId}&quot;</span>);</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            }</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        }</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('_location_component_8cs_source.html','
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keyword">using</span> (await <a class="code hl_class" href="class_e_t_1_1_coroutine_lock_component.html">CoroutineLockComponent</a>.<a class="code hl_variable" href="class_e_t_1_1_coroutine_lock_component.html#a7218217e99f4b158197b79933d6c61b7">Instance</a>.Wait(CoroutineLockType.Location, key))</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            {</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                this.locations.Remove(key);</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                Log.Info($<span class="stringliteral">&quot;location remove key: {key}&quot;</span>);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Info($<span class="stringliteral">&quot;location remove key: {key}&quot;</span>);</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            }</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        }</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('_location_component_8cs_source.html','
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <a class="code hl_class" href="class_e_t_1_1_lock_info.html">LockInfo</a> lockInfo = this.AddChild&lt;LockInfo, long, CoroutineLock&gt;(instanceId, coroutineLock);</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            this.lockInfos.Add(key, lockInfo);</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            Log.Info($<span class="stringliteral">&quot;location lock key: {key} instanceId: {instanceId}&quot;</span>);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Info($<span class="stringliteral">&quot;location lock key: {key} instanceId: {instanceId}&quot;</span>);</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <span class="keywordflow">if</span> (time &gt; 0)</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            {</div>
@@ -169,17 +169,17 @@ $(document).ready(function(){initNavTree('_location_component_8cs_source.html','
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        {</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            <span class="keywordflow">if</span> (!this.lockInfos.TryGetValue(key, out <a class="code hl_class" href="class_e_t_1_1_lock_info.html">LockInfo</a> lockInfo))</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            {</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                Log.Error($<span class="stringliteral">&quot;location unlock not found key: {key} {oldInstanceId}&quot;</span>);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Error($<span class="stringliteral">&quot;location unlock not found key: {key} {oldInstanceId}&quot;</span>);</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            }</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            <span class="keywordflow">if</span> (oldInstanceId != lockInfo.LockInstanceId)</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            {</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                Log.Error($<span class="stringliteral">&quot;location unlock oldInstanceId is different: {key} {oldInstanceId}&quot;</span>);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Error($<span class="stringliteral">&quot;location unlock oldInstanceId is different: {key} {oldInstanceId}&quot;</span>);</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            }</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            Log.Info($<span class="stringliteral">&quot;location unlock key: {key} instanceId: {oldInstanceId} newInstanceId: {newInstanceId}&quot;</span>);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Info($<span class="stringliteral">&quot;location unlock key: {key} instanceId: {oldInstanceId} newInstanceId: {newInstanceId}&quot;</span>);</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            this.locations[key] = newInstanceId;</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
@@ -194,7 +194,7 @@ $(document).ready(function(){initNavTree('_location_component_8cs_source.html','
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            <span class="keyword">using</span> (await <a class="code hl_class" href="class_e_t_1_1_coroutine_lock_component.html">CoroutineLockComponent</a>.<a class="code hl_variable" href="class_e_t_1_1_coroutine_lock_component.html#a7218217e99f4b158197b79933d6c61b7">Instance</a>.Wait(CoroutineLockType.Location, key))</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            {</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                this.locations.TryGetValue(key, out <span class="keywordtype">long</span> instanceId);</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                Log.Info($<span class="stringliteral">&quot;location get key: {key} instanceId: {instanceId}&quot;</span>);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Info($<span class="stringliteral">&quot;location get key: {key} instanceId: {instanceId}&quot;</span>);</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                <span class="keywordflow">return</span> instanceId;</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            }</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        }</div>
@@ -213,6 +213,7 @@ $(document).ready(function(){initNavTree('_location_component_8cs_source.html','
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        }</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    }</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>}</div>
+<div class="ttc" id="a_bugly_agent_8cs_html_a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b"><div class="ttname"><a href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">LogSeverity.Log</a></div><div class="ttdeci">@ Log</div></div>
 <div class="ttc" id="aclass_e_t_1_1_awake_system_html"><div class="ttname"><a href="class_e_t_1_1_awake_system.html">ET.AwakeSystem</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_awake_system_8cs_source.html#l00135">IAwakeSystem.cs:136</a></div></div>
 <div class="ttc" id="aclass_e_t_1_1_coroutine_lock_component_html"><div class="ttname"><a href="class_e_t_1_1_coroutine_lock_component.html">ET.CoroutineLockComponent</a></div><div class="ttdef"><b>Definition:</b> <a href="_coroutine_lock_component_8cs_source.html#l00175">CoroutineLockComponent.cs:176</a></div></div>
 <div class="ttc" id="aclass_e_t_1_1_coroutine_lock_component_html_a7218217e99f4b158197b79933d6c61b7"><div class="ttname"><a href="class_e_t_1_1_coroutine_lock_component.html#a7218217e99f4b158197b79933d6c61b7">ET.CoroutineLockComponent.Instance</a></div><div class="ttdeci">static CoroutineLockComponent Instance</div><div class="ttdef"><b>Definition:</b> <a href="_coroutine_lock_component_8cs_source.html#l00177">CoroutineLockComponent.cs:177</a></div></div>
@@ -250,7 +251,7 @@ $(document).ready(function(){initNavTree('_location_component_8cs_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1a445cb237d74f7a5f8d11ec3b0585cc.html">Server</a></li><li class="navelem"><a class="el" href="dir_12c7c7f44207b94dac9b212b976bf45a.html">Model</a></li><li class="navelem"><a class="el" href="dir_6aa533829761b35ddc20dcaea8886150.html">Module</a></li><li class="navelem"><a class="el" href="dir_6e562b7e9556a467c124c52c8529b37d.html">ActorLocation</a></li><li class="navelem"><a class="el" href="_location_component_8cs.html">LocationComponent.cs</a></li>
-    <li class="footer">生成于 2022年 四月 21日 星期四 07:49:29 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">生成于 2022年 四月 21日 星期四 10:42:54 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('_session_idle_checker_component_system
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            }</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            <span class="keywordflow">catch</span> (Exception e)</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            {</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>                Log.Error($<span class="stringliteral">&quot;move timer error: {self.Id}\n{e}&quot;</span>);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>                <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Error($<span class="stringliteral">&quot;move timer error: {self.Id}\n{e}&quot;</span>);</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            }</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        }</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    }</div>
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('_session_idle_checker_component_system
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            }</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            Log.Info(</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Info(</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                $<span class="stringliteral">&quot;session timeout: {session.Id} {timeNow} {session.LastRecvTime} {session.LastSendTime} {timeNow - session.LastRecvTime} {timeNow - session.LastSendTime}&quot;</span>);</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            session.Error = ErrorCore.ERR_SessionSendOrRecvTimeout;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
@@ -143,6 +143,7 @@ $(document).ready(function(){initNavTree('_session_idle_checker_component_system
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        }</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
+<div class="ttc" id="a_bugly_agent_8cs_html_a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b"><div class="ttname"><a href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">LogSeverity.Log</a></div><div class="ttdeci">@ Log</div></div>
 <div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
 <div class="ttc" id="aclass_e_t_1_1_a_timer_html"><div class="ttname"><a href="class_e_t_1_1_a_timer.html">ET.ATimer</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_timer_8cs_source.html#l00008">ITimer.cs:9</a></div></div>
 <div class="ttc" id="aclass_e_t_1_1_awake_system_html"><div class="ttname"><a href="class_e_t_1_1_awake_system.html">ET.AwakeSystem</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_awake_system_8cs_source.html#l00135">IAwakeSystem.cs:136</a></div></div>
@@ -166,7 +167,7 @@ $(document).ready(function(){initNavTree('_session_idle_checker_component_system
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_0593c8c31e62684349ddf63300956e7f.html">Codes</a></li><li class="navelem"><a class="el" href="dir_af6808516899df25343271c1637ca9d1.html">Hotfix</a></li><li class="navelem"><a class="el" href="dir_5f02cf0611c8a1a35c69c5c85885772b.html">Module</a></li><li class="navelem"><a class="el" href="dir_bc72a131214ad2a4a7b21bc72d772ad8.html">Message</a></li><li class="navelem"><a class="el" href="_session_idle_checker_component_system_8cs.html">SessionIdleCheckerComponentSystem.cs</a></li>
-    <li class="footer">生成于 2022年 四月 21日 星期四 07:49:36 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">生成于 2022年 四月 21日 星期四 10:43:02 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

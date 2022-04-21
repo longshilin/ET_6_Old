@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: Unity/Assets/ThirdParty/StompyRobot/SRDebugger/Scripts/Services/Implementation/DockConsoleServiceImpl.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_dock_console_service_impl_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">DockConsoleServiceImpl.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_dock_console_service_impl_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_s_r_debugger_1_1_services_1_1_implementation.html">SRDebugger.Services.Implementation</a></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>{</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>    <span class="keyword">using</span> <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#ae7671ef7df96a23c9f8cbf77d72f04b1aafbf0897a5a83fdd873dfb032ec695d3">Internal</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    <span class="keyword">using</span> <a class="code hl_namespace" href="namespace_s_r_f.html">SRF</a>.<a class="code hl_namespace" href="namespace_s_r_f_1_1_service.html">Service</a>;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    <span class="keyword">using</span> UI.Other;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="keyword">using</span> <a class="code hl_namespace" href="namespace_unity_engine.html">UnityEngine</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    [Service(typeof (IDockConsoleService))]</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_dock_console_service_impl.html">    9</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_dock_console_service_impl.html">DockConsoleServiceImpl</a> : <a class="code hl_interface" href="interface_s_r_debugger_1_1_services_1_1_i_dock_console_service.html">IDockConsoleService</a></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <span class="keyword">private</span> <a class="code hl_enumeration" href="namespace_s_r_debugger.html#a909046960b19d305fe12ffa407912644">ConsoleAlignment</a> _alignment;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keyword">private</span> <a class="code hl_class" href="class_s_r_debugger_1_1_u_i_1_1_other_1_1_dock_console_controller.html">DockConsoleController</a> _consoleRoot;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keyword">private</span> <span class="keywordtype">bool</span> _didSuspendTrigger;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keyword">private</span> <span class="keywordtype">bool</span> _isExpanded = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keyword">private</span> <span class="keywordtype">bool</span> _isVisible;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_dock_console_service_impl.html#a194c07c92cd81a89cd9628e8c383069c">   17</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_dock_console_service_impl.html#a194c07c92cd81a89cd9628e8c383069c">DockConsoleServiceImpl</a>()</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            _alignment = <a class="code hl_class" href="class_s_r_debugger_1_1_settings.html">Settings</a>.<a class="code hl_property" href="class_s_r_debugger_1_1_settings.html#abb13cfe8a6344a51544abb7f3e8555b8">Instance</a>.<a class="code hl_property" href="class_s_r_debugger_1_1_settings.html#af323f38da04588dc1fdb26c03274225a">ConsoleAlignment</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_dock_console_service_impl.html#a189489062452cf596c00753be0acfb0e">   22</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_dock_console_service_impl.html#a189489062452cf596c00753be0acfb0e">IsVisible</a></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> _isVisible; }</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <span class="keyword">set</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                <span class="keywordflow">if</span> (value == _isVisible)</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                }</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                _isVisible = value;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                <span class="keywordflow">if</span> (_consoleRoot == <span class="keyword">null</span> &amp;&amp; value)</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                    Load();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                    _consoleRoot.<a class="code hl_property" href="class_s_r_f_1_1_s_r_mono_behaviour.html#a78bac83eb7672e5b601fc359c9c64faa">CachedGameObject</a>.SetActive(value);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                CheckTrigger();</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_dock_console_service_impl.html#a516e11cd0ae41950cd112a4411563667">   48</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_dock_console_service_impl.html#a516e11cd0ae41950cd112a4411563667">IsExpanded</a></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> _isExpanded; }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keyword">set</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                <span class="keywordflow">if</span> (value == _isExpanded)</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                _isExpanded = value;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                <span class="keywordflow">if</span> (_consoleRoot == <span class="keyword">null</span> &amp;&amp; value)</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                    Load();</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                    _consoleRoot.<a class="code hl_function" href="class_s_r_debugger_1_1_u_i_1_1_other_1_1_dock_console_controller.html#a16477352ac26aa5422ae7fd5d8888b3c">SetDropdownVisibility</a>(value);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                CheckTrigger();</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_dock_console_service_impl.html#afc5dd7267553b13f6f96670c3315b554">   74</a></span>        <span class="keyword">public</span> <a class="code hl_enumeration" href="namespace_s_r_debugger.html#a909046960b19d305fe12ffa407912644">ConsoleAlignment</a> <a class="code hl_property" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_dock_console_service_impl.html#afc5dd7267553b13f6f96670c3315b554">Alignment</a></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> _alignment; }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <span class="keyword">set</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                _alignment = value;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                <span class="keywordflow">if</span> (_consoleRoot != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                    _consoleRoot.<a class="code hl_function" href="class_s_r_debugger_1_1_u_i_1_1_other_1_1_dock_console_controller.html#a545dd61b14d9223481d5dc3161752126">SetAlignmentMode</a>(value);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                CheckTrigger();</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keyword">private</span> <span class="keywordtype">void</span> Load()</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        {</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            var dockService = <a class="code hl_class" href="class_s_r_f_1_1_service_1_1_s_r_service_manager.html">SRServiceManager</a>.<a class="code hl_function" href="class_s_r_f_1_1_service_1_1_s_r_service_manager.html#a1dd610aa021d53a338c2225c1699e947">GetService</a>&lt;<a class="code hl_interface" href="interface_s_r_debugger_1_1_services_1_1_i_pinned_u_i_service.html">IPinnedUIService</a>&gt;();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <span class="keywordflow">if</span> (dockService == <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                <a class="code hl_typedef" href="namespace_s_r_f_1_1_components.html#a6348be36dc001e60722e740235ae6713">Debug</a>.LogError(<span class="stringliteral">&quot;[DockConsoleService] PinnedUIService not found&quot;</span>);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            var pinService = dockService as PinnedUIServiceImpl;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            <span class="keywordflow">if</span> (pinService == <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            {</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                <a class="code hl_typedef" href="namespace_s_r_f_1_1_components.html#a6348be36dc001e60722e740235ae6713">Debug</a>.LogError(<span class="stringliteral">&quot;[DockConsoleService] Expected IPinnedUIService to be PinnedUIServiceImpl&quot;</span>);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            }</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            _consoleRoot = pinService.DockConsoleController;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            _consoleRoot.<a class="code hl_function" href="class_s_r_debugger_1_1_u_i_1_1_other_1_1_dock_console_controller.html#a16477352ac26aa5422ae7fd5d8888b3c">SetDropdownVisibility</a>(_isExpanded);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            _consoleRoot.<a class="code hl_property" href="class_s_r_debugger_1_1_u_i_1_1_other_1_1_dock_console_controller.html#aa9af6cf71510dd46082ccd61fc5a1abb">IsVisible</a> = _isVisible;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            _consoleRoot.<a class="code hl_function" href="class_s_r_debugger_1_1_u_i_1_1_other_1_1_dock_console_controller.html#a545dd61b14d9223481d5dc3161752126">SetAlignmentMode</a>(_alignment);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            CheckTrigger();</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        }</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <span class="keyword">private</span> <span class="keywordtype">void</span> CheckTrigger()</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        {</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            <a class="code hl_enumeration" href="namespace_s_r_debugger.html#a909046960b19d305fe12ffa407912644">ConsoleAlignment</a>? triggerAlignment = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            var pinAlignment = Service.Trigger.Position;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            <span class="keywordflow">if</span> (pinAlignment == <a class="code hl_enumeration" href="namespace_s_r_debugger.html#adab5ae881c6dfb932736932a8cf8f2f5">PinAlignment</a>.TopLeft ||</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>                pinAlignment == <a class="code hl_enumeration" href="namespace_s_r_debugger.html#adab5ae881c6dfb932736932a8cf8f2f5">PinAlignment</a>.TopRight || pinAlignment == <a class="code hl_enumeration" href="namespace_s_r_debugger.html#adab5ae881c6dfb932736932a8cf8f2f5">PinAlignment</a>.TopCenter)</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            {</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>                triggerAlignment = <a class="code hl_enumeration" href="namespace_s_r_debugger.html#a909046960b19d305fe12ffa407912644">ConsoleAlignment</a>.Top;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pinAlignment == <a class="code hl_enumeration" href="namespace_s_r_debugger.html#adab5ae881c6dfb932736932a8cf8f2f5">PinAlignment</a>.BottomLeft ||</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                       pinAlignment == <a class="code hl_enumeration" href="namespace_s_r_debugger.html#adab5ae881c6dfb932736932a8cf8f2f5">PinAlignment</a>.BottomRight ||</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>                       pinAlignment == <a class="code hl_enumeration" href="namespace_s_r_debugger.html#adab5ae881c6dfb932736932a8cf8f2f5">PinAlignment</a>.BottomCenter)</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            {</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>                triggerAlignment = <a class="code hl_enumeration" href="namespace_s_r_debugger.html#a909046960b19d305fe12ffa407912644">ConsoleAlignment</a>.Bottom;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            }</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            var shouldHide = triggerAlignment.HasValue &amp;&amp;  <a class="code hl_property" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_dock_console_service_impl.html#a189489062452cf596c00753be0acfb0e">IsVisible</a> &amp;&amp; <a class="code hl_property" href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_dock_console_service_impl.html#afc5dd7267553b13f6f96670c3315b554">Alignment</a> == triggerAlignment.Value;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>            <span class="comment">// Show trigger if we have hidden it, and we no longer need to hide it.</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            <span class="keywordflow">if</span> (_didSuspendTrigger &amp;&amp; !shouldHide)</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>            {</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                Service.Trigger.IsEnabled = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                _didSuspendTrigger = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            }</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (Service.Trigger.IsEnabled &amp;&amp; shouldHide)</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            {</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>                Service.Trigger.IsEnabled = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>                _didSuspendTrigger = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>            }</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        }</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    }</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>}</div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_services_1_1_implementation_1_1_dock_console_service_impl_html"><div class="ttname"><a href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_dock_console_service_impl.html">SRDebugger.Services.Implementation.DockConsoleServiceImpl</a></div><div class="ttdef"><b>Definition:</b> <a href="_dock_console_service_impl_8cs_source.html#l00009">DockConsoleServiceImpl.cs:10</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_services_1_1_implementation_1_1_dock_console_service_impl_html_a189489062452cf596c00753be0acfb0e"><div class="ttname"><a href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_dock_console_service_impl.html#a189489062452cf596c00753be0acfb0e">SRDebugger.Services.Implementation.DockConsoleServiceImpl.IsVisible</a></div><div class="ttdeci">bool IsVisible</div><div class="ttdef"><b>Definition:</b> <a href="_dock_console_service_impl_8cs_source.html#l00022">DockConsoleServiceImpl.cs:23</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_services_1_1_implementation_1_1_dock_console_service_impl_html_a194c07c92cd81a89cd9628e8c383069c"><div class="ttname"><a href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_dock_console_service_impl.html#a194c07c92cd81a89cd9628e8c383069c">SRDebugger.Services.Implementation.DockConsoleServiceImpl.DockConsoleServiceImpl</a></div><div class="ttdeci">DockConsoleServiceImpl()</div><div class="ttdef"><b>Definition:</b> <a href="_dock_console_service_impl_8cs_source.html#l00017">DockConsoleServiceImpl.cs:17</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_services_1_1_implementation_1_1_dock_console_service_impl_html_a516e11cd0ae41950cd112a4411563667"><div class="ttname"><a href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_dock_console_service_impl.html#a516e11cd0ae41950cd112a4411563667">SRDebugger.Services.Implementation.DockConsoleServiceImpl.IsExpanded</a></div><div class="ttdeci">bool IsExpanded</div><div class="ttdef"><b>Definition:</b> <a href="_dock_console_service_impl_8cs_source.html#l00048">DockConsoleServiceImpl.cs:49</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_services_1_1_implementation_1_1_dock_console_service_impl_html_afc5dd7267553b13f6f96670c3315b554"><div class="ttname"><a href="class_s_r_debugger_1_1_services_1_1_implementation_1_1_dock_console_service_impl.html#afc5dd7267553b13f6f96670c3315b554">SRDebugger.Services.Implementation.DockConsoleServiceImpl.Alignment</a></div><div class="ttdeci">ConsoleAlignment Alignment</div><div class="ttdef"><b>Definition:</b> <a href="_dock_console_service_impl_8cs_source.html#l00074">DockConsoleServiceImpl.cs:75</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_settings_html"><div class="ttname"><a href="class_s_r_debugger_1_1_settings.html">SRDebugger.Settings</a></div><div class="ttdef"><b>Definition:</b> <a href="_settings_8cs_source.html#l00046">Settings.cs:47</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_settings_html_abb13cfe8a6344a51544abb7f3e8555b8"><div class="ttname"><a href="class_s_r_debugger_1_1_settings.html#abb13cfe8a6344a51544abb7f3e8555b8">SRDebugger.Settings.Instance</a></div><div class="ttdeci">static Settings Instance</div><div class="ttdef"><b>Definition:</b> <a href="_settings_8cs_source.html#l00091">Settings.cs:92</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_settings_html_af323f38da04588dc1fdb26c03274225a"><div class="ttname"><a href="class_s_r_debugger_1_1_settings.html#af323f38da04588dc1fdb26c03274225a">SRDebugger.Settings.ConsoleAlignment</a></div><div class="ttdeci">ConsoleAlignment ConsoleAlignment</div><div class="ttdef"><b>Definition:</b> <a href="_settings_8cs_source.html#l00507">Settings.cs:508</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_other_1_1_dock_console_controller_html"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_other_1_1_dock_console_controller.html">SRDebugger.UI.Other.DockConsoleController</a></div><div class="ttdef"><b>Definition:</b> <a href="_dock_console_controller_8cs_source.html#l00011">DockConsoleController.cs:12</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_other_1_1_dock_console_controller_html_a16477352ac26aa5422ae7fd5d8888b3c"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_other_1_1_dock_console_controller.html#a16477352ac26aa5422ae7fd5d8888b3c">SRDebugger.UI.Other.DockConsoleController.SetDropdownVisibility</a></div><div class="ttdeci">void SetDropdownVisibility(bool visible)</div><div class="ttdef"><b>Definition:</b> <a href="_dock_console_controller_8cs_source.html#l00104">DockConsoleController.cs:104</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_other_1_1_dock_console_controller_html_a545dd61b14d9223481d5dc3161752126"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_other_1_1_dock_console_controller.html#a545dd61b14d9223481d5dc3161752126">SRDebugger.UI.Other.DockConsoleController.SetAlignmentMode</a></div><div class="ttdeci">void SetAlignmentMode(ConsoleAlignment alignment)</div><div class="ttdef"><b>Definition:</b> <a href="_dock_console_controller_8cs_source.html#l00110">DockConsoleController.cs:110</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_u_i_1_1_other_1_1_dock_console_controller_html_aa9af6cf71510dd46082ccd61fc5a1abb"><div class="ttname"><a href="class_s_r_debugger_1_1_u_i_1_1_other_1_1_dock_console_controller.html#aa9af6cf71510dd46082ccd61fc5a1abb">SRDebugger.UI.Other.DockConsoleController.IsVisible</a></div><div class="ttdeci">bool IsVisible</div><div class="ttdef"><b>Definition:</b> <a href="_dock_console_controller_8cs_source.html#l00047">DockConsoleController.cs:48</a></div></div>
+<div class="ttc" id="aclass_s_r_f_1_1_s_r_mono_behaviour_html_a78bac83eb7672e5b601fc359c9c64faa"><div class="ttname"><a href="class_s_r_f_1_1_s_r_mono_behaviour.html#a78bac83eb7672e5b601fc359c9c64faa">SRF.SRMonoBehaviour.CachedGameObject</a></div><div class="ttdeci">GameObject CachedGameObject</div><div class="ttdoc">Get the GameObject this behaviour is attached to, using a cached reference if possible.</div><div class="ttdef"><b>Definition:</b> <a href="_s_r_mono_behaviour_8cs_source.html#l00104">SRMonoBehaviour.cs:105</a></div></div>
+<div class="ttc" id="aclass_s_r_f_1_1_service_1_1_s_r_service_manager_html"><div class="ttname"><a href="class_s_r_f_1_1_service_1_1_s_r_service_manager.html">SRF.Service.SRServiceManager</a></div><div class="ttdef"><b>Definition:</b> <a href="_s_r_service_manager_8cs_source.html#l00017">SRServiceManager.cs:18</a></div></div>
+<div class="ttc" id="aclass_s_r_f_1_1_service_1_1_s_r_service_manager_html_a1dd610aa021d53a338c2225c1699e947"><div class="ttname"><a href="class_s_r_f_1_1_service_1_1_s_r_service_manager.html#a1dd610aa021d53a338c2225c1699e947">SRF.Service.SRServiceManager.GetService</a></div><div class="ttdeci">static object GetService(Type t)</div><div class="ttdef"><b>Definition:</b> <a href="_s_r_service_manager_8cs_source.html#l00077">SRServiceManager.cs:77</a></div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_services_1_1_i_dock_console_service_html"><div class="ttname"><a href="interface_s_r_debugger_1_1_services_1_1_i_dock_console_service.html">SRDebugger.Services.IDockConsoleService</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_dock_console_service_8cs_source.html#l00003">IDockConsoleService.cs:4</a></div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_services_1_1_i_pinned_u_i_service_html"><div class="ttname"><a href="interface_s_r_debugger_1_1_services_1_1_i_pinned_u_i_service.html">SRDebugger.Services.IPinnedUIService</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_pinned_options_service_8cs_source.html#l00008">IPinnedOptionsService.cs:9</a></div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_html_ae7671ef7df96a23c9f8cbf77d72f04b1aafbf0897a5a83fdd873dfb032ec695d3"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#ae7671ef7df96a23c9f8cbf77d72f04b1aafbf0897a5a83fdd873dfb032ec695d3">ILRuntime.Mono.Cecil.Metadata.ElementType.Internal</a></div><div class="ttdeci">@ Internal</div></div>
+<div class="ttc" id="anamespace_s_r_debugger_1_1_services_1_1_implementation_html"><div class="ttname"><a href="namespace_s_r_debugger_1_1_services_1_1_implementation.html">SRDebugger.Services.Implementation</a></div><div class="ttdef"><b>Definition:</b> <a href="_bug_report_api_service_8cs_source.html#l00006">BugReportApiService.cs:7</a></div></div>
+<div class="ttc" id="anamespace_s_r_debugger_html_a909046960b19d305fe12ffa407912644"><div class="ttname"><a href="namespace_s_r_debugger.html#a909046960b19d305fe12ffa407912644">SRDebugger.ConsoleAlignment</a></div><div class="ttdeci">ConsoleAlignment</div><div class="ttdef"><b>Definition:</b> <a href="_settings_8cs_source.html#l00040">Settings.cs:41</a></div></div>
+<div class="ttc" id="anamespace_s_r_debugger_html_adab5ae881c6dfb932736932a8cf8f2f5"><div class="ttname"><a href="namespace_s_r_debugger.html#adab5ae881c6dfb932736932a8cf8f2f5">SRDebugger.PinAlignment</a></div><div class="ttdeci">PinAlignment</div><div class="ttdef"><b>Definition:</b> <a href="_settings_8cs_source.html#l00028">Settings.cs:29</a></div></div>
+<div class="ttc" id="anamespace_s_r_f_1_1_components_html_a6348be36dc001e60722e740235ae6713"><div class="ttname"><a href="namespace_s_r_f_1_1_components.html#a6348be36dc001e60722e740235ae6713">SRF.Components.Debug</a></div><div class="ttdeci">UnityEngine.Debug Debug</div><div class="ttdef"><b>Definition:</b> <a href="_s_r_auto_singleton_8cs_source.html#l00005">SRAutoSingleton.cs:5</a></div></div>
+<div class="ttc" id="anamespace_s_r_f_1_1_service_html"><div class="ttname"><a href="namespace_s_r_f_1_1_service.html">SRF.Service</a></div><div class="ttdef"><b>Definition:</b> <a href="_attributes_8cs_source.html#l00003">Attributes.cs:4</a></div></div>
+<div class="ttc" id="anamespace_s_r_f_html"><div class="ttname"><a href="namespace_s_r_f.html">SRF</a></div><div class="ttdef"><b>Definition:</b> <a href="_mini_j_s_o_n_8cs_source.html#l00032">MiniJSON.cs:33</a></div></div>
+<div class="ttc" id="anamespace_unity_engine_html"><div class="ttname"><a href="namespace_unity_engine.html">UnityEngine</a></div><div class="ttdef"><b>Definition:</b> <a href="_mathf_8cs_source.html#l00003">Mathf.cs:4</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_3b33dffaa21a2ac6f7978a949ffd4e41.html">Assets</a></li><li class="navelem"><a class="el" href="dir_5501c55c26a8d51fbc1fd8b7d8df04c3.html">ThirdParty</a></li><li class="navelem"><a class="el" href="dir_0f5df078a02ed03b6776122c2b87cb60.html">StompyRobot</a></li><li class="navelem"><a class="el" href="dir_94017e9a8ea42ed0c35aefd43f85b68b.html">SRDebugger</a></li><li class="navelem"><a class="el" href="dir_7a8f801e87ec51abc5da4d4cde89dc5d.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_11732da70f6b7ca00416c1d145838732.html">Services</a></li><li class="navelem"><a class="el" href="dir_119f475e985d5874deb5913ef8f71d99.html">Implementation</a></li><li class="navelem"><a class="el" href="_dock_console_service_impl_8cs.html">DockConsoleServiceImpl.cs</a></li>
+    <li class="footer">生成于 2022年 四月 21日 星期四 10:43:01 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

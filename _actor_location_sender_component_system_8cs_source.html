@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('_actor_location_sender_component_syste
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            }</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            <span class="keywordflow">catch</span> (Exception e)</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                Log.Error($<span class="stringliteral">&quot;move timer error: {self.Id}\n{e}&quot;</span>);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Error($<span class="stringliteral">&quot;move timer error: {self.Id}\n{e}&quot;</span>);</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            }</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        }</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    }</div>
@@ -262,7 +262,7 @@ $(document).ready(function(){initNavTree('_actor_location_sender_component_syste
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                        ++failTimes;</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>                        <span class="keywordflow">if</span> (failTimes &gt; 20)</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>                        {</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                            Log.Debug($<span class="stringliteral">&quot;actor send message fail, actorid: {actorLocationSender.Id}&quot;</span>);</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                            <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Debug($<span class="stringliteral">&quot;actor send message fail, actorid: {actorLocationSender.Id}&quot;</span>);</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>                            actorLocationSender.Error = ErrorCore.ERR_NotFoundActor;</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                            <span class="comment">// 这里不能删除actor，要让后面等待发送的消息也返回ERR_NotFoundActor，直到超时删除</span></div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>                            <span class="keywordflow">return</span> response;</div>
@@ -294,6 +294,7 @@ $(document).ready(function(){initNavTree('_actor_location_sender_component_syste
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        }</div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    }</div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>}</div>
+<div class="ttc" id="a_bugly_agent_8cs_html_a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b"><div class="ttname"><a href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">LogSeverity.Log</a></div><div class="ttdeci">@ Log</div></div>
 <div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
 <div class="ttc" id="aclass_e_t_1_1_a_timer_html"><div class="ttname"><a href="class_e_t_1_1_a_timer.html">ET.ATimer</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_timer_8cs_source.html#l00008">ITimer.cs:9</a></div></div>
 <div class="ttc" id="aclass_e_t_1_1_actor_location_sender_checker_html"><div class="ttname"><a href="class_e_t_1_1_actor_location_sender_checker.html">ET.ActorLocationSenderChecker</a></div><div class="ttdef"><b>Definition:</b> <a href="_actor_location_sender_component_system_8cs_source.html#l00007">ActorLocationSenderComponentSystem.cs:8</a></div></div>
@@ -320,7 +321,7 @@ $(document).ready(function(){initNavTree('_actor_location_sender_component_syste
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1a445cb237d74f7a5f8d11ec3b0585cc.html">Server</a></li><li class="navelem"><a class="el" href="dir_0134ce7b2e6baa37e8c29df3d3b5b77b.html">Hotfix</a></li><li class="navelem"><a class="el" href="dir_4822d068f22e06f0f7845927638ec428.html">Module</a></li><li class="navelem"><a class="el" href="dir_271a391b155e8c34ecfc02918d2dda6f.html">ActorLocation</a></li><li class="navelem"><a class="el" href="_actor_location_sender_component_system_8cs.html">ActorLocationSenderComponentSystem.cs</a></li>
-    <li class="footer">生成于 2022年 四月 21日 星期四 07:49:28 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">生成于 2022年 四月 21日 星期四 10:42:54 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -14,7 +14,7 @@ var dir_11050b825063d0c1c8db1c3410e9f8e0 =
     ] ],
     [ "JsonReader.cs", "_json_reader_8cs.html", "_json_reader_8cs" ],
     [ "JsonWriter.cs", "_json_writer_8cs.html", "_json_writer_8cs" ],
-    [ "Lexer.cs", "_lexer_8cs.html", null ],
+    [ "Lexer.cs", "_third_party_2_lit_json_2_lexer_8cs.html", null ],
     [ "Netstandard15Polyfill.cs", "_netstandard15_polyfill_8cs.html", null ],
     [ "ParserToken.cs", "_parser_token_8cs.html", null ],
     [ "UnityTypeBindings.cs", "_unity_type_bindings_8cs.html", null ]

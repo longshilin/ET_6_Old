@@ -491,7 +491,7 @@ $(document).ready(function(){initNavTree('_resources_component_8cs_source.html',
 <div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>                    }</div>
 <div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>                    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>                    {</div>
-<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>                        Log.Error($<span class="stringliteral">&quot;assets bundle not found: {assetBundleName}&quot;</span>);</div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>                        <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Error($<span class="stringliteral">&quot;assets bundle not found: {assetBundleName}&quot;</span>);</div>
 <div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>                    }</div>
 <div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>                }</div>
 <div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span> </div>
@@ -513,7 +513,7 @@ $(document).ready(function(){initNavTree('_resources_component_8cs_source.html',
 <div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>            <span class="keywordflow">if</span> (assetBundle == <span class="keyword">null</span>)</div>
 <div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>            {</div>
 <div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>                <span class="comment">// 获取资源的时候会抛异常，这个地方不直接抛异常，因为有些地方需要Load之后判断是否Load成功</span></div>
-<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>                Log.Warning($<span class="stringliteral">&quot;assets bundle not found: {assetBundleName}&quot;</span>);</div>
+<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>                <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Warning($<span class="stringliteral">&quot;assets bundle not found: {assetBundleName}&quot;</span>);</div>
 <div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>                <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>            }</div>
 <div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span> </div>
@@ -615,7 +615,7 @@ $(document).ready(function(){initNavTree('_resources_component_8cs_source.html',
 <div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>                    }</div>
 <div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>                    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>                    {</div>
-<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>                        Log.Error(<span class="stringliteral">&quot;Bundle not exist! BundleName: &quot;</span> + assetBundleName);</div>
+<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>                        <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Error(<span class="stringliteral">&quot;Bundle not exist! BundleName: &quot;</span> + assetBundleName);</div>
 <div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>                    }</div>
 <div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span> </div>
 <div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>                    <span class="comment">// 编辑器模式也不能同步加载</span></div>
@@ -629,7 +629,7 @@ $(document).ready(function(){initNavTree('_resources_component_8cs_source.html',
 <div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>            {</div>
 <div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>                p = <a class="code hl_typedef" href="_process_helper_8cs.html#a5d3f395d3257bcd58335037355f0d7cc">Path</a>.Combine(PathHelper.AppResPath, assetBundleName);</div>
 <div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>            }</div>
-<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>            Log.Debug(<span class="stringliteral">&quot;Async load bundle BundleName : &quot;</span> + p);</div>
+<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>            <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Debug(<span class="stringliteral">&quot;Async load bundle BundleName : &quot;</span> + p);</div>
 <div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span> </div>
 <div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>            <span class="comment">// if (!File.Exists(p))</span></div>
 <div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>            <span class="comment">// {</span></div>
@@ -640,7 +640,7 @@ $(document).ready(function(){initNavTree('_resources_component_8cs_source.html',
 <div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>            <span class="keywordflow">if</span> (assetBundle == <span class="keyword">null</span>)</div>
 <div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>            {</div>
 <div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>                <span class="comment">// 获取资源的时候会抛异常，这个地方不直接抛异常，因为有些地方需要Load之后判断是否Load成功</span></div>
-<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>                Log.Warning($<span class="stringliteral">&quot;assets bundle not found: {assetBundleName}&quot;</span>);</div>
+<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>                <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Warning($<span class="stringliteral">&quot;assets bundle not found: {assetBundleName}&quot;</span>);</div>
 <div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>                <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
 <div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>            }</div>
 <div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>            abInfo = this.AddChild&lt;ABInfo, string, AssetBundle&gt;(assetBundleName, assetBundle);</div>
@@ -693,6 +693,7 @@ $(document).ready(function(){initNavTree('_resources_component_8cs_source.html',
 <div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>        }</div>
 <div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>    }</div>
 <div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>}</div>
+<div class="ttc" id="a_bugly_agent_8cs_html_a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b"><div class="ttname"><a href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">LogSeverity.Log</a></div><div class="ttdeci">@ Log</div></div>
 <div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
 <div class="ttc" id="a_process_helper_8cs_html_a5d3f395d3257bcd58335037355f0d7cc"><div class="ttname"><a href="_process_helper_8cs.html#a5d3f395d3257bcd58335037355f0d7cc">Path</a></div><div class="ttdeci">System.IO.Path Path</div><div class="ttdef"><b>Definition:</b> <a href="_process_helper_8cs_source.html#l00005">ProcessHelper.cs:5</a></div></div>
 <div class="ttc" id="aclass_e_t_1_1_a_b_info_awake_system_html"><div class="ttname"><a href="class_e_t_1_1_a_b_info_awake_system.html">ET.ABInfoAwakeSystem</a></div><div class="ttdef"><b>Definition:</b> <a href="_resources_component_8cs_source.html#l00011">ResourcesComponent.cs:12</a></div></div>
@@ -751,7 +752,7 @@ $(document).ready(function(){initNavTree('_resources_component_8cs_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_0593c8c31e62684349ddf63300956e7f.html">Codes</a></li><li class="navelem"><a class="el" href="dir_332bf7cd329ea52eea22f57320401452.html">ModelView</a></li><li class="navelem"><a class="el" href="dir_b0ca88b831dbe02d3f97d91901bb7fda.html">Demo</a></li><li class="navelem"><a class="el" href="dir_9e9c60aecb021c40c2f17275dbb3b195.html">Resource</a></li><li class="navelem"><a class="el" href="_resources_component_8cs.html">ResourcesComponent.cs</a></li>
-    <li class="footer">生成于 2022年 四月 21日 星期四 07:49:37 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">生成于 2022年 四月 21日 星期四 10:43:02 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -1,0 +1,408 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: Unity/Assets/ThirdParty/StompyRobot/SRDebugger/Scripts/Internal/CircularBuffer.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">CircularBuffer.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> <span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> ----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> &quot;THE BEER-WARE LICENSE&quot; (Revision 42):</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> Joao Portela wrote this file. As long as you retain this notice you</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> can do whatever you want with this stuff. If we meet some day, and you think</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> this stuff is worth it, you can buy me a beer in return.</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> Joao Portela</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> --------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> * https://github.com/joaoportela/CircullarBuffer-CSharp</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_s_r_debugger.html">SRDebugger</a></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">using</span> <a class="code hl_variable" href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">using</span> <a class="code hl_namespace" href="namespace_system.html">System</a>.<a class="code hl_namespace" href="namespace_system_1_1_collections.html">Collections</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">using</span> <a class="code hl_namespace" href="namespace_system.html">System</a>.<a class="code hl_namespace" href="namespace_system_1_1_collections.html">Collections</a>.<a class="code hl_namespace" href="namespace_system_1_1_collections_1_1_generic.html">Generic</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="interface_s_r_debugger_1_1_i_read_only_list.html">   18</a></span>    <span class="keyword">public</span> <span class="keyword">interface </span><a class="code hl_interface" href="interface_s_r_debugger_1_1_i_read_only_list.html">IReadOnlyList</a>&lt;T&gt; : IEnumerable&lt;T&gt;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="interface_s_r_debugger_1_1_i_read_only_list.html#a89531bea2fb9aa0910265d8a182af8d9">   20</a></span>        <span class="keywordtype">int</span> <a class="code hl_property" href="interface_s_r_debugger_1_1_i_read_only_list.html#a89531bea2fb9aa0910265d8a182af8d9">Count</a> { <span class="keyword">get</span>; }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="interface_s_r_debugger_1_1_i_read_only_list.html#a20c7c630777589e989368a4c8276621a">   22</a></span>        T <span class="keyword">this</span>[<span class="keywordtype">int</span> index] { <span class="keyword">get</span>; }</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    }</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_circular_buffer.html">   34</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_s_r_debugger_1_1_circular_buffer.html">CircularBuffer</a>&lt;T&gt; : IEnumerable&lt;T&gt;, <a class="code hl_interface" href="interface_s_r_debugger_1_1_i_read_only_list.html">IReadOnlyList</a>&lt;T&gt;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keyword">private</span> readonly T[] _buffer;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> _end;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> _count;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> _start;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_circular_buffer.html#a1f6f10399a4730a7c5f94fb9a94652b4">   53</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_s_r_debugger_1_1_circular_buffer.html#a1f6f10399a4730a7c5f94fb9a94652b4">CircularBuffer</a>(<span class="keywordtype">int</span> capacity)</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            : this(capacity, new T[] {}) {}</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_circular_buffer.html#a8a6ae5d2af791182604381d61871fcdb">   67</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_s_r_debugger_1_1_circular_buffer.html#a8a6ae5d2af791182604381d61871fcdb">CircularBuffer</a>(<span class="keywordtype">int</span> capacity, T[] items)</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <span class="keywordflow">if</span> (capacity &lt; 1)</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentException(</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                    <span class="stringliteral">&quot;Circular buffer cannot have negative or zero capacity.&quot;</span>, <span class="stringliteral">&quot;capacity&quot;</span>);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <span class="keywordflow">if</span> (items == <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentNullException(<span class="stringliteral">&quot;items&quot;</span>);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <span class="keywordflow">if</span> (items.Length &gt; capacity)</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentException(</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                    <span class="stringliteral">&quot;Too many items to fit circular buffer&quot;</span>, <span class="stringliteral">&quot;items&quot;</span>);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            }</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            _buffer = <span class="keyword">new</span> T[capacity];</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            Array.Copy(items, _buffer, items.Length);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            _count = items.Length;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            _start = 0;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            _end = _count == capacity ? 0 : _count;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_circular_buffer.html#a7e4d0ac80d4c3ccb697b525fbef7a738">   97</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_property" href="class_s_r_debugger_1_1_circular_buffer.html#a7e4d0ac80d4c3ccb697b525fbef7a738">Capacity</a></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        {</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> _buffer.Length; }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_circular_buffer.html#ae5d9d69277a7c82023bf6b3e3f8b4f7c">  102</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_s_r_debugger_1_1_circular_buffer.html#ae5d9d69277a7c82023bf6b3e3f8b4f7c">IsFull</a></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        {</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> <a class="code hl_property" href="class_s_r_debugger_1_1_circular_buffer.html#aa000d790c46a8817e283f701db735014">Count</a> == <a class="code hl_property" href="class_s_r_debugger_1_1_circular_buffer.html#a7e4d0ac80d4c3ccb697b525fbef7a738">Capacity</a>; }</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        }</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_circular_buffer.html#a94f55180cb66702530932af43c37308a">  107</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="class_s_r_debugger_1_1_circular_buffer.html#a94f55180cb66702530932af43c37308a">IsEmpty</a></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        {</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> <a class="code hl_property" href="class_s_r_debugger_1_1_circular_buffer.html#aa000d790c46a8817e283f701db735014">Count</a> == 0; }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        }</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_circular_buffer.html#aa000d790c46a8817e283f701db735014">  115</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_property" href="class_s_r_debugger_1_1_circular_buffer.html#aa000d790c46a8817e283f701db735014">Count</a></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        {</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            <span class="keyword">get</span> { <span class="keywordflow">return</span> _count; }</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        }</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_circular_buffer.html#a1e18db5a21692e2a9e76287a2df1e86c">  120</a></span>        <span class="keyword">public</span> T <span class="keyword">this</span>[<span class="keywordtype">int</span> index]</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        {</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            <span class="keyword">get</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            {</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                <span class="keywordflow">if</span> (<a class="code hl_property" href="class_s_r_debugger_1_1_circular_buffer.html#a94f55180cb66702530932af43c37308a">IsEmpty</a>)</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>                {</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> IndexOutOfRangeException(<span class="keywordtype">string</span>.Format(<span class="stringliteral">&quot;Cannot access index {0}. Buffer is empty&quot;</span>, index));</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                }</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>                <span class="keywordflow">if</span> (index &gt;= _count)</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>                {</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> IndexOutOfRangeException(<span class="keywordtype">string</span>.Format(<span class="stringliteral">&quot;Cannot access index {0}. Buffer size is {1}&quot;</span>,</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>                        index, _count));</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>                }</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>                var actualIndex = InternalIndex(index);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                <span class="keywordflow">return</span> _buffer[actualIndex];</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>            }</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            <span class="keyword">set</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>            {</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                <span class="keywordflow">if</span> (<a class="code hl_property" href="class_s_r_debugger_1_1_circular_buffer.html#a94f55180cb66702530932af43c37308a">IsEmpty</a>)</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                {</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> IndexOutOfRangeException(<span class="keywordtype">string</span>.Format(<span class="stringliteral">&quot;Cannot access index {0}. Buffer is empty&quot;</span>, index));</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                }</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                <span class="keywordflow">if</span> (index &gt;= _count)</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>                {</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> IndexOutOfRangeException(<span class="keywordtype">string</span>.Format(<span class="stringliteral">&quot;Cannot access index {0}. Buffer size is {1}&quot;</span>,</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>                        index, _count));</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                }</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>                var actualIndex = InternalIndex(index);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>                _buffer[actualIndex] = value;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>            }</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        }</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_circular_buffer.html#ab6694fb845643d439de3f537d860236d">  152</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_r_debugger_1_1_circular_buffer.html#ab6694fb845643d439de3f537d860236d">Clear</a>()</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        {</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>            _count = 0;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>            _start = 0;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            _end = 0;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        }</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="preprocessor">        #region IEnumerable&lt;T&gt; implementation</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_circular_buffer.html#a949006526ee3833029f16430ad289cca">  161</a></span>        <span class="keyword">public</span> IEnumerator&lt;T&gt; <a class="code hl_function" href="class_s_r_debugger_1_1_circular_buffer.html#a949006526ee3833029f16430ad289cca">GetEnumerator</a>()</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        {</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            var segments = <span class="keyword">new</span> ArraySegment&lt;T&gt;[2] {ArrayOne(), ArrayTwo()};</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>            <span class="keywordflow">foreach</span> (var segment <span class="keywordflow">in</span> segments)</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>            {</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>                <span class="keywordflow">for</span> (var i = 0; i &lt; segment.Count; i++)</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>                {</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>                    yield <span class="keywordflow">return</span> segment.Array[segment.Offset + i];</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>                }</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>            }</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        }</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="preprocessor">        #endregion</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="preprocessor">        #region IEnumerable implementation</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        IEnumerator IEnumerable.GetEnumerator()</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        {</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="class_s_r_debugger_1_1_circular_buffer.html#a949006526ee3833029f16430ad289cca">GetEnumerator</a>();</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        }</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="preprocessor">        #endregion</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="preprocessor">        #region IList&lt;T&gt; implementation</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="preprocessor">        #endregion</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_circular_buffer.html#a676a6e2b596550010438717d63b4cb0a">  194</a></span>        <span class="keyword">public</span> T <a class="code hl_function" href="class_s_r_debugger_1_1_circular_buffer.html#a676a6e2b596550010438717d63b4cb0a">Front</a>()</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        {</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>            ThrowIfEmpty();</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>            <span class="keywordflow">return</span> _buffer[_start];</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        }</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_circular_buffer.html#a815accd433aed45640c0468622af01d3">  204</a></span>        <span class="keyword">public</span> T <a class="code hl_function" href="class_s_r_debugger_1_1_circular_buffer.html#a815accd433aed45640c0468622af01d3">Back</a>()</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        {</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>            ThrowIfEmpty();</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>            <span class="keywordflow">return</span> _buffer[(_end != 0 ? _end : _count) - 1];</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        }</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_circular_buffer.html#a8947d420ebf8b509b8467a39e57723e9">  217</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_r_debugger_1_1_circular_buffer.html#a8947d420ebf8b509b8467a39e57723e9">PushBack</a>(T item)</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        {</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>            <span class="keywordflow">if</span> (<a class="code hl_property" href="class_s_r_debugger_1_1_circular_buffer.html#ae5d9d69277a7c82023bf6b3e3f8b4f7c">IsFull</a>)</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>            {</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>                _buffer[_end] = item;</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>                Increment(ref _end);</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>                _start = _end;</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>            }</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>            <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>            {</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>                _buffer[_end] = item;</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>                Increment(ref _end);</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>                ++_count;</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>            }</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>        }</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_circular_buffer.html#a36f698b017b5eab3c7b604a341a7c781">  240</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_r_debugger_1_1_circular_buffer.html#a36f698b017b5eab3c7b604a341a7c781">PushFront</a>(T item)</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        {</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>            <span class="keywordflow">if</span> (<a class="code hl_property" href="class_s_r_debugger_1_1_circular_buffer.html#ae5d9d69277a7c82023bf6b3e3f8b4f7c">IsFull</a>)</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>            {</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>                Decrement(ref _start);</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>                _end = _start;</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>                _buffer[_start] = item;</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>            }</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>            <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>            {</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>                Decrement(ref _start);</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>                _buffer[_start] = item;</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>                ++_count;</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>            }</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>        }</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_circular_buffer.html#ada729c994c802d1393b48d0f7352cfae">  260</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_r_debugger_1_1_circular_buffer.html#ada729c994c802d1393b48d0f7352cfae">PopBack</a>()</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        {</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>            ThrowIfEmpty(<span class="stringliteral">&quot;Cannot take elements from an empty buffer.&quot;</span>);</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>            Decrement(ref _end);</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>            _buffer[_end] = <span class="keywordflow">default</span>(T);</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>            --_count;</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        }</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_circular_buffer.html#af53e7a9f38f80da6489adff9c2dee4c0">  272</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_s_r_debugger_1_1_circular_buffer.html#af53e7a9f38f80da6489adff9c2dee4c0">PopFront</a>()</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        {</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>            ThrowIfEmpty(<span class="stringliteral">&quot;Cannot take elements from an empty buffer.&quot;</span>);</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>            _buffer[_start] = <span class="keywordflow">default</span>(T);</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>            Increment(ref _start);</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>            --_count;</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        }</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_circular_buffer.html#af210c60928b46451a3cad0486f664267">  286</a></span>        <span class="keyword">public</span> T[] <a class="code hl_function" href="class_s_r_debugger_1_1_circular_buffer.html#af210c60928b46451a3cad0486f664267">ToArray</a>()</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>        {</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>            var newArray = <span class="keyword">new</span> T[<a class="code hl_property" href="class_s_r_debugger_1_1_circular_buffer.html#aa000d790c46a8817e283f701db735014">Count</a>];</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>            var newArrayOffset = 0;</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>            var segments = <span class="keyword">new</span> ArraySegment&lt;T&gt;[2] {ArrayOne(), ArrayTwo()};</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>            <span class="keywordflow">foreach</span> (var segment <span class="keywordflow">in</span> segments)</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>            {</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>                Array.Copy(segment.Array, segment.Offset, newArray, newArrayOffset, segment.Count);</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>                newArrayOffset += segment.Count;</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>            }</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>            <span class="keywordflow">return</span> newArray;</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>        }</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span> </div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>        <span class="keyword">private</span> <span class="keywordtype">void</span> ThrowIfEmpty(<span class="keywordtype">string</span> message = <span class="stringliteral">&quot;Cannot access an empty buffer.&quot;</span>)</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>        {</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>            <span class="keywordflow">if</span> (<a class="code hl_property" href="class_s_r_debugger_1_1_circular_buffer.html#a94f55180cb66702530932af43c37308a">IsEmpty</a>)</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>            {</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException(message);</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>            }</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>        }</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span> </div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>        <span class="keyword">private</span> <span class="keywordtype">void</span> Increment(ref <span class="keywordtype">int</span> index)</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>        {</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>            <span class="keywordflow">if</span> (++index == <a class="code hl_property" href="class_s_r_debugger_1_1_circular_buffer.html#a7e4d0ac80d4c3ccb697b525fbef7a738">Capacity</a>)</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>            {</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>                index = 0;</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>            }</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>        }</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span> </div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>        <span class="keyword">private</span> <span class="keywordtype">void</span> Decrement(ref <span class="keywordtype">int</span> index)</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>        {</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>            <span class="keywordflow">if</span> (index == 0)</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>            {</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>                index = <a class="code hl_property" href="class_s_r_debugger_1_1_circular_buffer.html#a7e4d0ac80d4c3ccb697b525fbef7a738">Capacity</a>;</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>            }</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>            index--;</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>        }</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>        <span class="keyword">private</span> <span class="keywordtype">int</span> InternalIndex(<span class="keywordtype">int</span> index)</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>        {</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>            <span class="keywordflow">return</span> _start + (index &lt; (<a class="code hl_property" href="class_s_r_debugger_1_1_circular_buffer.html#a7e4d0ac80d4c3ccb697b525fbef7a738">Capacity</a> - _start) ? index : index - <a class="code hl_property" href="class_s_r_debugger_1_1_circular_buffer.html#a7e4d0ac80d4c3ccb697b525fbef7a738">Capacity</a>);</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>        }</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span> </div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>        <span class="comment">// doing ArrayOne and ArrayTwo methods returning ArraySegment&lt;T&gt; as seen here: </span></div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>        <span class="comment">// http://www.boost.org/doc/libs/1_37_0/libs/circular_buffer/doc/circular_buffer.html#classboost_1_1circular__buffer_1957cccdcb0c4ef7d80a34a990065818d</span></div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>        <span class="comment">// http://www.boost.org/doc/libs/1_37_0/libs/circular_buffer/doc/circular_buffer.html#classboost_1_1circular__buffer_1f5081a54afbc2dfc1a7fb20329df7d5b</span></div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>        <span class="comment">// should help a lot with the code.</span></div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span> </div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span><span class="preprocessor">        #region Array items easy access.</span></div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span> </div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>        <span class="comment">// The array is composed by at most two non-contiguous segments, </span></div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>        <span class="comment">// the next two methods allow easy access to those.</span></div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span> </div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>        <span class="keyword">private</span> ArraySegment&lt;T&gt; ArrayOne()</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>        {</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>            <span class="keywordflow">if</span> (_start &lt;= _end)</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>            {</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>                <span class="keywordflow">return</span> <span class="keyword">new</span> ArraySegment&lt;T&gt;(_buffer, _start, _end - _start);</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>            }</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>            <span class="keywordflow">return</span> <span class="keyword">new</span> ArraySegment&lt;T&gt;(_buffer, _start, _buffer.Length - _start);</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>        }</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span> </div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>        <span class="keyword">private</span> ArraySegment&lt;T&gt; ArrayTwo()</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>        {</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>            <span class="keywordflow">if</span> (_start &lt; _end)</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>            {</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>                <span class="keywordflow">return</span> <span class="keyword">new</span> ArraySegment&lt;T&gt;(_buffer, _end, 0);</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>            }</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>            <span class="keywordflow">return</span> <span class="keyword">new</span> ArraySegment&lt;T&gt;(_buffer, 0, _end);</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>        }</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span> </div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span><span class="preprocessor">        #endregion</span></div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>    }</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>}</div>
+<div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_circular_buffer_html"><div class="ttname"><a href="class_s_r_debugger_1_1_circular_buffer.html">SRDebugger.CircularBuffer</a></div><div class="ttdoc">Circular buffer. When writting to a full buffer: PushBack -&gt; removes this[0] / Front() PushFront -&gt; r...</div><div class="ttdef"><b>Definition:</b> <a href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00034">CircularBuffer.cs:35</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_circular_buffer_html_a1f6f10399a4730a7c5f94fb9a94652b4"><div class="ttname"><a href="class_s_r_debugger_1_1_circular_buffer.html#a1f6f10399a4730a7c5f94fb9a94652b4">SRDebugger.CircularBuffer.CircularBuffer</a></div><div class="ttdeci">CircularBuffer(int capacity)</div><div class="ttdef"><b>Definition:</b> <a href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00053">CircularBuffer.cs:53</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_circular_buffer_html_a36f698b017b5eab3c7b604a341a7c781"><div class="ttname"><a href="class_s_r_debugger_1_1_circular_buffer.html#a36f698b017b5eab3c7b604a341a7c781">SRDebugger.CircularBuffer.PushFront</a></div><div class="ttdeci">void PushFront(T item)</div><div class="ttdoc">Pushes a new element to the front of the buffer. Front()/this[0] will now return this element....</div><div class="ttdef"><b>Definition:</b> <a href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00240">CircularBuffer.cs:240</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_circular_buffer_html_a676a6e2b596550010438717d63b4cb0a"><div class="ttname"><a href="class_s_r_debugger_1_1_circular_buffer.html#a676a6e2b596550010438717d63b4cb0a">SRDebugger.CircularBuffer.Front</a></div><div class="ttdeci">T Front()</div><div class="ttdoc">Element at the front of the buffer - this[0].</div><div class="ttdef"><b>Definition:</b> <a href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00194">CircularBuffer.cs:194</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_circular_buffer_html_a7e4d0ac80d4c3ccb697b525fbef7a738"><div class="ttname"><a href="class_s_r_debugger_1_1_circular_buffer.html#a7e4d0ac80d4c3ccb697b525fbef7a738">SRDebugger.CircularBuffer.Capacity</a></div><div class="ttdeci">int Capacity</div><div class="ttdoc">Maximum capacity of the buffer. Elements pushed into the buffer after maximum capacity is reached (Is...</div><div class="ttdef"><b>Definition:</b> <a href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00097">CircularBuffer.cs:98</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_circular_buffer_html_a815accd433aed45640c0468622af01d3"><div class="ttname"><a href="class_s_r_debugger_1_1_circular_buffer.html#a815accd433aed45640c0468622af01d3">SRDebugger.CircularBuffer.Back</a></div><div class="ttdeci">T Back()</div><div class="ttdoc">Element at the back of the buffer - this[Size - 1].</div><div class="ttdef"><b>Definition:</b> <a href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00204">CircularBuffer.cs:204</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_circular_buffer_html_a8947d420ebf8b509b8467a39e57723e9"><div class="ttname"><a href="class_s_r_debugger_1_1_circular_buffer.html#a8947d420ebf8b509b8467a39e57723e9">SRDebugger.CircularBuffer.PushBack</a></div><div class="ttdeci">void PushBack(T item)</div><div class="ttdoc">Pushes a new element to the back of the buffer. Back()/this[Size-1] will now return this element....</div><div class="ttdef"><b>Definition:</b> <a href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00217">CircularBuffer.cs:217</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_circular_buffer_html_a8a6ae5d2af791182604381d61871fcdb"><div class="ttname"><a href="class_s_r_debugger_1_1_circular_buffer.html#a8a6ae5d2af791182604381d61871fcdb">SRDebugger.CircularBuffer.CircularBuffer</a></div><div class="ttdeci">CircularBuffer(int capacity, T[] items)</div><div class="ttdoc">Initializes a new instance of the CircularBuffer&lt;T&gt; class.</div><div class="ttdef"><b>Definition:</b> <a href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00067">CircularBuffer.cs:67</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_circular_buffer_html_a949006526ee3833029f16430ad289cca"><div class="ttname"><a href="class_s_r_debugger_1_1_circular_buffer.html#a949006526ee3833029f16430ad289cca">SRDebugger.CircularBuffer.GetEnumerator</a></div><div class="ttdeci">IEnumerator&lt; T &gt; GetEnumerator()</div><div class="ttdef"><b>Definition:</b> <a href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00161">CircularBuffer.cs:161</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_circular_buffer_html_a94f55180cb66702530932af43c37308a"><div class="ttname"><a href="class_s_r_debugger_1_1_circular_buffer.html#a94f55180cb66702530932af43c37308a">SRDebugger.CircularBuffer.IsEmpty</a></div><div class="ttdeci">bool IsEmpty</div><div class="ttdef"><b>Definition:</b> <a href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00107">CircularBuffer.cs:108</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_circular_buffer_html_aa000d790c46a8817e283f701db735014"><div class="ttname"><a href="class_s_r_debugger_1_1_circular_buffer.html#aa000d790c46a8817e283f701db735014">SRDebugger.CircularBuffer.Count</a></div><div class="ttdeci">int Count</div><div class="ttdoc">Current buffer size (the number of elements that the buffer has).</div><div class="ttdef"><b>Definition:</b> <a href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00115">CircularBuffer.cs:116</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_circular_buffer_html_ab6694fb845643d439de3f537d860236d"><div class="ttname"><a href="class_s_r_debugger_1_1_circular_buffer.html#ab6694fb845643d439de3f537d860236d">SRDebugger.CircularBuffer.Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdef"><b>Definition:</b> <a href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00152">CircularBuffer.cs:152</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_circular_buffer_html_ada729c994c802d1393b48d0f7352cfae"><div class="ttname"><a href="class_s_r_debugger_1_1_circular_buffer.html#ada729c994c802d1393b48d0f7352cfae">SRDebugger.CircularBuffer.PopBack</a></div><div class="ttdeci">void PopBack()</div><div class="ttdoc">Removes the element at the back of the buffer. Decreassing the Buffer size by 1.</div><div class="ttdef"><b>Definition:</b> <a href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00260">CircularBuffer.cs:260</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_circular_buffer_html_ae5d9d69277a7c82023bf6b3e3f8b4f7c"><div class="ttname"><a href="class_s_r_debugger_1_1_circular_buffer.html#ae5d9d69277a7c82023bf6b3e3f8b4f7c">SRDebugger.CircularBuffer.IsFull</a></div><div class="ttdeci">bool IsFull</div><div class="ttdef"><b>Definition:</b> <a href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00102">CircularBuffer.cs:103</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_circular_buffer_html_af210c60928b46451a3cad0486f664267"><div class="ttname"><a href="class_s_r_debugger_1_1_circular_buffer.html#af210c60928b46451a3cad0486f664267">SRDebugger.CircularBuffer.ToArray</a></div><div class="ttdeci">T[] ToArray()</div><div class="ttdoc">Copies the buffer contents to an array, acording to the logical contents of the buffer (i....</div><div class="ttdef"><b>Definition:</b> <a href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00286">CircularBuffer.cs:286</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_circular_buffer_html_af53e7a9f38f80da6489adff9c2dee4c0"><div class="ttname"><a href="class_s_r_debugger_1_1_circular_buffer.html#af53e7a9f38f80da6489adff9c2dee4c0">SRDebugger.CircularBuffer.PopFront</a></div><div class="ttdeci">void PopFront()</div><div class="ttdoc">Removes the element at the front of the buffer. Decreassing the Buffer size by 1.</div><div class="ttdef"><b>Definition:</b> <a href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00272">CircularBuffer.cs:272</a></div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_i_read_only_list_html"><div class="ttname"><a href="interface_s_r_debugger_1_1_i_read_only_list.html">SRDebugger.IReadOnlyList</a></div><div class="ttdef"><b>Definition:</b> <a href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00018">CircularBuffer.cs:19</a></div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_i_read_only_list_html_a89531bea2fb9aa0910265d8a182af8d9"><div class="ttname"><a href="interface_s_r_debugger_1_1_i_read_only_list.html#a89531bea2fb9aa0910265d8a182af8d9">SRDebugger.IReadOnlyList.Count</a></div><div class="ttdeci">int Count</div><div class="ttdef"><b>Definition:</b> <a href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00020">CircularBuffer.cs:20</a></div></div>
+<div class="ttc" id="anamespace_s_r_debugger_html"><div class="ttname"><a href="namespace_s_r_debugger.html">SRDebugger</a></div><div class="ttdef"><b>Definition:</b> <a href="_auto_initialize_8cs_source.html#l00004">AutoInitialize.cs:5</a></div></div>
+<div class="ttc" id="anamespace_system_1_1_collections_1_1_generic_html"><div class="ttname"><a href="namespace_system_1_1_collections_1_1_generic.html">System.Collections.Generic</a></div></div>
+<div class="ttc" id="anamespace_system_1_1_collections_html"><div class="ttname"><a href="namespace_system_1_1_collections.html">System.Collections</a></div></div>
+<div class="ttc" id="anamespace_system_html"><div class="ttname"><a href="namespace_system.html">System</a></div><div class="ttdef"><b>Definition:</b> <a href="_async_method_builder_attribute_8cs_source.html#l00002">AsyncMethodBuilderAttribute.cs:3</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_3b33dffaa21a2ac6f7978a949ffd4e41.html">Assets</a></li><li class="navelem"><a class="el" href="dir_5501c55c26a8d51fbc1fd8b7d8df04c3.html">ThirdParty</a></li><li class="navelem"><a class="el" href="dir_0f5df078a02ed03b6776122c2b87cb60.html">StompyRobot</a></li><li class="navelem"><a class="el" href="dir_94017e9a8ea42ed0c35aefd43f85b68b.html">SRDebugger</a></li><li class="navelem"><a class="el" href="dir_7a8f801e87ec51abc5da4d4cde89dc5d.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_628535e322c387540fa0a28bedde7059.html">Internal</a></li><li class="navelem"><a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs.html">CircularBuffer.cs</a></li>
+    <li class="footer">生成于 2022年 四月 21日 星期四 10:43:01 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

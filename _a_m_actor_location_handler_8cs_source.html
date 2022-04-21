@@ -99,14 +99,14 @@ $(document).ready(function(){initNavTree('_a_m_actor_location_handler_8cs_source
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            Message msg = actorMessage as Message;</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            <span class="keywordflow">if</span> (msg == <span class="keyword">null</span>)</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            {</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>                Log.Error($<span class="stringliteral">&quot;消息类型转换错误: {actorMessage.GetType().FullName} to {typeof (Message).Name}&quot;</span>);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>                <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Error($<span class="stringliteral">&quot;消息类型转换错误: {actorMessage.GetType().FullName} to {typeof (Message).Name}&quot;</span>);</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>                <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            }</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            E e = entity as E;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <span class="keywordflow">if</span> (e == <span class="keyword">null</span>)</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            {</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                Log.Error($<span class="stringliteral">&quot;Actor类型转换错误: {entity.GetType().Name} to {typeof (E).Name} --{typeof (Message).Name}&quot;</span>);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Error($<span class="stringliteral">&quot;Actor类型转换错误: {entity.GetType().Name} to {typeof (E).Name} --{typeof (Message).Name}&quot;</span>);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            }</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
@@ -128,6 +128,7 @@ $(document).ready(function(){initNavTree('_a_m_actor_location_handler_8cs_source
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        }</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
+<div class="ttc" id="a_bugly_agent_8cs_html_a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b"><div class="ttname"><a href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">LogSeverity.Log</a></div><div class="ttdeci">@ Log</div></div>
 <div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
 <div class="ttc" id="aclass_e_t_1_1_a_m_actor_location_handler_html"><div class="ttname"><a href="class_e_t_1_1_a_m_actor_location_handler.html">ET.AMActorLocationHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="_a_m_actor_location_handler_8cs_source.html#l00006">AMActorLocationHandler.cs:7</a></div></div>
 <div class="ttc" id="aclass_e_t_1_1_a_m_actor_location_handler_html_a1d4b0ef1487c1999582c5e51b319f704"><div class="ttname"><a href="class_e_t_1_1_a_m_actor_location_handler.html#a1d4b0ef1487c1999582c5e51b319f704">ET.AMActorLocationHandler.GetRequestType</a></div><div class="ttdeci">Type GetRequestType()</div><div class="ttdef"><b>Definition:</b> <a href="_a_m_actor_location_handler_8cs_source.html#l00033">AMActorLocationHandler.cs:33</a></div></div>
@@ -148,7 +149,7 @@ $(document).ready(function(){initNavTree('_a_m_actor_location_handler_8cs_source
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1a445cb237d74f7a5f8d11ec3b0585cc.html">Server</a></li><li class="navelem"><a class="el" href="dir_12c7c7f44207b94dac9b212b976bf45a.html">Model</a></li><li class="navelem"><a class="el" href="dir_6aa533829761b35ddc20dcaea8886150.html">Module</a></li><li class="navelem"><a class="el" href="dir_6e562b7e9556a467c124c52c8529b37d.html">ActorLocation</a></li><li class="navelem"><a class="el" href="_a_m_actor_location_handler_8cs.html">AMActorLocationHandler.cs</a></li>
-    <li class="footer">生成于 2022年 四月 21日 星期四 07:49:29 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">生成于 2022年 四月 21日 星期四 10:42:54 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

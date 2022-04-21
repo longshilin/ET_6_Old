@@ -1,0 +1,562 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: SRDebugger.CircularBuffer&lt; T &gt; 模板类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_s_r_debugger_1_1_circular_buffer.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#properties">属性</a>  </div>
+  <div class="headertitle"><div class="title">SRDebugger.CircularBuffer&lt; T &gt; 模板类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Circular buffer. When writting to a full buffer: PushBack -&gt; removes this[0] / <a class="el" href="class_s_r_debugger_1_1_circular_buffer.html#a676a6e2b596550010438717d63b4cb0a" title="Element at the front of the buffer - this[0].">Front()</a> PushFront -&gt; removes this[Size-1] / <a class="el" href="class_s_r_debugger_1_1_circular_buffer.html#a815accd433aed45640c0468622af01d3" title="Element at the back of the buffer - this[Size - 1].">Back()</a> this implementation is inspired by <a href="http://www.boost.org/doc/libs/1_53_0/libs/circular_buffer/doc/circular_buffer.html">http://www.boost.org/doc/libs/1_53_0/libs/circular_buffer/doc/circular_buffer.html</a> because I liked their interface.  
+ <a href="class_s_r_debugger_1_1_circular_buffer.html#details">更多...</a></p>
+<div class="dynheader">
+类 SRDebugger.CircularBuffer&lt; T &gt; 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_s_r_debugger_1_1_circular_buffer.png" usemap="#SRDebugger.CircularBuffer_3C_20T_20_3E_map" alt=""/>
+  <map id="SRDebugger.CircularBuffer_3C_20T_20_3E_map" name="SRDebugger.CircularBuffer_3C_20T_20_3E_map">
+<area href="interface_s_r_debugger_1_1_i_read_only_list.html" alt="SRDebugger.IReadOnlyList&lt; T &gt;" shape="rect" coords="288,56,566,80"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a1f6f10399a4730a7c5f94fb9a94652b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_r_debugger_1_1_circular_buffer.html#a1f6f10399a4730a7c5f94fb9a94652b4">CircularBuffer</a> (int capacity)</td></tr>
+<tr class="separator:a1f6f10399a4730a7c5f94fb9a94652b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a6ae5d2af791182604381d61871fcdb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_r_debugger_1_1_circular_buffer.html#a8a6ae5d2af791182604381d61871fcdb">CircularBuffer</a> (int capacity, T[] items)</td></tr>
+<tr class="memdesc:a8a6ae5d2af791182604381d61871fcdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_s_r_debugger_1_1_circular_buffer.html#a1f6f10399a4730a7c5f94fb9a94652b4">CircularBuffer&lt;T&gt;</a> class.  <a href="class_s_r_debugger_1_1_circular_buffer.html#a8a6ae5d2af791182604381d61871fcdb">更多...</a><br /></td></tr>
+<tr class="separator:a8a6ae5d2af791182604381d61871fcdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6694fb845643d439de3f537d860236d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_r_debugger_1_1_circular_buffer.html#ab6694fb845643d439de3f537d860236d">Clear</a> ()</td></tr>
+<tr class="separator:ab6694fb845643d439de3f537d860236d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a949006526ee3833029f16430ad289cca"><td class="memItemLeft" align="right" valign="top">IEnumerator&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_r_debugger_1_1_circular_buffer.html#a949006526ee3833029f16430ad289cca">GetEnumerator</a> ()</td></tr>
+<tr class="separator:a949006526ee3833029f16430ad289cca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a676a6e2b596550010438717d63b4cb0a"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_r_debugger_1_1_circular_buffer.html#a676a6e2b596550010438717d63b4cb0a">Front</a> ()</td></tr>
+<tr class="memdesc:a676a6e2b596550010438717d63b4cb0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Element at the front of the buffer - this[0].  <a href="class_s_r_debugger_1_1_circular_buffer.html#a676a6e2b596550010438717d63b4cb0a">更多...</a><br /></td></tr>
+<tr class="separator:a676a6e2b596550010438717d63b4cb0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a815accd433aed45640c0468622af01d3"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_r_debugger_1_1_circular_buffer.html#a815accd433aed45640c0468622af01d3">Back</a> ()</td></tr>
+<tr class="memdesc:a815accd433aed45640c0468622af01d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Element at the back of the buffer - this[Size - 1].  <a href="class_s_r_debugger_1_1_circular_buffer.html#a815accd433aed45640c0468622af01d3">更多...</a><br /></td></tr>
+<tr class="separator:a815accd433aed45640c0468622af01d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8947d420ebf8b509b8467a39e57723e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_r_debugger_1_1_circular_buffer.html#a8947d420ebf8b509b8467a39e57723e9">PushBack</a> (T item)</td></tr>
+<tr class="memdesc:a8947d420ebf8b509b8467a39e57723e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pushes a new element to the back of the buffer. <a class="el" href="class_s_r_debugger_1_1_circular_buffer.html#a815accd433aed45640c0468622af01d3" title="Element at the back of the buffer - this[Size - 1].">Back()</a>/this[Size-1] will now return this element. When the buffer is full, the element at <a class="el" href="class_s_r_debugger_1_1_circular_buffer.html#a676a6e2b596550010438717d63b4cb0a" title="Element at the front of the buffer - this[0].">Front()</a>/this[0] will be popped to allow for this new element to fit.  <a href="class_s_r_debugger_1_1_circular_buffer.html#a8947d420ebf8b509b8467a39e57723e9">更多...</a><br /></td></tr>
+<tr class="separator:a8947d420ebf8b509b8467a39e57723e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36f698b017b5eab3c7b604a341a7c781"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_r_debugger_1_1_circular_buffer.html#a36f698b017b5eab3c7b604a341a7c781">PushFront</a> (T item)</td></tr>
+<tr class="memdesc:a36f698b017b5eab3c7b604a341a7c781"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pushes a new element to the front of the buffer. <a class="el" href="class_s_r_debugger_1_1_circular_buffer.html#a676a6e2b596550010438717d63b4cb0a" title="Element at the front of the buffer - this[0].">Front()</a>/this[0] will now return this element. When the buffer is full, the element at <a class="el" href="class_s_r_debugger_1_1_circular_buffer.html#a815accd433aed45640c0468622af01d3" title="Element at the back of the buffer - this[Size - 1].">Back()</a>/this[Size-1] will be popped to allow for this new element to fit.  <a href="class_s_r_debugger_1_1_circular_buffer.html#a36f698b017b5eab3c7b604a341a7c781">更多...</a><br /></td></tr>
+<tr class="separator:a36f698b017b5eab3c7b604a341a7c781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada729c994c802d1393b48d0f7352cfae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_r_debugger_1_1_circular_buffer.html#ada729c994c802d1393b48d0f7352cfae">PopBack</a> ()</td></tr>
+<tr class="memdesc:ada729c994c802d1393b48d0f7352cfae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the element at the back of the buffer. Decreassing the Buffer size by 1.  <a href="class_s_r_debugger_1_1_circular_buffer.html#ada729c994c802d1393b48d0f7352cfae">更多...</a><br /></td></tr>
+<tr class="separator:ada729c994c802d1393b48d0f7352cfae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af53e7a9f38f80da6489adff9c2dee4c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_r_debugger_1_1_circular_buffer.html#af53e7a9f38f80da6489adff9c2dee4c0">PopFront</a> ()</td></tr>
+<tr class="memdesc:af53e7a9f38f80da6489adff9c2dee4c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the element at the front of the buffer. Decreassing the Buffer size by 1.  <a href="class_s_r_debugger_1_1_circular_buffer.html#af53e7a9f38f80da6489adff9c2dee4c0">更多...</a><br /></td></tr>
+<tr class="separator:af53e7a9f38f80da6489adff9c2dee4c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af210c60928b46451a3cad0486f664267"><td class="memItemLeft" align="right" valign="top">T[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_r_debugger_1_1_circular_buffer.html#af210c60928b46451a3cad0486f664267">ToArray</a> ()</td></tr>
+<tr class="memdesc:af210c60928b46451a3cad0486f664267"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the buffer contents to an array, acording to the logical contents of the buffer (i.e. independent of the internal order/contents)  <a href="class_s_r_debugger_1_1_circular_buffer.html#af210c60928b46451a3cad0486f664267">更多...</a><br /></td></tr>
+<tr class="separator:af210c60928b46451a3cad0486f664267"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a7e4d0ac80d4c3ccb697b525fbef7a738"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_r_debugger_1_1_circular_buffer.html#a7e4d0ac80d4c3ccb697b525fbef7a738">Capacity</a><code> [get]</code></td></tr>
+<tr class="memdesc:a7e4d0ac80d4c3ccb697b525fbef7a738"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum capacity of the buffer. Elements pushed into the buffer after maximum capacity is reached (IsFull = true), will remove an element.  <a href="class_s_r_debugger_1_1_circular_buffer.html#a7e4d0ac80d4c3ccb697b525fbef7a738">更多...</a><br /></td></tr>
+<tr class="separator:a7e4d0ac80d4c3ccb697b525fbef7a738"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5d9d69277a7c82023bf6b3e3f8b4f7c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_r_debugger_1_1_circular_buffer.html#ae5d9d69277a7c82023bf6b3e3f8b4f7c">IsFull</a><code> [get]</code></td></tr>
+<tr class="separator:ae5d9d69277a7c82023bf6b3e3f8b4f7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94f55180cb66702530932af43c37308a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_r_debugger_1_1_circular_buffer.html#a94f55180cb66702530932af43c37308a">IsEmpty</a><code> [get]</code></td></tr>
+<tr class="separator:a94f55180cb66702530932af43c37308a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa000d790c46a8817e283f701db735014"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_r_debugger_1_1_circular_buffer.html#aa000d790c46a8817e283f701db735014">Count</a><code> [get]</code></td></tr>
+<tr class="memdesc:aa000d790c46a8817e283f701db735014"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current buffer size (the number of elements that the buffer has).  <a href="class_s_r_debugger_1_1_circular_buffer.html#aa000d790c46a8817e283f701db735014">更多...</a><br /></td></tr>
+<tr class="separator:aa000d790c46a8817e283f701db735014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e18db5a21692e2a9e76287a2df1e86c"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_r_debugger_1_1_circular_buffer.html#a1e18db5a21692e2a9e76287a2df1e86c">this[int index]</a><code> [getset]</code></td></tr>
+<tr class="separator:a1e18db5a21692e2a9e76287a2df1e86c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_interface_s_r_debugger_1_1_i_read_only_list"><td colspan="2" onclick="javascript:toggleInherit('properties_interface_s_r_debugger_1_1_i_read_only_list')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el" href="interface_s_r_debugger_1_1_i_read_only_list.html">SRDebugger.IReadOnlyList&lt; T &gt;</a></td></tr>
+<tr class="memitem:a89531bea2fb9aa0910265d8a182af8d9 inherit properties_interface_s_r_debugger_1_1_i_read_only_list"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_s_r_debugger_1_1_i_read_only_list.html#a89531bea2fb9aa0910265d8a182af8d9">Count</a><code> [get]</code></td></tr>
+<tr class="separator:a89531bea2fb9aa0910265d8a182af8d9 inherit properties_interface_s_r_debugger_1_1_i_read_only_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20c7c630777589e989368a4c8276621a inherit properties_interface_s_r_debugger_1_1_i_read_only_list"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_s_r_debugger_1_1_i_read_only_list.html#a20c7c630777589e989368a4c8276621a">this[int index]</a><code> [get]</code></td></tr>
+<tr class="separator:a20c7c630777589e989368a4c8276621a inherit properties_interface_s_r_debugger_1_1_i_read_only_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >Circular buffer. When writting to a full buffer: PushBack -&gt; removes this[0] / <a class="el" href="class_s_r_debugger_1_1_circular_buffer.html#a676a6e2b596550010438717d63b4cb0a" title="Element at the front of the buffer - this[0].">Front()</a> PushFront -&gt; removes this[Size-1] / <a class="el" href="class_s_r_debugger_1_1_circular_buffer.html#a815accd433aed45640c0468622af01d3" title="Element at the back of the buffer - this[Size - 1].">Back()</a> this implementation is inspired by <a href="http://www.boost.org/doc/libs/1_53_0/libs/circular_buffer/doc/circular_buffer.html">http://www.boost.org/doc/libs/1_53_0/libs/circular_buffer/doc/circular_buffer.html</a> because I liked their interface. </p>
+
+<p class="definition">在文件 <a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html">CircularBuffer.cs</a> 第 <a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00034">34</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a1f6f10399a4730a7c5f94fb9a94652b4" name="a1f6f10399a4730a7c5f94fb9a94652b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f6f10399a4730a7c5f94fb9a94652b4">&#9670;&nbsp;</a></span>CircularBuffer() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_r_debugger_1_1_circular_buffer.html">SRDebugger.CircularBuffer</a>&lt; T &gt;.<a class="el" href="class_s_r_debugger_1_1_circular_buffer.html">CircularBuffer</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>capacity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html">CircularBuffer.cs</a> 第 <a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00053">53</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8a6ae5d2af791182604381d61871fcdb" name="a8a6ae5d2af791182604381d61871fcdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a6ae5d2af791182604381d61871fcdb">&#9670;&nbsp;</a></span>CircularBuffer() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_r_debugger_1_1_circular_buffer.html">SRDebugger.CircularBuffer</a>&lt; T &gt;.<a class="el" href="class_s_r_debugger_1_1_circular_buffer.html">CircularBuffer</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>capacity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T[]&#160;</td>
+          <td class="paramname"><em>items</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes a new instance of the <a class="el" href="class_s_r_debugger_1_1_circular_buffer.html#a1f6f10399a4730a7c5f94fb9a94652b4">CircularBuffer&lt;T&gt;</a> class. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">capacity</td><td>Buffer capacity. Must be positive. </td></tr>
+    <tr><td class="paramname">items</td><td>Items to fill buffer with. Items length must be less than capacity. Sugestion: use Skip(x).Take(y).<a class="el" href="class_s_r_debugger_1_1_circular_buffer.html#af210c60928b46451a3cad0486f664267" title="Copies the buffer contents to an array, acording to the logical contents of the buffer (i....">ToArray()</a> to build this argument from any enumerable. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html">CircularBuffer.cs</a> 第 <a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00067">67</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a815accd433aed45640c0468622af01d3" name="a815accd433aed45640c0468622af01d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a815accd433aed45640c0468622af01d3">&#9670;&nbsp;</a></span>Back()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">T <a class="el" href="class_s_r_debugger_1_1_circular_buffer.html">SRDebugger.CircularBuffer</a>&lt; T &gt;.Back </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Element at the back of the buffer - this[Size - 1]. </p>
+<dl class="section return"><dt>返回</dt><dd>The value of the element of type T at the back of the buffer.</dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html">CircularBuffer.cs</a> 第 <a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00204">204</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab6694fb845643d439de3f537d860236d" name="ab6694fb845643d439de3f537d860236d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6694fb845643d439de3f537d860236d">&#9670;&nbsp;</a></span>Clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_s_r_debugger_1_1_circular_buffer.html">SRDebugger.CircularBuffer</a>&lt; T &gt;.Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html">CircularBuffer.cs</a> 第 <a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00152">152</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a676a6e2b596550010438717d63b4cb0a" name="a676a6e2b596550010438717d63b4cb0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a676a6e2b596550010438717d63b4cb0a">&#9670;&nbsp;</a></span>Front()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">T <a class="el" href="class_s_r_debugger_1_1_circular_buffer.html">SRDebugger.CircularBuffer</a>&lt; T &gt;.Front </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Element at the front of the buffer - this[0]. </p>
+<dl class="section return"><dt>返回</dt><dd>The value of the element of type T at the front of the buffer.</dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html">CircularBuffer.cs</a> 第 <a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00194">194</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a949006526ee3833029f16430ad289cca" name="a949006526ee3833029f16430ad289cca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a949006526ee3833029f16430ad289cca">&#9670;&nbsp;</a></span>GetEnumerator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IEnumerator&lt; T &gt; <a class="el" href="class_s_r_debugger_1_1_circular_buffer.html">SRDebugger.CircularBuffer</a>&lt; T &gt;.GetEnumerator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html">CircularBuffer.cs</a> 第 <a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00161">161</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ada729c994c802d1393b48d0f7352cfae" name="ada729c994c802d1393b48d0f7352cfae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada729c994c802d1393b48d0f7352cfae">&#9670;&nbsp;</a></span>PopBack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_s_r_debugger_1_1_circular_buffer.html">SRDebugger.CircularBuffer</a>&lt; T &gt;.PopBack </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes the element at the back of the buffer. Decreassing the Buffer size by 1. </p>
+
+<p class="definition">在文件 <a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html">CircularBuffer.cs</a> 第 <a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00260">260</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af53e7a9f38f80da6489adff9c2dee4c0" name="af53e7a9f38f80da6489adff9c2dee4c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af53e7a9f38f80da6489adff9c2dee4c0">&#9670;&nbsp;</a></span>PopFront()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_s_r_debugger_1_1_circular_buffer.html">SRDebugger.CircularBuffer</a>&lt; T &gt;.PopFront </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes the element at the front of the buffer. Decreassing the Buffer size by 1. </p>
+
+<p class="definition">在文件 <a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html">CircularBuffer.cs</a> 第 <a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00272">272</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8947d420ebf8b509b8467a39e57723e9" name="a8947d420ebf8b509b8467a39e57723e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8947d420ebf8b509b8467a39e57723e9">&#9670;&nbsp;</a></span>PushBack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_s_r_debugger_1_1_circular_buffer.html">SRDebugger.CircularBuffer</a>&lt; T &gt;.PushBack </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pushes a new element to the back of the buffer. <a class="el" href="class_s_r_debugger_1_1_circular_buffer.html#a815accd433aed45640c0468622af01d3" title="Element at the back of the buffer - this[Size - 1].">Back()</a>/this[Size-1] will now return this element. When the buffer is full, the element at <a class="el" href="class_s_r_debugger_1_1_circular_buffer.html#a676a6e2b596550010438717d63b4cb0a" title="Element at the front of the buffer - this[0].">Front()</a>/this[0] will be popped to allow for this new element to fit. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">item</td><td>Item to push to the back of the buffer</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html">CircularBuffer.cs</a> 第 <a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00217">217</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a36f698b017b5eab3c7b604a341a7c781" name="a36f698b017b5eab3c7b604a341a7c781"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36f698b017b5eab3c7b604a341a7c781">&#9670;&nbsp;</a></span>PushFront()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_s_r_debugger_1_1_circular_buffer.html">SRDebugger.CircularBuffer</a>&lt; T &gt;.PushFront </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pushes a new element to the front of the buffer. <a class="el" href="class_s_r_debugger_1_1_circular_buffer.html#a676a6e2b596550010438717d63b4cb0a" title="Element at the front of the buffer - this[0].">Front()</a>/this[0] will now return this element. When the buffer is full, the element at <a class="el" href="class_s_r_debugger_1_1_circular_buffer.html#a815accd433aed45640c0468622af01d3" title="Element at the back of the buffer - this[Size - 1].">Back()</a>/this[Size-1] will be popped to allow for this new element to fit. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">item</td><td>Item to push to the front of the buffer</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html">CircularBuffer.cs</a> 第 <a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00240">240</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af210c60928b46451a3cad0486f664267" name="af210c60928b46451a3cad0486f664267"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af210c60928b46451a3cad0486f664267">&#9670;&nbsp;</a></span>ToArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">T[] <a class="el" href="class_s_r_debugger_1_1_circular_buffer.html">SRDebugger.CircularBuffer</a>&lt; T &gt;.ToArray </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copies the buffer contents to an array, acording to the logical contents of the buffer (i.e. independent of the internal order/contents) </p>
+<dl class="section return"><dt>返回</dt><dd>A new array with a copy of the buffer contents.</dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html">CircularBuffer.cs</a> 第 <a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00286">286</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">属性说明</h2>
+<a id="a7e4d0ac80d4c3ccb697b525fbef7a738" name="a7e4d0ac80d4c3ccb697b525fbef7a738"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e4d0ac80d4c3ccb697b525fbef7a738">&#9670;&nbsp;</a></span>Capacity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_s_r_debugger_1_1_circular_buffer.html">SRDebugger.CircularBuffer</a>&lt; T &gt;.Capacity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maximum capacity of the buffer. Elements pushed into the buffer after maximum capacity is reached (IsFull = true), will remove an element. </p>
+
+<p class="definition">在文件 <a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html">CircularBuffer.cs</a> 第 <a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00097">97</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa000d790c46a8817e283f701db735014" name="aa000d790c46a8817e283f701db735014"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa000d790c46a8817e283f701db735014">&#9670;&nbsp;</a></span>Count</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="class_s_r_debugger_1_1_circular_buffer.html">SRDebugger.CircularBuffer</a>&lt; T &gt;.Count</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Current buffer size (the number of elements that the buffer has). </p>
+
+<p class="definition">在文件 <a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html">CircularBuffer.cs</a> 第 <a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00115">115</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a94f55180cb66702530932af43c37308a" name="a94f55180cb66702530932af43c37308a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94f55180cb66702530932af43c37308a">&#9670;&nbsp;</a></span>IsEmpty</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_s_r_debugger_1_1_circular_buffer.html">SRDebugger.CircularBuffer</a>&lt; T &gt;.IsEmpty</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html">CircularBuffer.cs</a> 第 <a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00107">107</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae5d9d69277a7c82023bf6b3e3f8b4f7c" name="ae5d9d69277a7c82023bf6b3e3f8b4f7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5d9d69277a7c82023bf6b3e3f8b4f7c">&#9670;&nbsp;</a></span>IsFull</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_s_r_debugger_1_1_circular_buffer.html">SRDebugger.CircularBuffer</a>&lt; T &gt;.IsFull</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html">CircularBuffer.cs</a> 第 <a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00102">102</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1e18db5a21692e2a9e76287a2df1e86c" name="a1e18db5a21692e2a9e76287a2df1e86c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e18db5a21692e2a9e76287a2df1e86c">&#9670;&nbsp;</a></span>this[int index]</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T <a class="el" href="class_s_r_debugger_1_1_circular_buffer.html">SRDebugger.CircularBuffer</a>&lt; T &gt;.this[int index]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html">CircularBuffer.cs</a> 第 <a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00120">120</a> 行定义.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>Unity/Assets/ThirdParty/StompyRobot/SRDebugger/Scripts/Internal/<a class="el" href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html">CircularBuffer.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_s_r_debugger.html">SRDebugger</a></li><li class="navelem"><a class="el" href="class_s_r_debugger_1_1_circular_buffer.html">CircularBuffer</a></li>
+    <li class="footer">生成于 2022年 四月 21日 星期四 10:43:10 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

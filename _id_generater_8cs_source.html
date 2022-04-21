@@ -255,19 +255,19 @@ $(document).ready(function(){initNavTree('_id_generater_8cs_source.html',''); in
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>            this.lastInstanceIdTime = TimeSinceThisYear();</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>            <span class="keywordflow">if</span> (this.lastInstanceIdTime &lt;= 0)</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>            {</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>                Log.Warning($<span class="stringliteral">&quot;lastInstanceIdTime less than 0: {this.lastInstanceIdTime}&quot;</span>);</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>                <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Warning($<span class="stringliteral">&quot;lastInstanceIdTime less than 0: {this.lastInstanceIdTime}&quot;</span>);</div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>                this.lastInstanceIdTime = 1;</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>            }</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>            this.lastIdTime = TimeSince2020();</div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>            <span class="keywordflow">if</span> (this.lastIdTime &lt;= 0)</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>            {</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>                Log.Warning($<span class="stringliteral">&quot;lastIdTime less than 0: {this.lastIdTime}&quot;</span>);</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>                <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Warning($<span class="stringliteral">&quot;lastIdTime less than 0: {this.lastIdTime}&quot;</span>);</div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                this.lastIdTime = 1;</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>            }</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>            this.lastUnitIdTime = TimeSince2020();</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>            <span class="keywordflow">if</span> (this.lastUnitIdTime &lt;= 0)</div>
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>            {</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>                Log.Warning($<span class="stringliteral">&quot;lastUnitIdTime less than 0: {this.lastUnitIdTime}&quot;</span>);</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>                <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Warning($<span class="stringliteral">&quot;lastUnitIdTime less than 0: {this.lastUnitIdTime}&quot;</span>);</div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>                this.lastUnitIdTime = 1;</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>            }</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        }</div>
@@ -309,7 +309,7 @@ $(document).ready(function(){initNavTree('_id_generater_8cs_source.html',''); in
 <div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>                    ++this.lastInstanceIdTime; <span class="comment">// 借用下一秒</span></div>
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>                    this.instanceIdValue = 0;</div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>                    Log.Error($<span class="stringliteral">&quot;instanceid count per sec overflow: {time} {this.lastInstanceIdTime}&quot;</span>);</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>                    <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Error($<span class="stringliteral">&quot;instanceid count per sec overflow: {time} {this.lastInstanceIdTime}&quot;</span>);</div>
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>                }</div>
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>            }</div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
@@ -334,7 +334,7 @@ $(document).ready(function(){initNavTree('_id_generater_8cs_source.html',''); in
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>                {</div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>                    this.value = 0;</div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>                    ++this.lastIdTime; <span class="comment">// 借用下一秒</span></div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>                    Log.Error($<span class="stringliteral">&quot;id count per sec overflow: {time} {this.lastIdTime}&quot;</span>);</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>                    <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Error($<span class="stringliteral">&quot;id count per sec overflow: {time} {this.lastIdTime}&quot;</span>);</div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>                }</div>
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>            }</div>
 <div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>            </div>
@@ -363,7 +363,7 @@ $(document).ready(function(){initNavTree('_id_generater_8cs_source.html',''); in
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>                {</div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>                    this.unitIdValue = 0;</div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>                    ++this.lastUnitIdTime; <span class="comment">// 借用下一秒</span></div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>                    Log.Error($<span class="stringliteral">&quot;unitid count per sec overflow: {time} {this.lastUnitIdTime}&quot;</span>);</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>                    <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Error($<span class="stringliteral">&quot;unitid count per sec overflow: {time} {this.lastUnitIdTime}&quot;</span>);</div>
 <div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>                }</div>
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>            }</div>
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
@@ -372,6 +372,7 @@ $(document).ready(function(){initNavTree('_id_generater_8cs_source.html',''); in
 <div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>        }</div>
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    }</div>
 <div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>}</div>
+<div class="ttc" id="a_bugly_agent_8cs_html_a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b"><div class="ttname"><a href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">LogSeverity.Log</a></div><div class="ttdeci">@ Log</div></div>
 <div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
 <div class="ttc" id="aclass_e_t_1_1_id_generater_html"><div class="ttname"><a href="class_e_t_1_1_id_generater.html">ET.IdGenerater</a></div><div class="ttdef"><b>Definition:</b> <a href="_id_generater_8cs_source.html#l00142">IdGenerater.cs:143</a></div></div>
 <div class="ttc" id="aclass_e_t_1_1_id_generater_html_a2040f23d9a23f476e0403533801a45a6"><div class="ttname"><a href="class_e_t_1_1_id_generater.html#a2040f23d9a23f476e0403533801a45a6">ET.IdGenerater.MaxZone</a></div><div class="ttdeci">const int MaxZone</div><div class="ttdef"><b>Definition:</b> <a href="_id_generater_8cs_source.html#l00147">IdGenerater.cs:147</a></div></div>
@@ -419,7 +420,7 @@ $(document).ready(function(){initNavTree('_id_generater_8cs_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_0593c8c31e62684349ddf63300956e7f.html">Codes</a></li><li class="navelem"><a class="el" href="dir_318b4bff51c08ca39d91ce903db9adc7.html">Model</a></li><li class="navelem"><a class="el" href="dir_335cc68b411e9bf3976cbb185811ba4a.html">Core</a></li><li class="navelem"><a class="el" href="dir_d7104f11b3f15e32e96ef785a5a4bfdc.html">Object</a></li><li class="navelem"><a class="el" href="_id_generater_8cs.html">IdGenerater.cs</a></li>
-    <li class="footer">生成于 2022年 四月 21日 星期四 07:49:36 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">生成于 2022年 四月 21日 星期四 10:43:02 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -2,6 +2,9 @@ var dir_af246fe73084506dd0aaf52d5512b706 =
 [
     [ "Helper", "dir_c0eb1d87d9e27088c1a665d670356d9c.html", "dir_c0eb1d87d9e27088c1a665d670356d9c" ],
     [ "Log", "dir_cf79f1420d4519d213c342110930d6cf.html", "dir_cf79f1420d4519d213c342110930d6cf" ],
+    [ "BuildInfo.cs", "_build_info_8cs.html", [
+      [ "BuildInfo", "class_build_info.html", "class_build_info" ]
+    ] ],
     [ "DoubleMap.cs", "_double_map_8cs.html", [
       [ "ET.DoubleMap< K, V >", "class_e_t_1_1_double_map.html", "class_e_t_1_1_double_map" ]
     ] ],

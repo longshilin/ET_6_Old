@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('_server_2_hotfix_2_demo_2_move_2_move_
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            }</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            MessageHelper.Broadcast(unit, m2CPathfindingResult);</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            Log.Error($<span class="stringliteral">&quot;m2CPathfindingResult {m2CPathfindingResult}&quot;</span>);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Error($<span class="stringliteral">&quot;m2CPathfindingResult {m2CPathfindingResult}&quot;</span>);</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="keywordtype">bool</span> ret = await unit.GetComponent&lt;MoveComponent&gt;().MoveToAsync(path, speed);</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <span class="keywordflow">if</span> (ret) <span class="comment">// 如果返回false，说明被其它移动取消了，这时候不需要通知客户端stop</span></div>
@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('_server_2_hotfix_2_demo_2_move_2_move_
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        {</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            MessageHelper.Broadcast(unit, <span class="keyword">new</span> M2C_Stop()</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            {</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                <a class="code hl_enumvalue" href="namespace_ingame_debug_console.html#aaf8eccf13b9d0023ffb2293bcc137a98a902b0d55fddef6f8d651fe1035b7d4bd">Error</a> = error,</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil.html#a67030701486c877ca826cc5ffad78485a902b0d55fddef6f8d651fe1035b7d4bd">Error</a> = error,</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                Id = unit.Id, </div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                X = unit.Position.x,</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                Y = unit.Position.y,</div>
@@ -158,9 +158,10 @@ $(document).ready(function(){initNavTree('_server_2_hotfix_2_demo_2_move_2_move_
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        }</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}</div>
+<div class="ttc" id="a_bugly_agent_8cs_html_a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b"><div class="ttname"><a href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">LogSeverity.Log</a></div><div class="ttdeci">@ Log</div></div>
 <div class="ttc" id="anamespace_e_t_html"><div class="ttname"><a href="namespace_e_t.html">ET</a></div><div class="ttdef"><b>Definition:</b> <a href="_robot_2_app_2_program_8cs_source.html#l00008">Program.cs:9</a></div></div>
 <div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil_html_a3641bb484885e18ab471477ab004fe59a0d61f8370cad1d412f80b84d143e1257"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_cil.html#a3641bb484885e18ab471477ab004fe59a0d61f8370cad1d412f80b84d143e1257">ILRuntime.Mono.Cecil.Cil.DocumentLanguage.C</a></div><div class="ttdeci">@ C</div></div>
-<div class="ttc" id="anamespace_ingame_debug_console_html_aaf8eccf13b9d0023ffb2293bcc137a98a902b0d55fddef6f8d651fe1035b7d4bd"><div class="ttname"><a href="namespace_ingame_debug_console.html#aaf8eccf13b9d0023ffb2293bcc137a98a902b0d55fddef6f8d651fe1035b7d4bd">IngameDebugConsole.DebugLogFilter.Error</a></div><div class="ttdeci">@ Error</div></div>
+<div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_html_a67030701486c877ca826cc5ffad78485a902b0d55fddef6f8d651fe1035b7d4bd"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil.html#a67030701486c877ca826cc5ffad78485a902b0d55fddef6f8d651fe1035b7d4bd">ILRuntime.Mono.Cecil.NativeType.Error</a></div><div class="ttdeci">@ Error</div></div>
 <div class="ttc" id="anamespace_system_1_1_collections_1_1_generic_html"><div class="ttname"><a href="namespace_system_1_1_collections_1_1_generic.html">System.Collections.Generic</a></div></div>
 <div class="ttc" id="anamespace_system_1_1_collections_html"><div class="ttname"><a href="namespace_system_1_1_collections.html">System.Collections</a></div></div>
 <div class="ttc" id="anamespace_system_html"><div class="ttname"><a href="namespace_system.html">System</a></div><div class="ttdef"><b>Definition:</b> <a href="_async_method_builder_attribute_8cs_source.html#l00002">AsyncMethodBuilderAttribute.cs:3</a></div></div>
@@ -176,7 +177,7 @@ $(document).ready(function(){initNavTree('_server_2_hotfix_2_demo_2_move_2_move_
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1a445cb237d74f7a5f8d11ec3b0585cc.html">Server</a></li><li class="navelem"><a class="el" href="dir_0134ce7b2e6baa37e8c29df3d3b5b77b.html">Hotfix</a></li><li class="navelem"><a class="el" href="dir_41255c529257d9b5da5ae8954339fb27.html">Demo</a></li><li class="navelem"><a class="el" href="dir_a17d07c0527e2e51b77deffcc61bc544.html">Move</a></li><li class="navelem"><a class="el" href="_server_2_hotfix_2_demo_2_move_2_move_helper_8cs.html">MoveHelper.cs</a></li>
-    <li class="footer">生成于 2022年 四月 21日 星期四 07:49:28 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">生成于 2022年 四月 21日 星期四 10:42:54 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

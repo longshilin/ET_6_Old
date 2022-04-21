@@ -93,15 +93,15 @@ $(document).ready(function(){initNavTree('_robot_log_8cs_source.html',''); initR
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>        {</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>                <span class="keyword">private</span> <span class="keyword">static</span> readonly ILog logger = <span class="keyword">new</span> NLogger(<span class="stringliteral">&quot;RobotConsole&quot;</span>);</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>                </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>                <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> Debug(<span class="keywordtype">string</span> msg)</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>                <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_typedef" href="namespace_s_r_f_1_1_components.html#a6348be36dc001e60722e740235ae6713">Debug</a>(<span class="keywordtype">string</span> msg)</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>                {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>                        Log.Info(msg);</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>                        <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Info(msg);</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>                        logger.Info(msg);</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>                }</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>                </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>                <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> Debug(<span class="keywordtype">string</span> msg, params <span class="keywordtype">object</span>[] args)</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>                <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_typedef" href="namespace_s_r_f_1_1_components.html#a6348be36dc001e60722e740235ae6713">Debug</a>(<span class="keywordtype">string</span> msg, params <span class="keywordtype">object</span>[] args)</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>                {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                        Log.Info(msg);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                        <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Info(msg);</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>                        logger.Info(msg, args);</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                }</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
@@ -111,15 +111,17 @@ $(document).ready(function(){initNavTree('_robot_log_8cs_source.html',''); initR
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                }</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        }</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}</div>
+<div class="ttc" id="a_bugly_agent_8cs_html_a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b"><div class="ttname"><a href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">LogSeverity.Log</a></div><div class="ttdeci">@ Log</div></div>
 <div class="ttc" id="anamespace_e_t_html"><div class="ttname"><a href="namespace_e_t.html">ET</a></div><div class="ttdef"><b>Definition:</b> <a href="_robot_2_app_2_program_8cs_source.html#l00008">Program.cs:9</a></div></div>
 <div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_html_aa57d86c1a9063cff89fdc10025551ec2abccaa4aa80831b76c11240a16447975f"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil.html#aa57d86c1a9063cff89fdc10025551ec2abccaa4aa80831b76c11240a16447975f">ILRuntime.Mono.Cecil.ModuleKind.Console</a></div><div class="ttdeci">@ Console</div></div>
+<div class="ttc" id="anamespace_s_r_f_1_1_components_html_a6348be36dc001e60722e740235ae6713"><div class="ttname"><a href="namespace_s_r_f_1_1_components.html#a6348be36dc001e60722e740235ae6713">SRF.Components.Debug</a></div><div class="ttdeci">UnityEngine.Debug Debug</div><div class="ttdef"><b>Definition:</b> <a href="_s_r_auto_singleton_8cs_source.html#l00005">SRAutoSingleton.cs:5</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_63b3edbb6dcb5a7e8e866ca08f7102c4.html">Robot</a></li><li class="navelem"><a class="el" href="dir_57f31ac86edae0d283b5811b67df28b6.html">Model</a></li><li class="navelem"><a class="el" href="dir_8c4ca6f0906a0246cdbefdf81ad7242d.html">Module</a></li><li class="navelem"><a class="el" href="dir_5e3d7ba3eb3cbf13aa319f2e8c79cb19.html">RobotCase</a></li><li class="navelem"><a class="el" href="_robot_log_8cs.html">RobotLog.cs</a></li>
-    <li class="footer">生成于 2022年 四月 21日 星期四 07:49:28 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">生成于 2022年 四月 21日 星期四 10:42:54 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

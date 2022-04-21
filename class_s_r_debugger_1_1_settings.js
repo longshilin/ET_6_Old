@@ -1,0 +1,65 @@
+var class_s_r_debugger_1_1_settings =
+[
+    [ "KeyboardShortcut", "class_s_r_debugger_1_1_settings_1_1_keyboard_shortcut.html", "class_s_r_debugger_1_1_settings_1_1_keyboard_shortcut" ],
+    [ "ShortcutActions", "class_s_r_debugger_1_1_settings.html#a890ec69902baba3c78ab1ef6c46fb2dd", [
+      [ "None", "class_s_r_debugger_1_1_settings.html#a890ec69902baba3c78ab1ef6c46fb2dda6adf97f83acf6453d4a6a4b1070f3754", null ],
+      [ "OpenSystemInfoTab", "class_s_r_debugger_1_1_settings.html#a890ec69902baba3c78ab1ef6c46fb2ddaf9eafdbde4b0ff457eb90854845585e9", null ],
+      [ "OpenConsoleTab", "class_s_r_debugger_1_1_settings.html#a890ec69902baba3c78ab1ef6c46fb2ddab1c3e89fd4e2ee6ae3841c4f967c1104", null ],
+      [ "OpenOptionsTab", "class_s_r_debugger_1_1_settings.html#a890ec69902baba3c78ab1ef6c46fb2ddad0df06baec2cd3c8d18b3a9a97afff5f", null ],
+      [ "OpenProfilerTab", "class_s_r_debugger_1_1_settings.html#a890ec69902baba3c78ab1ef6c46fb2ddaa714cd219d2ab09e74d7fae1555008cf", null ],
+      [ "OpenBugReporterTab", "class_s_r_debugger_1_1_settings.html#a890ec69902baba3c78ab1ef6c46fb2dda3dac9cba02580e267ed98394cab858a7", null ],
+      [ "ClosePanel", "class_s_r_debugger_1_1_settings.html#a890ec69902baba3c78ab1ef6c46fb2ddaf02671c2462f8676f5de45f3aeeb9b97", null ],
+      [ "OpenPanel", "class_s_r_debugger_1_1_settings.html#a890ec69902baba3c78ab1ef6c46fb2dda4bebe6568f3b82d203fddac78ee8016c", null ],
+      [ "TogglePanel", "class_s_r_debugger_1_1_settings.html#a890ec69902baba3c78ab1ef6c46fb2dda32773ff2cb3931d490a76cd18a38c2a4", null ],
+      [ "ShowBugReportPopover", "class_s_r_debugger_1_1_settings.html#a890ec69902baba3c78ab1ef6c46fb2dda16e0865f704bc54171625675ee7e9839", null ],
+      [ "ToggleDockedConsole", "class_s_r_debugger_1_1_settings.html#a890ec69902baba3c78ab1ef6c46fb2ddaecadca1790eb6d076571c5fa4d73361d", null ],
+      [ "ToggleDockedProfiler", "class_s_r_debugger_1_1_settings.html#a890ec69902baba3c78ab1ef6c46fb2dda1261475947169bedc4ea0fd01eb4a199", null ]
+    ] ],
+    [ "TriggerBehaviours", "class_s_r_debugger_1_1_settings.html#ae2d5f9ce4135ceef01f77876847f91c0", [
+      [ "TripleTap", "class_s_r_debugger_1_1_settings.html#ae2d5f9ce4135ceef01f77876847f91c0a0945afa0dc54f9a9b255db37d7b5118b", null ],
+      [ "TapAndHold", "class_s_r_debugger_1_1_settings.html#ae2d5f9ce4135ceef01f77876847f91c0aaa5dbbf02c5ba433a996e63825e682a0", null ],
+      [ "DoubleTap", "class_s_r_debugger_1_1_settings.html#ae2d5f9ce4135ceef01f77876847f91c0a8f3f96ab0875983edbc267d3cec4aed9", null ]
+    ] ],
+    [ "TriggerEnableModes", "class_s_r_debugger_1_1_settings.html#aa9716f16f92d7a8ac3e67a914f4a7d32", [
+      [ "Enabled", "class_s_r_debugger_1_1_settings.html#aa9716f16f92d7a8ac3e67a914f4a7d32a00d23a76e43b46dae9ec7aa9dcbebb32", null ],
+      [ "MobileOnly", "class_s_r_debugger_1_1_settings.html#aa9716f16f92d7a8ac3e67a914f4a7d32ada4b1ef1c9cd62661fa1065c5d8a8b20", null ],
+      [ "Off", "class_s_r_debugger_1_1_settings.html#aa9716f16f92d7a8ac3e67a914f4a7d32ad15305d7a4e34e02489c74a5ef542f36", null ],
+      [ "DevelopmentBuildsOnly", "class_s_r_debugger_1_1_settings.html#aa9716f16f92d7a8ac3e67a914f4a7d32aaa9b393528445ce31e3f40327268b239", null ]
+    ] ],
+    [ "UIModes", "class_s_r_debugger_1_1_settings.html#adcbcd2d89bc97c3c742320109e51dcea", [
+      [ "NewInputSystem", "class_s_r_debugger_1_1_settings.html#adcbcd2d89bc97c3c742320109e51dceaaed0426791aad968e03ad28eadcd11896", null ],
+      [ "LegacyInputSystem", "class_s_r_debugger_1_1_settings.html#adcbcd2d89bc97c3c742320109e51dceaa9caf1347dc4f0e2257c7b955b93fac75", null ]
+    ] ],
+    [ "ApiKey", "class_s_r_debugger_1_1_settings.html#af4097f5fd17765421c1f34d11f47d0a0", null ],
+    [ "AutomaticallyShowCursor", "class_s_r_debugger_1_1_settings.html#a8f62f0f9395edd5de785b738d6544f33", null ],
+    [ "CollapseDuplicateLogEntries", "class_s_r_debugger_1_1_settings.html#a7f5a2b0612e87d285a5c43c40830e565", null ],
+    [ "ConsoleAlignment", "class_s_r_debugger_1_1_settings.html#af323f38da04588dc1fdb26c03274225a", null ],
+    [ "DebugCameraDepth", "class_s_r_debugger_1_1_settings.html#a85c8263a2dc509611bc091532f65bc55", null ],
+    [ "DebugLayer", "class_s_r_debugger_1_1_settings.html#a846a5d9a6bc988c0b28fbe326ea130ab", null ],
+    [ "DefaultTab", "class_s_r_debugger_1_1_settings.html#a812c60e9c75a2e66d4313b59e39d657e", null ],
+    [ "DisabledTabs", "class_s_r_debugger_1_1_settings.html#a41f65371b6f27211fee0666d4591aa22", null ],
+    [ "EnableBackgroundTransparency", "class_s_r_debugger_1_1_settings.html#aa718e9e1c95b8c98f85b1ae6431d5dd1", null ],
+    [ "EnableBugReporter", "class_s_r_debugger_1_1_settings.html#a4e379bbda3e72d353e53d92686cf9822", null ],
+    [ "EnableBugReportScreenshot", "class_s_r_debugger_1_1_settings.html#a1fba2ecdb798b9349bce0734fe58879e", null ],
+    [ "EnableEventSystemGeneration", "class_s_r_debugger_1_1_settings.html#adae9e3b2475b276d0501482256ceaf28", null ],
+    [ "EnableKeyboardShortcuts", "class_s_r_debugger_1_1_settings.html#a8c858e9f846a3b052349aff540b9ef60", null ],
+    [ "EnableTrigger", "class_s_r_debugger_1_1_settings.html#af27285fc6fe5059dd34de04066db0ba2", null ],
+    [ "EntryCode", "class_s_r_debugger_1_1_settings.html#abdddd7abf6b7038b00c7135ec851baf4", null ],
+    [ "ErrorNotification", "class_s_r_debugger_1_1_settings.html#a236d46c79afd861aef702da08bfe6105", null ],
+    [ "IsEnabled", "class_s_r_debugger_1_1_settings.html#a0298f783d6ea0721d94a0f37c3348ff5", null ],
+    [ "KeyboardEscapeClose", "class_s_r_debugger_1_1_settings.html#a7ea363764c4386bea5d6aad8781b6a58", null ],
+    [ "KeyboardShortcuts", "class_s_r_debugger_1_1_settings.html#ab1beada8554cfbd7332adc3cbee4b9b0", null ],
+    [ "MaximumConsoleEntries", "class_s_r_debugger_1_1_settings.html#a3407319c0e1748dc8647565351b90886", null ],
+    [ "OptionsAlignment", "class_s_r_debugger_1_1_settings.html#a62495ec4a3e7068dde59eee380941608", null ],
+    [ "ProfilerAlignment", "class_s_r_debugger_1_1_settings.html#a3283f6ea912fbf1fa09b609ec05a3ccf", null ],
+    [ "RequireCode", "class_s_r_debugger_1_1_settings.html#a80e462d1a56f0d2461951e5cca7aabd8", null ],
+    [ "RequireEntryCodeEveryTime", "class_s_r_debugger_1_1_settings.html#a40cd959b6e8a66e8c16e89646d187840", null ],
+    [ "RichTextInConsole", "class_s_r_debugger_1_1_settings.html#a6174c12ddc109cab573f557249a16a66", null ],
+    [ "TriggerBehaviour", "class_s_r_debugger_1_1_settings.html#a5c08bb822f23214fb7ed6d171dc87036", null ],
+    [ "TriggerPosition", "class_s_r_debugger_1_1_settings.html#a64c96b2fc89ed5c440cf2cfd4dcfa8cd", null ],
+    [ "UIInputMode", "class_s_r_debugger_1_1_settings.html#aa8636838f52f5b90afa59f2f6813dc36", null ],
+    [ "UIScale", "class_s_r_debugger_1_1_settings.html#adec4c4f2bbaed47fcb3023c6c109a331", null ],
+    [ "UnloadOnClose", "class_s_r_debugger_1_1_settings.html#a9fcc5eb4c4b9f5b9d0d3a1897dba5303", null ],
+    [ "UseDebugCamera", "class_s_r_debugger_1_1_settings.html#a4dcfb95b0a32f6f1a3a0b09737eca866", null ],
+    [ "PropertyChanged", "class_s_r_debugger_1_1_settings.html#a07f55d7141d582697fa4f375cc2b7a75", null ]
+];

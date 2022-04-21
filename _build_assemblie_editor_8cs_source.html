@@ -218,18 +218,18 @@ $(document).ready(function(){initNavTree('_build_assemblie_editor_8cs_source.htm
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>            assemblyBuilder.buildTargetGroup = buildTargetGroup;</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            assemblyBuilder.buildStarted += delegate(<span class="keywordtype">string</span> assemblyPath) { Debug.LogFormat(<span class="stringliteral">&quot;build start：&quot;</span> + assemblyPath); };</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            assemblyBuilder.buildStarted += delegate(<span class="keywordtype">string</span> assemblyPath) { <a class="code hl_typedef" href="_s_r_debug_util_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.LogFormat(<span class="stringliteral">&quot;build start：&quot;</span> + assemblyPath); };</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            assemblyBuilder.buildFinished += delegate(<span class="keywordtype">string</span> assemblyPath, CompilerMessage[] compilerMessages)</div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>            {</div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                <span class="keywordtype">int</span> errorCount = compilerMessages.Count(m =&gt; m.type == CompilerMessageType.Error);</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                <span class="keywordtype">int</span> warningCount = compilerMessages.Count(m =&gt; m.type == CompilerMessageType.Warning);</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                Debug.LogFormat(<span class="stringliteral">&quot;Warnings: {0} - Errors: {1}&quot;</span>, warningCount, errorCount);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                <a class="code hl_typedef" href="_s_r_debug_util_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.LogFormat(<span class="stringliteral">&quot;Warnings: {0} - Errors: {1}&quot;</span>, warningCount, errorCount);</div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>                <span class="keywordflow">if</span> (warningCount &gt; 0)</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>                {</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>                    Debug.LogFormat(<span class="stringliteral">&quot;有{0}个Warning!!!&quot;</span>, warningCount);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>                    <a class="code hl_typedef" href="_s_r_debug_util_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.LogFormat(<span class="stringliteral">&quot;有{0}个Warning!!!&quot;</span>, warningCount);</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                }</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>                <span class="keywordflow">if</span> (errorCount &gt; 0)</div>
@@ -238,7 +238,7 @@ $(document).ready(function(){initNavTree('_build_assemblie_editor_8cs_source.htm
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                    {</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>                        <span class="keywordflow">if</span> (compilerMessages[i].type == CompilerMessageType.Error)</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>                        {</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                            Debug.LogError(compilerMessages[i].message);</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                            <a class="code hl_typedef" href="_s_r_debug_util_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.LogError(compilerMessages[i].message);</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                        }</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>                    }</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>                }</div>
@@ -247,7 +247,7 @@ $(document).ready(function(){initNavTree('_build_assemblie_editor_8cs_source.htm
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>            <span class="comment">//开始构建</span></div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            <span class="keywordflow">if</span> (!assemblyBuilder.Build())</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>            {</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>                Debug.LogErrorFormat(<span class="stringliteral">&quot;build fail：&quot;</span> + assemblyBuilder.assemblyPath);</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>                <a class="code hl_typedef" href="_s_r_debug_util_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.LogErrorFormat(<span class="stringliteral">&quot;build fail：&quot;</span> + assemblyBuilder.assemblyPath);</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>                <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>            }</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        }</div>
@@ -263,7 +263,7 @@ $(document).ready(function(){initNavTree('_build_assemblie_editor_8cs_source.htm
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>                PlayerSettings.SetScriptingDefineSymbolsForGroup(EditorUserBuildSettings.selectedBuildTargetGroup, newDefines);</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>            }</div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>            Debug.Log($<span class="stringliteral">&quot;DefineSymbols: {newDefines}&quot;</span>);</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>            <a class="code hl_typedef" href="_s_r_debug_util_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log($<span class="stringliteral">&quot;DefineSymbols: {newDefines}&quot;</span>);</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        }</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
@@ -271,19 +271,19 @@ $(document).ready(function(){initNavTree('_build_assemblie_editor_8cs_source.htm
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        {</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>            <span class="keywordflow">while</span> (EditorApplication.isCompiling)</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>            {</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>                Debug.Log(<span class="stringliteral">&quot;Compiling wait1&quot;</span>);</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>                <a class="code hl_typedef" href="_s_r_debug_util_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log(<span class="stringliteral">&quot;Compiling wait1&quot;</span>);</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>                <span class="comment">// 主线程sleep并不影响编译线程</span></div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>                Thread.Sleep(1000);</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>                Debug.Log(<span class="stringliteral">&quot;Compiling wait2&quot;</span>);</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>                <a class="code hl_typedef" href="_s_r_debug_util_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log(<span class="stringliteral">&quot;Compiling wait2&quot;</span>);</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>            }</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            </div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            Debug.Log(<span class="stringliteral">&quot;Compiling finish&quot;</span>);</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            <a class="code hl_typedef" href="_s_r_debug_util_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log(<span class="stringliteral">&quot;Compiling finish&quot;</span>);</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>            Directory.CreateDirectory(CodeDir);</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>            <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a07e14046345a55289df7d86530739aada0b27918290ff5323bea1e3b78a9cf04e">File</a>.Copy(<a class="code hl_typedef" href="_process_helper_8cs.html#a5d3f395d3257bcd58335037355f0d7cc">Path</a>.Combine(Define.BuildOutputDir, <span class="stringliteral">&quot;Code.dll&quot;</span>), <a class="code hl_typedef" href="_process_helper_8cs.html#a5d3f395d3257bcd58335037355f0d7cc">Path</a>.Combine(CodeDir, <span class="stringliteral">&quot;Code.dll.bytes&quot;</span>), <span class="keyword">true</span>);</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>            <a class="code hl_enumvalue" href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a07e14046345a55289df7d86530739aada0b27918290ff5323bea1e3b78a9cf04e">File</a>.Copy(<a class="code hl_typedef" href="_process_helper_8cs.html#a5d3f395d3257bcd58335037355f0d7cc">Path</a>.Combine(Define.BuildOutputDir, <span class="stringliteral">&quot;Code.pdb&quot;</span>), <a class="code hl_typedef" href="_process_helper_8cs.html#a5d3f395d3257bcd58335037355f0d7cc">Path</a>.Combine(CodeDir, <span class="stringliteral">&quot;Code.pdb.bytes&quot;</span>), <span class="keyword">true</span>);</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>            AssetDatabase.Refresh();</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>            Debug.Log(<span class="stringliteral">&quot;copy Code.dll to Bundles/Code success!&quot;</span>);</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>            <a class="code hl_typedef" href="_s_r_debug_util_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log(<span class="stringliteral">&quot;copy Code.dll to Bundles/Code success!&quot;</span>);</div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>            </div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>            <span class="comment">// 设置ab包</span></div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>            AssetImporter assetImporter1 = AssetImporter.GetAtPath(<span class="stringliteral">&quot;Assets/Bundles/Code/Code.dll.bytes&quot;</span>);</div>
@@ -291,9 +291,9 @@ $(document).ready(function(){initNavTree('_build_assemblie_editor_8cs_source.htm
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>            AssetImporter assetImporter2 = AssetImporter.GetAtPath(<span class="stringliteral">&quot;Assets/Bundles/Code/Code.pdb.bytes&quot;</span>);</div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>            assetImporter2.assetBundleName = <span class="stringliteral">&quot;Code.unity3d&quot;</span>;</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>            AssetDatabase.Refresh();</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>            Debug.Log(<span class="stringliteral">&quot;set assetbundle success!&quot;</span>);</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>            <a class="code hl_typedef" href="_s_r_debug_util_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log(<span class="stringliteral">&quot;set assetbundle success!&quot;</span>);</div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>            </div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>            Debug.Log(<span class="stringliteral">&quot;build success!&quot;</span>);</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>            <a class="code hl_typedef" href="_s_r_debug_util_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a>.Log(<span class="stringliteral">&quot;build success!&quot;</span>);</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>            <span class="comment">//反射获取当前Game视图，提示编译完成</span></div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>            ShowNotification(<span class="stringliteral">&quot;Build Code Success&quot;</span>);</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        }</div>
@@ -308,6 +308,7 @@ $(document).ready(function(){initNavTree('_build_assemblie_editor_8cs_source.htm
 <div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>}</div>
 <div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
 <div class="ttc" id="a_process_helper_8cs_html_a5d3f395d3257bcd58335037355f0d7cc"><div class="ttname"><a href="_process_helper_8cs.html#a5d3f395d3257bcd58335037355f0d7cc">Path</a></div><div class="ttdeci">System.IO.Path Path</div><div class="ttdef"><b>Definition:</b> <a href="_process_helper_8cs_source.html#l00005">ProcessHelper.cs:5</a></div></div>
+<div class="ttc" id="a_s_r_debug_util_8cs_html_a0100be52d45f14348918ea69ec09f959"><div class="ttname"><a href="_s_r_debug_util_8cs.html#a0100be52d45f14348918ea69ec09f959">Debug</a></div><div class="ttdeci">UnityEngine.Debug Debug</div><div class="ttdef"><b>Definition:</b> <a href="_s_r_debug_util_8cs_source.html#l00006">SRDebugUtil.cs:6</a></div></div>
 <div class="ttc" id="anamespace_e_t_html"><div class="ttname"><a href="namespace_e_t.html">ET</a></div><div class="ttdef"><b>Definition:</b> <a href="_robot_2_app_2_program_8cs_source.html#l00008">Program.cs:9</a></div></div>
 <div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_html_a07e14046345a55289df7d86530739aada0b27918290ff5323bea1e3b78a9cf04e"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a07e14046345a55289df7d86530739aada0b27918290ff5323bea1e3b78a9cf04e">ILRuntime.Mono.Cecil.Metadata.Table.File</a></div><div class="ttdeci">@ File</div></div>
 <div class="ttc" id="anamespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata_html_a07e14046345a55289df7d86530739aadad75c45e11c8aeb13494dba59a388a164"><div class="ttname"><a href="namespace_i_l_runtime_1_1_mono_1_1_cecil_1_1_metadata.html#a07e14046345a55289df7d86530739aadad75c45e11c8aeb13494dba59a388a164">ILRuntime.Mono.Cecil.Metadata.Table.Assembly</a></div><div class="ttdeci">@ Assembly</div></div>
@@ -323,7 +324,7 @@ $(document).ready(function(){initNavTree('_build_assemblie_editor_8cs_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_3b33dffaa21a2ac6f7978a949ffd4e41.html">Assets</a></li><li class="navelem"><a class="el" href="dir_3a76d1108beca0c0cd39a902932cb060.html">Editor</a></li><li class="navelem"><a class="el" href="dir_bb7e890493c0b3f2297165065665898e.html">BuildEditor</a></li><li class="navelem"><a class="el" href="_build_assemblie_editor_8cs.html">BuildAssemblieEditor.cs</a></li>
-    <li class="footer">生成于 2022年 四月 21日 星期四 07:49:29 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">生成于 2022年 四月 21日 星期四 10:42:54 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -418,6 +418,7 @@ var namespace_e_t =
     [ "OperaStandaloneComponentAwakeSystem", "class_e_t_1_1_opera_standalone_component_awake_system.html", "class_e_t_1_1_opera_standalone_component_awake_system" ],
     [ "OperaStandaloneComponentUpdateSystem", "class_e_t_1_1_opera_standalone_component_update_system.html", "class_e_t_1_1_opera_standalone_component_update_system" ],
     [ "Options", "class_e_t_1_1_options.html", "class_e_t_1_1_options" ],
+    [ "Packager", "class_e_t_1_1_packager.html", null ],
     [ "Packet", "struct_e_t_1_1_packet.html", "struct_e_t_1_1_packet" ],
     [ "PacketParser", "class_e_t_1_1_packet_parser.html", "class_e_t_1_1_packet_parser" ],
     [ "PathfindingComponent", "class_e_t_1_1_pathfinding_component.html", "class_e_t_1_1_pathfinding_component" ],
@@ -632,6 +633,13 @@ var namespace_e_t =
       [ "None", "namespace_e_t.html#a7ca00ff8785a97975b08452b59d09e5ca6adf97f83acf6453d4a6a4b1070f3754", null ],
       [ "Idle", "namespace_e_t.html#a7ca00ff8785a97975b08452b59d09e5cae599161956d626eda4cb0a5ffb85271c", null ],
       [ "Run", "namespace_e_t.html#a7ca00ff8785a97975b08452b59d09e5cac5301693c4e792bcd5a479ef38fb8f8d", null ]
+    ] ],
+    [ "PackagePlatformType", "namespace_e_t.html#a2a5ed903e99a44ae568912f1855ac379", [
+      [ "None", "namespace_e_t.html#a2a5ed903e99a44ae568912f1855ac379a6adf97f83acf6453d4a6a4b1070f3754", null ],
+      [ "Android", "namespace_e_t.html#a2a5ed903e99a44ae568912f1855ac379ae84e30b9390cdb64db6db2c9ab87846d", null ],
+      [ "iOS", "namespace_e_t.html#a2a5ed903e99a44ae568912f1855ac379a1bdf605991920db11cbdf8508204c4eb", null ],
+      [ "PC", "namespace_e_t.html#a2a5ed903e99a44ae568912f1855ac379a88dba0c4e2af76447df43d1e31331a3d", null ],
+      [ "MacOS", "namespace_e_t.html#a2a5ed903e99a44ae568912f1855ac379a0a5b7edb55b772c60bfa8af868b679cf", null ]
     ] ],
     [ "ParserState", "namespace_e_t.html#ae35bcae2ef9ce78cec74964eea096f45", [
       [ "PacketSize", "namespace_e_t.html#ae35bcae2ef9ce78cec74964eea096f45a1eb898097fbbaceb1322d33022f1908c", null ],

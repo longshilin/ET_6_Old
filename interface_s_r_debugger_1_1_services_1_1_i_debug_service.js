@@ -1,0 +1,26 @@
+var interface_s_r_debugger_1_1_services_1_1_i_debug_service =
+[
+    [ "AddOption", "interface_s_r_debugger_1_1_services_1_1_i_debug_service.html#abbd5c3a9ce30df28d274d23f199b1202", null ],
+    [ "AddOptionContainer", "interface_s_r_debugger_1_1_services_1_1_i_debug_service.html#ac782f903f340e0485dade1766799f76d", null ],
+    [ "AddSystemInfo", "interface_s_r_debugger_1_1_services_1_1_i_debug_service.html#aa5631b79889ce6c9779501572fc71966", null ],
+    [ "ClearPinnedOptions", "interface_s_r_debugger_1_1_services_1_1_i_debug_service.html#a9bec5f8711c13d2c0b38e54b047279aa", null ],
+    [ "DestroyDebugPanel", "interface_s_r_debugger_1_1_services_1_1_i_debug_service.html#af1948558c584af0476db0fbbe1ba8d66", null ],
+    [ "EnableWorldSpaceMode", "interface_s_r_debugger_1_1_services_1_1_i_debug_service.html#a1c218d4f9e41d04e35a997feadd7db37", null ],
+    [ "HideDebugPanel", "interface_s_r_debugger_1_1_services_1_1_i_debug_service.html#a67bf183949a84c0ca7b2e936321a108a", null ],
+    [ "PinAllOptions", "interface_s_r_debugger_1_1_services_1_1_i_debug_service.html#abb08fc21572d01a56a644cd7641a4297", null ],
+    [ "PinOption", "interface_s_r_debugger_1_1_services_1_1_i_debug_service.html#a197bd54c8f4eb55a30eaa934ffb613fe", null ],
+    [ "RemoveOption", "interface_s_r_debugger_1_1_services_1_1_i_debug_service.html#a1fdd1761869f50fe6739856de6caf583", null ],
+    [ "RemoveOptionContainer", "interface_s_r_debugger_1_1_services_1_1_i_debug_service.html#a2fc3066a605629cafbf70dfdb7dc7125", null ],
+    [ "ShowBugReportSheet", "interface_s_r_debugger_1_1_services_1_1_i_debug_service.html#a261e63d76a107d4fce9d2d3b3c366f94", null ],
+    [ "ShowDebugPanel", "interface_s_r_debugger_1_1_services_1_1_i_debug_service.html#a40f369e04dee711258df77535be2099c", null ],
+    [ "ShowDebugPanel", "interface_s_r_debugger_1_1_services_1_1_i_debug_service.html#a0d4a8e7181d6c7204904afcb0bf2a4a0", null ],
+    [ "UnpinAllOptions", "interface_s_r_debugger_1_1_services_1_1_i_debug_service.html#a08b25e4abddd6a530f1cb87477689a0f", null ],
+    [ "UnpinOption", "interface_s_r_debugger_1_1_services_1_1_i_debug_service.html#a2d41c57c11b6e8fa10094a21d3a945cf", null ],
+    [ "DockConsole", "interface_s_r_debugger_1_1_services_1_1_i_debug_service.html#a6b3d4a971821db3a4e66d13e5e4415cf", null ],
+    [ "IsDebugPanelVisible", "interface_s_r_debugger_1_1_services_1_1_i_debug_service.html#aa42474b18acf425f8a21ccbb52c4d387", null ],
+    [ "IsProfilerDocked", "interface_s_r_debugger_1_1_services_1_1_i_debug_service.html#a831ba0ffd7ac6f49920e24fcfd98ed50", null ],
+    [ "IsTriggerEnabled", "interface_s_r_debugger_1_1_services_1_1_i_debug_service.html#a55c566de3444f526d802b8fbe3e85b14", null ],
+    [ "Settings", "interface_s_r_debugger_1_1_services_1_1_i_debug_service.html#a2a481b0fe57608d74ba9a6b4fc25a7cb", null ],
+    [ "PanelVisibilityChanged", "interface_s_r_debugger_1_1_services_1_1_i_debug_service.html#a70514444ca47771a898158affd4906a5", null ],
+    [ "PinnedUiCanvasCreated", "interface_s_r_debugger_1_1_services_1_1_i_debug_service.html#a2bf5049ccc1df4a6a612acb0eb3916e4", null ]
+];

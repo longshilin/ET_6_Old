@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: Unity/Assets/ThirdParty/StompyRobot/SRDebugger/Scripts/Services/IConsoleService.cs 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_i_console_service_8cs_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">IConsoleService.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_i_console_service_8cs.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_s_r_debugger_1_1_services.html">SRDebugger.Services</a></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>{</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>    <span class="keyword">using</span> <a class="code hl_namespace" href="namespace_unity_engine.html">UnityEngine</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="namespace_s_r_debugger_1_1_services.html#a3c1b5724c9f1454468c0b549b76ca8ec">    5</a></span>    <span class="keyword">public</span> delegate <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_s_r_debugger_1_1_services.html#a3c1b5724c9f1454468c0b549b76ca8ec">ConsoleUpdatedEventHandler</a>(<a class="code hl_interface" href="interface_s_r_debugger_1_1_services_1_1_i_console_service.html">IConsoleService</a> console);</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="interface_s_r_debugger_1_1_services_1_1_i_console_service.html">    7</a></span>    <span class="keyword">public</span> <span class="keyword">interface </span><a class="code hl_interface" href="interface_s_r_debugger_1_1_services_1_1_i_console_service.html">IConsoleService</a></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="interface_s_r_debugger_1_1_services_1_1_i_console_service.html#a1d67fb3e8c3107200d24a2f766ea6914">    9</a></span>        <span class="keywordtype">int</span> <a class="code hl_property" href="interface_s_r_debugger_1_1_services_1_1_i_console_service.html#a1d67fb3e8c3107200d24a2f766ea6914">ErrorCount</a> { <span class="keyword">get</span>; }</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="interface_s_r_debugger_1_1_services_1_1_i_console_service.html#a35d92ce52a43623e28f1b00dd8a117d4">   10</a></span>        <span class="keywordtype">int</span> <a class="code hl_property" href="interface_s_r_debugger_1_1_services_1_1_i_console_service.html#a35d92ce52a43623e28f1b00dd8a117d4">WarningCount</a> { <span class="keyword">get</span>; }</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="interface_s_r_debugger_1_1_services_1_1_i_console_service.html#a9f838a6dc41f4e3b8da4fd2ea92232b9">   11</a></span>        <span class="keywordtype">int</span> <a class="code hl_property" href="interface_s_r_debugger_1_1_services_1_1_i_console_service.html#a9f838a6dc41f4e3b8da4fd2ea92232b9">InfoCount</a> { <span class="keyword">get</span>; }</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="interface_s_r_debugger_1_1_services_1_1_i_console_service.html#a6aabe83f7e4b96e630dbeff31f5bcfb7">   16</a></span>        <a class="code hl_interface" href="interface_s_r_debugger_1_1_i_read_only_list.html">IReadOnlyList&lt;ConsoleEntry&gt;</a> <a class="code hl_property" href="interface_s_r_debugger_1_1_services_1_1_i_console_service.html#a6aabe83f7e4b96e630dbeff31f5bcfb7">Entries</a> { <span class="keyword">get</span>; }</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="interface_s_r_debugger_1_1_services_1_1_i_console_service.html#ae55d931eb0cb6d3b1db04c445ae74b59">   21</a></span>        <a class="code hl_interface" href="interface_s_r_debugger_1_1_i_read_only_list.html">IReadOnlyList&lt;ConsoleEntry&gt;</a> <a class="code hl_property" href="interface_s_r_debugger_1_1_services_1_1_i_console_service.html#ae55d931eb0cb6d3b1db04c445ae74b59">AllEntries</a> { <span class="keyword">get</span>; }</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="interface_s_r_debugger_1_1_services_1_1_i_console_service.html#a15d527689b846cb9fdd8758b7cfe5530">   23</a></span>        <span class="keyword">event</span> <a class="code hl_function" href="namespace_s_r_debugger_1_1_services.html#a3c1b5724c9f1454468c0b549b76ca8ec">ConsoleUpdatedEventHandler</a> <a class="code hl_event" href="interface_s_r_debugger_1_1_services_1_1_i_console_service.html#a15d527689b846cb9fdd8758b7cfe5530">Updated</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="interface_s_r_debugger_1_1_services_1_1_i_console_service.html#a43247eab6b9e42cde6a82f34f4845e53">   25</a></span>        <span class="keyword">event</span> <a class="code hl_function" href="namespace_s_r_debugger_1_1_services.html#a3c1b5724c9f1454468c0b549b76ca8ec">ConsoleUpdatedEventHandler</a> <a class="code hl_event" href="interface_s_r_debugger_1_1_services_1_1_i_console_service.html#a43247eab6b9e42cde6a82f34f4845e53">Error</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="interface_s_r_debugger_1_1_services_1_1_i_console_service.html#accb7f5e00ff9315fc0fde0cbd99e5b41">   27</a></span>        <span class="keywordtype">bool</span> <a class="code hl_property" href="interface_s_r_debugger_1_1_services_1_1_i_console_service.html#accb7f5e00ff9315fc0fde0cbd99e5b41">LoggingEnabled</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="interface_s_r_debugger_1_1_services_1_1_i_console_service.html#a3e79b6153e54ebe8b1cebec180330ec7">   29</a></span>        <span class="keywordtype">bool</span> <a class="code hl_property" href="interface_s_r_debugger_1_1_services_1_1_i_console_service.html#a3e79b6153e54ebe8b1cebec180330ec7">LogHandlerIsOverriden</a> { <span class="keyword">get</span>; }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="interface_s_r_debugger_1_1_services_1_1_i_console_service.html#ab13d8f20a40e364cd805d7f218e77554">   31</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="interface_s_r_debugger_1_1_services_1_1_i_console_service.html#ab13d8f20a40e364cd805d7f218e77554">Clear</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_services_1_1_console_entry.html">   34</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_s_r_debugger_1_1_services_1_1_console_entry.html">ConsoleEntry</a></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keyword">private</span> <span class="keyword">const</span> <span class="keywordtype">int</span> MessagePreviewLength = 180;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keyword">private</span> <span class="keyword">const</span> <span class="keywordtype">int</span> StackTracePreviewLength = 120;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keyword">private</span> <span class="keywordtype">string</span> _messagePreview;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keyword">private</span> <span class="keywordtype">string</span> _stackTracePreview;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a686822df97f038243ce71f7e390daa92">   44</a></span>        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a686822df97f038243ce71f7e390daa92">Count</a> = 1;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a14d9e1783200494c448120bbddbf6653">   46</a></span>        <span class="keyword">public</span> <a class="code hl_variable" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a14d9e1783200494c448120bbddbf6653">LogType</a> <a class="code hl_variable" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a14d9e1783200494c448120bbddbf6653">LogType</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a1efe8688b4c17bb266a63bb520912b48">   47</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a1efe8688b4c17bb266a63bb520912b48">Message</a>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#ac8c02be01e8454d2d592ad399228dd46">   48</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#ac8c02be01e8454d2d592ad399228dd46">StackTrace</a>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a559d2ac594b1e63d67c85fcff6480566">   49</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a559d2ac594b1e63d67c85fcff6480566">ConsoleEntry</a>() {}</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a4d097ce5020b017a7b8cdc92d968305b">   51</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a4d097ce5020b017a7b8cdc92d968305b">ConsoleEntry</a>(<a class="code hl_class" href="class_s_r_debugger_1_1_services_1_1_console_entry.html">ConsoleEntry</a> other)</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <a class="code hl_variable" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a1efe8688b4c17bb266a63bb520912b48">Message</a> = other.<a class="code hl_variable" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a1efe8688b4c17bb266a63bb520912b48">Message</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <a class="code hl_variable" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#ac8c02be01e8454d2d592ad399228dd46">StackTrace</a> = other.<a class="code hl_variable" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#ac8c02be01e8454d2d592ad399228dd46">StackTrace</a>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <a class="code hl_variable" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a14d9e1783200494c448120bbddbf6653">LogType</a> = other.<a class="code hl_variable" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a14d9e1783200494c448120bbddbf6653">LogType</a>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <a class="code hl_variable" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a686822df97f038243ce71f7e390daa92">Count</a> = other.<a class="code hl_variable" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a686822df97f038243ce71f7e390daa92">Count</a>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#aa85ed83c25bfa2468e605b36f05aae50">   59</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#aa85ed83c25bfa2468e605b36f05aae50">MessagePreview</a></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="keyword">get</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                <span class="keywordflow">if</span> (_messagePreview != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                    <span class="keywordflow">return</span> _messagePreview;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                <span class="keywordflow">if</span> (<span class="keywordtype">string</span>.IsNullOrEmpty(<a class="code hl_variable" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a1efe8688b4c17bb266a63bb520912b48">Message</a>))</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                    <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                _messagePreview = <a class="code hl_variable" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a1efe8688b4c17bb266a63bb520912b48">Message</a>.Split(<span class="charliteral">&#39;\n&#39;</span>)[0];</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                _messagePreview = _messagePreview.Substring(0, Mathf.Min(_messagePreview.Length, MessagePreviewLength));</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                <span class="keywordflow">return</span> _messagePreview;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a621a7417bc648b54fa1896bf5166171a">   79</a></span>        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code hl_property" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a621a7417bc648b54fa1896bf5166171a">StackTracePreview</a></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        {</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            <span class="keyword">get</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                <span class="keywordflow">if</span> (_stackTracePreview != <span class="keyword">null</span>)</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                {</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                    <span class="keywordflow">return</span> _stackTracePreview;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                <span class="keywordflow">if</span> (<span class="keywordtype">string</span>.IsNullOrEmpty(<a class="code hl_variable" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#ac8c02be01e8454d2d592ad399228dd46">StackTrace</a>))</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                    <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                _stackTracePreview = <a class="code hl_variable" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#ac8c02be01e8454d2d592ad399228dd46">StackTrace</a>.Split(<span class="charliteral">&#39;\n&#39;</span>)[0];</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                _stackTracePreview = _stackTracePreview.Substring(0,</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                    Mathf.Min(_stackTracePreview.Length, StackTracePreviewLength));</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                <span class="keywordflow">return</span> _stackTracePreview;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a0e614c5057795f11f339425ce09d0aa0">  100</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a0e614c5057795f11f339425ce09d0aa0">Matches</a>(<a class="code hl_class" href="class_s_r_debugger_1_1_services_1_1_console_entry.html">ConsoleEntry</a> other)</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        {</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            <span class="keywordflow">if</span> (ReferenceEquals(<span class="keyword">null</span>, other))</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            {</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            }</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            <span class="keywordflow">if</span> (ReferenceEquals(<span class="keyword">this</span>, other))</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            <span class="keywordflow">return</span> <span class="keywordtype">string</span>.Equals(<a class="code hl_variable" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a1efe8688b4c17bb266a63bb520912b48">Message</a>, other.<a class="code hl_variable" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a1efe8688b4c17bb266a63bb520912b48">Message</a>) &amp;&amp; <span class="keywordtype">string</span>.Equals(<a class="code hl_variable" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#ac8c02be01e8454d2d592ad399228dd46">StackTrace</a>, other.<a class="code hl_variable" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#ac8c02be01e8454d2d592ad399228dd46">StackTrace</a>) &amp;&amp;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                   <a class="code hl_variable" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a14d9e1783200494c448120bbddbf6653">LogType</a> == other.<a class="code hl_variable" href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a14d9e1783200494c448120bbddbf6653">LogType</a>;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        }</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    }</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>}</div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_services_1_1_console_entry_html"><div class="ttname"><a href="class_s_r_debugger_1_1_services_1_1_console_entry.html">SRDebugger.Services.ConsoleEntry</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_console_service_8cs_source.html#l00034">IConsoleService.cs:35</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_services_1_1_console_entry_html_a0e614c5057795f11f339425ce09d0aa0"><div class="ttname"><a href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a0e614c5057795f11f339425ce09d0aa0">SRDebugger.Services.ConsoleEntry.Matches</a></div><div class="ttdeci">bool Matches(ConsoleEntry other)</div><div class="ttdef"><b>Definition:</b> <a href="_i_console_service_8cs_source.html#l00100">IConsoleService.cs:100</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_services_1_1_console_entry_html_a14d9e1783200494c448120bbddbf6653"><div class="ttname"><a href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a14d9e1783200494c448120bbddbf6653">SRDebugger.Services.ConsoleEntry.LogType</a></div><div class="ttdeci">LogType LogType</div><div class="ttdef"><b>Definition:</b> <a href="_i_console_service_8cs_source.html#l00046">IConsoleService.cs:46</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_services_1_1_console_entry_html_a1efe8688b4c17bb266a63bb520912b48"><div class="ttname"><a href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a1efe8688b4c17bb266a63bb520912b48">SRDebugger.Services.ConsoleEntry.Message</a></div><div class="ttdeci">string Message</div><div class="ttdef"><b>Definition:</b> <a href="_i_console_service_8cs_source.html#l00047">IConsoleService.cs:47</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_services_1_1_console_entry_html_a4d097ce5020b017a7b8cdc92d968305b"><div class="ttname"><a href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a4d097ce5020b017a7b8cdc92d968305b">SRDebugger.Services.ConsoleEntry.ConsoleEntry</a></div><div class="ttdeci">ConsoleEntry(ConsoleEntry other)</div><div class="ttdef"><b>Definition:</b> <a href="_i_console_service_8cs_source.html#l00051">IConsoleService.cs:51</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_services_1_1_console_entry_html_a559d2ac594b1e63d67c85fcff6480566"><div class="ttname"><a href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a559d2ac594b1e63d67c85fcff6480566">SRDebugger.Services.ConsoleEntry.ConsoleEntry</a></div><div class="ttdeci">ConsoleEntry()</div><div class="ttdef"><b>Definition:</b> <a href="_i_console_service_8cs_source.html#l00049">IConsoleService.cs:49</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_services_1_1_console_entry_html_a621a7417bc648b54fa1896bf5166171a"><div class="ttname"><a href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a621a7417bc648b54fa1896bf5166171a">SRDebugger.Services.ConsoleEntry.StackTracePreview</a></div><div class="ttdeci">string StackTracePreview</div><div class="ttdef"><b>Definition:</b> <a href="_i_console_service_8cs_source.html#l00079">IConsoleService.cs:80</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_services_1_1_console_entry_html_a686822df97f038243ce71f7e390daa92"><div class="ttname"><a href="class_s_r_debugger_1_1_services_1_1_console_entry.html#a686822df97f038243ce71f7e390daa92">SRDebugger.Services.ConsoleEntry.Count</a></div><div class="ttdeci">int Count</div><div class="ttdoc">Number of times this log entry has occured (if collapsing is enabled)</div><div class="ttdef"><b>Definition:</b> <a href="_i_console_service_8cs_source.html#l00044">IConsoleService.cs:44</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_services_1_1_console_entry_html_aa85ed83c25bfa2468e605b36f05aae50"><div class="ttname"><a href="class_s_r_debugger_1_1_services_1_1_console_entry.html#aa85ed83c25bfa2468e605b36f05aae50">SRDebugger.Services.ConsoleEntry.MessagePreview</a></div><div class="ttdeci">string MessagePreview</div><div class="ttdef"><b>Definition:</b> <a href="_i_console_service_8cs_source.html#l00059">IConsoleService.cs:60</a></div></div>
+<div class="ttc" id="aclass_s_r_debugger_1_1_services_1_1_console_entry_html_ac8c02be01e8454d2d592ad399228dd46"><div class="ttname"><a href="class_s_r_debugger_1_1_services_1_1_console_entry.html#ac8c02be01e8454d2d592ad399228dd46">SRDebugger.Services.ConsoleEntry.StackTrace</a></div><div class="ttdeci">string StackTrace</div><div class="ttdef"><b>Definition:</b> <a href="_i_console_service_8cs_source.html#l00048">IConsoleService.cs:48</a></div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_i_read_only_list_html"><div class="ttname"><a href="interface_s_r_debugger_1_1_i_read_only_list.html">SRDebugger.IReadOnlyList</a></div><div class="ttdef"><b>Definition:</b> <a href="_third_party_2_stompy_robot_2_s_r_debugger_2_scripts_2_internal_2_circular_buffer_8cs_source.html#l00018">CircularBuffer.cs:19</a></div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_services_1_1_i_console_service_html"><div class="ttname"><a href="interface_s_r_debugger_1_1_services_1_1_i_console_service.html">SRDebugger.Services.IConsoleService</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_console_service_8cs_source.html#l00007">IConsoleService.cs:8</a></div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_services_1_1_i_console_service_html_a15d527689b846cb9fdd8758b7cfe5530"><div class="ttname"><a href="interface_s_r_debugger_1_1_services_1_1_i_console_service.html#a15d527689b846cb9fdd8758b7cfe5530">SRDebugger.Services.IConsoleService.Updated</a></div><div class="ttdeci">ConsoleUpdatedEventHandler Updated</div><div class="ttdef"><b>Definition:</b> <a href="_i_console_service_8cs_source.html#l00023">IConsoleService.cs:23</a></div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_services_1_1_i_console_service_html_a1d67fb3e8c3107200d24a2f766ea6914"><div class="ttname"><a href="interface_s_r_debugger_1_1_services_1_1_i_console_service.html#a1d67fb3e8c3107200d24a2f766ea6914">SRDebugger.Services.IConsoleService.ErrorCount</a></div><div class="ttdeci">int ErrorCount</div><div class="ttdef"><b>Definition:</b> <a href="_i_console_service_8cs_source.html#l00009">IConsoleService.cs:9</a></div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_services_1_1_i_console_service_html_a35d92ce52a43623e28f1b00dd8a117d4"><div class="ttname"><a href="interface_s_r_debugger_1_1_services_1_1_i_console_service.html#a35d92ce52a43623e28f1b00dd8a117d4">SRDebugger.Services.IConsoleService.WarningCount</a></div><div class="ttdeci">int WarningCount</div><div class="ttdef"><b>Definition:</b> <a href="_i_console_service_8cs_source.html#l00010">IConsoleService.cs:10</a></div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_services_1_1_i_console_service_html_a3e79b6153e54ebe8b1cebec180330ec7"><div class="ttname"><a href="interface_s_r_debugger_1_1_services_1_1_i_console_service.html#a3e79b6153e54ebe8b1cebec180330ec7">SRDebugger.Services.IConsoleService.LogHandlerIsOverriden</a></div><div class="ttdeci">bool LogHandlerIsOverriden</div><div class="ttdef"><b>Definition:</b> <a href="_i_console_service_8cs_source.html#l00029">IConsoleService.cs:29</a></div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_services_1_1_i_console_service_html_a43247eab6b9e42cde6a82f34f4845e53"><div class="ttname"><a href="interface_s_r_debugger_1_1_services_1_1_i_console_service.html#a43247eab6b9e42cde6a82f34f4845e53">SRDebugger.Services.IConsoleService.Error</a></div><div class="ttdeci">ConsoleUpdatedEventHandler Error</div><div class="ttdef"><b>Definition:</b> <a href="_i_console_service_8cs_source.html#l00025">IConsoleService.cs:25</a></div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_services_1_1_i_console_service_html_a6aabe83f7e4b96e630dbeff31f5bcfb7"><div class="ttname"><a href="interface_s_r_debugger_1_1_services_1_1_i_console_service.html#a6aabe83f7e4b96e630dbeff31f5bcfb7">SRDebugger.Services.IConsoleService.Entries</a></div><div class="ttdeci">IReadOnlyList&lt; ConsoleEntry &gt; Entries</div><div class="ttdoc">List of ConsoleEntry objects since the last clear.</div><div class="ttdef"><b>Definition:</b> <a href="_i_console_service_8cs_source.html#l00016">IConsoleService.cs:16</a></div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_services_1_1_i_console_service_html_a9f838a6dc41f4e3b8da4fd2ea92232b9"><div class="ttname"><a href="interface_s_r_debugger_1_1_services_1_1_i_console_service.html#a9f838a6dc41f4e3b8da4fd2ea92232b9">SRDebugger.Services.IConsoleService.InfoCount</a></div><div class="ttdeci">int InfoCount</div><div class="ttdef"><b>Definition:</b> <a href="_i_console_service_8cs_source.html#l00011">IConsoleService.cs:11</a></div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_services_1_1_i_console_service_html_ab13d8f20a40e364cd805d7f218e77554"><div class="ttname"><a href="interface_s_r_debugger_1_1_services_1_1_i_console_service.html#ab13d8f20a40e364cd805d7f218e77554">SRDebugger.Services.IConsoleService.Clear</a></div><div class="ttdeci">void Clear()</div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_services_1_1_i_console_service_html_accb7f5e00ff9315fc0fde0cbd99e5b41"><div class="ttname"><a href="interface_s_r_debugger_1_1_services_1_1_i_console_service.html#accb7f5e00ff9315fc0fde0cbd99e5b41">SRDebugger.Services.IConsoleService.LoggingEnabled</a></div><div class="ttdeci">bool LoggingEnabled</div><div class="ttdef"><b>Definition:</b> <a href="_i_console_service_8cs_source.html#l00027">IConsoleService.cs:27</a></div></div>
+<div class="ttc" id="ainterface_s_r_debugger_1_1_services_1_1_i_console_service_html_ae55d931eb0cb6d3b1db04c445ae74b59"><div class="ttname"><a href="interface_s_r_debugger_1_1_services_1_1_i_console_service.html#ae55d931eb0cb6d3b1db04c445ae74b59">SRDebugger.Services.IConsoleService.AllEntries</a></div><div class="ttdeci">IReadOnlyList&lt; ConsoleEntry &gt; AllEntries</div><div class="ttdoc">List of all ConsoleEntry objects, regardless of clear.</div><div class="ttdef"><b>Definition:</b> <a href="_i_console_service_8cs_source.html#l00021">IConsoleService.cs:21</a></div></div>
+<div class="ttc" id="anamespace_s_r_debugger_1_1_services_html"><div class="ttname"><a href="namespace_s_r_debugger_1_1_services.html">SRDebugger.Services</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_bug_report_service_8cs_source.html#l00001">IBugReportService.cs:2</a></div></div>
+<div class="ttc" id="anamespace_s_r_debugger_1_1_services_html_a3c1b5724c9f1454468c0b549b76ca8ec"><div class="ttname"><a href="namespace_s_r_debugger_1_1_services.html#a3c1b5724c9f1454468c0b549b76ca8ec">SRDebugger.Services.ConsoleUpdatedEventHandler</a></div><div class="ttdeci">delegate void ConsoleUpdatedEventHandler(IConsoleService console)</div></div>
+<div class="ttc" id="anamespace_unity_engine_html"><div class="ttname"><a href="namespace_unity_engine.html">UnityEngine</a></div><div class="ttdef"><b>Definition:</b> <a href="_mathf_8cs_source.html#l00003">Mathf.cs:4</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_3b33dffaa21a2ac6f7978a949ffd4e41.html">Assets</a></li><li class="navelem"><a class="el" href="dir_5501c55c26a8d51fbc1fd8b7d8df04c3.html">ThirdParty</a></li><li class="navelem"><a class="el" href="dir_0f5df078a02ed03b6776122c2b87cb60.html">StompyRobot</a></li><li class="navelem"><a class="el" href="dir_94017e9a8ea42ed0c35aefd43f85b68b.html">SRDebugger</a></li><li class="navelem"><a class="el" href="dir_7a8f801e87ec51abc5da4d4cde89dc5d.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_11732da70f6b7ca00416c1d145838732.html">Services</a></li><li class="navelem"><a class="el" href="_i_console_service_8cs.html">IConsoleService.cs</a></li>
+    <li class="footer">生成于 2022年 四月 21日 星期四 10:43:01 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

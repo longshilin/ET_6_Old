@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('_actor_message_sender_component_system
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            }</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            <span class="keywordflow">catch</span> (Exception e)</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                Log.Error($<span class="stringliteral">&quot;move timer error: {self.Id}\n{e}&quot;</span>);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Error($<span class="stringliteral">&quot;move timer error: {self.Id}\n{e}&quot;</span>);</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            }</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        }</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    }</div>
@@ -174,7 +174,7 @@ $(document).ready(function(){initNavTree('_actor_message_sender_component_system
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                }</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                <span class="keywordflow">catch</span> (Exception e)</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                {</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                    Log.Error(e.ToString());</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                    <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Error(e.ToString());</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                }</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            }</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
@@ -256,7 +256,7 @@ $(document).ready(function(){initNavTree('_actor_message_sender_component_system
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>            <span class="keywordtype">long</span> costTime = endTime - beginTime;</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>            <span class="keywordflow">if</span> (costTime &gt; 200)</div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>            {</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>                Log.Warning(<span class="stringliteral">&quot;actor rpc time &gt; 200: {0} {1}&quot;</span>, costTime, memoryStream.ToActorMessage());</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>                <a class="code hl_enumvalue" href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">Log</a>.Warning(<span class="stringliteral">&quot;actor rpc time &gt; 200: {0} {1}&quot;</span>, costTime, memoryStream.ToActorMessage());</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>            }</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>            </div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>            <span class="keywordflow">return</span> response;</div>
@@ -276,6 +276,7 @@ $(document).ready(function(){initNavTree('_actor_message_sender_component_system
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        }</div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    }</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>}</div>
+<div class="ttc" id="a_bugly_agent_8cs_html_a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b"><div class="ttname"><a href="_bugly_agent_8cs.html#a93a3ba385cad27c4774e5fe64c025d3dace0be71e33226e4c1db2bcea5959f16b">LogSeverity.Log</a></div><div class="ttdeci">@ Log</div></div>
 <div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
 <div class="ttc" id="aclass_e_t_1_1_a_timer_html"><div class="ttname"><a href="class_e_t_1_1_a_timer.html">ET.ATimer</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_timer_8cs_source.html#l00008">ITimer.cs:9</a></div></div>
 <div class="ttc" id="aclass_e_t_1_1_actor_message_sender_checker_html"><div class="ttname"><a href="class_e_t_1_1_actor_message_sender_checker.html">ET.ActorMessageSenderChecker</a></div><div class="ttdef"><b>Definition:</b> <a href="_actor_message_sender_component_system_8cs_source.html#l00007">ActorMessageSenderComponentSystem.cs:8</a></div></div>
@@ -303,7 +304,7 @@ $(document).ready(function(){initNavTree('_actor_message_sender_component_system
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1a445cb237d74f7a5f8d11ec3b0585cc.html">Server</a></li><li class="navelem"><a class="el" href="dir_0134ce7b2e6baa37e8c29df3d3b5b77b.html">Hotfix</a></li><li class="navelem"><a class="el" href="dir_4822d068f22e06f0f7845927638ec428.html">Module</a></li><li class="navelem"><a class="el" href="dir_ff228d9c7277b8c2571a8ab33f4104dc.html">Actor</a></li><li class="navelem"><a class="el" href="_actor_message_sender_component_system_8cs.html">ActorMessageSenderComponentSystem.cs</a></li>
-    <li class="footer">生成于 2022年 四月 21日 星期四 07:49:28 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">生成于 2022年 四月 21日 星期四 10:42:54 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

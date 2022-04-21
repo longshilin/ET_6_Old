@@ -103,35 +103,41 @@ $(document).ready(function(){initNavTree('_define_8cs_source.html',''); initResi
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> IsEditor = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_namespace" href="namespace_unity_engine.html">UnityEngine</a>.Object LoadAssetAtPath(<span class="keywordtype">string</span> s)</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                {</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#if UNITY_EDITOR        </span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                        <span class="keywordflow">return</span> <a class="code hl_namespace" href="namespace_unity_editor.html">UnityEditor</a>.AssetDatabase.LoadAssetAtPath&lt;<a class="code hl_namespace" href="namespace_unity_engine.html">UnityEngine</a>.Object&gt;(<a class="code hl_enumvalue" href="namespace_e_t.html#a998904d546bf4d60e243f2b8c9bf1239a03c7c0ace395d80182db07ae2c30f034">s</a>);</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                        <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                }</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span>[] GetAssetPathsFromAssetBundle(<span class="keywordtype">string</span> assetBundleName)</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                {</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#if UNITY_EDITOR        </span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                        <span class="keywordflow">return</span> <a class="code hl_namespace" href="namespace_unity_editor.html">UnityEditor</a>.AssetDatabase.GetAssetPathsFromAssetBundle(assetBundleName);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keywordtype">string</span>[0];</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                }</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span>[] GetAssetBundleDependencies(<span class="keywordtype">string</span> assetBundleName, <span class="keywordtype">bool</span> v)</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                {</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#if UNITY_EDITOR        </span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                        <span class="keywordflow">return</span> <a class="code hl_namespace" href="namespace_unity_editor.html">UnityEditor</a>.AssetDatabase.GetAssetBundleDependencies(assetBundleName, v);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keywordtype">string</span>[0];</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                }</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        }</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#if DEVELOPMENT</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> IsDebug = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> IsDebug = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                <span class="keyword">public</span> <span class="keyword">static</span> <a class="code hl_namespace" href="namespace_unity_engine.html">UnityEngine</a>.Object LoadAssetAtPath(<span class="keywordtype">string</span> s)</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#if UNITY_EDITOR        </span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                        <span class="keywordflow">return</span> <a class="code hl_namespace" href="namespace_unity_editor.html">UnityEditor</a>.AssetDatabase.LoadAssetAtPath&lt;<a class="code hl_namespace" href="namespace_unity_engine.html">UnityEngine</a>.Object&gt;(<a class="code hl_enumvalue" href="namespace_e_t.html#a998904d546bf4d60e243f2b8c9bf1239a03c7c0ace395d80182db07ae2c30f034">s</a>);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                        <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span>[] GetAssetPathsFromAssetBundle(<span class="keywordtype">string</span> assetBundleName)</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#if UNITY_EDITOR        </span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                        <span class="keywordflow">return</span> <a class="code hl_namespace" href="namespace_unity_editor.html">UnityEditor</a>.AssetDatabase.GetAssetPathsFromAssetBundle(assetBundleName);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keywordtype">string</span>[0];</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span>[] GetAssetBundleDependencies(<span class="keywordtype">string</span> assetBundleName, <span class="keywordtype">bool</span> v)</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#if UNITY_EDITOR        </span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                        <span class="keywordflow">return</span> <a class="code hl_namespace" href="namespace_unity_editor.html">UnityEditor</a>.AssetDatabase.GetAssetBundleDependencies(assetBundleName, v);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keywordtype">string</span>[0];</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}</div>
 <div class="ttc" id="anamespace_e_t_html"><div class="ttname"><a href="namespace_e_t.html">ET</a></div><div class="ttdef"><b>Definition:</b> <a href="_robot_2_app_2_program_8cs_source.html#l00008">Program.cs:9</a></div></div>
 <div class="ttc" id="anamespace_e_t_html_a998904d546bf4d60e243f2b8c9bf1239a03c7c0ace395d80182db07ae2c30f034"><div class="ttname"><a href="namespace_e_t.html#a998904d546bf4d60e243f2b8c9bf1239a03c7c0ace395d80182db07ae2c30f034">ET.ConfigType.s</a></div><div class="ttdeci">@ s</div></div>
 <div class="ttc" id="anamespace_unity_editor_html"><div class="ttname"><a href="namespace_unity_editor.html">UnityEditor</a></div><div class="ttdef"><b>Definition:</b> <a href="_loop_scroll_rect_default_controls_8cs_source.html#l00007">LoopScrollRectDefaultControls.cs:8</a></div></div>
@@ -142,7 +148,7 @@ $(document).ready(function(){initNavTree('_define_8cs_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_3b33dffaa21a2ac6f7978a949ffd4e41.html">Assets</a></li><li class="navelem"><a class="el" href="dir_32b52fdc2965fe1c83ca367fdb1ff171.html">Mono</a></li><li class="navelem"><a class="el" href="_define_8cs.html">Define.cs</a></li>
-    <li class="footer">生成于 2022年 四月 21日 星期四 07:49:29 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">生成于 2022年 四月 21日 星期四 10:42:55 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
