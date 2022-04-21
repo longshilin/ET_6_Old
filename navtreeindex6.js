@@ -1,5 +1,7 @@
 var NAVTREEINDEX6 =
 {
+"_i_destroy_system_8cs_source.html":[2,0,5,1,2,0,2,8],
+"_i_disposable_adapter_8cs.html":[2,0,5,0,1,2,4],
 "_i_disposable_adapter_8cs_source.html":[2,0,5,0,1,2,4],
 "_i_dock_console_service_8cs.html":[2,0,5,0,3,6,0,0,3,7],
 "_i_dock_console_service_8cs_source.html":[2,0,5,0,3,6,0,0,3,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX6 =
 "_invoke_helper_8cpp.html#ac8e301b3e71811816e823adcdb58dabe":[2,0,0,1,1,0,8],
 "_invoke_helper_8cpp.html#acd67d74690c38c681348663bdaa89cd3":[2,0,0,1,1,0,9],
 "_invoke_helper_8cpp.html#adbea3824870329aeb1afb5246337703b":[2,0,0,1,1,0,4],
-"_invoke_helper_8cpp_source.html":[2,0,0,1,1,0],
-"_invoke_helper_8h.html":[2,0,0,1,0,0],
-"_invoke_helper_8h.html#a053242adda59d5682ea2bc4f938eb1b5":[2,0,0,1,0,0,4]
+"_invoke_helper_8cpp_source.html":[2,0,0,1,1,0]
 };

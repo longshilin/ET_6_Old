@@ -1,5 +1,7 @@
 var NAVTREEINDEX7 =
 {
+"_invoke_helper_8h.html":[2,0,0,1,0,0],
+"_invoke_helper_8h.html#a053242adda59d5682ea2bc4f938eb1b5":[2,0,0,1,0,0,4],
 "_invoke_helper_8h.html#a0961d9f883ed97097379547f1074d185":[2,0,0,1,0,0,1],
 "_invoke_helper_8h.html#a0f478a0dca020feb34079ba0459e50de":[2,0,0,1,0,0,3],
 "_invoke_helper_8h.html#a1a9701974131ba04117733d478f13f3b":[2,0,0,1,0,0,2],
@@ -91,8 +93,8 @@ var NAVTREEINDEX7 =
 "_lit_json_2_extensions_8cs.html":[2,0,5,0,3,3,0],
 "_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2":[2,0,5,0,3,3,0,1],
 "_lit_json_2_extensions_8cs_source.html":[2,0,5,0,3,3,0],
-"_lit_json___json_mapper___binding_8cs.html":[2,0,5,0,1,2,0,53],
-"_lit_json___json_mapper___binding_8cs_source.html":[2,0,5,0,1,2,0,53],
+"_lit_json___json_mapper___binding_8cs.html":[2,0,5,0,1,2,0,54],
+"_lit_json___json_mapper___binding_8cs_source.html":[2,0,5,0,1,2,0,54],
 "_loading_begin_event_async_create_loading_u_i_8cs.html":[2,0,5,1,1,0,5,9,0],
 "_loading_begin_event_async_create_loading_u_i_8cs_source.html":[2,0,5,1,1,0,5,9,0],
 "_loading_finish_event_async_remove_loading_u_i_8cs.html":[2,0,5,1,1,0,5,9,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX7 =
 "_method_attributes_8cs.html#ac5d7f84cfeece9195f64a769340770e3a3f01f015d1069ed6aaccca0fcb8817b1":[2,0,5,0,3,2,1,1,47,0,11],
 "_method_attributes_8cs.html#ac5d7f84cfeece9195f64a769340770e3a47f9082fc380ca62d531096aa1d110f1":[2,0,5,0,3,2,1,1,47,0,2],
 "_method_attributes_8cs.html#ac5d7f84cfeece9195f64a769340770e3a615e6f9baca5553d44683a098d342b70":[2,0,5,0,3,2,1,1,47,0,10],
-"_method_attributes_8cs.html#ac5d7f84cfeece9195f64a769340770e3a63e52003896ecd21e4bb8a724d829151":[2,0,5,0,3,2,1,1,47,0,12],
-"_method_attributes_8cs.html#ac5d7f84cfeece9195f64a769340770e3a7fa1e9e08abd0796988f64d77a747099":[2,0,5,0,3,2,1,1,47,0,0],
-"_method_attributes_8cs.html#ac5d7f84cfeece9195f64a769340770e3a83d5d9f9b81b48ca78349b3e89c77472":[2,0,5,0,3,2,1,1,47,0,20]
+"_method_attributes_8cs.html#ac5d7f84cfeece9195f64a769340770e3a63e52003896ecd21e4bb8a724d829151":[2,0,5,0,3,2,1,1,47,0,12]
 };
