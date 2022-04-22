@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('_mini_j_s_o_n_8cs_source.html',''); in
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">using</span> <a class="code hl_namespace" href="namespace_system.html">System</a>.Globalization;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="namespace_s_r_f.html">   32</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_s_r_f.html">SRF</a></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_s_r_f.html">SRF</a></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>{</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">using</span> <a class="code hl_variable" href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a>;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">using</span> <a class="code hl_namespace" href="namespace_system.html">System</a>.<a class="code hl_namespace" href="namespace_system_1_1_collections.html">Collections</a>;</div>
@@ -397,8 +397,8 @@ $(document).ready(function(){initNavTree('_mini_j_s_o_n_8cs_source.html',''); in
 <div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span> </div>
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>            <span class="keyword">private</span> <span class="keywordtype">string</span> ParseString()</div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>            {</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>                var s = <span class="keyword">new</span> StringBuilder();</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>                <span class="keywordtype">char</span> c;</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>                var <a class="code hl_enumvalue" href="namespace_e_t.html#a998904d546bf4d60e243f2b8c9bf1239a03c7c0ace395d80182db07ae2c30f034">s</a> = <span class="keyword">new</span> StringBuilder();</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>                <span class="keywordtype">char</span> <a class="code hl_enumvalue" href="namespace_e_t.html#a998904d546bf4d60e243f2b8c9bf1239a4a8a08f09d37b73795649038408b5f33">c</a>;</div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span> </div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>                <span class="comment">// ditch opening quote</span></div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>                json.Read();</div>
@@ -412,7 +412,7 @@ $(document).ready(function(){initNavTree('_mini_j_s_o_n_8cs_source.html',''); in
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>                        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>                    }</div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span> </div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>                    c = NextChar;</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>                    <a class="code hl_enumvalue" href="namespace_e_t.html#a998904d546bf4d60e243f2b8c9bf1239a4a8a08f09d37b73795649038408b5f33">c</a> = NextChar;</div>
 <div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>                    <span class="keywordflow">switch</span> (c)</div>
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>                    {</div>
 <div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>                        <span class="keywordflow">case</span> <span class="charliteral">&#39;&quot;&#39;</span>:</div>
@@ -425,28 +425,28 @@ $(document).ready(function(){initNavTree('_mini_j_s_o_n_8cs_source.html',''); in
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>                                <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>                            }</div>
 <div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span> </div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>                            c = NextChar;</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>                            <a class="code hl_enumvalue" href="namespace_e_t.html#a998904d546bf4d60e243f2b8c9bf1239a4a8a08f09d37b73795649038408b5f33">c</a> = NextChar;</div>
 <div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>                            <span class="keywordflow">switch</span> (c)</div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>                            {</div>
 <div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>                                <span class="keywordflow">case</span> <span class="charliteral">&#39;&quot;&#39;</span>:</div>
 <div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>                                <span class="keywordflow">case</span> <span class="charliteral">&#39;\\&#39;</span>:</div>
 <div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>                                <span class="keywordflow">case</span> <span class="charliteral">&#39;/&#39;</span>:</div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>                                    s.Append(c);</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>                                    <a class="code hl_enumvalue" href="namespace_e_t.html#a998904d546bf4d60e243f2b8c9bf1239a03c7c0ace395d80182db07ae2c30f034">s</a>.Append(c);</div>
 <div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>                                    <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>                                <span class="keywordflow">case</span> <span class="charliteral">&#39;b&#39;</span>:</div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>                                    s.Append(<span class="charliteral">&#39;\b&#39;</span>);</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>                                    <a class="code hl_enumvalue" href="namespace_e_t.html#a998904d546bf4d60e243f2b8c9bf1239a03c7c0ace395d80182db07ae2c30f034">s</a>.Append(<span class="charliteral">&#39;\b&#39;</span>);</div>
 <div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>                                    <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>                                <span class="keywordflow">case</span> <span class="charliteral">&#39;f&#39;</span>:</div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>                                    s.Append(<span class="charliteral">&#39;\f&#39;</span>);</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>                                    <a class="code hl_enumvalue" href="namespace_e_t.html#a998904d546bf4d60e243f2b8c9bf1239a03c7c0ace395d80182db07ae2c30f034">s</a>.Append(<span class="charliteral">&#39;\f&#39;</span>);</div>
 <div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>                                    <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>                                <span class="keywordflow">case</span> <span class="charliteral">&#39;n&#39;</span>:</div>
-<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>                                    s.Append(<span class="charliteral">&#39;\n&#39;</span>);</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>                                    <a class="code hl_enumvalue" href="namespace_e_t.html#a998904d546bf4d60e243f2b8c9bf1239a03c7c0ace395d80182db07ae2c30f034">s</a>.Append(<span class="charliteral">&#39;\n&#39;</span>);</div>
 <div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>                                    <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>                                <span class="keywordflow">case</span> <span class="charliteral">&#39;r&#39;</span>:</div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>                                    s.Append(<span class="charliteral">&#39;\r&#39;</span>);</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>                                    <a class="code hl_enumvalue" href="namespace_e_t.html#a998904d546bf4d60e243f2b8c9bf1239a03c7c0ace395d80182db07ae2c30f034">s</a>.Append(<span class="charliteral">&#39;\r&#39;</span>);</div>
 <div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>                                    <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>                                <span class="keywordflow">case</span> <span class="charliteral">&#39;t&#39;</span>:</div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>                                    s.Append(<span class="charliteral">&#39;\t&#39;</span>);</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>                                    <a class="code hl_enumvalue" href="namespace_e_t.html#a998904d546bf4d60e243f2b8c9bf1239a03c7c0ace395d80182db07ae2c30f034">s</a>.Append(<span class="charliteral">&#39;\t&#39;</span>);</div>
 <div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>                                    <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>                                <span class="keywordflow">case</span> <span class="charliteral">&#39;u&#39;</span>:</div>
 <div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>                                    var hex = <span class="keyword">new</span> <span class="keywordtype">char</span>[4];</div>
@@ -456,17 +456,17 @@ $(document).ready(function(){initNavTree('_mini_j_s_o_n_8cs_source.html',''); in
 <div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>                                        hex[i] = NextChar;</div>
 <div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>                                    }</div>
 <div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span> </div>
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>                                    s.Append((<span class="keywordtype">char</span>) Convert.ToInt32(<span class="keyword">new</span> <span class="keywordtype">string</span>(hex), 16));</div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>                                    <a class="code hl_enumvalue" href="namespace_e_t.html#a998904d546bf4d60e243f2b8c9bf1239a03c7c0ace395d80182db07ae2c30f034">s</a>.Append((<span class="keywordtype">char</span>) Convert.ToInt32(<span class="keyword">new</span> <span class="keywordtype">string</span>(hex), 16));</div>
 <div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>                                    <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>                            }</div>
 <div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>                            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>                        <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>                            s.Append(c);</div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>                            <a class="code hl_enumvalue" href="namespace_e_t.html#a998904d546bf4d60e243f2b8c9bf1239a03c7c0ace395d80182db07ae2c30f034">s</a>.Append(c);</div>
 <div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>                            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>                    }</div>
 <div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>                }</div>
 <div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span> </div>
-<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>                <span class="keywordflow">return</span> s.ToString();</div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>                <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="namespace_e_t.html#a998904d546bf4d60e243f2b8c9bf1239a03c7c0ace395d80182db07ae2c30f034">s</a>.ToString();</div>
 <div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>            }</div>
 <div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span> </div>
 <div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>            <span class="keyword">private</span> <span class="keywordtype">object</span> ParseNumber()</div>
@@ -696,7 +696,9 @@ $(document).ready(function(){initNavTree('_mini_j_s_o_n_8cs_source.html',''); in
 <div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>    }</div>
 <div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>}</div>
 <div class="ttc" id="a_lit_json_2_extensions_8cs_html_a81a223a02c34d82b47199f08308847f2"><div class="ttname"><a href="_lit_json_2_extensions_8cs.html#a81a223a02c34d82b47199f08308847f2">System</a></div><div class="ttdeci">﻿using System</div><div class="ttdef"><b>Definition:</b> <a href="_lit_json_2_extensions_8cs_source.html#l00001">Extensions.cs:1</a></div></div>
-<div class="ttc" id="anamespace_s_r_f_html"><div class="ttname"><a href="namespace_s_r_f.html">SRF</a></div><div class="ttdef"><b>Definition:</b> <a href="_mini_j_s_o_n_8cs_source.html#l00032">MiniJSON.cs:33</a></div></div>
+<div class="ttc" id="anamespace_e_t_html_a998904d546bf4d60e243f2b8c9bf1239a03c7c0ace395d80182db07ae2c30f034"><div class="ttname"><a href="namespace_e_t.html#a998904d546bf4d60e243f2b8c9bf1239a03c7c0ace395d80182db07ae2c30f034">ET.ConfigType.s</a></div><div class="ttdeci">@ s</div></div>
+<div class="ttc" id="anamespace_e_t_html_a998904d546bf4d60e243f2b8c9bf1239a4a8a08f09d37b73795649038408b5f33"><div class="ttname"><a href="namespace_e_t.html#a998904d546bf4d60e243f2b8c9bf1239a4a8a08f09d37b73795649038408b5f33">ET.ConfigType.c</a></div><div class="ttdeci">@ c</div></div>
+<div class="ttc" id="anamespace_s_r_f_html"><div class="ttname"><a href="namespace_s_r_f.html">SRF</a></div><div class="ttdef"><b>Definition:</b> <a href="_copy_layout_element_editor_8cs_source.html#l00001">CopyLayoutElementEditor.cs:2</a></div></div>
 <div class="ttc" id="anamespace_system_1_1_collections_1_1_generic_html"><div class="ttname"><a href="namespace_system_1_1_collections_1_1_generic.html">System.Collections.Generic</a></div></div>
 <div class="ttc" id="anamespace_system_1_1_collections_html"><div class="ttname"><a href="namespace_system_1_1_collections.html">System.Collections</a></div></div>
 <div class="ttc" id="anamespace_system_html"><div class="ttname"><a href="namespace_system.html">System</a></div><div class="ttdef"><b>Definition:</b> <a href="_async_method_builder_attribute_8cs_source.html#l00002">AsyncMethodBuilderAttribute.cs:3</a></div></div>
@@ -706,7 +708,7 @@ $(document).ready(function(){initNavTree('_mini_j_s_o_n_8cs_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3d328b3dca154a477d99beb656992be2.html">Unity</a></li><li class="navelem"><a class="el" href="dir_3b33dffaa21a2ac6f7978a949ffd4e41.html">Assets</a></li><li class="navelem"><a class="el" href="dir_5501c55c26a8d51fbc1fd8b7d8df04c3.html">ThirdParty</a></li><li class="navelem"><a class="el" href="dir_0f5df078a02ed03b6776122c2b87cb60.html">StompyRobot</a></li><li class="navelem"><a class="el" href="dir_f2aabdcf9088c7d28b4e6e5b4fc8b0df.html">SRF</a></li><li class="navelem"><a class="el" href="dir_d4cec9bb6654fec85d99ce3518b37253.html">External</a></li><li class="navelem"><a class="el" href="_mini_j_s_o_n_8cs.html">MiniJSON.cs</a></li>
-    <li class="footer">生成于 2022年 四月 22日 星期五 04:55:40 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">生成于 2022年 四月 22日 星期五 05:41:19 , 为 My Project使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

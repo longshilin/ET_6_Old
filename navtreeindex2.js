@@ -248,6 +248,6 @@ var NAVTREEINDEX2 =
 "_config_partial_2_start_process_config_8cs_source.html":[2,0,2,2,3,1,0],
 "_config_partial_2_start_scene_config_8cs.html":[2,0,2,2,3,1,1],
 "_config_partial_2_start_scene_config_8cs_source.html":[2,0,2,2,3,1,1],
-"_configure_canvas_from_settings_8cs.html":[2,0,5,0,3,6,0,0,4,1,3],
-"_configure_canvas_from_settings_8cs_source.html":[2,0,5,0,3,6,0,0,4,1,3]
+"_configure_canvas_from_settings_8cs.html":[2,0,5,0,3,6,0,0,3,1,3],
+"_configure_canvas_from_settings_8cs_source.html":[2,0,5,0,3,6,0,0,3,1,3]
 };
